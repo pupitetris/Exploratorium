@@ -1,0 +1,32 @@
+Independent,Explanation,Dependent,Atributo,Clase
+Dimensión: N=4,Tipificación de la variedad M.,Dimension: N=4,N,Tip
+M: Variedad diferenciable,Espacio topológico que parece un espacio euclidiano en las vecindades de cada punto. Puede ser coordinatizado a $R^{n}$ mediante una familia de homeomorfismos.,M: Differentiable manifold,M,M
+$\gamma$: Conexión afín,Conexión generalizada para campos vectoriales en espacios curvos donde la torción y la no-metricidad no necesariamente son cero.,$\gamma$: Affine connection,Conexión afín,GO
+$\overline{\nabla}$: Conexión plana,Derivada para espacios planos.,$\overline{\nabla}$: Flat connection,Conexión plana,GO
+$\nabla$: Conexión Newton-Cartan,Conexión plana covariante.,"$\widetilde{\nabla}=(\nabla,G^{a}t_{b}t_{c})$: Covariant connection",Conexión Newton-Cartan,GO
+$\left\{ _{\mu\nu}^{\lambda}\right\} $: Conexión métrica,"También llamada conexión Levi-Civita, depende de la métrica $g$. Nos dice cómo transportar vectores a lo largo de una curva conservando la métrica.",$\left\{ _{\mu\nu}^{\lambda}\right\} $: Metric connection,Conexión métrica,GO
+Conexión métrico-afín,"Conexión para espacios métrico-afines, donde la torsión y la no-metricidad son distintas de cero.",Metric-Affine connection,Conexión métrico-afín,GO
+$g$: Tensor métrico,"Un campo tensorial simétrico de tipo $(0,2)$ y signatura $<1,3>$. Provee una noción de distancia y ángulo entre vectores.",$g_{\mu\nu}$: Metric tensor,Tensor métrico,GO
+$R$: Escalar de Ricci,$R=g^{\mu\nu}R_{\mu\nu}$,$R$:Ricci scalar,Escalar de Ricci,GO
+$\Re$: Escalar de Ricci afín,\Re=g^{\mu\nu}\Re_{\mu\nu},$\Re$: Affine Ricci scalar,R2,GO
+Dependencia,La conexión y el tensor métrico dependen uno del otro.,Dependency,Dependiente,Tip
+Independencia,La conexión puede expresarse de forma independiente al tensor métrico.,Independency,Independente,Tip
+$\eta$: Métrica de Minkowski’s,"Métrica plana no-dinámica. Como $Riem(\gamma)=0$, siempre podemos elegir coordenadas globales en donde $\eta_{\mu\nu}=diag(-1,1,1,1)$",,eta,GO
+$Riem(\Gamma)=0$,Tensor de curvatura de Riemann es cero en todo el espacio. $K=0$. La primer condición de homogeneidad de Trautman.,,Curvatura = 0,Cond
+No-metricidad = 0,$Q_{\mu\nu\lambda}=0$ La segunda condición de homogeneous de Trautman.,,No-metricidad=0,Cond
+Vector de Weyl = 0,$Q_{\mu}=0$. La traza del tensor de no-metricidad con respecto a sus dos últimos índices simétricos.,,Vector de Weyl=0,Cond
+$S_{\mu\nu}^{\lambda}=0$,$\widetilde{R}_{bd}^{ac}=\widetilde{R}_{db}^{ca}$ La tercer condición de homogeneous de Trautman.,,Torsión de Cartan=0,Cond
+$h$: Tensor métrico plano,"Un campo tensorial simétrico de tipo $(2,0)$. h está definido en el espacio cotangente $T_{p}^{*}\times T_{p}^{*}$ y tiene signatura $<3,0,1>$. Induce una métrica tri-dimensional en cada hipersuperficie.",$h^{ab}$Flat Metric tensor,h,GO
+$dt$: Función de tiempo,Un co-vector que induce una foliación de M en una hiper-superficie de tres dimensiones.,$t_{a}$,dt,GO
+"$h(dt,w)=0$",Condición de ortogonalidad que describe la geometría euclidiana.,$t_{a}h^{ab}=0$,"h(dt,w)=0",Cond
+$V$: Campo contravectorial,Describe el espacio absoluto. $T_{\sigma}=V$ a lo largo de $\sigma$,$v_{b}$: Components of a contractor field V,V,GO
+$\overline{D}(V)=0$,La derivada covariante de V es cero. Esto hace que las líneas en el acordonamiento del espacio-tiempo sean geodésicas.,$\nabla_{a}v_{b}=0$,D(V)=0,Cond
+$dt(V)=1$,La derivada de V es cero. Esto hace que las líneas del acordonamiento del espacio-tiempo sean tipo tiempo.,$t_{a}v_{b}=1$,dt(V)=1,Cond
+$\overline{D}(dt)=0$,La derivada covariante de dt es cero. Esto asegura que las rebanadas de simultaneidad sean planas.,$\nabla_{a}t_{b}=0$,D(dt)=0,Cond
+$\overline{D}(h)=0$,La derivada covariante de h describe la geometría euclidiana.,$\nabla_{a}h^{bc}=0$,D(h)=0,Cond
+$(dt\otimes K)_{1a2}$= 0,,,(dt ⊗ K)= 0,MovEq
+"$H_{*}^{2}K(w,v,X,Y)=H_{*}^{2}K(v,w,Y,X)$",,,H2*K=H2*K,Cond
+Signatura no toda positiva,"Para el tensor métrico: no definitivamente positiva: $<-,+,+,+>$ o $<+,-,-,->$",Signature,Signatura no toda positiva,Tip
+Signatura positiva,Para el tensor métrico: definitivamente positiva.,Signature,Signatura positiva,Tip
+"Signatura <1,3>","Para el tensor métrico: no definitivamente positiva $<1,3>$",Signature,"Signatura <1,3>",Tip
+$\overline{D}(g)=0$,Condición que preserva ángulos y distancias cuando transportamos vectores de forma paralela a lo largo de una curva.,$\nabla_{a}g_{bc}=0$,D(g)=0,Cond

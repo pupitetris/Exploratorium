@@ -1,0 +1,95 @@
+[% BLOCK print %]
+[%   FOREACH p IN block.children %]
+[%     IF p.title %]
+<h2>[% p.title %]</h2>
+[%       PROCESS print block=p %]
+[%     ELSE %]
+<p>[% p %]</p>
+[%     END %]
+[%   END %]
+[% END %]
+
+[% BLOCK rel_href %]
+[% IF href.substr(0, 1) != '/' %][% page.basedir %][% END %][% href %]
+[%- END %]
+
+[% BLOCK page %]
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>[% title %][% IF page.title != 'Home' %]: [% page.title %][% END %]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise">
+    <link rel="stylesheet" href="[% page.basedir %]lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+[% FOREACH src IN scripts %]
+    <script src="[% src %]"></script>
+[% END %]
+  </head>
+  <body class="page">
+    <div class="content">
+      <div class="container" id="barra">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--  <a class="navbar-brand" href="#">Exploratorium</a> -->
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav">
+[% FOREACH link IN navigation.children %]
+[% IF link.href == 'nav_lang' %]
+[% href = page.config.nav_lang %]
+[% ELSE %]
+[% href = link.href %]
+[% END %]
+            <li[% IF href == page.config.output %] class="active"[% END %]><a href="[% PROCESS rel_href href=href %]">[% link.text %]</a></li>
+[% END %]
+          </ul>
+        </div>
+      </div>
+      <header class="intro-header">
+        <div class="container" id="info">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="title">
+                <h1>[% (page.title == 'Home')? title : page.title %]</h1>
+              </div>
+              <div class="author">
+[% PROCESS print block=author %]
+
+              </div>
+            </div>
+[% IF logos == 1 %]
+            <div class="col-lg-3">
+              <div class="imgLogos">
+                <img class="uam" src="[% page.basedir %]images/logo_uam.jpg" alt="UAM">
+              </div>
+              <div class="imgLogos">
+                <img src="[% page.basedir %]images/REMO.png" alt="REMO">
+              </div>
+            </div>
+[% END %]
+          </div>
+        </div>
+      </header>
+[% content %]
+    </div>
+    <footer class="footer-pasto">
+      <div class="container">
+[% FOREACH heading IN footer.children %]
+        <div class="[% heading.id %]">
+[%   FOREACH p IN heading.children %]
+          <p>[% p %]</p>
+[%   END %]
+        </div>
+[% END %]
+      </div>
+    </footer>
+  </body>
+</html>
+[% END %]

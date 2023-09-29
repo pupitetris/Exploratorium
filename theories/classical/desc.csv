@@ -1,0 +1,63 @@
+Independent,Explanation,Dependent,Atributo,Clase,Atributo,Clase
+Dimension: N=4,A typification for M.,Dimension: N=4,N,Tip,N,Tip
+M: Differentiable manifold,"A topological space that resembles euclidean space near each point. It can be coordinatized by Rn through a family of homeomorphisms.
+",M: Differentiable manifold,M,M,M,M
+$\gamma$: Affine connection,A generalised connection for vector fields in curved spaces where torsion and non-metricity are not necessarily cero.,$\gamma$: Affine connection,Affine Connection,GO,Affine Connection,GO
+$\left[D\right]$:Class of connection,A standard of rotation: an equivalence class of rotationally equivalent flat affine connections.,$\left[\nabla\right]$:Class of connection,Class of Connections,GO,Class of Connections,GO
+$\overline{\nabla}$: Flat connection,A derivative for flat spaces.,$\overline{\nabla}$: Flat connection,Flat Connection,GO,Flat Connection,GO
+$\nabla$: Newton-Cartan Connection,Flat covariant connection.,"$\widetilde{\nabla}=(\nabla,G^{a}t_{b}t_{c})$: Covariant connection",Newton-Cartan Connection,GO,Newton-Cartan Connection,GO
+$\left\{ _{\mu\nu}^{\lambda}\right\} $: Metric connection,"Also called Levi-Civita connection, it is dependent on the metric $g$. It gives us information about how to transport vectors along a curve, while conserving the metric.",$\left\{ _{\mu\nu}^{\lambda}\right\} $: Metric connection,Metric Connection,GO,Metric Connection,GO
+Metric-Affine connection,A connection for Metric-Affine Spaces where non-metricity and torsion are not cero,Metric-Affine connection,Metric Affine Connection,GO,Metric Affine Connection,GO
+$g$: Metric tensor field,"A symmetric tensor field of type $(0,2)$ and signature $<1,3>$. Provides a sense of distance and angles between vectors",$g_{\mu\nu}$: Metric tensor,Metric tensor,GO,Metric tensor,GO
+$\psi$: Matter fields,,,Psi,GO,Psi,GO
+$T$: Stress-Energy-Momentum tensor field,"Symmetric tensor field $(2,0)$",$T_{\mu\nu}$: Stress-Energy-Momentum tensor,T,GO,T,GO
+$R$:Ricci scalar,$R=g^{\mu\nu}R_{\mu\nu}$,$R$:Ricci scalar,Ricci scalar,GO,Ricci scalar,GO
+$\Re$: Affine Ricci scalar,\Re=g^{\mu\nu}\Re_{\mu\nu},$\Re$: Affine Ricci scalar,R2,GO,R2,GO
+Dependency,The connection and the metric tensor depend on each other.,Dependency,Dependent,Tip,Dependent,Tip
+Independency,The connection may be expressed independently of the metric tensor,Independency,Independent,Tip,Independent,Tip
+$f(R)=R$,The function dependent on the Ricci scalar is of first order.,$f(R)=R$,f(R) = R,Cond,f(R) = R,Cond
+$f’(R)=1$,The first derivative of the function dependent on the Ricci scalar is one.,$f’(R)=1$,f’(R)=1,Cond,f’(R)=1,Cond
+$f’’(R) =0$,The second derivative of the function of the Ricci scalar is cero ,$f’’(R) =0$,f’’(R) = 0,Cond,f’’(R) = 0,Cond
+$T_{\mu\nu}\rightarrow0$: Dust,Energy momentum tensor is almost cero; models for dust,,T=0,Cond,T=0,Cond
+$\eta$: Minkowski’s metric,"Flat non-dynamical metric. Since $Riem(\gamma)=0$, we can always choose global coordinates in which $\eta_{\mu\nu}=diag(-1,1,1,1)$",,eta,GO,eta,GO
+$Riem(\Gamma)=0$,Riemann’s curvature tensor of the affine connection is zero. $K=0$. It is one of Trautman’s homogenous condition.,,K=0,Cond,K=0,Cond
+$c<0$,"Ricci scalar is constant and negative at all points
+K:Tp¬Tp",,Cte<0,Cond,Cte<0,Cond
+$c>0$,"Ricci scalar is constante and positive at all points
+K:Tp¬Tp",,Cte>0,Cond,Cte>0,Cond
+"$S_{M}=S_{M}(g_{\mu\nu},\psi)$",Matter term,"SM = SM ( g𝞵𝞶, 𝚪𝞴𝞵𝞶 ,𝞧 )",SM1,GO,SM1,Action
+"$S_{met}=\frac{1}{2\kappa}\intop d^{4}x\sqrt{-g}f(R)+S_{M}(g_{\mu\nu},\psi)$",Total action for a metric $f(R)$,"Smet = 1/2𝞳 ∫d4x√-g f(R) + SM(g𝞶𝞵, 𝞧)",Eq 5,Action,Eq 5,Action
+$f'(R)R_{\mu\nu}-\frac{1}{2}f(R)g_{\mu\nu}-\left[\nabla_{\mu}\nabla_{\nu}-g_{\mu\nu}\nabla^{\mu}\nabla_{\mu}\right]f'(R)=\kappa T_{\mu\nu}$,Field equation of metric  $f(R)$,f’(R)R𝞵𝞶-1/2f(R)g𝞵𝞶 - [∇𝞵∇𝞶-g𝞵𝞶☐] f’(R) = 𝞳T𝞵𝞶,Eq 6,FieldEq,Eq 6,FieldEq
+$R_{\mu\nu}=0$,"If the Ricci scalar $R=0$, then the Field Ec. reduces to $R_{\mu\eta}=0$",R𝞵𝞶 = 0,Eq 9a,FieldEq,Eq 9a,FieldEq
+$R_{\mu\nu}=g_{\mu\nu}\frac{C}{4}$,"If the Ricci scalar $R=cte$, then the Field Ec. reduces to $R_{\mu\nu}=g_{\mu\nu}\frac{C}{4}$, and the maximally symmetric solution is de Sitter or anti-de Sitter space depending on the sign of C.",R𝞵𝞶=g𝞵𝞶C/4,Eq 9b,FieldEq,Eq 9b,FieldEq
+$R_{\mu\nu}=-g_{\mu\nu}\frac{C}{4}$,"If the Ricci scalar $R=cte$, then the Field Ec. reduces to $R_{\mu\nu}=g_{\mu\nu}\frac{C}{4}$, and the maximally symmetric solution is de Sitter on anti-de Sitter space depending on the sign of C.",$R_{\mu\nu}=-g_{\mu\nu}\frac{C}{4}$,Eq 9c,FieldEq,Eq 9c,FieldEq
+Einstein’s Equation: $G_{1}^{*}G_{2}^{*}Ric-\frac{1}{2}Rg^{*}=-8\pi kT$,"Matter tells space how tu curve, and Curvature tells matter how to move.",,Einstein’s Eq,FieldEq,Einstein’s Eq,FieldEq
+Curvature,Riemman’s curvature tensor,,Curvature,GO,Curvature,GO
+"Non metricity tensor: $Q_{\mu\nu\lambda}\equiv-\widetilde{\nabla}_{\mu g\nu\lambda}$,",It measures the failure of the connection to covariantly conserve the metric.,,Non metricity,GO,Non metricity,GO
+" $Q_{\mu\nu\lambda}=0$,",Homogeneous Trautman Condition,,Non metricity=0,Cond,Non metricity=0,Cond
+"Weyl vector: $Q_{\mu}\equiv\frac{1}{4}Q_{\mu\nu^{\nu}}$,",Is the trace of the non-metricity tensor with respect to its last two (symmetric) indices.,,Weyl vector,GO,Weyl vector,GO
+Well vector: $Q_{\mu}=0$,The trace of the non-metricity tensor with respect to its last two (symmetric) indices,,Weyl vector=0,Cond,Weyl vector=0,Cond
+Cartan torsion tensor: $S_{\mu\nu}^{\lambda}\equiv\Gamma_{\left[\mu\nu\right]}^{\lambda}$,The anti-symmetric part of the connection,,Cartan torsion,GO,Cartan torsion,GO
+$S_{\mu\nu}^{\lambda}=0$,Homogeneous Trautman Condition $\widetilde{R}_{bd}^{ac}=\widetilde{R}_{db}^{ca}$,,Cartan torsion=0,Cond,Cartan torsion=0,Cond
+Geodesic Equation:$D_{T\sigma}T_{\sigma}=0$,Free particles follow timeline geodesics of the connection.,Geodesic Equation: $\frac{d^{2}x_{i}}{dt^{2}}+\Gamma_{jk}^{i}\frac{dx_{j}}{dt}\frac{dx_{k}}{dt}=0$,Geodesic law,MovEq,Geodesic law,MovEq
+Gravitational “constant”,$G_{today}=1=\left[constant\right]$,,G=1,ElemDis,G = 1,ElemDis
+$h$: Flat Metric tensor,"A symmetric tensor field of type $(2,0)$. h is defined on de cotangent space $T_{p}^{*}\times T_{p}^{*}$ and has signature $<3,0,1>$. It induces a three-dimensional metric on each hypersurface.",$h^{ab}$Flat Metric tensor,h,Action,h,GO
+$dt$: Time function,Co vector that induces a foliation of M into three-dimensional hyper surfaces.,$t_{a}$,dt,GO,dt,GO
+"$h(dt,w)=0$",Describes Euclidean Geometry,$t_{a}h^{ab}=0$,"h(dt,w)=0",GO,"h(dt,w)=0",Cond
+$V$: Contra vector field  ,"Describes absolute space
+$T_{\sigma}=V$ along $\sigma$",,V,Cond,V,GO
+$\overline{D}(V)=0$,"Covariant Derivative of $V=0$ makes the lines
+in the rigging of space-time to be geodesics",,D(V)=0,GO,D(V)=0,Cond
+$dt(V)=1$,"Derivative of $V=0$ makes the lines
+in the rigging of space-time to be timelike.",,dt(V)=1,Cond,dt(V)=1,Cond
+$\overline{D}(dt)=0$,Covariant derivative = 0 assures the simultaneity slices are flat.,$\nabla_{a}t_{b}=0$,D(dt)=0,Cond,D(dt)=0,Cond
+$\overline{D}(h)=0$,Covariant Derivative of h describes Euclidean Geometry,$\nabla_{a}h^{bc}=0$,D(h)=0,Cond,D(h)=0,Cond
+Signature,for the metric tensor: definite-positive,,Not-definite-positive,Cond,Not-definite-positive,Tip
+Signature,"for the metric tensor: Not definite positive $<1,3>$",,"<1,3>",Tip,"<1,3>",Tip
+$\overline{D}(g)=0$,Condition that preserves angles and distances when parallel transporting along a curve.,,D(g)=0,Tip,D(g)=0,Cond
+$G^{a}$: Gravitational field,A space-like vector field that represents the gravitational field,$G^{a}$: Gravitational field,Ga,Cond,Ga,GO
+Universal force:  $mD_{T\sigma}T_{\sigma}=m(grad(\Phi))$,particles acted on only by gravitational forces follow non geodesic paths determined by the gravitational potential,,2nd Law,GO,2nd Law,MovEq
+$(dt\otimes K)_{1a2}$= 0,,,(dt ⊗ K)= 0,MovEq,(dt ⊗ K)= 0,Cond
+"$H_{*}^{2}K(w,v,X,Y)=H_{*}^{2}K(v,w,Y,X)$",,,H2*K=H2*K,Cond,H2*K=H2*K,Cond
+Poisson’s Eq: $del(\Phi)=4\pi k\rho$,,Poisson’s Eq: $\nabla_{a}G^{a}=-4\pi\rho$,Poisson Eq,Cond,Poisson Eq,FieldEq
+$Ric=-4\pi\rho dt\otimes$$dt$,Equivalent to Poisson’s Eq.,$\widetilde{R}_{bc}=4\pi\rho t_{b}t_{c}$,Field. Eq. 2,FieldEq,Field. Eq. 2,FieldEq

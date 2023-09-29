@@ -1,0 +1,42 @@
+@import url("../../style.css");
+
+html {
+	--link-width: 3px;
+	--node-stroke-width: 3px;
+}
+
+.textbox-box.box-Chronogeometrical {
+	fill: #825238;
+}
+
+.textbox-box.box-Referents {
+	fill: #F2CA78;
+}
+
+.textbox-box.box-Tip {
+	fill: #F28937;
+}
+
+.textbox-box.box-Family {
+	fill: #B4B029;
+}
+
+.textbox-box.box-Frames {
+	fill: #2F671D;
+}
+
+.textbox-box.box-EqMotion {
+	fill: #B02740;
+}
+
+.textbox-box.box-FieldEq {
+	fill: #4CDBD7;
+}
+
+.textbox-box.box-Transformation {
+	fill: #1F61A2;
+}
+
+.textbox-box.box-DE {
+	fill: #109CB2;
+}

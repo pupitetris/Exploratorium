@@ -1,0 +1,5048 @@
+{
+    "context": {
+        "Semi-Riemannian": {
+            "name": "Semi-Riemannian S-T",
+            "id": "Semi-Riemannian",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Escalar de Ricci",
+                "Dependiente",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "No toda positiva",
+                "D(g) = 0"
+            ]
+        },
+        "Lorentzian ST": {
+            "name": "ET Lorentziano",
+            "id": "Lorentzian ST",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Escalar de Ricci",
+                "Dependiente",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0"
+            ]
+        },
+        "Metric Affine ST": {
+            "name": "ET Métrico-Afín",
+            "id": "Metric Affine ST",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "R2",
+                "Independiente",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "No toda positiva"
+            ]
+        },
+        "SR": {
+            "name": "Relatividad Especial",
+            "id": "SR",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) = R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "T = 0",
+                "eta",
+                "K = 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Ec. 9a",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "k1 = c3/16piG",
+                "k2 = 1/c"
+            ]
+        },
+        "Sitter": {
+            "name": "ET De Sitter",
+            "id": "Sitter",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) = R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "T = 0",
+                "Cte > 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Ec. 9b",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "k1 = c3/16piG",
+                "k2 = 1/c"
+            ]
+        },
+        "Anti-De Sitter": {
+            "name": "ET Anti-De Sitter",
+            "id": "Anti-De Sitter",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) = R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "T = 0",
+                "Cte < 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Ec. 9c",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "k1 = c3/16piG",
+                "k2 = 1/c"
+            ]
+        },
+        "GR": {
+            "name": "Relatividad General",
+            "id": "GR",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) = R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "k1 = c3/16piG",
+                "k2 = 1/c"
+            ]
+        },
+        "Metric": {
+            "name": "f(R) Métrica",
+            "id": "Metric",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General"
+            ]
+        },
+        "MetHO": {
+            "name": "Métrica HO",
+            "id": "MetHO",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) ≠ R",
+                "f’’(R) ≠ 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General"
+            ]
+        },
+        "Pal": {
+            "name": "f(R) a la Palatini",
+            "id": "Pal",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "SM1",
+                "Ec. 13",
+                "Ec. 18",
+                "Ec. 19",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General a la Palatini"
+            ]
+        },
+        "Pal1": {
+            "name": "Palatini O1",
+            "id": "Pal1",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) = R*",
+                "f’(R*) = 1",
+                "f’’(R*) = 0",
+                "SM1",
+                "Ec. 13",
+                "Ec. 18",
+                "Ec. 19",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General a la Palatini"
+            ]
+        },
+        "PalHO": {
+            "name": "Palatini HO",
+            "id": "PalHO",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) ≠ R*",
+                "f’’(R*) ≠ 0",
+                "SM1",
+                "Ec. 13",
+                "Ec. 18",
+                "Ec. 19",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General a la Palatini"
+            ]
+        },
+        "MetAff": {
+            "name": "f)R) Métrico-Afín",
+            "id": "MetAff",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "SM2",
+                "Ec. 13",
+                "Hyp",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "Ec. 46",
+                "Ec. 47",
+                "Ec. 48",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ]
+        },
+        "MetAff01": {
+            "name": "Métrico-Afín O1",
+            "id": "MetAff01",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) = R*",
+                "f’(R*) = 1",
+                "SM2",
+                "Ec. 13",
+                "Hyp",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "Ec. 46",
+                "Ec. 47",
+                "Ec. 48",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ]
+        },
+        "MetAffHO": {
+            "name": "Métrico-Afín HO",
+            "id": "MetAffHO",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) ≠ R*",
+                "f’’(R*) ≠ 0",
+                "SM2",
+                "Ec. 13",
+                "Hyp",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "Ec. 46",
+                "Ec. 47",
+                "Ec. 48",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ]
+        },
+        "MOND local pure metric": {
+            "name": "MOND local",
+            "id": "MOND local pure metric",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "Ec. 4",
+                "F(R,Lm)",
+                "Ec. 34 y 35",
+                "a0"
+            ]
+        },
+        "MOND Non local Palatini": {
+            "name": "MOND No-local a la Palatini",
+            "id": "MOND Non local Palatini",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "No-local",
+                "Acción General a la Palatini",
+                "Ec. 8",
+                "F(R*,T)",
+                "F(R*,Lm)",
+                "Ec. 2",
+                "Xi3/2",
+                "a0"
+            ]
+        },
+        "MOND Non Local pure metric": {
+            "name": "MOND  No-local métric pura",
+            "id": "MOND Non Local pure metric",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "No-local",
+                "Acción General",
+                "Ec. 14",
+                "F(R,T)",
+                "F(R,Lm)",
+                "Ec. 18Mond",
+                "Xi3/2",
+                "a0"
+            ]
+        },
+        "MOND Local F(R,T)": {
+            "name": "MOND Local F(R,T)",
+            "id": "MOND Local F(R,T)",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "Ec. 1",
+                "F(R,T)",
+                "F(R,Lm)",
+                "Ec. 3",
+                "a0"
+            ]
+        }
+    },
+    "concepts": [
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "No toda positiva"
+            ],
+            "extent": [
+                "Semi-Riemannian",
+                "Lorentzian ST",
+                "Metric Affine ST",
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MetAff",
+                "MetAff01",
+                "MetAffHO",
+                "MOND local pure metric",
+                "MOND Non local Palatini",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "R2",
+                "Dependiente",
+                "Independiente",
+                "f(R) = R",
+                "f(R) ≠ R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "f’’(R) ≠ 0",
+                "f(R*) = R*",
+                "f(R*) ≠ R*",
+                "f’(R*) = 1",
+                "f’’(R*) = 0",
+                "f’’(R*) ≠ 0",
+                "T = 0",
+                "eta",
+                "K = 0",
+                "Cte < 0",
+                "Cte > 0",
+                "SM1",
+                "SM2",
+                "Ec. 5",
+                "Ec. 13",
+                "Ec. 6",
+                "Ec. 9a",
+                "Ec. 9b",
+                "Ec. 9c",
+                "Ec. 18",
+                "Ec. 19",
+                "Ec. de Einstein",
+                "Hyp",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ec. 46",
+                "Ec. 47",
+                "Ec. 48",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "No-local",
+                "Acción General",
+                "Acción General a la Palatini",
+                "k1 = c3/16piG",
+                "k2 = 1/c",
+                "Ec. 4",
+                "Ec. 8",
+                "Ec. 14",
+                "Ec. 1",
+                "F(R,T)",
+                "F(R*,T)",
+                "F(R,Lm)",
+                "F(R*,Lm)",
+                "Ec. 34 y 35",
+                "Ec. 2",
+                "Ec. 18Mond",
+                "Ec. 3",
+                "Xi3/2",
+                "a0"
+            ],
+            "extent": []
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "No toda positiva",
+                "D(g) = 0"
+            ],
+            "extent": [
+                "Semi-Riemannian",
+                "Lorentzian ST",
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MOND local pure metric",
+                "MOND Non local Palatini",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0"
+            ],
+            "extent": [
+                "Lorentzian ST",
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MOND local pure metric",
+                "MOND Non local Palatini",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MOND local pure metric",
+                "MOND Non local Palatini",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "a0"
+            ],
+            "extent": [
+                "MOND local pure metric",
+                "MOND Non local Palatini",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "No-local",
+                "Xi3/2",
+                "a0"
+            ],
+            "extent": [
+                "MOND Non local Palatini",
+                "MOND Non Local pure metric"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "No-local",
+                "Acción General",
+                "Ec. 14",
+                "F(R,T)",
+                "F(R,Lm)",
+                "Ec. 18Mond",
+                "Xi3/2",
+                "a0"
+            ],
+            "extent": [
+                "MOND Non Local pure metric"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "No-local",
+                "Acción General a la Palatini",
+                "Ec. 8",
+                "F(R*,T)",
+                "F(R*,Lm)",
+                "Ec. 2",
+                "Xi3/2",
+                "a0"
+            ],
+            "extent": [
+                "MOND Non local Palatini"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Acción General",
+                "F(R,Lm)",
+                "a0"
+            ],
+            "extent": [
+                "MOND local pure metric",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Acción General",
+                "F(R,T)",
+                "F(R,Lm)",
+                "a0"
+            ],
+            "extent": [
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "Ec. 1",
+                "F(R,T)",
+                "F(R,Lm)",
+                "Ec. 3",
+                "a0"
+            ],
+            "extent": [
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "F(R,Lm)",
+                "a0"
+            ],
+            "extent": [
+                "MOND local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "Ec. 4",
+                "F(R,Lm)",
+                "Ec. 34 y 35",
+                "a0"
+            ],
+            "extent": [
+                "MOND local pure metric"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Acción General a la Palatini"
+            ],
+            "extent": [
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MOND Non local Palatini"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "SM1",
+                "Ec. 13",
+                "Ec. 18",
+                "Ec. 19",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General a la Palatini"
+            ],
+            "extent": [
+                "Pal",
+                "Pal1",
+                "PalHO"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) = R*",
+                "f’(R*) = 1",
+                "f’’(R*) = 0",
+                "SM1",
+                "Ec. 13",
+                "Ec. 18",
+                "Ec. 19",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General a la Palatini"
+            ],
+            "extent": [
+                "Pal1"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) ≠ R*",
+                "f’’(R*) ≠ 0",
+                "SM1",
+                "Ec. 13",
+                "Ec. 18",
+                "Ec. 19",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General a la Palatini"
+            ],
+            "extent": [
+                "PalHO"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Acción General"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "MOND local pure metric",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "MOND local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) = R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "k1 = c3/16piG",
+                "k2 = 1/c"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) = R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "T = 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "k1 = c3/16piG",
+                "k2 = 1/c"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) = R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "T = 0",
+                "Cte < 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Ec. 9c",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "k1 = c3/16piG",
+                "k2 = 1/c"
+            ],
+            "extent": [
+                "Anti-De Sitter"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) = R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "T = 0",
+                "Cte > 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Ec. 9b",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "k1 = c3/16piG",
+                "k2 = 1/c"
+            ],
+            "extent": [
+                "Sitter"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) = R",
+                "f’(R) = 1",
+                "f’’(R) = 0",
+                "T = 0",
+                "eta",
+                "K = 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Ec. 9a",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General",
+                "k1 = c3/16piG",
+                "k2 = 1/c"
+            ],
+            "extent": [
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Escalar de Ricci",
+                "Dependiente",
+                "f(R) ≠ R",
+                "f’’(R) ≠ 0",
+                "SM1",
+                "Ec. 5",
+                "Ec. 6",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local",
+                "Acción General"
+            ],
+            "extent": [
+                "MetHO"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MOND local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "SM1",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "Pal",
+                "Pal1",
+                "PalHO"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "SM1",
+                "Ec. de Einstein",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "Ley Geodésica",
+                "G = 1",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0",
+                "Local"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Pal1"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Escalar de Ricci",
+                "Dependiente",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "No toda positiva",
+                "<1,3>",
+                "D(g) = 0"
+            ],
+            "extent": [
+                "Lorentzian ST",
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "MOND local pure metric",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrica",
+                "Tensor Métrico",
+                "Escalar de Ricci",
+                "Dependiente",
+                "Curvatura",
+                "No-metricidad",
+                "No-metricidad = 0",
+                "Vector de Weyl",
+                "Vector de Weyl = 0",
+                "Torsión de Cartan",
+                "Torsión de Cartan = 0",
+                "No toda positiva",
+                "D(g) = 0"
+            ],
+            "extent": [
+                "Semi-Riemannian",
+                "Lorentzian ST",
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "MOND local pure metric",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "G = 1",
+                "No toda positiva"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MetAff",
+                "MetAff01",
+                "MetAffHO",
+                "MOND local pure metric",
+                "MOND Non local Palatini",
+                "MOND Non Local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ],
+            "extent": [
+                "SR",
+                "Sitter",
+                "Anti-De Sitter",
+                "GR",
+                "Metric",
+                "MetHO",
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MetAff",
+                "MetAff01",
+                "MetAffHO",
+                "MOND local pure metric",
+                "MOND Local F(R,T)"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "Ec. 13",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ],
+            "extent": [
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MetAff",
+                "MetAff01",
+                "MetAffHO"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "SM2",
+                "Ec. 13",
+                "Hyp",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "Ec. 46",
+                "Ec. 47",
+                "Ec. 48",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ],
+            "extent": [
+                "MetAff",
+                "MetAff01",
+                "MetAffHO"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) ≠ R*",
+                "f’’(R*) ≠ 0",
+                "SM2",
+                "Ec. 13",
+                "Hyp",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "Ec. 46",
+                "Ec. 47",
+                "Ec. 48",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ],
+            "extent": [
+                "MetAffHO"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) = R*",
+                "f’(R*) = 1",
+                "SM2",
+                "Ec. 13",
+                "Hyp",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "Ec. 46",
+                "Ec. 47",
+                "Ec. 48",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ],
+            "extent": [
+                "MetAff01"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) ≠ R*",
+                "f’’(R*) ≠ 0",
+                "Ec. 13",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ],
+            "extent": [
+                "PalHO",
+                "MetAffHO"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "f(R*) = R*",
+                "f’(R*) = 1",
+                "Ec. 13",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "G = 1",
+                "No toda positiva",
+                "Local"
+            ],
+            "extent": [
+                "Pal1",
+                "MetAff01"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "Psi",
+                "T",
+                "R2",
+                "Independiente",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "G = 1",
+                "No toda positiva"
+            ],
+            "extent": [
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MetAff",
+                "MetAff01",
+                "MetAffHO",
+                "MOND Non local Palatini"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "Tensor Métrico",
+                "R2",
+                "Independiente",
+                "Curvatura",
+                "No-metricidad",
+                "Vector de Weyl",
+                "Torsión de Cartan",
+                "No toda positiva"
+            ],
+            "extent": [
+                "Metric Affine ST",
+                "Pal",
+                "Pal1",
+                "PalHO",
+                "MetAff",
+                "MetAff01",
+                "MetAffHO",
+                "MOND Non local Palatini"
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "hash": "1043032",
+            "idx": 0,
+            "level": 10,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "No toda positiva"
+                ],
+                "extent": [
+                    "Semi-Riemannian",
+                    "Lorentzian ST",
+                    "Metric Affine ST",
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MetAff",
+                    "MetAff01",
+                    "MetAffHO",
+                    "MOND local pure metric",
+                    "MOND Non local Palatini",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [],
+            "children": [
+                "3125340",
+                "780959",
+                "614835"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "No toda positiva",
+                "Torsión de Cartan",
+                "Vector de Weyl",
+                "No-metricidad",
+                "Curvatura",
+                "Tensor Métrico",
+                "Conexión Afín",
+                "M",
+                "N"
+            ],
+            "index": 0,
+            "weight": 3,
+            "x": 898.078753515638,
+            "y": 271.9734044973692,
+            "px": 898.078753515638,
+            "py": 271.9734044973692,
+            "fixed": 0
+        },
+        {
+            "hash": "2046",
+            "idx": 1,
+            "level": 0,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "R2",
+                    "Dependiente",
+                    "Independiente",
+                    "f(R) = R",
+                    "f(R) ≠ R",
+                    "f’(R) = 1",
+                    "f’’(R) = 0",
+                    "f’’(R) ≠ 0",
+                    "f(R*) = R*",
+                    "f(R*) ≠ R*",
+                    "f’(R*) = 1",
+                    "f’’(R*) = 0",
+                    "f’’(R*) ≠ 0",
+                    "T = 0",
+                    "eta",
+                    "K = 0",
+                    "Cte < 0",
+                    "Cte > 0",
+                    "SM1",
+                    "SM2",
+                    "Ec. 5",
+                    "Ec. 13",
+                    "Ec. 6",
+                    "Ec. 9a",
+                    "Ec. 9b",
+                    "Ec. 9c",
+                    "Ec. 18",
+                    "Ec. 19",
+                    "Ec. de Einstein",
+                    "Hyp",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ec. 46",
+                    "Ec. 47",
+                    "Ec. 48",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "No-local",
+                    "Acción General",
+                    "Acción General a la Palatini",
+                    "k1 = c3/16piG",
+                    "k2 = 1/c",
+                    "Ec. 4",
+                    "Ec. 8",
+                    "Ec. 14",
+                    "Ec. 1",
+                    "F(R,T)",
+                    "F(R*,T)",
+                    "F(R,Lm)",
+                    "F(R*,Lm)",
+                    "Ec. 34 y 35",
+                    "Ec. 2",
+                    "Ec. 18Mond",
+                    "Ec. 3",
+                    "Xi3/2",
+                    "a0"
+                ],
+                "extent": []
+            },
+            "parents": [
+                "1237204197",
+                "717042467",
+                "-1988608155",
+                "427605575",
+                "1248080207",
+                "1247427951",
+                "-1489048981",
+                "-1589712291",
+                "-1530992058",
+                "-1451287697",
+                "1349099319",
+                "1346895671"
+            ],
+            "children": [],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 1,
+            "weight": 12,
+            "x": 985.1969239797759,
+            "y": 2440.435828848771,
+            "px": 985.1969239797759,
+            "py": 2440.435828848771,
+            "fixed": 0
+        },
+        {
+            "hash": "3125340",
+            "idx": 2,
+            "level": 9,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "No toda positiva",
+                    "D(g) = 0"
+                ],
+                "extent": [
+                    "Semi-Riemannian",
+                    "Lorentzian ST",
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MOND local pure metric",
+                    "MOND Non local Palatini",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "1043032"
+            ],
+            "children": [
+                "4173917",
+                "3062612"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "D(g) = 0",
+                "Torsión de Cartan = 0",
+                "Vector de Weyl = 0",
+                "No-metricidad = 0"
+            ],
+            "index": 2,
+            "weight": 3,
+            "x": 1267.2925544554705,
+            "y": 354.14376636395605,
+            "px": 1267.2925544554705,
+            "py": 354.14376636395605,
+            "fixed": 0
+        },
+        {
+            "hash": "4173917",
+            "idx": 3,
+            "level": 8,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0"
+                ],
+                "extent": [
+                    "Lorentzian ST",
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MOND local pure metric",
+                    "MOND Non local Palatini",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "3125340"
+            ],
+            "children": [
+                "138129567",
+                "4111189"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "<1,3>"
+            ],
+            "index": 3,
+            "weight": 3,
+            "x": 1270.9081877498966,
+            "y": 471.3265300451803,
+            "px": 1270.9081877498966,
+            "py": 471.3265300451803,
+            "fixed": 0
+        },
+        {
+            "hash": "138129567",
+            "idx": 4,
+            "level": 7,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MOND local pure metric",
+                    "MOND Non local Palatini",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "4173917",
+                "780959"
+            ],
+            "children": [
+                "138132327",
+                "171785079",
+                "154844055",
+                "142127263"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "SM1"
+            ],
+            "index": 4,
+            "weight": 6,
+            "x": 1271.0842577216613,
+            "y": 616.2732432046589,
+            "px": 1271.0842577216613,
+            "py": 616.2732432046589,
+            "fixed": 0
+        },
+        {
+            "hash": "138132327",
+            "idx": 5,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "a0"
+                ],
+                "extent": [
+                    "MOND local pure metric",
+                    "MOND Non local Palatini",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "138129567"
+            ],
+            "children": [
+                "146749799",
+                "154844775"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "a0"
+            ],
+            "index": 5,
+            "weight": 3,
+            "x": 1901.1287326370102,
+            "y": 835.9645405013043,
+            "px": 1901.1287326370102,
+            "py": 835.9645405013043,
+            "fixed": 0
+        },
+        {
+            "hash": "146749799",
+            "idx": 6,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "No-local",
+                    "Xi3/2",
+                    "a0"
+                ],
+                "extent": [
+                    "MOND Non local Palatini",
+                    "MOND Non Local pure metric"
+                ]
+            },
+            "parents": [
+                "138132327"
+            ],
+            "children": [
+                "1237204197",
+                "717042467"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Xi3/2",
+                "No-local"
+            ],
+            "index": 6,
+            "weight": 3,
+            "x": 1951.5468583423626,
+            "y": 1277.7700152758052,
+            "px": 1951.5468583423626,
+            "py": 1277.7700152758052,
+            "fixed": 0
+        },
+        {
+            "hash": "1237204197",
+            "idx": 7,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "No-local",
+                    "Acción General",
+                    "Ec. 14",
+                    "F(R,T)",
+                    "F(R,Lm)",
+                    "Ec. 18Mond",
+                    "Xi3/2",
+                    "a0"
+                ],
+                "extent": [
+                    "MOND Non Local pure metric"
+                ]
+            },
+            "parents": [
+                "146749799",
+                "154812005"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "MOND Non Local pure metric"
+            ],
+            "labelAttributes": [
+                "Ec. 18Mond",
+                "Ec. 14"
+            ],
+            "index": 7,
+            "weight": 3,
+            "x": 1931.6921623482162,
+            "y": 1767.6576753505426,
+            "px": 1931.6921623482162,
+            "py": 1767.6576753505426,
+            "fixed": 0
+        },
+        {
+            "hash": "717042467",
+            "idx": 8,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "No-local",
+                    "Acción General a la Palatini",
+                    "Ec. 8",
+                    "F(R*,T)",
+                    "F(R*,Lm)",
+                    "Ec. 2",
+                    "Xi3/2",
+                    "a0"
+                ],
+                "extent": [
+                    "MOND Non local Palatini"
+                ]
+            },
+            "parents": [
+                "146749799",
+                "171785079"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "MOND Non local Palatini"
+            ],
+            "labelAttributes": [
+                "Ec. 2",
+                "F(R*,Lm)",
+                "F(R*,T)",
+                "Ec. 8"
+            ],
+            "index": 8,
+            "weight": 3,
+            "x": 1797.6996684542855,
+            "y": 1552.2046752541846,
+            "px": 1797.6996684542855,
+            "py": 1552.2046752541846,
+            "fixed": 0
+        },
+        {
+            "hash": "154844775",
+            "idx": 9,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Acción General",
+                    "F(R,Lm)",
+                    "a0"
+                ],
+                "extent": [
+                    "MOND local pure metric",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "138132327",
+                "154844055"
+            ],
+            "children": [
+                "154812005",
+                "158908007"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "F(R,Lm)"
+            ],
+            "index": 9,
+            "weight": 4,
+            "x": 1752.533119695442,
+            "y": 1058.4746467140899,
+            "px": 1752.533119695442,
+            "py": 1058.4746467140899,
+            "fixed": 0
+        },
+        {
+            "hash": "154812005",
+            "idx": 10,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Acción General",
+                    "F(R,T)",
+                    "F(R,Lm)",
+                    "a0"
+                ],
+                "extent": [
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "154844775"
+            ],
+            "children": [
+                "1237204197",
+                "-1988608155"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "F(R,T)"
+            ],
+            "index": 10,
+            "weight": 3,
+            "x": 1775.4635920728065,
+            "y": 1274.2279797299138,
+            "px": 1775.4635920728065,
+            "py": 1274.2279797299138,
+            "fixed": 0
+        },
+        {
+            "hash": "-1988608155",
+            "idx": 11,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General",
+                    "Ec. 1",
+                    "F(R,T)",
+                    "F(R,Lm)",
+                    "Ec. 3",
+                    "a0"
+                ],
+                "extent": [
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "154812005",
+                "158908007"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "MOND Local F(R,T)"
+            ],
+            "labelAttributes": [
+                "Ec. 3",
+                "Ec. 1"
+            ],
+            "index": 11,
+            "weight": 3,
+            "x": 1682.8902622714759,
+            "y": 1802.6269642527664,
+            "px": 1682.8902622714759,
+            "py": 1802.6269642527664,
+            "fixed": 0
+        },
+        {
+            "hash": "158908007",
+            "idx": 12,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General",
+                    "F(R,Lm)",
+                    "a0"
+                ],
+                "extent": [
+                    "MOND local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "154844775",
+                "158907287"
+            ],
+            "children": [
+                "-1988608155",
+                "427605575"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 12,
+            "weight": 4,
+            "x": 1571.0873199838256,
+            "y": 1417.2823305773877,
+            "px": 1571.0873199838256,
+            "py": 1417.2823305773877,
+            "fixed": 0
+        },
+        {
+            "hash": "427605575",
+            "idx": 13,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General",
+                    "Ec. 4",
+                    "F(R,Lm)",
+                    "Ec. 34 y 35",
+                    "a0"
+                ],
+                "extent": [
+                    "MOND local pure metric"
+                ]
+            },
+            "parents": [
+                "158908007"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "MOND local pure metric"
+            ],
+            "labelAttributes": [
+                "Ec. 34 y 35",
+                "Ec. 4"
+            ],
+            "index": 13,
+            "weight": 2,
+            "x": 1451.0003760708737,
+            "y": 1799.0136112846417,
+            "px": 1451.0003760708737,
+            "py": 1799.0136112846417,
+            "fixed": 0
+        },
+        {
+            "hash": "171785079",
+            "idx": 14,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Acción General a la Palatini"
+                ],
+                "extent": [
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MOND Non local Palatini"
+                ]
+            },
+            "parents": [
+                "138129567",
+                "876919"
+            ],
+            "children": [
+                "717042467",
+                "1249786735"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Acción General a la Palatini"
+            ],
+            "index": 14,
+            "weight": 4,
+            "x": 988.0815338137845,
+            "y": 768.4323691083482,
+            "px": 988.0815338137845,
+            "py": 768.4323691083482,
+            "fixed": 0
+        },
+        {
+            "hash": "1249786735",
+            "idx": 15,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "SM1",
+                    "Ec. 13",
+                    "Ec. 18",
+                    "Ec. 19",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General a la Palatini"
+                ],
+                "extent": [
+                    "Pal",
+                    "Pal1",
+                    "PalHO"
+                ]
+            },
+            "parents": [
+                "171785079",
+                "142487711",
+                "1078747511"
+            ],
+            "children": [
+                "1248080207",
+                "1247427951"
+            ],
+            "labelObjects": [
+                "Pal"
+            ],
+            "labelAttributes": [
+                "Ec. 19",
+                "Ec. 18"
+            ],
+            "index": 15,
+            "weight": 5,
+            "x": 628.1627031392568,
+            "y": 1324.1336989699842,
+            "px": 628.1627031392568,
+            "py": 1324.1336989699842,
+            "fixed": 0
+        },
+        {
+            "hash": "1248080207",
+            "idx": 16,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "f(R*) = R*",
+                    "f’(R*) = 1",
+                    "f’’(R*) = 0",
+                    "SM1",
+                    "Ec. 13",
+                    "Ec. 18",
+                    "Ec. 19",
+                    "Ec. de Einstein",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General a la Palatini"
+                ],
+                "extent": [
+                    "Pal1"
+                ]
+            },
+            "parents": [
+                "1249786735",
+                "142490431",
+                "1078344567"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "Pal1"
+            ],
+            "labelAttributes": [
+                "f’’(R*) = 0"
+            ],
+            "index": 16,
+            "weight": 4,
+            "x": 713.3356956200978,
+            "y": 1773.746718440827,
+            "px": 713.3356956200978,
+            "py": 1773.746718440827,
+            "fixed": 0
+        },
+        {
+            "hash": "1247427951",
+            "idx": 17,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "f(R*) ≠ R*",
+                    "f’’(R*) ≠ 0",
+                    "SM1",
+                    "Ec. 13",
+                    "Ec. 18",
+                    "Ec. 19",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General a la Palatini"
+                ],
+                "extent": [
+                    "PalHO"
+                ]
+            },
+            "parents": [
+                "1249786735",
+                "1080579959"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "PalHO"
+            ],
+            "labelAttributes": [],
+            "index": 17,
+            "weight": 3,
+            "x": 508.2318894528132,
+            "y": 1769.1041154621407,
+            "px": 508.2318894528132,
+            "py": 1769.1041154621407,
+            "fixed": 0
+        },
+        {
+            "hash": "154844055",
+            "idx": 18,
+            "level": 6,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Acción General"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "MOND local pure metric",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "138129567",
+                "4111189"
+            ],
+            "children": [
+                "154844775",
+                "158907287"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Acción General"
+            ],
+            "index": 18,
+            "weight": 4,
+            "x": 1518.6499998566242,
+            "y": 824.8560753600686,
+            "px": 1518.6499998566242,
+            "py": 824.8560753600686,
+            "fixed": 0
+        },
+        {
+            "hash": "158907287",
+            "idx": 19,
+            "level": 5,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "MOND local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "154844055",
+                "142127263"
+            ],
+            "children": [
+                "158908007",
+                "-1451345001"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 19,
+            "weight": 4,
+            "x": 1310.7339991696422,
+            "y": 1173.4263833266486,
+            "px": 1310.7339991696422,
+            "py": 1173.4263833266486,
+            "fixed": 0
+        },
+        {
+            "hash": "-1451345001",
+            "idx": 20,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "SM1",
+                    "Ec. 5",
+                    "Ec. 6",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO"
+                ]
+            },
+            "parents": [
+                "158907287",
+                "142487711"
+            ],
+            "children": [
+                "-1518409161",
+                "-1451287697"
+            ],
+            "labelObjects": [
+                "Metric"
+            ],
+            "labelAttributes": [
+                "Ec. 6",
+                "Ec. 5"
+            ],
+            "index": 20,
+            "weight": 4,
+            "x": 1117.2988747447375,
+            "y": 1353.1688736233896,
+            "px": 1117.2988747447375,
+            "py": 1353.1688736233896,
+            "fixed": 0
+        },
+        {
+            "hash": "-1518409161",
+            "idx": 21,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "f(R) = R",
+                    "f’(R) = 1",
+                    "f’’(R) = 0",
+                    "SM1",
+                    "Ec. 5",
+                    "Ec. 6",
+                    "Ec. de Einstein",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General",
+                    "k1 = c3/16piG",
+                    "k2 = 1/c"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR"
+                ]
+            },
+            "parents": [
+                "-1451345001",
+                "142490431"
+            ],
+            "children": [
+                "-1522603401"
+            ],
+            "labelObjects": [
+                "GR"
+            ],
+            "labelAttributes": [
+                "k2 = 1/c",
+                "k1 = c3/16piG",
+                "f’’(R) = 0",
+                "f’(R) = 1",
+                "f(R) = R"
+            ],
+            "index": 21,
+            "weight": 3,
+            "x": 945.4104146238012,
+            "y": 1778.3182006062934,
+            "px": 945.4104146238012,
+            "py": 1778.3182006062934,
+            "fixed": 0
+        },
+        {
+            "hash": "-1522603401",
+            "idx": 22,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "f(R) = R",
+                    "f’(R) = 1",
+                    "f’’(R) = 0",
+                    "T = 0",
+                    "SM1",
+                    "Ec. 5",
+                    "Ec. 6",
+                    "Ec. de Einstein",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General",
+                    "k1 = c3/16piG",
+                    "k2 = 1/c"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter"
+                ]
+            },
+            "parents": [
+                "-1518409161"
+            ],
+            "children": [
+                "-1489048981",
+                "-1589712291",
+                "-1530992058"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "T = 0"
+            ],
+            "index": 22,
+            "weight": 4,
+            "x": 952.2862001283552,
+            "y": 1928.4580759428372,
+            "px": 952.2862001283552,
+            "py": 1928.4580759428372,
+            "fixed": 0
+        },
+        {
+            "hash": "-1489048981",
+            "idx": 23,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "f(R) = R",
+                    "f’(R) = 1",
+                    "f’’(R) = 0",
+                    "T = 0",
+                    "Cte < 0",
+                    "SM1",
+                    "Ec. 5",
+                    "Ec. 6",
+                    "Ec. 9c",
+                    "Ec. de Einstein",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General",
+                    "k1 = c3/16piG",
+                    "k2 = 1/c"
+                ],
+                "extent": [
+                    "Anti-De Sitter"
+                ]
+            },
+            "parents": [
+                "-1522603401"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "Anti-De Sitter"
+            ],
+            "labelAttributes": [
+                "Ec. 9c",
+                "Cte < 0"
+            ],
+            "index": 23,
+            "weight": 2,
+            "x": 724.2431343982364,
+            "y": 2130.8255126038903,
+            "px": 724.2431343982364,
+            "py": 2130.8255126038903,
+            "fixed": 0
+        },
+        {
+            "hash": "-1589712291",
+            "idx": 24,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "f(R) = R",
+                    "f’(R) = 1",
+                    "f’’(R) = 0",
+                    "T = 0",
+                    "Cte > 0",
+                    "SM1",
+                    "Ec. 5",
+                    "Ec. 6",
+                    "Ec. 9b",
+                    "Ec. de Einstein",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General",
+                    "k1 = c3/16piG",
+                    "k2 = 1/c"
+                ],
+                "extent": [
+                    "Sitter"
+                ]
+            },
+            "parents": [
+                "-1522603401"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "Sitter"
+            ],
+            "labelAttributes": [
+                "Ec. 9b",
+                "Cte > 0"
+            ],
+            "index": 24,
+            "weight": 2,
+            "x": 1121.1096117657798,
+            "y": 2103.480521544859,
+            "px": 1121.1096117657798,
+            "py": 2103.480521544859,
+            "fixed": 0
+        },
+        {
+            "hash": "-1530992058",
+            "idx": 25,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "f(R) = R",
+                    "f’(R) = 1",
+                    "f’’(R) = 0",
+                    "T = 0",
+                    "eta",
+                    "K = 0",
+                    "SM1",
+                    "Ec. 5",
+                    "Ec. 6",
+                    "Ec. 9a",
+                    "Ec. de Einstein",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General",
+                    "k1 = c3/16piG",
+                    "k2 = 1/c"
+                ],
+                "extent": [
+                    "SR"
+                ]
+            },
+            "parents": [
+                "-1522603401"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "SR"
+            ],
+            "labelAttributes": [
+                "Ec. 9a",
+                "K = 0",
+                "eta"
+            ],
+            "index": 25,
+            "weight": 2,
+            "x": 954.6064379883378,
+            "y": 2219.7969803451874,
+            "px": 954.6064379883378,
+            "py": 2219.7969803451874,
+            "fixed": 0
+        },
+        {
+            "hash": "-1451287697",
+            "idx": 26,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "f(R) ≠ R",
+                    "f’’(R) ≠ 0",
+                    "SM1",
+                    "Ec. 5",
+                    "Ec. 6",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local",
+                    "Acción General"
+                ],
+                "extent": [
+                    "MetHO"
+                ]
+            },
+            "parents": [
+                "-1451345001"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "MetHO"
+            ],
+            "labelAttributes": [
+                "f’’(R) ≠ 0",
+                "f(R) ≠ R"
+            ],
+            "index": 26,
+            "weight": 2,
+            "x": 1207.3368896638867,
+            "y": 1777.601090321239,
+            "px": 1207.3368896638867,
+            "py": 1777.601090321239,
+            "fixed": 0
+        },
+        {
+            "hash": "142127263",
+            "idx": 27,
+            "level": 6,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MOND local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "138129567",
+                "4778655"
+            ],
+            "children": [
+                "158907287",
+                "142487711"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 27,
+            "weight": 4,
+            "x": 1094.488969480878,
+            "y": 981.8137092041368,
+            "px": 1094.488969480878,
+            "py": 981.8137092041368,
+            "fixed": 0
+        },
+        {
+            "hash": "142487711",
+            "idx": 28,
+            "level": 5,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "SM1",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "Pal",
+                    "Pal1",
+                    "PalHO"
+                ]
+            },
+            "parents": [
+                "142127263"
+            ],
+            "children": [
+                "1249786735",
+                "-1451345001",
+                "142490431"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Ley Geodésica"
+            ],
+            "index": 28,
+            "weight": 4,
+            "x": 851.9650790144408,
+            "y": 1149.1601095176075,
+            "px": 851.9650790144408,
+            "py": 1149.1601095176075,
+            "fixed": 0
+        },
+        {
+            "hash": "142490431",
+            "idx": 29,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "SM1",
+                    "Ec. de Einstein",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "Ley Geodésica",
+                    "G = 1",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0",
+                    "Local"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Pal1"
+                ]
+            },
+            "parents": [
+                "142487711"
+            ],
+            "children": [
+                "-1518409161",
+                "1248080207"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Ec. de Einstein"
+            ],
+            "index": 29,
+            "weight": 3,
+            "x": 831.8000252480449,
+            "y": 1404.3498529325589,
+            "px": 831.8000252480449,
+            "py": 1404.3498529325589,
+            "fixed": 0
+        },
+        {
+            "hash": "4111189",
+            "idx": 30,
+            "level": 7,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "No toda positiva",
+                    "<1,3>",
+                    "D(g) = 0"
+                ],
+                "extent": [
+                    "Lorentzian ST",
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "MOND local pure metric",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "4173917",
+                "3062612"
+            ],
+            "children": [
+                "154844055"
+            ],
+            "labelObjects": [
+                "Lorentzian ST"
+            ],
+            "labelAttributes": [],
+            "index": 30,
+            "weight": 3,
+            "x": 1513.3960425481955,
+            "y": 571.9189332776957,
+            "px": 1513.3960425481955,
+            "py": 571.9189332776957,
+            "fixed": 0
+        },
+        {
+            "hash": "3062612",
+            "idx": 31,
+            "level": 8,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrica",
+                    "Tensor Métrico",
+                    "Escalar de Ricci",
+                    "Dependiente",
+                    "Curvatura",
+                    "No-metricidad",
+                    "No-metricidad = 0",
+                    "Vector de Weyl",
+                    "Vector de Weyl = 0",
+                    "Torsión de Cartan",
+                    "Torsión de Cartan = 0",
+                    "No toda positiva",
+                    "D(g) = 0"
+                ],
+                "extent": [
+                    "Semi-Riemannian",
+                    "Lorentzian ST",
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "MOND local pure metric",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "3125340"
+            ],
+            "children": [
+                "4111189"
+            ],
+            "labelObjects": [
+                "Semi-Riemannian"
+            ],
+            "labelAttributes": [
+                "Dependiente",
+                "Escalar de Ricci",
+                "Conexión Métrica"
+            ],
+            "index": 31,
+            "weight": 2,
+            "x": 1510.4811583114283,
+            "y": 453.77685179580055,
+            "px": 1510.4811583114283,
+            "py": 453.77685179580055,
+            "fixed": 0
+        },
+        {
+            "hash": "780959",
+            "idx": 32,
+            "level": 8,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "G = 1",
+                    "No toda positiva"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MetAff",
+                    "MetAff01",
+                    "MetAffHO",
+                    "MOND local pure metric",
+                    "MOND Non local Palatini",
+                    "MOND Non Local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "1043032"
+            ],
+            "children": [
+                "4778655",
+                "138129567",
+                "876919"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "G = 1",
+                "T",
+                "Psi"
+            ],
+            "index": 32,
+            "weight": 4,
+            "x": 896.9516503680393,
+            "y": 511.1494784528468,
+            "px": 896.9516503680393,
+            "py": 511.1494784528468,
+            "fixed": 0
+        },
+        {
+            "hash": "4778655",
+            "idx": 33,
+            "level": 7,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "G = 1",
+                    "No toda positiva",
+                    "Local"
+                ],
+                "extent": [
+                    "SR",
+                    "Sitter",
+                    "Anti-De Sitter",
+                    "GR",
+                    "Metric",
+                    "MetHO",
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MetAff",
+                    "MetAff01",
+                    "MetAffHO",
+                    "MOND local pure metric",
+                    "MOND Local F(R,T)"
+                ]
+            },
+            "parents": [
+                "780959"
+            ],
+            "children": [
+                "142127263",
+                "1078747511"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Local"
+            ],
+            "index": 33,
+            "weight": 3,
+            "x": 684.4380166569076,
+            "y": 778.1153321969712,
+            "px": 684.4380166569076,
+            "py": 778.1153321969712,
+            "fixed": 0
+        },
+        {
+            "hash": "1078747511",
+            "idx": 34,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "Ec. 13",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "G = 1",
+                    "No toda positiva",
+                    "Local"
+                ],
+                "extent": [
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MetAff",
+                    "MetAff01",
+                    "MetAffHO"
+                ]
+            },
+            "parents": [
+                "4778655",
+                "876919"
+            ],
+            "children": [
+                "1249786735",
+                "1347268407",
+                "1080579959",
+                "1078344567"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Ec. 13"
+            ],
+            "index": 34,
+            "weight": 6,
+            "x": 346.7112091909321,
+            "y": 1015.1781731919639,
+            "px": 346.7112091909321,
+            "py": 1015.1781731919639,
+            "fixed": 0
+        },
+        {
+            "hash": "1347268407",
+            "idx": 35,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "SM2",
+                    "Ec. 13",
+                    "Hyp",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "Ec. 46",
+                    "Ec. 47",
+                    "Ec. 48",
+                    "G = 1",
+                    "No toda positiva",
+                    "Local"
+                ],
+                "extent": [
+                    "MetAff",
+                    "MetAff01",
+                    "MetAffHO"
+                ]
+            },
+            "parents": [
+                "1078747511"
+            ],
+            "children": [
+                "1349099319",
+                "1346895671"
+            ],
+            "labelObjects": [
+                "MetAff"
+            ],
+            "labelAttributes": [
+                "Ec. 48",
+                "Ec. 47",
+                "Ec. 46",
+                "Hyp",
+                "SM2"
+            ],
+            "index": 35,
+            "weight": 3,
+            "x": 110.72370441171353,
+            "y": 1465.037410231097,
+            "px": 110.72370441171353,
+            "py": 1465.037410231097,
+            "fixed": 0
+        },
+        {
+            "hash": "1349099319",
+            "idx": 36,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "f(R*) ≠ R*",
+                    "f’’(R*) ≠ 0",
+                    "SM2",
+                    "Ec. 13",
+                    "Hyp",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "Ec. 46",
+                    "Ec. 47",
+                    "Ec. 48",
+                    "G = 1",
+                    "No toda positiva",
+                    "Local"
+                ],
+                "extent": [
+                    "MetAffHO"
+                ]
+            },
+            "parents": [
+                "1347268407",
+                "1080579959"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "MetAffHO"
+            ],
+            "labelAttributes": [],
+            "index": 36,
+            "weight": 3,
+            "x": 106.54744665825362,
+            "y": 1863.9780728140286,
+            "px": 106.54744665825362,
+            "py": 1863.9780728140286,
+            "fixed": 0
+        },
+        {
+            "hash": "1346895671",
+            "idx": 37,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "f(R*) = R*",
+                    "f’(R*) = 1",
+                    "SM2",
+                    "Ec. 13",
+                    "Hyp",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "Ec. 46",
+                    "Ec. 47",
+                    "Ec. 48",
+                    "G = 1",
+                    "No toda positiva",
+                    "Local"
+                ],
+                "extent": [
+                    "MetAff01"
+                ]
+            },
+            "parents": [
+                "1347268407",
+                "1078344567"
+            ],
+            "children": [
+                "2046"
+            ],
+            "labelObjects": [
+                "MetAff01"
+            ],
+            "labelAttributes": [],
+            "index": 37,
+            "weight": 3,
+            "x": 236.34364596167165,
+            "y": 1769.4521323785957,
+            "px": 236.34364596167165,
+            "py": 1769.4521323785957,
+            "fixed": 0
+        },
+        {
+            "hash": "1080579959",
+            "idx": 38,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "f(R*) ≠ R*",
+                    "f’’(R*) ≠ 0",
+                    "Ec. 13",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "G = 1",
+                    "No toda positiva",
+                    "Local"
+                ],
+                "extent": [
+                    "PalHO",
+                    "MetAffHO"
+                ]
+            },
+            "parents": [
+                "1078747511"
+            ],
+            "children": [
+                "1247427951",
+                "1349099319"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "f’’(R*) ≠ 0",
+                "f(R*) ≠ R*"
+            ],
+            "index": 38,
+            "weight": 3,
+            "x": 287.342257232935,
+            "y": 1331.567764577022,
+            "px": 287.342257232935,
+            "py": 1331.567764577022,
+            "fixed": 0
+        },
+        {
+            "hash": "1078344567",
+            "idx": 39,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "f(R*) = R*",
+                    "f’(R*) = 1",
+                    "Ec. 13",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "G = 1",
+                    "No toda positiva",
+                    "Local"
+                ],
+                "extent": [
+                    "Pal1",
+                    "MetAff01"
+                ]
+            },
+            "parents": [
+                "1078747511"
+            ],
+            "children": [
+                "1248080207",
+                "1346895671"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "f’(R*) = 1",
+                "f(R*) = R*"
+            ],
+            "index": 39,
+            "weight": 3,
+            "x": 443.6966378989057,
+            "y": 1509.5914894315665,
+            "px": 443.6966378989057,
+            "py": 1509.5914894315665,
+            "fixed": 0
+        },
+        {
+            "hash": "876919",
+            "idx": 40,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "Psi",
+                    "T",
+                    "R2",
+                    "Independiente",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "G = 1",
+                    "No toda positiva"
+                ],
+                "extent": [
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MetAff",
+                    "MetAff01",
+                    "MetAffHO",
+                    "MOND Non local Palatini"
+                ]
+            },
+            "parents": [
+                "780959",
+                "614835"
+            ],
+            "children": [
+                "171785079",
+                "1078747511"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 40,
+            "weight": 4,
+            "x": 559.2079028850399,
+            "y": 616.7789252147918,
+            "px": 559.2079028850399,
+            "py": 616.7789252147918,
+            "fixed": 0
+        },
+        {
+            "hash": "614835",
+            "idx": 41,
+            "level": 5,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "Tensor Métrico",
+                    "R2",
+                    "Independiente",
+                    "Curvatura",
+                    "No-metricidad",
+                    "Vector de Weyl",
+                    "Torsión de Cartan",
+                    "No toda positiva"
+                ],
+                "extent": [
+                    "Metric Affine ST",
+                    "Pal",
+                    "Pal1",
+                    "PalHO",
+                    "MetAff",
+                    "MetAff01",
+                    "MetAffHO",
+                    "MOND Non local Palatini"
+                ]
+            },
+            "parents": [
+                "1043032"
+            ],
+            "children": [
+                "876919"
+            ],
+            "labelObjects": [
+                "Metric Affine ST"
+            ],
+            "labelAttributes": [
+                "Independiente",
+                "R2",
+                "Conexión Métrico-Afín"
+            ],
+            "index": 41,
+            "weight": 2,
+            "x": 550.3822948993945,
+            "y": 433.8538951806188,
+            "px": 550.3822948993945,
+            "py": 433.8538951806188,
+            "fixed": 0
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 2
+        },
+        {
+            "source": 0,
+            "target": 32
+        },
+        {
+            "source": 0,
+            "target": 41
+        },
+        {
+            "source": 2,
+            "target": 3
+        },
+        {
+            "source": 2,
+            "target": 31
+        },
+        {
+            "source": 3,
+            "target": 4
+        },
+        {
+            "source": 3,
+            "target": 30
+        },
+        {
+            "source": 4,
+            "target": 5
+        },
+        {
+            "source": 4,
+            "target": 14
+        },
+        {
+            "source": 4,
+            "target": 18
+        },
+        {
+            "source": 4,
+            "target": 27
+        },
+        {
+            "source": 5,
+            "target": 6
+        },
+        {
+            "source": 5,
+            "target": 9
+        },
+        {
+            "source": 6,
+            "target": 7
+        },
+        {
+            "source": 6,
+            "target": 8
+        },
+        {
+            "source": 7,
+            "target": 1
+        },
+        {
+            "source": 8,
+            "target": 1
+        },
+        {
+            "source": 9,
+            "target": 10
+        },
+        {
+            "source": 9,
+            "target": 12
+        },
+        {
+            "source": 10,
+            "target": 7
+        },
+        {
+            "source": 10,
+            "target": 11
+        },
+        {
+            "source": 11,
+            "target": 1
+        },
+        {
+            "source": 12,
+            "target": 11
+        },
+        {
+            "source": 12,
+            "target": 13
+        },
+        {
+            "source": 13,
+            "target": 1
+        },
+        {
+            "source": 14,
+            "target": 8
+        },
+        {
+            "source": 14,
+            "target": 15
+        },
+        {
+            "source": 15,
+            "target": 16
+        },
+        {
+            "source": 15,
+            "target": 17
+        },
+        {
+            "source": 16,
+            "target": 1
+        },
+        {
+            "source": 17,
+            "target": 1
+        },
+        {
+            "source": 18,
+            "target": 9
+        },
+        {
+            "source": 18,
+            "target": 19
+        },
+        {
+            "source": 19,
+            "target": 12
+        },
+        {
+            "source": 19,
+            "target": 20
+        },
+        {
+            "source": 20,
+            "target": 21
+        },
+        {
+            "source": 20,
+            "target": 26
+        },
+        {
+            "source": 21,
+            "target": 22
+        },
+        {
+            "source": 22,
+            "target": 23
+        },
+        {
+            "source": 22,
+            "target": 24
+        },
+        {
+            "source": 22,
+            "target": 25
+        },
+        {
+            "source": 23,
+            "target": 1
+        },
+        {
+            "source": 24,
+            "target": 1
+        },
+        {
+            "source": 25,
+            "target": 1
+        },
+        {
+            "source": 26,
+            "target": 1
+        },
+        {
+            "source": 27,
+            "target": 19
+        },
+        {
+            "source": 27,
+            "target": 28
+        },
+        {
+            "source": 28,
+            "target": 15
+        },
+        {
+            "source": 28,
+            "target": 20
+        },
+        {
+            "source": 28,
+            "target": 29
+        },
+        {
+            "source": 29,
+            "target": 21
+        },
+        {
+            "source": 29,
+            "target": 16
+        },
+        {
+            "source": 30,
+            "target": 18
+        },
+        {
+            "source": 31,
+            "target": 30
+        },
+        {
+            "source": 32,
+            "target": 33
+        },
+        {
+            "source": 32,
+            "target": 4
+        },
+        {
+            "source": 32,
+            "target": 40
+        },
+        {
+            "source": 33,
+            "target": 27
+        },
+        {
+            "source": 33,
+            "target": 34
+        },
+        {
+            "source": 34,
+            "target": 15
+        },
+        {
+            "source": 34,
+            "target": 35
+        },
+        {
+            "source": 34,
+            "target": 38
+        },
+        {
+            "source": 34,
+            "target": 39
+        },
+        {
+            "source": 35,
+            "target": 36
+        },
+        {
+            "source": 35,
+            "target": 37
+        },
+        {
+            "source": 36,
+            "target": 1
+        },
+        {
+            "source": 37,
+            "target": 1
+        },
+        {
+            "source": 38,
+            "target": 17
+        },
+        {
+            "source": 38,
+            "target": 36
+        },
+        {
+            "source": 39,
+            "target": 16
+        },
+        {
+            "source": 39,
+            "target": 37
+        },
+        {
+            "source": 40,
+            "target": 14
+        },
+        {
+            "source": 40,
+            "target": 34
+        },
+        {
+            "source": 41,
+            "target": 40
+        }
+    ],
+    "classDescriptions": [
+        {
+            "key": "M",
+            "desc": "Variedad diferenciable"
+        },
+        {
+            "key": "GO",
+            "desc": "Objetos geométricos en M"
+        },
+        {
+            "key": "Tip",
+            "desc": "Tipificaciones"
+        },
+        {
+            "key": "Cond",
+            "desc": "Condiciones"
+        },
+        {
+            "key": "Action",
+            "desc": "Acción"
+        },
+        {
+            "key": "FieldEq",
+            "desc": "Ecuaciones de campo"
+        },
+        {
+            "key": "MovEq",
+            "desc": "Ecuaciones de movimiento"
+        },
+        {
+            "key": "ElemDis",
+            "desc": "Elementos distinguidos"
+        }
+    ],
+    "classes": {
+        "N": "Tip",
+        "M": "M",
+        "Conexión Afín": "GO",
+        "Conexión Métrica": "GO",
+        "Conexión Métrico-Afín": "GO",
+        "Tensor Métrico": "GO",
+        "Psi": "GO",
+        "T": "GO",
+        "Escalar de Ricci": "GO",
+        "R2": "GO",
+        "Dependiente": "Tip",
+        "Independiente": "Tip",
+        "f(R) = R": "Cond",
+        "f(R) ≠ R": "Cond",
+        "f’(R) = 1": "Cond",
+        "f’’(R) = 0": "Cond",
+        "f’’(R) ≠ 0": "Cond",
+        "f(R*) = R*": "Cond",
+        "f(R*) ≠ R*": "Cond",
+        "f’(R*) = 1": "Cond",
+        "f’’(R*) = 0": "Cond",
+        "f’’(R*) ≠ 0": "Cond",
+        "T = 0": "Cond",
+        "eta": "GO",
+        "K = 0": "Cond",
+        "Cte < 0": "Cond",
+        "Cte > 0": "Cond",
+        "SM1": "Action",
+        "SM2": "Action",
+        "Ec. 5": "Action",
+        "Ec. 13": "Action",
+        "Ec. 6": "FieldEq",
+        "Ec. 9a": "FieldEq",
+        "Ec. 9b": "FieldEq",
+        "Ec. 9c": "FieldEq",
+        "Ec. 18": "FieldEq",
+        "Ec. 19": "FieldEq",
+        "Ec. de Einstein": "FieldEq",
+        "Hyp": "GO",
+        "Curvatura": "GO",
+        "No-metricidad": "GO",
+        "No-metricidad = 0": "Cond",
+        "Vector de Weyl": "GO",
+        "Vector de Weyl = 0": "Cond",
+        "Torsión de Cartan": "GO",
+        "Torsión de Cartan = 0": "Cond",
+        "Ec. 46": "FieldEq",
+        "Ec. 47": "FieldEq",
+        "Ec. 48": "FieldEq",
+        "Ley Geodésica": "MovEq",
+        "G = 1": "ElemDis",
+        "No toda positiva": "Tip",
+        "<1,3>": "Tip",
+        "D(g) = 0": "Cond",
+        "Local": "Cond",
+        "No-local": "Cond",
+        "Acción General": "Action",
+        "Acción General a la Palatini": "Action",
+        "k1 = c3/16piG": "ElemDis",
+        "k2 = 1/c": "ElemDis",
+        "Ec. 4": "FieldEq",
+        "Ec. 8": "FieldEq",
+        "Ec. 14": "FieldEq",
+        "Ec. 1": "FieldEq",
+        "F(R,T)": "Action",
+        "F(R*,T)": "Action",
+        "F(R,Lm)": "Action",
+        "F(R*,Lm)": "Action",
+        "Ec. 34 y 35": "MovEq",
+        "Ec. 2": "MovEq",
+        "Ec. 18Mond": "MovEq",
+        "Ec. 3": "MovEq",
+        "Xi3/2": "GO",
+        "a0": "ElemDis"
+    }
+}

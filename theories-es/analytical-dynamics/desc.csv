@@ -1,0 +1,32 @@
+Independent,Explanation,Dependent,Atributo,Class
+Tiempo,"T is an interval of real line.
+Every t represents an instant of time
+the relation ≤ that orders T means “earlier than or simultaneous with”",,Tiempo,Chronogeometrical
+Sistema de partículas,,,Sistema de partículas,Referents
+Espacio Euclidiano,"$E^{3}$ is 3-dimensional  Euclidean space. 
+$E^{3}$ represents (maps) ordinary space.",,Espacio Euclidiano,Chronogeometrical
+Marco de Referencia,"$K$ is a nonempty denumerable set. 
+Every $k$ is a rigid system of corpuscles at least four of which lie on the vertices of a regular trihedral. 
+For every $k$ there exists a Cartesian system of axes $e=\left\langle e_{1},e_{2}.e_{3}\right\rangle $ such that $e\hat{=}k$. 
+No $k$ interacts with any $\sigma\subset\Sigma$ that is not a part of $k$. 
+The configuration of every $k\in K$ is time-independent.",,Marco de Referencia,Frames
+Coordenadas Físicas,,,Coordenadas Físicas,Frames
+Masa,"$M$ is a function from $\Sigma$ to the set $\mathbb{R^{+}}$ of nonnegative reals. 
+The value of $M$ at $\sigma,\in\Sigma$ represents the mass (inertia) of $\sigma$. ",,Masa,Family
+Fuerza Externa,"Every $F^{e}\in\left\{ F^{e}\right\}$ is a real valued vector on $\Sigma\times K\times E^{3}\times T$. 
+The value of $F^{e}$ at any given 6-ple $\left\langle \sigma,k,x,t\right\rangle $ represents the external force acting on $\sigma$, relative to the frame $k$, at the place $x$ and the instant $t$.",,Fuerza Externa,Family
+fuerza inter-partículas,"Every $F^{i}\in\left\{ F^{i}\right\} $ is a real valued vector on $\Sigma\times\Sigma\times K\times E^{3}\times T$. 
+The value of $F^{i}$ at any given 7-ple $\left\langle \sigma,\sigma',k,x,t\right\rangle $ represents the force extended by $\sigma'$ on $sigma$ relative to $k$ at $x$ and $t$.",,fuerza inter-partículas,Family
+Sistema físico,"$\Sigma\neq\emptyset$. 
+Every $\sigma\subset\Sigma$ represents a physical system.",,Sistema físico,Referents
+Hamiltoniano,A general framework for describing the evolution of physical systems. A scalar function on a manifold interpretable as the energy of the system,,Hamiltoniano,Family
+Espacio fase,,,Espacio fase,Chronogeometrical
+Poisson,Tensor field,,Poisson,Family
+Espacio de configuración,,,Espacio de configuración,Chronogeometrical
+Lagrangiano,,,Lagrangiano,Family
+Acción,,,Acción,Postulates
+Ec 01,,,Ec 01,EqMotion
+Ec 02,,,Ec 02,EqMotion
+Ec 03,,,Ec 03,EqMotion
+Ec 04,,,Ec 04,EqMotion
+Ec 05,,,Ec 05,EqMotion

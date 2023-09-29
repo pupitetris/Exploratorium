@@ -1,0 +1,22 @@
+[% WRAPPER page logos=1 %]
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+[% PROCESS print block=page %]
+
+          </div>
+          <div class="col-lg-3">
+            <div class="ligas">
+[% FOREACH link IN menu.children %]
+              <a href="[% PROCESS rel_href href=link.href %]" class="btn btn-outline-success">[% link.text %]</a>
+[% END %]
+            </div>
+            <div class="marcaAgua">
+            </div>
+          </div>
+          <div class="aside-2">
+            <div id="attr-desc"></div>
+          </div>
+        </div>
+      </div>
+[% END %]

@@ -1,0 +1,2429 @@
+{
+    "context": {
+        "Leib": {
+            "name": "ET Leibnitziano",
+            "id": "Leib",
+            "attributes": [
+                "N",
+                "M",
+                "dt",
+                "h<2,0>",
+                "<3,0,1>",
+                "h(dt,w)= 0"
+            ]
+        },
+        "GST": {
+            "name": "ET Galileano",
+            "id": "GST",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Torsión=0"
+            ]
+        },
+        "GalK": {
+            "name": "Cinemática con Relatividad Galileana",
+            "id": "GalK",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Ley Geodésica",
+                "Torsión=0"
+            ]
+        },
+        "CartanS-T": {
+            "name": "ET Newton-Cartan",
+            "id": "CartanS-T",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Newton-Cartan",
+                "dt",
+                "h<2,0>",
+                "<3,0,1>",
+                "(dt ⊗ K)= 0",
+                "H2*K=H2*K",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Torsión=0"
+            ]
+        },
+        "NewtonCartanG": {
+            "name": "Gravitación Newton-Cartan",
+            "id": "NewtonCartanG",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Newton-Cartan",
+                "dt",
+                "h<2,0>",
+                "T",
+                "<3,0,1>",
+                "(dt ⊗ K)= 0",
+                "H2*K=H2*K",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Poisson Cov.",
+                "Ley Geodésica",
+                "Torsión=0"
+            ]
+        },
+        "Force": {
+            "name": "Fuerza Gravitacional",
+            "id": "Force",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "Φ",
+                "T",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Ec. de Poisson",
+                "Segunda Ley",
+                "Torsión=0"
+            ]
+        },
+        "New": {
+            "name": "ET Newtoniano",
+            "id": "New",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "V",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Ď(V) = 0",
+                "dt(V) = 1",
+                "Torsión=0"
+            ]
+        },
+        "KAS": {
+            "name": "Cinemática en espacio absoluto",
+            "id": "KAS",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "V",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Ď(V) = 0",
+                "dt(V) = 1",
+                "Ley Geodésica",
+                "Torsión=0"
+            ]
+        },
+        "SRST": {
+            "name": "ET Pseudo-Riemanniano",
+            "id": "SRST",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "Signatura no toda positiva",
+                "Ď(g)=0",
+                "Torsión=0"
+            ]
+        },
+        "Lor": {
+            "name": "ET Lorentziano",
+            "id": "Lor",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Ď(g)=0",
+                "Torsión=0"
+            ]
+        },
+        "GR": {
+            "name": "Relatividad General",
+            "id": "GR",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "T",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Ď(g)=0",
+                "Ec. de Einstein",
+                "Ley Geodésica",
+                "Torsión=0"
+            ]
+        },
+        "Mink": {
+            "name": "ET de Minkowski",
+            "id": "Mink",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "K=0",
+                "eta",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Ď(g)=0",
+                "Torsión=0"
+            ]
+        },
+        "SR": {
+            "name": "Relatividad Especial",
+            "id": "SR",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "T",
+                "T=0",
+                "K=0",
+                "eta",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Ď(g)=0",
+                "Ec. de Einstein",
+                "Ley Geodésica",
+                "Torsión=0"
+            ]
+        },
+        "MA S-T": {
+            "name": "ET Métrico-Afín S-T",
+            "id": "MA S-T",
+            "attributes": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "g<0,2>",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Torsión≠0",
+                "No-metricidad≠0"
+            ]
+        }
+    },
+    "concepts": [
+        {
+            "intent": [
+                "N",
+                "M"
+            ],
+            "extent": [
+                "Leib",
+                "GST",
+                "GalK",
+                "CartanS-T",
+                "NewtonCartanG",
+                "Force",
+                "New",
+                "KAS",
+                "SRST",
+                "Lor",
+                "GR",
+                "Mink",
+                "SR",
+                "MA S-T"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "Conexión Plana",
+                "Conexión Newton-Cartan",
+                "Conexión Métrico-Afín",
+                "dt",
+                "h<2,0>",
+                "g<0,2>",
+                "V",
+                "Φ",
+                "T",
+                "T=0",
+                "K=0",
+                "eta",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "<3,0,1>",
+                "(dt ⊗ K)= 0",
+                "H2*K=H2*K",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "Ď(g)=0",
+                "h(dt,w)= 0",
+                "Ď(V) = 0",
+                "dt(V) = 1",
+                "Ec. de Poisson",
+                "Poisson Cov.",
+                "Ec. de Einstein",
+                "Segunda Ley",
+                "Ley Geodésica",
+                "Torsión=0",
+                "Torsión≠0",
+                "No-metricidad≠0"
+            ],
+            "extent": []
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "dt",
+                "h<2,0>",
+                "<3,0,1>",
+                "h(dt,w)= 0"
+            ],
+            "extent": [
+                "Leib",
+                "GST",
+                "GalK",
+                "CartanS-T",
+                "NewtonCartanG",
+                "Force",
+                "New",
+                "KAS"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "dt",
+                "h<2,0>",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Torsión=0"
+            ],
+            "extent": [
+                "GST",
+                "GalK",
+                "CartanS-T",
+                "NewtonCartanG",
+                "Force",
+                "New",
+                "KAS"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "dt",
+                "h<2,0>",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Ley Geodésica",
+                "Torsión=0"
+            ],
+            "extent": [
+                "GalK",
+                "NewtonCartanG",
+                "KAS"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Newton-Cartan",
+                "dt",
+                "h<2,0>",
+                "T",
+                "<3,0,1>",
+                "(dt ⊗ K)= 0",
+                "H2*K=H2*K",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Poisson Cov.",
+                "Ley Geodésica",
+                "Torsión=0"
+            ],
+            "extent": [
+                "NewtonCartanG"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Ley Geodésica",
+                "Torsión=0"
+            ],
+            "extent": [
+                "GalK",
+                "KAS"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "V",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Ď(V) = 0",
+                "dt(V) = 1",
+                "Ley Geodésica",
+                "Torsión=0"
+            ],
+            "extent": [
+                "KAS"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Newton-Cartan",
+                "dt",
+                "h<2,0>",
+                "<3,0,1>",
+                "(dt ⊗ K)= 0",
+                "H2*K=H2*K",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Torsión=0"
+            ],
+            "extent": [
+                "CartanS-T",
+                "NewtonCartanG"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Torsión=0"
+            ],
+            "extent": [
+                "GST",
+                "GalK",
+                "Force",
+                "New",
+                "KAS"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "Φ",
+                "T",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Ec. de Poisson",
+                "Segunda Ley",
+                "Torsión=0"
+            ],
+            "extent": [
+                "Force"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Plana",
+                "dt",
+                "h<2,0>",
+                "V",
+                "K=0",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Ď(V) = 0",
+                "dt(V) = 1",
+                "Torsión=0"
+            ],
+            "extent": [
+                "New",
+                "KAS"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "dt",
+                "h<2,0>",
+                "T",
+                "<3,0,1>",
+                "Ď(dt) = 0",
+                "Ď(h)=0",
+                "h(dt,w)= 0",
+                "Torsión=0"
+            ],
+            "extent": [
+                "NewtonCartanG",
+                "Force"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín"
+            ],
+            "extent": [
+                "GST",
+                "GalK",
+                "CartanS-T",
+                "NewtonCartanG",
+                "Force",
+                "New",
+                "KAS",
+                "SRST",
+                "Lor",
+                "GR",
+                "Mink",
+                "SR",
+                "MA S-T"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Torsión=0"
+            ],
+            "extent": [
+                "GST",
+                "GalK",
+                "CartanS-T",
+                "NewtonCartanG",
+                "Force",
+                "New",
+                "KAS",
+                "SRST",
+                "Lor",
+                "GR",
+                "Mink",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Ley Geodésica",
+                "Torsión=0"
+            ],
+            "extent": [
+                "GalK",
+                "NewtonCartanG",
+                "KAS",
+                "GR",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "K=0",
+                "Ley Geodésica",
+                "Torsión=0"
+            ],
+            "extent": [
+                "GalK",
+                "KAS",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "T",
+                "T=0",
+                "K=0",
+                "eta",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Ď(g)=0",
+                "Ec. de Einstein",
+                "Ley Geodésica",
+                "Torsión=0"
+            ],
+            "extent": [
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "T",
+                "Ley Geodésica",
+                "Torsión=0"
+            ],
+            "extent": [
+                "NewtonCartanG",
+                "GR",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "T",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Ď(g)=0",
+                "Ec. de Einstein",
+                "Ley Geodésica",
+                "Torsión=0"
+            ],
+            "extent": [
+                "GR",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "Signatura no toda positiva",
+                "Ď(g)=0",
+                "Torsión=0"
+            ],
+            "extent": [
+                "SRST",
+                "Lor",
+                "GR",
+                "Mink",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Ď(g)=0",
+                "Torsión=0"
+            ],
+            "extent": [
+                "Lor",
+                "GR",
+                "Mink",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Métrica",
+                "Conexión Afín",
+                "g<0,2>",
+                "K=0",
+                "eta",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Ď(g)=0",
+                "Torsión=0"
+            ],
+            "extent": [
+                "Mink",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "K=0",
+                "Torsión=0"
+            ],
+            "extent": [
+                "GST",
+                "GalK",
+                "Force",
+                "New",
+                "KAS",
+                "Mink",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "T",
+                "K=0",
+                "Torsión=0"
+            ],
+            "extent": [
+                "Force",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "T",
+                "Torsión=0"
+            ],
+            "extent": [
+                "NewtonCartanG",
+                "Force",
+                "GR",
+                "SR"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "g<0,2>",
+                "Signatura no toda positiva"
+            ],
+            "extent": [
+                "SRST",
+                "Lor",
+                "GR",
+                "Mink",
+                "SR",
+                "MA S-T"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "g<0,2>",
+                "Signatura no toda positiva",
+                "<1,3>"
+            ],
+            "extent": [
+                "Lor",
+                "GR",
+                "Mink",
+                "SR",
+                "MA S-T"
+            ]
+        },
+        {
+            "intent": [
+                "N",
+                "M",
+                "Conexión Afín",
+                "Conexión Métrico-Afín",
+                "g<0,2>",
+                "Signatura no toda positiva",
+                "<1,3>",
+                "Torsión≠0",
+                "No-metricidad≠0"
+            ],
+            "extent": [
+                "MA S-T"
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "hash": "16380",
+            "idx": 0,
+            "level": 7,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M"
+                ],
+                "extent": [
+                    "Leib",
+                    "GST",
+                    "GalK",
+                    "CartanS-T",
+                    "NewtonCartanG",
+                    "Force",
+                    "New",
+                    "KAS",
+                    "SRST",
+                    "Lor",
+                    "GR",
+                    "Mink",
+                    "SR",
+                    "MA S-T"
+                ]
+            },
+            "parents": [],
+            "children": [
+                "17039740",
+                "16373"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "M",
+                "N"
+            ],
+            "index": 0,
+            "weight": 2,
+            "x": 950.4530305528497,
+            "y": 112.51056008444345,
+            "px": 950.4530305528497,
+            "py": 112.51056008444345,
+            "fixed": 0
+        },
+        {
+            "hash": "-8",
+            "idx": 1,
+            "level": 0,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Métrica",
+                    "Conexión Afín",
+                    "Conexión Plana",
+                    "Conexión Newton-Cartan",
+                    "Conexión Métrico-Afín",
+                    "dt",
+                    "h<2,0>",
+                    "g<0,2>",
+                    "V",
+                    "Φ",
+                    "T",
+                    "T=0",
+                    "K=0",
+                    "eta",
+                    "Signatura no toda positiva",
+                    "<1,3>",
+                    "<3,0,1>",
+                    "(dt ⊗ K)= 0",
+                    "H2*K=H2*K",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "Ď(g)=0",
+                    "h(dt,w)= 0",
+                    "Ď(V) = 0",
+                    "dt(V) = 1",
+                    "Ec. de Poisson",
+                    "Poisson Cov.",
+                    "Ec. de Einstein",
+                    "Segunda Ley",
+                    "Ley Geodésica",
+                    "Torsión=0",
+                    "Torsión≠0",
+                    "No-metricidad≠0"
+                ],
+                "extent": []
+            },
+            "parents": [
+                "-1854139974",
+                "-2023471846",
+                "1231313338",
+                "-1601969650",
+                "205389"
+            ],
+            "children": [],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 1,
+            "weight": 5,
+            "x": 879.8267893473871,
+            "y": 1945.1195965245945,
+            "px": 879.8267893473871,
+            "py": 1945.1195965245945,
+            "fixed": 0
+        },
+        {
+            "hash": "17039740",
+            "idx": 2,
+            "level": 5,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "dt",
+                    "h<2,0>",
+                    "<3,0,1>",
+                    "h(dt,w)= 0"
+                ],
+                "extent": [
+                    "Leib",
+                    "GST",
+                    "GalK",
+                    "CartanS-T",
+                    "NewtonCartanG",
+                    "Force",
+                    "New",
+                    "KAS"
+                ]
+            },
+            "parents": [
+                "16380"
+            ],
+            "children": [
+                "23331188"
+            ],
+            "labelObjects": [
+                "Leib"
+            ],
+            "labelAttributes": [
+                "h(dt,w)= 0",
+                "<3,0,1>",
+                "h<2,0>",
+                "dt"
+            ],
+            "index": 2,
+            "weight": 2,
+            "x": 498.37360407888116,
+            "y": 318.92125945724445,
+            "px": 498.37360407888116,
+            "py": 318.92125945724445,
+            "fixed": 0
+        },
+        {
+            "hash": "23331188",
+            "idx": 3,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "dt",
+                    "h<2,0>",
+                    "<3,0,1>",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "GST",
+                    "GalK",
+                    "CartanS-T",
+                    "NewtonCartanG",
+                    "Force",
+                    "New",
+                    "KAS"
+                ]
+            },
+            "parents": [
+                "17039740",
+                "8180"
+            ],
+            "children": [
+                "-2124152546",
+                "24904114",
+                "23347580",
+                "23335354"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Ď(h)=0",
+                "Ď(dt) = 0"
+            ],
+            "index": 3,
+            "weight": 6,
+            "x": 499.0826920364225,
+            "y": 534.8756480626511,
+            "px": 499.0826920364225,
+            "py": 534.8756480626511,
+            "fixed": 0
+        },
+        {
+            "hash": "-2124152546",
+            "idx": 4,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "dt",
+                    "h<2,0>",
+                    "<3,0,1>",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Ley Geodésica",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "GalK",
+                    "NewtonCartanG",
+                    "KAS"
+                ]
+            },
+            "parents": [
+                "23331188",
+                "-2147478370"
+            ],
+            "children": [
+                "-1854139974",
+                "-2124136162"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 4,
+            "weight": 4,
+            "x": 490.7067046746474,
+            "y": 901.3303168041134,
+            "px": 490.7067046746474,
+            "py": 901.3303168041134,
+            "fixed": 0
+        },
+        {
+            "hash": "-1854139974",
+            "idx": 5,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Newton-Cartan",
+                    "dt",
+                    "h<2,0>",
+                    "T",
+                    "<3,0,1>",
+                    "(dt ⊗ K)= 0",
+                    "H2*K=H2*K",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Poisson Cov.",
+                    "Ley Geodésica",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "NewtonCartanG"
+                ]
+            },
+            "parents": [
+                "-2124152546",
+                "24904114",
+                "23335354",
+                "-2147482598"
+            ],
+            "children": [
+                "-8"
+            ],
+            "labelObjects": [
+                "NewtonCartanG"
+            ],
+            "labelAttributes": [
+                "Poisson Cov."
+            ],
+            "index": 5,
+            "weight": 5,
+            "x": 868.3019541466272,
+            "y": 1699.1425832612747,
+            "px": 868.3019541466272,
+            "py": 1699.1425832612747,
+            "fixed": 0
+        },
+        {
+            "hash": "-2124136162",
+            "idx": 6,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Plana",
+                    "dt",
+                    "h<2,0>",
+                    "K=0",
+                    "<3,0,1>",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Ley Geodésica",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "GalK",
+                    "KAS"
+                ]
+            },
+            "parents": [
+                "-2124152546",
+                "23347580",
+                "-2147463026"
+            ],
+            "children": [
+                "-2023471846"
+            ],
+            "labelObjects": [
+                "GalK"
+            ],
+            "labelAttributes": [],
+            "index": 6,
+            "weight": 4,
+            "x": 463.7791275279551,
+            "y": 1222.776023653892,
+            "px": 463.7791275279551,
+            "py": 1222.776023653892,
+            "fixed": 0
+        },
+        {
+            "hash": "-2023471846",
+            "idx": 7,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Plana",
+                    "dt",
+                    "h<2,0>",
+                    "V",
+                    "K=0",
+                    "<3,0,1>",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Ď(V) = 0",
+                    "dt(V) = 1",
+                    "Ley Geodésica",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "KAS"
+                ]
+            },
+            "parents": [
+                "-2124136162",
+                "124011866"
+            ],
+            "children": [
+                "-8"
+            ],
+            "labelObjects": [
+                "KAS"
+            ],
+            "labelAttributes": [],
+            "index": 7,
+            "weight": 3,
+            "x": 165.2708717607211,
+            "y": 1732.8949929887347,
+            "px": 165.2708717607211,
+            "py": 1732.8949929887347,
+            "fixed": 0
+        },
+        {
+            "hash": "24904114",
+            "idx": 8,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Newton-Cartan",
+                    "dt",
+                    "h<2,0>",
+                    "<3,0,1>",
+                    "(dt ⊗ K)= 0",
+                    "H2*K=H2*K",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "CartanS-T",
+                    "NewtonCartanG"
+                ]
+            },
+            "parents": [
+                "23331188"
+            ],
+            "children": [
+                "-1854139974"
+            ],
+            "labelObjects": [
+                "CartanS-T"
+            ],
+            "labelAttributes": [
+                "H2*K=H2*K",
+                "(dt ⊗ K)= 0",
+                "Conexión Newton-Cartan"
+            ],
+            "index": 8,
+            "weight": 2,
+            "x": 898.9368816921633,
+            "y": 1242.8906304394054,
+            "px": 898.9368816921633,
+            "py": 1242.8906304394054,
+            "fixed": 0
+        },
+        {
+            "hash": "23347580",
+            "idx": 9,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Plana",
+                    "dt",
+                    "h<2,0>",
+                    "K=0",
+                    "<3,0,1>",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "GST",
+                    "GalK",
+                    "Force",
+                    "New",
+                    "KAS"
+                ]
+            },
+            "parents": [
+                "23331188",
+                "22764"
+            ],
+            "children": [
+                "-2124136162",
+                "1231313338",
+                "124011866"
+            ],
+            "labelObjects": [
+                "GST"
+            ],
+            "labelAttributes": [
+                "Conexión Plana"
+            ],
+            "index": 9,
+            "weight": 5,
+            "x": 271.79644105064585,
+            "y": 889.786372094808,
+            "px": 271.79644105064585,
+            "py": 889.786372094808,
+            "fixed": 0
+        },
+        {
+            "hash": "1231313338",
+            "idx": 10,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Plana",
+                    "dt",
+                    "h<2,0>",
+                    "Φ",
+                    "T",
+                    "K=0",
+                    "<3,0,1>",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Ec. de Poisson",
+                    "Segunda Ley",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "Force"
+                ]
+            },
+            "parents": [
+                "23347580",
+                "23335354",
+                "16426"
+            ],
+            "children": [
+                "-8"
+            ],
+            "labelObjects": [
+                "Force"
+            ],
+            "labelAttributes": [
+                "Segunda Ley",
+                "Ec. de Poisson",
+                "Φ"
+            ],
+            "index": 10,
+            "weight": 4,
+            "x": 485.7614036042946,
+            "y": 1584.0174313721568,
+            "px": 485.7614036042946,
+            "py": 1584.0174313721568,
+            "fixed": 0
+        },
+        {
+            "hash": "124011866",
+            "idx": 11,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Plana",
+                    "dt",
+                    "h<2,0>",
+                    "V",
+                    "K=0",
+                    "<3,0,1>",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Ď(V) = 0",
+                    "dt(V) = 1",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "New",
+                    "KAS"
+                ]
+            },
+            "parents": [
+                "23347580"
+            ],
+            "children": [
+                "-2023471846"
+            ],
+            "labelObjects": [
+                "New"
+            ],
+            "labelAttributes": [
+                "dt(V) = 1",
+                "Ď(V) = 0",
+                "V"
+            ],
+            "index": 11,
+            "weight": 2,
+            "x": 161.71493355008272,
+            "y": 1237.1879113124226,
+            "px": 161.71493355008272,
+            "py": 1237.1879113124226,
+            "fixed": 0
+        },
+        {
+            "hash": "23335354",
+            "idx": 12,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "dt",
+                    "h<2,0>",
+                    "T",
+                    "<3,0,1>",
+                    "Ď(dt) = 0",
+                    "Ď(h)=0",
+                    "h(dt,w)= 0",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "NewtonCartanG",
+                    "Force"
+                ]
+            },
+            "parents": [
+                "23331188",
+                "1082"
+            ],
+            "children": [
+                "-1854139974",
+                "1231313338"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 12,
+            "weight": 4,
+            "x": 623.7320882428428,
+            "y": 898.705582975248,
+            "px": 623.7320882428428,
+            "py": 898.705582975248,
+            "fixed": 0
+        },
+        {
+            "hash": "16373",
+            "idx": 13,
+            "level": 6,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín"
+                ],
+                "extent": [
+                    "GST",
+                    "GalK",
+                    "CartanS-T",
+                    "NewtonCartanG",
+                    "Force",
+                    "New",
+                    "KAS",
+                    "SRST",
+                    "Lor",
+                    "GR",
+                    "Mink",
+                    "SR",
+                    "MA S-T"
+                ]
+            },
+            "parents": [
+                "16380"
+            ],
+            "children": [
+                "8180",
+                "81163"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Conexión Afín"
+            ],
+            "index": 13,
+            "weight": 3,
+            "x": 1268.936018960787,
+            "y": 184.9384113248778,
+            "px": 1268.936018960787,
+            "py": 184.9384113248778,
+            "fixed": 0
+        },
+        {
+            "hash": "8180",
+            "idx": 14,
+            "level": 5,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "GST",
+                    "GalK",
+                    "CartanS-T",
+                    "NewtonCartanG",
+                    "Force",
+                    "New",
+                    "KAS",
+                    "SRST",
+                    "Lor",
+                    "GR",
+                    "Mink",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "16373"
+            ],
+            "children": [
+                "-2147478370",
+                "23331188",
+                "8461582",
+                "22764",
+                "1082"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Torsión=0"
+            ],
+            "index": 14,
+            "weight": 6,
+            "x": 954.9604107979562,
+            "y": 259.758440806852,
+            "px": 954.9604107979562,
+            "py": 259.758440806852,
+            "fixed": 0
+        },
+        {
+            "hash": "-2147478370",
+            "idx": 15,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Ley Geodésica",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "GalK",
+                    "NewtonCartanG",
+                    "KAS",
+                    "GR",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "8180"
+            ],
+            "children": [
+                "-2124152546",
+                "-2147463026",
+                "-2147482598"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Ley Geodésica"
+            ],
+            "index": 15,
+            "weight": 4,
+            "x": 923.7321884662708,
+            "y": 512.8331741018955,
+            "px": 923.7321884662708,
+            "py": 512.8331741018955,
+            "fixed": 0
+        },
+        {
+            "hash": "-2147463026",
+            "idx": 16,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "K=0",
+                    "Ley Geodésica",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "GalK",
+                    "KAS",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "-2147478370",
+                "22764"
+            ],
+            "children": [
+                "-1601969650",
+                "-2124136162"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 16,
+            "weight": 4,
+            "x": 882.8503766822914,
+            "y": 881.7300224973872,
+            "px": 882.8503766822914,
+            "py": 881.7300224973872,
+            "fixed": 0
+        },
+        {
+            "hash": "-1601969650",
+            "idx": 17,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Métrica",
+                    "Conexión Afín",
+                    "g<0,2>",
+                    "T",
+                    "T=0",
+                    "K=0",
+                    "eta",
+                    "Signatura no toda positiva",
+                    "<1,3>",
+                    "Ď(g)=0",
+                    "Ec. de Einstein",
+                    "Ley Geodésica",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "SR"
+                ]
+            },
+            "parents": [
+                "-2147463026",
+                "-1602025970",
+                "8641038",
+                "16426"
+            ],
+            "children": [
+                "-8"
+            ],
+            "labelObjects": [
+                "SR"
+            ],
+            "labelAttributes": [
+                "T=0"
+            ],
+            "index": 17,
+            "weight": 5,
+            "x": 1424.523891429615,
+            "y": 1452.593742960295,
+            "px": 1424.523891429615,
+            "py": 1452.593742960295,
+            "fixed": 0
+        },
+        {
+            "hash": "-2147482598",
+            "idx": 18,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "T",
+                    "Ley Geodésica",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "NewtonCartanG",
+                    "GR",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "-2147478370",
+                "1082"
+            ],
+            "children": [
+                "-1602025970",
+                "-1854139974"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 18,
+            "weight": 4,
+            "x": 1132.2261288487484,
+            "y": 879.5064227999894,
+            "px": 1132.2261288487484,
+            "py": 879.5064227999894,
+            "fixed": 0
+        },
+        {
+            "hash": "-1602025970",
+            "idx": 19,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Métrica",
+                    "Conexión Afín",
+                    "g<0,2>",
+                    "T",
+                    "Signatura no toda positiva",
+                    "<1,3>",
+                    "Ď(g)=0",
+                    "Ec. de Einstein",
+                    "Ley Geodésica",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "GR",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "-2147482598",
+                "8592398"
+            ],
+            "children": [
+                "-1601969650"
+            ],
+            "labelObjects": [
+                "GR"
+            ],
+            "labelAttributes": [
+                "Ec. de Einstein"
+            ],
+            "index": 19,
+            "weight": 3,
+            "x": 1426.4321556619852,
+            "y": 1205.747401209287,
+            "px": 1426.4321556619852,
+            "py": 1205.747401209287,
+            "fixed": 0
+        },
+        {
+            "hash": "8461582",
+            "idx": 20,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Métrica",
+                    "Conexión Afín",
+                    "g<0,2>",
+                    "Signatura no toda positiva",
+                    "Ď(g)=0",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "SRST",
+                    "Lor",
+                    "GR",
+                    "Mink",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "8180",
+                "81163"
+            ],
+            "children": [
+                "8592398"
+            ],
+            "labelObjects": [
+                "SRST"
+            ],
+            "labelAttributes": [
+                "Ď(g)=0",
+                "Conexión Métrica"
+            ],
+            "index": 20,
+            "weight": 3,
+            "x": 1257.6694370458608,
+            "y": 364.4644859024006,
+            "px": 1257.6694370458608,
+            "py": 364.4644859024006,
+            "fixed": 0
+        },
+        {
+            "hash": "8592398",
+            "idx": 21,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Métrica",
+                    "Conexión Afín",
+                    "g<0,2>",
+                    "Signatura no toda positiva",
+                    "<1,3>",
+                    "Ď(g)=0",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "Lor",
+                    "GR",
+                    "Mink",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "8461582",
+                "211979"
+            ],
+            "children": [
+                "-1602025970",
+                "8641038"
+            ],
+            "labelObjects": [
+                "Lor"
+            ],
+            "labelAttributes": [],
+            "index": 21,
+            "weight": 4,
+            "x": 1408.5996406214417,
+            "y": 539.390796413931,
+            "px": 1408.5996406214417,
+            "py": 539.390796413931,
+            "fixed": 0
+        },
+        {
+            "hash": "8641038",
+            "idx": 22,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Métrica",
+                    "Conexión Afín",
+                    "g<0,2>",
+                    "K=0",
+                    "eta",
+                    "Signatura no toda positiva",
+                    "<1,3>",
+                    "Ď(g)=0",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "Mink",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "8592398",
+                "22764"
+            ],
+            "children": [
+                "-1601969650"
+            ],
+            "labelObjects": [
+                "Mink"
+            ],
+            "labelAttributes": [
+                "eta"
+            ],
+            "index": 22,
+            "weight": 3,
+            "x": 1259.674845981161,
+            "y": 872.561635414919,
+            "px": 1259.674845981161,
+            "py": 872.561635414919,
+            "fixed": 0
+        },
+        {
+            "hash": "22764",
+            "idx": 23,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "K=0",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "GST",
+                    "GalK",
+                    "Force",
+                    "New",
+                    "KAS",
+                    "Mink",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "8180"
+            ],
+            "children": [
+                "-2147463026",
+                "23347580",
+                "8641038",
+                "16426"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "K=0"
+            ],
+            "index": 23,
+            "weight": 5,
+            "x": 722.5910568769436,
+            "y": 515.8252714982124,
+            "px": 722.5910568769436,
+            "py": 515.8252714982124,
+            "fixed": 0
+        },
+        {
+            "hash": "16426",
+            "idx": 24,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "T",
+                    "K=0",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "Force",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "22764",
+                "1082"
+            ],
+            "children": [
+                "-1601969650",
+                "1231313338"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 24,
+            "weight": 4,
+            "x": 1015.7637838887986,
+            "y": 878.7876017005725,
+            "px": 1015.7637838887986,
+            "py": 878.7876017005725,
+            "fixed": 0
+        },
+        {
+            "hash": "1082",
+            "idx": 25,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "T",
+                    "Torsión=0"
+                ],
+                "extent": [
+                    "NewtonCartanG",
+                    "Force",
+                    "GR",
+                    "SR"
+                ]
+            },
+            "parents": [
+                "8180"
+            ],
+            "children": [
+                "-2147482598",
+                "23335354",
+                "16426"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "T"
+            ],
+            "index": 25,
+            "weight": 4,
+            "x": 1156.0337639456984,
+            "y": 515.5007011665258,
+            "px": 1156.0337639456984,
+            "py": 515.5007011665258,
+            "fixed": 0
+        },
+        {
+            "hash": "81163",
+            "idx": 26,
+            "level": 5,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "g<0,2>",
+                    "Signatura no toda positiva"
+                ],
+                "extent": [
+                    "SRST",
+                    "Lor",
+                    "GR",
+                    "Mink",
+                    "SR",
+                    "MA S-T"
+                ]
+            },
+            "parents": [
+                "16373"
+            ],
+            "children": [
+                "8461582",
+                "211979"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Signatura no toda positiva",
+                "g<0,2>"
+            ],
+            "index": 26,
+            "weight": 3,
+            "x": 1655.940331585602,
+            "y": 272.97518031697547,
+            "px": 1655.940331585602,
+            "py": 272.97518031697547,
+            "fixed": 0
+        },
+        {
+            "hash": "211979",
+            "idx": 27,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "g<0,2>",
+                    "Signatura no toda positiva",
+                    "<1,3>"
+                ],
+                "extent": [
+                    "Lor",
+                    "GR",
+                    "Mink",
+                    "SR",
+                    "MA S-T"
+                ]
+            },
+            "parents": [
+                "81163"
+            ],
+            "children": [
+                "205389",
+                "8592398"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "<1,3>"
+            ],
+            "index": 27,
+            "weight": 3,
+            "x": 1725.888833713415,
+            "y": 456.97524265296465,
+            "px": 1725.888833713415,
+            "py": 456.97524265296465,
+            "fixed": 0
+        },
+        {
+            "hash": "205389",
+            "idx": 28,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "N",
+                    "M",
+                    "Conexión Afín",
+                    "Conexión Métrico-Afín",
+                    "g<0,2>",
+                    "Signatura no toda positiva",
+                    "<1,3>",
+                    "Torsión≠0",
+                    "No-metricidad≠0"
+                ],
+                "extent": [
+                    "MA S-T"
+                ]
+            },
+            "parents": [
+                "211979"
+            ],
+            "children": [
+                "-8"
+            ],
+            "labelObjects": [
+                "MA S-T"
+            ],
+            "labelAttributes": [
+                "No-metricidad≠0",
+                "Torsión≠0",
+                "Conexión Métrico-Afín"
+            ],
+            "index": 28,
+            "weight": 2,
+            "x": 1685.30584756919,
+            "y": 1601.3319322134992,
+            "px": 1685.30584756919,
+            "py": 1601.3319322134992,
+            "fixed": 0
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 2
+        },
+        {
+            "source": 0,
+            "target": 13
+        },
+        {
+            "source": 2,
+            "target": 3
+        },
+        {
+            "source": 3,
+            "target": 4
+        },
+        {
+            "source": 3,
+            "target": 8
+        },
+        {
+            "source": 3,
+            "target": 9
+        },
+        {
+            "source": 3,
+            "target": 12
+        },
+        {
+            "source": 4,
+            "target": 5
+        },
+        {
+            "source": 4,
+            "target": 6
+        },
+        {
+            "source": 5,
+            "target": 1
+        },
+        {
+            "source": 6,
+            "target": 7
+        },
+        {
+            "source": 7,
+            "target": 1
+        },
+        {
+            "source": 8,
+            "target": 5
+        },
+        {
+            "source": 9,
+            "target": 6
+        },
+        {
+            "source": 9,
+            "target": 10
+        },
+        {
+            "source": 9,
+            "target": 11
+        },
+        {
+            "source": 10,
+            "target": 1
+        },
+        {
+            "source": 11,
+            "target": 7
+        },
+        {
+            "source": 12,
+            "target": 5
+        },
+        {
+            "source": 12,
+            "target": 10
+        },
+        {
+            "source": 13,
+            "target": 14
+        },
+        {
+            "source": 13,
+            "target": 26
+        },
+        {
+            "source": 14,
+            "target": 15
+        },
+        {
+            "source": 14,
+            "target": 3
+        },
+        {
+            "source": 14,
+            "target": 20
+        },
+        {
+            "source": 14,
+            "target": 23
+        },
+        {
+            "source": 14,
+            "target": 25
+        },
+        {
+            "source": 15,
+            "target": 4
+        },
+        {
+            "source": 15,
+            "target": 16
+        },
+        {
+            "source": 15,
+            "target": 18
+        },
+        {
+            "source": 16,
+            "target": 17
+        },
+        {
+            "source": 16,
+            "target": 6
+        },
+        {
+            "source": 17,
+            "target": 1
+        },
+        {
+            "source": 18,
+            "target": 19
+        },
+        {
+            "source": 18,
+            "target": 5
+        },
+        {
+            "source": 19,
+            "target": 17
+        },
+        {
+            "source": 20,
+            "target": 21
+        },
+        {
+            "source": 21,
+            "target": 19
+        },
+        {
+            "source": 21,
+            "target": 22
+        },
+        {
+            "source": 22,
+            "target": 17
+        },
+        {
+            "source": 23,
+            "target": 16
+        },
+        {
+            "source": 23,
+            "target": 9
+        },
+        {
+            "source": 23,
+            "target": 22
+        },
+        {
+            "source": 23,
+            "target": 24
+        },
+        {
+            "source": 24,
+            "target": 17
+        },
+        {
+            "source": 24,
+            "target": 10
+        },
+        {
+            "source": 25,
+            "target": 18
+        },
+        {
+            "source": 25,
+            "target": 12
+        },
+        {
+            "source": 25,
+            "target": 24
+        },
+        {
+            "source": 26,
+            "target": 20
+        },
+        {
+            "source": 26,
+            "target": 27
+        },
+        {
+            "source": 27,
+            "target": 28
+        },
+        {
+            "source": 27,
+            "target": 21
+        },
+        {
+            "source": 28,
+            "target": 1
+        }
+    ],
+    "classDescriptions": [
+        {
+            "key": "M",
+            "desc": "Variedad diferenciable"
+        },
+        {
+            "key": "OG",
+            "desc": "Objetos geométricos en M"
+        },
+        {
+            "key": "Tip",
+            "desc": "Tipificaciones"
+        },
+        {
+            "key": "Cond",
+            "desc": "Condiciones"
+        },
+        {
+            "key": "FieldEq",
+            "desc": "Ecuaciones de campo"
+        },
+        {
+            "key": "MovEq",
+            "desc": "Ecuaciones de movimiento"
+        }
+    ],
+    "classes": {
+        "N": "Tip",
+        "M": "M",
+        "Conexión Métrica": "OG",
+        "Conexión Afín": "OG",
+        "Conexión Plana": "OG",
+        "Conexión Newton-Cartan": "OG",
+        "Conexión Métrico-Afín": "OG",
+        "dt": "OG",
+        "h<2,0>": "OG",
+        "g<0,2>": "OG",
+        "V": "OG",
+        "Φ": "OG",
+        "T": "OG",
+        "T=0": "Cond",
+        "K=0": "Cond",
+        "eta": "OG",
+        "Signatura no toda positiva": "Tip",
+        "<1,3>": "Tip",
+        "<3,0,1>": "Tip",
+        "(dt ⊗ K)= 0": "Cond",
+        "H2*K=H2*K": "Cond",
+        "Ď(dt) = 0": "Cond",
+        "Ď(h)=0": "Cond",
+        "Ď(g)=0": "Cond",
+        "h(dt,w)= 0": "Cond",
+        "Ď(V) = 0": "Cond",
+        "dt(V) = 1": "Cond",
+        "Ec. de Poisson": "FieldEq",
+        "Poisson Cov.": "FieldEq",
+        "Ec. de Einstein": "FieldEq",
+        "Segunda Ley": "MovEq",
+        "Ley Geodésica": "MovEq",
+        "Torsión=0": "Cond",
+        "Torsión≠0": "Cond",
+        "No-metricidad≠0": "Cond"
+    }
+}

@@ -1,0 +1,1598 @@
+{
+    "context": {
+        "PM": {
+            "name": "Particle Mechanics",
+            "id": "PM",
+            "attributes": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Vector Spaces Theory",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance"
+            ]
+        },
+        "CM": {
+            "name": "Continuum Mechanics",
+            "id": "CM",
+            "attributes": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Vector Spaces Theory",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity",
+                "Material Indifference"
+            ]
+        },
+        "CEM": {
+            "name": "Classical ElectroMagnetism",
+            "id": "CEM",
+            "attributes": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity"
+            ]
+        },
+        "SR": {
+            "name": "Special Relativity",
+            "id": "SR",
+            "attributes": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity",
+                "Space-time Contiguity",
+                "Lorentz Invariance"
+            ]
+        },
+        "GR": {
+            "name": "General Relativity",
+            "id": "GR",
+            "attributes": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Theory of Riemannian Spaces",
+                "Manifold Geometry",
+                "Theory of local time",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Analytical Dynamics",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity",
+                "Space-time Contiguity",
+                "Lorentz Invariance",
+                "General covariance"
+            ]
+        },
+        "QM": {
+            "name": "Quantum Mechanics",
+            "id": "QM",
+            "attributes": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Vector Spaces Theory",
+                "Probability Theory",
+                "Mathematical Statistics",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Physical Probability Theory",
+                "Analytical Dynamics",
+                "Dimensional Analysis",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ]
+        },
+        "GO": {
+            "name": "Geometrical Optics",
+            "id": "GO",
+            "attributes": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Topology",
+                "Analysis",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ]
+        }
+    },
+    "concepts": [
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Topology",
+                "Analysis",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ],
+            "extent": [
+                "PM",
+                "CM",
+                "CEM",
+                "SR",
+                "GR",
+                "QM",
+                "GO"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Vector Spaces Theory",
+                "Probability Theory",
+                "Theory of Riemannian Spaces",
+                "Mathematical Statistics",
+                "Manifold Geometry",
+                "Theory of local time",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Physical Probability Theory",
+                "Analytical Dynamics",
+                "Dimensional Analysis",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity",
+                "Space-time Contiguity",
+                "Lorentz Invariance",
+                "General covariance",
+                "Material Indifference",
+                "Equipresence"
+            ],
+            "extent": []
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ],
+            "extent": [
+                "PM",
+                "CM",
+                "CEM",
+                "SR",
+                "GR",
+                "QM"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance"
+            ],
+            "extent": [
+                "PM",
+                "CM",
+                "CEM",
+                "SR",
+                "GR"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity"
+            ],
+            "extent": [
+                "CM",
+                "CEM",
+                "SR",
+                "GR"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Vector Spaces Theory",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity",
+                "Material Indifference"
+            ],
+            "extent": [
+                "CM"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity"
+            ],
+            "extent": [
+                "CEM",
+                "SR",
+                "GR"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity",
+                "Space-time Contiguity",
+                "Lorentz Invariance"
+            ],
+            "extent": [
+                "SR",
+                "GR"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Theory of Riemannian Spaces",
+                "Manifold Geometry",
+                "Theory of local time",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Analytical Dynamics",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance",
+                "Contiguity",
+                "Space-time Contiguity",
+                "Lorentz Invariance",
+                "General covariance"
+            ],
+            "extent": [
+                "GR"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Vector Spaces Theory",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence",
+                "Galilian Invariance"
+            ],
+            "extent": [
+                "PM",
+                "CM"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ],
+            "extent": [
+                "CM",
+                "CEM",
+                "SR",
+                "GR",
+                "QM"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ],
+            "extent": [
+                "CEM",
+                "SR",
+                "GR",
+                "QM"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Analytical Dynamics",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ],
+            "extent": [
+                "GR",
+                "QM"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Vector Spaces Theory",
+                "Probability Theory",
+                "Mathematical Statistics",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Field Theory",
+                "Physical Probability Theory",
+                "Analytical Dynamics",
+                "Dimensional Analysis",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ],
+            "extent": [
+                "QM"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Vector Spaces Theory",
+                "Manifold Geometry",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ],
+            "extent": [
+                "CM",
+                "QM"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Algebra",
+                "Topology",
+                "Analysis",
+                "Vector Spaces Theory",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ],
+            "extent": [
+                "PM",
+                "CM",
+                "QM"
+            ]
+        },
+        {
+            "intent": [
+                "Logic",
+                "Semantics",
+                "Set Theory",
+                "Topology",
+                "Analysis",
+                "Theory of Universal Time",
+                "General Systems Theory",
+                "Physical Euclidean Geometry",
+                "Physical Geometry",
+                "Analytic Geometry",
+                "Uniform convergence",
+                "Antecedence"
+            ],
+            "extent": [
+                "PM",
+                "CM",
+                "QM",
+                "GO"
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "hash": "7401548",
+            "idx": 0,
+            "level": 7,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Topology",
+                    "Analysis",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence"
+                ],
+                "extent": [
+                    "PM",
+                    "CM",
+                    "CEM",
+                    "SR",
+                    "GR",
+                    "QM",
+                    "GO"
+                ]
+            },
+            "parents": [],
+            "children": [
+                "7401476",
+                "7401556"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Antecedence",
+                "Uniform convergence",
+                "Analytic Geometry",
+                "Physical Geometry",
+                "Physical Euclidean Geometry",
+                "General Systems Theory",
+                "Theory of Universal Time",
+                "Analysis",
+                "Topology",
+                "Semantics",
+                "Logic"
+            ],
+            "index": 0,
+            "weight": 2,
+            "x": 1072.4799980388389,
+            "y": 891.9039548845299,
+            "px": 1072.4799980388389,
+            "py": 891.9039548845299,
+            "fixed": 0
+        },
+        {
+            "hash": "1073741823",
+            "idx": 1,
+            "level": 0,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Set Theory",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Vector Spaces Theory",
+                    "Probability Theory",
+                    "Theory of Riemannian Spaces",
+                    "Mathematical Statistics",
+                    "Manifold Geometry",
+                    "Theory of local time",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Field Theory",
+                    "Physical Probability Theory",
+                    "Analytical Dynamics",
+                    "Dimensional Analysis",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence",
+                    "Galilian Invariance",
+                    "Contiguity",
+                    "Space-time Contiguity",
+                    "Lorentz Invariance",
+                    "General covariance",
+                    "Material Indifference",
+                    "Equipresence"
+                ],
+                "extent": []
+            },
+            "parents": [
+                "301003901",
+                "267779371",
+                "8386271"
+            ],
+            "children": [],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Equipresence"
+            ],
+            "index": 1,
+            "weight": 3,
+            "x": 820.9269449007481,
+            "y": 3236.0051381644635,
+            "px": 820.9269449007481,
+            "py": 3236.0051381644635,
+            "fixed": 0
+        },
+        {
+            "hash": "7401476",
+            "idx": 2,
+            "level": 6,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence"
+                ],
+                "extent": [
+                    "PM",
+                    "CM",
+                    "CEM",
+                    "SR",
+                    "GR",
+                    "QM"
+                ]
+            },
+            "parents": [
+                "7401548"
+            ],
+            "children": [
+                "15790116",
+                "7402501",
+                "7401564"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Algebra"
+            ],
+            "index": 2,
+            "weight": 4,
+            "x": 1390.8883948458429,
+            "y": 1058.1008928094398,
+            "px": 1390.8883948458429,
+            "py": 1058.1008928094398,
+            "fixed": 0
+        },
+        {
+            "hash": "15790116",
+            "idx": 3,
+            "level": 5,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence",
+                    "Galilian Invariance"
+                ],
+                "extent": [
+                    "PM",
+                    "CM",
+                    "CEM",
+                    "SR",
+                    "GR"
+                ]
+            },
+            "parents": [
+                "7401476"
+            ],
+            "children": [
+                "32568357",
+                "15790204"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Galilian Invariance"
+            ],
+            "index": 3,
+            "weight": 3,
+            "x": 1867.4665734335354,
+            "y": 1318.2705285348393,
+            "px": 1867.4665734335354,
+            "py": 1318.2705285348393,
+            "fixed": 1
+        },
+        {
+            "hash": "32568357",
+            "idx": 4,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Manifold Geometry",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence",
+                    "Galilian Invariance",
+                    "Contiguity"
+                ],
+                "extent": [
+                    "CM",
+                    "CEM",
+                    "SR",
+                    "GR"
+                ]
+            },
+            "parents": [
+                "15790116",
+                "7402501"
+            ],
+            "children": [
+                "301003901",
+                "32633895"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Contiguity"
+            ],
+            "index": 4,
+            "weight": 4,
+            "x": 1861.385936020829,
+            "y": 1583.5914912873304,
+            "px": 1861.385936020829,
+            "py": 1583.5914912873304,
+            "fixed": 0
+        },
+        {
+            "hash": "301003901",
+            "idx": 5,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Set Theory",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Vector Spaces Theory",
+                    "Manifold Geometry",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence",
+                    "Galilian Invariance",
+                    "Contiguity",
+                    "Material Indifference"
+                ],
+                "extent": [
+                    "CM"
+                ]
+            },
+            "parents": [
+                "32568357",
+                "15790204",
+                "7402589"
+            ],
+            "children": [
+                "1073741823"
+            ],
+            "labelObjects": [
+                "CM"
+            ],
+            "labelAttributes": [
+                "Material Indifference"
+            ],
+            "index": 5,
+            "weight": 4,
+            "x": 798.3930213919098,
+            "y": 2098.3775862945777,
+            "px": 798.3930213919098,
+            "py": 2098.3775862945777,
+            "fixed": 0
+        },
+        {
+            "hash": "32633895",
+            "idx": 6,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Manifold Geometry",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Field Theory",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence",
+                    "Galilian Invariance",
+                    "Contiguity"
+                ],
+                "extent": [
+                    "CEM",
+                    "SR",
+                    "GR"
+                ]
+            },
+            "parents": [
+                "32568357",
+                "7468039"
+            ],
+            "children": [
+                "133297187"
+            ],
+            "labelObjects": [
+                "CEM"
+            ],
+            "labelAttributes": [],
+            "index": 6,
+            "weight": 3,
+            "x": 1869.9331516866678,
+            "y": 2167.6228894326996,
+            "px": 1869.9331516866678,
+            "py": 2167.6228894326996,
+            "fixed": 0
+        },
+        {
+            "hash": "133297187",
+            "idx": 7,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Manifold Geometry",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Field Theory",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence",
+                    "Galilian Invariance",
+                    "Contiguity",
+                    "Space-time Contiguity",
+                    "Lorentz Invariance"
+                ],
+                "extent": [
+                    "SR",
+                    "GR"
+                ]
+            },
+            "parents": [
+                "32633895"
+            ],
+            "children": [
+                "267779371"
+            ],
+            "labelObjects": [
+                "SR"
+            ],
+            "labelAttributes": [
+                "Lorentz Invariance",
+                "Space-time Contiguity"
+            ],
+            "index": 7,
+            "weight": 2,
+            "x": 1877.2497883040605,
+            "y": 2525.7096880643203,
+            "px": 1877.2497883040605,
+            "py": 2525.7096880643203,
+            "fixed": 0
+        },
+        {
+            "hash": "267779371",
+            "idx": 8,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Theory of Riemannian Spaces",
+                    "Manifold Geometry",
+                    "Theory of local time",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Field Theory",
+                    "Analytical Dynamics",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence",
+                    "Galilian Invariance",
+                    "Contiguity",
+                    "Space-time Contiguity",
+                    "Lorentz Invariance",
+                    "General covariance"
+                ],
+                "extent": [
+                    "GR"
+                ]
+            },
+            "parents": [
+                "133297187",
+                "7730187"
+            ],
+            "children": [
+                "1073741823"
+            ],
+            "labelObjects": [
+                "GR"
+            ],
+            "labelAttributes": [
+                "General covariance",
+                "Theory of local time",
+                "Theory of Riemannian Spaces"
+            ],
+            "index": 8,
+            "weight": 3,
+            "x": 1249.7395342267096,
+            "y": 2878.243339606139,
+            "px": 1249.7395342267096,
+            "py": 2878.243339606139,
+            "fixed": 0
+        },
+        {
+            "hash": "15790204",
+            "idx": 9,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Set Theory",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Vector Spaces Theory",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence",
+                    "Galilian Invariance"
+                ],
+                "extent": [
+                    "PM",
+                    "CM"
+                ]
+            },
+            "parents": [
+                "15790116",
+                "7401564"
+            ],
+            "children": [
+                "301003901"
+            ],
+            "labelObjects": [
+                "PM"
+            ],
+            "labelAttributes": [],
+            "index": 9,
+            "weight": 3,
+            "x": 788.3492825180629,
+            "y": 1754.6062630641045,
+            "px": 788.3492825180629,
+            "py": 1754.6062630641045,
+            "fixed": 0
+        },
+        {
+            "hash": "7402501",
+            "idx": 10,
+            "level": 5,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Manifold Geometry",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence"
+                ],
+                "extent": [
+                    "CM",
+                    "CEM",
+                    "SR",
+                    "GR",
+                    "QM"
+                ]
+            },
+            "parents": [
+                "7401476"
+            ],
+            "children": [
+                "32568357",
+                "7468039",
+                "7402589"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Manifold Geometry"
+            ],
+            "index": 10,
+            "weight": 4,
+            "x": 1402.5732196987688,
+            "y": 1292.6405894285758,
+            "px": 1402.5732196987688,
+            "py": 1292.6405894285758,
+            "fixed": 0
+        },
+        {
+            "hash": "7468039",
+            "idx": 11,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Manifold Geometry",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Field Theory",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence"
+                ],
+                "extent": [
+                    "CEM",
+                    "SR",
+                    "GR",
+                    "QM"
+                ]
+            },
+            "parents": [
+                "7402501"
+            ],
+            "children": [
+                "32633895",
+                "7730187"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Field Theory"
+            ],
+            "index": 11,
+            "weight": 3,
+            "x": 1407.593415685826,
+            "y": 1950.8002275244082,
+            "px": 1407.593415685826,
+            "py": 1950.8002275244082,
+            "fixed": 0
+        },
+        {
+            "hash": "7730187",
+            "idx": 12,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Manifold Geometry",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Field Theory",
+                    "Analytical Dynamics",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence"
+                ],
+                "extent": [
+                    "GR",
+                    "QM"
+                ]
+            },
+            "parents": [
+                "7468039"
+            ],
+            "children": [
+                "267779371",
+                "8386271"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Analytical Dynamics"
+            ],
+            "index": 12,
+            "weight": 3,
+            "x": 1046.3728715816578,
+            "y": 2402.746633875093,
+            "px": 1046.3728715816578,
+            "py": 2402.746633875093,
+            "fixed": 0
+        },
+        {
+            "hash": "8386271",
+            "idx": 13,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Set Theory",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Vector Spaces Theory",
+                    "Probability Theory",
+                    "Mathematical Statistics",
+                    "Manifold Geometry",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Field Theory",
+                    "Physical Probability Theory",
+                    "Analytical Dynamics",
+                    "Dimensional Analysis",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence"
+                ],
+                "extent": [
+                    "QM"
+                ]
+            },
+            "parents": [
+                "7730187",
+                "7402589"
+            ],
+            "children": [
+                "1073741823"
+            ],
+            "labelObjects": [
+                "QM"
+            ],
+            "labelAttributes": [
+                "Dimensional Analysis",
+                "Physical Probability Theory",
+                "Mathematical Statistics",
+                "Probability Theory"
+            ],
+            "index": 13,
+            "weight": 3,
+            "x": 88.2187630904632,
+            "y": 2784.3575398248463,
+            "px": 88.2187630904632,
+            "py": 2784.3575398248463,
+            "fixed": 0
+        },
+        {
+            "hash": "7402589",
+            "idx": 14,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Set Theory",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Vector Spaces Theory",
+                    "Manifold Geometry",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence"
+                ],
+                "extent": [
+                    "CM",
+                    "QM"
+                ]
+            },
+            "parents": [
+                "7402501",
+                "7401564"
+            ],
+            "children": [
+                "301003901",
+                "8386271"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 14,
+            "weight": 4,
+            "x": 83.02957488282448,
+            "y": 1673.9076099040442,
+            "px": 83.02957488282448,
+            "py": 1673.9076099040442,
+            "fixed": 0
+        },
+        {
+            "hash": "7401564",
+            "idx": 15,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Set Theory",
+                    "Algebra",
+                    "Topology",
+                    "Analysis",
+                    "Vector Spaces Theory",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence"
+                ],
+                "extent": [
+                    "PM",
+                    "CM",
+                    "QM"
+                ]
+            },
+            "parents": [
+                "7401476",
+                "7401556"
+            ],
+            "children": [
+                "15790204",
+                "7402589"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Vector Spaces Theory"
+            ],
+            "index": 15,
+            "weight": 4,
+            "x": 81.43447851412566,
+            "y": 1409.20683267878,
+            "px": 81.43447851412566,
+            "py": 1409.20683267878,
+            "fixed": 0
+        },
+        {
+            "hash": "7401556",
+            "idx": 16,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "Logic",
+                    "Semantics",
+                    "Set Theory",
+                    "Topology",
+                    "Analysis",
+                    "Theory of Universal Time",
+                    "General Systems Theory",
+                    "Physical Euclidean Geometry",
+                    "Physical Geometry",
+                    "Analytic Geometry",
+                    "Uniform convergence",
+                    "Antecedence"
+                ],
+                "extent": [
+                    "PM",
+                    "CM",
+                    "QM",
+                    "GO"
+                ]
+            },
+            "parents": [
+                "7401548"
+            ],
+            "children": [
+                "7401564"
+            ],
+            "labelObjects": [
+                "GO"
+            ],
+            "labelAttributes": [
+                "Set Theory"
+            ],
+            "index": 16,
+            "weight": 2,
+            "x": 309.81608615481355,
+            "y": 1136.2323910468654,
+            "px": 309.81608615481355,
+            "py": 1136.2323910468654,
+            "fixed": 0
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 2
+        },
+        {
+            "source": 0,
+            "target": 16
+        },
+        {
+            "source": 2,
+            "target": 3
+        },
+        {
+            "source": 2,
+            "target": 10
+        },
+        {
+            "source": 2,
+            "target": 15
+        },
+        {
+            "source": 3,
+            "target": 4
+        },
+        {
+            "source": 3,
+            "target": 9
+        },
+        {
+            "source": 4,
+            "target": 5
+        },
+        {
+            "source": 4,
+            "target": 6
+        },
+        {
+            "source": 5,
+            "target": 1
+        },
+        {
+            "source": 6,
+            "target": 7
+        },
+        {
+            "source": 7,
+            "target": 8
+        },
+        {
+            "source": 8,
+            "target": 1
+        },
+        {
+            "source": 9,
+            "target": 5
+        },
+        {
+            "source": 10,
+            "target": 4
+        },
+        {
+            "source": 10,
+            "target": 11
+        },
+        {
+            "source": 10,
+            "target": 14
+        },
+        {
+            "source": 11,
+            "target": 6
+        },
+        {
+            "source": 11,
+            "target": 12
+        },
+        {
+            "source": 12,
+            "target": 8
+        },
+        {
+            "source": 12,
+            "target": 13
+        },
+        {
+            "source": 13,
+            "target": 1
+        },
+        {
+            "source": 14,
+            "target": 5
+        },
+        {
+            "source": 14,
+            "target": 13
+        },
+        {
+            "source": 15,
+            "target": 9
+        },
+        {
+            "source": 15,
+            "target": 14
+        },
+        {
+            "source": 16,
+            "target": 15
+        }
+    ],
+    "classDescriptions": [
+        {
+            "key": "MB",
+            "desc": "Material Background (Protophysics)"
+        },
+        {
+            "key": "FB",
+            "desc": "Formal Background"
+        },
+        {
+            "key": "Z",
+            "desc": "Zerological principle"
+        }
+    ],
+    "classes": {
+        "Logic": "FB",
+        "Semantics": "FB",
+        "Set Theory": "FB",
+        "Algebra": "FB",
+        "Topology": "FB",
+        "Analysis": "FB",
+        "Vector Spaces Theory": "FB",
+        "Probability Theory": "FB",
+        "Theory of Riemannian Spaces": "FB",
+        "Mathematical Statistics": "FB",
+        "Manifold Geometry": "FB",
+        "Theory of local time": "MB",
+        "Theory of Universal Time": "MB",
+        "General Systems Theory": "MB",
+        "Physical Euclidean Geometry": "MB",
+        "Physical Geometry": "MB",
+        "Field Theory": "MB",
+        "Physical Probability Theory": "MB",
+        "Analytical Dynamics": "MB",
+        "Dimensional Analysis": "FB",
+        "Analytic Geometry": "FB",
+        "Uniform convergence": "Z",
+        "Antecedence": "Z",
+        "Galilian Invariance": "Z",
+        "Contiguity": "Z",
+        "Space-time Contiguity": "Z",
+        "Lorentz Invariance": "Z",
+        "General covariance": "Z",
+        "Material Indifference": "Z",
+        "Equipresence": "Z"
+    }
+}

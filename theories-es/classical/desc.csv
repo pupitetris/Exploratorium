@@ -1,0 +1,42 @@
+Independent,Explanation,Dependent,Atributo,Clase
+Dimensión: N=4,Una tipificación de la variedad diferenciable.,Dimension: N=4,N,Tip
+M: Variedad diferenciable,"Un espacio topológico que asemeja el espacio euclidiano en las vecindades de cada punto. Puede coordinatizarse por $\R^{n}$ mediante una familia de homomorfismos.
+",M: Differentiable manifold,M,M
+$\left\{ _{\mu\nu}^{\lambda}\right\} $: Conexión métrica,"También llamada la conexión Levi-Civita, es dependiente de la métrica $g$. Nos da información acerca de cómo transportar vectores a lo largo de una curva conservando la métrica.",$\left\{ _{\mu\nu}^{\lambda}\right\} $: Metric connection,Conexión Métrica,GO
+$\gamma$: Conexión afín,Una conexión generalizada para campos vectoriales en espacios curvos donde la torsión y la no-metricidad no son necesariamente cero.,$\gamma$: Affine connection,Conexión Afín,GO
+$\overline{\nabla}$: Conexión plana,Una derivada para espacios planos.,$\overline{\nabla}$: Flat connection,Conexión Plana,GO
+$\nabla$: Conexión de Newton-Cartan,Una conexión plana covariante.,"$\widetilde{\nabla}=(\nabla,G^{a}t_{b}t_{c})$: Covariant connection",Conexión Newton-Cartan,GO
+Conexión métrico-afín,Una conexion para espacios métrico-afines donde la no-metricidad y la torsión son distintas de cero.,Metric-Affine connection,Conexión Métrico-Afín,GO
+$dt$: Función de tiempo,Un covector que induce una foliación de la variedad M en hyper-superficies de tres dimensiones.,$t_{a}$,dt,GO
+$h$: Tensor Métrico Plano,"Un campo tensorial simétrico de tipo $(2,0)$. h se define en un espacio cotangente $T_{p}^{*}\times T_{p}^{*}$ y tiene signatura $<3,0,1>$. Induce una métrica tri-dimensional en cada hyper-superficie.",$h^{ab}$Flat Metric tensor,"h<2,0>",GO
+$g$: Campo métrico tensorial,"Un campo tensorial simétrico de tipo $(0,2)$ y signatura $<1,3>$. Provee una noción de distancia y ángulo entre vectores.",$g_{\mu\nu}$: Metric tensor,"g<0,2>",GO
+$V$: Contra vector field  ,Describe el espacio absoluto $T_{\sigma}=V$ a lo largo de $\sigma$,,V,GO
+$\Phi$: Potencial gravitacional,Potencial producido por un campo vectorial tipo espacio que representa el campo gravitacional.,$G^{a}$: Gravitational field,Φ,Cond
+$T$: Campo tensorial de Estrés-Energía-Momentum,"Campo tensorial simétrico $(2,0)$.",$T_{\mu\nu}$: Stress-Energy-Momentum tensor,T,GO
+$T_{\mu\nu}\rightarrow0$: Polvo,El tensor de Estrés-Energía-Momentum es casi cero (modelos de polvo).,,T=0,Cond
+$Riem(\Gamma)=0$,El tensor de curvatura de Riemann de la conexión afín es cero. $K=0$. Es una de las condiciones de homogeneidad de Trautman.,,K=0,Cond
+$\eta$: Métrica de Minkowski,"Métrica plana no dinámica. Ya que la curvatura es siempre igual a cero ($Riem(\gamma)=0$), podemos elegir coordenadas globales de tal manera que $\eta_{\mu\nu}=diag(-1,1,1,1)$.",,eta,GO
+Clase de signatura del tensor métrico,La signatura es no toda positiva,,Signatura no toda positiva,Tip
+Signatura del tensor métrico,"La signatura contiene un índice positivo y tres negativos $<1,3>$.",,"<1,3>",Tip
+Signatura del tensor plano,La signatura indica que tres índices son positivos y una negativa.,,"<3,0,1>",Tip
+$(dt\otimes K)_{1a2}$= 0,,,(dt ⊗ K)= 0,Cond
+"$H_{*}^{2}K(w,v,X,Y)=H_{*}^{2}K(v,w,Y,X)$",,,H2*K=H2*K,Cond
+$\overline{D}(dt)=0$,La derivada covariante = 0 asegura las rebanadas de simultaneidad sean planas.,$\nabla_{a}t_{b}=0$,D(dt)=0,Cond
+$\overline{D}(h)=0$,La derivada covariante de h describe la geometría euclidiana.,$\nabla_{a}h^{bc}=0$,D(h)=0,Cond
+$\overline{D}(g)=0$,Condición que preserva ángulos y distancias cuando se transporta de forma paralela a lo largo de una curva.,,D(g)=0,Cond
+"$h(dt,w)=0$",Describe la geometría euclideana.,$t_{a}h^{ab}=0$,"h(dt,w)=0",Cond
+$\overline{D}(V)=0$,"Derivada covariante de V es cero, lo que hace que las lineas de acordonamiento del espacio-tiempo sean geodésicas.",,D(V)=0,Cond
+$dt(V)=1$,La derivada de V igual a 1 hace que las lineas de acordonamiento del espacio-tiempo sean tipo tiempo.,,dt(V)=1,Cond
+Ec. de Poisson: $del(\Phi)=4\pi k\rho$,,Poisson’s Eq: $\nabla_{a}G^{a}=-4\pi\rho$,Ec. de Poisson,FieldEq
+$Ric=-4\pi\rho dt\otimes$$dt$,Equivalente covariante a la Ec. de Poisson.,$\widetilde{R}_{bc}=4\pi\rho t_{b}t_{c}$,Poisson Cov.,FieldEq
+Ec. de Einstein: $G_{1}^{*}G_{2}^{*}Ric-\frac{1}{2}Rg^{*}=-8\pi kT$,La materia le dice al espacio cómo curvarse y la curvatura le dice a la materia cómo moverse.,,Ec. de Einstein,FieldEq
+Fuerza Universal:  $mD_{T\sigma}T_{\sigma}=m(grad(\Phi))$,Las partículas afectadas sólo por fuerzas gravitacionales siguen curvas no geodésicas determinadas por el potencial gravitacional.,,Segunda Ley,MovEq
+Ec. Geodésica:$D_{T\sigma}T_{\sigma}=0$,Las partículas libres siguen curvas geodésicas tipo tiempo.,Geodesic Equation: $\frac{d^{2}x_{i}}{dt^{2}}+\Gamma_{jk}^{i}\frac{dx_{j}}{dt}\frac{dx_{k}}{dt}=0$,Ley Geodésica,MovEq
+$S_{\mu\nu}^{\lambda}=0$,Condición de homogeneidad de Trautman $\widetilde{R}_{bd}^{ac}=\widetilde{R}_{db}^{ca}$,,Torsión=0,Cond
+Tensor de Torsión de Cartan: $S_{\mu\nu}^{\lambda}\equiv\Gamma_{\left[\mu\nu\right]}^{\lambda}$,La parte anti-simétrica de la conexión.,,Torsión≠0,Cond
+"$Q_{\mu\nu\lambda}=0$,",Condición de homogeneidad de Trautman,,No-metricidad≠0,Cond
+$\psi$: Campos materiales,,,Psi,GO
+$R$: Escalar de Ricci,$R=g^{\mu\nu}R_{\mu\nu}$,$R$:Ricci scalar,Ricci scalar,GO
+$\Re$: Escalar afín tipo Ricci,\Re=g^{\mu\nu}\Re_{\mu\nu},$\Re$: Affine Ricci scalar,R2,GO
+Dependencia entre variables,La conexión y el tensor métrico dependen uno del otro.,Dependency,Dependent,Tip
+Independencia de variables,La conexión puede expresarse de forma independiente al tensor métrico.,Independency,Independent,Tip

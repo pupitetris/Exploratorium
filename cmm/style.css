@@ -1,0 +1,136 @@
+@media only screen and (min-width: 768px) {
+  .marcaAgua{
+    top: -20px;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+	body.page {
+		background-color: #5fa03b;
+		min-height: 100vh;
+	}
+
+	.content, footer {
+		background-color: #fff;
+	}
+
+  #info {
+    background: rgba(255,255,255,0.7);
+    margin: 0 auto;
+    display: table;
+  }
+
+  .right li, .right span {
+    width: auto;
+    float: left;
+    position: relative;
+    padding: 10px 15px;
+    line-height: 20px;
+  }
+
+  .right li:hover {
+    text-decoration: none;
+    background-color: #eee;
+    cursor:pointer;
+  }
+
+  .right {
+    list-style: none;
+    right: 0;
+    float: right;
+  }
+
+  .imgLogos {
+    float: left;
+    position: relative;
+    width: auto;
+  }
+
+  .uam {
+    max-width: 80px;
+    margin: 20px 30px !important;
+    max-width: 200px;
+  }
+
+  .imgLogos img {
+    max-width: 80px;
+    margin: 15px 0px;
+    vertical-align: middle;
+  }
+
+  .title {
+    float: left;
+    position: relative;
+		width: 100%;
+  }
+
+  .container h2 {
+    font-family: 'Waiting for the Sunrise', cursive;
+  }
+
+  .author {
+    float: left;
+    position: relative;
+		width: 100%;
+  }
+
+  .intro {
+    float: left;
+    position: relative;
+		width: 100%;
+  }
+
+  .intro p {
+    margin: 5px 30px;
+  }
+
+  .marcaAgua {
+    background: url('../images/mapa.png');
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 0;
+    filter: grayscale(50);
+    opacity: .5;
+  }
+
+	.ligas {
+    max-width: 200px;
+    z-index: 10;
+    position: relative;
+    margin: 0 auto;
+    display: table;
+    font-family: 'Open Sans', sans-serif;
+	}
+
+	.ligas a {
+		width: 100%;
+		background-image: url("../images/pasto.svg");
+    background-position: bottom left;
+		color: white;
+		margin-top: 1ex;
+	}
+
+  .ligas a:hover {
+    color: #8DC07E;
+  }
+
+	.ligas a:first-child {
+		margin-top: 0;
+	}
+
+  .acknowledgements {
+    padding: 120px 0 20px 0;
+  }
+
+  .footer-pasto {
+    width: 100%;
+    background-image: url("../images/pasto.svg");
+    background-position: top center;
+    background-repeat: repeat-x;
+    float: left;
+    min-height: 180px;
+  }
+}

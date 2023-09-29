@@ -1,0 +1,31 @@
+Independent,Explanation,,Dependent,Atributo,Clase
+Lógica,"El estudio sistemático de reglas válidas de inferencia, análisis y valoración de argumentos.",,,Lógica,FB
+Semántica,"El estudio sistemático del significado en el lenguaje, la lógica formal y la semiótica.",,,Semántica,FB
+Teoría de Conjuntos,Teoría de colecciones de objetos matemáticos.,,,Teoría de Conjuntos,FB
+Álgebra,El estudio de los símbolos matemáticos y las reglas para manipular estos símbolos.,,,Álgebra,FB
+Topología,"El estudio de las propiedades de los objetos geométricos que se conservan bajo deformaciones continuas, como estirarse, torcerse, arrugarse y doblarse, pero no desgarrarse ni pegarse.",,,Topología,FB
+Análisis,"La rama de las matemáticas que se ocupa de los límites y las teorías relacionadas, como la diferenciación, la integración, la medida, las series infinitas y las funciones analíticas.",,,Análisis,FB
+Teoría de Espacios Vectoriales,Teoría de la suma y multiplicación de espacios vectoriales,,,Teoría de Espacios Vectoriales,FB
+Teoría de Probabilidad,Rama de las matemáticas que se ocupa de la probabilidad como un concepto matemático riguroso expresado en un conjunto de axiomas.,,,Teoría de Probabilidad,FB
+Teoría de Espacios Riemannianos,Rama de la geometría diferencial que estudia variedades suaves con métrica riemanniana.,,,Teoría de Espacios Riemannianos,FB
+Estadística Matemática,La aplicación de la teoría de la probabilidad a la estadística.,,,Estadística Matemática,FB
+Geometría de Variedades,Rama de la geometría diferencial que estudia espacios topológicos que localmente se asemejan al espacio euclidiano cerca de cada punto.,,,Geometría de Variedades,FB
+Teoría del Tiempo Local,Una teoría del tiempo relacional con diferentes marcos inerciales.,,,Teoría del Tiempo Local,MB
+Teoría del Tiempo Universal,Una teoría que asume un único tiempo relacional para cada lugar y cada marco de referencia.,,,Teoría del Tiempo Universal,MB
+Teoría General de Sistemas,Un conjunto de conceptos y principios interrelacionados que se aplican a todos los sistemas.,,,Teoría General de Sistemas,MB
+Geometría Física Euclidiana,Geometría euclidiana con una interpretación física. se mantiene razonablemente bien para pequeñas regiones del espacio.,,,Geometría Física Euclidiana,MB
+Geometría Física,Una teoría geométrica da diferentes significados físicos a las primitivas de la teoría abstracta D de los espacios métricos.,,,Geometría Física,MB
+Teoría de Campos,Cualquier teoría que contenga el concepto matemático de campo (un imponderable extendido que no se puede transformar).,,,Teoría de Campos,MB
+Teoría Física de Probabilidad,Teoría de la probabilidad matemática más una interpretación física de sus primitivas U y P.,,,Teoría Física de Probabilidad,MB
+Dinámica Analítica,Una clase de teorías parcialmente interpretadas que describen la evolución de los sistemas físicos.,,,Dinámica Analítica,MB
+Análisis Dimensional,El análisis que exhibe los géneros a los que pertenece un conjunto de magnitudes.,,,Análisis Dimensional,FB
+Geometría Analítica ,El estudio de la geometría utilizando un sistema de coordenadas.,,,Geometría Analítica ,FB
+Convergencia Uniforme,Todas las series cuyos términos representan objetos físicos serán uniformemente convergentes en el intervalo dado.,,,Convergencia Uniforme,Z
+Antecedencia,"Si A y B son propiedades dependientes del tiempo y A determina B (ya sea de forma causal o estocástica9), entonces B en el momento t es un funcional de A en todo momento t’ antes y hasta t.",,,Antecedencia,Z
+Invariancia Galileana,Las leyes básicas de la física serán invariantes bajo transformaciones de coordenadas que representan cambios de marcos inerciales (galileanos).,,,Invariancia Galileana,Z
+Contigüidad,"Si a y B son propiedades dependientes del lugar y A determina B (ya sea causal o estocásticamente), entonces B en el lugar x es un funcional de a en todos los lugares x’ que rodean a x.apagado",,,Contigüidad,Z
+Contigüidad del Espacio-Tiempo,"Solo las regiones de campo conectables por una perturbación de campo (por lo tanto, separadas por un intervalo de tiempo) pueden interactuar.",,,Contigüidad del Espacio-Tiempo,Z
+Invarianza de Lorentz,Las leyes básicas de la física serán invariantes bajo las transformaciones de Lorentz de coordenadas que representan cambios de marcos inerciales.,,,Invarianza de Lorentz,Z
+Covarianza General,"Los enunciados de las leyes básicas de la física deben cumplirse en cualquier marco de referencia y en cualquier sistema de coordenadas. Deben conservarse bajo cambios arbitrarios en los sistemas de coordenadas, ya sea que estos últimos reflejen o no diferentes marcos de referencia físicos.",,,Covarianza General,Z
+Indiferencia Material,O la objetividad. Las ecuaciones constitutivas deben ser invariantes bajo transformaciones de coordenadas.,,,Indiferencia Material,Z
+Equipresencia,"Un principio heurístico utilizado en teorías de materiales y termodinámica: “Una variable independiente presente en una ecuación constitutiva se encuentra presente en todas nuestras consideraciones”. (Dado que en esta red no se toman estas teorías como objetos, este atributo se encuentra en el nodo ínfimo).",,,Equipresencia,Z

@@ -1,0 +1,50 @@
+Independent,Explanation,Dependent,Atributo,Clase
+Dimension: N=4,A typification for M.,Dimension: N=4,N,Tip
+M: Differentiable manifold,"A topological space that resembles euclidean space near each point. It can be coordinatized by Rn through a family of homeomorphisms.",M: Differentiable manifold,M,M
+$\gamma$: Affine connection,A generalised connection for vector fields in curved spaces where torsion and non-metricity are not necessarily cero.,$\gamma$: Affine connection,Affine Connection,GO
+$\overline{\nabla}$: Flat connection,A derivative for flat spaces.,$\overline{\nabla}$: Flat connection,Flat Connection,GO
+$\nabla$: Newton-Cartan Connection,Flat covariant connection.,"$\widetilde{\nabla}=(\nabla,G^{a}t_{b}t_{c})$: Covariant connection",Newton-Cartan Connection,GO
+$\left\{ _{\mu\nu}^{\lambda}\right\} $: Metric connection,"Also called Levi-Civita connection, it is dependent on the metric $g$. It gives us information about how to transport vectors along a curve, while conserving the metric.",$\left\{ _{\mu\nu}^{\lambda}\right\} $: Metric connection,Metric Connection,GO
+Metric-Affine connection,A connection for Metric-Affine Spaces where non-metricity and torsion are not cero,Metric-Affine connection,Metric Affine Connection,GO
+$g$: Metric tensor field,"A symmetric tensor field of type $(0,2)$ and signature $<1,3>$. Provides a sense of distance and angles between vectors",$g_{\mu\nu}$: Metric tensor,Metric tensor,GO
+$R$:Ricci scalar,$R=g^{\mu\nu}R_{\mu\nu}$,$R$:Ricci scalar,Ricci scalar,GO
+$\Re$: Affine Ricci scalar,\Re=g^{\mu\nu}\Re_{\mu\nu},$\Re$: Affine Ricci scalar,R2,GO
+Dependency,The connection and the metric tensor depend on each other.,Dependency,Dependent,Tip
+Independency,The connection may be expressed independently of the metric tensor,Independency,Independent,Tip
+$\eta$: Minkowski’s metric,"Flat non-dynamical metric. Since $Riem(\gamma)=0$, we can always choose global coordinates in which $\eta_{\mu\nu}=diag(-1,1,1,1)$",,eta,GO
+$Riem(\Gamma)=0$,Riemann’s curvature tensor of the affine connection is zero. $K=0$. It is one of Trautman’s homogenous condition.,,K=0,Cond
+Curvature,Riemman’s curvature tensor,,Curvature,GO
+"Non metricity tensor: $Q_{\mu\nu\lambda}\equiv-\widetilde{\nabla}_{\mu g\nu\lambda}$,",It measures the failure of the connection to covariantly conserve the metric.,,Non metricity,GO
+" $Q_{\mu\nu\lambda}=0$,",Homogeneous Trautman Condition,,Non metricity=0,Cond
+"Weyl vector: $Q_{\mu}\equiv\frac{1}{4}Q_{\mu\nu^{\nu}}$,",Is the trace of the non-metricity tensor with respect to its last two (symmetric) indices.,,Weyl vector,GO
+Well vector: $Q_{\mu}=0$,The trace of the non-metricity tensor with respect to its last two (symmetric) indices,,Weyl vector=0,Cond
+Cartan torsion tensor: $S_{\mu\nu}^{\lambda}\equiv\Gamma_{\left[\mu\nu\right]}^{\lambda}$,The anti-symmetric part of the connection,,Cartan torsion,GO
+$S_{\mu\nu}^{\lambda}=0$,Homogeneous Trautman Condition $\widetilde{R}_{bd}^{ac}=\widetilde{R}_{db}^{ca}$,,Cartan torsion=0,Cond
+$h$: Flat Metric tensor,"A symmetric tensor field of type $(2,0)$. h is defined on de cotangent space $T_{p}^{*}\times T_{p}^{*}$ and has signature $<3,0,1>$. It induces a three-dimensional metric on each hypersurface.",$h^{ab}$Flat Metric tensor,h,GO
+$dt$: Time function,Co vector that induces a foliation of M into three-dimensional hyper surfaces.,$t_{a}$,dt,GO
+"$h(dt,w)=0$",An orthogonality condition that describes Euclidean Geometry,$t_{a}h^{ab}=0$,"h(dt,w)=0",Cond
+$V$: Contra vector field  ,"Describes absolute space
+$T_{\sigma}=V$ along $\sigma$",$v_{b}$: Components of a contractor field V,V,GO
+$\overline{D}(V)=0$,Covariant derivative of V equals zero. It makes the lines in the rigging of space-time to be geodesics.,$\nabla_{a}v_{b}=0$,D(V)=0,Cond
+$dt(V)=1$,Derivative of $V=0$ makes the lines in the rigging of space-time to be timelike.,$t_{a}v_{b}=1$,dt(V)=1,Cond
+$\overline{D}(dt)=0$,Covariant derivative of dt equals zero to ensure the simultaneity slices are flat.,$\nabla_{a}t_{b}=0$,D(dt)=0,Cond
+$\overline{D}(h)=0$,Covariant Derivative of h describes Euclidean Geometry,$\nabla_{a}h^{bc}=0$,D(h)=0,Cond
+Signature,"for the metric tensor: Not-definite-positive $<-,+,+,+>$ or $<+,-,-,->$",Signature,Not-definite-positive,Tip
+Signature,for the metric tensor: definite-positive,Signature,Definite-positive,
+Signature,"for the metric tensor: Not definite positive $<1,3>$",Signature,"<1,3>",Tip
+$\overline{D}(g)=0$,Condition that preserves angles and distances when parallel transporting along a curve.,$\nabla_{a}g_{bc}=0$,D(g)=0,Cond
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,

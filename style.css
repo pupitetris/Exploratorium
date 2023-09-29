@@ -1,0 +1,199 @@
+@import url("cmm/style.css");
+
+.collapse-navbar-collapse {
+	text-align: left;
+}
+
+.title, h2 {
+  color: #265418;
+}
+
+.title h1 {
+  /*  font-family: 'Sriracha', cursive;*/
+}
+
+.title h2 {
+  font-family: 'Waiting for the Sunrise', cursive;
+}
+
+.intro-header {
+	text-align: center;
+	display: flex-column;
+}
+
+.container {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.container > * {
+  flex: 1 100%;
+}
+
+.nav a {
+  text-transform: uppercase;
+}
+
+.main {
+  flex: 2 0px;
+  order: 2;
+}
+
+.aside-1 {
+  order: 1;
+}
+
+.aside-2 {
+  order: 3;
+}
+
+.acknowledgements {
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 120px 0 20px 0;
+}
+
+.footer-pasto {
+	position: relative;
+	width: 100%;
+	background: rgba(255, 255, 255, 07);
+	background-image: url("images/pasto.svg");
+  background-position: top center;
+  background-repeat: repeat-x;
+  float: left;
+  min-height: 180px;
+}
+
+#attr-desc {
+	display: none;
+}
+
+#d1 {
+	margin-top: 1em;
+	width: 100%;
+}
+
+#d2 {
+	width: 100%;
+	min-height: 120px;
+	padding: 1em;
+	background-color: rgba(255,255,255,0.85);
+	/* border-bottom: 1px solid black; */
+}
+
+#d2 h2 {
+	margin-top: 0;
+}
+
+.affix {
+	width: 100%;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+text {
+  font: 14px sans-serif;
+}
+
+.box-distancia.textbox-box {
+	fill: gray;
+}
+
+.box-tamaño.textbox-box {
+	fill: red;
+}
+
+.textbox-bg-stop1 {
+	stop-color: rgba(255,255,255,0.45);
+}
+
+.textbox-bg-stop2 {
+	stop-color: rgba(255,255,255,0.20);
+}
+
+.textbox-bg {
+	stroke-width: 1px;
+	stroke: #999;
+	fill: url(#textbox-bg-gradient);
+}
+
+.textbox-text {
+  font: 24px sans-serif;
+	padding: 15px;
+}
+
+.objects-label {
+	z-index: 200;
+}
+
+.objects-label-text {
+	fill: black;
+}
+
+.objects-label-box {
+	fill: white;
+}
+
+.attributes-label {
+	z-index: 200;
+}
+
+.attributes-label-text {
+	font-style: italic;
+	fill: black;
+}
+
+.node text {
+	cursor: default;
+}
+
+.node-dot {
+	cursor: pointer;
+}
+
+.node-bg {
+	fill: white;
+	stroke: none;
+}
+
+.node-basic {
+	fill: none;
+	stroke: #753917;
+	stroke-width: var(--node-stroke-width);
+}
+
+.node-new-attribute {
+	fill: gray;
+	stroke: none;
+}
+
+.node-new-object {
+	fill: #392e0d;
+	stroke: none;
+}
+
+.fixed .node-bg {
+	stroke-width: 10px;
+	stroke: #dd0;
+}
+
+.link {
+  stroke: #753917;
+  stroke-width: var(--link-width);
+	z-index: 200;
+}
+
+.link.inactive, .node.inactive > * {
+	opacity: 0.125;
+}
+
+.node.inactive .node-bg {
+	opacity: 1;
+}
+
+.attributes-label-box {
+	fill: #CE2A24;
+}

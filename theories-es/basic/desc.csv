@@ -1,0 +1,145 @@
+Independent,Explanation,Dependent,Atributo,Class
+PM 1.1 Tiempo,"$T$ es un intervalo de línea real.
+Cada $t$ representa un instante de tiempo.
+La relación $\leq$ que ordena $T$ significa “más temprano que, o simultáneo a.”",,T,Chronogeometrical
+PM 1.2 E3: Espacio físico euclideano,"$E^{3}$ es un espacio euclideano 3-dimensional.
+$E^{3}$ representa (mapea) el espacio ordinario.",,E3,Chronogeometrical
+SR 4  E3R: Una variedad que mapea el espacio local,"$E^{3}$ es un espacio euclideano tridimensional con producto interno.
+$E^{3}$ representa al espacio ordinario relativo a (como visto desde) cualquier $i\subset I$ dado.",,E3R,Chronogeometrical
+CEM 1.4 M3: Variedad que representa el espacio físico,"$M^{3}$ es una variedad diferenciable 3-dimensional.
+$M^{3}$ representa el espacio físico.",,M3,Chronogeometrical
+GR 2.1 M4: Variedad de 4D que representa el espacio-tiempo físico,"$M^{4}$ es una variedad diferenciable 4-dimensional de clase $C^{2}$.
+Para cada punto $x\subset M^{4}$, existe una vecindad de $x$ sobre la cual un sistema de coordenadas local puede ser dado (definido).
+las funciones $f^{\mu}$ que mapean conjuntos de coordenadas vecinas entre sí son continuas y tienen derivadas continuas hasta de segundo orden en $M^{4}$.
+$M^{4}$ representa el espacio físico.",,M4,Chronogeometrical
+SR 5 tR: El rango de la función de hora local,"$T$ es un intervalo de línea real
+$T$ es el rango de la función de tiempo que satisface los axiomas de la teoría del tiempo local.
+Cada subconjunto $t\subset T$ representa un instante de tiempo t.",,tR,Chronogeometrical
+SR 8 Cotiempo,"Por cada $t$, $t'\in I$, los cotiempos asociados son tales que $\frac{\partial X_{0}}{\partial X'_{0}}$ existe y es positiva.",,Cotiempo,Chronogeometrical
+PM 2.1 Partículas puntuales,"$\Sigma$ es un conjunto numerable no vacío.
+Cada $\Sigma$ is una partícula",,Partículas,Referents
+CM1.1 Cuerpos,"$\Sigma$ es un conjunto numenable no- vacío.
+Cada $\Sigma$ es un cuerpo",,Cuerpos,Referents
+CEM 1.1 Campos electromagnéticos,"$\Phi$ es un conjunto no vacío.
+Cada $\Phi$ es un campo electromagnético.",,Campos electromagnéticos,Family
+CEM 1.2 Cuerpos cargados,"$\Sigma$ es un conjunto no vacío.
+Cada $\Sigma$ es un cuerpo cargado.",,Cuerpos cargados,Referents
+GR 1.1 Campos gravitatorios,"$\Sigma$ es un conjunto no vacío.
+Cada $\Sigma$ representa un campo gravitacional.",,Campos gravitacionales,Referents
+GR 1.2 Entidades físicas distintas de los campos gravitatorios,"$\overline{\Sigma}$ es un conjunto no vacío disjunto de sigma.
+Cada $\overline{\Sigma}$ representa un sistema físico distinto al campo gravitacional.",,Campos no gravitacionales,Referents
+SR 1 Sistema físico (material o no),"$\Sigma\neq\textrm{Ø}$.
+Cada $\sigma\subset\Sigma$ representa un sistema físico.",,Sistemas físicos,Referents
+SR 2 Señales electromagnéticas,"$S\neq\emptyset l$ and $S\subset\Sigma$.
+Cada $s\in S$ representa una señal electromagnética.",,Señales electromagnéticas,Referents
+PM 2.2 Postulado: Una vez que una partícula siempre una partícula,"Para dos $t$ diferentes, $t'\in T$, o $\sigma\in\Sigma$ en $t$, tenemos $\sigma\subset\Sigma$ en $t'$.
+Se necesita este postulado para garantizar las predicciones y retrodicciones calculadas para una $Sigma$ en leyes de movimiento y cualquier condición inicial referirá a $Sigma$.",,Postulado,Tip
+CM1.3 Familia de funciones vectoriales que representan la posición de una partícula,"$X$ es continuo y está acotado para cada $\beta$, $k$ y $t$.
+$X(\beta,k,t)$ representa el lugar (localización) de la partícula $\pi$ del cuerpo $\sigma$, relativa al marco $k$ en el instante $t$.",,{X},Family
+SR 6 Posición de un sistema sigma€Sigma,"$\left\{ X\right\} $ es una familia de funciones no vacía.
+Cada $X\in\left\{ X\right\} $ es una función de $\Sigma\times I\times T$ a $R^{3}$. 
+$X\left(\sigma,i,t\right)$ representa la posición de un sistema de puntos $\sigma\subset\Sigma$, que refiere al marco $\tau$, en el instante $t$ relativo a $\tau$.
+Para cada evento puntual existe una séptupla $\left\langle \sigma,s,\tau,X_{0},X_{1},X_{2},X_{3}\right\rangle \hat{=}$ evento.",,{XR},Family
+GR 4.2 Posición,"Para cada $i=1,2,3$, $\left\{ X_{i}\right\} $ es una familia no vacía de funciones.
+Cada $X_{i}\in\left\{ X_{i}\right\} $ es una función de $\overline{\Sigma}\times K\times T$ a $\mathbb{R}$, continua con respecto a $t$.
+$X(\bar{\sigma},k,t)$ representa la posición de un sistema de puntos $\bar{\sigma}\in\bar{\Sigma}$, que refieren a $k$, en el instante $t$ relativo a $k$.",,{XGR},Family
+"PM 2.3, CM 2.1 y GR 4.1 Conjunto de marcos de referencia físicos","$K$ es un conjunto numerable no vacío.
+Cada $k$ es un sistema rígido de corpúsculos de los cuáles por lo menos cuatro descansan en los vértices de un trihedro regular.
+Para cada $k$ existe un sistema cartesiano de ejes $e=\left\langle e_{1},e_{2}.e_{3}\right\rangle $ tal que $e\hat{=}k$
+Ninguna $k$ interactúa con ninguna $\sigma\subset\Sigma$ que no sea parte de $k$.
+La configuración de cada$k\in K$ es independiente del tiempo.",,K,Frames
+SR 3 Marcos de referencia inerciales,"$I\neq\emptyset\land I\subset\Sigma-S$.
+Cada $i\in I$ es un marco de referencia inercial.
+Para cada $i\in I$ hay una base $e=\left\langle e_{1},e_{2}.e_{3}\right\rangle $ tal que $e\hat{=}i$",,Marco inercial,Frames
+PM 2.5 Postulado: Los valores de posición y velocidad identifican de forma única una partícula.,"Para cualquiera dos $\sigma$,$\sigma'\in\Sigma$ y cada $k\in K$ y cada $t’\in T$, si $X\left(\sigma,t,k\right)=X\left(\sigma',t,k\right)$ y $\dot{X}\left(\sigma,t,k\right)=\dot{X}\left(\sigma',t,k\right)$, entonces $\sigma=\sigma’$.
+En palabras: los valores de la posición y la velocidad identifican de manera única (caracterizan) a las partículas. Las coordenadas por sí solas son insuficientes para esto:  uniquely identify (characterize) a particle. Las coordenadas por sí solas son insuficientes para esto: por lo tanto, dos partículas diferentes pueden estar en el mismo lugar en el instante de la colisión, pero luego tendrán velocidades (vectoriales) diferentes.",,PM 2.5,Tip
+PM 3.1 Familia de funciones representando la masa,"$M$ is a function from $\Sigma$ to the set $\mathbb{R^{+}}$ of nonnegative reals.
+The value of $M$ at $\sigma,\in\Sigma$ represents the mass (inertia) of $\sigma$.",,Masa,Family
+PM 3.2 La masa de un sistema de partículas puntuales es igual a la suma de las masas parciales.,"Si $\sigma_{i}\in\Sigma$ para cada $i\in N$ finito, entonces $M\left(\underset{i}{\dot{\sum}}\sigma_{i}\right) =\underset{i}{\sum}M(\sigma_{i})$.",,PM 3.2,Tip
+PM 3.3 Fuerza externa,"Cada $F^{e}\in\left\{ F^{e}\right\}$ es un vector de valor real en $\Sigma\times K\times E^{3}\times T$.
+El valor de $F^{e}$ en cualquier 6-ple $\left\langle \sigma,k,x,t\right\rangle $ representa la fuerza externa que actúa sobre $\sigma$, relativa al marco $ k$, en el lugar $x$ y en el instante $t$.",,Fuerza externa,Family
+PM 3.4 Fuerza entre partículas,"Every $F^{i}\in\left\{ F^{i}\right\} $ is a real valued vector on $\Sigma\times\Sigma\times K\times E^{3}\times T$.
+The value of $F^{i}$ at any given 7-ple $\left\langle \sigma,\sigma',k,x,t\right\rangle $ represents the force extended by $\sigma'$ on $sigma$ relative to $k$ at $x$ and $t$.",,Fuerza entre partículas,Family
+PM 3.5 Leyes de Newton,"Por cada $\sigma$, $\sigma'\in\Sigma$, cada $t\in T$, cada $F^{e}\in\left\{ F^{e}\right\}$ y cada $F ^{i}\in\left\{ F^{i}\right\}$, hay al menos un $k\in K$ tal que
+$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+\underset{\sigma'\neq\sigma}{\sum}F^{i}( \sigma,\sigma',t,k)$
+y
+$F^{i}(\sigma,\sigma',t,k)=-F^{i}(\sigma',\sigma,t,k)$.",,F=ma,EqMotion
+CM 1.4 Transformación,"Por cada $X\in\left\{ X\right\}$, cada $b\in\beta$ y cada $t\in T$, el mapa $X:b\rightarrow C$ es 1:1, sobre y continuo.
+Por cada $X\in\left\{ X\right\}$, cada $b\in\beta$ y cada $t\in T$ la imagen $C=X(b,t)$ de $b$ bajo $X$ es un conjunto compacto con un límite continuo por partes $\partial X(b,t)$.
+Por cada $\sigma\in\Sigma$ y $t\in T$ existe un $X\in\left\{ X\right\} $ tal que la imagen $X(b,t)$ de $b$ bajo $X$ representa el lugar que ocupa el cuerpo $\sigma$ representado por $b$.",,Mapeo X:b¬C,Transformation
+CM 1.5 Densidad de masa,"Cada $\varrho\in\left\{ \varrho\right\} $ es una función continua y acotada de $\beta$ al conjunto de los reales no negativos.
+Si $b\hat{=}\sigma$, entonces $\varrho(b,x,t)$ representa la densidad de masa de $\varrho$ en $x$,$t$.",,Densidad de masa,Family
+CM 1.6 Aditividad de la masa,"Para cada $\sigma\in\Sigma$, si $b\hat{=}\sigma$ y $C$ es la imagen de $b$ debajo de $X$, entonces $M$ es una función continua del volumen ( Medida de Lebesgue) $\mu(b,t)$ de $b$ en $t$.
+b) Para cualesquiera dos $\sigma,\sigma'\in\Sigma$ distintos, si $b\hat{=}\sigma$ y $b'\hat{=}\sigma'$, y $b\cup b '\hat{=}\sigma+\sigma'$, entonces $M(b\cup b')=M(b)+M(b')$.
+c) Si $b\hat{=}c$, entonces $M(b)$ representa la masa de $\sigma$.",,Aditividad de la masa,Tip
+CM 1.7 Conservación de masa,"Para cada $\sigma\in\Sigma$, si $b\hat{=}\sigma$ y $C=X(b,t)$ y $C’ =X’(b)$ son dos configuraciones diferentes de $\sigma$ en un momento dado $t$, entonces las masas correspondientes son la misma: $M(\sigma)=\underset{X(b)}{\int}d^{3}x\varrho_{X}=\underset{X’(b)}{\int}d^{3}x\varrho_{X'}$.",,Conservación de masa,Tip
+CEM 1.5 Densidad de carga,"$\left\{ \varrho\right\} $ es una familia de funciones no vacía.
+Cada $\varrho$ es una función escalar de $\beta\times M^{3}\times T$ a $\mathbb{R}$
+Si $b\hat{=}\sigma$, entonces $\varrho(b,x,t)$ representa la densidad de carga de $\sigma$ en $x$,$t$.",,Densidad de carga,Family
+CM 1.2 Cuerpos,"$\left\{ B\right\} $ es una familia no vacía de conjuntos de puntos.
+Todo $b\in B$ es una variedad derivable tridimensional.
+Por cada $\sigma\in\Sigma$ existe un $b\in\beta$ tal que $b\hat{=}\sigma$ puntualmente.",,{B},Family
+CEM 1.3 Cuerpos cargados,"$\left\{ \beta\right\} $ es una familia no vacía de conjuntos de puntos.
+Cada $b\in\beta$ es una variedad diferenciable tridimensional.
+Por cada $\sigma\in\Sigma$ existe un $b\in\beta$ tal que $b\hat{=}\sigma$ puntualmente.",,{Beta*},Family
+CEM 1.6 Intensidad del campo eléctrico,"$\left\{ E\right\} $ es una familia de campos no vacía.
+Cada $E\in\left\{ E\right\} $ es una función real y vectorial de $\varPhi\times M^{3}\times T$.
+$E(\varphi,x,t)$ representa la intensidad de la componente eléctrica de $\varphi$ en $x$,$t$.",,{E*},Family
+CEM 1.7 Intensidad del campo magnético,"Cada $\left\{ B\right\} $ es una familia de campos no vacía. Cada $B\in\left\{ B\right\} $ función con valor de pseudovector real en $\varPhi\times M^{3}\times T$.
+$B(\varphi,x,t)$ representa la intensidad del componente magnético de $\varphi$ en $x$,$t$.",,{B*},Family
+CEM 1.8 Postulado desde una observación empírica,$E$ y $B$ caen con una distancia al menos tan rápida como $\frac{1}{r}$.,,1/r,Tip
+CEM 1.9 Magnitud de la velocidad de las señales electromagnéticas en el vacío.,"$c$ es un número real positivo tal que $\left[d\right]=LT^{-1}$
+SR 7
+Cada $s\in S$ se propaga en el vacío, relativo a cualquier $i\in I$, con movimiento rectilíneo uniforme a la velocidad $c$.",,c,DE
+CM 2.2 Clase de equivalencia de representaciones,"Sea $X'=a+QX$, con funciones de tiempo $a$ y $Q$, que representan un cambio de marco. Entonces
+Si $V$ es un vector que se refiere a $\pi\dot{\in}\sigma\in\Sigma$, que al cambiar de marco se convierte en $V'=QV$, entonces $V'$ y $V$ se refieren a la misma situación física.
+Si $S$ es un tensor de segundo rango que se refiere a $\pi\dot{\in}\sigma\in\Sigma$, que al cambiar de marco se convierte en $S'=QS\tilde{Q}$, donde $\tilde{Q}$ es la trasposición de $Q$, entonces $S'$ y $S$ se refieren a la misma situación física.",,CM 2.2,Tip
+PM 2.4 Eventos y trayectoria del movimiento,"Para cada $\sigma\in\Sigma$, y cada $k\in K$, cada $X\in\left\{ X\right\} $ es una función continua y de valor real de $T$ a $E^ {3}$
+Para cada $\sigma\in\Sigma$ y cada $k\in K$, $\dot{X}$ es una función continua por partes y de valor real desde $T$ hasta $E^{3}$.
+$X(\sigma,k,t)$ representa la posición de $\sigma$, relativa al marco $k$ en el instante $t$.
+Cada quíntuple $\left\langle \sigma,X_{1},X_{2},X_{3},t\right\rangle $ representa un evento.
+Para cualquier $\sigma\in\Sigma $ y cualquier $k\in K$ dado, el conjunto $\left\{ X(\sigma,k,t)\mid t\in T\right\} $representa un trayectoria (movimiento) de $\sigma$.",,PM 2.4,Family
+CM 2.3 Velocidad y aceleración,"Las derivadas $\dot{X}$ y $\ddot{X}$ existen y están acotadas para cada $X\in\left\{ X\right\} $, cada $\beta\in b$, cada $k \in K$ y cada $t\in T$.
+Si $\beta\hat{=}\pi$ y $\pi\dot{\in}\sigma$, entonces $\dot{X}(\beta,k,t)$ y $\ddot{X}( \beta,k,t)$ representan la velocidad y la aceleración respectivamente de la partícula $\pi$ en el cuerpo $\sigma$ en relación con el marco en el tiempo $t$.",,Velocidad y aceleración,Family
+CM 3.1 Densidad de fuerza,"Cada $f_{b}\in\left\{ f_{b}\right\} $ es un campo vectorial real y acotado sobre $\beta\times K\times E^{3}\times T$.
+Si $b\hat{=}\sigma$, entonces $f_{b}(b,k,x,t)$ representa la fuerza por unidad de volumen sobre el cuerpo $\sigma$.",,Densidad de fuerza,Family
+CM 3.2 Estrés del cuerpo,"Cada $\mathrm{T\in\left\{ \mathrm{T}\right\} }$ es un campo tensorial real y acotado de valencia (2,0) sobre $\beta\times K\times E^{3 }\times T$.
+Si $b\hat{=}\sigma$ y $beta\hat{=}\pi$, entonces $\mathrm{T(\beta,K,x,t)}$ representa la tensión del cuerpo en la partícula $ \pi\dot{\in}\sigma$.",,Estrés,Family
+CM 3.3 Ley del balance del momentum,"Por cada $\sigma\in\Sigma$, $t\in T$, cada $\varrho\in\left\{ \varrho\right\} $, cada $f_{b}\in\left\{ f_{ b}\right\} $ y cada $\mathrm{T\in\left\{ \mathrm{T}\right\} }$, existe un $k\in K$ tal que $\dot{p}= F $,",,Balance del momentum,EqMotion
+CM 3.4 Ley del momento del momentum,"Por cada $\sigma\in\Sigma$, cada $t\in T$, cada $\varrho\in\left\{ \varrho\right\} $, cada $f_{b}\in\left\{ f_{b}\right\} $, y cada $\mathrm{T\in\left\{ \mathrm{T}\right\} }$, existe una $k\in K$ tal que $\dot{L}=N$",,Momento del momentum,EqMotion
+CEM 2 Ecuaciones de Maxwell,"En cualquier punto $x\in M^{3}$ y cualquier instante $t\in T$ para cada campo
+$\phi\in \Phi$ y cada cuerpo cargado
+$\sigma\in \Sigma$, existe un
+$k\in K$ tal que
+$\nabla\times E=-\frac{1}{c}\frac{\partial B}{\partial t}$, $\nabla\cdot B=0$
+$\nabla\times B=-\frac{1}{c}\frac{\partial E}{\partial t}+\frac{4\pi}{c}j$, $\nabla\cdot E=4 \pi\varrho$",,Ecuaciones de Maxwell,FieldEq
+CEM 3 Densidad de fuerza,"La densidad de fuerza ejercida por un campo externo $\left\langle E,B\right\rangle \hat{=}$ $\varphi\in\Phi$ en $\sigma\in \Sigma$ es
+$f=\rho\left(E+\frac{v}{c}\times B\right)$",,"CEM 3, 4.3",FieldEq
+Degeneración tensorial,"Cuando el tensor constitutivo degenera en $(\epsilon,\mu^{-1})$, las ecuaciones de campo se convierten en $\nabla\times E=-\frac{1}{c}\frac{\partial B}{\partial t}$, $\nabla\cdot B=0$,
+$\nabla\times H=-\frac{1}{c}\frac{\partial D}{\partial t}+\frac{4\pi}{c}j$, $\nabla\cdot D=4 \pi\rho$",,Degeneración tensorial,Tip
+GR 2.2 Transformación de coordenadas,"Todas las transformaciones de coordenadas en $M^{4}$ son mapas biyectivos.
+El jacobiano de cada transformación de coordenadas no desaparece en ninguna parte.
+Las áreas y los volúmenes no deberían desvanecerse con las transformaciones de coordenadas, porque de lo contrario las cosas mismas parecerían desvanecerse por las operaciones de papel y lápiz.",,Transformaciones de coordenadas,Transformation
+GR 2.3 Localidad,"Para cualquier punto $x\in M^{4}$ existe una vecindad de $x$ sobre la cual se puede dar un sistema de coordenadas local tal que $x^{0}$ es una coordenada de tiempo (local) y $x^ {1}$, $x^{2}$ y $x^{3}$ son coordenadas espaciales (locales).
+[Aproximadamente: el espacio tangente de $M^{4}$ en cualquier $x\in M^{4}$ es el espacio-tiempo.]",,Localidad,Chronogeometrical
+GR 3.1 Tensor métrico,"$\left\{ g\right\} $ es una familia no vacía de campos tensoriales simétricos, de valencia (0,2), en $M^{4}$
+Los componentes de $g$ y sus derivados primero y segundo w.r.t. los $x^{\mu}$ tienen valores reales y están acotados en cada $V\subset M^{4}$ con la posible excepción de un subconjunto propio de $V$.
+  $M^{4}$ está dotado de una métrica $ds^{2}=g_{\mu\nu}dx^{\mu}dx^{\nu}$ con $\mu,\nu=0,1 ,2,3$",,Tensor métrico,Family
+GR 3.2 Signatura,"$g_{00}>0$ y $g_{ij}<0$ $(i,j, =1,2,3)$ en todas partes.
+$g_{ij}-(g_{0i}g_{0j}/g_{00})<0$ en todas partes.
+Para asegurar que $x^{0}$, o más bien $(g_{00})^{\frac{1}{2}}x^{0}/c$
+, sea una coordenada de tiempo y los otros serán coordenadas espaciales según lo requerido por GR 2.3.",,"Signatura (1,3)",Tip
+GR 3.3 Forma asintótica,"Los componentes de $g$ se aproximan a valores constantes a medida que $x^{i}(i=1,2,3)$ tienden a infinito.
+El tensor métrico, que resuelve las ecuaciones de campo, debe representar un sistema aislado. Fuera de cada $V\subset M^{4}$, las formas asintóticas de las componentes de $g$ son las de las ondas esféricas salientes.",,Forma asintótica,Tip
+GR 3.4 Conexión afín: el Potencial gravitacional,Por cada $\sigma\in \Sigma$ existe un tensor métrico $g$ cuya afinidad métrica asociada $\Gamma$ representa la fuerza de $\sigma$.,,Conexión afín,Family
+GR 5.1 Tensor de Estrés-Energía-Momento,"Una familia de campos tensoriales representando la totalidad del tensor de energía-momento-estrés (e.m. + mecánicos) de los miembros de $\bar{\sigma}$
+$\mathrm{T}$ es un campo tensor simétrico contravariante en $V\subset M^{4}$.
+$\mathrm{T}$ representa la energía, el impulso y la tensión de todos los sistemas $\bar{\sigma}\in\bar{\Sigma}$ en $V$",,Tensor de Estrés-Energía-Momento,Family
+GR 5.2 Tipificación de los componentes de T,"Los componentes de $\mathrm{T}$ son funciones de valor real de $\bar{\sigma}$, $k$, $X$ y $t$.
+Los componentes de $\mathrm{T}$ desaparecen fuera de $V$.",,GR 5.2,Tip
+GR 6.1 $\kappa$: la constante de Einstein,"$\kappa$ es un número real positivo con dimensión $L^{-1}M^{-1}T^{2}$.
+$\kappa$ representa el acoplamiento de $\sigma$ con $\bar{\sigma}$.",,kappa,"DE
+"
+GR 6.2 Ecuación de Einstein,"Por cada $x\in V$, cada $\sigma\in\Sigma$, cada $\bar{\sigma}\in\bar{\Sigma}$ y cada $\mathrm{\mathrm{T}\in\{T\}}$, existe un $g\in\{g\}$ tal que
+$G=\kappa\mathrm{T}$",,Ecuación de Einstein,FieldEq
+GR 6.3 Postulado,Dos soluciones de la ecuación de Einstein que pueden transformarse entre sí mediante una transformación de coordenadas admisible se refieren al mismo campo.,,GR 6.3,Tip

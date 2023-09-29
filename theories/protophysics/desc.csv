@@ -1,0 +1,32 @@
+Independent,Explanation,Dependent,Atributo,Clase
+Logic,"The systematic study of valid rules of inference, analysis and appraisal of arguments.",,Logic,FB
+Semantics,"The systematic study of meaning in language, formal logic and semiotics.",,Semantics,FB
+Set Theory,Theory of collections of mathematical objects.,,Set Theory,FB
+Algebra,The study of mathematical symbols and the rules for manipulating these symbols.,,Algebra,FB
+Topology,"The study of properties of geometric objects that are preserved under continuous deformations, such as stretching, twisting, crumpling and bending, but not tearing or gluing.",,Topology,FB
+Analysis,"The branch of mathematics dealing with limits and related theories, such as differentiation, integration, measure, infinite series, and analytic functions",,Analysis,FB
+Vector Spaces Theory,Theory of the addition and multiplication of vector spaces,,Vector Spaces Theory,FB
+Probability Theory,Branch of mathematics concerned with probability as a rigorous mathematical concept expressed in a set of axioms.,,Probability Theory,FB
+Theory of Riemannian Spaces,Branch of differential geometry that studies smooth manifolds with a Riemannian metric.,,Theory of Riemannian Spaces,FB
+Mathematical Statistics,The application of probability theory to statistics.,,Mathematical Statistics,FB
+Manifold Geometry,Branch of differential geometry that studies topological spaces that locally resembles Euclidean space near each point.,,Manifold Geometry,FB
+Theory of local time,A theory of time relational to different inertial frames.,,Theory of local time,MB
+Theory of Universal Time,A theory that assumes a single relational time for every place and every reference frame,,Theory of Universal Time,MB
+General Systems Theory,A set of interrelated concepts and principles applying to all systems.,,General Systems Theory,MB
+Physical Euclidean Geometry,Euclidean geometry with a physical interpretation. it holds reasonably well for small regions of space.,,Physical Euclidean Geometry,MB
+Physical Geometry,"A geometrical theory gives different physical meanings to
+the primitives of the abstract theory D of metric spaces.",,Physical Geometry,MB
+Field Theory,Any theory containing the mathematical concept of field (an extended imponderable that cannot be transformed away).,,Field Theory,MB
+Physical Probability Theory,Theory of mathematical probability plus a physical interpretation of its primitives U and P.,,Physical Probability Theory,MB
+Analytical Dynamics,A class of theories partially interpreted that describe the evolution of physical systems.,,Analytical Dynamics,MB
+Dimensional Analysis,The analysis that exhibits the genera to which a set of magnitudes belong.,,Dimensional Analysis,FB
+Analytic Geometry,The study of geometry using a coordinate system.,,Analytic Geometry,FB
+Uniform convergence,All series whose terms represent physical objects shall be uniformly convergent on the given interval.,,Uniform convergence,Z
+Antecedence,"If A and B are time-dependent properties and A determines B (whether causally or stochastically9, then B at time t is a functional of A at all times t’ prior to and up to t.",,Antecedence,Z
+Galilean Invariance,The basic laws of physics shall be invariant under transfomations of cooordinates representing changes of inertial (Galilean) frames.,,Galilian Invariance,Z
+Contiguity,"If a and B are place-dependent properties and A determines B (whether causally of stochastically), then B at the place x is a functional of a at all places x’ surrounding x.apagado",,Contiguity,Z
+Space-time contiguity,Only field regions connectible by a field disturbance (hence separated by a timelike interval) can interact. ,,Space-time Contiguity,Z
+Lorentz Invariance,The basic laws of physics shall be invariant under Lorentz transfomations of cooordinates representing changes of inertial frames.,,Lorentz Invariance,Z
+General Covariance,"The basic law statements of physics should hold in any frame of reference and in any coordinate system. They should be preserved under arbitrary changes in coordinate systems, whether or not the latter mirror different physical reference frames.",,General covariance,Z
+Material Indifference,Or objectivity. The constitutive equations must be invariant under coordinate transformations.,,Material Indifference,Z
+Equipresence,An independent variable present in one constitutive equation is so present in all.,,Equipresence,Z

@@ -1,0 +1,638 @@
+{
+    "context": {
+        "Newtonian": {
+            "name": "Newtonian T",
+            "id": "Newtonian",
+            "attributes": [
+                "Time",
+                "System of particles",
+                "Euclidean space",
+                "Reference frame",
+                "Physical coordinates",
+                "Mass",
+                "Applied force",
+                "Force between particles",
+                "Eq 01"
+            ]
+        },
+        "Hamiltonian": {
+            "name": "Hamiltonian T",
+            "id": "Hamiltonian",
+            "attributes": [
+                "Time",
+                "Physical system",
+                "Hamiltonian",
+                "Phase space",
+                "Eq 02"
+            ]
+        },
+        "General": {
+            "name": "General T",
+            "id": "General",
+            "attributes": [
+                "Time",
+                "Physical system",
+                "Hamiltonian",
+                "Phase space",
+                "Poisson",
+                "Eq 02",
+                "Eq 03"
+            ]
+        },
+        "Jacobian": {
+            "name": "Jacobian T",
+            "id": "Jacobian",
+            "attributes": [
+                "Time",
+                "Physical system",
+                "Configuration space",
+                "Action",
+                "Eq 04"
+            ]
+        },
+        "Lagrangian": {
+            "name": "Lagrangian T",
+            "id": "Lagrangian",
+            "attributes": [
+                "Time",
+                "Physical system",
+                "Configuration space",
+                "Lagrangian",
+                "Eq 05"
+            ]
+        }
+    },
+    "concepts": [
+        {
+            "intent": [
+                "Time"
+            ],
+            "extent": [
+                "Newtonian",
+                "Hamiltonian",
+                "General",
+                "Jacobian",
+                "Lagrangian"
+            ]
+        },
+        {
+            "intent": [
+                "Time",
+                "System of particles",
+                "Euclidean space",
+                "Reference frame",
+                "Physical coordinates",
+                "Mass",
+                "Applied force",
+                "Force between particles",
+                "Physical system",
+                "Hamiltonian",
+                "Phase space",
+                "Poisson",
+                "Configuration space",
+                "Lagrangian",
+                "Action",
+                "Eq 01",
+                "Eq 02",
+                "Eq 03",
+                "Eq 04",
+                "Eq 05"
+            ],
+            "extent": []
+        },
+        {
+            "intent": [
+                "Time",
+                "System of particles",
+                "Euclidean space",
+                "Reference frame",
+                "Physical coordinates",
+                "Mass",
+                "Applied force",
+                "Force between particles",
+                "Eq 01"
+            ],
+            "extent": [
+                "Newtonian"
+            ]
+        },
+        {
+            "intent": [
+                "Time",
+                "Physical system"
+            ],
+            "extent": [
+                "Hamiltonian",
+                "General",
+                "Jacobian",
+                "Lagrangian"
+            ]
+        },
+        {
+            "intent": [
+                "Time",
+                "Physical system",
+                "Hamiltonian",
+                "Phase space",
+                "Eq 02"
+            ],
+            "extent": [
+                "Hamiltonian",
+                "General"
+            ]
+        },
+        {
+            "intent": [
+                "Time",
+                "Physical system",
+                "Hamiltonian",
+                "Phase space",
+                "Poisson",
+                "Eq 02",
+                "Eq 03"
+            ],
+            "extent": [
+                "General"
+            ]
+        },
+        {
+            "intent": [
+                "Time",
+                "Physical system",
+                "Configuration space"
+            ],
+            "extent": [
+                "Jacobian",
+                "Lagrangian"
+            ]
+        },
+        {
+            "intent": [
+                "Time",
+                "Physical system",
+                "Configuration space",
+                "Lagrangian",
+                "Eq 05"
+            ],
+            "extent": [
+                "Lagrangian"
+            ]
+        },
+        {
+            "intent": [
+                "Time",
+                "Physical system",
+                "Configuration space",
+                "Action",
+                "Eq 04"
+            ],
+            "extent": [
+                "Jacobian"
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "hash": "30",
+            "idx": 0,
+            "level": 4,
+            "concept": {
+                "intent": [
+                    "Time"
+                ],
+                "extent": [
+                    "Newtonian",
+                    "Hamiltonian",
+                    "General",
+                    "Jacobian",
+                    "Lagrangian"
+                ]
+            },
+            "parents": [],
+            "children": [
+                "33022",
+                "287"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Time"
+            ],
+            "index": 0,
+            "weight": 2,
+            "x": 795.2729679468223,
+            "y": 183.93229914634173,
+            "px": 795.2729679468223,
+            "py": 183.93229914634173,
+            "fixed": 0
+        },
+        {
+            "hash": "1048575",
+            "idx": 1,
+            "level": 0,
+            "concept": {
+                "intent": [
+                    "Time",
+                    "System of particles",
+                    "Euclidean space",
+                    "Reference frame",
+                    "Physical coordinates",
+                    "Mass",
+                    "Applied force",
+                    "Force between particles",
+                    "Physical system",
+                    "Hamiltonian",
+                    "Phase space",
+                    "Poisson",
+                    "Configuration space",
+                    "Lagrangian",
+                    "Action",
+                    "Eq 01",
+                    "Eq 02",
+                    "Eq 03",
+                    "Eq 04",
+                    "Eq 05"
+                ],
+                "extent": []
+            },
+            "parents": [
+                "33022",
+                "200453",
+                "536849",
+                "282889"
+            ],
+            "children": [],
+            "labelObjects": [],
+            "labelAttributes": [],
+            "index": 1,
+            "weight": 4,
+            "x": 839.8277719301979,
+            "y": 1197.343889033657,
+            "px": 839.8277719301979,
+            "py": 1197.343889033657,
+            "fixed": 0
+        },
+        {
+            "hash": "33022",
+            "idx": 2,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "Time",
+                    "System of particles",
+                    "Euclidean space",
+                    "Reference frame",
+                    "Physical coordinates",
+                    "Mass",
+                    "Applied force",
+                    "Force between particles",
+                    "Eq 01"
+                ],
+                "extent": [
+                    "Newtonian"
+                ]
+            },
+            "parents": [
+                "30"
+            ],
+            "children": [
+                "1048575"
+            ],
+            "labelObjects": [
+                "Newtonian"
+            ],
+            "labelAttributes": [
+                "Eq 01",
+                "Force between particles",
+                "Applied force",
+                "Mass",
+                "Physical coordinates",
+                "Reference frame",
+                "Euclidean space",
+                "System of particles"
+            ],
+            "index": 2,
+            "weight": 2,
+            "x": 240.60618981631126,
+            "y": 944.085923254881,
+            "px": 240.60618981631126,
+            "py": 944.085923254881,
+            "fixed": 0
+        },
+        {
+            "hash": "287",
+            "idx": 3,
+            "level": 3,
+            "concept": {
+                "intent": [
+                    "Time",
+                    "Physical system"
+                ],
+                "extent": [
+                    "Hamiltonian",
+                    "General",
+                    "Jacobian",
+                    "Lagrangian"
+                ]
+            },
+            "parents": [
+                "30"
+            ],
+            "children": [
+                "67335",
+                "4377"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Physical system"
+            ],
+            "index": 3,
+            "weight": 3,
+            "x": 946.2103464323304,
+            "y": 385.7499973732108,
+            "px": 946.2103464323304,
+            "py": 385.7499973732108,
+            "fixed": 0
+        },
+        {
+            "hash": "67335",
+            "idx": 4,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "Time",
+                    "Physical system",
+                    "Hamiltonian",
+                    "Phase space",
+                    "Eq 02"
+                ],
+                "extent": [
+                    "Hamiltonian",
+                    "General"
+                ]
+            },
+            "parents": [
+                "287"
+            ],
+            "children": [
+                "200453"
+            ],
+            "labelObjects": [
+                "Hamiltonian"
+            ],
+            "labelAttributes": [
+                "Eq 02",
+                "Phase space",
+                "Hamiltonian"
+            ],
+            "index": 4,
+            "weight": 2,
+            "x": 644.5760856579741,
+            "y": 667.6700345865247,
+            "px": 644.5760856579741,
+            "py": 667.6700345865247,
+            "fixed": 0
+        },
+        {
+            "hash": "200453",
+            "idx": 5,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "Time",
+                    "Physical system",
+                    "Hamiltonian",
+                    "Phase space",
+                    "Poisson",
+                    "Eq 02",
+                    "Eq 03"
+                ],
+                "extent": [
+                    "General"
+                ]
+            },
+            "parents": [
+                "67335"
+            ],
+            "children": [
+                "1048575"
+            ],
+            "labelObjects": [
+                "General"
+            ],
+            "labelAttributes": [
+                "Eq 03",
+                "Poisson"
+            ],
+            "index": 5,
+            "weight": 2,
+            "x": 649.0454732194078,
+            "y": 983.2178054402832,
+            "px": 649.0454732194078,
+            "py": 983.2178054402832,
+            "fixed": 0
+        },
+        {
+            "hash": "4377",
+            "idx": 6,
+            "level": 2,
+            "concept": {
+                "intent": [
+                    "Time",
+                    "Physical system",
+                    "Configuration space"
+                ],
+                "extent": [
+                    "Jacobian",
+                    "Lagrangian"
+                ]
+            },
+            "parents": [
+                "287"
+            ],
+            "children": [
+                "536849",
+                "282889"
+            ],
+            "labelObjects": [],
+            "labelAttributes": [
+                "Configuration space"
+            ],
+            "index": 6,
+            "weight": 3,
+            "x": 1173.533065441059,
+            "y": 658.5200539998907,
+            "px": 1173.533065441059,
+            "py": 658.5200539998907,
+            "fixed": 0
+        },
+        {
+            "hash": "536849",
+            "idx": 7,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "Time",
+                    "Physical system",
+                    "Configuration space",
+                    "Lagrangian",
+                    "Eq 05"
+                ],
+                "extent": [
+                    "Lagrangian"
+                ]
+            },
+            "parents": [
+                "4377"
+            ],
+            "children": [
+                "1048575"
+            ],
+            "labelObjects": [
+                "Lagrangian"
+            ],
+            "labelAttributes": [
+                "Eq 05",
+                "Lagrangian"
+            ],
+            "index": 7,
+            "weight": 2,
+            "x": 1377.7432953365785,
+            "y": 926.7461908669434,
+            "px": 1377.7432953365785,
+            "py": 926.7461908669434,
+            "fixed": 0
+        },
+        {
+            "hash": "282889",
+            "idx": 8,
+            "level": 1,
+            "concept": {
+                "intent": [
+                    "Time",
+                    "Physical system",
+                    "Configuration space",
+                    "Action",
+                    "Eq 04"
+                ],
+                "extent": [
+                    "Jacobian"
+                ]
+            },
+            "parents": [
+                "4377"
+            ],
+            "children": [
+                "1048575"
+            ],
+            "labelObjects": [
+                "Jacobian"
+            ],
+            "labelAttributes": [
+                "Eq 04",
+                "Action"
+            ],
+            "index": 8,
+            "weight": 2,
+            "x": 973.0990983505703,
+            "y": 961.4217158345414,
+            "px": 973.0990983505703,
+            "py": 961.4217158345414,
+            "fixed": 0
+        }
+    ],
+    "links": [
+        {
+            "source": 0,
+            "target": 2
+        },
+        {
+            "source": 0,
+            "target": 3
+        },
+        {
+            "source": 2,
+            "target": 1
+        },
+        {
+            "source": 3,
+            "target": 4
+        },
+        {
+            "source": 3,
+            "target": 6
+        },
+        {
+            "source": 4,
+            "target": 5
+        },
+        {
+            "source": 5,
+            "target": 1
+        },
+        {
+            "source": 6,
+            "target": 7
+        },
+        {
+            "source": 6,
+            "target": 8
+        },
+        {
+            "source": 7,
+            "target": 1
+        },
+        {
+            "source": 8,
+            "target": 1
+        }
+    ],
+    "classDescriptions": [
+      {
+            "key": "Postulates",
+            "desc": "Postulates"
+        },
+        {
+            "key": "Chronogeometrical",
+            "desc": "Space and time"
+        },
+        {
+            "key": "Referents",
+            "desc": "Referents"
+        },
+        {
+            "key": "Family",
+            "desc": "Family of functions"
+        },
+        {
+            "key": "Frames",
+            "desc": "Coordinate systems and reference frames"
+        },
+        {
+            "key": "EqMotion",
+            "desc": "Equations of motion"
+        }
+    ],
+    "classes": {
+        "Time": "Chronogeometrical",
+        "System of particles": "Referents",
+        "Euclidean space": "Chronogeometrical",
+        "Reference frame": "Frames",
+        "Physical coordinates": "Frames",
+        "Mass": "Family",
+        "Applied force": "Family",
+        "Force between particles": "Family",
+        "Physical system": "Referents",
+        "Hamiltonian": "Family",
+        "Phase space": "Chronogeometrical",
+        "Poisson": "Family",
+        "Configuration space": "Chronogeometrical",
+        "Lagrangian": "Family",
+        "Action": "Postulates",
+        "Eq 01": "EqMotion",
+        "Eq 02": "EqMotion",
+        "Eq 03": "EqMotion",
+        "Eq 04": "EqMotion",
+        "Eq 05": "EqMotion"
+    }
+  ]
+}
