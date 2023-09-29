@@ -1,3 +1,24 @@
+The Space-Time Theories Exploratorium, Copyright (C) 2017-2023 Mariana Espinosa Aldama
+All rights reserved.
+
+This software makes use of Open Source external libraries that have
+their own licensing terms. For convenience, a copy of these libraries
+is included in this repository, but let it be known that the following
+library terms apply only to the source code and resources that are
+particular to this software and it does not apply to the libraries it
+depends on, as they have their own licensing terms.
+
+The libraries are:
+
+lib/bootstrap (MIT License) https://getbootstrap.com/
+lib/cola.min.js (MIT License) https://ialab.it.monash.edu/webcola/
+lib/d3 (ISC License) https://d3js.org/
+lib/jQuery (MIT License) https://jquery.com/
+lib/MathJax (Apache License 2.0) https://mathjax.org/
+
+This program, The Space-Time Theories Exploratorium, is covered under
+the following licensing terms:
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
