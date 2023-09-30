@@ -74,6 +74,12 @@
 	width: 100%;
 }
 
+#d1 > svg {
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px gray;
+  cursor: move;
+}
+
 #d2 {
 	width: 100%;
 	min-height: 120px;
@@ -96,6 +102,15 @@
 
 text {
   font: 14px sans-serif;
+}
+
+.clave {
+  cursor: default;
+}
+
+.box-bg {
+  fill: white;
+  stroke: black;
 }
 
 .box-distancia.textbox-box {
@@ -152,6 +167,10 @@ text {
 
 .node-dot {
 	cursor: pointer;
+}
+
+.node.drag .node-dot {
+	cursor: grabbing;
 }
 
 .node-bg {
