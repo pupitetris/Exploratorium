@@ -5,10 +5,12 @@ TODO
   - [ ] Ecmascript (módulos)
   - [ ] Bootstrap 5
   - [ ] MathJax 3.2
+  - [x] D3 v7
 
 - Infraestructura:
-  - [ ] generador en maquina de Mariana
-  - [ ] GitHub
+  - [x] generador en maquina de Mariana
+  - [x] GitHub
+    - [ ] GitHub para Mariana
   - [ ] Google Analytics
 
 - Bugs:
