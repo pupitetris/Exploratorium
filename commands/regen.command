@@ -3,6 +3,6 @@
 SRCDIR=$(dirname "$0")
 
 clear
-cd "$SRCDIR"
+cd "$SRCDIR"/../tt
 ./generate.pl master.md --force
 ./generate.pl master-es.md --force
