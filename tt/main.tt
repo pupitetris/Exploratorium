@@ -1,6 +1,7 @@
 [% BLOCK print %]
 [%   FOREACH p IN block.children %]
 [%     IF p.title %]
+
 <h2>[% p.title %]</h2>
 [%       PROCESS print block=p %]
 [%     ELSE %]
