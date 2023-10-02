@@ -5,23 +5,23 @@ Exploratorium de teorías del espacio-tiempo
 ## Navigation
 
 - [Inicio](index-es.html)
-- [Del autor](/integrantes/mariana-espinosa-aldama)
+- [Acerca](/integrantes/mariana-espinosa-aldama)
 - [REMO](/)
 - [English](nav_lang)
 
 
 ## Author
 
-por Mariana Espinosa Aldama,\
-Universidad Autónoma Metropolitana - Cuajimalpa
+por Mariana Espinosa Aldama y Arturo Espinosa Aldama\
+con apoyo del Semirario Remo y la UAM - Cuajimalpa
 
 
 ## Menu
 
 - [Protofísica](theories-es/protophysics)
 - [Dinámica Analítica](theories-es/analytical-dynamics)
-- [Teorías del Espacio-Tiempo](theories-es/spacetimes)
 - [Teorías Básicas](theories-es/basic)
+- [Teorías del Espacio-Tiempo](theories-es/spacetimes)
 - [Teorías Clásicas](theories-es/classical)
 - [Teorías Métricas](theories-es/metric)
 - [Teorías f(R)](theories-es/f-R)
@@ -34,14 +34,13 @@ Universidad Autónoma Metropolitana - Cuajimalpa
 
 ### Acknowledgements
 
-Este proyecto ha sido posible gracias al programa de posgrado en
-Ciencias Sociales y Humanidades de la Universidad Autónoma
-Metropolitana, U-Cuajimalpa. Un agradecimiento especial a Mario
-Casanueva (UAM-C), Diego Méndez (UAM-C), Sergio Mendoza (IA-UNAM),
-Seminario REMO, Arturo Espinosa, Irving Morales (C3-UNAM), Roberto
-Sussman (ICN-UNAM), Xavier Hernández (IA-UNAM), Hernán Miguel (UBA),
-Adriana Casas, Amanda Lemus, Ameyalli Yáñez (CENART, Centro
-Multimedia) por toda su ayuda y apoyo.
+Este proyecto ha sido posible gracias al apoyo del Seminario de
+Representación y Modelización del Conocimiento Científico de la
+Universidad Autónoma Metropolitana- Unidad Cuajimalpa, así como de la
+Coordinación de Inovación y el Departaménto de Cómputo. Un
+agradecimiento a Mario Casanueva (UAM-C), Diego Méndez (UAM-C), Sergio
+Mendoza (IA-UNAM), Joaquín Hernández (UAM-C), y en especial a Arturo
+Espinosa por toda su ayuda y apoyo.
 
 ### Copyright
 
@@ -63,15 +62,31 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 
 #### ¡Explora la estructura de las teorías físicas a través de redes conceptuales interactivas!
 
-En el Exploratorium, nos apasiona desentrañar los misterios del
-espacio-tiempo, la gravitación y otras teorías físicas a través de
-visaualizaciones de datos. Estas visualizaciones interactivas son el
-resultado de un proyecto de investigación de doctorado en Ciencias
-Sociales y Humanidades de la Universidad Autónoma Metropolitana, cuyo
-objetivo es representar una gran parte de la estructura semántica de
-la gravitación y otras teorías del espacio-tiempo a través de
-visualizaciones de retículos conceptuales obtenidos mediante el
-Análisis de Conceptos Formales (FCA).
+#### Qué hacer:
+
+- Explora ocho redes teóricas y un holón con más de 50 teorías del espacio-tiempo y la gravitación.
+- Ubica grupos de teorías de interés, sus fundamentos y clases de modelos.
+- Aprende la lógica de las redes jerárquicas.
+- Familiarizate con la estructura conceptual mediante retículos parciales.
+- Consulta información al picar sobre las etiquetas.
+- Compara las reconstrucciones sustractivas de las aditivas.
+- Encuentra relaciones de teorización y especialización.
+- Haz zoom-in, zoom-out o arrastra la red.
+- Resalta subconceptos y supraconceptos.
+- Explora mediante hipervínculos. 
+- Identifica el retículo "pico del iceberg".
+- Mueve los nodos para reacomodar la red.
+- Guarda tus propias configuraciones.
+- Resalta nodos específicos y encuentra algunos especialmente interesantes.
+- Acompaña las lecturas fuente con este macroscopio.
+- Adquiere una visión de conjunto.
+- Sospecha de nuestros resultados y discute con tus colegas.
+- Conoce la metodología del Análisis de Conceptos Formales (FCA).
+- Descarga los contextos y consulta las fuentes.
+- Descarga las redes y el Manzano de la Gravitación.
+- Escríbenos y déjanos tus comentarios.
+
+#### En el Exploratorium, nos apasiona desentrañar la estructura semántica de las teorías físicas a través de visualizaciones de redes interactivas e hipervinculadas.
 
 Las teorías físicas axiomatizadas, son sistemas conceptuales generados
 a partir de deducciones lógicas; Objetos complejos con diferentes
@@ -83,44 +98,46 @@ jerárquica que se puede visualizar usando retículos. Los retículos son
 una clase de red con varias propiedades, como ser conjuntos ordenados
 con un componente superior e inferior único para cada par de nodos de
 la red. Los retículos teóricos muestran los componentes fundamentales
-comunes a la mayoría de las teorías en la parte superior, como la
-protofísica, las propiedades topológicas o geométricas. Los modelos
+comunes a la mayoría de las teorías, hubicados en la parte superior, como la
+protofísica, las propiedades topológicas o geométricas. Los modelos actuales y 
 especializados, por otro lado, se encuentran en los niveles inferiores
 del retículo.
-
-Representamos teorías utilizando un enfoque basado en modelos y la
-teoría de conjuntos, siguiendo la escuela estructuralista de análisis
-metateórico de Balzer, Moulines y Sneed (2012). Las teorías están
-representadas por elementos teóricos conformados por conjuntos de
-clases de modelos. En una tabla de incidencia o contexto formal
-(G,M,i) relacionamos clases de modelos con sus atributos (conjuntos de
-axiomas). FCA es una teoría matemática y metología que recupera
-conceptos formales de contextos formales, los relaciona
-jerárquicamente y les representa como redes reticulares. Cada retículo
-conceptual presentado aquí se basa en alguna reconstrucción como la
-clasificación de Michael Friedman (1983) de las teorías del
-espacio-tiempo, la clasificación de Sotiriou y Faraoni (2010) de las
-teorías f(R), la clasificación de Clifford Will (1981) de las teorías
-métricas, la clasificación de Mario Bunge (1967) de la protofísica y
-las teorías físicas, entre otros.
 
 Nuestro objetivo es proporcionar herramientas visuales interactivas
 que nos ayuden a comprender la complejidad de las teorías físicas y
 las relaciones entre los componentes fundamentales. Estos macroscopios
 funcionan como mapas conceptuales para estudiantes y curiosos que
 navegan en el mar conceptual de la física teórica.
+ 
+#### Metodología
+
+Representamos teorías utilizando un enfoque basado en modelos y la
+teoría de conjuntos, siguiendo la corriente estructuralista de análisis
+metateórico de Balzer, Moulines y Sneed (2012). Las teorías están
+representadas por elementos teóricos conformados en parte por conjuntos de
+clases de modelos. En una tabla de incidencia o contexto formal
+(G,M,i) relacionamos clases de modelos con sus atributos (conjuntos de
+axiomas). El **Análisis de Conceptos Formales (FCA)** es una teoría matemática basada en la teoría de retículos de Birckoff y la conexión de Galois que y metodológica que recupera
+conceptos formales (pares ordenados conformados por una extensión e intensión) a partir de contextos formales, les relaciona
+jerárquicamente y les representa como redes reticulares. 
+
+Cada retículo conceptual presentado aquí se basa en alguna reconstrucción formal. Hemos encontrado dos tipos de reconstrucciones: 
+
+- **Aditiva**, que plantea una variedad diferencial muy empobrecida para ir enriqueciéndola con propiedades geométricas, camino propuesto por Bernhard Riemann y encontrado en las axiomatizaciones de Mario Bunge (1967), quien da peso al factor temporal y físico al determinar el nivel fundamental de los conceptos, y de donde obtuvimos los retículos titulados "Protofísica", "Dinámica Analítica" y "Teorías Básicas". 
+- **Sustractiva**, propuesta por Felix Klein, inicia con una variedad diferencial dotada de muchas propiedades muy generales que se van constriñendo conforme se requiere. Es el camino encontrado en las clasificaciones de Michael Friedman (1983) de "Teorías del Espacio-Tiempo" y "Teorías Clásicas", la clasificación de Clifford Will (1981) de las "Teorías Métricas", de Sotiriou y Faraoni (2010) de las "Teorías f(R)", y las "Teorías Extendidas" de Mendoza y Barrientos (2018). Estas reconstrucciones también comparten formalismo y notación, por lo que fue posible conjugarlas en un gran holón teórico.
+
 
 Información más detallada en la tesis doctoral de Mariana Espinosa
 Aldama: ["Visualizaciones de redes conceptuales de teorías del
 espacio-tiempo y la
 gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
 
-#### [¡Encuentra aquí el Manzano de la Gravitación y mucho más!](https://marianaespinosa.blogspot.com/p/blog-page.html)
+#### [¡Descarga gratis aquí el Manzano de la Gravitación y mucho más!](https://marianaespinosa.blogspot.com/p/blog-page.html)
 
 Este sitio ha sido optimizado para Mozilla Firefox y Google Chrome.
 
 
-### Retículo conceptual de la protofísica
+### Protofísica
 
 ```{ .json .config }
 {
@@ -130,10 +147,10 @@ Este sitio ha sido optimizado para Mozilla Firefox y Google Chrome.
 }
 ```
 
-Datos obtenidos del libro de Mario Bunge *"Foundations of Physics"* (1967).
+Las teorías físicas se han desarrollado gracias a diversas teorías matemáticas, a la lógica, la semántica y a una serie de presupuestos y teorías muy generales que en *Foundations of Physics* (1967), Mario Bunge divide en tres grupos: la base formal, la base material a la que llama protofísica, y ciertos principios "zerológicos". 
 
 
-### Retículo conceptual para teorías de dinámica analítica
+### Teorías de dinámica analítica
 
 ```{ .json .config }
 {
@@ -143,25 +160,10 @@ Datos obtenidos del libro de Mario Bunge *"Foundations of Physics"* (1967).
 }
 ```
 
-Datos obtenidos del libro de Mario Bunge *"Foundations of Physics"* (1967).
+Este retículo compara la teoría newtoniana con las teorías de dinámica analítica, que hablan no de partículas, sino de sistemas físicos y la evolución de sus estados. Estas teorías están parcialmente interpretadas y pueden aplicarse a distintos dominios. Los datos provienen de una tabla en la página 123 del libro *Foundations of Physics* (1967) de Mario Bunge.
 
 
-### Retículo de teorías del espacio-tiempo
-
-```{ .json .config }
-{
-  "template": "diagram-page.tt",
-  "output": "theories-es/spacetimes/index.html",
-  "nav_lang": "theories/spacetimes/index.html"
-}
-```
-
-Datos obtenidos de la clasificación encontrada en el libro de Michael
-Friedman *"Foundations of Space-Time Theories: Relativistic Physics
-and Philosophy of Science"*.
-
-
-### Retículo conceptual de teorías básicas
+### Teorías básicas
 
 ```{ .json .config }
 {
@@ -171,10 +173,23 @@ and Philosophy of Science"*.
 }
 ```
 
-Datos obtenidos del libro de Mario Bunge *"Foundations of Physics"* (1967).
+En *"Foundations of Physics"* (1967), Mario Bunge axiomatiza seis teorías físicas, y algunas variantes, de las cuales hemos tomado cinco: la Mecánica de partículas y la Mecánica del contínuo, el Electromagnetismo clásico, la Cinemática relativista y la Relatividad general. Esta red refleja el estilo aditivo de Bunge que plantea la relatividad especial como previa y fundamental para la Relatividad General. Compárese su localización con la red de teorías clásicas.
 
 
-### Retículo conceptual de teorías clásicas
+### Teorías del espacio-tiempo
+
+```{ .json .config }
+{
+  "template": "diagram-page.tt",
+  "output": "theories-es/spacetimes/index.html",
+  "nav_lang": "theories/spacetimes/index.html"
+}
+```
+
+Éste es el retículo ice-berg, la punta superior del holón de teorías. Toma solamente los elementos geométricos y topológicos para relacionar varios modelos de espacio-tiempos. Los datos provienen del libro *"Foundations of Space-Time Theories: Relativistic Physics and Philosophy of Science"* de Michael Friedman, así como de la clasificación de Niels Dewar (2016, 2018) y de Sotiriou y Farahoni (2010).
+
+
+### Teorías clásicas
 
 ```{ .json .config }
 {
@@ -184,12 +199,11 @@ Datos obtenidos del libro de Mario Bunge *"Foundations of Physics"* (1967).
 }
 ```
 
-Este retículo está basado en la clasificación de teorías físicas
-realizada por Michael Friedman en su libro *"Foundations of Space-time
-Theories: Relativistic Physics and Philosophy of Science"*.
+P. Havas (1964) mostró que la teoría newtoniana puede formularse en 4D. Michael Friedman aprovechó este resultado para caracterizarla, junto con otras ocho teorías clásicas en su libro *Foundations of Space-time Theories: Relativistic Physics and Philosophy of Science*. Se trata de una reconstrucción sustractiva en donde las propiedades geométricas más generales se van restringiendo, como es el caso de la curvatura del tensor de Riemann. Obsérvese que los modelos físicos quedan ubicados en la parte inferior, quedando la Relatividad Especial como un subconcepto de la Relatividad General. Los modelos previos de espacio-tiempo quedan ubicados en la parte media. La parte superior está dominada por la topología, los objetos geométricos y sus caracterizaciones, como se detalla en el retículo de Teorías del Espacio-Tiempo. Encuentra aquí un caso de teorización y otro de especialización.
 
 
-### Retículo conceptual de teorías métricas de gravitación
+
+### Teorías métricas de gravitación
 
 ```{ .json .config }
 {
@@ -199,11 +213,10 @@ Theories: Relativistic Physics and Philosophy of Science"*.
 }
 ```
 
-Datos obtenidos del libro de Clifford Will *"Theory and Experiment in
-Gravitational Physics".*
+Las teorías métricas se desarrollaron en los años cincuenta, sesenta y setenta en el contexto de la exploración espacial, de experimentos con ondas de radio y tecnología cuántica y de observaciones astronómicas de gran presición de objetos muy energéticos como los quasares. Éstas fueron clasificadas por Clifford Will en su libro *"Theory and Experiment in Gravitational Physics"* (1993). Las tablas en la página 117 y el "recetario" del capítulo 5 son fuente de este retículo.  Un retículo alterno clasifica las teorías métricas en base a sus parámetros postnewtonianos (p. 115). Ubica las teorías viables de las no viables. 
 
 
-### Retículo conceptual de teorías f(R) de gravitación
+### Teorías f(R) de gravitación
 
 ```{ .json .config }
 {
@@ -213,11 +226,12 @@ Gravitational Physics".*
 }
 ```
 
-Datos obtenidos de la clasificación encontrada en el artículo de
-Thomas P. Sotiriou y Valerio Faraoni, *"f(R) theories of gravity"*.
+Las teorías f(R) cobraron interés desde los años 1980 cuando se propuso modelar los 
+escenarios de inflación con funciones del escalar de Richi de mayor orden, de manera que se evitaran las singularidades. Se buscó preservar los mismos principios con los cuales fue formulada la Relatividad General: el principio de equivalencia fuerte, el movimiento de partículas
+siguiendo geodésicas del espacio-tiempo y sin agregar campos extra, por lo que se les considera teorías métricas “puras”. El contexto formal está basado en el artículo de Thomas P. Sotiriou y Valerio Faraoni, *"f(R) theories of gravity"*. Nótese aquí que la ecuación de Einstein es compartida por dos modelos. Por otro lado, la acción puede variarse de dos formas distintas, según la dependencia de las variables.
 
 
-### Retículo conceptual para la teoría extendida de gravitación
+### Teorías extendidas de gravitación
 
 ```{ .json .config }
 {
@@ -229,11 +243,11 @@ Thomas P. Sotiriou y Valerio Faraoni, *"f(R) theories of gravity"*.
 
 Se presentan cuatro modelos de la teoría de gravitación extendida que
 toman la constante de Milgrom como fundamental (Teorías de gravedad
-modificada (MoND)). Dos de ellas son no locales y asumen la masa como
+modificada (MoND)) como alternativa a la hipótesis de la materia oscura. Dos de ellas son no locales y asumen la masa como
 una función de densidad. Datos obtenidos del trabajo de Barrientos y
 Mendoza en teorías métricas y a la platini extendidas (2016, 2018);
-Carranza, Mendoza y Torres (2018); Bernal et al (2012), y el artículo
-de Sotiriou Faraoni, *"f(R) theories of gravity"*.
+Carranza, Mendoza y Torres (2018); y el artículo
+de Sotiriou Faraoni, *f(R) theories of gravity*.
 
 
 ### Holón de teorías de gravitación
@@ -257,4 +271,5 @@ theories of gravity"*, en la clasificación de Michael Friedman en
 Philosophy of Science"*, en la clasificación de Clifford Will en
 *"Theory and Experiment on Gravitational Physics"*, y en los artículos
 de Sergio Mendoza et al. (2013, 2016, 2018) sobre teorías extendidas
-locales y no locales.
+locales y no locales. Ubica grupos de teorías, por ejemplo: aquellas que siguen una geodésica, las que tienen curvatura = 0, o el nodo que selecciona a las teorías métricas solamente. ¿A qué modelo correspondería ese nodo? Observa la evolución teórica de izquierda a derecha.
+
