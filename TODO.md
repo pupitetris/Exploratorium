@@ -18,7 +18,7 @@ TODO
         Ejemplo: click en spacetimes/Newton-Cartan S-T/(dt ⊗ K)=0 (pero en classical sí funciona)
   - [ ] La redacción en español del texto introductorio del Inicio no
         está al corriente con la versión en inglés (Neil Dewar).
-  - [ ] Cuando arrastro un nodo fuera de el viewport, ya no puedo seleccionarlo de nuevo
+  - [x] Cuando arrastro un nodo fuera del viewport, ya no puedo seleccionarlo de nuevo
   - [ ] Feedback de que las etiquetas son interactuables. manita o algo al pasar sobre las etiquetas.
   - [ ] Info no visible porque está hasta abajo del diagrama. que la info salga más cerca de la etiqueta.
 
@@ -30,7 +30,7 @@ TODO
   - [ ] Botón opcional para volver casi transparente las ligas al ínfimo. 
   - [ ] "Minimap"
   - [ ] Nodos "interesantes" con highlight, y hint explicativo.
-  - [ ] Zoom in/out y paneo
+  - [x] Zoom in/out y paneo
 
 - Indiana:
   - [ ] 4k touchscreen
