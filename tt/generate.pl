@@ -17,6 +17,9 @@ sub block_get_text {
   if ($type eq 'Space' || $type eq 'SoftBreak') {
     return ' ';
   }
+  if ($type eq 'Plain') {
+    return cont_get_text($cont);
+  }
   if ($type eq 'LineBreak') {
     return "<br>\n";
   }
@@ -32,12 +35,16 @@ sub block_get_text {
   if ($type eq 'Link') {
     return '<a href="' . $cont->[2][0] . '">' . cont_get_text($cont->[1]) . '</a>';
   }
+  if ($type eq 'BulletList') {
+    return "\n<ul>\n  " . join ("\n  ", map { '<li>' . cont_get_text($_) . '</li>' } @$cont) . "\n</ul>\n";
+  }
   if ($type eq 'CodeBlock') {
     return '<pre class="' . join(' ', @{$cont->[0][1]}) . '">' . $cont->[1] . '</pre>';
   }
   if ($type eq 'RawInline' && $cont->[0] eq 'html') {
     return $cont->[1];
   }
+  warn "block_get_text: Unrecognized type $type";
   return '';
 }
 
@@ -78,7 +85,7 @@ sub cont_get_link {
             'href' => $cont->{'c'}[2][0]
       }
     }
-    die "cont_get_link: Unrecognized type $cont->{'t'}";
+    warn "cont_get_link: Unrecognized type $cont->{'t'}";
   }
 }
 
@@ -111,8 +118,14 @@ sub json_get_structure {
         die "MD can't declare subheadings more than 1 level lower than previous heading. ($h->{'title'})";
       }
     } elsif ($block->{'t'} eq 'BulletList') {
-      foreach my $item (@{$block->{'c'}}) {
-        push @{$obj->{'children'}}, cont_get_link($item);
+      if (scalar @stack > 2) {
+        # Not metadata such as Navigation or Menu.
+        push @{$obj->{'children'}}, block_get_text($block);
+      } else {
+        # Metadata
+        foreach my $item (@{$block->{'c'}}) {
+          push @{$obj->{'children'}}, cont_get_link($item);
+        }
       }
     } elsif ($block->{'t'} eq 'Para') {
       push @{$obj->{'children'}}, cont_get_text($block->{'c'});
