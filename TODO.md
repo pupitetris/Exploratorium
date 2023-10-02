@@ -23,6 +23,7 @@ TODO
   - [ ] Info no visible porque está hasta abajo del diagrama. que la info salga más cerca de la etiqueta.
 
 - Mejoras:
+  - [ ] Acceso a los datos tabulares de los contextos.
   - [x] Recuperar el verde abajo del pasto.
   - [ ] Pegar el footer al inferior de la pantalla si la página es más
         corta que la ventana.
