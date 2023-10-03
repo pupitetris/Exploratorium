@@ -69,8 +69,12 @@
 	display: none;
 }
 
-#d1 {
+.aside-1 {
 	margin-top: 1em;
+  position: relative;
+}
+
+#d1 {
 	width: 100%;
 }
 
@@ -80,15 +84,20 @@
   cursor: move;
 }
 
-#d2 {
+#infobox {
+  display: none;
+  position: absolute;
+  top: 180px;
+  left: 24px;
 	width: 100%;
-	min-height: 120px;
+  max-width: 350px;
 	padding: 1em;
-	background-color: rgba(255,255,255,0.85);
-	/* border-bottom: 1px solid black; */
+	background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px gray;
 }
 
-#d2 h2 {
+#infobox h2 {
 	margin-top: 0;
 }
 

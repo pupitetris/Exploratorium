@@ -17,9 +17,10 @@
           <div class="aside-1">
             <div id="editor"></div>
             <div id="d1"></div>
-          </div>
-          <div class="main">
-            <div id="d2"></div>
+            <div id="infobox">
+              <button type="button" class="btn close"> &times; </button>
+              <div class="cont"></div>
+            </div>
           </div>
           <div class="aside-2">
             <div id="attr-desc"></div>
