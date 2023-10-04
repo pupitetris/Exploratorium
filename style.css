@@ -165,6 +165,10 @@ text {
 	z-index: 200;
 }
 
+.attributes-label.hasexp, .attributes-label.hasexp text {
+  cursor: pointer;
+}
+
 .attributes-label-text {
 	font-style: italic;
 	fill: black;

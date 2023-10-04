@@ -19,8 +19,8 @@ TODO
   - [ ] La redacción en español del texto introductorio del Inicio no
         está al corriente con la versión en inglés (Neil Dewar).
   - [x] Cuando arrastro un nodo fuera del viewport, ya no puedo seleccionarlo de nuevo
-  - [ ] Feedback de que las etiquetas son interactuables. manita o algo al pasar sobre las etiquetas.
-  - [ ] Info no visible porque está hasta abajo del diagrama. que la info salga más cerca de la etiqueta.
+  - [x] Feedback de que las etiquetas son interactuables. manita o algo al pasar sobre las etiquetas.
+  - [x] Info no visible porque está hasta abajo del diagrama. que la info salga más cerca de la etiqueta.
 
 - Mejoras:
   - [ ] Acceso a los datos tabulares de los contextos.
