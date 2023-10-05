@@ -1,6 +1,6 @@
 Independent,Explanation,Dependent,Atributo,Clase
 Dimensión: N=4,Una tipificación de la variedad diferenciable.,Dimension: N=4,N,Tip
-M: Variedad diferenciable,"Un espacio topológico que asemeja el espacio euclidiano en las vecindades de cada punto. Puede coordinatizarse por $\R^{n}$ mediante una familia de homomorfismos.
+M: Variedad diferenciable,"Un espacio topológico que asemeja el espacio euclidiano en las vecindades de cada punto. Puede coordinatizarse por $R^{n}$ mediante una familia de homomorfismos.
 ",M: Differentiable manifold,M,M
 $\left\{ _{\mu\nu}^{\lambda}\right\} $: Conexión métrica,"También llamada la conexión Levi-Civita, es dependiente de la métrica $g$. Nos da información acerca de cómo transportar vectores a lo largo de una curva conservando la métrica.",$\left\{ _{\mu\nu}^{\lambda}\right\} $: Metric connection,Conexión Métrica,GO
 $\gamma$: Conexión afín,Una conexión generalizada para campos vectoriales en espacios curvos donde la torsión y la no-metricidad no son necesariamente cero.,$\gamma$: Affine connection,Conexión Afín,GO
