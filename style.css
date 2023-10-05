@@ -90,6 +90,7 @@
   top: 180px;
   left: 24px;
   min-width: 350px;
+  max-width: calc(100% - 40px);
 	padding: 1em;
 	background-color: white;
   border: 1px solid black;
@@ -100,6 +101,14 @@
 	margin-top: 0;
   margin-right: 1em;
   white-space: nowrap;
+}
+
+#infobox p {
+  max-width: 350px;
+}
+
+#infobox p:last-child {
+  margin-bottom: 0;
 }
 
 .affix {
