@@ -78,6 +78,10 @@
   left: calc(100% - 160px);
 }
 
+.dia-shell .btn {
+  --bs-btn-bg: white;
+}
+
 .diagram {
 	width: 100%;
 }
@@ -92,7 +96,7 @@
 }
 
 .floated {
-  box-shadow: 5px 5px 5px gray;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
 .floatbox {
