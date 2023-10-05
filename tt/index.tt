@@ -7,11 +7,10 @@
           </div>
           <div class="col-lg-3">
             <div class="ligas">
+            <div class="marcaAgua"></div>
 [% FOREACH link IN menu.children %]
               <a href="[% PROCESS rel_href href=link.href %]" class="btn btn-outline-success">[% link.text %]</a>
 [% END %]
-            </div>
-            <div class="marcaAgua">
             </div>
           </div>
           <div class="aside-2">

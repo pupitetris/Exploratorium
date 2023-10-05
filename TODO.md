@@ -3,7 +3,7 @@ TODO
 
 - Actualizaciones:
   - [ ] Ecmascript (módulos)
-  - [ ] Bootstrap 5
+  - [x] Bootstrap 5
   - [ ] MathJax 3.2
   - [x] D3 v7
 
