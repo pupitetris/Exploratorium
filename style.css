@@ -67,23 +67,35 @@
 	display: none;
 }
 
-.aside-1 {
+.dia-shell {
 	margin-top: 1em;
   position: relative;
 }
 
-#d1 {
+.dia-shell .btn-toolbar {
+  position: absolute;
+  top: 20px;
+  left: calc(100% - 160px);
+}
+
+.diagram {
 	width: 100%;
 }
 
-#d1 > svg {
+.diagram > svg {
   border: 1px solid black;
-  box-shadow: 5px 5px 5px gray;
   cursor: move;
 }
 
 #infobox {
   display: none;
+}
+
+.floated {
+  box-shadow: 5px 5px 5px gray;
+}
+
+.floatbox {
   position: absolute;
   top: 180px;
   left: 24px;
@@ -92,20 +104,23 @@
 	padding: 1em;
 	background-color: white;
   border: 1px solid black;
-  box-shadow: 5px 5px 5px gray;
 }
 
-#infobox h2 {
+.floatbox button.btn-close {
+  float: right;
+}
+
+.floatbox h2 {
 	margin-top: 0;
   margin-right: 1em;
   white-space: nowrap;
 }
 
-#infobox p {
+.floatbox p {
   max-width: 350px;
 }
 
-#infobox p:last-child {
+.floatbox p:last-child {
   margin-bottom: 0;
 }
 
@@ -173,7 +188,7 @@ text {
 	z-index: 200;
 }
 
-.attributes-label.hasexp, .attributes-label.hasexp text {
+.attributes-label.hasexp, .attributes-label.hasexp * {
   cursor: pointer;
 }
 
@@ -182,12 +197,12 @@ text {
 	fill: black;
 }
 
-.node text {
-	cursor: default;
+.node .node-dot * {
+	cursor: pointer;
 }
 
-.node-dot {
-	cursor: pointer;
+.node * {
+  cursor: grab;
 }
 
 .node.drag * {

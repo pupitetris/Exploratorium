@@ -14,11 +14,18 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="aside-1">
+          <div class="dia-shell aside-1">
             <div id="editor"></div>
-            <div id="d1"></div>
-            <div id="infobox">
-              <button type="button" class="btn close"> &times; </button>
+            <div id="d1" class="diagram floated"></div>
+            <div id="d1-toolbar" class="btn-toolbar" role="toolbar" aria-label="Diagram toolbar">
+              <div class="btn-group me-2 floated" role="group" aria-label="Zoom tools">
+                <button type="button" class="btn btn-outline-primary bi bi-zoom-out" aria-label="Zoom Out"></button>
+                <button type="button" class="btn btn-outline-primary zoom-reset">1:1</button>
+                <button type="button" class="btn btn-outline-primary bi bi-zoom-in" aria-label="Zoom In"></button>
+              </div>
+            </div>
+            <div id="infobox" class="floatbox floated">
+              <button type="button" class="btn btn-close" aria-label="Close"></button>
               <div class="cont"></div>
             </div>
           </div>
