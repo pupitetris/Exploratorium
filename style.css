@@ -183,8 +183,8 @@ text {
 	cursor: pointer;
 }
 
-.node.drag .node-dot {
-	cursor: grabbing;
+.node.drag * {
+	cursor: grabbing !important;
 }
 
 .node-bg {
