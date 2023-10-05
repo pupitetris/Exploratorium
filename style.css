@@ -89,8 +89,7 @@
   position: absolute;
   top: 180px;
   left: 24px;
-	width: 100%;
-  max-width: 350px;
+  min-width: 350px;
 	padding: 1em;
 	background-color: white;
   border: 1px solid black;
@@ -99,6 +98,8 @@
 
 #infobox h2 {
 	margin-top: 0;
+  margin-right: 1em;
+  white-space: nowrap;
 }
 
 .affix {
