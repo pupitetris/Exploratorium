@@ -22,16 +22,21 @@ TODO
   - [x] Cuando arrastro un nodo fuera del viewport, ya no puedo seleccionarlo de nuevo
   - [x] Feedback de que las etiquetas son interactuables. manita o algo al pasar sobre las etiquetas.
   - [x] Info no visible porque está hasta abajo del diagrama. que la info salga más cerca de la etiqueta.
-
-- Mejoras:
-  - [ ] Acceso a los datos tabulares de los contextos.
-  - [x] Recuperar el verde abajo del pasto.
+  - [ ] Algunas ecuaciones de MathJax no jalan
+  - [ ] Algunos colores de textbox no jalaron su colorcito y están en negro.
+  - [ ] Atributos amarillos en transparencia no se ven
+  - [ ] Etiquetas de atributos que se enciman.
   - [ ] Pegar el footer al inferior de la pantalla si la página es más
         corta que la ventana.
+
+- Mejoras:
+  - [x] Recuperar el verde abajo del pasto.
   - [x] Botón opcional para volver casi transparente las ligas al ínfimo. 
-  - [ ] "Minimap"
-  - [ ] Nodos "interesantes" con highlight, y hint explicativo.
   - [x] Zoom in/out y paneo
+
+  - [ ] Click en infimo .active le quita el .active
+  - [ ] Tooltips en toolbars
+  - [ ] Infobox: párrafo (columna de desc.csv) especial de ecuación.
 
 - Indiana:
   - [ ] 4k touchscreen
@@ -43,3 +48,7 @@ TODO
   - [ ] have CORS enabled for http://idemo.cns.iu.edu/macroscope-kiosk/#/
   - [ ] served over HTTPS
   
+- Nice to have
+  - [ ] Menú de teorías en el navbar
+  - [ ] Acceso a los datos tabulares de los contextos.
+  - [ ] Nodos "interesantes" con highlight, y hint explicativo.
