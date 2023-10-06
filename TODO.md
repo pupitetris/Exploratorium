@@ -28,7 +28,7 @@ TODO
   - [x] Recuperar el verde abajo del pasto.
   - [ ] Pegar el footer al inferior de la pantalla si la página es más
         corta que la ventana.
-  - [ ] Botón opcional para volver casi transparente las ligas al ínfimo. 
+  - [x] Botón opcional para volver casi transparente las ligas al ínfimo. 
   - [ ] "Minimap"
   - [ ] Nodos "interesantes" con highlight, y hint explicativo.
   - [x] Zoom in/out y paneo

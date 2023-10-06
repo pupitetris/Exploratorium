@@ -259,7 +259,17 @@ text {
 	z-index: 200;
 }
 
-.link.inactive, .node.inactive > * {
+.link.infimum:not(.active), .node.infimum:not(.active) .node-basic {
+  opacity: 0.1;
+}
+
+.link.inactive,
+.node.inactive .node-basic,
+.node.inactive .node-new-attribute,
+.node.inactive .node-new-object,
+.node.inactive .attributes-label,
+.node.inactive .objects-label
+{
 	opacity: 0.125;
 }
 
