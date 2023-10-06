@@ -138,6 +138,10 @@
   margin-bottom: 0;
 }
 
+.floatbox p > span {
+  background-color: white;
+}
+
 .affix {
 	width: 100%;
 	z-index: 1;
