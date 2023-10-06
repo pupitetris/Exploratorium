@@ -70,12 +70,22 @@
 .dia-shell {
 	margin-top: 1em;
   position: relative;
+  padding: 0;
+}
+
+.dia-shell.fullscreen {
+  background-color: white;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .dia-shell .btn-toolbar {
   position: absolute;
   top: 20px;
-  left: calc(100% - 160px);
+  --tb-width: 205px;
+  width: var(--tb-width);
+  left: calc(100% - var(--tb-width));
 }
 
 .dia-shell .btn {
@@ -87,7 +97,6 @@
 }
 
 .diagram > svg {
-  border: 1px solid black;
   cursor: move;
 }
 
@@ -95,7 +104,8 @@
   display: none;
 }
 
-.floated {
+.floated, .dia-shell {
+  border: 1px solid black;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
