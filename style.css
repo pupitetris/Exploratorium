@@ -120,6 +120,10 @@
   vertical-align: text-top;
 }
 
+#keybox .cont div:first-child {
+  padding-right: 2em;
+}
+
 .floatbox, .dia-shell, .dia-shell .btn-toolbar .btn-group {
   border: 1px solid black;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
