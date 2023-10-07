@@ -28,16 +28,21 @@ TODO
   - [ ] Etiquetas de atributos que se enciman.
   - [ ] Pegar el footer al inferior de la pantalla si la página es más
         corta que la ventana.
+  - [ ] Diagrama y título e intro no están centrados.
 
 - Mejoras:
   - [ ] Menú de teorías en el navbar
   - [x] Recuperar el verde abajo del pasto.
   - [x] Botón opcional para volver casi transparente las ligas al ínfimo. 
   - [x] Zoom in/out y paneo
+  - [ ] Atributos en abanico.
 
   - [ ] Click en infimo .active le quita el .active
   - [ ] Tooltips en toolbars
   - [ ] Infobox: párrafo (columna de desc.csv) especial de ecuación.
+  - [ ] Remover el texto del autor en la páginas de los diagramas.
+  - [ ] Todos los svgs se van a 16:9
+  - [ ] Repasar el feature de subrayado (double click en nodos).
 
 - Indiana:
   - [ ] 4k touchscreen
