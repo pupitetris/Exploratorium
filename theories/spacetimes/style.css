@@ -6,17 +6,17 @@ html {
 }
 
 .textbox-box.box-M {
-	fill: #753917;
+	--fill: #753917;
 }
 
 .textbox-box.box-GO {
-	fill: #F0AE2B;
+	--fill: #F0AE2B;
 }
 
 .textbox-box.box-Tip {
-	fill: #ED6107;
+	--fill: #ED6107;
 }
 
 .textbox-box.box-Cond {
-	fill: #7E7C1D;
+	--fill: #7E7C1D;
 }

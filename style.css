@@ -101,23 +101,38 @@
 }
 
 #infobox {
+  top: 50%;
+  z-index: 1;
   display: none;
 }
 
-.floated, .dia-shell {
+#keybox {
+  top: 24px;
+}
+
+#keybox .textbox-box {
+  display: inline-block;
+  width: 2.5em;
+  height: 1.25em;
+  margin-right: 1ex;
+  background: linear-gradient(0deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.45) 100%), var(--fill);
+  border: 1px solid #999;
+  vertical-align: text-top;
+}
+
+.floatbox, .dia-shell, .dia-shell .btn-toolbar .btn-group {
   border: 1px solid black;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
 .floatbox {
+  cursor: grab;
   position: absolute;
-  top: 180px;
   left: 24px;
   min-width: 350px;
   max-width: calc(100% - 40px);
 	padding: 1em;
 	background-color: white;
-  border: 1px solid black;
 }
 
 .floatbox button.btn-close {
@@ -154,21 +169,21 @@ text {
   font: 14px sans-serif;
 }
 
-.clave {
-  cursor: default;
-}
-
 .box-bg {
   fill: white;
   stroke: black;
 }
 
-.box-distancia.textbox-box {
-	fill: gray;
+.textbox-box.box-distancia {
+	--fill: gray;
 }
 
-.box-tamaño.textbox-box {
-	fill: red;
+.textbox-box.box-tamaño {
+	--fill: red;
+}
+
+.textbox-box {
+  fill: var(--fill);
 }
 
 .textbox-bg-stop1 {
