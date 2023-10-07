@@ -223,7 +223,7 @@ text {
   cursor: grab;
 }
 
-.node.drag * {
+.drag * {
 	cursor: grabbing !important;
 }
 
