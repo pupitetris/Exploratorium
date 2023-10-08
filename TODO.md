@@ -23,12 +23,13 @@ TODO
   - [x] Feedback de que las etiquetas son interactuables. manita o algo al pasar sobre las etiquetas.
   - [x] Info no visible porque está hasta abajo del diagrama. que la info salga más cerca de la etiqueta.
   - [ ] Algunas ecuaciones de MathJax no jalan
-  - [ ] Algunos colores de textbox no jalaron su colorcito y están en negro.
+  - [x] Algunos colores de textbox no jalaron su colorcito y están en negro.
   - [ ] Atributos amarillos en transparencia no se ven
   - [ ] Etiquetas de atributos que se enciman.
   - [ ] Pegar el footer al inferior de la pantalla si la página es más
         corta que la ventana.
   - [ ] Diagrama y título e intro no están centrados.
+  - [ ] En zoom negativo, no jala el pan.
 
 - Mejoras:
   - [ ] Menú de teorías en el navbar
