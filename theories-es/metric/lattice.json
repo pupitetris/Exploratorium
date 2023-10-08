@@ -3737,11 +3737,11 @@
             "desc": "Acción"
         },
         {
-            "key": "FieldEc.",
+            "key": "FieldEq",
             "desc": "Ecuaciones de campo"
         },
         {
-            "key": "MovEc.",
+            "key": "MovEq",
             "desc": "Ecuaciones de movimiento"
         },
         {
@@ -3769,15 +3769,15 @@
         "K = 0": "Cond",
         "SM1": "Action",
         "Ec. 5": "Action",
-        "Ec. 6": "FieldEc.",
-        "Ec. de Einstein": "FieldEc.",
-        "Ley Geodésica": "MovEc.",
-        "Ec. 5-31": "FieldEc.",
-        "Ec. 5-47": "FieldEc.",
-        "Ec. 5-68": "FieldEc.",
-        "Ec. 5-75": "FieldEc.",
-        "Ec. 5-84": "FieldEc.",
-        "Ec. 5-95": "FieldEc.",
+        "Ec. 6": "FieldEq",
+        "Ec. de Einstein": "FieldEq",
+        "Ley Geodésica": "MovEq",
+        "Ec. 5-31": "FieldEq",
+        "Ec. 5-47": "FieldEq",
+        "Ec. 5-68": "FieldEq",
+        "Ec. 5-75": "FieldEq",
+        "Ec. 5-84": "FieldEq",
+        "Ec. 5-95": "FieldEq",
         "Kmn": "GO",
         "Phi": "GO",
         "B": "GO",
