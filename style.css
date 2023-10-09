@@ -295,7 +295,3 @@ text {
 .node.inactive .node-bg {
 	opacity: 1;
 }
-
-.attributes-label-box {
-	fill: #CE2A24;
-}
