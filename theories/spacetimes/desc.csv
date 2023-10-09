@@ -33,18 +33,3 @@ Signature,"for the metric tensor: Not-definite-positive $<-,+,+,+>$ or $<+,-,-,-
 Signature,for the metric tensor: definite-positive,Signature,Definite-positive,
 Signature,"for the metric tensor: Not definite positive $<1,3>$",Signature,"<1,3>",Tip
 $\overline{D}(g)=0$,Condition that preserves angles and distances when parallel transporting along a curve.,$\nabla_{a}g_{bc}=0$,D(g)=0,Cond
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
