@@ -25,7 +25,7 @@ TODO
   - [ ] Algunas ecuaciones de MathJax no jalan
   - [x] Algunos colores de textbox no jalaron su colorcito y están en negro.
   - [x] Atributos amarillos en transparencia no se ven
-  - [ ] Etiquetas de atributos que se enciman.
+  - [x] Etiquetas de atributos que se enciman.
   - [x] Pegar el footer al inferior de la pantalla si la página es más
         corta que la ventana.
   - [x] Diagrama y título e intro no están centrados.
