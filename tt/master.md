@@ -5,7 +5,7 @@ Space-Time Theories Exploratorium
 ## Navigation
 
 - [Home](index.html)
-- [Theories](nav_menu)
+- [Diagrams](nav_menu)
 - [The Author](/integrantes/mariana-espinosa-aldama)
 - [REMO](/)
 - [Español](nav_lang)
