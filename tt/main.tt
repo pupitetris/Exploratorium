@@ -80,10 +80,12 @@
               <div class="title">
                 <h1>[% (page.title == 'Home')? title : page.title %]</h1>
               </div>
+[% IF page.title == 'Home' %]
               <div class="author">
-[% PROCESS print block=author %]
+[%   PROCESS print block=author %]
 
               </div>
+[% END %]
 [% IF logos == 1 %]
             </div>
             <div class="col-lg-3 logos">
@@ -98,6 +100,12 @@
     </div>
     <footer class="footer-pasto mt-auto">
       <div class="container">
+[% IF page.title != 'Home' %]
+        <div class="author">
+[%   PROCESS print block=author %]
+
+        </div>
+[% END %]
 [% FOREACH heading IN footer.children %]
         <div class="[% heading.id %]">
 [%   FOREACH p IN heading.children %]

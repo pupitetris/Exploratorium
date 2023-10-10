@@ -56,12 +56,6 @@
     font-family: 'Waiting for the Sunrise', cursive;
   }
 
-  .author {
-    float: left;
-    position: relative;
-		width: 100%;
-  }
-
   .intro {
     float: left;
     position: relative;

@@ -53,7 +53,7 @@
   order: 3;
 }
 
-.acknowledgements {
+.footer-pasto .container > div:first-child {
 	padding-top: 120px;
 }
 

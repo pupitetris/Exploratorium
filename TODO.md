@@ -41,7 +41,7 @@ TODO
   - [ ] Click en infimo .active le quita el .active
   - [x] Tooltips en toolbars
   - [ ] Infobox: párrafo (columna de desc.csv) especial de ecuación.
-  - [ ] Remover el texto del autor en la páginas de los diagramas.
+  - [x] Remover el texto del autor en la páginas de los diagramas.
   - [ ] Todos los svgs se van a 16:9
   - [ ] Repasar el feature de subrayado (double click en nodos).
 
