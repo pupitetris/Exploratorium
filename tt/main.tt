@@ -40,12 +40,31 @@
           <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 [% FOREACH link IN navigation.children %]
-[% IF link.href == 'nav_lang' %]
-[% href = page.config.nav_lang %]
-[% ELSE %]
-[% href = link.href %]
-[% END %]
-              <li class="nav-item"><a class="nav-link[% IF href == page.config.output %] active[% END %]"[% IF href == page.config.output %] aria-current="page"[% END %] href="[% PROCESS rel_href href=href %]">[% link.text %]</a></li>
+[%   IF link.href == 'nav_lang' %]
+[%     href = page.config.nav_lang %]
+[%   ELSE %]
+[%     href = link.href %]
+[%   END %]
+[%   IF link.href == 'nav_menu' %]
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  [% link.text %]
+
+                </a>
+                <ul class="dropdown-menu">
+[%     FOREACH menulink IN menu.children %]
+                  <li><a class="dropdown-item" href="[% PROCESS rel_href href=menulink.href %]">[% menulink.text %]</a></li>
+[%     END %]
+                </ul>
+              </li>
+[%   ELSE %]
+              <li class="nav-item">
+                <a class="nav-link[% IF href == page.config.output %] active[% END %]"[% IF href == page.config.output %] aria-current="page"[% END %] href="[% PROCESS rel_href href=href %]">
+                  [% link.text %]
+
+                </a>
+              </li>
+[%   END %]
 [% END %]
             </ul>
           </div>

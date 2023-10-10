@@ -1,7 +1,9 @@
 @import url("cmm/style.css");
 
-.navbar {
-	--bs-navbar-color: #337ab7;
+.navbar, .navbar .dropdown-item {
+  --navbar-main-color: #337ab7;
+	--bs-navbar-color: var(--navbar-main-color);
+	--bs-dropdown-link-color: var(--navbar-main-color);
 }
 
 .collapse-navbar-collapse {

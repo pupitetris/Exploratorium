@@ -32,7 +32,7 @@ TODO
   - [ ] En zoom negativo, no jala el pan.
 
 - Mejoras:
-  - [ ] Menú de teorías en el navbar
+  - [x] Menú de teorías en el navbar
   - [x] Recuperar el verde abajo del pasto.
   - [x] Botón opcional para volver casi transparente las ligas al ínfimo. 
   - [x] Zoom in/out y paneo

@@ -5,6 +5,7 @@ Exploratorium de teorías del espacio-tiempo
 ## Navigation
 
 - [Inicio](index-es.html)
+- [Teorías](nav_menu)
 - [Acerca](/integrantes/mariana-espinosa-aldama)
 - [REMO](/)
 - [English](nav_lang)
