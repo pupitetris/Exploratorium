@@ -92,6 +92,36 @@
   --bs-btn-bg: white;
 }
 
+.btn-toolbar .btn[aria-label] {
+  position: relative;
+}
+
+.btn-toolbar .btn[aria-label]::after {
+  content: attr(aria-label);
+
+  position: absolute;
+  top: 45px;
+  right: -20px;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s ease-in-out;
+
+  display: block;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 16px;
+  color: black;
+  background: #fefdcd;
+  padding: 1ex 1ex;
+  border: 1px solid #c0c0c0;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn-toolbar .btn[aria-label]:hover::after {
+  opacity: 1;
+}
+
 .diagram {
 	width: 100%;
 }

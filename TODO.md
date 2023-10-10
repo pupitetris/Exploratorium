@@ -36,10 +36,10 @@ TODO
   - [x] Recuperar el verde abajo del pasto.
   - [x] Botón opcional para volver casi transparente las ligas al ínfimo. 
   - [x] Zoom in/out y paneo
-  - [ ] Atributos en abanico.
+  - [ ] Atributos en abanico. <- tal vez mejor dos columnas.
 
   - [ ] Click en infimo .active le quita el .active
-  - [ ] Tooltips en toolbars
+  - [x] Tooltips en toolbars
   - [ ] Infobox: párrafo (columna de desc.csv) especial de ecuación.
   - [ ] Remover el texto del autor en la páginas de los diagramas.
   - [ ] Todos los svgs se van a 16:9

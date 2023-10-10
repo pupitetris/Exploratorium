@@ -20,7 +20,7 @@
             <div id="d1-toolbar" class="btn-toolbar" role="toolbar" aria-label="Diagram toolbar">
               <div class="btn-group me-2" role="group" aria-label="Zoom tools">
                 <button type="button" class="btn btn-outline-primary bi bi-zoom-out" aria-label="Zoom Out"></button>
-                <button type="button" class="btn btn-outline-primary zoom-reset">1:1</button>
+                <button type="button" class="btn btn-outline-primary zoom-reset" aria-label="Zoom Reset">1:1</button>
                 <button type="button" class="btn btn-outline-primary bi bi-zoom-in" aria-label="Zoom In"></button>
               </div>
               <div class="btn-group me-2" role="group" aria-label="View tools">
