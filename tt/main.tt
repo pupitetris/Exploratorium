@@ -54,7 +54,9 @@
       <header class="intro-header">
         <div class="container" id="info">
           <div class="row">
+[% IF logos == 1 %]
             <div class="col-lg-9">
+[% END %]
               <div class="title">
                 <h1>[% (page.title == 'Home')? title : page.title %]</h1>
               </div>
@@ -62,8 +64,8 @@
 [% PROCESS print block=author %]
 
               </div>
-            </div>
 [% IF logos == 1 %]
+            </div>
             <div class="col-lg-3 logos">
               <img src="[% page.basedir %]images/logo_uam.jpg" alt="UAM">
               <img src="[% page.basedir %]images/REMO.png" alt="REMO">

@@ -28,7 +28,7 @@ TODO
   - [ ] Etiquetas de atributos que se enciman.
   - [x] Pegar el footer al inferior de la pantalla si la página es más
         corta que la ventana.
-  - [ ] Diagrama y título e intro no están centrados.
+  - [x] Diagrama y título e intro no están centrados.
   - [ ] En zoom negativo, no jala el pan.
 
 - Mejoras:
