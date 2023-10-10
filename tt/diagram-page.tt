@@ -8,12 +8,12 @@
                           "config.js"
                         ]
 %]
-      <div class="container intro">
+      <div class="container">
+        <div class="row">
+      <div class="intro">
 [% PROCESS print block=page %]
 
       </div>
-      <div class="container">
-        <div class="row">
           <div class="dia-shell aside-1">
             <div id="editor"></div>
             <div id="d1" class="diagram"></div>
