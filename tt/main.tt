@@ -31,6 +31,7 @@
 [% END %]
   </head>
   <body class="page d-flex flex-column min-vh-100">
+    <span id="forkongithub"><a href="https://github.com/pupitetris/Exploratorium">Fork me on GitHub</a></span>
     <div class="content">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
