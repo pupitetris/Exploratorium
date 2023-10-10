@@ -85,9 +85,10 @@
 .dia-shell .btn-toolbar {
   position: absolute;
   top: 20px;
-  --tb-width: 250px;
+  --tb-width: 16em;
   width: var(--tb-width);
   left: calc(100% - var(--tb-width));
+  flex-wrap: nowrap;
 }
 
 .dia-shell .btn {
