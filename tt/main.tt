@@ -30,7 +30,7 @@
     <script src="[% src %]"></script>
 [% END %]
   </head>
-  <body class="page">
+  <body class="page d-flex flex-column min-vh-100">
     <div class="content">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -74,7 +74,7 @@
       </header>
 [% content %]
     </div>
-    <footer class="footer-pasto">
+    <footer class="footer-pasto mt-auto">
       <div class="container">
 [% FOREACH heading IN footer.children %]
         <div class="[% heading.id %]">

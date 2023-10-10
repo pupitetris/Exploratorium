@@ -26,7 +26,7 @@ TODO
   - [x] Algunos colores de textbox no jalaron su colorcito y están en negro.
   - [x] Atributos amarillos en transparencia no se ven
   - [ ] Etiquetas de atributos que se enciman.
-  - [ ] Pegar el footer al inferior de la pantalla si la página es más
+  - [x] Pegar el footer al inferior de la pantalla si la página es más
         corta que la ventana.
   - [ ] Diagrama y título e intro no están centrados.
   - [ ] En zoom negativo, no jala el pan.

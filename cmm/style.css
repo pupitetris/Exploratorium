@@ -5,11 +5,6 @@
 }
 
 @media only screen and (min-width: 0px) {
-	body.page {
-		background-color: #5fa03b;
-		min-height: 100vh;
-	}
-
 	.content, footer {
 		background-color: #fff;
 	}
