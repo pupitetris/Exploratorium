@@ -7,6 +7,5 @@ window.Config = {
   LABELS_HEIGHT: 50,
   LABELS_SEPARATION: 25,
   LINK_STRENGTH: 0,
-  DATA_SOURCE: "English-T.csv",
   USE_EDITOR: false
 }
