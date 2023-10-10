@@ -289,7 +289,7 @@ text {
 .node.inactive .attributes-label,
 .node.inactive .objects-label
 {
-	opacity: 0.125;
+	opacity: 0.25;
 }
 
 .node.inactive .node-bg {
