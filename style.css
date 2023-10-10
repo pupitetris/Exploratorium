@@ -83,7 +83,7 @@
 .dia-shell .btn-toolbar {
   position: absolute;
   top: 20px;
-  --tb-width: 205px;
+  --tb-width: 250px;
   width: var(--tb-width);
   left: calc(100% - var(--tb-width));
 }
@@ -136,11 +136,11 @@
   display: none;
 }
 
-#keybox {
+#legend {
   top: 24px;
 }
 
-#keybox .textbox-box {
+#legend .textbox-box {
   display: inline-block;
   width: 2.5em;
   height: 1.25em;
@@ -150,7 +150,7 @@
   vertical-align: text-top;
 }
 
-#keybox .cont div:first-child {
+#legend .cont div:first-child {
   padding-right: 2em;
 }
 
