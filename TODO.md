@@ -12,7 +12,7 @@ TODO
   - [x] generador en maquina de Mariana
   - [x] GitHub
     - [ ] GitHub para Mariana
-  - [ ] Google Analytics
+  - [x] Google Analytics
   - [x] Templates: Traducciones para aria-label et al.
 
 - Bugs:
