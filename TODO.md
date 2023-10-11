@@ -41,7 +41,7 @@ TODO
   - [x] Zoom in/out y paneo
   - [ ] Atributos en abanico. <- tal vez mejor dos columnas.
 
-  - [ ] Click en infimo .active le quita el .active
+  - [x] Click en infimo .active le quita el .active
   - [x] Tooltips en toolbars
   - [ ] Infobox: párrafo (columna de desc.csv) especial de ecuación.
   - [x] Remover el texto del autor en la páginas de los diagramas.
