@@ -136,8 +136,6 @@ sub json_get_structure {
       } else {
         push @{$obj->{'children'}}, block_get_text($block);
       }
-    } else {
-      print "hola\n";
     }
   }
 
