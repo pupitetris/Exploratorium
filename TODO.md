@@ -55,7 +55,7 @@ TODO
     - [ ] alternativas a mecanismos "hover"
     - [ ] pinch-to-zoom
   - [ ] allowed to run inside an iframe element
-  - [ ] have CORS enabled for http://idemo.cns.iu.edu/macroscope-kiosk/#/
+  - [x] have CORS enabled for http://idemo.cns.iu.edu/macroscope-kiosk/#/
   - [x] served over HTTPS
   
 - Nice to have
