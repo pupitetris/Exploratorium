@@ -13,7 +13,7 @@ TODO
   - [x] GitHub
     - [ ] GitHub para Mariana
   - [ ] Google Analytics
-  - [ ] Templates: Traducciones para aria-label et al.
+  - [x] Templates: Traducciones para aria-label et al.
 
 - Bugs:
   - [x] Algunos getAttrId(attr) devuelven cadena vacía.

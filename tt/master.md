@@ -1,6 +1,11 @@
 Space-Time Theories Exploratorium
 =================================
 
+```{ .json .config }
+{
+  "lang": "en"
+}
+```
 
 ## Navigation
 

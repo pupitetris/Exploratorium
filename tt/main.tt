@@ -10,13 +10,25 @@
 [%   END %]
 [% END %]
 
+[% BLOCK string %]
+[%   IF config.lang == 'en' %]
+[%     s %]
+[%   ELSE %]
+[%     IF config.strings.exists(s) %]
+[%       config.strings.item(s) %]
+[%     ELSE %]
+[%       PERL %]warn 'Missing translation for string "[% s %]"';[% END %]
+[%     END %]
+[%   END %]
+[%- END %]
+
 [% BLOCK rel_href %]
 [% IF href.substr(0, 1) != '/' %][% page.basedir %][% END %][% href %]
 [%- END %]
 
 [% BLOCK page %]
 <!DOCTYPE html>
-<html>
+<html lang="[% config.lang %]">
   <head>
     <title>[% title %][% IF page.title != 'Home' %]: [% page.title %][% END %]</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +47,7 @@
     <div class="content">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="[% PROCESS string s='Toggle navigation' %]">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggler">

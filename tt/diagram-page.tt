@@ -17,25 +17,25 @@
           <div class="dia-shell aside-1">
             <div id="editor"></div>
             <div id="d1" class="diagram"></div>
-            <div class="btn-toolbar" role="toolbar" aria-label="Diagram toolbar">
-              <div class="btn-group me-2" role="group" aria-label="Zoom tools">
-                <button type="button" class="btn btn-outline-primary bi bi-info-lg active" data-bs-toggle="button" aria-label="Show legend"></button>
+            <div class="btn-toolbar" role="toolbar" aria-label="[% PROCESS string s='Diagram toolbar' %]">
+              <div class="btn-group me-2" role="group">
+                <button type="button" class="btn btn-outline-primary bi bi-info-lg active" data-bs-toggle="button" aria-label="[% PROCESS string s='Show Legend' %]"></button>
               </div>
-              <div class="btn-group me-2" role="group" aria-label="Zoom tools">
-                <button type="button" class="btn btn-outline-primary bi bi-zoom-out" aria-label="Zoom Out"></button>
-                <button type="button" class="btn btn-outline-primary zoom-reset" aria-label="Zoom Reset">1:1</button>
-                <button type="button" class="btn btn-outline-primary bi bi-zoom-in" aria-label="Zoom In"></button>
+              <div class="btn-group me-2" role="group">
+                <button type="button" class="btn btn-outline-primary bi bi-zoom-out" aria-label="[% PROCESS string s='Zoom Out' %]"></button>
+                <button type="button" class="btn btn-outline-primary zoom-reset" aria-label="[% PROCESS string s='Zoom Reset' %]">1:1</button>
+                <button type="button" class="btn btn-outline-primary bi bi-zoom-in" aria-label="[% PROCESS string s='Zoom In' %]"></button>
               </div>
-              <div class="btn-group me-2" role="group" aria-label="View tools">
-                <button type="button" class="btn btn-outline-primary bi bi-fullscreen" data-bs-toggle="button" aria-label="Full Screen"></button>
+              <div class="btn-group me-2" role="group">
+                <button type="button" class="btn btn-outline-primary bi bi-fullscreen" data-bs-toggle="button" aria-label="[% PROCESS string s='Full Screen' %]"></button>
               </div>
             </div>
             <div id="infobox" class="floatbox">
-              <button type="button" class="btn btn-close" aria-label="Close"></button>
+              <button type="button" class="btn btn-close" aria-label="[% PROCESS string s='Close info box' %]"></button>
               <div class="cont"></div>
             </div>
             <div id="legend" class="floatbox">
-              <button type="button" class="btn btn-close" aria-label="Close"></button>
+              <button type="button" class="btn btn-close" aria-label="[% PROCESS string s='Close legend' %]"></button>
               <div class="cont"></div>
             </div>
           </div>

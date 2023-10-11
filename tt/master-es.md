@@ -1,6 +1,22 @@
 Exploratorium de teorías del espacio-tiempo
 ===========================================
 
+```{ .json .config }
+{
+  "lang": "es",
+  "strings": {
+    "Close info box": "Cerrar caja de info",
+    "Close legend": "Cerrar leyenda",
+    "Diagram toolbar": "Barra de herramientas del diagrama",
+    "Full Screen": "Pantalla completa",
+    "Show Legend": "Mostrar leyenda",
+    "Toggle navigation": "Alternar navegación",
+    "Zoom In": "Acercar",
+    "Zoom Out": "Alejar",
+    "Zoom Reset": "Restablecer acercamiento"
+  }
+}
+```
 
 ## Navigation
 

@@ -5,6 +5,7 @@ use strict;
 use JSON; # libjson-perl
 use Template; # libtemplate-perl
 use File::Basename qw(dirname);
+use Encode qw(encode_utf8);
 
 sub block_get_text {
   my $block = shift;
@@ -132,7 +133,7 @@ sub json_get_structure {
     } elsif ($block->{'t'} eq 'CodeBlock') {
       if ($block->{'c'}[0][1][0] eq 'json' &&
           $block->{'c'}[0][1][1] eq 'config') {
-        $obj->{'config'} = decode_json($block->{'c'}[1]);
+        $obj->{'config'} = decode_json(encode_utf8($block->{'c'}[1]));
       } else {
         push @{$obj->{'children'}}, block_get_text($block);
       }
@@ -186,6 +187,7 @@ if ($target ne 'clean') {
     POST_CHOMP => 1,
     TRIM => 1,
     VARIABLES => $struct,
+    EVAL_PERL => 1,
     PRE_PROCESS => $main_template
   };
   $tt = Template->new($tt_conf) || die $Template::Error;
