@@ -18,7 +18,7 @@ TODO
 - Bugs:
   - [x] Algunos getAttrId(attr) devuelven cadena vacía.
         Ejemplo: click en spacetimes/Newton-Cartan S-T/(dt ⊗ K)=0 (pero en classical sí funciona)
-    - [ ] Todavía: theories-es/basic: Colission between {B} and {B*}. attr_id: b
+    - [x] Todavía: theories-es/basic: Colission between {B} and {B*}. attr_id: b
 
   - [x] La redacción en español del texto introductorio del Inicio no
         está al corriente con la versión en inglés (Neil Dewar).
