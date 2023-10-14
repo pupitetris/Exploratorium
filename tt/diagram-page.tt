@@ -10,12 +10,31 @@
 %]
       <div class="container">
         <div class="row">
-      <div class="intro">
+          <div class="intro">
 [% PROCESS print block=page %]
 
-      </div>
+          </div>
+          <div id="editor">
+            <div class="input-group mb-3">
+              <span class="input-group-text">JSON</span>
+              <textarea class="form-control"></textarea>
+              <button type="button" class="btn btn-success">Get</button>
+              <button type="button" class="btn btn-outline-primary bi bi-copy"></button>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Viewbox</span>
+              <input type="text" class="form-control">
+              <span class="input-group-text">x</span>
+              <input type="text" class="form-control">
+              <span class="input-group-text">y</span>
+              <input type="text" class="form-control">
+              <span class="input-group-text">w</span>
+              <input type="text" class="form-control">
+              <span class="input-group-text">h</span>
+              <button type="button" class="btn btn-primary">Set</button>
+            </div>
+          </div>
           <div class="dia-shell aside-1">
-            <div id="editor"></div>
             <div id="d1" class="diagram"></div>
             <div class="btn-toolbar" role="toolbar" aria-label="[% PROCESS string s='Diagram toolbar' %]">
               <div class="btn-group me-2" role="group">

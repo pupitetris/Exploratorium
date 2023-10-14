@@ -133,6 +133,16 @@
   cursor: move;
 }
 
+#editor {
+  width: 75%;
+  margin: auto;
+  display: none;
+}
+
+#editor input {
+  text-align: right;
+}
+
 #infobox {
   top: 50%;
   z-index: 1;
