@@ -4,4 +4,4 @@ SRCDIR=$(dirname "$0")
 
 clear
 cd "$SRCDIR"/..
-http-server
+http-server -p 8080
