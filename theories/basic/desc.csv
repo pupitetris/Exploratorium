@@ -1,129 +1,129 @@
-Independent,Explanation,Dependent,Atributo,Class
-PM1.1 Time,"$T$ is an interval of real line. 
-Every $t$ represents an instant of time. 
+Independent,Explanation,Dependent,Attribute,Class
+PM1.1 Time,"$T$ is an interval of real line.
+Every $t$ represents an instant of time.
 the relation $\leq$ that orders $T$ means “earlier than or simultaneous with.”",,T,Chronogeometrical
-PM 1.2 E3: Euclidean 3D-space,"$E^{3}$ is 3-dimensional  Euclidean space. 
+PM 1.2 E3: Euclidean 3D-space,"$E^{3}$ is 3-dimensional  Euclidean space.
 $E^{3}$ represents (maps) ordinary space.",,E3,Chronogeometrical
-SR 4 E3R: A manifold mapping local space,"$E^{3}$ is a tridimensional Euclidean space with inner product. 
+SR 4 E3R: A manifold mapping local space,"$E^{3}$ is a tridimensional Euclidean space with inner product.
 $E^{3}$ represents ordinary space relative to (a”as seen from” any given $i\subset I$).",,E3R,Chronogeometrical
-CEM 1.4 $M^{3}$ ,"$M^{3}$ is a 3-dimensional  differentiable manifold. 
+CEM 1.4 $M^{3}$ ,"$M^{3}$ is a 3-dimensional  differentiable manifold.
 $M^{3}$ represents physical space.",,M3,Chronogeometrical
-GR 2.1 $M^{4}$ ,"$M^{4}$ is 4-dimensional differentiable manifold of class $C^{2}$. 
+GR 2.1 $M^{4}$ ,"$M^{4}$ is 4-dimensional differentiable manifold of class $C^{2}$.
 For every point $x\subset M^{4}$, there exists a neighborhood of $x$ over which a local coordinate system can be given (defined).
-the function s fmu that map neighboring coordinate sets onto one another are continuous and have continuous derivatives up to 2nd order in $M^{4}$. 
+the function s fmu that map neighboring coordinate sets onto one another are continuous and have continuous derivatives up to 2nd order in $M^{4}$.
 $M^{4}$ represents physical space.",,M4,Chronogeometrical
-SR 5 tR:  The range of the local time function,"$T$ is an interval of the real line. 
-$T$ is the range of the time function satisfying the axioms of the local time theory. 
+SR 5 tR:  The range of the local time function,"$T$ is an interval of the real line.
+$T$ is the range of the time function satisfying the axioms of the local time theory.
 Every $t\subset T$ represents an instant of t-time. ",,tR,Chronogeometrical
 SR 8 Cotime,"For every $i$, $i'\in I$, the associated cotimes are such that $\frac{\partial X_{0}}{\partial X'_{0}}$ exists and is positive.",,Cotime,Chronogeometrical
-PM 2.1 Point particles,"$\Sigma$ is a nonempty denumerable set. 
+PM 2.1 Point particles,"$\Sigma$ is a nonempty denumerable set.
 Every $\Sigma$ is a particle.",,Particles,Referents
-CM1.1 Bodies,"$\Sigma$ is a nonempty denumerable set. 
+CM1.1 Bodies,"$\Sigma$ is a nonempty denumerable set.
 Every $\Sigma$ is a body.",,Bodies,Referents
-CEM 1.1 Electromagnetic fields,"$\Phi$ is a nonempty set. 
+CEM 1.1 Electromagnetic fields,"$\Phi$ is a nonempty set.
 Every $\Phi$ is an e.m. field.",,EM Fields,Family
-CEM 1.2 Charged bodies,"$\Sigma$ is a nonempty set. 
+CEM 1.2 Charged bodies,"$\Sigma$ is a nonempty set.
 Every $\Sigma$ is a charged body.",,Charged Bodies,Referents
-GR 1.1 Gravitational fields,"$\Sigma$ is a nonempty set. 
+GR 1.1 Gravitational fields,"$\Sigma$ is a nonempty set.
 Every $\Sigma$ represents a gravitational field.",,Gravitational fields,Referents
-GR 1.2 Physical entities other than gravitational fields,"$\overline{\Sigma}$ is a nonempty set disjoint from sigma. 
+GR 1.2 Physical entities other than gravitational fields,"$\overline{\Sigma}$ is a nonempty set disjoint from sigma.
 Every $\overline{\Sigma}$ represents a physical system other than  a gravitation field.",,Non Gravitational Fields,Referents
-SR 1 Physical system (material or not),"$\Sigma\neq\emptyset$. 
+SR 1 Physical system (material or not),"$\Sigma\neq\emptyset$.
 Every $\sigma\subset\Sigma$ represents a physical system.",,Physical Systems,Referents
-SR 2 Electromagnetic signals,"$S\neq\emptyset$ and $S\subset\Sigma$. 
+SR 2 Electromagnetic signals,"$S\neq\emptyset$ and $S\subset\Sigma$.
 Every $s\in S$ represents an electromagnetic signal.",,EM Signals,Referents
-PM 2.2 Postulate: Once a particle always a particle,"For any two different $t$, $t'\in T$, ir $\sigma\in\Sigma$ at $t$, then $\sigma\subset\Sigma$ at $t’$. 
+PM 2.2 Postulate: Once a particle always a particle,"For any two different $t$, $t'\in T$, ir $\sigma\in\Sigma$ at $t$, then $\sigma\subset\Sigma$ at $t’$.
 This postulate is needed in order to warrant that predictions and retrodictions calculated for a $Sigma$ on laws of motion and initial conditions will still refer to $Sigma$.",,Postulate,Tip
-CM1.3 Position of a particle,"$X$ is continuous and bounded for every $\beta$, $k$, and $t$. 
+CM1.3 Position of a particle,"$X$ is continuous and bounded for every $\beta$, $k$, and $t$.
 $X(\beta,k,t)$ represents the place (location) of the particle $\pi$ of the body $\sigma$, relative to the frame $k$ at the instant $t$.",,{X},Family
-SR 6 Position of a system,"$\left\{ X\right\} $ is a nonempty family of functions. 
-Every $X\in\left\{ X\right\} $ is a function from $\Sigma\times I\times T$ to $R^{3}$. 
-$X\left(\sigma,i,t\right)$ represents the position of a point system $\sigma\subset\Sigma$, referred to the frame $\tau$, at the instant $t$ relative to $\tau$. 
+SR 6 Position of a system,"$\left\{ X\right\} $ is a nonempty family of functions.
+Every $X\in\left\{ X\right\} $ is a function from $\Sigma\times I\times T$ to $R^{3}$.
+$X\left(\sigma,i,t\right)$ represents the position of a point system $\sigma\subset\Sigma$, referred to the frame $\tau$, at the instant $t$ relative to $\tau$.
 For every point event there exists a septuple $\left\langle \sigma,s,\tau,X_{0},X_{1},X_{2},X_{3}\right\rangle \hat{=}$ event.",,{XR},Family
-GR 4.2  {XGR}: Position of a point system,"For every $i=1,2,3$, $\left\{ X_{i}\right\} $ is a nonempty family of functions. 
-Every $X_{i}\in\left\{ X_{i}\right\} $ is a function from $\overline{\Sigma}\times K\times T$ to $\mathbb{R}$, continuous w.r.t. $t$. 
+GR 4.2  {XGR}: Position of a point system,"For every $i=1,2,3$, $\left\{ X_{i}\right\} $ is a nonempty family of functions.
+Every $X_{i}\in\left\{ X_{i}\right\} $ is a function from $\overline{\Sigma}\times K\times T$ to $\mathbb{R}$, continuous w.r.t. $t$.
 $X(\bar{\sigma},k,t)$ represents the position of a point system $\bar{\sigma}\in\bar{\Sigma}$, referred to $k$, at the instant $t$ relative to $k$.",,{XGR},Family
-"PM 2.3, CM 2.1, GR 4.1 Physical reference frames","$K$ is a nonempty denumerable set. 
-Every $k$ is a rigid system of corpuscles at least four of which lie on the vertices of a regular trihedral. 
-For every $k$ there exists a Cartesian system of axes $e=\left\langle e_{1},e_{2}.e_{3}\right\rangle $ such that $e\hat{=}k$. 
-No $k$ interacts with any $\sigma\subset\Sigma$ that is not a part of $k$. 
+"PM 2.3, CM 2.1, GR 4.1 Physical reference frames","$K$ is a nonempty denumerable set.
+Every $k$ is a rigid system of corpuscles at least four of which lie on the vertices of a regular trihedral.
+For every $k$ there exists a Cartesian system of axes $e=\left\langle e_{1},e_{2}.e_{3}\right\rangle $ such that $e\hat{=}k$.
+No $k$ interacts with any $\sigma\subset\Sigma$ that is not a part of $k$.
 The configuration of every $k\in K$ is time-independent.",,K,Frames
-SR 3 Inertial reference frames,"$I\neq\emptyset\land I\subset\Sigma-S$. 
-Every $i\in I$ is an inertial reference frame. 
+SR 3 Inertial reference frames,"$I\neq\emptyset\land I\subset\Sigma-S$.
+Every $i\in I$ is an inertial reference frame.
 For every $i\in I$ there is a basis $e=\left\langle e_{1},e_{2}.e_{3}\right\rangle $ such that $e\hat{=}i$.",,Inertial frame,Frames
 PM 2.5 Postulate: Position and velocity values uniquely identify a particle,"For any two $\sigma,\sigma'\in\Sigma$ and every $k\in K$ and every $t’\in T$, if $X\left(\sigma,t,k\right)=X\left(\sigma',t,k\right)$ and $\dot{X}\left(\sigma,t,k\right)=\dot{X}\left(\sigma',t,k\right)$, then $\sigma=\sigma’$.
 In words: the position and velocity values uniquely identify (characterize) a particle. Coordinates alone are insufficient for this: thus two different particles may be at the same place at the instant of collision but then they will have different (vector) velocities.",,PM 2.5,Tip
-PM 3.1 Mass,"$M$ is a function from $\Sigma$ to the set $\mathbb{R^{+}}$ of nonnegative reals. 
+PM 3.1 Mass,"$M$ is a function from $\Sigma$ to the set $\mathbb{R^{+}}$ of nonnegative reals.
 The value of $M$ at $\sigma,\in\Sigma$ represents the mass (inertia) of $\sigma$. ",,Mass,Family
 PM 3.2 The mass of a system of point particles equals the sum of the partial masses,"If $\sigma_{i}\in\Sigma$ for every finite $i\in N$, then $M\left(\underset{i}{\dot{\sum}}\sigma_{i}\right)=\underset{i}{\sum}M(\sigma_{i})$. ",,PM 3.2,Tip
-PM 3.3  External force,"Every $F^{e}\in\left\{ F^{e}\right\}$ is a real valued vector on $\Sigma\times K\times E^{3}\times T$. 
+PM 3.3  External force,"Every $F^{e}\in\left\{ F^{e}\right\}$ is a real valued vector on $\Sigma\times K\times E^{3}\times T$.
 The value of $F^{e}$ at any given 6-ple $\left\langle \sigma,k,x,t\right\rangle $ represents the external force acting on $\sigma$, relative to the frame $k$, at the place $x$ and the instant $t$.",,External Force,Family
-PM 3.4 Inter-particle force,"Every $F^{i}\in\left\{ F^{i}\right\} $ is a real valued vector on $\Sigma\times\Sigma\times K\times E^{3}\times T$. 
+PM 3.4 Inter-particle force,"Every $F^{i}\in\left\{ F^{i}\right\} $ is a real valued vector on $\Sigma\times\Sigma\times K\times E^{3}\times T$.
 The value of $F^{i}$ at any given 7-ple $\left\langle \sigma,\sigma',k,x,t\right\rangle $ represents the force extended by $\sigma'$ on $sigma$ relative to $k$ at $x$ and $t$.",,Interparticle Force,Family
-PM 3.5 Newton’s laws,"For every $\sigma,\sigma'\in\Sigma$, every $t\in T$, every $F^{e}\in\left\{ F^{e}\right\} and every $F^{i}\in\left\{ F^{i}\right\}, there is at least one $k\in K$ such that 
-$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+\underset{\sigma’\neq\sigma}{\sum}F^{i}(\sigma,\sigma’,t,k)$ 
+PM 3.5 Newton’s laws,"For every $\sigma,\sigma'\in\Sigma$, every $t\in T$, every $F^{e}\in\left\{ F^{e}\right\} and every $F^{i}\in\left\{ F^{i}\right\}, there is at least one $k\in K$ such that
+$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+\underset{\sigma’\neq\sigma}{\sum}F^{i}(\sigma,\sigma’,t,k)$
 and
 $F^{i}(\sigma,\sigma’,t,k)=-F^{i}(\sigma',\sigma,t,k)$.",,F=ma,EqMotion
 CM 1.4 Transformation,"For every $X\in\left\{ X\right\}$, every $b\in\beta$ and every $t\in T$, the map $X:b\rightarrow C$ is 1:1, onto and continuous.
 For every $X\in\left\{ X\right\}$, every $b\in\beta$ and every $t\in T$ the image $C=X(b,t)$ of $b$ under $X$ is a compact set with a piecewise continuous boundary $\partial X(b,t)$.
 For every $\sigma\in\Sigma$ and $t\in T$ there exists an $X\in\left\{ X\right\} $ such that the image $X(b,t)$ of $b$ under $X$ represents the place occupied by the body sigma represented by $b$.",,Map X:b¬C,Transformation
-CM 1.5 Body density,"Every $\varrho\in\left\{ \varrho\right\} $ is a bounded and continuous function from $\beta$ to the set of nonnegative reals. 
+CM 1.5 Body density,"Every $\varrho\in\left\{ \varrho\right\} $ is a bounded and continuous function from $\beta$ to the set of nonnegative reals.
 If $b\hat{=}\sigma$, then $\varrho(b,x,t)$ represents the mass density of $\varrho$ at $x$,$t$.",,Mass density,Family
-CM 1.6 Mass additivity,"For every $\sigma\in\Sigma$, if $b\hat{=}\sigma$ and $C$ is the image of $b$ under $X$, then $M$ is a Continuous function of the volume (Lebesgue measure) $\mu(b,t)$ of $b$ at $t$. 
+CM 1.6 Mass additivity,"For every $\sigma\in\Sigma$, if $b\hat{=}\sigma$ and $C$ is the image of $b$ under $X$, then $M$ is a Continuous function of the volume (Lebesgue measure) $\mu(b,t)$ of $b$ at $t$.
 b) For any two distinct $\sigma,\sigma'\in\Sigma$, if $b\hat{=}\sigma$ and $b’\hat{=}\sigma’$, and $b\cup b'\hat{=}\sigma+\sigma'$, then $M(b\cup b')=M(b)+M(b')$.
 c) If $b\hat{=}c$, then $M(b)$ represents the mass of $\sigma$.",,Mass additivity,Tip
 CM 1.7 Mass conservation,"For every $\sigma\in\Sigma$, if $b\hat{=}\sigma$ and $C=X(b,t)$ and $C’ =X’(b)$ are two different configurations of $\sigma$ at a given time $t$, then the corresponding masses are the same: $M(\sigma)=\underset{X(b)}{\int}d^{3}x\varrho_{X}=\underset{X'(b)}{\int}d^{3}x\varrho_{X'}$",,Mass Conservation,Tip
-CEM 1.5 Charge density,"$\left\{ \rho\right\} $ is a nonempty family of functions. 
-Every $\rho$ is a scalar valued function from $\beta\times M^{3}\times T$ to $\mathbb{R}$. 
+CEM 1.5 Charge density,"$\left\{ \rho\right\} $ is a nonempty family of functions.
+Every $\rho$ is a scalar valued function from $\beta\times M^{3}\times T$ to $\mathbb{R}$.
 If $b\hat{=}\sigma$, then $\rho(b,x,t)$ represents the charge density of $\rho$ at $x$,$t$.",,Charge density,Family
-CM 1.2 Bodies,"$\left\{ \beta\right\} $ is a nonempty family of point sets. 
-Every $b\in B$ is a 3-dimensional differentiable manifold. 
+CM 1.2 Bodies,"$\left\{ \beta\right\} $ is a nonempty family of point sets.
+Every $b\in B$ is a 3-dimensional differentiable manifold.
 For every $\sigma\in\Sigma$ there exists a $b\in\beta$ such that $b\hat{=}\sigma$ pointwise.",,M Bodies,Family
-CEM 1.3 Charged bodies,"$\left\{ \beta\right\} $ is a nonempty family of point sets. 
-Every $b\in\beta$ is a 3-dimensional differentiable manifold. 
+CEM 1.3 Charged bodies,"$\left\{ \beta\right\} $ is a nonempty family of point sets.
+Every $b\in\beta$ is a 3-dimensional differentiable manifold.
 For every $\sigma\in\Sigma$ there exists a $b\in\beta$ such that $b\hat{=}\sigma$ pointwise.",,{Beta*},Family
-CEM 1.6 Electric field intensity,"$\left\{ E\right\} $ is a nonempty family of fields. 
-Every $E\in\left\{ E\right\} $ is a real and vector valued function of $\Phi\times M^{3}\times T$. 
+CEM 1.6 Electric field intensity,"$\left\{ E\right\} $ is a nonempty family of fields.
+Every $E\in\left\{ E\right\} $ is a real and vector valued function of $\Phi\times M^{3}\times T$.
 $E(\phi,x,t)$ represents the intensity of the electric component of $\phi$ at $x$,$t$.",,Electric fields,Family
-CEM 1.7 Magnetic field intensity,"Every $\left\{ B\right\} $ is a non empty family of fields. Every $B\in\left\{ B\right\} $ real pseudovector valued function on  $\Phi\times M^{3}\times T$. 
+CEM 1.7 Magnetic field intensity,"Every $\left\{ B\right\} $ is a non empty family of fields. Every $B\in\left\{ B\right\} $ real pseudovector valued function on  $\Phi\times M^{3}\times T$.
 $B(\phi,x,t)$ represents the intensity of the magnetic component of $\phi$ at $x$,$t$.",,Magnetic Fields,Family
 CEM 1.8 Postulate from empirical observation,$E$ and $B$ drop off with distance at least as fast as $\frac{1}{r}$. ,,1/r,Tip
-CEM 1.9 Magnitude of the speed of e.m. signals in vacuum,"$c$ is a positive real number such that $\left[d\right]=LT^{-1}$. 
+CEM 1.9 Magnitude of the speed of e.m. signals in vacuum,"$c$ is a positive real number such that $\left[d\right]=LT^{-1}$.
 SR 7
 Every $s\in S$ propagates in vacuum, relative to any $i\in I$, with uniform rectilinear motion at the speed $c$.",,c,DE
-CM 2.2 Equivalence class of representations,"Let $X'=a+QX$, with $a$ and $Q$ functions of time, represent a change of frame. Then 
-If $V$ is a vector referring to $\pi\dot{\in}\sigma\in\Sigma$, which upon a change of frame becomes $V’=QV$, then $V’$ and $V$ refer to the same physical situation. 
+CM 2.2 Equivalence class of representations,"Let $X'=a+QX$, with $a$ and $Q$ functions of time, represent a change of frame. Then
+If $V$ is a vector referring to $\pi\dot{\in}\sigma\in\Sigma$, which upon a change of frame becomes $V’=QV$, then $V’$ and $V$ refer to the same physical situation.
 If $S$ is a 2nd rank tensor referring to $\pi\dot{\in}\sigma\in\Sigma$, which upon a change of frame becomes $S'=QS\tilde{Q}$, where $\tilde{Q}$ is the transposed of $Q$, then $S’$ and $S$ refer to the same physical situation.",,CM 2.2,Tip
-PM 2.4 Events and trayectory of motion,"For every $\sigma\in\Sigma$, and every $k\in K$, every $X\in\left\{ X\right\} $ is a continuous and real valued function from $T$ to $E^{3}$. 
-For every $\sigma\in\Sigma$ and every  $k\in K$, $\dot{X}$ is a piece-wise continuous and real valued function from $T$ to $E^{3}$. 
-$X(\sigma,k,t)$ represents the position of $\sigma$, relative to the frame $k$ at the instant $t$. 
-Every quintuple $\left\langle \sigma,X_{1},X_{2},X_{3},t\right\rangle $ represents an event. 
+PM 2.4 Events and trayectory of motion,"For every $\sigma\in\Sigma$, and every $k\in K$, every $X\in\left\{ X\right\} $ is a continuous and real valued function from $T$ to $E^{3}$.
+For every $\sigma\in\Sigma$ and every  $k\in K$, $\dot{X}$ is a piece-wise continuous and real valued function from $T$ to $E^{3}$.
+$X(\sigma,k,t)$ represents the position of $\sigma$, relative to the frame $k$ at the instant $t$.
+Every quintuple $\left\langle \sigma,X_{1},X_{2},X_{3},t\right\rangle $ represents an event.
 For any given $\sigma\in\Sigma $ and any given $k\in K$, the set $\left\{ X(\sigma,k,t)\mid t\in T\right\} $represents a trajectory (motion) of $\sigma$. ",,PM 2.4,Family
-CM 2.3 Velocity and acceleration,"The derivatives $\dot{X}$ and $\ddot{X}$ exist and are bounded for every $X\in\left\{ X\right\} $, every $\beta\in b$, every $k\in K$ and every $t\in T$. 
+CM 2.3 Velocity and acceleration,"The derivatives $\dot{X}$ and $\ddot{X}$ exist and are bounded for every $X\in\left\{ X\right\} $, every $\beta\in b$, every $k\in K$ and every $t\in T$.
 If $\beta\hat{=}\pi$ and $\pi\dot{\in}\sigma$, then $\dot{X}(\beta,k,t)$ and $\ddot{X}(\beta,k,t)$ represent the velocity and the acceleration respectively of the particle $\pi$ in the body $\sigma$ relative to the frame at time $t$.",,Velocity and acceleration,Family
-CM 3.1 Body force density,"Every $f_{b}\in\left\{ f_{b}\right\} $ is a real and bounded vector field over $\beta\times K\times E^{3}\times T$. 
+CM 3.1 Body force density,"Every $f_{b}\in\left\{ f_{b}\right\} $ is a real and bounded vector field over $\beta\times K\times E^{3}\times T$.
 If $b\hat{=}\sigma$, then $f_{b}(b,k,x,t)$ represents the force per unit volume on the body $\sigma$. ",,Body force density,Family
-CM 3.2 Body stress,"Every $\mathrm{T\in\left\{ \mathrm{T}\right\} }$ is a real and bounded tensor field of valence (2,0) over $\beta\times K\times E^{3}\times T$. 
+CM 3.2 Body stress,"Every $\mathrm{T\in\left\{ \mathrm{T}\right\} }$ is a real and bounded tensor field of valence (2,0) over $\beta\times K\times E^{3}\times T$.
 If $b\hat{=}\sigma$, and $beta\hat{=}\pi$, then $\mathrm{T(\beta,K,x,t)}$ represents the body stress at the particle $\pi\dot{\in}\sigma$. ",,Body Stress,Family
 CM 3.3 Law of balance of momentum,"For every $\sigma\in\Sigma$, $t\in T$, every $\varrho\in\left\{ \varrho\right\} $, every $f_{b}\in\left\{ f_{b}\right\} $ and every $\mathrm{T\in\left\{ \mathrm{T}\right\} }$, there exists a $k\in K$ such that $\dot{p}=F$, ",,Balance of momentum,EqMotion
 CM 3.4 Law of moment of momentum,"For every $\sigma\in\Sigma$, every $t\in T$,every $\varrho\in\left\{ \varrho\right\} $, every $f_{b}\in\left\{ f_{b}\right\} $, and every $\mathrm{T\in\left\{ \mathrm{T}\right\} }$, there exists a $k\in K$ such that $\dot{L}=N$.",,Moment of momentum,EqMotion
-CEM 2 Maxwell’s equations,"At any point $x\in M^{3}$ and any instant $t\in T$ for every field 
-$varphi\in \Phi$ and every charged body 
-$\sigma\in \Sigma$, there exists a 
-$k\in K$ such that 
+CEM 2 Maxwell’s equations,"At any point $x\in M^{3}$ and any instant $t\in T$ for every field
+$varphi\in \Phi$ and every charged body
+$\sigma\in \Sigma$, there exists a
+$k\in K$ such that
 $\nabla\times E=-\frac{1}{c}\frac{\partial B}{\partial t}$,     $\nabla\cdot B=0$
 $\nabla\times B=-\frac{1}{c}\frac{\partial E}{\partial t}+\frac{4\pi}{c}j$,   $\nabla\cdot E=4\pi\varrho$.",,Maxwell’s Equations,FieldEq
-CEM 3 Force density,"The force density exerted by an external field $\left\langle E,B\right\rangle \hat{=}\varphi\in\Phi$ on $\sigma\in \Sigma$ is 
+CEM 3 Force density,"The force density exerted by an external field $\left\langle E,B\right\rangle \hat{=}\varphi\in\Phi$ on $\sigma\in \Sigma$ is
 $f=\rho\left(E+\frac{v}{c}\times B\right)$",,"CEM 3, 4.3",FieldEq
 Tensor degeneration,"When the constitutive tensor degenerates into $(\epsilon,\mu^{-1})$, the field equations become $\nabla\times E=-\frac{1}{c}\frac{\partial B}{\partial t}$, $\nabla\cdot B=0$,
 $\nabla\times H=-\frac{1}{c}\frac{\partial D}{\partial t}+\frac{4\pi}{c}j$,   $\nabla\cdot D=4\pi\rho$",,Tensor degeneration,Tip
-GR 2.2 Coordinate transformations,"All coordinate transformations in $M^{4}$ are bijective maps. 
-The Jacobian of every coordinate transformation vanishes nowhere. 
+GR 2.2 Coordinate transformations,"All coordinate transformations in $M^{4}$ are bijective maps.
+The Jacobian of every coordinate transformation vanishes nowhere.
 Areas and volumes should not vanish upon coordinate transformations, for otherwise things themselves would appear to vanish by sheer paper and pencil operations.",,Coordinate transformations,Transformation
-GR 2.3 Locality,"For any point $x\in M^{4}$ there exists a neighborhood of $x$ over which a local coordinate system can be given such that $x^{0}$ is a (local) time coordinate and $x^{1}$, $x^{2}$ and $x^{3}$ are (local) spatial coordinates. 
+GR 2.3 Locality,"For any point $x\in M^{4}$ there exists a neighborhood of $x$ over which a local coordinate system can be given such that $x^{0}$ is a (local) time coordinate and $x^{1}$, $x^{2}$ and $x^{3}$ are (local) spatial coordinates.
 [Roughly: the tangent space of $M^{4}$ at any $x\in M^{4}$ is spacetime.].",,Locality,Chronogeometrical
 GR 3.1 Metric tensor,"$\left\{ g\right\} $ is a nonempty family of symmetric tensor fields, of valence (0,2), on $M^{4}$.
-The components of $g$ and their first and second derivatives w.r.t. the $x^{\mu}$ are real valued and bounded in every $V\subset M^{4}$ with the possible exception of a proper subset of $V$. 
+The components of $g$ and their first and second derivatives w.r.t. the $x^{\mu}$ are real valued and bounded in every $V\subset M^{4}$ with the possible exception of a proper subset of $V$.
  $M^{4}$ is endowed with a metric $ds^{2}=g_{\mu\nu}dx^{\mu}dx^{\nu}$ with $\mu,\nu=0,1,2,3$.",,Metric tensor,Family
 GR 3.2 Signature,"$g_{00}>0$ and $g_{ij}<0$ $(i,j, =1,2,3)$ everywhere.
 $g_{ij}-(g_{0i}g_{0j}/g_{00})<0$ everywhere.
@@ -138,7 +138,7 @@ The components of $\mathrm{T}$ vanish outside $V$.",,GR 5.2,Tip
 GR 6.1 $\kappa$ Einstein’s constant,"$\kappa$ is a positive real number with dimension $L^{-1}M^{-1}T^{2}$.
 $\kappa$ represents the coupling of $\sigma$ with $\bar{\sigma}$.",,kappa,"DE
 "
-GR 6.2 Einstein’s equation,"For every $x\in V$, every $\sigma\in\Sigma$, every $\bar{\sigma}\in\bar{\Sigma}$ and every $\mathrm{T\in\left\{ \mathrm{T}\right\} }$, there is a $g\in\{g\}$ such that 
+GR 6.2 Einstein’s equation,"For every $x\in V$, every $\sigma\in\Sigma$, every $\bar{\sigma}\in\bar{\Sigma}$ and every $\mathrm{T\in\left\{ \mathrm{T}\right\} }$, there is a $g\in\{g\}$ such that
 $G=\kappa\mathrm{T}$.",,Einstein’s equiation,FieldEq
 GR 6.3  Postulate,"
 Two solutions of Einsteins’s equation which can be transformed into one another by an admissible coordinate transformation refer to the same field.",,GR 6.3,Tipification

@@ -1,49 +1,49 @@
-Independent,Explanation,Dependent,Atributo,Clase,,
-Dimension: $N=4$,The dimension of a vector space is the cardinality of a base of M,Dimension = 4,N,Tip,,
-$M$: Differentiable manifold,A topological space that resembles euclidean space near each point. It can be coordinatized by Rn trough a family of homeomorphisms,Differentiable manifold,M,M,,
-$\Gamma$: Affine connection,A generalised derivative for vector fields tells us about straitest curve,Affine connection,Gamma,GO,,
-$\Gamma*$: Independent Affine connection,A generalised derivative for vector fields, independent of the metric tensor that tells us about straitest curve,Independent Affine connection,$\Gamma*$,GO,
-Semi-Riemannian metric tensor:$g_{\mu\nu}$,tells us about shortest curve.,semi-Riemannian metric tensor,g,GO,,
-$\psi$: Matter fields,,Matter fields,Phi,GO,,
-$T_{\mu\nu}$: Stress-energy-momentum tensor,A symmetric tensor field,$T_{\mu\eta}=\frac{-2}{\sqrt{-g}}\frac{\delta S_{M}}{\delta g^{\mu\eta}}$,T,GO,,
-$R$: Ricci Scalar,,Ricci Scalar,R,GO,,
-$\Re$:Affine Ricci Scalar,,,R*,GO,,
-$\Gamma_{\mu\nu}^{\lambda}$  and $g_{\mu\nu}$ are dependent,,$\Gamma_{\mu\nu}^{\lambda}$  and $g_{\mu\nu}$ are dependent,Dependent,Cond,,
-$\Gamma_{\mu\nu}^{\lambda}$  and $g_{\mu\nu}$ are independent,,,Independent,Cond,,
-$f(R)=R$,, f(R) = R, f(R) = R,Cond,,
-$f(R)\neqR$,, $f(R)\neqR$, f(R) ≠ R,Cond,,
-$f’(R)=1$,,f’(R) = 1,f’(R) =1,Cond,,
-$f''(R)=0$,,f’’(R) = 0,f’’(R) = 0,Cond,,
-$f''(R)\neq0$,,f’’(R) not 0,f’’(R) =0,Cond,,
-$f(\Re)=\Re$,,,f(R*) = R*,Cond,,
-$f(\Re)\neq\Re$,,$f(\Re))\neq\Re$,f(R*) ≠ R*,Cond,,
-$f’(\Re)=1$,,,f’(R*) =1,Cond,,
-$f’’(\Re)=0$,,,f’’(R*) = 0,Cond,,
-$f’’(\Re)\neq0$,,,f’’(R*) ≠ 0,Cond,,
-$T_{\mu\nu}=0$,The Stress-energy-momentum tensor is zero,T=0,T = 0,Cond,,
-$R=0$,The Ricci scalar is zero,R=0,R = 0,Cond,,
-$R=C$,The Ricci scalar is constant,R=Cte,R= C,Cond,,
-C < 0,,,C < 0,Cond,,
-C > 0,,,C > 0,Cond,,
-$S_{M}=S_{M}(g_{\mu\nu},\psi)$,Matter term,SM1,Action,,
-Affine matter term: $S_{M}=S_{M}(g_{\mu\nu},\Gamma_{\mu\nu}^{\lambda},\psi)$,SM2,Action,,
-$S_{met}=\frac{1}{2\kappa}\intop d^{4}x\sqrt{-g}f(R)+S_{M}(g_{\mu\nu},\psi)$,Total action for metric $f(R)$,Eq 5,Action,,
-Palatini action: $S_{pal}=\frac{1}{2\kappa}\intop d^{4}x\sqrt{-g}f(\Re)+S_{M}(g_{\mu\nu},\psi)$,The metric and connection are independent. Variation not on the connection. Note the new Ricci tensor is constructed with an independent connection:  $\Re=g_{\mu\nu}R_{\mu\nu}$,Eq 13,Action,,
-$f'(R)R_{\mu\nu}-\frac{1}{2}f(R)g_{\mu\nu}-\left[\nabla_{\mu}\nabla_{\nu}-g_{\mu\nu}\nabla^{\mu}\nabla_{\mu}\right]f'(R)=\kappa T_{\mu\nu}$,field equation of metric $f(R)$,,Eq 6,FieldEq,,
-$R_{\mu\nu}=0$,If the Ricci scalar $R=0$,then the Field Ec. reduces to $R_{\mu\eta}=0$ R𝞵𝞶 = 0,Eq 9a,FieldEq,,
-$R_{\mu\nu}=g_{\mu\nu}\nicefrac{C}{4}$,If the Ricci scalar $R=cte$,then the Field Ec. reduces to $R_{\mu\nu}=g_{\mu\nu}\nicefrac{C}{4}$ and the maximally symmetric solution is de Sitter on anti-de Sitter space depending on the sign of C.,Eq 9b,FieldEq,,
-$R_{\mu\nu}=-g_{\mu\nu}\nicefrac{C}{4}$,If the Ricci scalar $R=cte$,then the Field Ec. reduces to $R_{\mu\nu}=g_{\mu\nu}\nicefrac{C}{4}$ and the maximally symmetric solution is de Sitter on anti-de Sitter space depending on the sign of C.,Eq 9c,FieldEq,,
-$f'(\Re)\Re_{\mu\nu}-\frac{1}{2}f(\Re)g_{\mu\nu}=\kappa T_{\mu\nu}$,Palatini field equation 1,f’(R)R𝞵𝞶-1/2f(R)g𝞵𝞶 = 𝞳GT𝞵𝞶,Eq 18,FieldEq,,
-$\bar{\nabla}_{\lambda}(\sqrt{-g}f'(\Re)g^{\mu\nu})=0$,Palatini field equation 2 ($\bar{\nabla}_{\lambda}$) is the covariant derivative defined with the independent connection,,Eq 19,FieldEq,,
-$G_{\mu\nu}=\frac{\kappa}{f'(R)}\left(T_{\mu\nu}+T_{\mu\nu}^{(eff)}\right)$,Einsteins field equation,,Einstein’s Eq,FieldEq,,
-Hypermomentum: $\Delta_{\lambda}^{\mu\nu}\equiv-\frac{2}{\sqrt{-g}}\frac{\delta S_{M}}{\delta\Gamma_{\mu\nu}^{\lambda}}$, quantity representing the variation of the matter action with respect to the connection which mimics the definition of the stress-energy tensor,,Hyp,GO,,
-Non metricity tensor:$Q_{\mu\nu\lambda}\equiv-\bar{\nabla}_{\mu}g_{\nu\lambda}$,It measures the failure or the connection to covariantly conserve the metric.,,Non metricity,GO,,
-$Q_{\mu\nu\lambda}=0$,Non metricity tensor vanishes,$Q_{\mu\nu\lambda}=0$,Non metricity=0,Cons,,
-Weyl vector:$Q_{\mu}\equiv\frac{1}{4}Q_{\mu\nu}^{\nu}$, Trace of the non-metricity tensor with respecto to its last two symmetric indices.,,Weyl vector,GO,,
-$Q_{\mu}=0$,Weyl vector vanishes,,Weyl vector=0,Cons,,
-Cartan torsion tensor: $S_{\mu\nu}^{\lambda}\equiv\Gamma_{\left[\mu\nu\right]}^{\lambda}$, the antisymmetric part of the connection.,,Cartan torsion,GO,,
-$S_{\mu\nu}^{\lambda}=0$,Cartan torsion tensor vanishes,,Cartan torsion=0,Cons,,
-$f'(\Re)\Re_{(\mu\nu)}-\frac{1}{2}f(\Re)g_{\mu\nu}=\kappa T_{\mu\nu}$,Field equation after varying independently with respect to the metric,,Eq 46,FieldEq,,
-$\frac{1}{\sqrt{-g}}\left[-\bar{\nabla}_{\lambda}\left(\sqrt{-g}f'(\Re)g^{\mu\nu}\right)+\bar{\nabla}_{\sigma}\left(\sqrt{-g}f'(\Re)g^{\mu\sigma}\right)\delta_{\lambda}^{\nu}\right]+2f'(\Re)(g^{\mu\nu}S_{\lambda\sigma}^{\sigma}-g^{\mu\rho}S_{\rho\sigma}^{\sigma}\delta_{\lambda}^{\nu}+g^{\mu\sigma}S_{\sigma\lambda}^{\nu})=\kappa(\Delta_{\lambda}^{\mu\nu}-B_{\lambda}^{[\mu}\delta^{\nu]})$,Field equation after varying independently with respect to the connection,Chorizo espantoso!,Eq 47,FieldEq,,
-$S_{\mu\nu}^{\sigma}=0$,Field equation after varying independently with respect to the Lagrange multiplier,,Eq 48,FieldEq,,
-$D_{T_{σ}}T_{σ}=0$,Follows a Geodesic law ,DTσTσ=0,Geodesic law,MovEq,,
+Independent,Explanation,Dependent,Attribute,Class
+Dimension: $N=4$,The dimension of a vector space is the cardinality of a base of M,Dimension = 4,N,Tip
+$M$: Differentiable manifold,A topological space that resembles euclidean space near each point. It can be coordinatized by Rn trough a family of homeomorphisms,Differentiable manifold,M,M
+$\Gamma$: Affine connection,A generalised derivative for vector fields tells us about straitest curve,Affine connection,Gamma,GO
+$\Gamma*$: Independent Affine connection,"A generalised derivative for vector fields, independent of the metric tensor that tells us about straitest curve",Independent Affine connection,$\Gamma*$,GO
+Semi-Riemannian metric tensor:$g_{\mu\nu}$,tells us about shortest curve.,semi-Riemannian metric tensor,g,GO
+$\psi$: Matter fields,,Matter fields,Phi,GO
+$T_{\mu\nu}$: Stress-energy-momentum tensor,A symmetric tensor field,$T_{\mu\eta}=\frac{-2}{\sqrt{-g}}\frac{\delta S_{M}}{\delta g^{\mu\eta}}$,T,GO
+$R$: Ricci Scalar,,Ricci Scalar,R,GO
+$\Re$:Affine Ricci Scalar,,,R*,GO
+$\Gamma_{\mu\nu}^{\lambda}$  and $g_{\mu\nu}$ are dependent,,$\Gamma_{\mu\nu}^{\lambda}$  and $g_{\mu\nu}$ are dependent,Dependent,Cond
+$\Gamma_{\mu\nu}^{\lambda}$  and $g_{\mu\nu}$ are independent,,,Independent,Cond
+$f(R)=R$,, f(R) = R, f(R) = R,Cond
+$f(R)\neqR$,, $f(R)\neqR$, f(R) ≠ R,Cond
+$f’(R)=1$,,f’(R) = 1,f’(R) =1,Cond
+$f''(R)=0$,,f’’(R) = 0,f’’(R) = 0,Cond
+$f''(R)\neq0$,,f’’(R) not 0,f’’(R) =0,Cond
+$f(\Re)=\Re$,,,f(R*) = R*,Cond
+$f(\Re)\neq\Re$,,$f(\Re))\neq\Re$,f(R*) ≠ R*,Cond
+$f’(\Re)=1$,,,f’(R*) =1,Cond
+$f’’(\Re)=0$,,,f’’(R*) = 0,Cond
+$f’’(\Re)\neq0$,,,f’’(R*) ≠ 0,Cond
+$T_{\mu\nu}=0$,The Stress-energy-momentum tensor is zero,T=0,T = 0,Cond
+$R=0$,The Ricci scalar is zero,R=0,R = 0,Cond
+$R=C$,The Ricci scalar is constant,R=Cte,R= C,Cond
+C < 0,,,C < 0,Cond
+C > 0,,,C > 0,Cond
+$S_{M}=S_{M}(g_{\mu\nu},\psi)$,Matter term,SM1,Action
+Affine matter term: $S_{M}=S_{M}(g_{\mu\nu},\Gamma_{\mu\nu}^{\lambda},\psi)$,SM2,Action
+$S_{met}=\frac{1}{2\kappa}\intop d^{4}x\sqrt{-g}f(R)+S_{M}(g_{\mu\nu},\psi)$,Total action for metric $f(R)$,Eq 5,Action
+Palatini action: $S_{pal}=\frac{1}{2\kappa}\intop d^{4}x\sqrt{-g}f(\Re)+S_{M}(g_{\mu\nu},\psi)$,The metric and connection are independent. Variation not on the connection. Note the new Ricci tensor is constructed with an independent connection:  $\Re=g_{\mu\nu}R_{\mu\nu}$,Eq 13,Action
+$f'(R)R_{\mu\nu}-\frac{1}{2}f(R)g_{\mu\nu}-\left[\nabla_{\mu}\nabla_{\nu}-g_{\mu\nu}\nabla^{\mu}\nabla_{\mu}\right]f'(R)=\kappa T_{\mu\nu}$,field equation of metric $f(R)$,,Eq 6,FieldEq
+$R_{\mu\nu}=0$,If the Ricci scalar $R=0$,then the Field Ec. reduces to $R_{\mu\eta}=0$ R𝞵𝞶 = 0,Eq 9a,FieldEq
+$R_{\mu\nu}=g_{\mu\nu}\nicefrac{C}{4}$,If the Ricci scalar $R=cte$,then the Field Ec. reduces to $R_{\mu\nu}=g_{\mu\nu}\nicefrac{C}{4}$ and the maximally symmetric solution is de Sitter on anti-de Sitter space depending on the sign of C.,Eq 9b,FieldEq
+$R_{\mu\nu}=-g_{\mu\nu}\nicefrac{C}{4}$,If the Ricci scalar $R=cte$,then the Field Ec. reduces to $R_{\mu\nu}=g_{\mu\nu}\nicefrac{C}{4}$ and the maximally symmetric solution is de Sitter on anti-de Sitter space depending on the sign of C.,Eq 9c,FieldEq
+$f'(\Re)\Re_{\mu\nu}-\frac{1}{2}f(\Re)g_{\mu\nu}=\kappa T_{\mu\nu}$,Palatini field equation 1,f’(R)R𝞵𝞶-1/2f(R)g𝞵𝞶 = 𝞳GT𝞵𝞶,Eq 18,FieldEq
+$\bar{\nabla}_{\lambda}(\sqrt{-g}f'(\Re)g^{\mu\nu})=0$,Palatini field equation 2 ($\bar{\nabla}_{\lambda}$) is the covariant derivative defined with the independent connection,,Eq 19,FieldEq
+$G_{\mu\nu}=\frac{\kappa}{f'(R)}\left(T_{\mu\nu}+T_{\mu\nu}^{(eff)}\right)$,Einsteins field equation,,Einstein’s Eq,FieldEq
+Hypermomentum: $\Delta_{\lambda}^{\mu\nu}\equiv-\frac{2}{\sqrt{-g}}\frac{\delta S_{M}}{\delta\Gamma_{\mu\nu}^{\lambda}}$, quantity representing the variation of the matter action with respect to the connection which mimics the definition of the stress-energy tensor,,Hyp,GO
+Non metricity tensor:$Q_{\mu\nu\lambda}\equiv-\bar{\nabla}_{\mu}g_{\nu\lambda}$,It measures the failure or the connection to covariantly conserve the metric.,,Non metricity,GO
+$Q_{\mu\nu\lambda}=0$,Non metricity tensor vanishes,$Q_{\mu\nu\lambda}=0$,Non metricity=0,Cons
+Weyl vector:$Q_{\mu}\equiv\frac{1}{4}Q_{\mu\nu}^{\nu}$, Trace of the non-metricity tensor with respecto to its last two symmetric indices.,,Weyl vector,GO
+$Q_{\mu}=0$,Weyl vector vanishes,,Weyl vector=0,Cons
+Cartan torsion tensor: $S_{\mu\nu}^{\lambda}\equiv\Gamma_{\left[\mu\nu\right]}^{\lambda}$, the antisymmetric part of the connection.,,Cartan torsion,GO
+$S_{\mu\nu}^{\lambda}=0$,Cartan torsion tensor vanishes,,Cartan torsion=0,Cons
+$f'(\Re)\Re_{(\mu\nu)}-\frac{1}{2}f(\Re)g_{\mu\nu}=\kappa T_{\mu\nu}$,Field equation after varying independently with respect to the metric,,Eq 46,FieldEq
+$\frac{1}{\sqrt{-g}}\left[-\bar{\nabla}_{\lambda}\left(\sqrt{-g}f'(\Re)g^{\mu\nu}\right)+\bar{\nabla}_{\sigma}\left(\sqrt{-g}f'(\Re)g^{\mu\sigma}\right)\delta_{\lambda}^{\nu}\right]+2f'(\Re)(g^{\mu\nu}S_{\lambda\sigma}^{\sigma}-g^{\mu\rho}S_{\rho\sigma}^{\sigma}\delta_{\lambda}^{\nu}+g^{\mu\sigma}S_{\sigma\lambda}^{\nu})=\kappa(\Delta_{\lambda}^{\mu\nu}-B_{\lambda}^{[\mu}\delta^{\nu]})$,Field equation after varying independently with respect to the connection,Chorizo espantoso!,Eq 47,FieldEq
+$S_{\mu\nu}^{\sigma}=0$,Field equation after varying independently with respect to the Lagrange multiplier,,Eq 48,FieldEq
+$D_{T_{σ}}T_{σ}=0$,Follows a Geodesic law ,DTσTσ=0,Geodesic law,MovEq

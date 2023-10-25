@@ -1,23 +1,23 @@
-Independent,Explanation,Dependent,Atributo,Class
+Independent,Explanation,Dependent,Attribute,Class
 Time,"T is an interval of real line.
 Every t represents an instant of time
 the relation ≤ that orders T means “earlier than or simultaneous with”",,Time,Chronogeometrical
 System of particles,,,System of particles,Referents
-Euclidean space,"$E^{3}$ is 3-dimensional  Euclidean space. 
+Euclidean space,"$E^{3}$ is 3-dimensional  Euclidean space.
 $E^{3}$ represents (maps) ordinary space.",,Euclidean space,Chronogeometrical
-Reference frame,"$K$ is a nonempty denumerable set. 
-Every $k$ is a rigid system of corpuscles at least four of which lie on the vertices of a regular trihedral. 
-For every $k$ there exists a Cartesian system of axes $e=\left\langle e_{1},e_{2}.e_{3}\right\rangle $ such that $e\hat{=}k$. 
-No $k$ interacts with any $\sigma\subset\Sigma$ that is not a part of $k$. 
+Reference frame,"$K$ is a nonempty denumerable set.
+Every $k$ is a rigid system of corpuscles at least four of which lie on the vertices of a regular trihedral.
+For every $k$ there exists a Cartesian system of axes $e=\left\langle e_{1},e_{2}.e_{3}\right\rangle $ such that $e\hat{=}k$.
+No $k$ interacts with any $\sigma\subset\Sigma$ that is not a part of $k$.
 The configuration of every $k\in K$ is time-independent.",,Reference frame,Frames
 Physical coordinates,,,Physical coordinates,Frames
-Mass,"$M$ is a function from $\Sigma$ to the set $\mathbb{R^{+}}$ of nonnegative reals. 
+Mass,"$M$ is a function from $\Sigma$ to the set $\mathbb{R^{+}}$ of nonnegative reals.
 The value of $M$ at $\sigma,\in\Sigma$ represents the mass (inertia) of $\sigma$. ",,Mass,Family
-Applied force,"Every $F^{e}\in\left\{ F^{e}\right\}$ is a real valued vector on $\Sigma\times K\times E^{3}\times T$. 
+Applied force,"Every $F^{e}\in\left\{ F^{e}\right\}$ is a real valued vector on $\Sigma\times K\times E^{3}\times T$.
 The value of $F^{e}$ at any given 6-ple $\left\langle \sigma,k,x,t\right\rangle $ represents the external force acting on $\sigma$, relative to the frame $k$, at the place $x$ and the instant $t$.",,Applied force,Family
-Force between particles,"Every $F^{i}\in\left\{ F^{i}\right\} $ is a real valued vector on $\Sigma\times\Sigma\times K\times E^{3}\times T$. 
+Force between particles,"Every $F^{i}\in\left\{ F^{i}\right\} $ is a real valued vector on $\Sigma\times\Sigma\times K\times E^{3}\times T$.
 The value of $F^{i}$ at any given 7-ple $\left\langle \sigma,\sigma',k,x,t\right\rangle $ represents the force extended by $\sigma'$ on $sigma$ relative to $k$ at $x$ and $t$.",,Force between particles,Family
-Physical system,"$\Sigma\neq\emptyset$. 
+Physical system,"$\Sigma\neq\emptyset$.
 Every $\sigma\subset\Sigma$ represents a physical system.",,Physical system,Referents
 Hamiltonian,A general framework for describing the evolution of physical systems. A scalar function on a manifold interpretable as the energy of the system,,Hamiltonian,Family
 Phase space,,,Phase space,Chronogeometrical

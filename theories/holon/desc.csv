@@ -1,6 +1,6 @@
-Independent,Explanation,Dependent,Atributo,Clase
+Independent,Explanation,Dependent,Attribute,Class
 Dimension: N=4,A typification for M.,Dimension: N=4,N,Tip
-M: Differentiable manifold,"A topological space that resembles euclidean space near each point. It can be coordinatized by Rn through a family of homeomorphisms.",M: Differentiable manifold,M,M
+M: Differentiable manifold,"A topological space that resembles euclidean space near each point. It can be coordinatized by Rn through a family of homeomorphisms.",M: Differentiable manifold,M,M
 $\gamma$: Affine connection,A generalised connection for vector fields in curved spaces where torsion and non-metricity are not necessarily zero.,$\gamma$: Affine connection,Affine Connection,GO
 $\left[D\right]$:Class of connection,A standard of rotation: an equivalence class of rotationally equivalent flat affine connections.,$\left[\nabla\right]$:Class of connection,Class of Connections,GO
 $\overline{\nabla}$: Flat connection,A derivative for flat spaces.,$\overline{\nabla}$: Flat connection,Flat Connection,GO
