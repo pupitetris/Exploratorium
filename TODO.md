@@ -33,6 +33,7 @@ TODO
         corta que la ventana.
   - [x] Diagrama y título e intro no están centrados.
   - [ ] En zoom negativo, no jala el pan.
+  - [ ] El tool de infobox se encima sobre el infobox (z-index)
 
 - Mejoras:
   - [x] Menú de teorías en el navbar
@@ -47,6 +48,9 @@ TODO
   - [x] Remover el texto del autor en la páginas de los diagramas.
   - [ ] Todos los svgs se van a 16:9
   - [ ] Repasar el feature de subrayado (double click en nodos).
+  - [ ] Infobox: poner attribute class dentro del texto.
+  - [ ] Resaltar nodo seleccionado.
+  - [ ] Que el nav flote arriba al scrollear hacia abajo la página.
 
 - Indiana:
   - [ ] 4k touchscreen
@@ -61,3 +65,4 @@ TODO
 - Nice to have
   - [ ] Acceso a los datos tabulares de los contextos.
   - [ ] Nodos "interesantes" con highlight, y hint explicativo.
+  - [ ] Infobox: ligar gráficamente al elemento clickeado.
