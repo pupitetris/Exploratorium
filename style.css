@@ -97,6 +97,7 @@
 
 .btn-toolbar .btn[aria-label] {
   position: relative;
+  z-index: 0;
 }
 
 .btn-toolbar .btn[aria-label]::after {
