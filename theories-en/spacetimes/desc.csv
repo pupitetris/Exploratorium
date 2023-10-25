@@ -1,35 +1,143 @@
-Independent,Explanation,Dependent,Attribute,Class
-Dimension: N=4,A typification for M.,Dimension: N=4,N,Tip
-M: Differentiable manifold,"A topological space that resembles euclidean space near each point. It can be coordinatized by Rn through a family of homeomorphisms.",M: Differentiable manifold,M,M
-$\gamma$: Affine connection,A generalised connection for vector fields in curved spaces where torsion and non-metricity are not necessarily cero.,$\gamma$: Affine connection,Affine Connection,GO
-$\overline{\nabla}$: Flat connection,A derivative for flat spaces.,$\overline{\nabla}$: Flat connection,Flat Connection,GO
-$\nabla$: Newton-Cartan Connection,Flat covariant connection.,"$\widetilde{\nabla}=(\nabla,G^{a}t_{b}t_{c})$: Covariant connection",Newton-Cartan Connection,GO
-$\left\{ _{\mu\nu}^{\lambda}\right\} $: Metric connection,"Also called Levi-Civita connection, it is dependent on the metric $g$. It gives us information about how to transport vectors along a curve, while conserving the metric.",$\left\{ _{\mu\nu}^{\lambda}\right\} $: Metric connection,Metric Connection,GO
-Metric-Affine connection,A connection for Metric-Affine Spaces where non-metricity and torsion are not cero,Metric-Affine connection,Metric Affine Connection,GO
-$g$: Metric tensor field,"A symmetric tensor field of type $(0,2)$ and signature $<1,3>$. Provides a sense of distance and angles between vectors",$g_{\mu\nu}$: Metric tensor,Metric tensor,GO
-$R$:Ricci scalar,$R=g^{\mu\nu}R_{\mu\nu}$,$R$:Ricci scalar,Ricci scalar,GO
-$\Re$: Affine Ricci scalar,\Re=g^{\mu\nu}\Re_{\mu\nu},$\Re$: Affine Ricci scalar,R2,GO
-Dependency,The connection and the metric tensor depend on each other.,Dependency,Dependent,Tip
-Independency,The connection may be expressed independently of the metric tensor,Independency,Independent,Tip
-$\eta$: Minkowski’s metric,"Flat non-dynamical metric. Since $Riem(\gamma)=0$, we can always choose global coordinates in which $\eta_{\mu\nu}=diag(-1,1,1,1)$",,eta,GO
-$Riem(\Gamma)=0$,Riemann’s curvature tensor of the affine connection is zero. $K=0$. It is one of Trautman’s homogenous condition.,,K=0,Cond
-Curvature,Riemman’s curvature tensor,,Curvature,GO
-"Non metricity tensor: $Q_{\mu\nu\lambda}\equiv-\widetilde{\nabla}_{\mu g\nu\lambda}$,",It measures the failure of the connection to covariantly conserve the metric.,,Non metricity,GO
-" $Q_{\mu\nu\lambda}=0$,",Homogeneous Trautman Condition,,Non metricity=0,Cond
-"Weyl vector: $Q_{\mu}\equiv\frac{1}{4}Q_{\mu\nu^{\nu}}$,",Is the trace of the non-metricity tensor with respect to its last two (symmetric) indices.,,Weyl vector,GO
-Well vector: $Q_{\mu}=0$,The trace of the non-metricity tensor with respect to its last two (symmetric) indices,,Weyl vector=0,Cond
-Cartan torsion tensor: $S_{\mu\nu}^{\lambda}\equiv\Gamma_{\left[\mu\nu\right]}^{\lambda}$,The anti-symmetric part of the connection,,Cartan torsion,GO
-$S_{\mu\nu}^{\lambda}=0$,Homogeneous Trautman Condition $\widetilde{R}_{bd}^{ac}=\widetilde{R}_{db}^{ca}$,,Cartan torsion=0,Cond
-$h$: Flat Metric tensor,"A symmetric tensor field of type $(2,0)$. h is defined on de cotangent space $T_{p}^{*}\times T_{p}^{*}$ and has signature $<3,0,1>$. It induces a three-dimensional metric on each hypersurface.",$h^{ab}$Flat Metric tensor,h,GO
-$dt$: Time function,Co vector that induces a foliation of M into three-dimensional hyper surfaces.,$t_{a}$,dt,GO
-"$h(dt,w)=0$",An orthogonality condition that describes Euclidean Geometry,$t_{a}h^{ab}=0$,"h(dt,w)=0",Cond
-$V$: Contra vector field  ,"Describes absolute space
-$T_{\sigma}=V$ along $\sigma$",$v_{b}$: Components of a contractor field V,V,GO
-$\overline{D}(V)=0$,Covariant derivative of V equals zero. It makes the lines in the rigging of space-time to be geodesics.,$\nabla_{a}v_{b}=0$,D(V)=0,Cond
-$dt(V)=1$,Derivative of $V=0$ makes the lines in the rigging of space-time to be timelike.,$t_{a}v_{b}=1$,dt(V)=1,Cond
-$\overline{D}(dt)=0$,Covariant derivative of dt equals zero to ensure the simultaneity slices are flat.,$\nabla_{a}t_{b}=0$,D(dt)=0,Cond
-$\overline{D}(h)=0$,Covariant Derivative of h describes Euclidean Geometry,$\nabla_{a}h^{bc}=0$,D(h)=0,Cond
-Signature,"for the metric tensor: Not-definite-positive $<-,+,+,+>$ or $<+,-,-,->$",Signature,Not-definite-positive,Tip
-Signature,for the metric tensor: definite-positive,Signature,Definite-positive,
-Signature,"for the metric tensor: Not definite positive $<1,3>$",Signature,"<1,3>",Tip
-$\overline{D}(g)=0$,Condition that preserves angles and distances when parallel transporting along a curve.,$\nabla_{a}g_{bc}=0$,D(g)=0,Cond
+Attribute|Class|Title|Formula|Explanation|Reference
+Eq 13|Action|Palatini action|$S_{pal}=frac{1}{2kappa}intop d^{4}xsqrt{-g}f(Re)+S_{M}(g_{munu},psi)$|The metric and connection are independent. Variation not on the connection. Note the new Ricci tensor is constructed with an independent connection:  $Re=g_{munu}R_{munu}$.|
+Eq 5|Action|Total action|$S_{met}=frac{1}{2kappa}intop d^{4}xsqrt{-g}f(R)+S_{M}(g_{munu},psi)$|Total action for a metric $f(R)$.|
+Eq 5-30|Action|Action for scalar-tensor theories|$ensuremath{I=(16pi)^{-1}intleft[phi R-phi^{-1}w(phi)g^{munu}phi_{,mu}phi_{,nu}+2philambda(phi)right]timesleft(-gright)^{frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{munu})}$||Will, 1993, p. 123
+Eq 5-45|Action|Action for vector-tensor theories|$I=(16pi G)^{-1}intleft[R+wK_{mu}K^{mu}R+nK^{mu}K^{nu}R_{munu}-epsilon F_{munu}F^{munu}+tau K_{mu;nu}K^{mu;nu}right]left(-gright)^{frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{munu})$,<br>where $F_{munu}=K_{nu;mu}-K_{mu;nu}$||Will, 1993, p. 127 Eq 5.45
+Eq 5-67|Action|Action Rosen Bimetric theory|$I=-(16pi G)^{-1}inteta^{munu}g^{alphabeta}g^{gammadelta}left(g_{alphagammamidmu}g_{betadeltamidnu}-frac{1}{2}g_{alphabetamidmu}g_{gammadeltamidnu}right)timesleft(-etaright)^{frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{munu})$||Will, 1993, p. 131
+Eq 5-73|Action|Action Rastall Bimetric theory|$I=-(16pi G)^{-1}int F(N)K^{mu;nu}K_{mu;nu}left(-gright)^{frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{munu})$||Will, 1993, p. 132
+Eq 5-82|Action|Action BSLL Bimetric theories|$I=-(16pi)^{-1}intleft(aB^{munumidalpha}B_{munumidalpha}+fB_{,alpha}B^{,alpha}right)left(-nright)^{frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{munu})$||Will, 1993, p. 134
+Eq 5-93|Action|Action for stratified theories|$I=(8pi)^{-1}intleft[e^{-1}K^{mumidnu}K_{mumidnu}-phi_{,mu}phi^{,mu}-left[f_{3}left(phiright)+1right]left(phi_{,mu}t^{,mu}right)^{2}+kappa_{1}B^{munumidalpha}B_{munumidalpha}+kappa_{2}B_{midnu}^{munu}phi_{,mu}right]left(-nright)^{frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{munu})$||Will, 1993, p. 136
+F(R*,Lm)|Action|F(R*,Lm)||The action is a function of the affine Ricci scalar and the matter Lagrangian.|
+F(R*,T)|Action|F(R*,T)||The action is a function of the affine Ricci scalar and the trace of the energy momentum tensor.|
+F(R,Lm)|Action|F(R,Lm)||The action is a function of the Ricci scalar and the matter Lagrangian.|
+F(R,T)|Action|F(R,T)||The action is a function of the Ricci scalar and the trace of the energy momentum tensor.|
+General Action|Action|Metric General Action|$S=intleft[k_{1}Fleft(R,mathcal{L_{M}}right)+k_{2}mathcal{L_{M}}right]sqrt{-g}d^{4}x$||
+General Action Palatini|Action|Palatini General Action|$S=intleft[k_{1}Fleft(Re,mathcal{L_{M}}right)+k_{2}mathcal{L_{M}}right]sqrt{-g}d^{4}x$||
+SM1|Action|Matter term|$S_{M}=S_{M}(g_{munu},psi)$||
+SM2|Action|Affine matter term|$S_{M}=S_{M}(g_{munu},Gamma_{munu}^{lambda},psi)$||
+(dt ⊗ K) = 0|Cond|Temporal geometry constraint|$(dtotimes K)_{1a2}=0$|This field equation imposes a constraint on the temporal geometry, specifying that it remains unaffected by the Riemann curvature tensor $K$.|Will, 1983, p. 101
+Const < 0|Cond|$R=Const<0$||Ricci scalar is constant and negative at all points.|
+Const > 0|Cond|$R=Const>0$||Ricci scalar is constant and positive at all points.|
+Curvature = 0|Cond||$Riem(Gamma)=0$|Riemann’s curvature tensor of the affine connection is zero. Found as $K=0$ in Friedman. It is one of Trautman’s homogenous condition.|Friedman, 1983, p. 78, 88, 93, 129
+D(dt) = 0|Cond||$overline{D}(dt)=0$|Covariant derivative of $dt$ equals zero to ensure the simultaneity slices are flat.|Friedman, 1983, p. 78, 88, 93, 101
+D(g) = 0|Cond||$overline{D}(g)=0$|Condition that preserves angles and distances when parallel transporting along a curve.|Friedman, 1983, p. 129, 180
+D(h) = 0|Cond||$overline{D}(h)=0$|Covariant derivative of h describes euclidean geometry.|Friedman, 1983, p. 78, 88, 93, 101
+D(V) = 0|Cond||$overline{D}(V)=0$|Covariant derivative of V equals zero. It makes the lines in the rigging of space-time to be geodesics.|Friedman, 1983, p. 78
+dt(V) = 1|Cond|$dt(V)=1$||Derivative of $V=0$ makes the lines in the rigging of space-time to be timelike.|Friedman, 1983, p. 78,106
+e = 0|Cond|$epsilon=0$|||Will, 1993, p. 117 Table 5.1, p. 129
+e = 1|Cond|$epsilon=1$|||Will, 1993, p. 117 Table 5.1, p. 130
+f(R) = R|Cond|$f(R)=R$||The function dependent on the Ricci scalar is of first order.|
+f(R) ≠ R|Cond|$f(R)neqR$||The function dependent on the Ricci scalar is of high order.|
+f(R*) = R*|Cond|$f(Re)=Re$||The function of the affine curvature scalar is of first order|
+f(R*) ≠ R*|Cond|$f(Re)neqRe$||The function of the affine curvature scalar is of high order|
+f’(R) = 1|Cond|$f’(R)=1$||The first derivative of the function dependent on the Ricci scalar is one.|
+f’(R*) = 1|Cond|$f’(Re)=1$|||
+f’’(R) = 0|Cond|$f’’(R) =0$||The second derivative of the function of the Ricci scalar is zero.|
+f’’(R) ≠ 0|Cond|$f’’(R)≠-0$||The second derivative of the function of the Ricci scalar is not zero.|
+f’’(R*) = 0|Cond|$f''(Re)=0$||The second derivative of the function of the affine curvature scalar is zero.|
+f’’(R*) ≠ 0|Cond|$f''(Re)neq0$||The second derivative of the function of the affine curvature scalar is not zero.|
+h(dt,w) = 0|Cond||$h(dt,w)=0$|An orthogonality condition that describes euclidean geometry.|Friedman, 1983, p. 78, 88, 101
+H2*K = H2*K|Cond||$H_{*}^{2}K(w,v,X,Y)=H_{*}^{2}K(v,w,Y,X)$||
+lambda = 0|Cond|$lambda(phi)=0$||Nordtvedt's (1970b) scalar-tensor theory is equivalent to the Bergmann-Wagoner theory in the special case of zero cosmological function $lambdaequiv0$|Will, 1993, p. 125
+Local|Cond|Locality||Matter is a point function.|
+n = -2w|Cond|$eta = -2w$|||Will, 1993, p. 117 Table 5.1, p. 130
+n = 0|Cond|$eta = 0$|||Will, 1993, p. 117 Table 5.1, p. 130
+Non Metricity = 0|Cond|Non metricity tensor vanishes|$Q_{munulambda}=0$,|Homogeneous Trautman condition.|
+Non-Local|Cond|Non-locality||Matter is a function of density.|
+R = 0|Cond|$R=0$||The Ricci scalar is zero.|
+R = Const|Cond|$R=Const.$||The Ricci scalar is constant.|
+T = 0|Cond|$T_{munu}rightarrow0$: Dust||Energy momentum tensor is almost zero; models for dust.|
+tau = 0|Cond|$tau=0$||In this case, no constraint is placed on the vector field.|Will, 1993, p. 117 Table 5.1, p. 127, 128
+tau = 1|Cond|$tau=1$||This represents a constraint on the gauge of the vector field $k_{mu}$ imposed by the lack of full gauge invariance of the action $I$.|Will, 1993, p. 117 Table 5.1, p. 127, 128
+Torsion = 0|Cond|Cartan torsion tensor vanishes|$S_{munu}^{lambda}=0$|Homogeneous Trautman Condition $widetilde{R}_{bd}^{ac}=widetilde{R}_{db}^{ca}$.|
+w = 0|Cond|$wrightarrowinfty$|||
+w-inf|Cond|$wrightarrowinfty$|||
+Weyl Vector = 0|Cond|Weyl vector vanishes|$Q_{mu}=0$||
+w’ = 0|Cond|$w’=0$|$w(phi)equiv constant$||
+a, b, c, d|Cosmo|Cosmological matching parameters|$a$, $b$, $c$, $d$||Will, 1993, p. 117 Table 5.1, p. 135
+c0, c1|Cosmo|$C_{0}$, $C_{1}$: Cosmological matching parameters||In the universe rest frame, g then has the asymptotic form $diag(-c_{0},c_{1},c_{1},c_{1})$, where $c_{0}$ and $c_{1}$  may vary on a Hubble timescale. |Will, 1993, p. 131, 135
+K0|Cosmo|$K$: Cosmological matching parameter|||
+lambda|Cosmo|$lambda(phi)$: Cosmological function||$lambda(phi)$ causes two effects: in the field equation for $g$ it plays the same role as the cosmological constant in GR, and, in the field equation, it gives $(phi)$ a range l related to $lambda$, $w$ and their derivatives, in the sense that the solutions for $(phi)$ for an isolated system contain Yukawa-like terms $expleft(-r/lright)$.|Will, 1993, p. 123
+Phi0|Cosmo|$phi_{0}$: Cosmological matching parameter||For chosen values for $r$ and $q$, the present values of $w$ and $Lambda$ are determined by the asymptotic value $phi_{0}$, which in turn is found through a cosmological solution using the theory. |Will, 1993, p. 125
+w0, w1|Cosmo|$w_{0}$, $w_{1}$: Cosmological matching parameters|||
+a0|ElemDis|Milgrom’s constant $a_{0}approx1.2times10^{-10}m/s^{2}$||Acceleration scale|
+G 5-101|ElemDis|Gravitational “constant”|$G_{today}=c^{2}c_{1}^{frac{1}{2}}c_{0}^{frac{-3}{2}}(1+kappa_{2}^{2}/4kappa_{1})^{-1}=1$||
+G 5-38|ElemDis|Gravitational “constant”|$G_{today}equivphi_{0}^{-1}left(frac{4+2w}{3+2w}right)=1$||
+G 5-61|ElemDis|Gravitational “constant”|$G_{today}equiv Gleft[frac{1}{2}left(gamma+1right)+frac{3}{2}wK^{2}left(gamma-1right)-frac{1}{2}left(eta-tauright)K^{2}left(1+sigmaright)right]^{-1}=1$||
+G 5-63|ElemDis|Gravitational “constant”|$G_{today}=frac{G}{(1+frac{1}{2}K^{2})}=1$||
+G 5-65|ElemDis|Gravitational “constant”|$G_{today}=Gleft[wK^{2}(gamma+1)right]^{-1}=1$||
+G 5-70|ElemDis|Gravitational “constant”|$G_{today}=G(c_{0}c_{1})^{frac{1}{2}}=1$||
+G 5-89|ElemDis|Gravitational “constant”|$G_{today}equivfrac{a+3f-4Ka-16K^{2}a}{2a(a+4f)}+O(w)=1$||
+G = 1|ElemDis|Gravitational “constant”|$G_{today}=1=left[constantright]$||
+k1 = c3/16piG|ElemDis|Coupling constant|$k_{1}=frac{c^{3}}{16pi G}$||
+k2 = 1/c|ElemDis|Coupling constant|$k_{2}=frac{1}{c}$||
+Einstein’s Eq|FieldEq|Einstein’s field equation|$G_{1}^{*}G_{2}^{*}Ric-frac{1}{2}Rg^{*}=-8pi kT$|Matter tells space how tu curve, and Curvature tells matter how to move.|
+Eq 1|FieldEq|Field equation for Mond local F(R,T)|||
+Eq 14|FieldEq|Field Equation for Mond non local pure Metric|$left(frac{f_{R}}{L_{M}^{2}}right)R_{munu}-frac{1}{2L_{M}^{2}}fg_{munu}+left[g_{munu}Delta-Delta_{mu}Delta_{nu}right]left(frac{f_{R}}{L_{M}^{2}}right)=frac{8pi G}{c^{4}}T_{munu}-left(frac{f}{L_{M}^{2}}right)_{T}left[T_{munu}+Theta_{munu}right]$||
+Eq 18|FieldEq|Palatini field equation 1|$f'(Re)Re_{munu}-frac{1}{2}f(Re)g_{munu}=kappa T_{munu}$||
+Eq 19|FieldEq|Palatini field equation 2|$bar{nabla}_{lambda}(sqrt{-g}f'(Re)g^{munu})=0$|($bar{nabla}_{lambda}$) is the covariant derivative defined with the independent connection.|
+Eq 4|FieldEq|Field Equation for Mond local pure Metric|$F_{R}R_{alphabeta}+left(g_{alphabeta}nabla^{mu}nabla_{mu}-nabla_{alpha}nabla_{beta}right)F_{R}-frac{1}{2}left(F-F_{mathcal{mathcal{L}}}right)g_{alphabeta}=frac{1}{2}F_{mathcal{L}}T_{alphabeta}$||
+Eq 46|FieldEq|Field Equation|$f'(Re)Re_{(munu)}-frac{1}{2}f(Re)g_{munu}=kappa T_{munu}$||
+Eq 47|FieldEq|Field Equation|$frac{1}{sqrt{-g}}left[-bar{nabla}_{lambda}left(sqrt{-g}f'(Re)g^{munu}right)+bar{nabla}_{sigma}left(sqrt{-g}f'(Re)g^{musigma}right)delta_{lambda}^{nu}right]+2f'(Re)(g^{munu}S_{lambdasigma}^{sigma}-g^{murho}S_{rhosigma}^{sigma}delta_{lambda}^{nu}+g^{musigma}S_{sigmalambda}^{nu})=kappa(Delta_{lambda}^{munu}-B_{lambda}^{[mu}delta^{nu]})$|Field equation after varying independently with respect to the connection.|
+Eq 48|FieldEq|Field Equation|$S_{musigma}^{sigma}=0$|Field equation after varying independently with respect to the Lagrange multiplier.|
+Eq 5-31|FieldEq|Field Equation|$R_{munu}-frac{1}{2}g_{munu}R-lambda(phi)g_{munu}=8piphi^{-1}T_{munu}+phi^{-2}w(phi)(phi,_{mu}phi,_{nu}-frac{1}{2}g_{munu}phi,_{lambda}phi^{,lambda})+phi^{-1}(phi_{;munu}-g_{munu}oblong_{g}phi)$,<br>$oblong_{g}phi+frac{2phi^{2}frac{dlambda}{dphi}-3philambda(phi)}{3+2w(phi)}=frac{1}{3+2w(phi)}left(8pi T-frac{dw}{dphi}phi,_{mu}phi^{,mu}right)$|The field equation is derived from the action 5-30.|Will, 1993, p. 123
+Eq 5-47|FieldEq|Field equations for Vector-Tensor theories|$R_{munu}-frac{1}{2}g_{munu}R-wTheta_{munu}^{(w)}+etaTheta_{munu}^{(eta)}+epsilonTheta_{munu}^{(epsilon)}+tauTheta_{munu}^{(tau)}=8pi GT_{munu}$,<br>$epsilon F_{;nu}^{munu}+frac{1}{2}tau K_{;nu}^{mu;nu}-frac{1}{2}wK^{mu}R-frac{1}{2}eta K^{nu}R_{nu}^{mu}=0$||Will, 1993, p. 127
+Eq 5-68|FieldEq|Field equation for Rosen’s theory|$oblong_{eta}g_{munu}-g^{alphabeta}eta^{gammadelta}g_{mualphamidgamma}g_{nubetamiddelta}=-16pi G(frac{g}{eta})^{frac{1}{2}}(T_{munu}-frac{1}{2}g{}_{munu}T)$||Will, 1993, p. 131
+Eq 5-75|FieldEq|Field equation for Rastall’s theory|$left[F(N)K^{mu;nu}right]_{;nu}-F'(N)K^{mu}K^{alpha;beta}K_{alpha;beta}+(1+eta^{alphabeta}K_{alpha}K_{beta})^{-frac{1}{2}}(Theta^{munu}-frac{1}{2}g^{munu}Theta)K_{nu}=8pi G(1+eta^{alphabeta}K_{alpha}K_{beta})^{-frac{1}{2}}(T^{munu}-frac{1}{2}g^{munu}T)K_{nu}$,<br>$Theta^{munu}equiv F(N)(K^{mu;alpha}K_{;alpha}^{nu}+K^{alpha;}K_{alpha}^{;nu}-frac{1}{2}g^{munu}K_{alpha;beta}K^{alpha;beta})+left{ F(N)left[K^{alpha}K^{left(mu;nuright)}-K^{mu}K^{(nu;alpha)}-K^{nu}K^{(mu;alpha)}right]right} _{;alpha}+F'(N)K^{alpha;beta}K_{alpha;beta}K^{mu}K^{nu}$||Will, 1993, p. 132
+Eq 5-84|FieldEq|Field equation for BSLL bimetric theory|$oblong_{eta}B^{munu}=-(frac{4pi}{a})(g/eta)^{frac{1}{2}}T^{alphabeta}left[theta_{alphabeta}^{munu}-f(a+4f)^{-1}Theta_{alphabeta}^{gammadelta}eta^{munu}eta_{gammadelta}right]$,<br>where<br>$theta_{alphabeta}^{munu}=frac{partial g_{alphabeta}}{partial B_{munu}}$.||Will, 1993, p. 134
+Eq 5-95|FieldEq|Field equation for stratified theories|$oblong_{eta}phi+left[f_{3}(phi)+1right]phi_{00}+frac{1}{2}f’_{3}(phi)phi_{,0}^{2}-frac{1}{2}K_{2}B_{,ij}^{ij}=2pi(-g)^{frac{1}{2}}left[T^{00}f’_{1}(phi)-T^{ii}f'_{2}(phi)right]$,<br>$oblong B^{ij}+(frac{kappa_{2}}{2kappa_{1}})phi^{,ij}=left(frac{2pi}{kappa_{1}}right)left(-gright)^{frac{1}{2}}T^{ij}$.||Will, 1993, p. 136
+Eq 6|FieldEq|Field equation of metric  $f(R)$|$f'(R)R_{munu}-frac{1}{2}f(R)g_{munu}-left[nabla_{mu}nabla_{nu}-g_{munu}nabla^{mu}nabla_{mu}right]f'(R)=kappa T_{munu}$||
+Eq 8|FieldEq|Field Equation for Mond non local Palatini|$f'(chi)chi_{munu}-frac{1}{2}f(chi)g_{munu}=frac{8pi GL_{M}^{2}}{c^{4}}T_{munu}$||
+Eq 9a|FieldEq||$R_{munu}=0$|If the Ricci scalar $R=0$, then the field equation reduces to $R_{mueta}=0$.|
+Eq 9b|FieldEq||$R_{munu}=g_{munu}frac{C}{4}$|If the Ricci scalar $R=const.$, then the field equation reduces to $R_{munu}=g_{munu}frac{C}{4}$, and the maximally symmetric solution is de Sitter or anti-de Sitter space depending on the sign of the constant.|
+Eq 9c|FieldEq||$R_{munu}=-g_{munu}frac{C}{4}$|If the Ricci scalar $R=cte$, then the field equation reduces to $R_{munu}=g_{munu}frac{C}{4}$, and the maximally symmetric solution is de Sitter or anti-de Sitter space depending on the sign of the constant.|
+Poisson Eq 1|FieldEq|Poisson’s Eq|$del(Phi)=4pi krho$|Poisson's field equation relates the gravitational potential $Phi$ with the mass density $rho$, where $del(Phi)$ is the divergence of the gradient of $Phi$, and k is the newtonian gravitational constant.|Friedman, 1983, p. 93
+Poisson Eq 2|FieldEq|Poisson’s Eq in curved space|$Ric=-4pirho dtotimes$$dt$|Poisson's field equation in curved space relates the Ricci tensor of the connection with the mass density.|Friedman, 1983, p. 103
+a, f, k|Function|Arbitrary parameters|$a$, $f$, $k$||Will, 1993, p. 117 Table 5.1, p. 133
+e|Function|$e$: Arbitrary function|||Will, 1993, p. 117, 135, 
+epsilon|Function|$epsilon$: Arbitrary parameter|||Will, 1993, p. 127
+f1(Phi), f2(Phi), f3(Phi)|Function|Arbitrary functions|$f_{1}left(phiright)$, $f_{2}left(phiright)$, $f_{3}left(phiright)$|This functions help build algebraically the metric tensor and the action.|Will, 1993, p. 117 Table 5.1, p. 136 
+Kappa1, Kappa2|Function|Arbitrary functions|$kappa_{1}$, $kappa_{2}$||
+n0|Function|n0|||
+r, q|Function|$r$, $q$: Arbitrary parameters|||Will, 1993, p. 117 Table 5.1, p. 125
+tau|Function|$tau$: Arbitrary parameter||This represents a constraint on the gauge of the vector field $k_{mu}$ imposed by the lack of full gauge invariance of the action $I$.|Will, 1993, p. 117 Table 5.1, p. 127, 128
+w|Function|$w(phi)$: Arbitrary coupling function|||
+Affine Connection|GO|$Gamma$: Affine connection||A generalised connection for vector fields in curved spaces where torsion and non-metricity are not necessarily zero, telling us about straitest curve.|
+B|GO|$B$: Symmetric tensor field||The symmetric tensor field $B$ is typically associated with the presence of multiple metrics, which describe how distances and intervals are measured in different ways. In stratified and bimetric theories there might be two or more metrics to describe different aspects of gravity or spacetime such as variations in gravity's strength or range. $B$ helps relate and reconcile these metrics, ensuring that the theory remains self-consistent.|Will, 1993, p. 117 Table 5.1
+Curvature|GO|$Riem(Gamma)$: Riemann curvature tensor||This geometric object is used to quantify the intrinsic curvature of a space. It has several components expressed in terms of partial derivatives of the affine connection (Found as K in Friedman, 1983)|
+dt|GO|$dt$: Time function||Co-vector that induces a foliation of $M$ into three-dimensional hyper surfaces.|Friedman, 1983, p. 78
+eta|GO|$eta$: Minkowski’s metric||Flat non-dynamical metric. Since $Riem(gamma)=0$, we can always choose global coordinates in which $eta_{munu}=diag(-1,1,1,1)$.|
+Flat Connection|GO|$overline{nabla}$: Flat connection||A derivative for flat spaces.|
+h|GO|$h$: Flat Metric tensor||A symmetric tensor field of type $(2,0)$. h is defined on de cotangent space $T_{p}^{*}times T_{p}^{*}$ and has signature $<3,0,1>$. It induces a three-dimensional metric on each hypersurface.|Friedman, 1983, p. 78, 88, 101
+Hyp|GO|Hypermomentum|$Delta_{lambda}^{munu}equiv-frac{2}{sqrt{-g}}frac{partial S_{M}}{partialGamma_{munu}^{lambda}}$,|A quantity representing the variation of SM with respect to the connection, which mimics the definition of the stress-energy tensor. |
+Kmn|GO|$K^{mu}$: Dynamical vector field||(assumed timelike)|
+Metric Affine Connection|GO|$Gamma*$: Metric-Affine connection||A connection for Metric-affine spaces where non-metricity and torsion are not zero.|
+Metric Connection|GO|$left{ _{munu}^{lambda}right} $: Metric connection||Also called Levi-Civita connection, it is dependent on the metric $g$. It gives us information about how to transport vectors along a curve, while conserving the metric.|
+Metric Tensor|GO|$g_{munu}$: Metric tensor||A symmetric tensor field of type $(0,2)$ and signature $<1,3>$. Provides a sense of distance and angles between vectors telling us about shortest curve.|
+Newton-Cartan Connection|GO|$nabla$: Newton-Cartan Connection||Non-flat covariant connection. In Friedman it is found as $D$.|Friedman, 1983, p. 
+Non Metricity|GO|Non metricity tensor|$Q_{munulambda}equiv-widetilde{nabla}_{mu gnulambda}$,|It measures the failure of the connection to covariantly conserve the metric.|
+Phi|GO|$phi$: Dynamical scalar field||Rest masses of elementary particles are allowed to vary in spacetime via a dynamical scalar field $phi$.|Will, 1993, p. 125
+Psi|GO|$psi$: Matter fields|||
+R*|GO|$Re$: Affine Ricci scalar|$Re=g^{munu}Re_{munu}$||
+Ricci Scalar|GO|$R$:Ricci scalar|$R=g^{munu}R_{munu}$||
+t|GO|$t$: Cosmic time function||A nondynamical scalar field. The gradient of $t$ is covariantly constant and timelike with respect to $eta$. This scalar field selects out preferred spatial sections of “strata” in the universe that are orthogonal to $nabla$.|Will, 1993, p. 117 Table 5.1, p. 135
+Tmn|GO|$T$: Stress-Energy-Momentum tensor field||Symmetric tensor field $(2,0)$.|
+Torsion|GO|Cartan torsion tensor|$S_{munu}^{lambda}equivGamma_{left[munuright]}^{lambda}$|The anti-symmetric part of the connection.|
+V|GO|$V$: Contra vector field||Describes absolute space. $T_{sigma}=V$ along $sigma$.|
+Weyl Vector|GO|Weyl vector|$Q_{mu}equivfrac{1}{4}Q_{munu^{nu}}$|The Weyl vector is the trace of the non-metricity tensor with respect to its last two (symmetric) indices.|
+Xi3/2|GO|Medoza’s tensor $chi_{munu}:=L_{M}^{2}R_{munu}$||Where $L_{M}^{2}$ defines a length fixed by the parameters of the theory.|
+Φ|GO|$Phi$: Gravitational potential||Potential produced by a space-type vector field that represents the gravitational field.|Friedman, 1983, p. 93
+M|M|M: Differentiable manifold||A topological space that resembles euclidean space near each point. It can be coordinatized by Rn through a family of homeomorphisms.|
+Eq 18Mond|MovEq|Equation of motion for Mond non local pure metric|$nabla^{mu}T_{munu}=left(frac{f}{L_{M}^{2}}right)_{T}left{ frac{8pi G}{c^{4}}-left(frac{f}{L_{M}^{2}}right)_{T}right} ^{-1}timesleft[left(T_{munu}+Theta_{munu}right)nabla^{mu}lnleft(frac{f}{L_{M}^{2}}right)_{T}left(R,Tright)+nabla^{mu}theta_{munu}right]$||
+Eq 2|MovEq|Equation of motion for Mond non local Palatini|||
+Eq 3|MovEq|Equation of motion for Mond F(R,T)|||
+Eq 34 and 35|MovEq|Equation of motion for Mond local pure metric|$frac{dx^{mu}}{ds^{2}}+Gamma_{nualpha}^{mu}frac{dx^{mu}}{ds}frac{dx^{alpha}}{ds}=left(g_{munu}-u_{mu}u_{nu}right)nabla^{mu}lnleft[left(16pikappakappa'+f_{xi}right)frac{dmathcal{L}}{drho}right]$||
+Geodesic Law|MovEq|Geodesic Law|$D_{Tsigma}T_{sigma}=0$|Free particles follow timeline geodesics of the connection.|
+Gravitational Force|MovEq|Gravitational Force|$mD_{Tsigma}T_{sigma}=m(grad(Phi))$|Particles acted on only by gravitational forces follow non geodesic paths determined by the gravitational potential.|
+<1,3>|Typ|Signature for the metric tensor|$<1,3>$|The signature contains one positive and three negative index. There are GR models with different signatures.|
+<3,0,1>|Typ|Signature for the flat tensor h|$<3,0,1>$|Indicating there are 3 spatial dimensions, 0 negative eigenvalues associated with the metric tensor, indicating it is positive definite in the spatial dimensions. The third number (1) indicates the number of negative eigenvalues associated with the metric tensor in the time dimension, suggesting time is treated differently from space in terms of its signature.|
+Definite-Positive|Typ|Signature||Signature for the metric tensor is definite-positive.|
+Dependent|Typ|Dependency||The connection $Gamma_{munu}^{lambda}$  and the metric tensor $g_{munu}$  depend on each other.|
+Independent|Typ|Independency between variables||The connection $Gamma_{munu}^{lambda}$ may be expressed independently of the metric tensor $g_{munu}$.|
+N|Typ|Dimension: $N=4$||The dimension of a vector space is the cardinality of a base of $M$.|
+Not-Definite-Positive|Typ|Signature||for the metric tensor: Not-definite-positive $<-,+,+,+>$ or $<+,-,-,->$.|
