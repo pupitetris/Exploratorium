@@ -160,7 +160,7 @@ Este sitio ha sido optimizado para Mozilla Firefox y Google Chrome.
 {
   "template": "diagram-page.tt",
   "output": "theories-es/protophysics/index.html",
-  "nav_lang": "theories/protophysics/index.html"
+  "nav_lang": "theories-en/protophysics/index.html"
 }
 ```
 
@@ -173,7 +173,7 @@ Las teorías físicas se han desarrollado gracias a diversas teorías matemátic
 {
   "template": "diagram-page.tt",
   "output": "theories-es/analytical-dynamics/index.html",
-  "nav_lang": "theories/analytical-dynamics/index.html"
+  "nav_lang": "theories-en/analytical-dynamics/index.html"
 }
 ```
 
@@ -186,7 +186,7 @@ Este retículo compara la teoría newtoniana con las teorías de dinámica anal�
 {
   "template": "diagram-page.tt",
   "output": "theories-es/basic/index.html",
-  "nav_lang": "theories/basic/index.html"
+  "nav_lang": "theories-en/basic/index.html"
 }
 ```
 
@@ -199,7 +199,7 @@ En *"Foundations of Physics"* (1967), Mario Bunge axiomatiza seis teorías físi
 {
   "template": "diagram-page.tt",
   "output": "theories-es/spacetimes/index.html",
-  "nav_lang": "theories/spacetimes/index.html"
+  "nav_lang": "theories-en/spacetimes/index.html"
 }
 ```
 
@@ -212,7 +212,7 @@ En *"Foundations of Physics"* (1967), Mario Bunge axiomatiza seis teorías físi
 {
   "template": "diagram-page.tt",
   "output": "theories-es/classical/index.html",
-  "nav_lang": "theories/classical/index.html"
+  "nav_lang": "theories-en/classical/index.html"
 }
 ```
 
@@ -226,7 +226,7 @@ P. Havas (1964) mostró que la teoría newtoniana puede formularse en 4D. Michae
 {
   "template": "diagram-page.tt",
   "output": "theories-es/metric/index.html",
-  "nav_lang": "theories/metric/index.html"
+  "nav_lang": "theories-en/metric/index.html"
 }
 ```
 
@@ -239,7 +239,7 @@ Las teorías métricas se desarrollaron en los años cincuenta, sesenta y setent
 {
   "template": "diagram-page.tt",
   "output": "theories-es/f-R/index.html",
-  "nav_lang": "theories/f-R/index.html"
+  "nav_lang": "theories-en/f-R/index.html"
 }
 ```
 
@@ -254,7 +254,7 @@ siguiendo geodésicas del espacio-tiempo y sin agregar campos extra, por lo que 
 {
   "template": "diagram-page.tt",
   "output": "theories-es/mond/index.html",
-  "nav_lang": "theories/mond/index.html"
+  "nav_lang": "theories-en/mond/index.html"
 }
 ```
 
@@ -273,7 +273,7 @@ de Sotiriou Faraoni, *f(R) theories of gravity*.
 {
   "template": "diagram-page.tt",
   "output": "theories-es/holon/index.html",
-  "nav_lang": "theories/holon/index.html"
+  "nav_lang": "theories-en/holon/index.html"
 }
 ```
 

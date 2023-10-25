@@ -24,15 +24,15 @@ Universidad Autónoma Metropolitana - Cuajimalpa
 
 ## Menu
 
-- [Protophysics](theories/protophysics)
-- [Analytical Dynamics](theories/analytical-dynamics)
-- [Space-time Theories](theories/spacetimes)
-- [Basic Theories](theories/basic)
-- [Classical Theories](theories/classical)
-- [Metric Theories](theories/metric)
-- [f(R) Theories](theories/f-R)
-- [Non-local MoNDian Theories](theories/mond)
-- [Holon of Theories](theories/holon)
+- [Protophysics](theories-en/protophysics)
+- [Analytical Dynamics](theories-en/analytical-dynamics)
+- [Space-time Theories](theories-en/spacetimes)
+- [Basic Theories](theories-en/basic)
+- [Classical Theories](theories-en/classical)
+- [Metric Theories](theories-en/metric)
+- [f(R) Theories](theories-en/f-R)
+- [Non-local MoNDian Theories](theories-en/mond)
+- [Holon of Theories](theories-en/holon)
 - [Gravity Apple Tree](//prezi.com/rdkivznlhgga/the-gravity-apple-tree/)
 
 
@@ -126,7 +126,7 @@ This site has been optimized for Mozilla Firefox and Google Chrome.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories/protophysics/index.html",
+  "output": "theories-en/protophysics/index.html",
   "nav_lang": "theories-es/protophysics/index.html"
 }
 ```
@@ -139,7 +139,7 @@ Data collected from Mario Bunge's *"Foundations of physics"* (1967).
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories/analytical-dynamics/index.html",
+  "output": "theories-en/analytical-dynamics/index.html",
   "nav_lang": "theories-es/analytical-dynamics/index.html"
 }
 ```
@@ -152,7 +152,7 @@ Data collected from Mario Bunge's *"Foundations of physics"* (1967).
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories/spacetimes/index.html",
+  "output": "theories-en/spacetimes/index.html",
   "nav_lang": "theories-es/spacetimes/index.html"
 }
 ```
@@ -171,7 +171,7 @@ Relativistic Physics and Philosophy of Science"*.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories/basic/index.html",
+  "output": "theories-en/basic/index.html",
   "nav_lang": "theories-es/basic/index.html"
 }
 ```
@@ -184,7 +184,7 @@ Data collected from Mario Bunge's *"Foundations of physics"* (1967).
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories/classical/index.html",
+  "output": "theories-en/classical/index.html",
   "nav_lang": "theories-es/classical/index.html"
 }
 ```
@@ -203,7 +203,7 @@ Relativistic Physics and Philosophy of Science"*.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories/metric/index.html",
+  "output": "theories-en/metric/index.html",
   "nav_lang": "theories-es/metric/index.html"
 }
 ```
@@ -221,7 +221,7 @@ Will's book: *"Theory and Experiment in Gravitational Physics"*.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories/f-R/index.html",
+  "output": "theories-en/f-R/index.html",
   "nav_lang": "theories-es/f-R/index.html"
 }
 ```
@@ -240,7 +240,7 @@ article: *"f(R) theories of gravity"*.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories/mond/index.html",
+  "output": "theories-en/mond/index.html",
   "nav_lang": "theories-es/mond/index.html"
 }
 ```
@@ -257,7 +257,7 @@ theories of gravity"*.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories/holon/index.html",
+  "output": "theories-en/holon/index.html",
   "nav_lang": "theories-es/holon/index.html"
 }
 ```
