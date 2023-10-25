@@ -11,15 +11,16 @@ Space-Time Theories Exploratorium
 
 - [Home](index.html)
 - [Diagrams](nav_menu)
-- [The Author](/integrantes/mariana-espinosa-aldama)
+- [About](/integrantes/mariana-espinosa-aldama)
 - [REMO](/)
 - [Español](nav_lang)
 
 
 ## Author
 
-by Mariana Espinosa Aldama,\
-Universidad Autónoma Metropolitana - Cuajimalpa
+by Mariana Espinosa Aldama and Arturo Espinosa Aldama,\
+with support from the REMO Seminary at the Metropolitan Autonomous
+University - Cuajimalpa
 
 
 ## Menu
@@ -40,14 +41,13 @@ Universidad Autónoma Metropolitana - Cuajimalpa
 
 ### Acknowledgements
 
-This project has been possible thanks to the postgraduate program on
-Social Sciences and Humanities at the Universidad Autónoma
-Metropolitana, U-Cuajimalpa.  Special thanks to Mario Casanueva
-(UAM-C), Diego Méndez (UAM-C), Sergio Mendoza (IA-UNAM), Seminario
-REMO, Arturo Espinosa, Irving Morales (C3-UNAM), Roberto Sussman
-(ICN-UNAM), Xavier Hernández (IA-UNAM), Hernán Miguel (UBA), Adriana
-Casas, Amanda Lemus, Ameyalli Yáñez (CENART, Centro Multimedia) for
-all their help and support.
+This project has been possible thanks to the support of the Seminar of
+Representation and Modeling of Scientific Knowledge of the
+Metropolitan Autonomous University-Cuajimalpa Unit, as well as the
+Coordination of Innovation and the Computing Department. A thanks to
+Mario Casanueva (UAM-C), Diego Méndez (UAM-C), Sergio Mendoza
+(IA-UNAM), Joaquín Hernández (UAM-C), and especially Arturo Espinosa
+for all his help and support.
 
 ### Copyright
 
@@ -69,59 +69,97 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 
 #### Get to explore the structure of physical theories through interactive concept networks.
 
-At Space-Time Theories Exploratorium, we are passionate about
-unraveling the mysteries of space-time, gravitation and other physical
-theories through data visaualizations. These interactive
-visualizations are the outcome of a PhD research project on Social
-Science and Humanities at Universidad Autónoma Metropolitana, aimed at
-representing a big chunk of the semantic structure of gravitation and
-other space-time theories through visualizations of concept lattices
-obtained using Formal Concept Analysis (FCA).
+- Explore 8 theoretical networks and a holon with more than 50
+  theories of space-time and gravitation.
+- Locate groups of theories of interest, their foundations and classes
+  of models.
+- Learn the logic of hierarchical networks.
+- Become familiar with the conceptual structure of physical theories
+  through partial grids.
+- Consult information when clicking on the labels.
+- Compare subtractive and additive reconstructions.
+- Find relationships of theorization and specialization.
+- Zoom-in, zoom-out or drag the network.
+- Highlight subconcepts and supraconcepts.
+- Explore through hyperlinks and acquire an overview.
+- Identify the "peak of the iceberg" reticle.
+- Move the nodes to rearrange the network and save your own settings.
+- Highlight specific nodes and find some especially interesting ones.
+- Accompany source readings with this macroscope.
+- Be suspicious of our results and discuss with your colleagues.
+- Know the methodology of Formal Concept Analysis (FCA).
+- Download the contexts and consult the sources.
+- Download the networks and the Gravity Apple Tree.
+- Write to us and leave us your comments.
 
-Physical theories, and scientific knowledge in general, are conceptual
-systems; complex objects with different kinds of components related
-with other components in a given environment. Structure is the set of
-relations between components (internal structure) and the components
-of the environment (external structure).  Theories have a hierarchical
-internal structure that can be visualized using lattices. Lattices are
-class of network with several properties, such as being ordered sets
-with a unique top and bottom component for every pair of nodes in the
-network. Hierarchy shows the fundamental comon components to most
-theories, such as protophysics, topological or geometrical
-properties. Specialized models, on the other hand are found in lower
-levels or the lattice.
+#### At the Exploratorium, we are passionate about unraveling the semantic structure of physical theories through interactive, hyperlinked network visualizations.
 
-We represent theories using a set-theoretic, model based approach,
+Axiomatized physical theories are conceptual systems generated from
+logical deductions from a set of premises; complex objects with
+different types of components related to other components in a certain
+environment.  The structure is the set of relationships between the
+components (internal structure) and environment components (external
+structure). Theories have a hierarchical internal structure that can
+be visualized using lattices. Lattices are a class of network with
+various properties, such as being ordered sets with a unique top and
+bottom component for each pair of nodes in the network. Theoretical
+lattices show the fundamental components common to most theories,
+located at the top, such as protophysics, topological or geometric
+properties. Actual models and specialized models, on the other hand,
+are found at the lower levels of the lattice.
+
+**Our goal** is to provide visual interactive tools that help us
+understand the complexity of physical theories and the relations
+between fundamental components. These macroscopes work as conceptual
+maps for students and curious people that navigate in the theoretical
+sea of physics.
+
+#### Metodology
+
+We represent theories using a model-based approach and set theory,
 following the structuralist school of metatheoretical analysis of
 Balzer, Moulines and Sneed (2012). Theories are represented by
-theoretic elements that are sets of classes of models. In an incidence
-table or formal context (G,M,i) we relate classes of models with their
-attributes (sets of axioms). FCA is a mathematical theory and
-methology of retriving formal concepts from formal contexts, relate
-them hierarchically and represent it as a lattice. Each concept
-lattice presented here is based on certain classifications such as
-Michael Friedman's classification of space-time theories, Sotiriou and
-Faraoni's classification of f(R) theories, Clifford Will's
-classification of Metric Theories, Mario Bunge's classification of
-Protophysics and physical theories, and Neil Dewar's *"Maxwell
-Gravitation"* article, among others.
+theoretical elements made up in part by sets of model classes. In an
+incidence table or formal context (G,M,i) we relate classes of models
+with their attributes (sets of axioms). **Formal Concept Analysis
+(FCA)** is a mathematical theory based on Birckoff's theory of
+lattices and Galois' connection which recovers formal concepts
+(ordered pairs made up of an extension and intension) from formal
+contexts, relates them hierarchically and represents them as lattice.
 
-Our goal is to provide visual interactive tools to understand the
-complexity of physical theories and the relations between fundamental
-components. These macroscopes work as conceptual maps for students and
-curious people that navigate in the theoretical sea of physics.
+Each lattice is presented here is based on some formal
+reconstruction. We have found two types of reconstructions:
 
-More detailed information in Mariana Espinosa's phd thesis (in
+- **Additive**, which proposes a very impoverished differential
+  manifold to enrich it with geometric properties, a path proposed by
+  Bernhard Riemann and found in the axiomatizations of Mario Bunge
+  (1967), who gives more weight to the temporal and experimental
+  aspects when determining the fundamental level of the concepts, and
+  from where we obtained the lattices titled "Protophysics",
+  "Analytical Dynamics" and "Basic Theories".
+- **Subtractive**, proposed by Felix Klein, begins with a differential
+  manifold endowed with many very general properties that are
+  constrained as required. It is the path found in Michael Friedman's
+  (1983) classifications of "Space-Time Theories" and "Classical
+  Theories", Clifford Will's (1981) classification of "Metric
+  Theories", Sotiriou and Faraoni (2010) the "f(R) Theories", and the
+  "Extended Theories" of Mendoza and Barrientos (2018). These
+  reconstructions also share formalism and notation, so it was
+  possible to combine them into a large theoretical holon.
+
+More detailed information in Mariana Espinosa's PhD thesis (in
 Spanish) ["Visualizaciones de redes conceptuales de teorías del
 espacio-tiempo y la
-gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
+gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022),
+and [an article in english
+here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 
 #### [Get your Gravity Apple Tree and more... here!](https://marianaespinosa.blogspot.com/p/blog-page.html)
 
 This site has been optimized for Mozilla Firefox and Google Chrome.
 
 
-### Concept Network for Protophysics
+### Protophysics
 
 ```{ .json .config }
 {
@@ -131,10 +169,14 @@ This site has been optimized for Mozilla Firefox and Google Chrome.
 }
 ```
 
-Data collected from Mario Bunge's *"Foundations of physics"* (1967).
+Physical theories have been developed thanks to various mathematical
+theories, logic, semantics and a series of very general assumptions
+and theories that in *Foundations of Physics* (1967), Mario Bunge
+divides into three groups: the formal base, the material base which he
+calls protophysics, and certain "zerological" principles.
 
 
-### Concept Network for Analytical Dynamics
+### Analytical Dynamics
 
 ```{ .json .config }
 {
@@ -144,29 +186,15 @@ Data collected from Mario Bunge's *"Foundations of physics"* (1967).
 }
 ```
 
-Data collected from Mario Bunge's *"Foundations of physics"* (1967).
+This lattice compares Newtonian theory with theories of analytical
+dynamics, which speak not of particles, but of physical systems and
+the evolution of their states. These theories are partially
+interpreted and can be applied to different domains. The data comes
+from a table on page 123 of the book *Foundations of Physics* (1967)
+by Mario Bunge.
 
 
-### Concept Network for Space-time Theories
-
-```{ .json .config }
-{
-  "template": "diagram-page.tt",
-  "output": "theories-en/spacetimes/index.html",
-  "nav_lang": "theories-es/spacetimes/index.html"
-}
-```
-
-Physical theories, and scientific knowledge in general, are based on
-more fundamental theories and poses a hierarquical structure. General
-theories specialize in order to describe the world in more
-detail. Here I present some conceptual networks obtained from a formal
-concept analysis (FCA). The database was set up from Michael
-Friedman's classification in *"Foundations of Space-Time Theories:
-Relativistic Physics and Philosophy of Science"*.
-
-
-### Concept Network for Basic Theories
+### Basic Theories
 
 ```{ .json .config }
 {
@@ -176,10 +204,36 @@ Relativistic Physics and Philosophy of Science"*.
 }
 ```
 
-Data collected from Mario Bunge's *"Foundations of physics"* (1967).
+In *"Foundations of Physics"* (1967), Mario Bunge axiomatizes six
+physical theories, and some variants, of which we have taken five:
+Particle Mechanics and Continuum Mechanics, Classical
+Electromagnetism, Relativistic Kinematics and General Relativity. This
+network reflects Bunge's additive style that posits special relativity
+as prior and fundamental to General Relativity. Compare its location
+with the network of classical theories that has a sustractive
+approach.
 
 
-### Concept Network for Classical Gravitation Theories
+### Space-time Theories
+
+```{ .json .config }
+{
+  "template": "diagram-page.tt",
+  "output": "theories-en/spacetimes/index.html",
+  "nav_lang": "theories-es/spacetimes/index.html"
+}
+```
+
+This is the ice-berg lattice, the upper tip of the holon of
+theories. It takes only the geometric and topological elements to
+relate various space-time models. The data comes from the book
+*"Foundations of Space-Time Theories: Relativistic Physics and
+Philosophy of Science"* by Michael Friedman, as well as the
+classification of Niels Dewar (2016, 2018) and Sotiriou and Farahoni
+(2010).
+
+
+### Classical Theories
 
 ```{ .json .config }
 {
@@ -189,16 +243,22 @@ Data collected from Mario Bunge's *"Foundations of physics"* (1967).
 }
 ```
 
-Physical theories, and scientific knowledge in general, are based on
-more fundamental theories and poses a hierarquical structure. General
-theories specialize in order to describe the world in more
-detail. Here I present some conceptual networks obtained from a formal
-concept analysis (FCA). The database was set up from Michael
-Friedman's classification in *"Foundations of Space-Time Theories:
-Relativistic Physics and Philosophy of Science"*.
+P. Havas (1964) showed that Newtonian theory can be formulated in
+4D. Michael Friedman took advantage of this result to characterize it,
+along with eight other classic theories in his book *Foundations of
+Space-time Theories: Relativistic Physics and Philosophy of
+Science*. It is a subtractive reconstruction where the most general
+geometric properties are restricted, as is the case of the curvature
+of the Riemann tensor. Note that the physical models are located at
+the bottom, leaving Special Relativity as a subconcept of General
+Relativity. Previous space-time models are located in the middle
+part. The upper part is dominated by topology, geometric objects and
+their characterizations, as detailed in the Space-Time Theories
+lattice. Find here a case of theorization and another of
+specialization.
 
 
-### Concept Network for Metric Theories of Gravitation
+### Metric Theories of Gravitation
 
 ```{ .json .config }
 {
@@ -208,15 +268,18 @@ Relativistic Physics and Philosophy of Science"*.
 }
 ```
 
-Physical theories, and scientific knowledge in general, are based on
-very fundamental theories and concepts, and possess a hierarquical
-structure. General theories specialize in order to describe the world
-in more detail. Here I present some concept lattices obtained using
-formal concept analysis (FCA). This database was set up from Clifford
-Will's book: *"Theory and Experiment in Gravitational Physics"*.
+Metric theories were developed in the 1950s, 1960s, and 1970s in the
+context of space exploration, experiments with radio waves, quantum
+technology and high-precision astronomical observations of highly
+energetic objects such as quasars. These were classified by Clifford
+Will in his book *"Theory and Experiment in Gravitational Physics"*
+(1993). The tables on page 117 and the "cookbook" in chapter 5 are
+sources for this lattice. An alternating lattice classifies metric
+theories based on their post-Newtonian parameters (p. 115). Locate the
+viable theories from the non-viable ones.
 
 
-### Concept Network for f(R) Gravitation Theories
+### f(R) Gravitation Theories
 
 ```{ .json .config }
 {
@@ -226,16 +289,20 @@ Will's book: *"Theory and Experiment in Gravitational Physics"*.
 }
 ```
 
-Physical theories, and scientific knowledge in general, are based on
-more fundamental theories and poses a hierarquical structure. General
-theories specialize in order to describe the world in more
-detail. Here I present some concept networks obtained using formal
-concept analysis (FCA). The database was set up from several formal
-classifications, including Thomas P. Sotiriou and Valerio Faraoni's
-article: *"f(R) theories of gravity"*.
+The f(R) theories gained interest since the 1980s when it was proposed
+to model the inflation scenarios with higher order Ricci scalar
+functions, so that singularities were avoided. It sought to preserve
+the same principles with which General Relativity was formulated: the
+principle of strong equivalence, the movement of particles following
+space-time geodesics and without adding extra fields, which is why
+they are considered “pure” metric theories. The formal context is
+based on the article by Thomas P. Sotiriou and Valerio Faraoni, *"f(R)
+theories of gravity"*. Note here that Einstein's equation is shared by
+two models. On the other hand, the action can be varied in two
+different ways, depending on the dependence of the variables.
 
 
-### Concept Network for Non-local MoNDian Gravitational Theories
+### Non-local MoNDian or Extended Theories
 
 ```{ .json .config }
 {
@@ -245,14 +312,16 @@ article: *"f(R) theories of gravity"*.
 }
 ```
 
-Non-local theories assume mass as a function of density. The database
-was set up from Barrientos and Mendoza's work on extended metric and
-palatini theories (2016, 2018); Carranza, Mendoza and Torres (2018);
-Bernal et al (2012), and Sotiriou and Faraoni's article: *"f(R)
-theories of gravity"*.
+Four models of the extended gravitation theory that take the Milgrom
+constant as fundamental (Modified Gravity Theories (MoND)) are
+presented as an alternative to the dark matter hypothesis. Two of them
+are non-local and assume mass as a function of density. Data obtained
+from the work of Barrientos and Mendoza in metric and extended
+platinum theories (2016, 2018); Carranza, Mendoza and Torres (2018);
+and the article by Sotiriou Faraoni, *"f(R) theories of gravity"*.
 
 
-### Concept Lattice for a Holon of Gravitational Theories
+### Holon of Gravitational Theories
 
 ```{ .json .config }
 {
@@ -262,12 +331,18 @@ theories of gravity"*.
 }
 ```
 
-A holon is a network of theoretical networks, showing interconections
-between distant theories. This holon comprises all the networks
-previously presented. The database was set up from several formal
-classifications, including Thomas P. Sotiriou and Valerio Faraoni's
-article: *"f(R) theories of gravity"* and Michael Friedman's
-classification in *"Foundations of Space-Time Theories: Relativistic
-Physics and Philosophy of Science"*, Clifford Will's Book *"Theory and
-Experiment on Gravitational Physics"*, and Sergio Mendoza's non-local
-theories.
+A holon is a theoretical network that interrelates many kinds of
+theories. This holon seeks to bring together several of the lattices
+presented in the Exploratorium that comply with the same formalism and
+notation: supported by the same topology, a covariant formalism and
+coordinate-free notation. The data considers the classification of
+Thomas P. Sotiriou and Valerio Faraoni in *"f(R) theories of
+gravity"*, in the classification of Michael Friedman in *Foundations
+of Space-Time Theories: Relativistic Physics and Philosophy of
+Science*, in Clifford Will's classification in *Theory and Experiment
+on Gravitational Physics*, and in the articles by Sergio Mendoza et
+al. (2013, 2016, 2018) on extended local and non-local
+theories. Locate groups of theories, for example: those that follow a
+geodesic, those that have curvature = 0, or the node that selects
+metric theories only. What model would that node correspond to?
+Observe the theoretical evolution from left to right.

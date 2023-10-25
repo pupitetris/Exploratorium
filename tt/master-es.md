@@ -30,7 +30,8 @@ Exploratorium de teorías del espacio-tiempo
 ## Author
 
 por Mariana Espinosa Aldama y Arturo Espinosa Aldama\
-con apoyo del Semirario Remo y la UAM - Cuajimalpa
+con apoyo del Semirario REMO y la Universidad Autónoma Metropolitana -
+Cuajimalpa
 
 
 ## Menu
@@ -81,23 +82,27 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 
 #### Qué hacer:
 
-- Explora ocho redes teóricas y un holón con más de 50 teorías del espacio-tiempo y la gravitación.
-- Ubica grupos de teorías de interés, sus fundamentos y clases de modelos.
+- Explora ocho redes teóricas y un holón con más de 50 teorías del
+  espacio-tiempo y la gravitación.
+- Ubica grupos de teorías de interés, sus fundamentos y clases de
+  modelos.
 - Aprende la lógica de las redes jerárquicas.
-- Familiarizate con la estructura conceptual mediante retículos parciales.
+- Familiarízate con la estructura conceptual de las teorías físicas
+  mediante retículos parciales.
 - Consulta información al picar sobre las etiquetas.
 - Compara las reconstrucciones sustractivas de las aditivas.
 - Encuentra relaciones de teorización y especialización.
 - Haz zoom-in, zoom-out o arrastra la red.
 - Resalta subconceptos y supraconceptos.
-- Explora mediante hipervínculos. 
+- Explora mediante hipervínculos y adquiere una visión de conjunto.
 - Identifica el retículo "pico del iceberg".
-- Mueve los nodos para reacomodar la red.
-- Guarda tus propias configuraciones.
-- Resalta nodos específicos y encuentra algunos especialmente interesantes.
+- Mueve los nodos para reacomodar la red y guarda tus propias
+  configuraciones.
+- Resalta nodos específicos y encuentra algunos especialmente
+  interesantes.
 - Acompaña las lecturas fuente con este macroscopio.
 - Adquiere una visión de conjunto.
-- Sospecha de nuestros resultados y discute con tus colegas.
+- Cuestiona nuestros resultados y discute con tus colegas.
 - Conoce la metodología del Análisis de Conceptos Formales (FCA).
 - Descarga los contextos y consulta las fuentes.
 - Descarga las redes y el Manzano de la Gravitación.
@@ -106,25 +111,26 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 #### En el Exploratorium, nos apasiona desentrañar la estructura semántica de las teorías físicas a través de visualizaciones de redes interactivas e hipervinculadas.
 
 Las teorías físicas axiomatizadas, son sistemas conceptuales generados
-a partir de deducciones lógicas; Objetos complejos con diferentes
-tipos de componentes relacionados con otros componentes en un entorno
-determinado. La estructura es el conjunto de relaciones entre los
-componentes (estructura interna) y los componentes del entorno
-(estructura externa). Las teorías tienen una estructura interna
-jerárquica que se puede visualizar usando retículos. Los retículos son
-una clase de red con varias propiedades, como ser conjuntos ordenados
-con un componente superior e inferior único para cada par de nodos de
-la red. Los retículos teóricos muestran los componentes fundamentales
-comunes a la mayoría de las teorías, hubicados en la parte superior, como la
-protofísica, las propiedades topológicas o geométricas. Los modelos actuales y 
+a partir de deducciones lógicas de un conjunto de premisas; objetos
+complejos con diferentes tipos de componentes relacionados con otros
+componentes en un entorno determinado. La estructura es el conjunto de
+relaciones entre los componentes (estructura interna) y los
+componentes del entorno (estructura externa). Las teorías tienen una
+estructura interna jerárquica que se puede visualizar usando
+retículos. Los retículos son una clase de red con varias propiedades,
+como ser conjuntos ordenados con un componente superior e inferior
+único para cada par de nodos de la red. Los retículos teóricos
+muestran los componentes fundamentales comunes a la mayoría de las
+teorías, hubicados en la parte superior, como la protofísica, las
+propiedades topológicas o geométricas. Los modelos actuales y
 especializados, por otro lado, se encuentran en los niveles inferiores
 del retículo.
 
-Nuestro objetivo es proporcionar herramientas visuales interactivas
-que nos ayuden a comprender la complejidad de las teorías físicas y
-las relaciones entre los componentes fundamentales. Estos macroscopios
-funcionan como mapas conceptuales para estudiantes y curiosos que
-navegan en el mar conceptual de la física teórica.
+Nuestro **objetivo** es proporcionar herramientas visuales
+interactivas que nos ayuden a comprender la complejidad de las teorías
+físicas y las relaciones entre los componentes fundamentales. Estos
+macroscopios funcionan como mapas conceptuales para estudiantes y
+curiosos que navegan en el mar conceptual de la física teórica.
  
 #### Metodología
 
@@ -190,7 +196,13 @@ Este retículo compara la teoría newtoniana con las teorías de dinámica anal�
 }
 ```
 
-En *"Foundations of Physics"* (1967), Mario Bunge axiomatiza seis teorías físicas, y algunas variantes, de las cuales hemos tomado cinco: la Mecánica de partículas y la Mecánica del contínuo, el Electromagnetismo clásico, la Cinemática relativista y la Relatividad general. Esta red refleja el estilo aditivo de Bunge que plantea la relatividad especial como previa y fundamental para la Relatividad General. Compárese su localización con la red de teorías clásicas.
+En *"Foundations of Physics"* (1967), Mario Bunge axiomatiza seis
+teorías físicas, y algunas variantes, de las cuales hemos tomado
+cinco: la Mecánica de Partículas y la Mecánica del Contínuo, el
+Electromagnetismo Clásico, la Cinemática Relativista y la Relatividad
+General. Esta red refleja el estilo aditivo de Bunge que plantea la
+relatividad especial como previa y fundamental para la Relatividad
+General. Compárese su localización con la red de teorías clásicas.
 
 
 ### Teorías del espacio-tiempo
@@ -243,9 +255,18 @@ Las teorías métricas se desarrollaron en los años cincuenta, sesenta y setent
 }
 ```
 
-Las teorías f(R) cobraron interés desde los años 1980 cuando se propuso modelar los 
-escenarios de inflación con funciones del escalar de Richi de mayor orden, de manera que se evitaran las singularidades. Se buscó preservar los mismos principios con los cuales fue formulada la Relatividad General: el principio de equivalencia fuerte, el movimiento de partículas
-siguiendo geodésicas del espacio-tiempo y sin agregar campos extra, por lo que se les considera teorías métricas “puras”. El contexto formal está basado en el artículo de Thomas P. Sotiriou y Valerio Faraoni, *"f(R) theories of gravity"*. Nótese aquí que la ecuación de Einstein es compartida por dos modelos. Por otro lado, la acción puede variarse de dos formas distintas, según la dependencia de las variables.
+Las teorías f(R) cobraron interés desde los años 1980 cuando se
+propuso modelar los escenarios de inflación con funciones del escalar
+de Ricci de mayor orden, de manera que se evitaran las
+singularidades. Se buscó preservar los mismos principios con los
+cuales fue formulada la Relatividad General: el principio de
+equivalencia fuerte, el movimiento de partículas siguiendo geodésicas
+del espacio-tiempo y sin agregar campos extra, por lo que se les
+considera teorías métricas “puras”. El contexto formal está basado en
+el artículo de Thomas P. Sotiriou y Valerio Faraoni, *"f(R) theories
+of gravity"*. Nótese aquí que la ecuación de Einstein es compartida
+por dos modelos. Por otro lado, la acción puede variarse de dos formas
+distintas, según la dependencia de las variables.
 
 
 ### Teorías extendidas de gravitación
@@ -260,11 +281,12 @@ siguiendo geodésicas del espacio-tiempo y sin agregar campos extra, por lo que 
 
 Se presentan cuatro modelos de la teoría de gravitación extendida que
 toman la constante de Milgrom como fundamental (Teorías de gravedad
-modificada (MoND)) como alternativa a la hipótesis de la materia oscura. Dos de ellas son no locales y asumen la masa como
-una función de densidad. Datos obtenidos del trabajo de Barrientos y
-Mendoza en teorías métricas y a la platini extendidas (2016, 2018);
-Carranza, Mendoza y Torres (2018); y el artículo
-de Sotiriou Faraoni, *f(R) theories of gravity*.
+modificada (MoND)) como alternativa a la hipótesis de la materia
+oscura. Dos de ellas son no locales y asumen la masa como una función
+de densidad. Datos obtenidos del trabajo de Barrientos y Mendoza en
+teorías métricas y a la platini extendidas (2016, 2018); Carranza,
+Mendoza y Torres (2018); y el artículo de Sotiriou Faraoni, *"f(R)
+theories of gravity"*.
 
 
 ### Holón de teorías de gravitación
