@@ -30,7 +30,9 @@ SELECT name FROM sqlite_schema
     echo "-- View: $view"
     echo "DROP VIEW IF EXISTS $view;"
     echo
-    sqlite3 $DBFILE ".schema $view"
+    sqlite3 $DBFILE ".schema $view" |
+      pg_format -U 0 -L -T |
+      sed 's/ \(ON\) /\n\t\t\1 /g'
     echo
     echo
   done
