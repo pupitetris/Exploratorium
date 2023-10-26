@@ -146,9 +146,23 @@ jerárquicamente y les representa como redes reticulares.
 
 Cada retículo conceptual presentado aquí se basa en alguna reconstrucción formal. Hemos encontrado dos tipos de reconstrucciones: 
 
-- **Aditiva**, que plantea una variedad diferencial muy empobrecida para ir enriqueciéndola con propiedades geométricas, camino propuesto por Bernhard Riemann y encontrado en las axiomatizaciones de Mario Bunge (1967), quien da peso al factor temporal y físico al determinar el nivel fundamental de los conceptos, y de donde obtuvimos los retículos titulados "Protofísica", "Dinámica Analítica" y "Teorías Básicas". 
-- **Sustractiva**, propuesta por Felix Klein, inicia con una variedad diferencial dotada de muchas propiedades muy generales que se van constriñendo conforme se requiere. Es el camino encontrado en las clasificaciones de Michael Friedman (1983) de "Teorías del Espacio-Tiempo" y "Teorías Clásicas", la clasificación de Clifford Will (1981) de las "Teorías Métricas", de Sotiriou y Faraoni (2010) de las "Teorías f(R)", y las "Teorías Extendidas" de Mendoza y Barrientos (2018). Estas reconstrucciones también comparten formalismo y notación, por lo que fue posible conjugarlas en un gran holón teórico.
-
+- **Aditiva**, que plantea una variedad diferencial muy empobrecida
+  para ir enriqueciéndola con propiedades geométricas, camino
+  propuesto por Bernhard Riemann y encontrado en las axiomatizaciones
+  de Mario Bunge (1967), quien da peso al factor temporal y físico al
+  determinar el nivel fundamental de los conceptos, y de donde
+  obtuvimos los retículos titulados "Protofísica", "Dinámica
+  Analítica" y "Teorías Básicas".
+- **Sustractiva**, propuesta por Felix Klein, inicia con una variedad
+  diferencial dotada de muchas propiedades muy generales que se van
+  constriñendo conforme se requiere. Es el camino encontrado en las
+  clasificaciones de Michael Friedman (1983) de "Teorías del
+  Espacio-Tiempo" y "Teorías Clásicas", la clasificación de Clifford
+  Will (1981) de las "Teorías Métricas", de Sotiriou y Faraoni (2010)
+  de las "Teorías f(R)", y las "Teorías Extendidas" de Mendoza y
+  Barrientos (2018). Estas reconstrucciones también comparten
+  formalismo y notación, por lo que fue posible conjugarlas en un gran
+  holón teórico.
 
 Información más detallada en la tesis doctoral de Mariana Espinosa
 Aldama: ["Visualizaciones de redes conceptuales de teorías del
