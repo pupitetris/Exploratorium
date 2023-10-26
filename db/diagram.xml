@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- SQL XML created by WWW SQL Designer, https://github.com/ondras/wwwsqldesigner/ -->
+<sql>
+  <datatypes db="sqlite">
+	  <group label="Affinity">
+		  <type label="Text" default="" length="1" sql="TEXT" quote="'" color="rgb(255,200,200)"/>
+		  <type label="Numeric" default="0" length="0" sql="NUMERIC" quote="" color="rgb(238,238,170)"/>
+		  <type label="Integer" default="0" length="0" sql="INTEGER" quote="" color="rgb(238,238,170)"/>
+		  <type label="Real" default="0" length="0" sql="REAL" quote="" color="rgb(238,238,170)"/>
+		  <type label="None" default="" length="0" sql="NONE" quote="" color="rgb(200,255,200)"/>
+	  </group>
+  </datatypes>
+  <table x="1076" y="268" name="attribute">
+    <row name="attribute_id" null="0" autoincrement="1">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="attribute_diagram" row="attribute_id" />
+    </row>
+    <row name="formula" null="1" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>NULL</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>attribute_id</part>
+    </key>
+  </table>
+  <table x="540" y="456" name="attr_class">
+    <row name="attr_class_id" null="0" autoincrement="1">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+    </row>
+    <row name="code" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+    </row>
+    <row name="ord" null="1" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>attr_class_id</part>
+    </key>
+    <key type="UNIQUE" name="">
+      <part>code</part>
+    </key>
+    <key type="UNIQUE" name="">
+      <part>ord</part>
+    </key>
+  </table>
+  <table x="1076" y="472" name="diagram">
+    <row name="diagram_id" null="0" autoincrement="1">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="attribute_diagram" row="diagram_id" />
+    </row>
+    <row name="diagram_class_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="diagram_class" row="diagram_class_id" />
+    </row>
+    <row name="code" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>diagram_id</part>
+    </key>
+    <key type="UNIQUE" name="">
+      <part>code</part>
+    </key>
+  </table>
+  <table x="1417" y="561" name="attribute_diagram">
+    <row name="attribute_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="object_attribute" row="attribute_id" />
+    </row>
+    <row name="diagram_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="object_attribute" row="attr_diagram_id" />
+    </row>
+    <key type="PRIMARY" name="">
+      <part>attribute_id</part>
+      <part>diagram_id</part>
+    </key>
+  </table>
+  <table x="39" y="298" name="lang">
+    <row name="lang_code" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+    </row>
+    <row name="lang_label" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>lang_code</part>
+    </key>
+    <key type="UNIQUE" name="">
+      <part>lang_label</part>
+    </key>
+  </table>
+  <table x="295" y="284" name="attribute_desc">
+    <row name="attribute_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="attr_diagram_class" row="attribute_id" />
+    </row>
+    <row name="diagram_class_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="attr_diagram_class" row="diagram_class_id" />
+    </row>
+    <row name="lang_code" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+      <relation table="lang" row="lang_code" />
+    </row>
+    <row name="label" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+    </row>
+    <row name="title" null="1" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>NULL</default>
+    </row>
+    <row name="explanation" null="1" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>NULL</default>
+    </row>
+    <row name="obs" null="1" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>NULL</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>attribute_id</part>
+      <part>diagram_class_id</part>
+      <part>lang_code</part>
+    </key>
+    <key type="UNIQUE" name="">
+      <part>lang_code</part>
+      <part>label</part>
+    </key>
+  </table>
+  <table x="293" y="559" name="attr_class_desc">
+    <row name="attr_class_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="attr_class" row="attr_class_id" />
+    </row>
+    <row name="lang_code" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+      <relation table="lang" row="lang_code" />
+    </row>
+    <row name="title" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>attr_class_id</part>
+      <part>lang_code</part>
+    </key>
+  </table>
+  <table x="1075" y="63" name="object">
+    <row name="object_id" null="0" autoincrement="1">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+    </row>
+    <row name="code" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>object_id</part>
+    </key>
+    <key type="UNIQUE" name="">
+      <part>code</part>
+    </key>
+  </table>
+  <table x="1452" y="121" name="object_diagram">
+    <row name="object_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="object" row="object_id" />
+      <relation table="object_attribute" row="object_id" />
+    </row>
+    <row name="diagram_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="diagram" row="diagram_id" />
+      <relation table="object_attribute" row="object_diagram_id" />
+    </row>
+    <key type="PRIMARY" name="">
+      <part>object_id</part>
+      <part>diagram_id</part>
+    </key>
+  </table>
+  <table x="1435" y="332" name="object_attribute">
+    <row name="object_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+    </row>
+    <row name="object_diagram_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+    </row>
+    <row name="attribute_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+    </row>
+    <row name="attr_diagram_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+    </row>
+    <row name="x" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>1</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>object_id</part>
+      <part>object_diagram_id</part>
+      <part>attribute_id</part>
+      <part>attr_diagram_id</part>
+    </key>
+  </table>
+  <table x="296" y="56" name="object_desc">
+    <row name="object_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="object" row="object_id" />
+    </row>
+    <row name="lang_code" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+      <relation table="lang" row="lang_code" />
+    </row>
+    <row name="label" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>object_id</part>
+      <part>lang_code</part>
+    </key>
+    <key type="UNIQUE" name="">
+      <part>label</part>
+      <part>lang_code</part>
+    </key>
+  </table>
+  <table x="544" y="604" name="diagram_class">
+    <row name="diagram_class_id" null="0" autoincrement="1">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+    </row>
+    <row name="code" null="0" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>'NULL'</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>diagram_class_id</part>
+    </key>
+    <key type="UNIQUE" name="">
+      <part>code</part>
+    </key>
+  </table>
+  <table x="783" y="374" name="attr_diagram_class">
+    <row name="attribute_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="attribute" row="attribute_id" />
+    </row>
+    <row name="diagram_class_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="diagram_class" row="diagram_class_id" />
+    </row>
+    <row name="attr_class_id" null="0" autoincrement="0">
+      <datatype>INTEGER</datatype>
+      <default>NULL</default>
+      <relation table="attr_class" row="attr_class_id" />
+    </row>
+    <row name="reference" null="1" autoincrement="0">
+      <datatype>TEXT</datatype>
+      <default>NULL</default>
+    </row>
+    <key type="PRIMARY" name="">
+      <part>attribute_id</part>
+      <part>diagram_class_id</part>
+    </key>
+  </table>
+</sql>
