@@ -401,3 +401,84 @@ text {
     transform: rotate(45deg);
   }
 }
+
+html {
+	--link-width: 3px;
+	--node-stroke-width: 3px;
+}
+
+.textbox-box.box-Action {
+	--fill: #f78383;
+}
+
+.textbox-box.box-Chronogeometrical {
+	--fill: #825238;
+}
+
+.textbox-box.box-Cond {
+	--fill: #7e7c1d;
+}
+
+.textbox-box.box-Cosmo {
+	--fill: #674ea7;
+}
+
+.textbox-box.box-ElemDis {
+	--fill: #4cdbd7;
+}
+
+.textbox-box.box-Family {
+	--fill: #f0ae2b;
+}
+
+.textbox-box.box-FB {
+	--fill: #753917;
+}
+
+.textbox-box.box-FieldEq {
+	--fill: #ce2a24;
+}
+
+.textbox-box.box-Frames {
+	--fill: #2f671d;
+}
+
+.textbox-box.box-Function {
+	--fill: #bdbdbd;
+}
+
+.textbox-box.box-GO {
+	--fill: #f0ae2b;
+}
+
+.textbox-box.box-M {
+	--fill: #753917;
+}
+
+.textbox-box.box-MB {
+	--fill: #1c838b;
+}
+
+.textbox-box.box-MovEq {
+	--fill: #1b838b;
+}
+
+.textbox-box.box-Postulates {
+	--fill: #f78383;
+}
+
+.textbox-box.box-Referents {
+	--fill: #b4b029;
+}
+
+.textbox-box.box-Typ {
+	--fill: #ed6107;
+}
+
+.textbox-box.box-Transformation {
+	--fill: #1f61a2;
+}
+
+.textbox-box.box-Z {
+	--fill: #f4ab4e;
+}
