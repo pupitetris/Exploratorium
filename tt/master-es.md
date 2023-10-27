@@ -135,16 +135,20 @@ curiosos que navegan en el mar conceptual de la física teórica.
 #### Metodología
 
 Representamos teorías utilizando un enfoque basado en modelos y la
-teoría de conjuntos, siguiendo la corriente estructuralista de análisis
-metateórico de Balzer, Moulines y Sneed (2012). Las teorías están
-representadas por elementos teóricos conformados en parte por conjuntos de
-clases de modelos. En una tabla de incidencia o contexto formal
-(G,M,i) relacionamos clases de modelos con sus atributos (conjuntos de
-axiomas). El **Análisis de Conceptos Formales (FCA)** es una teoría matemática basada en la teoría de retículos de Birckoff y la conexión de Galois que y metodológica que recupera
-conceptos formales (pares ordenados conformados por una extensión e intensión) a partir de contextos formales, les relaciona
-jerárquicamente y les representa como redes reticulares. 
+teoría de conjuntos, siguiendo la corriente estructuralista de
+análisis metateórico de Balzer, Moulines y Sneed (2012). Las teorías
+están representadas por elementos teóricos conformados en parte por
+conjuntos de clases de modelos. En una tabla de incidencia o contexto
+formal (G,M,i) relacionamos clases de modelos con sus atributos
+(conjuntos de axiomas). El **Análisis de Conceptos Formales (FCA)** es
+una teoría matemática basada en la teoría de retículos de Birckoff y
+la conexión de Galois que y metodológica que recupera conceptos
+formales (pares ordenados conformados por una extensión e intensión) a
+partir de contextos formales, les relaciona jerárquicamente y les
+representa como redes reticulares.
 
-Cada retículo conceptual presentado aquí se basa en alguna reconstrucción formal. Hemos encontrado dos tipos de reconstrucciones: 
+Cada retículo conceptual presentado aquí se basa en alguna
+reconstrucción formal. Hemos encontrado dos tipos de reconstrucciones:
 
 - **Aditiva**, que plantea una variedad diferencial muy empobrecida
   para ir enriqueciéndola con propiedades geométricas, camino
@@ -184,7 +188,11 @@ Este sitio ha sido optimizado para Mozilla Firefox y Google Chrome.
 }
 ```
 
-Las teorías físicas se han desarrollado gracias a diversas teorías matemáticas, a la lógica, la semántica y a una serie de presupuestos y teorías muy generales que en *Foundations of Physics* (1967), Mario Bunge divide en tres grupos: la base formal, la base material a la que llama protofísica, y ciertos principios "zerológicos". 
+Las teorías físicas se han desarrollado gracias a diversas teorías
+matemáticas, a la lógica, la semántica y a una serie de presupuestos y
+teorías muy generales que en *Foundations of Physics* (1967), Mario
+Bunge divide en tres grupos: la base formal, la base material a la que
+llama protofísica, y ciertos principios "zerológicos".
 
 
 ### Teorías de dinámica analítica
@@ -197,7 +205,12 @@ Las teorías físicas se han desarrollado gracias a diversas teorías matemátic
 }
 ```
 
-Este retículo compara la teoría newtoniana con las teorías de dinámica analítica, que hablan no de partículas, sino de sistemas físicos y la evolución de sus estados. Estas teorías están parcialmente interpretadas y pueden aplicarse a distintos dominios. Los datos provienen de una tabla en la página 123 del libro *Foundations of Physics* (1967) de Mario Bunge.
+Este retículo compara la teoría newtoniana con las teorías de dinámica
+analítica, que hablan no de partículas, sino de sistemas físicos y la
+evolución de sus estados. Estas teorías están parcialmente
+interpretadas y pueden aplicarse a distintos dominios. Los datos
+provienen de una tabla en la página 123 del libro *Foundations of
+Physics* (1967) de Mario Bunge.
 
 
 ### Teorías básicas
@@ -229,7 +242,13 @@ General. Compárese su localización con la red de teorías clásicas.
 }
 ```
 
-Éste es el retículo ice-berg, la punta superior del holón de teorías. Toma solamente los elementos geométricos y topológicos para relacionar varios modelos de espacio-tiempos. Los datos provienen del libro *"Foundations of Space-Time Theories: Relativistic Physics and Philosophy of Science"* de Michael Friedman, así como de la clasificación de Niels Dewar (2016, 2018) y de Sotiriou y Farahoni (2010).
+Éste es el retículo ice-berg, la punta superior del holón de
+teorías. Toma solamente los elementos geométricos y topológicos para
+relacionar varios modelos de espacio-tiempos. Los datos provienen del
+libro *"Foundations of Space-Time Theories: Relativistic Physics and
+Philosophy of Science"* de Michael Friedman, así como de la
+clasificación de Niels Dewar (2016, 2018) y de Sotiriou y Farahoni
+(2010).
 
 
 ### Teorías clásicas
@@ -242,7 +261,20 @@ General. Compárese su localización con la red de teorías clásicas.
 }
 ```
 
-P. Havas (1964) mostró que la teoría newtoniana puede formularse en 4D. Michael Friedman aprovechó este resultado para caracterizarla, junto con otras ocho teorías clásicas en su libro *Foundations of Space-time Theories: Relativistic Physics and Philosophy of Science*. Se trata de una reconstrucción sustractiva en donde las propiedades geométricas más generales se van restringiendo, como es el caso de la curvatura del tensor de Riemann. Obsérvese que los modelos físicos quedan ubicados en la parte inferior, quedando la Relatividad Especial como un subconcepto de la Relatividad General. Los modelos previos de espacio-tiempo quedan ubicados en la parte media. La parte superior está dominada por la topología, los objetos geométricos y sus caracterizaciones, como se detalla en el retículo de Teorías del Espacio-Tiempo. Encuentra aquí un caso de teorización y otro de especialización.
+P. Havas (1964) mostró que la teoría newtoniana puede formularse en
+4D. Michael Friedman aprovechó este resultado para caracterizarla,
+junto con otras ocho teorías clásicas en su libro *Foundations of
+Space-time Theories: Relativistic Physics and Philosophy of
+Science*. Se trata de una reconstrucción sustractiva en donde las
+propiedades geométricas más generales se van restringiendo, como es el
+caso de la curvatura del tensor de Riemann. Obsérvese que los modelos
+físicos quedan ubicados en la parte inferior, quedando la Relatividad
+Especial como un subconcepto de la Relatividad General. Los modelos
+previos de espacio-tiempo quedan ubicados en la parte media. La parte
+superior está dominada por la topología, los objetos geométricos y sus
+caracterizaciones, como se detalla en el retículo de Teorías del
+Espacio-Tiempo. Encuentra aquí un caso de teorización y otro de
+especialización.
 
 
 
@@ -256,7 +288,16 @@ P. Havas (1964) mostró que la teoría newtoniana puede formularse en 4D. Michae
 }
 ```
 
-Las teorías métricas se desarrollaron en los años cincuenta, sesenta y setenta en el contexto de la exploración espacial, de experimentos con ondas de radio y tecnología cuántica y de observaciones astronómicas de gran presición de objetos muy energéticos como los quasares. Éstas fueron clasificadas por Clifford Will en su libro *"Theory and Experiment in Gravitational Physics"* (1993). Las tablas en la página 117 y el "recetario" del capítulo 5 son fuente de este retículo.  Un retículo alterno clasifica las teorías métricas en base a sus parámetros postnewtonianos (p. 115). Ubica las teorías viables de las no viables. 
+Las teorías métricas se desarrollaron en los años cincuenta, sesenta y
+setenta en el contexto de la exploración espacial, de experimentos con
+ondas de radio y tecnología cuántica y de observaciones astronómicas
+de gran presición de objetos muy energéticos como los quasares. Éstas
+fueron clasificadas por Clifford Will en su libro *"Theory and
+Experiment in Gravitational Physics"* (1993). Las tablas en la página
+117 y el "recetario" del capítulo 5 son fuente de este retículo.  Un
+retículo alterno clasifica las teorías métricas en base a sus
+parámetros postnewtonianos (p. 115). Ubica las teorías viables de las
+no viables.
 
 
 ### Teorías f(R) de gravitación
@@ -324,5 +365,9 @@ theories of gravity"*, en la clasificación de Michael Friedman en
 Philosophy of Science"*, en la clasificación de Clifford Will en
 *"Theory and Experiment on Gravitational Physics"*, y en los artículos
 de Sergio Mendoza et al. (2013, 2016, 2018) sobre teorías extendidas
-locales y no locales. Ubica grupos de teorías, por ejemplo: aquellas que siguen una geodésica, las que tienen curvatura = 0, o el nodo que selecciona a las teorías métricas solamente. ¿A qué modelo correspondería ese nodo? Observa la evolución teórica de izquierda a derecha.
+locales y no locales. Ubica grupos de teorías, por ejemplo: aquellas
+que siguen una geodésica, las que tienen curvatura = 0, o el nodo que
+selecciona a las teorías métricas solamente. ¿A qué modelo
+correspondería ese nodo? Observa la evolución teórica de izquierda a
+derecha.
 
