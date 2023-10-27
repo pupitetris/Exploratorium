@@ -12,6 +12,6 @@ DBFILE=exploratorium.db
 [ -e $DBFILE ] && mv -f $DBFILE $DBFILE.bak
 
 sqlite3 $DBFILE < ddl.sql &&
-  sqlite3 $DBFILE < data_init.sql
+  sqlite3 $DBFILE < data.sql
 
 ./gen_diagram_catalogs.sh $DBFILE

@@ -15,7 +15,7 @@ SELECT name FROM sqlite_schema
     echo "-- Table: $table"
     echo "DELETE FROM $table;"
     echo
-    sqlite3 $DBFILE ".mode insert" "SELECT * FROM $table"
+    sqlite3 $DBFILE ".mode insert $table" "SELECT * FROM $table"
     echo
     echo
   done
