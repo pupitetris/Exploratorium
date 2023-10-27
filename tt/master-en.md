@@ -140,7 +140,7 @@ reconstruction. We have found two types of reconstructions:
 - **Subtractive**, proposed by Felix Klein, begins with a differential
   manifold endowed with many very general properties that are
   constrained as required. It is the path found in Michael Friedman's
-  (1983\) classifications of "Space-Time Theories" and "Classical
+  (1983) classifications of "Space-Time Theories" and "Classical
   Theories", Clifford Will's (1981) classification of "Metric
   Theories", Sotiriou and Faraoni (2010) the "f(R) Theories", and the
   "Extended Theories" of Mendoza and Barrientos (2018). These

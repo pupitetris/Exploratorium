@@ -317,7 +317,7 @@ singularidades. Se buscó preservar los mismos principios con los
 cuales fue formulada la Relatividad General: el principio de
 equivalencia fuerte, el movimiento de partículas siguiendo geodésicas
 del espacio-tiempo y sin agregar campos extra, por lo que se les
-considera teorías métricas “puras”. El contexto formal está basado en
+considera teorías métricas "puras". El contexto formal está basado en
 el artículo de Thomas P. Sotiriou y Valerio Faraoni, *"f(R) theories
 of gravity"*. Nótese aquí que la ecuación de Einstein es compartida
 por dos modelos. Por otro lado, la acción puede variarse de dos formas
