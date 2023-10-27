@@ -135,9 +135,7 @@ Ec. 34, 35|MovEq|Ecuación de movimiento|$\frac{dx^{\mu}}{ds^{2}}+\Gamma_{\nu\al
 Fuerza Gravitacional|MovEq|Fuerza Gravitacional|$mD_{T\sigma}T_{\sigma}=m(grad(\Phi))$|Las partículas afectadas sólo por fuerzas gravitacionales siguen curvas no geodésicas determinadas por el potencial gravitacional.|
 Ley Geodésica|MovEq|Ley Geodésica|$D_{T\sigma}T_{\sigma}=0$|Las partículas libres siguen las geodésicas de la línea tipo tiempo de la conexión.|
 <1,3>|Typ|Signatura del tensor métrico|$<1,3>$|La signatura contiene un índice positivo y tres negativos. Hay modelos con signatura distinta.|
-<3,0,1>|Typ|Signatura del tensor plano h|$<3,0,1>$|La signatura indica que tres índices son positivos y un negativo.|
 Dependiente|Typ|Dependencia entre variables||La conexión  $\Gamma_{\mu\nu}^{\lambda}$ y el tensor métrico $g_{\mu\nu}$ dependen uno del otro.|
 Independente|Typ|Independencia de variables||La conexión $\Gamma_{\mu\nu}^{\lambda}$ puede expresarse de forma independiente al tensor métrico $g_{\mu\nu}$.|
 N|Typ|Dimensión: $N=4$||La dimensión de un espacio vectorial es la cardinalidad de una base para la variedad diferenciable M.|
 Signatura no toda Positiva|Typ|Signatura no toda positiva||Para el tensor métrico: no definitivamente positiva: $<-,+,+,+>$ o $<+,-,-,->$|
-Signatura Positiva|Typ|Signatura positiva||Para el tensor métrico: definitivamente positiva.|

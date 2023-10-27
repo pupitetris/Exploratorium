@@ -1,143 +1,37 @@
 Attribute|Class|Title|Formula|Explanation|Reference
-Acción General|Action|Acción general métrica|$S=\int\left[k_{1}F\left(R,\mathcal{L_{M}}\right)+k_{2}\mathcal{L_{M}}\right]\sqrt{-g}d^{4}x$||
-Acción General a la Palatini|Action|Acción general a la Palatini|$S=\int\left[k_{1}F\left(\Re,\mathcal{L_{M}}\right)+k_{2}\mathcal{L_{M}}\right]\sqrt{-g}d^{4}x$||
-Ec. 13|Action|Acción a la Palatini|$S_{pal}=\frac{1}{2\kappa}\intop d^{4}x\sqrt{-g}f(\Re)+S_{M}(g_{\mu\nu},\psi)$|La métrica y la conexión son independientes. No se varía sobre la conexión. Note que el nuevo tensor de Ricci es construido independientemente de la conexión: $\Re=g_{\mu\nu}R_{\mu\nu}$.|
-Ec. 5|Action|Acción total para la métrica $f(R)$.|$S_{met}=\frac{1}{2\kappa}\intop d^{4}x\sqrt{-g}f(R)+S_{M}(g_{\mu\nu},\psi)$||
-Ec. 5-30|Action|Acción para las teorías escalares-tensoriales|$\ensuremath{I=(16\pi)^{-1}\int\left[\phi R-\phi^{-1}w(\phi)g^{\mu\nu}\phi_{,\mu}\phi_{,\nu}+2\phi\lambda(\phi)\right]\times\left(-g\right)^{\frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{\mu\nu})}$||Will, 1993, p. 123
-Ec. 5-45|Action|Acción para las teorías vectoriales-tensoriales|$I=(16\pi G)^{-1}\int\left[R+wK_{\mu}K^{\mu}R+nK^{\mu}K^{\nu}R_{\mu\nu}-\epsilon F_{\mu\nu}F^{\mu\nu}+\tau K_{\mu;\nu}K^{\mu;\nu}\right]\left(-g\right)^{\frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{\mu\nu})$,<br>where $F_{\mu\nu}=K_{\nu;\mu}-K_{\mu;\nu}$||Will, 1993, p. 127 Eq 5.45
-Ec. 5-67|Action|Acción para la teoría bimétrica de Rosen|$I=-(16\pi G)^{-1}\int\eta^{\mu\nu}g^{\alpha\beta}g^{\gamma\delta}\left(g_{\alpha\gamma\mid\mu}g_{\beta\delta\mid\nu}-\frac{1}{2}g_{\alpha\beta\mid\mu}g_{\gamma\delta\mid\nu}\right)\times\left(-\eta\right)^{\frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{\mu\nu})$||Will, 1993, p. 131
-Ec. 5-73|Action|Acción para la teoría bimétrica de Rastall|$I=-(16\pi G)^{-1}\int F(N)K^{\mu;\nu}K_{\mu;\nu}\left(-g\right)^{\frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{\mu\nu})$||Will, 1993, p. 132
-Ec. 5-82|Action|Acción para las teorías bimétricas BSLL|$I=-(16\pi)^{-1}\int\left(aB^{\mu\nu\mid\alpha}B_{\mu\nu\mid\alpha}+fB_{,\alpha}B^{,\alpha}\right)\left(-n\right)^{\frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{\mu\nu})$||Will, 1993, p. 134
-Ec. 5-93|Action|Acción para las teorías estratificadas|$I=(8\pi)^{-1}\int\left[e^{-1}K^{\mu\mid\nu}K_{\mu\mid\nu}-\phi_{,\mu}\phi^{,\mu}-\left[f_{3}\left(\phi\right)+1\right]\left(\phi_{,\mu}t^{,\mu}\right)^{2}+\kappa_{1}B^{\mu\nu\mid\alpha}B_{\mu\nu\mid\alpha}+\kappa_{2}B_{\mid\nu}^{\mu\nu}\phi_{,\mu}\right]\left(-n\right)^{\frac{1}{2}}d^{4}x+I_{NG}(q_{A},g_{\mu\nu})$||Will, 1993, p. 136
-F(R*,Lm)|Action|||La acción es una función del escalar de Ricci afín y del Lagrangiano de materia.|
-F(R*,T)|Action|||La acción es una función del escalar de Ricci afín y la traza del tensor de estrés-energía-momento.|
-F(R,Lm)|Action|$F(R,L_{m})$||La acción es una función del escalar de Ricci y el Lagrangiano de materia.|
-F(R,T)|Action|$F(R,T)$||La acción es una función del escalar de Ricci y la traza del tensor de energía-momentum|
-SM1|Action||$S_{M}=S_{M}(g_{\mu\nu},\psi)$|Término de materia.|
-SM2|Action||$S_{M}=S_{M}(g_{\mu\nu},\Gamma_{\mu\nu}^{\lambda},\psi)$|Término afín de materia.|
 (dt ⊗ K) = 0|Cond|Constricción en la geometría temporal|$(dt\otimes K)_{1a2}=0$|Esta ecuación de campo impone restricciones a la geometría temporal, especificando que no es afectada por el tensor de curvatura de Riemann $K$|Will, 1983, p. 101
-Cte < 0|Cond|$cte<0$||El escalar de Ricci es constante y negativo en todos los puntos.|
-Cte > 0|Cond|$cte>0$||El escalar de Ricci es constante y positivo en todos los puntos.|
 Curvatura = 0|Cond|$Riem(\Gamma)=0$|$Riem(\Gamma)=0$|El tensor de curvatura de Riemann es cero en todo el espacio. En Will se le encuentra como “$K=0$”. La primer condición de homogeneidad de Trautman.|Friedman, 1983, p. 78, 88, 93, 129
 D(dt) = 0|Cond|$\overline{D}(dt)=0$|$\overline{D}(dt)=0$|La derivada covariante igual a cero asegura que los cortes de simultaneidad sean planos.|Friedman, 1983, p. 78, 88, 93, 101
 D(g) = 0|Cond|$\overline{D}(g)=0$|$\overline{D}(g)=0$|Condición que preserva ángulos y distancias cuando se transporta de forma paralela un vector a lo largo de una curva.|Friedman, 1983, p. 129, 180
 D(h) = 0|Cond|$\overline{D}(h)=0$|$\overline{D}(h)=0$|La derivada covariante de h describe la geometría euclidiana.|Friedman, 1983, p. 78, 88, 93, 101
 D(V) = 0|Cond|$\overline{D}(V)=0$|$\overline{D}(V)=0$|Que la derivada covariante de $V$ sea igual a cero hace que las líneas en el aparejo del espacio-tiempo sean geodésicas.|Friedman, 1983, p. 78
 dt(V) = 1|Cond|$dt(V)=1$||La derivada de V igual a 1 hace que las lineas de acordonamiento del espacio-tiempo sean tipo tiempo.|Friedman, 1983, p. 78,106
-e = 0|Cond|$\epsilon=0$|||Will, 1993, p. 117 Table 5.1, p. 129
-e = 1|Cond|$\epsilon=1$|||Will, 1993, p. 117 Table 5.1, p. 130
-f(R) = R|Cond|$f(R)=R$||La función dependiente del escalar de Ricci es de primer orden.|
-f(R) ≠ R|Cond|$f(R)≠R$||La función dependiente del escalar de Ricci es de orden superior.|
-f(R*) = R*|Cond|$f(R^{*})=R^{*}$||La función del escalar de Ricci afín es de primer orden.|
-f(R*) ≠ R*|Cond|$f(R^{*})\neq R^{*}$||La función del escalar de Ricci afín es de orden superior.|
-f’(R) =1|Cond|$f’(R)=1$||La primera derivada de la función dependiente del escalar de Ricci es igual a uno.|
-f’(R*) = 1|Cond|$f’(R^{*})=1$||La primera derivada del escalar de curvatura afín es igual a uno.|
-f’’(R) = 0|Cond|$f’’(R) =0$||La segunda derivada de la función del escalar de Ricci es cero|
-f’’(R) ≠ 0|Cond|$f’’(R)\neq 0$||La segunda derivada de la función del escalar de Ricci es distinto de cero.|
-f’’(R*) = 0|Cond|$f’’(R^{*})=0$||La segunda derivada de la función del escalar de Ricci afín es cero.|
-f’’(R*) ≠ 0|Cond|$f’’(R^{*})\neq0$||La segunda derivada de la función del escalar de Ricci afín es distinta de cero.|
 h(dt,w)=0|Cond|$h(dt,w)=0$|$h(dt,w)=0$|Condición de ortogonalidad que describe la geometría euclidiana.|Friedman, 1983, p. 78, 88, 101
 H2*K = H2*K|Cond||$H_{*}^{2}K(w,v,X,Y)=H_{*}^{2}K(v,w,Y,X)$||
-lambda = 0|Cond|$\lambda(\phi)=0$|||Will, 1993, p. 125
-Local|Cond|Localidad||La materia es una función puntual.|
-n = -2w|Cond|$n=-2w$|||Will, 1993, p. 117 Table 5.1, p. 130
-n = 0|Cond|$n=0$|||Will, 1993, p. 117 Table 5.1, p. 130
-No Local|Cond|No-localidad||La materia es una función de la densidad.|
-No-Metricidad = 0|Cond|No-metricidad = 0|$Q_{\mu\nu\lambda}=0$,|Segunda condición de homogeneidad de Trautman.|
-R = 0|Cond|$R=0$||El escalar de Ricci es cero.|
-R = Cte|Cond|$R=Cte$||El escalar de Ricci es constante.|
 T = 0|Cond|$T_{\mu\nu}\rightarrow0$: Polvo||El tensor de Estrés-Energía-Momentum es casi cero (modelos de polvo).|
-tau = 0|Cond|$\tau=0$||En este caso, no se impone ninguna restricción al campo vectorial.|Will, 1993, p. 117 Table 5.1, p. 127, 128
-tau = 1|Cond|$\tau=1$||Esto representa una restricción sobre el calibre del campo vectorial $k_{\mu}$ impuesta por la falta de invariancia de calibre total de la acción $I$.|Will, 1993, p. 117 Table 5.1, p. 127, 128
 Torsión = 0|Cond|$S_{\mu\nu}^{\lambda}=0$|$S_{\mu\nu}^{\lambda}=0$|El tensor de torsión de Cartan se desvanece. Condición de homogeneidad de Trautman|
-Vector de Weyl = 0|Cond|El vector de Weyl se desvanece|$Q_{\mu}=0$|La traza del tensor de no metricidad con respecto a sus dos últimos índices (simétricos) es igual a cero|
-w = 0|Cond|$w=0$|||
-w-inf|Cond|$w\rightarrow\infty$|||
-w’ = 0|Cond|$w’=0$|$w(\phi)\equiv constant$|$w(\phi)\equiv constant$|
-a, b, c, d|Cosmo|Parámetros de coincidencia cosmológica|$a$, $b$, $c$, $d$||Will, 1993, p. 117 Table 5.1, p. 135
-c0, c1|Cosmo|$C_{0}$, $C_{1}$: Parámetro Cosmológico|||Will, 1993, p. 131, 135
-K0|Cosmo|$K_{0}$: Parámetro de coincidencia cosmológica|||
-lambda|Cosmo|Función cosmológica $\lambda(\phi)$||$\lambda(\phi)$ provoca dos efectos: en la ecuación de campo para $g$ juega el mismo papel que la constante cosmológica en GR y, en la ecuación de campo, da a $(\phi)$ un rango l relacionado con $\lambda$, $w$ y sus derivados, en el sentido de que las soluciones para $(\phi)$ para un sistema aislado contienen términos tipo Yukawa $exp\left(-r/l\right)$|Will, 1993, p. 123
-Phi0|Cosmo|$\phi_{0}$: Parámetro de coincidencia cosmológica|||Will, 1993, p. 125
-w0, w1|Cosmo|$w_{0}$, $w_{1}$: Parámetros de coincidencia cosmológica|||
-a0|ElemDis|Constante de Milgrom||Escala de aceleración.|
-G 5-101|ElemDis|“Constante” Gravitacional|$G_{today}=c^{2}c_{1}^{\frac{1}{2}}c_{0}^{\frac{-3}{2}}(1+\kappa_{2}^{2}/4\kappa_{1})^{-1}=1$||
-G 5-38|ElemDis|“Constante” Gravitacional|$G_{today}\equiv\phi_{0}^{-1}\left(\frac{4+2w}{3+2w}\right)=1$||
-G 5-61|ElemDis|“Constante” Gravitacional|$G_{today}\equiv G\left[\frac{1}{2}\left(\gamma+1\right)+\frac{3}{2}wK^{2}\left(\gamma-1\right)-\frac{1}{2}\left(\eta-\tau\right)K^{2}\left(1+\sigma\right)\right]^{-1}=1$||
-G 5-63|ElemDis|“Constante” Gravitacional|$G_{today}=\frac{G}{(1+\frac{1}{2}K^{2})}=1$||
-G 5-65|ElemDis|“Constante” Gravitacional|$G_{today}=G\left[wK^{2}(\gamma+1)\right]^{-1}=1$||
-G 5-70|ElemDis|“Constante” Gravitacional|$G_{today}=G(c_{0}c_{1})^{\frac{1}{2}}=1$||
-G 5-89|ElemDis|Constante Gravitational|$G_{today}\equiv\frac{a+3f-4Ka-16K^{2}a}{2a(a+4f)}+O(w)=1$||
-G = 1|ElemDis|“Constante” Gravitacional|$G_{today}=1=\left[constant\right]$||
-k1 = c3/16piG|ElemDis|Constante de acoplamiento|$k_{1}=\frac{c^{3}}{16\pi G}$||
-k2 = 1/c|ElemDis|Constante de acoplamiento|$k_{2}=\frac{1}{c}$||
-Ec. 1|FieldEq|Ecuación de campo||Ecuación de campo para la teoría Extendida tipo Mond local F(R,T)|
-Ec. 14|FieldEq|Ecuación de campo|$\left(\frac{f_{R}}{L_{M}^{2}}\right)R_{\mu\nu}-\frac{1}{2L_{M}^{2}}fg_{\mu\nu}+\left[g_{\mu\nu}\Delta-\Delta_{\mu}\Delta_{\nu}\right]\left(\frac{f_{R}}{L_{M}^{2}}\right)=\frac{8\pi G}{c^{4}}T_{\mu\nu}-\left(\frac{f}{L_{M}^{2}}\right)_{T}\left[T_{\mu\nu}+\Theta_{\mu\nu}\right]$|Ecuación de campo para la teoría Extendida tipo Mond no-local con métrica pura|
-Ec. 18|FieldEq||$f'(\Re)\Re_{\mu\nu}-\frac{1}{2}f(\Re)g_{\mu\nu}=\kappa T_{\mu\nu}$|Ecuación de campo a la Palatini 1|
-Ec. 19|FieldEq||$\bar{\nabla}_{\lambda}(\sqrt{-g}f'(\Re)g^{\mu\nu})=0$|La Ec. de campo a la Palatini $\bar{\nabla}$ es la derivada covariante definida de forma independiente o mediante la conexión métrico-afín.|
-Ec. 4|FieldEq|Ecuación de campo|$F_{R}R_{\alpha\beta}+\left(g_{\alpha\beta}\nabla^{\mu}\nabla_{\mu}-\nabla_{\alpha}\nabla_{\beta}\right)F_{R}-\frac{1}{2}\left(F-F_{\mathcal{\mathcal{L}}}\right)g_{\alpha\beta}=\frac{1}{2}F_{\mathcal{L}}T_{\alpha\beta}$|Ecuación de campo de la teoría extendida local con métrica pura|
-Ec. 46|FieldEq|Ecuación de campo|$f'(\Re)\Re_{(\mu\nu)}-\frac{1}{2}f(\Re)g_{\mu\nu}=\kappa T_{\mu\nu}$|Ecuación de campo tras variar de manera independiente con respecto a la métrica.Ec. 46|
-Ec. 47|FieldEq|Ecuación de campo|$\frac{1}{\sqrt{-g}}\left[-\bar{\nabla}_{\lambda}\left(\sqrt{-g}f'(\Re)g^{\mu\nu}\right)+\bar{\nabla}_{\sigma}\left(\sqrt{-g}f'(\Re)g^{\mu\sigma}\right)\delta_{\lambda}^{\nu}\right]+2f'(\Re)(g^{\mu\nu}S_{\lambda\sigma}^{\sigma}-g^{\mu\rho}S_{\rho\sigma}^{\sigma}\delta_{\lambda}^{\nu}+g^{\mu\sigma}S_{\sigma\lambda}^{\nu})=\kappa(\Delta_{\lambda}^{\mu\nu}-B_{\lambda}^{[\mu}\delta^{\nu]})$|Ecuación de campo tras variar de manera independiente con respecto a la conexión afín.|
-Ec. 48|FieldEq|Ecuación de campo|$S_{\mu\sigma}^{\sigma}=0$|Ecuación de campo tras variar de manera independiente con respecto al multiplicador de Lagrange.|
-Ec. 5-31|FieldEq|Ecuaciones de campo|$R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R-\lambda(\phi)g_{\mu\nu}=8\pi\phi^{-1}T_{\mu\nu}+\phi^{-2}w(\phi)(\phi,_{\mu}\phi,_{\nu}-\frac{1}{2}g_{\mu\nu}\phi,_{\lambda}\phi^{,\lambda})+\phi^{-1}(\phi_{;\mu\nu}-g_{\mu\nu}\oblong_{g}\phi)$,<br>$\oblong_{g}\phi+\frac{2\phi^{2}\frac{d\lambda}{d\phi}-3\phi\lambda(\phi)}{3+2w(\phi)}=\frac{1}{3+2w(\phi)}\left(8\pi T-\frac{dw}{d\phi}\phi,_{\mu}\phi^{,\mu}\right)$||Will, 1993, p. 123
-Ec. 5-47|FieldEq|Ecuaciones de campo de las teorías vectoriales-tensoriales|$R_{\mu\nu}-\frac{1}{2}g_{\mu\nu}R-w\Theta_{\mu\nu}^{(w)}+\eta\Theta_{\mu\nu}^{(\eta)}+\epsilon\Theta_{\mu\nu}^{(\epsilon)}+\tau\Theta_{\mu\nu}^{(\tau)}=8\pi GT_{\mu\nu}$,<br>$\epsilon F_{;\nu}^{\mu\nu}+\frac{1}{2}\tau K_{;\nu}^{\mu;\nu}-\frac{1}{2}wK^{\mu}R-\frac{1}{2}\eta K^{\nu}R_{\nu}^{\mu}=0$||Will, 1993, p. 127
-Ec. 5-68|FieldEq|Ecuación de campo de la teoría de Rosen|$\oblong_{\eta}g_{\mu\nu}-g^{\alpha\beta}\eta^{\gamma\delta}g_{\mu\alpha\mid\gamma}g_{\nu\beta\mid\delta}=-16\pi G(\frac{g}{\eta})^{\frac{1}{2}}(T_{\mu\nu}-\frac{1}{2}g{}_{\mu\nu}T)$||Will, 1993, p. 131
-Ec. 5-75|FieldEq|Ecuación de campo de la teoría de Rastall|$\left[F(N)K^{\mu;\nu}\right]_{;\nu}-F'(N)K^{\mu}K^{\alpha;\beta}K_{\alpha;\beta}+(1+\eta^{\alpha\beta}K_{\alpha}K_{\beta})^{-\frac{1}{2}}(\Theta^{\mu\nu}-\frac{1}{2}g^{\mu\nu}\Theta)K_{\nu}=8\pi G(1+\eta^{\alpha\beta}K_{\alpha}K_{\beta})^{-\frac{1}{2}}(T^{\mu\nu}-\frac{1}{2}g^{\mu\nu}T)K_{\nu}$,<br>$\Theta^{\mu\nu}\equiv F(N)(K^{\mu;\alpha}K_{;\alpha}^{\nu}+K^{\alpha;}K_{\alpha}^{;\nu}-\frac{1}{2}g^{\mu\nu}K_{\alpha;\beta}K^{\alpha;\beta})+\left\{ F(N)\left[K^{\alpha}K^{\left(\mu;\nu\right)}-K^{\mu}K^{(\nu;\alpha)}-K^{\nu}K^{(\mu;\alpha)}\right]\right\} _{;\alpha}+F'(N)K^{\alpha;\beta}K_{\alpha;\beta}K^{\mu}K^{\nu}$||Will, 1993, p. 132
-Ec. 5-84|FieldEq|Ecuación de campo de la teoría bimétrica de BSLL|$\oblong_{\eta}B^{\mu\nu}=-(\frac{4\pi}{a})(g/\eta)^{\frac{1}{2}}T^{\alpha\beta}\left[\theta_{\alpha\beta}^{\mu\nu}-f(a+4f)^{-1}\Theta_{\alpha\beta}^{\gamma\delta}\eta^{\mu\nu}\eta_{\gamma\delta}\right]$,<br>where<br>$\theta_{\alpha\beta}^{\mu\nu}=\frac{\partial g_{\alpha\beta}}{\partial B_{\mu\nu}}$.||Will, 1993, p. 134
-Ec. 5-95|FieldEq|Ecuación de campo de las teorías estratificadas|$\oblong_{\eta}\phi+\left[f_{3}(\phi)+1\right]\phi_{00}+\frac{1}{2}f’_{3}(\phi)\phi_{,0}^{2}-\frac{1}{2}K_{2}B_{,ij}^{ij}=2\pi(-g)^{\frac{1}{2}}\left[T^{00}f’_{1}(\phi)-T^{ii}f'_{2}(\phi)\right]$,<br>$\oblong B^{ij}+(\frac{\kappa_{2}}{2\kappa_{1}})\phi^{,ij}=\left(\frac{2\pi}{\kappa_{1}}\right)\left(-g\right)^{\frac{1}{2}}T^{ij}$.||Will, 1993, p. 136
-Ec. 6|FieldEq|Ecuación de campo de la teoría $f(R)$ métrica|$f'(R)R_{\mu\nu}-\frac{1}{2}f(R)g_{\mu\nu}-\left[\nabla_{\mu}\nabla_{\nu}-g_{\mu\nu}\nabla^{\mu}\nabla_{\mu}\right]f'(R)=\kappa T_{\mu\nu}$||
-Ec. 8|FieldEq|Ecuación de campo de la teoría extendida no local a la Palatini|$f'(\chi)\chi_{\mu\nu}-\frac{1}{2}f(\chi)g_{\mu\nu}=\frac{8\pi GL_{M}^{2}}{c^{4}}T_{\mu\nu}$||
-Ec. 9a|FieldEq|$R_{\mu\nu}=0$|$R_{\mu\nu}=0$|Si el escalar de Ricci es igual a cero: $R=0$ entonces la ecuación de campo se reduce a: $R_{\mu\eta}=0$|
-Ec. 9b|FieldEq|$R_{\mu\nu}=g_{\mu\nu}\frac{C}{4}$|$R_{\mu\nu}=g_{\mu\nu}\frac{C}{4}$|Si el escalar de Ricci es constante: $R=cte$, entonces la ecuación de campo se reduce a: $R_{\mu\nu}=g_{\mu\nu}\frac{C}{4}$, y la solución simétrica máxima es el espacio de de Sitter ó el anti-de Sitter, dependiendo del signo de la constante.|
-Ec. 9c|FieldEq|$R_{\mu\nu}=-g_{\mu\nu}\frac{C}{4}$|$R_{\mu\nu}=-g_{\mu\nu}\frac{C}{4}$|Si el escalar de Ricci es constante: $R=cte$ entonces la ecuación de campo se reduce a: $R_{\mu\nu}=g_{\mu\nu}\frac{C}{4}$ y el la solución máximamente simétrica es de Sitter en el espacio anti-de Sitter, dependiendo del signo de la constante.|
 Ec. de Einstein|FieldEq|Ecuación de Einstein|$G_{1}^{*}G_{2}^{*}Ric-\frac{1}{2}Rg^{*}=-8\pi kT$|La materia le dice al espacio cómo curvarse y la curvatura le dice a la materia cómo moverse.|
 Ec. de Poisson|FieldEq|Ec. de Poisson|$del(\Phi)=4\pi k\rho$||Friedman, 1983, p. 93
 Ec. de Poisson 2|FieldEq||$Ric=-4\pi\rho dt\otimes$$dt$|Equivalente covariante a la Ec. de Poisson.|Friedman, 1983, p. 103
-a, f, k|Function|Funciones arbitrarias|$a$, $f$, $k$||Will, 1993, p. 117 Table 5.1, p. 133
-e|Function|$e$: Funciones arbitrarias|||Will, 1993, p. 117, 135, 
-epsilon|Function|$\epsilon$: Parámetro arbitrario|||Will, 1993, p. 127
-f1(Phi), f2(Phi), f3(Phi)|Function|Funciones arbitrarias|$f_{1}\left(\phi\right)$, $f_{2}\left(\phi\right)$, $f_{3}\left(\phi\right)$||Will, 1993, p. 117 Table 5.1, p. 136 
-Kappa1, Kappa2|Function|$\kappa_{1}$, $\kappa_{2}$: Funciones arbitrarias|$\kappa_{1}$, $\kappa_{2}$||
-n0|Function|$n$: Parámetro arbitrario||También encontrado como $\eta$|
-r, q|Function|$r$, $q$: Parámetros arbitrarios|||Will, 1993, p. 117 Table 5.1, p. 125
-tau|Function|$\tau$: Parámetro arbitrario|||Will, 1993, p. 117 Table 5.1, p. 127, 128
-w|Function|$w(\phi)$: Función arbitraria de acoplamiento|||
-B|GO|$B$: Campo tensorial simétrico||El campo tensorial simétrico $B$ normalmente se asocia con la presencia de múltiples métricas, que describen cómo se miden las distancias y los intervalos de diferentes maneras. En las teorías estratificadas y bimétricas puede haber dos o más métricas para describir diferentes aspectos de la gravedad o el espacio-tiempo, como las variaciones en la fuerza o el alcance de la gravedad. $B$ ayuda a relacionar y conciliar estas métricas, asegurando que la teoría siga siendo autoconsistente.|Will, 1993, p. 117 Table 5.1
 Conexión Afín|GO|$\Gamma$: Conexión afín||Conexión generalizada para campos vectoriales en espacios curvos donde la torción y la no-metricidad no necesariamente son cero.|
 Conexión Métrica|GO|Conexión métrica||También llamada la conexión Levi-Civita, es dependiente de la métrica $g$. Nos da información acerca de cómo transportar vectores a lo largo de una curva conservando la métrica.|
 Conexión Métrico-Afín|GO|$\Gamma*$: Conexión afín independiente||Una conexion para espacios métrico-afines donde la no-metricidad y la torsión son distintas de cero.|
 Conexión Newton-Cartan|GO|$\nabla$: Conexión Newton-Cartan||Conexión plana covariante.|Friedman, 1983, p. 
 Conexión Plana|GO|$\overline{\nabla}$: Conexión plana||Derivada para espacios planos.|
-Curvatura|GO|$Riem(\Gamma)$:  Tensor de curvatura de Riemann||Este objeto geométrico se utiliza para cuantificar la curvatura intrínseca de un espacio. Tiene varios componentes expresados en términos de derivadas parciales de la conexión afín.|
 dt|GO|$dt$: Función de tiempo||Un covector que induce una foliación de la variedad M en hyper-superficies de tres dimensiones.|Friedman, 1983, p. 78
 Escalar de Ricci|GO|$R$: Escalar de Ricci|$R=g^{\mu\nu}R_{\mu\nu}$|$R=g^{\mu\nu}R_{\mu\nu}$|
 eta|GO|$\eta$: Métrica de Minkowski||Métrica plana no dinámica. Dado que $Riem(\gamma)=0$, siempre podemos elegir coordenadas globales en las que $\eta_{\mu\nu}=diag(-1,1,1,1)$|
 h|GO|$h$: Tensor métrico plano||Un campo tensor simétrico de tipo $(2,0)$. h se define en el espacio cotangente $T_{p}^{*}\times T_{p}^{*}$ y tiene la signatura $<3,0,1>$. Induce una métrica tridimensional en cada hipersuperficie.|Friedman, 1983, p. 78, 88, 101
-Hyp|GO|Hypermomentum:|$\Delta_{\lambda}^{\mu\nu}\equiv-\frac{2}{\sqrt{-g}}\frac{\partial S_{M}}{\partial\Gamma_{\mu\nu}^{\lambda}}$,|Cantidad que representa la variación de la acción de materia SM con respecto a la conexión, lo que imita la definición del tensor de estrés-energía-momentum.|
-Kmn|GO|$K^{\mu}$||Campo vectorial dinámico tipo tiempo.|
 No-Metricidad|GO|Tensor de no-metricidad|$Q_{\mu\nu\lambda}\equiv-\widetilde{\nabla}_{\mu g\nu\lambda}$,|Mide la falla de la conexión de conservar de forma covariante la métrica.|
-Phi|GO|$\phi$: Campo escalar dinámico|||Will, 1993, p. 125
-Psi|GO|$\psi$: Campos de materia|||
-R*|GO|$\Re$: Escalar de Ricci afín|$\Re=g^{\mu\nu}\Re_{\mu\nu}$|\Re=g^{\mu\nu}\Re_{\mu\nu}|
-t|GO|$t$: Función del tiempo cósmico||"Un campo escalar no dinámico. El gradiente de $t$ es covariantemente constante y temporal con respecto a $\eta$. Este campo escalar selecciona secciones espaciales preferidas de ""estratos"" en el universo que son ortogonales a $\nabla$."|Will, 1993, p. 117 Table 5.1, p. 135
 Tensor Métrico|GO|$g$: Tensor métrico||Un campo tensorial simétrico de tipo $(0,2)$. Provee una noción de distancia y ángulo entre vectores. Nos habla de la curva más corta.|
 Tmn|GO|$T$: Campo tensorial de Estrés-Energía-Momentum||Campo tensorial simétrico $(2,0)$.|
 Torsión|GO|Tensor de torsión de Cartan|$S_{\mu\nu}^{\lambda}\equiv\Gamma_{\left[\mu\nu\right]}^{\lambda}$|La parte antisimétrica de la conexión.|
 V|GO|$V$: Campo contravectorial||Describe el espacio absoluto. $T_{\sigma}=V$ a lo largo de $\sigma$|
-Vector de Weyl|GO|Vectror de Weyl|$Q_{\mu}\equiv\frac{1}{4}Q_{\mu\nu^{\nu}}$|La traza del tensor de no-metricidad con respecto a sus dos últimos índices simétricos.|
-Xi3/2|GO|Tensor de Medoza $\chi_{\mu\nu}:=L_{M}^{2}R_{\mu\nu}$||Donde L_{M}^{2} define una longitud fijada por los parámetros de la teoría|
 Φ|GO|$\Phi$: Potencial gravitacional||Potencial producido por un campo vectorial tipo espacio que representa el campo gravitacional.|Friedman, 1983, p. 93
 M|M|$M$: Variedad diferenciable||Un espacio topológico que asemeja el espacio euclidiano en las vecindades de cada punto. Puede coordinatizarse por $R^{n}$ mediante una familia de homomorfismos.|
-Ec. 18Mond|MovEq|Ecuación de movimiento de la teoría extendida no-local con métrica pura.|$\nabla^{\mu}T_{\mu\nu}=\left(\frac{f}{L_{M}^{2}}\right)_{T}\left\{ \frac{8\pi G}{c^{4}}-\left(\frac{f}{L_{M}^{2}}\right)_{T}\right\} ^{-1}\times\left[\left(T_{\mu\nu}+\Theta_{\mu\nu}\right)\nabla^{\mu}ln\left(\frac{f}{L_{M}^{2}}\right)_{T}\left(R,T\right)+\nabla^{\mu}\theta_{\mu\nu}\right]$||
-Ec. 2|MovEq|Ecuación de movimiento de la teoría extendida no-local a la Palatini|||
-Ec. 3|MovEq|Ecuación de movimiento de la teoría extendida F(R,T)|||
-Ec. 34, 35|MovEq|Ecuación de movimiento|$\frac{dx^{\mu}}{ds^{2}}+\Gamma_{\nu\alpha}^{\mu}\frac{dx^{\mu}}{ds}\frac{dx^{\alpha}}{ds}=\left(g_{\mu\nu}-u_{\mu}u_{\nu}\right)\nabla^{\mu}ln\left[\left(16\pi\kappa\kappa'+f_{\xi}\right)\frac{d\mathcal{L}}{d\rho}\right]$|Ecuación de movimiento para la teoría extendida tipo Mond local con métrica pura|
 Fuerza Gravitacional|MovEq|Fuerza Gravitacional|$mD_{T\sigma}T_{\sigma}=m(grad(\Phi))$|Las partículas afectadas sólo por fuerzas gravitacionales siguen curvas no geodésicas determinadas por el potencial gravitacional.|
 Ley Geodésica|MovEq|Ley Geodésica|$D_{T\sigma}T_{\sigma}=0$|Las partículas libres siguen las geodésicas de la línea tipo tiempo de la conexión.|
 <1,3>|Typ|Signatura del tensor métrico|$<1,3>$|La signatura contiene un índice positivo y tres negativos. Hay modelos con signatura distinta.|
 <3,0,1>|Typ|Signatura del tensor plano h|$<3,0,1>$|La signatura indica que tres índices son positivos y un negativo.|
-Dependiente|Typ|Dependencia entre variables||La conexión  $\Gamma_{\mu\nu}^{\lambda}$ y el tensor métrico $g_{\mu\nu}$ dependen uno del otro.|
-Independente|Typ|Independencia de variables||La conexión $\Gamma_{\mu\nu}^{\lambda}$ puede expresarse de forma independiente al tensor métrico $g_{\mu\nu}$.|
 N|Typ|Dimensión: $N=4$||La dimensión de un espacio vectorial es la cardinalidad de una base para la variedad diferenciable M.|
 Signatura no toda Positiva|Typ|Signatura no toda positiva||Para el tensor métrico: no definitivamente positiva: $<-,+,+,+>$ o $<+,-,-,->$|
-Signatura Positiva|Typ|Signatura positiva||Para el tensor métrico: definitivamente positiva.|

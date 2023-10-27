@@ -135,8 +135,6 @@ Eq 34 and 35|MovEq|Equation of motion for Mond local pure metric|$\frac{dx^{\mu}
 Geodesic Law|MovEq|Geodesic Law|$D_{T\sigma}T_{\sigma}=0$|Free particles follow timeline geodesics of the connection.|
 Gravitational Force|MovEq|Gravitational Force|$mD_{T\sigma}T_{\sigma}=m(grad(\Phi))$|Particles acted on only by gravitational forces follow non geodesic paths determined by the gravitational potential.|
 <1,3>|Typ|Signature for the metric tensor|$<1,3>$|The signature contains one positive and three negative index. There are GR models with different signatures.|
-<3,0,1>|Typ|Signature for the flat tensor h|$<3,0,1>$|Indicating there are 3 spatial dimensions, 0 negative eigenvalues associated with the metric tensor, indicating it is positive definite in the spatial dimensions. The third number (1) indicates the number of negative eigenvalues associated with the metric tensor in the time dimension, suggesting time is treated differently from space in terms of its signature.|
-Definite-Positive|Typ|Signature||Signature for the metric tensor is definite-positive.|
 Dependent|Typ|Dependency||The connection $\Gamma_{\mu\nu}^{\lambda}$  and the metric tensor $g_{\mu\nu}$  depend on each other.|
 Independent|Typ|Independency between variables||The connection $\Gamma_{\mu\nu}^{\lambda}$ may be expressed independently of the metric tensor $g_{\mu\nu}$.|
 N|Typ|Dimension: $N=4$||The dimension of a vector space is the cardinality of a base of $M$.|
