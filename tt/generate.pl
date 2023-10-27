@@ -168,7 +168,7 @@ if ($srcdir ne '.') {
   $srcdir = '';
 }
 
-my $cmd = "pandoc --from commonmark_x -t json \"$master_md\"";
+my $cmd = "pandoc --from commonmark_x+gfm_auto_identifiers -t json \"$master_md\"";
 
 open my $pipe, "$cmd|" || die "Error running $cmd";
 my $json_str = <$pipe>;
