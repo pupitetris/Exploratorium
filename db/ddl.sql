@@ -291,21 +291,19 @@ DROP VIEW IF EXISTS v_attribute_diagram;
 
 CREATE VIEW v_attribute_diagram AS
 SELECT
-	attribute_desc.attribute_id AS attr_id,
-	attribute_desc.label AS attribute_label,
-	diagram.code AS diagram_code,
-	diagram.diagram_id AS dia_id,
-	diagram_class.code AS diagram_class
+	ad.lang_code AS Lang,
+	d.code AS Diagram,
+	ad.label AS Attribute
 FROM
-	attribute_diagram,
-	attribute_desc,
-	diagram,
-	diagram_class
-WHERE
-	attribute_diagram.attribute_id = attribute_desc.attribute_id
-	AND diagram.diagram_id = attribute_diagram.diagram_id
-	AND attribute_desc.diagram_class_id = diagram_class.diagram_class_id
-	/* v_attribute_diagram(attr_id,attribute_label,diagram_code,dia_id,diagram_class) */
+	attribute AS a
+	NATURAL JOIN attribute_diagram
+	NATURAL JOIN attribute_desc AS ad
+	NATURAL JOIN diagram AS d
+	NATURAL JOIN attr_diagram_class AS adc
+ORDER BY
+	Lang,
+	Diagram
+	/* v_attribute_diagram(Lang,Diagram,Attribute) */
 ;
 
 
@@ -368,8 +366,9 @@ DROP VIEW IF EXISTS v_contexts;
 
 CREATE VIEW v_contexts AS
 SELECT
-	lang.lang_label AS Lang,
+	lang.lang_code AS Lang,
 	diagram.code AS Diagram,
+	object.code AS ObjectCode,
 	object_desc.label AS Object,
 	attribute_desc.label AS Attribute,
 	attr_class.code AS Class,
@@ -378,6 +377,7 @@ SELECT
 	diagram.diagram_id
 FROM
 	lang,
+	object,
 	object_desc,
 	attribute_desc,
 	attr_diagram_class,
@@ -388,7 +388,8 @@ FROM
 	attribute_diagram,
 	object_diagram
 WHERE
-	object_desc.lang_code = lang.lang_code
+	object.object_id = object_desc.object_id
+	AND object_desc.lang_code = lang.lang_code
 	AND attribute_desc.lang_code = lang.lang_code
 	AND attribute.attribute_id = attr_diagram_class.attribute_id
 	AND attr_diagram_class.attribute_id = attribute_desc.attribute_id
@@ -405,7 +406,7 @@ ORDER BY
 	"Diagram" ASC,
 	"Object" ASC,
 	"Attribute" ASC
-	/* v_contexts(Lang,Diagram,Object,Attribute,Class,object_id,attribute_id,diagram_id) */
+	/* v_contexts(Lang,Diagram,ObjectCode,Object,Attribute,Class,object_id,attribute_id,diagram_id) */
 ;
 
 
@@ -421,6 +422,27 @@ FROM
 	diagram AS d
 	JOIN diagram_class AS dc USING (diagram_class_id)
 	/* v_diagram_class(diagram_id,diagram,class) */
+;
+
+
+-- View: v_object_diagram
+DROP VIEW IF EXISTS v_object_diagram;
+
+CREATE VIEW v_object_diagram AS
+SELECT
+	od.lang_code AS Lang,
+	d.code AS Diagram,
+	od.label AS Object,
+	o.code AS Code
+FROM
+	object AS o
+	NATURAL JOIN object_diagram
+	NATURAL JOIN object_desc AS od
+	JOIN diagram AS d USING (diagram_id)
+ORDER BY
+	Lang,
+	Diagram
+	/* v_object_diagram(Lang,Diagram,Object,Code) */
 ;
 
 
