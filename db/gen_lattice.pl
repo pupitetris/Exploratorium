@@ -361,7 +361,6 @@ foreach my $node (@lnodes) {
 }
 
 my $json = JSON->new()
-    ->utf8
     ->pretty
     ->canonical
     ->encode(
