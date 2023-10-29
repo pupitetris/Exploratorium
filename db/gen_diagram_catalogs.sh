@@ -6,7 +6,7 @@ while read -r lang; do
   while IFS=\| read -r diagram_id diagram; do
     echo "
 SELECT Attribute,Class,Title,Formula,Explanation,Reference FROM v_attributes
-       WHERE Lang='$lang' AND Diagram='$diagram';" |
+       WHERE Lang='$lang' AND Diagram='$diagram'" |
       sqlite3 -header $DBFILE > ../theories-$lang/$diagram/attr_desc.csv
 
     echo "
@@ -25,7 +25,7 @@ SELECT v.Code, v.Title_$lang AS Title
                       )
                 WHERE diagram_id = $diagram_id
        )
- ORDER BY ord;" |
+ ORDER BY ord" |
     sqlite3 -header $DBFILE > ../theories-$lang/$diagram/attr_class_desc.csv
-  done < <(echo "SELECT diagram_id, code FROM diagram" | sqlite3 $DBFILE)
-done < <(echo "SELECT lang_code FROM lang" | sqlite3 $DBFILE)
+  done < <(sqlite3 $DBFILE "SELECT diagram_id, code FROM diagram")
+done < <(sqlite3 $DBFILE "SELECT lang_code FROM lang")
