@@ -1,5 +1,15 @@
 @import url("cmm/style.css");
 
+.navbar {
+  border-bottom: 1px solid lightgray;
+  box-shadow: inset 0px 5px 5px rgba(0,0,0,0.5);
+}
+
+.navbar .dropdown-menu {
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  --bs-dropdown-border-radius: 0;
+}
+
 .navbar, .navbar .dropdown-item {
   --navbar-main-color: #337ab7;
 	--bs-navbar-color: var(--navbar-main-color);
