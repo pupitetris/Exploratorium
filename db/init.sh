@@ -15,3 +15,4 @@ sqlite3 $DBFILE < ddl.sql &&
   sqlite3 $DBFILE < data.sql
 
 ./gen_diagram_catalogs.sh $DBFILE
+./gen_lattices.sh $DBFILE
