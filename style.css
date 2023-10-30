@@ -95,7 +95,7 @@
 .dia-shell .btn-toolbar {
   position: absolute;
   top: 20px;
-  --tb-width: 18.5em;
+  --tb-width: 20.5em;
   width: var(--tb-width);
   left: calc(100% - var(--tb-width));
   flex-wrap: nowrap;
@@ -282,8 +282,16 @@ text {
 	fill: white;
 }
 
-.no-attributes .attributes-label {
+svg .node-level {
   display: none;
+}
+
+svg.show-levels .node-level {
+  display: block;
+}
+
+.no-attributes .attributes-label {
+	opacity: 0.125;
 }
 
 .attributes-label {

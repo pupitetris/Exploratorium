@@ -48,10 +48,9 @@
             <div id="d1" class="diagram"></div>
             <div class="btn-toolbar" role="toolbar" aria-label="[% PROCESS string s='Diagram toolbar' %]">
               <div class="btn-group me-2" role="group">
-                <button type="button" class="tool-attrs btn btn-outline-primary bi bi-list-columns active" data-bs-toggle="button" aria-label="[% PROCESS string s='Show Attributes' %]"></button>
-              </div>
-              <div class="btn-group me-2" role="group">
                 <button type="button" class="tool-infobox btn btn-outline-primary bi bi-card-list active" data-bs-toggle="button" aria-label="[% PROCESS string s='Show Legend' %]"></button>
+                <button type="button" class="tool-attrs btn btn-outline-primary bi bi-list-columns active" data-bs-toggle="button" aria-label="[% PROCESS string s='Show Attributes' %]"></button>
+                <button type="button" class="tool-levels btn btn-outline-primary bi bi-123" data-bs-toggle="button" aria-label="[% PROCESS string s='Show Levels' %]"></button>
               </div>
               <div class="btn-group me-2" role="group">
                 <button type="button" class="btn btn-outline-primary bi bi-zoom-out" aria-label="[% PROCESS string s='Zoom Out' %]"></button>

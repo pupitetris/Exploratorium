@@ -11,6 +11,7 @@ Exploratorium de teorías del espacio-tiempo
     "Full Screen": "Pantalla completa",
     "Show Legend": "Mostrar leyenda",
     "Show Attributes": "Mostrar atributos",
+    "Show Levels": "Mostrar niveles",
     "Toggle navigation": "Alternar navegación",
     "Zoom In": "Acercar",
     "Zoom Out": "Alejar",
