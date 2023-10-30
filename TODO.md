@@ -37,6 +37,7 @@ TODO
   - [ ] En zoom negativo, no jala el pan.
   - [x] El tool de infobox se encima sobre el infobox (z-index)
   - [ ] Dump de SQL debe de registar el estado de las secuencias.
+  - [ ] Fullscreen: handlear usuario saliendo de fullscreen sin usar el toolbar.
   - [ ] En algunos diagramas, los node levels se traslapan con el node dot.
   - [ ] Homologar config.json?
 
@@ -56,6 +57,9 @@ TODO
   - [ ] Infobox: poner attribute class dentro del texto.
   - [ ] Resaltar nodo seleccionado.
   - [x] Que el nav flote arriba al scrollear hacia abajo la página.
+  - [ ] Editor: snaps: colineal, horizontal y vertical.
+  - [ ] Editor: tool de "organize by level"
+  - [ ] Tool: switch a otro diagrama desde el fullscreen.
 
 - Indiana:
   - [ ] 4k touchscreen
