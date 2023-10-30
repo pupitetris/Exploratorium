@@ -36,6 +36,7 @@ TODO
   - [x] Diagrama y título e intro no están centrados.
   - [ ] En zoom negativo, no jala el pan.
   - [x] El tool de infobox se encima sobre el infobox (z-index)
+  - [ ] Dump de SQL debe de registar el estado de las secuencias.
 
 - Mejoras:
   - [x] Menú de teorías en el navbar
