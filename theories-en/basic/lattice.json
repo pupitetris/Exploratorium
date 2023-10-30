@@ -1,1148 +1,1079 @@
 {
-    "context": {
-        "PM": {
-            "name": "Particle Mechanics",
-            "id": "PM",
-            "attributes": [
-                "T",
-                "E3",
-                "Particles",
-                "Postulate",
-                "{X}",
-                "K",
-                "PM 2.5",
-                "Mass",
-                "PM 3.2",
-                "External Force",
-                "Interparticle Force",
-                "F=ma",
-                "PM 2.4"
+   "concepts" : [
+      {
+         "extent" : [
+            "CEM",
+            "CM",
+            "GR",
+            "PM",
+            "RK"
+         ],
+         "intent" : [
+            "K",
+            "Time",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [],
+         "intent" : [
+            "1/r",
+            "<1,3>",
+            "Affine Connection",
+            "Asymptotic Form",
+            "Balance of Momentum",
+            "Bodies",
+            "Body Force Density",
+            "Body Stress",
+            "c",
+            "Charge Density",
+            "Charged Bodies",
+            "Charged M Bodies",
+            "CM 2.2",
+            "Coordinate Transformations",
+            "Cotime",
+            "E3",
+            "E3R",
+            "Einstein’s Eq",
+            "Electric Fields",
+            "EM Fields",
+            "EM Signals",
+            "Energy-momentum Tensor",
+            "External Force",
+            "F = ma",
+            "Force Density",
+            "GR 5.2",
+            "GR 6.3",
+            "Gravitational Fields",
+            "Inertial Frame",
+            "Interparticle Force",
+            "K",
+            "kappa",
+            "Locality",
+            "M Bodies",
+            "M3",
+            "M4",
+            "Magnetic Fields",
+            "Map",
+            "Mass",
+            "Mass Additivity",
+            "Mass Conservation",
+            "Mass Density",
+            "Maxwell’s Eq",
+            "Metric Tensor",
+            "Moment of Momentum",
+            "Non Gravitational Fields",
+            "Particles",
+            "Physical Systems",
+            "PM 2.4",
+            "PM 2.5",
+            "PM 3.2",
+            "Postulate",
+            "Tensor Degeneration",
+            "Time",
+            "Time Range",
+            "Velocity and Acceleration",
+            "{XGR}",
+            "{XR}",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "CEM",
+            "GR",
+            "RK"
+         ],
+         "intent" : [
+            "1/r",
+            "c",
+            "Charged Bodies",
+            "Charged M Bodies",
+            "Electric Fields",
+            "EM Fields",
+            "EM Signals",
+            "Force Density",
+            "K",
+            "M Bodies",
+            "M3",
+            "Magnetic Fields",
+            "Maxwell’s Eq",
+            "Physical Systems",
+            "Time",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "GR",
+            "RK"
+         ],
+         "intent" : [
+            "1/r",
+            "Bodies",
+            "c",
+            "Charged Bodies",
+            "Charged M Bodies",
+            "Cotime",
+            "E3",
+            "E3R",
+            "Electric Fields",
+            "EM Fields",
+            "EM Signals",
+            "Force Density",
+            "Inertial Frame",
+            "K",
+            "M Bodies",
+            "M3",
+            "Magnetic Fields",
+            "Maxwell’s Eq",
+            "Particles",
+            "Physical Systems",
+            "Postulate",
+            "Time",
+            "Time Range",
+            "{XR}",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "GR"
+         ],
+         "intent" : [
+            "1/r",
+            "<1,3>",
+            "Affine Connection",
+            "Asymptotic Form",
+            "Bodies",
+            "c",
+            "Charged Bodies",
+            "Charged M Bodies",
+            "Coordinate Transformations",
+            "Cotime",
+            "E3",
+            "E3R",
+            "Einstein’s Eq",
+            "Electric Fields",
+            "EM Fields",
+            "EM Signals",
+            "Energy-momentum Tensor",
+            "Force Density",
+            "GR 5.2",
+            "GR 6.3",
+            "Gravitational Fields",
+            "Inertial Frame",
+            "K",
+            "kappa",
+            "Locality",
+            "M Bodies",
+            "M3",
+            "M4",
+            "Magnetic Fields",
+            "Maxwell’s Eq",
+            "Metric Tensor",
+            "Non Gravitational Fields",
+            "Particles",
+            "Physical Systems",
+            "Postulate",
+            "Time",
+            "Time Range",
+            "{XGR}",
+            "{XR}",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "CEM"
+         ],
+         "intent" : [
+            "1/r",
+            "Body Force Density",
+            "c",
+            "Charged Bodies",
+            "Charged M Bodies",
+            "Electric Fields",
+            "EM Fields",
+            "EM Signals",
+            "Force Density",
+            "K",
+            "M Bodies",
+            "M3",
+            "Magnetic Fields",
+            "Maxwell’s Eq",
+            "Physical Systems",
+            "Time",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "CM",
+            "GR",
+            "PM",
+            "RK"
+         ],
+         "intent" : [
+            "E3",
+            "K",
+            "Time",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "GR",
+            "PM",
+            "RK"
+         ],
+         "intent" : [
+            "E3",
+            "K",
+            "Particles",
+            "Postulate",
+            "Time",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "PM"
+         ],
+         "intent" : [
+            "E3",
+            "External Force",
+            "F = ma",
+            "Interparticle Force",
+            "K",
+            "Mass",
+            "Particles",
+            "PM 2.4",
+            "PM 2.5",
+            "PM 3.2",
+            "Postulate",
+            "Time",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "CM",
+            "GR",
+            "RK"
+         ],
+         "intent" : [
+            "Bodies",
+            "E3",
+            "K",
+            "Time",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "CM"
+         ],
+         "intent" : [
+            "Balance of Momentum",
+            "Bodies",
+            "Body Force Density",
+            "Body Stress",
+            "Charge Density",
+            "CM 2.2",
+            "E3",
+            "K",
+            "Map",
+            "Mass Additivity",
+            "Mass Conservation",
+            "Mass Density",
+            "Moment of Momentum",
+            "Time",
+            "Velocity and Acceleration",
+            "{X}"
+         ]
+      },
+      {
+         "extent" : [
+            "CEM",
+            "CM"
+         ],
+         "intent" : [
+            "Body Force Density",
+            "K",
+            "Time",
+            "{X}"
+         ]
+      }
+   ],
+   "context" : {
+      "CEM" : {
+         "attributes" : [
+            "1/r",
+            "Body Force Density",
+            "c",
+            "Charged Bodies",
+            "Charged M Bodies",
+            "Electric Fields",
+            "EM Fields",
+            "EM Signals",
+            "Force Density",
+            "K",
+            "M Bodies",
+            "M3",
+            "Magnetic Fields",
+            "Maxwell’s Eq",
+            "Physical Systems",
+            "Time",
+            "{X}"
+         ],
+         "id" : "CEM",
+         "name" : "Classical Electromagnetism"
+      },
+      "CM" : {
+         "attributes" : [
+            "Balance of Momentum",
+            "Bodies",
+            "Body Force Density",
+            "Body Stress",
+            "Charge Density",
+            "CM 2.2",
+            "E3",
+            "K",
+            "Map",
+            "Mass Additivity",
+            "Mass Conservation",
+            "Mass Density",
+            "Moment of Momentum",
+            "Time",
+            "Velocity and Acceleration",
+            "{X}"
+         ],
+         "id" : "CM",
+         "name" : "Continuum Mechanics"
+      },
+      "GR" : {
+         "attributes" : [
+            "1/r",
+            "<1,3>",
+            "Affine Connection",
+            "Asymptotic Form",
+            "Bodies",
+            "c",
+            "Charged Bodies",
+            "Charged M Bodies",
+            "Coordinate Transformations",
+            "Cotime",
+            "E3",
+            "E3R",
+            "Einstein’s Eq",
+            "Electric Fields",
+            "EM Fields",
+            "EM Signals",
+            "Energy-momentum Tensor",
+            "Force Density",
+            "GR 5.2",
+            "GR 6.3",
+            "Gravitational Fields",
+            "Inertial Frame",
+            "K",
+            "kappa",
+            "Locality",
+            "M Bodies",
+            "M3",
+            "M4",
+            "Magnetic Fields",
+            "Maxwell’s Eq",
+            "Metric Tensor",
+            "Non Gravitational Fields",
+            "Particles",
+            "Physical Systems",
+            "Postulate",
+            "Time",
+            "Time Range",
+            "{XGR}",
+            "{XR}",
+            "{X}"
+         ],
+         "id" : "GR",
+         "name" : "General Relativity"
+      },
+      "PM" : {
+         "attributes" : [
+            "E3",
+            "External Force",
+            "F = ma",
+            "Interparticle Force",
+            "K",
+            "Mass",
+            "Particles",
+            "PM 2.4",
+            "PM 2.5",
+            "PM 3.2",
+            "Postulate",
+            "Time",
+            "{X}"
+         ],
+         "id" : "PM",
+         "name" : "Particle Mechanics"
+      },
+      "RK" : {
+         "attributes" : [
+            "1/r",
+            "Bodies",
+            "c",
+            "Charged Bodies",
+            "Charged M Bodies",
+            "Cotime",
+            "E3",
+            "E3R",
+            "Electric Fields",
+            "EM Fields",
+            "EM Signals",
+            "Force Density",
+            "Inertial Frame",
+            "K",
+            "M Bodies",
+            "M3",
+            "Magnetic Fields",
+            "Maxwell’s Eq",
+            "Particles",
+            "Physical Systems",
+            "Postulate",
+            "Time",
+            "Time Range",
+            "{XR}",
+            "{X}"
+         ],
+         "id" : "RK",
+         "name" : "Relativistic Kinematics"
+      }
+   },
+   "links" : [
+      {
+         "source" : 0,
+         "target" : 2
+      },
+      {
+         "source" : 0,
+         "target" : 6
+      },
+      {
+         "source" : 0,
+         "target" : 11
+      },
+      {
+         "source" : 2,
+         "target" : 3
+      },
+      {
+         "source" : 2,
+         "target" : 5
+      },
+      {
+         "source" : 3,
+         "target" : 4
+      },
+      {
+         "source" : 4,
+         "target" : 1
+      },
+      {
+         "source" : 5,
+         "target" : 1
+      },
+      {
+         "source" : 6,
+         "target" : 7
+      },
+      {
+         "source" : 6,
+         "target" : 9
+      },
+      {
+         "source" : 7,
+         "target" : 3
+      },
+      {
+         "source" : 7,
+         "target" : 8
+      },
+      {
+         "source" : 8,
+         "target" : 1
+      },
+      {
+         "source" : 9,
+         "target" : 3
+      },
+      {
+         "source" : 9,
+         "target" : 10
+      },
+      {
+         "source" : 10,
+         "target" : 1
+      },
+      {
+         "source" : 11,
+         "target" : 10
+      },
+      {
+         "source" : 11,
+         "target" : 5
+      }
+   ],
+   "nodes" : [
+      {
+         "children" : [
+            "1161595138",
+            "1142980638",
+            "1142947907"
+         ],
+         "concept" : {
+            "extent" : [
+               "CEM",
+               "CM",
+               "GR",
+               "PM",
+               "RK"
+            ],
+            "intent" : [
+               "K",
+               "Time",
+               "{X}"
             ]
-        },
-        "CM": {
-            "name": "Continuum Mechanics",
-            "id": "CM",
-            "attributes": [
-                "T",
-                "E3",
-                "Bodies",
-                "{X}",
-                "K",
-                "Map X:b¬C",
-                "Mass density",
-                "Mass additivity",
-                "Mass Conservation",
-                "M Bodies",
-                "CM 2.2",
-                "Velocity and acceleration",
-                "Body force density",
-                "Body Stress",
-                "Balance of momentum",
-                "Moment of momentum"
+         },
+         "hash" : "1142947871",
+         "idx" : 0,
+         "labelAttributes" : [
+            "{X}",
+            "Time",
+            "K"
+         ],
+         "labelObjects" : [],
+         "level" : "5",
+         "parents" : []
+      },
+      {
+         "children" : [],
+         "concept" : {
+            "extent" : [],
+            "intent" : [
+               "1/r",
+               "<1,3>",
+               "Affine Connection",
+               "Asymptotic Form",
+               "Balance of Momentum",
+               "Bodies",
+               "Body Force Density",
+               "Body Stress",
+               "c",
+               "Charge Density",
+               "Charged Bodies",
+               "Charged M Bodies",
+               "CM 2.2",
+               "Coordinate Transformations",
+               "Cotime",
+               "E3",
+               "E3R",
+               "Einstein’s Eq",
+               "Electric Fields",
+               "EM Fields",
+               "EM Signals",
+               "Energy-momentum Tensor",
+               "External Force",
+               "F = ma",
+               "Force Density",
+               "GR 5.2",
+               "GR 6.3",
+               "Gravitational Fields",
+               "Inertial Frame",
+               "Interparticle Force",
+               "K",
+               "kappa",
+               "Locality",
+               "M Bodies",
+               "M3",
+               "M4",
+               "Magnetic Fields",
+               "Map",
+               "Mass",
+               "Mass Additivity",
+               "Mass Conservation",
+               "Mass Density",
+               "Maxwell’s Eq",
+               "Metric Tensor",
+               "Moment of Momentum",
+               "Non Gravitational Fields",
+               "Particles",
+               "Physical Systems",
+               "PM 2.4",
+               "PM 2.5",
+               "PM 3.2",
+               "Postulate",
+               "Tensor Degeneration",
+               "Time",
+               "Time Range",
+               "Velocity and Acceleration",
+               "{XGR}",
+               "{XR}",
+               "{X}"
             ]
-        },
-        "CEM": {
-            "name": "Classical ElectroMagnetism",
-            "id": "CEM",
-            "attributes": [
-                "T",
-                "E3",
-                "M3",
-                "EM Fields",
-                "Charged Bodies",
-                "Physical Systems",
-                "EM Signals",
-                "{X}",
-                "K",
-                "Charge density",
-                "{Beta*}",
-                "Electric Fields",
-                "Magnetic Fields",
-                "1/r",
-                "c",
-                "Body force density",
-                "Maxwell’s Equations",
-                "CEM 3, 4.3",
-                "Tensor degeneration"
+         },
+         "hash" : "-134217728",
+         "idx" : 1,
+         "labelAttributes" : [
+            "Tensor Degeneration"
+         ],
+         "labelObjects" : [],
+         "level" : "0",
+         "parents" : [
+            "-665386700",
+            "1161595222",
+            "1693433928",
+            "1151369554"
+         ]
+      },
+      {
+         "children" : [
+            "1467287843",
+            "1161595222"
+         ],
+         "concept" : {
+            "extent" : [
+               "CEM",
+               "GR",
+               "RK"
+            ],
+            "intent" : [
+               "1/r",
+               "c",
+               "Charged Bodies",
+               "Charged M Bodies",
+               "Electric Fields",
+               "EM Fields",
+               "EM Signals",
+               "Force Density",
+               "K",
+               "M Bodies",
+               "M3",
+               "Magnetic Fields",
+               "Maxwell’s Eq",
+               "Physical Systems",
+               "Time",
+               "{X}"
             ]
-        },
-        "SRK": {
-            "name": "Relativistic Kinematics",
-            "id": "SRK",
-            "attributes": [
-                "T",
-                "E3",
-                "E3R",
-                "M3",
-                "tR",
-                "Cotime",
-                "Particles",
-                "Bodies",
-                "EM Fields",
-                "Charged Bodies",
-                "Physical Systems",
-                "EM Signals",
-                "Postulate",
-                "{X}",
-                "{XR}",
-                "K",
-                "Inertial frame",
-                "Charge density",
-                "{Beta*}",
-                "Electric Fields",
-                "Magnetic Fields",
-                "1/r",
-                "c",
-                "Body force density",
-                "Maxwell’s Equations",
-                "CEM 3, 4.3",
-                "Tensor degeneration"
+         },
+         "hash" : "1161595138",
+         "idx" : 2,
+         "labelAttributes" : [
+            "Physical Systems",
+            "Maxwell’s Eq",
+            "Magnetic Fields",
+            "M3",
+            "M Bodies",
+            "Force Density",
+            "EM Signals",
+            "EM Fields",
+            "Electric Fields",
+            "Charged M Bodies",
+            "Charged Bodies",
+            "c",
+            "1/r"
+         ],
+         "labelObjects" : [],
+         "level" : "3",
+         "parents" : [
+            "1142947871"
+         ]
+      },
+      {
+         "children" : [
+            "-665386700"
+         ],
+         "concept" : {
+            "extent" : [
+               "GR",
+               "RK"
+            ],
+            "intent" : [
+               "1/r",
+               "Bodies",
+               "c",
+               "Charged Bodies",
+               "Charged M Bodies",
+               "Cotime",
+               "E3",
+               "E3R",
+               "Electric Fields",
+               "EM Fields",
+               "EM Signals",
+               "Force Density",
+               "Inertial Frame",
+               "K",
+               "M Bodies",
+               "M3",
+               "Magnetic Fields",
+               "Maxwell’s Eq",
+               "Particles",
+               "Physical Systems",
+               "Postulate",
+               "Time",
+               "Time Range",
+               "{XR}",
+               "{X}"
             ]
-        },
-        "GR": {
-            "name": "General Relativity",
-            "id": "GR",
-            "attributes": [
-                "T",
-                "E3",
-                "E3R",
-                "M3",
-                "M4",
-                "tR",
-                "Cotime",
-                "Particles",
-                "Bodies",
-                "EM Fields",
-                "Charged Bodies",
-                "Gravitational fields",
-                "Non Gravitational Fields",
-                "Physical Systems",
-                "EM Signals",
-                "Postulate",
-                "{X}",
-                "{XR}",
-                "{XGR}",
-                "K",
-                "Inertial frame",
-                "Charge density",
-                "{Beta*}",
-                "Electric Fields",
-                "Magnetic Fields",
-                "1/r",
-                "c",
-                "Body force density",
-                "Maxwell’s Equations",
-                "CEM 3, 4.3",
-                "Tensor degeneration",
-                "Coordinate transformations",
-                "Locality",
-                "Metric tensor",
-                "Signature (1,3)",
-                "Asymptotic form",
-                "Affine Connection",
-                "Cotime",
-                "GR 5.2",
-                "kappa",
-                "Einstein’s equiation",
-                "GR 6.3"
+         },
+         "hash" : "1467287843",
+         "idx" : 3,
+         "labelAttributes" : [
+            "{XR}",
+            "Time Range",
+            "Inertial Frame",
+            "E3R",
+            "Cotime"
+         ],
+         "labelObjects" : [
+            "RK"
+         ],
+         "level" : "2",
+         "parents" : [
+            "1161595138",
+            "1143521308",
+            "1142980662"
+         ]
+      },
+      {
+         "children" : [
+            "-134217728"
+         ],
+         "concept" : {
+            "extent" : [
+               "GR"
+            ],
+            "intent" : [
+               "1/r",
+               "<1,3>",
+               "Affine Connection",
+               "Asymptotic Form",
+               "Bodies",
+               "c",
+               "Charged Bodies",
+               "Charged M Bodies",
+               "Coordinate Transformations",
+               "Cotime",
+               "E3",
+               "E3R",
+               "Einstein’s Eq",
+               "Electric Fields",
+               "EM Fields",
+               "EM Signals",
+               "Energy-momentum Tensor",
+               "Force Density",
+               "GR 5.2",
+               "GR 6.3",
+               "Gravitational Fields",
+               "Inertial Frame",
+               "K",
+               "kappa",
+               "Locality",
+               "M Bodies",
+               "M3",
+               "M4",
+               "Magnetic Fields",
+               "Maxwell’s Eq",
+               "Metric Tensor",
+               "Non Gravitational Fields",
+               "Particles",
+               "Physical Systems",
+               "Postulate",
+               "Time",
+               "Time Range",
+               "{XGR}",
+               "{XR}",
+               "{X}"
             ]
-        }
-    },
-    "concepts": [
-        {
-            "intent": [
-                "T",
-                "E3",
-                "{X}",
-                "K"
+         },
+         "hash" : "-665386700",
+         "idx" : 4,
+         "labelAttributes" : [
+            "{XGR}",
+            "Non Gravitational Fields",
+            "Metric Tensor",
+            "M4",
+            "Locality",
+            "kappa",
+            "Gravitational Fields",
+            "GR 6.3",
+            "GR 5.2",
+            "Energy-momentum Tensor",
+            "Einstein’s Eq",
+            "Coordinate Transformations",
+            "Asymptotic Form",
+            "Affine Connection",
+            "<1,3>"
+         ],
+         "labelObjects" : [
+            "GR"
+         ],
+         "level" : "1",
+         "parents" : [
+            "1467287843"
+         ]
+      },
+      {
+         "children" : [
+            "-134217728"
+         ],
+         "concept" : {
+            "extent" : [
+               "CEM"
             ],
-            "extent": [
-                "PM",
-                "CM",
-                "CEM",
-                "SRK",
-                "GR"
+            "intent" : [
+               "1/r",
+               "Body Force Density",
+               "c",
+               "Charged Bodies",
+               "Charged M Bodies",
+               "Electric Fields",
+               "EM Fields",
+               "EM Signals",
+               "Force Density",
+               "K",
+               "M Bodies",
+               "M3",
+               "Magnetic Fields",
+               "Maxwell’s Eq",
+               "Physical Systems",
+               "Time",
+               "{X}"
             ]
-        },
-        {
-            "intent": [
-                "T",
-                "E3",
-                "E3R",
-                "M3",
-                "M4",
-                "tR",
-                "Cotime",
-                "Particles",
-                "Bodies",
-                "EM Fields",
-                "Charged Bodies",
-                "Gravitational fields",
-                "Non Gravitational Fields",
-                "Physical Systems",
-                "EM Signals",
-                "Postulate",
-                "{X}",
-                "{XR}",
-                "{XGR}",
-                "K",
-                "Inertial frame",
-                "PM 2.5",
-                "Mass",
-                "PM 3.2",
-                "External Force",
-                "Interparticle Force",
-                "F=ma",
-                "Map X:b¬C",
-                "Mass density",
-                "Mass additivity",
-                "Mass Conservation",
-                "Charge density",
-                "M Bodies",
-                "{Beta*}",
-                "Electric Fields",
-                "Magnetic Fields",
-                "1/r",
-                "c",
-                "CM 2.2",
-                "PM 2.4",
-                "Velocity and acceleration",
-                "Body force density",
-                "Body Stress",
-                "Balance of momentum",
-                "Moment of momentum",
-                "Maxwell’s Equations",
-                "CEM 3, 4.3",
-                "Tensor degeneration",
-                "Coordinate transformations",
-                "Locality",
-                "Metric tensor",
-                "Signature (1,3)",
-                "Asymptotic form",
-                "Affine Connection",
-                "Cotime",
-                "GR 5.2",
-                "kappa",
-                "Einstein’s equiation",
-                "GR 6.3"
+         },
+         "hash" : "1161595222",
+         "idx" : 5,
+         "labelAttributes" : [],
+         "labelObjects" : [
+            "CEM"
+         ],
+         "level" : "1",
+         "parents" : [
+            "1161595138",
+            "1142947907"
+         ]
+      },
+      {
+         "children" : [
+            "1143521308",
+            "1142980662"
+         ],
+         "concept" : {
+            "extent" : [
+               "CM",
+               "GR",
+               "PM",
+               "RK"
             ],
-            "extent": []
-        },
-        {
-            "intent": [
-                "T",
-                "E3",
-                "{X}",
-                "K",
-                "Body force density"
-            ],
-            "extent": [
-                "CM",
-                "CEM",
-                "SRK",
-                "GR"
+            "intent" : [
+               "E3",
+               "K",
+               "Time",
+               "{X}"
             ]
-        },
-        {
-            "intent": [
-                "T",
-                "E3",
-                "M3",
-                "EM Fields",
-                "Charged Bodies",
-                "Physical Systems",
-                "EM Signals",
-                "{X}",
-                "K",
-                "Charge density",
-                "{Beta*}",
-                "Electric Fields",
-                "Magnetic Fields",
-                "1/r",
-                "c",
-                "Body force density",
-                "Maxwell’s Equations",
-                "CEM 3, 4.3",
-                "Tensor degeneration"
+         },
+         "hash" : "1142980638",
+         "idx" : 6,
+         "labelAttributes" : [
+            "E3"
+         ],
+         "labelObjects" : [],
+         "level" : "4",
+         "parents" : [
+            "1142947871"
+         ]
+      },
+      {
+         "children" : [
+            "1467287843",
+            "1693433928"
+         ],
+         "concept" : {
+            "extent" : [
+               "GR",
+               "PM",
+               "RK"
             ],
-            "extent": [
-                "CEM",
-                "SRK",
-                "GR"
+            "intent" : [
+               "E3",
+               "K",
+               "Particles",
+               "Postulate",
+               "Time",
+               "{X}"
             ]
-        },
-        {
-            "intent": [
-                "T",
-                "E3",
-                "E3R",
-                "M3",
-                "tR",
-                "Cotime",
-                "Particles",
-                "Bodies",
-                "EM Fields",
-                "Charged Bodies",
-                "Physical Systems",
-                "EM Signals",
-                "Postulate",
-                "{X}",
-                "{XR}",
-                "K",
-                "Inertial frame",
-                "Charge density",
-                "{Beta*}",
-                "Electric Fields",
-                "Magnetic Fields",
-                "1/r",
-                "c",
-                "Body force density",
-                "Maxwell’s Equations",
-                "CEM 3, 4.3",
-                "Tensor degeneration"
+         },
+         "hash" : "1143521308",
+         "idx" : 7,
+         "labelAttributes" : [
+            "Postulate",
+            "Particles"
+         ],
+         "labelObjects" : [],
+         "level" : "3",
+         "parents" : [
+            "1142980638"
+         ]
+      },
+      {
+         "children" : [
+            "-134217728"
+         ],
+         "concept" : {
+            "extent" : [
+               "PM"
             ],
-            "extent": [
-                "SRK",
-                "GR"
+            "intent" : [
+               "E3",
+               "External Force",
+               "F = ma",
+               "Interparticle Force",
+               "K",
+               "Mass",
+               "Particles",
+               "PM 2.4",
+               "PM 2.5",
+               "PM 3.2",
+               "Postulate",
+               "Time",
+               "{X}"
             ]
-        },
-        {
-            "intent": [
-                "T",
-                "E3",
-                "E3R",
-                "M3",
-                "M4",
-                "tR",
-                "Cotime",
-                "Particles",
-                "Bodies",
-                "EM Fields",
-                "Charged Bodies",
-                "Gravitational fields",
-                "Non Gravitational Fields",
-                "Physical Systems",
-                "EM Signals",
-                "Postulate",
-                "{X}",
-                "{XR}",
-                "{XGR}",
-                "K",
-                "Inertial frame",
-                "Charge density",
-                "{Beta*}",
-                "Electric Fields",
-                "Magnetic Fields",
-                "1/r",
-                "c",
-                "Body force density",
-                "Maxwell’s Equations",
-                "CEM 3, 4.3",
-                "Tensor degeneration",
-                "Coordinate transformations",
-                "Locality",
-                "Metric tensor",
-                "Signature (1,3)",
-                "Asymptotic form",
-                "Affine Connection",
-                "Cotime",
-                "GR 5.2",
-                "kappa",
-                "Einstein’s equiation",
-                "GR 6.3"
+         },
+         "hash" : "1693433928",
+         "idx" : 8,
+         "labelAttributes" : [
+            "PM 3.2",
+            "PM 2.5",
+            "PM 2.4",
+            "Mass",
+            "Interparticle Force",
+            "F = ma",
+            "External Force"
+         ],
+         "labelObjects" : [
+            "PM"
+         ],
+         "level" : "1",
+         "parents" : [
+            "1143521308"
+         ]
+      },
+      {
+         "children" : [
+            "1467287843",
+            "1151369554"
+         ],
+         "concept" : {
+            "extent" : [
+               "CM",
+               "GR",
+               "RK"
             ],
-            "extent": [
-                "GR"
+            "intent" : [
+               "Bodies",
+               "E3",
+               "K",
+               "Time",
+               "{X}"
             ]
-        },
-        {
-            "intent": [
-                "T",
-                "E3",
-                "Bodies",
-                "{X}",
-                "K",
-                "Body force density"
+         },
+         "hash" : "1142980662",
+         "idx" : 9,
+         "labelAttributes" : [
+            "Bodies"
+         ],
+         "labelObjects" : [],
+         "level" : "3",
+         "parents" : [
+            "1142980638"
+         ]
+      },
+      {
+         "children" : [
+            "-134217728"
+         ],
+         "concept" : {
+            "extent" : [
+               "CM"
             ],
-            "extent": [
-                "CM",
-                "SRK",
-                "GR"
+            "intent" : [
+               "Balance of Momentum",
+               "Bodies",
+               "Body Force Density",
+               "Body Stress",
+               "Charge Density",
+               "CM 2.2",
+               "E3",
+               "K",
+               "Map",
+               "Mass Additivity",
+               "Mass Conservation",
+               "Mass Density",
+               "Moment of Momentum",
+               "Time",
+               "Velocity and Acceleration",
+               "{X}"
             ]
-        },
-        {
-            "intent": [
-                "T",
-                "E3",
-                "Bodies",
-                "{X}",
-                "K",
-                "Map X:b¬C",
-                "Mass density",
-                "Mass additivity",
-                "Mass Conservation",
-                "M Bodies",
-                "CM 2.2",
-                "Velocity and acceleration",
-                "Body force density",
-                "Body Stress",
-                "Balance of momentum",
-                "Moment of momentum"
+         },
+         "hash" : "1151369554",
+         "idx" : 10,
+         "labelAttributes" : [
+            "Velocity and Acceleration",
+            "Moment of Momentum",
+            "Mass Density",
+            "Mass Conservation",
+            "Mass Additivity",
+            "Map",
+            "CM 2.2",
+            "Charge Density",
+            "Body Stress",
+            "Balance of Momentum"
+         ],
+         "labelObjects" : [
+            "CM"
+         ],
+         "level" : "1",
+         "parents" : [
+            "1142980662",
+            "1142947907"
+         ]
+      },
+      {
+         "children" : [
+            "1151369554",
+            "1161595222"
+         ],
+         "concept" : {
+            "extent" : [
+               "CEM",
+               "CM"
             ],
-            "extent": [
-                "CM"
+            "intent" : [
+               "Body Force Density",
+               "K",
+               "Time",
+               "{X}"
             ]
-        },
-        {
-            "intent": [
-                "T",
-                "E3",
-                "Particles",
-                "Postulate",
-                "{X}",
-                "K"
-            ],
-            "extent": [
-                "PM",
-                "SRK",
-                "GR"
-            ]
-        },
-        {
-            "intent": [
-                "T",
-                "E3",
-                "Particles",
-                "Postulate",
-                "{X}",
-                "K",
-                "PM 2.5",
-                "Mass",
-                "PM 3.2",
-                "External Force",
-                "Interparticle Force",
-                "F=ma",
-                "PM 2.4"
-            ],
-            "extent": [
-                "PM"
-            ]
-        }
-    ],
-    "nodes": [
-        {
-            "hash": "589852",
-            "idx": 0,
-            "level": 5,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "{X}",
-                    "K"
-                ],
-                "extent": [
-                    "PM",
-                    "CM",
-                    "CEM",
-                    "SRK",
-                    "GR"
-                ]
-            },
-            "parents": [],
-            "children": [
-                "590365",
-                "622746"
-            ],
-            "labelObjects": [],
-            "labelAttributes": [
-                "K",
-                "{X}",
-                "E3",
-                "T"
-            ],
-            "index": 0,
-            "weight": 2,
-            "x": 671.0446400460858,
-            "y": 276.54521806747266,
-            "px": 671.0446400460858,
-            "py": 276.54521806747266,
-            "fixed": 0
-        },
-        {
-            "hash": "-134217728",
-            "idx": 1,
-            "level": 0,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "E3R",
-                    "M3",
-                    "M4",
-                    "tR",
-                    "Cotime",
-                    "Particles",
-                    "Bodies",
-                    "EM Fields",
-                    "Charged Bodies",
-                    "Gravitational fields",
-                    "Non Gravitational Fields",
-                    "Physical Systems",
-                    "EM Signals",
-                    "Postulate",
-                    "{X}",
-                    "{XR}",
-                    "{XGR}",
-                    "K",
-                    "Inertial frame",
-                    "PM 2.5",
-                    "Mass",
-                    "PM 3.2",
-                    "External Force",
-                    "Interparticle Force",
-                    "F=ma",
-                    "Map X:b¬C",
-                    "Mass density",
-                    "Mass additivity",
-                    "Mass Conservation",
-                    "Charge density",
-                    "M Bodies",
-                    "{Beta*}",
-                    "Electric Fields",
-                    "Magnetic Fields",
-                    "1/r",
-                    "c",
-                    "CM 2.2",
-                    "PM 2.4",
-                    "Velocity and acceleration",
-                    "Body force density",
-                    "Body Stress",
-                    "Balance of momentum",
-                    "Moment of momentum",
-                    "Maxwell’s Equations",
-                    "CEM 3, 4.3",
-                    "Tensor degeneration",
-                    "Coordinate transformations",
-                    "Locality",
-                    "Metric tensor",
-                    "Signature (1,3)",
-                    "Asymptotic form",
-                    "Affine Connection",
-                    "Cotime",
-                    "GR 5.2",
-                    "kappa",
-                    "Einstein’s equiation",
-                    "GR 6.3"
-                ],
-                "extent": []
-            },
-            "parents": [
-                "-2015355439",
-                "2013863488",
-                "132743170"
-            ],
-            "children": [],
-            "labelObjects": [],
-            "labelAttributes": [],
-            "index": 1,
-            "weight": 3,
-            "x": 788.0244447241128,
-            "y": 1942.7980149224343,
-            "px": 788.0244447241128,
-            "py": 1942.7980149224343,
-            "fixed": 0
-        },
-        {
-            "hash": "590365",
-            "idx": 2,
-            "level": 4,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "{X}",
-                    "K",
-                    "Body force density"
-                ],
-                "extent": [
-                    "CM",
-                    "CEM",
-                    "SRK",
-                    "GR"
-                ]
-            },
-            "parents": [
-                "589852"
-            ],
-            "children": [
-                "-2146859991",
-                "590617"
-            ],
-            "labelObjects": [],
-            "labelAttributes": [
-                "Body force density"
-            ],
-            "index": 2,
-            "weight": 3,
-            "x": 905.7692340291055,
-            "y": 617.2902072139264,
-            "px": 905.7692340291055,
-            "py": 617.2902072139264,
-            "fixed": 0
-        },
-        {
-            "hash": "-2146859991",
-            "idx": 3,
-            "level": 3,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "M3",
-                    "EM Fields",
-                    "Charged Bodies",
-                    "Physical Systems",
-                    "EM Signals",
-                    "{X}",
-                    "K",
-                    "Charge density",
-                    "{Beta*}",
-                    "Electric Fields",
-                    "Magnetic Fields",
-                    "1/r",
-                    "c",
-                    "Body force density",
-                    "Maxwell’s Equations",
-                    "CEM 3, 4.3",
-                    "Tensor degeneration"
-                ],
-                "extent": [
-                    "CEM",
-                    "SRK",
-                    "GR"
-                ]
-            },
-            "parents": [
-                "590365"
-            ],
-            "children": [
-                "-2145712695"
-            ],
-            "labelObjects": [
-                "CEM"
-            ],
-            "labelAttributes": [
-                "Tensor degeneration",
-                "CEM 3, 4.3",
-                "Maxwell’s Equations",
-                "c",
-                "1/r",
-                "Magnetic Fields",
-                "Electric Fields",
-                "{Beta*}",
-                "Charge density",
-                "EM Signals",
-                "Physical Systems",
-                "Charged Bodies",
-                "EM Fields",
-                "M3"
-            ],
-            "index": 3,
-            "weight": 2,
-            "x": 1202.7471464163616,
-            "y": 911.4969037866247,
-            "px": 1202.7471464163616,
-            "py": 911.4969037866247,
-            "fixed": 0
-        },
-        {
-            "hash": "-2145712695",
-            "idx": 4,
-            "level": 2,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "E3R",
-                    "M3",
-                    "tR",
-                    "Cotime",
-                    "Particles",
-                    "Bodies",
-                    "EM Fields",
-                    "Charged Bodies",
-                    "Physical Systems",
-                    "EM Signals",
-                    "Postulate",
-                    "{X}",
-                    "{XR}",
-                    "K",
-                    "Inertial frame",
-                    "Charge density",
-                    "{Beta*}",
-                    "Electric Fields",
-                    "Magnetic Fields",
-                    "1/r",
-                    "c",
-                    "Body force density",
-                    "Maxwell’s Equations",
-                    "CEM 3, 4.3",
-                    "Tensor degeneration"
-                ],
-                "extent": [
-                    "SRK",
-                    "GR"
-                ]
-            },
-            "parents": [
-                "-2146859991",
-                "590617",
-                "622746"
-            ],
-            "children": [
-                "-2015355439"
-            ],
-            "labelObjects": [
-                "SRK"
-            ],
-            "labelAttributes": [
-                "Inertial frame",
-                "{XR}",
-                "Cotime",
-                "tR",
-                "E3R"
-            ],
-            "index": 4,
-            "weight": 4,
-            "x": 882.875974666199,
-            "y": 1329.083373287796,
-            "px": 882.875974666199,
-            "py": 1329.083373287796,
-            "fixed": 0
-        },
-        {
-            "hash": "-2015355439",
-            "idx": 5,
-            "level": 1,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "E3R",
-                    "M3",
-                    "M4",
-                    "tR",
-                    "Cotime",
-                    "Particles",
-                    "Bodies",
-                    "EM Fields",
-                    "Charged Bodies",
-                    "Gravitational fields",
-                    "Non Gravitational Fields",
-                    "Physical Systems",
-                    "EM Signals",
-                    "Postulate",
-                    "{X}",
-                    "{XR}",
-                    "{XGR}",
-                    "K",
-                    "Inertial frame",
-                    "Charge density",
-                    "{Beta*}",
-                    "Electric Fields",
-                    "Magnetic Fields",
-                    "1/r",
-                    "c",
-                    "Body force density",
-                    "Maxwell’s Equations",
-                    "CEM 3, 4.3",
-                    "Tensor degeneration",
-                    "Coordinate transformations",
-                    "Locality",
-                    "Metric tensor",
-                    "Signature (1,3)",
-                    "Asymptotic form",
-                    "Affine Connection",
-                    "Cotime",
-                    "GR 5.2",
-                    "kappa",
-                    "Einstein’s equiation",
-                    "GR 6.3"
-                ],
-                "extent": [
-                    "GR"
-                ]
-            },
-            "parents": [
-                "-2145712695"
-            ],
-            "children": [
-                "-134217728"
-            ],
-            "labelObjects": [
-                "GR"
-            ],
-            "labelAttributes": [
-                "GR 6.3",
-                "Einstein’s equiation",
-                "kappa",
-                "GR 5.2",
-                "Cotime",
-                "Affine Connection",
-                "Asymptotic form",
-                "Signature (1,3)",
-                "Metric tensor",
-                "Locality",
-                "Coordinate transformations",
-                "{XGR}",
-                "Non Gravitational Fields",
-                "Gravitational fields",
-                "M4"
-            ],
-            "index": 5,
-            "weight": 2,
-            "x": 1197.0074177258573,
-            "y": 1770.5258675242437,
-            "px": 1197.0074177258573,
-            "py": 1770.5258675242437,
-            "fixed": 0
-        },
-        {
-            "hash": "590617",
-            "idx": 6,
-            "level": 3,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "Bodies",
-                    "{X}",
-                    "K",
-                    "Body force density"
-                ],
-                "extent": [
-                    "CM",
-                    "SRK",
-                    "GR"
-                ]
-            },
-            "parents": [
-                "590365"
-            ],
-            "children": [
-                "-2145712695",
-                "2013863488"
-            ],
-            "labelObjects": [],
-            "labelAttributes": [
-                "Bodies"
-            ],
-            "index": 6,
-            "weight": 3,
-            "x": 772.6417011874996,
-            "y": 847.0957779431981,
-            "px": 772.6417011874996,
-            "py": 847.0957779431981,
-            "fixed": 0
-        },
-        {
-            "hash": "2013863488",
-            "idx": 7,
-            "level": 1,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "Bodies",
-                    "{X}",
-                    "K",
-                    "Map X:b¬C",
-                    "Mass density",
-                    "Mass additivity",
-                    "Mass Conservation",
-                    "M Bodies",
-                    "CM 2.2",
-                    "Velocity and acceleration",
-                    "Body force density",
-                    "Body Stress",
-                    "Balance of momentum",
-                    "Moment of momentum"
-                ],
-                "extent": [
-                    "CM"
-                ]
-            },
-            "parents": [
-                "590617"
-            ],
-            "children": [
-                "-134217728"
-            ],
-            "labelObjects": [
-                "CM"
-            ],
-            "labelAttributes": [
-                "Moment of momentum",
-                "Balance of momentum",
-                "Body Stress",
-                "Velocity and acceleration",
-                "CM 2.2",
-                "M Bodies",
-                "Mass Conservation",
-                "Mass additivity",
-                "Mass density",
-                "Map X:b¬C"
-            ],
-            "index": 7,
-            "weight": 2,
-            "x": 413.74886354360865,
-            "y": 1624.2656147820421,
-            "px": 413.74886354360865,
-            "py": 1624.2656147820421,
-            "fixed": 0
-        },
-        {
-            "hash": "622746",
-            "idx": 8,
-            "level": 3,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "Particles",
-                    "Postulate",
-                    "{X}",
-                    "K"
-                ],
-                "extent": [
-                    "PM",
-                    "SRK",
-                    "GR"
-                ]
-            },
-            "parents": [
-                "589852"
-            ],
-            "children": [
-                "-2145712695",
-                "132743170"
-            ],
-            "labelObjects": [],
-            "labelAttributes": [
-                "Postulate",
-                "Particles"
-            ],
-            "index": 8,
-            "weight": 3,
-            "x": 313.69667415191657,
-            "y": 713.3598224272039,
-            "px": 313.69667415191657,
-            "py": 713.3598224272039,
-            "fixed": 0
-        },
-        {
-            "hash": "132743170",
-            "idx": 9,
-            "level": 1,
-            "concept": {
-                "intent": [
-                    "T",
-                    "E3",
-                    "Particles",
-                    "Postulate",
-                    "{X}",
-                    "K",
-                    "PM 2.5",
-                    "Mass",
-                    "PM 3.2",
-                    "External Force",
-                    "Interparticle Force",
-                    "F=ma",
-                    "PM 2.4"
-                ],
-                "extent": [
-                    "PM"
-                ]
-            },
-            "parents": [
-                "622746"
-            ],
-            "children": [
-                "-134217728"
-            ],
-            "labelObjects": [
-                "PM"
-            ],
-            "labelAttributes": [
-                "PM 2.4",
-                "F=ma",
-                "Interparticle Force",
-                "External Force",
-                "PM 3.2",
-                "Mass",
-                "PM 2.5"
-            ],
-            "index": 9,
-            "weight": 2,
-            "x": 87.07817356665964,
-            "y": 1672.4932546456084,
-            "px": 87.07817356665964,
-            "py": 1672.4932546456084,
-            "fixed": 0
-        }
-    ],
-    "links": [
-        {
-            "source": 0,
-            "target": 2
-        },
-        {
-            "source": 0,
-            "target": 8
-        },
-        {
-            "source": 2,
-            "target": 3
-        },
-        {
-            "source": 2,
-            "target": 6
-        },
-        {
-            "source": 3,
-            "target": 4
-        },
-        {
-            "source": 4,
-            "target": 5
-        },
-        {
-            "source": 5,
-            "target": 1
-        },
-        {
-            "source": 6,
-            "target": 4
-        },
-        {
-            "source": 6,
-            "target": 7
-        },
-        {
-            "source": 7,
-            "target": 1
-        },
-        {
-            "source": 8,
-            "target": 4
-        },
-        {
-            "source": 8,
-            "target": 9
-        },
-        {
-            "source": 9,
-            "target": 1
-        }
-    ],
-    "classDescriptions": [
-        {
-            "key": "Chronogeometrical",
-            "desc": "Space and time"
-        },
-        {
-            "key": "Referents",
-            "desc": "Referents"
-        },
-        {
-            "key": "Tip",
-            "desc": "Postulates and tipifications"
-        },
-        {
-            "key": "Family",
-            "desc": "Family of functions"
-        },
-        {
-            "key": "Frames",
-            "desc": "Coordinate systems and reference frames"
-        },
-        {
-            "key": "EqMotion",
-            "desc": "Equations of motion"
-        },
-        {
-            "key": "FieldEq",
-            "desc": "Force laws and field equations"
-        },
-        {
-            "key": "Transformation",
-            "desc": "Mappings and transformations"
-        },
-        {
-            "key": "DE",
-            "desc": "Distinguished elements"
-        }
-    ],
-    "classes": {
-        "T": "Chronogeometrical",
-        "E3": "Chronogeometrical",
-        "E3R": "Chronogeometrical",
-        "M3": "Chronogeometrical",
-        "M4": "Chronogeometrical",
-        "tR": "Chronogeometrical",
-        "Cotime": "Chronogeometrical",
-        "Particles": "Referents",
-        "Bodies": "Referents",
-        "EM Fields": "Family",
-        "Charged Bodies": "Referents",
-        "Gravitational fields": "Referents",
-        "Non Gravitational Fields": "Referents",
-        "Physical Systems": "Referents",
-        "EM Signals": "Referents",
-        "Postulate": "Tip",
-        "{X}": "Family",
-        "{XR}": "Family",
-        "{XGR}": "Family",
-        "K": "Frames",
-        "Inertial frame": "Frames",
-        "PM 2.5": "Tip",
-        "Mass": "Family",
-        "PM 3.2": "Tip",
-        "External Force": "Family",
-        "Interparticle Force": "Family",
-        "F=ma": "EqMotion",
-        "Map X:b¬C": "Transformation",
-        "Mass density": "Family",
-        "Mass additivity": "Tip",
-        "Mass Conservation": "Tip",
-        "Charge density": "Family",
-        "M Bodies": "Family",
-        "{Beta*}": "Family",
-        "Electric Fields": "Family",
-        "Magnetic Fields": "Family",
-        "1/r": "Tip",
-        "c": "DE",
-        "CM 2.2": "Tip",
-        "PM 2.4": "Family",
-        "Velocity and acceleration": "Family",
-        "Body force density": "Family",
-        "Body Stress": "Family",
-        "Balance of momentum": "EqMotion",
-        "Moment of momentum": "EqMotion",
-        "Maxwell’s Equations": "FieldEq",
-        "CEM 3, 4.3": "FieldEq",
-        "Tensor degeneration": "Tip",
-        "Coordinate transformations": "Transformation",
-        "Locality": "Chronogeometrical",
-        "Metric tensor": "Family",
-        "Signature (1,3)": "Tip",
-        "Asymptotic form": "Tip",
-        "Affine Connection": "Family",
-        "Cotime": "Family",
-        "GR 5.2": "Tip",
-        "kappa": "DE\n",
-        "Einstein’s equiation": "FieldEq",
-        "GR 6.3": "Tip"
-    }
+         },
+         "hash" : "1142947907",
+         "idx" : 11,
+         "labelAttributes" : [
+            "Body Force Density"
+         ],
+         "labelObjects" : [],
+         "level" : "2",
+         "parents" : [
+            "1142947871"
+         ]
+      }
+   ]
 }
