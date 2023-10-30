@@ -150,6 +150,10 @@
   display: none;
 }
 
+#editor textarea {
+  font-family: monospace;
+}
+
 #editor input {
   text-align: right;
 }
