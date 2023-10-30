@@ -101,6 +101,8 @@
 
 .dia-shell .btn {
   --bs-btn-bg: white;
+  --bs-btn-hover-color: var(--bs-btn-color);
+  --bs-btn-hover-bg: white;
 }
 
 .btn-toolbar .btn[aria-label] {
