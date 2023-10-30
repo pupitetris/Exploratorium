@@ -37,6 +37,8 @@ TODO
   - [ ] En zoom negativo, no jala el pan.
   - [x] El tool de infobox se encima sobre el infobox (z-index)
   - [ ] Dump de SQL debe de registar el estado de las secuencias.
+  - [ ] En algunos diagramas, los node levels se traslapan con el node dot.
+  - [ ] Homologar config.json?
 
 - Mejoras:
   - [x] Menú de teorías en el navbar
