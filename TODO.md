@@ -9,6 +9,8 @@ TODO
   - [ ] Checar en Safari
 
 - Infraestructura:
+  - [ ] Documentación!
+  - [ ] npm
   - [x] generador en maquina de Mariana
   - [x] GitHub
     - [ ] GitHub para Mariana
@@ -33,24 +35,24 @@ TODO
         corta que la ventana.
   - [x] Diagrama y título e intro no están centrados.
   - [ ] En zoom negativo, no jala el pan.
-  - [ ] El tool de infobox se encima sobre el infobox (z-index)
+  - [x] El tool de infobox se encima sobre el infobox (z-index)
 
 - Mejoras:
   - [x] Menú de teorías en el navbar
   - [x] Recuperar el verde abajo del pasto.
   - [x] Botón opcional para volver casi transparente las ligas al ínfimo. 
   - [x] Zoom in/out y paneo
-  - [ ] Atributos en abanico. <- tal vez mejor dos columnas.
+  - [x] Atributos en abanico. <- tal vez mejor dos columnas.
 
   - [x] Click en infimo .active le quita el .active
   - [x] Tooltips en toolbars
-  - [ ] Infobox: párrafo (columna de desc.csv) especial de ecuación.
+  - [x] Infobox: párrafo (columna de desc.csv) especial de ecuación.
   - [x] Remover el texto del autor en la páginas de los diagramas.
   - [ ] Todos los svgs se van a 16:9
   - [ ] Repasar el feature de subrayado (double click en nodos).
   - [ ] Infobox: poner attribute class dentro del texto.
   - [ ] Resaltar nodo seleccionado.
-  - [ ] Que el nav flote arriba al scrollear hacia abajo la página.
+  - [x] Que el nav flote arriba al scrollear hacia abajo la página.
 
 - Indiana:
   - [ ] 4k touchscreen
