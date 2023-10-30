@@ -10,6 +10,7 @@ Exploratorium de teorías del espacio-tiempo
     "Diagram toolbar": "Barra de herramientas del diagrama",
     "Full Screen": "Pantalla completa",
     "Show Legend": "Mostrar leyenda",
+    "Show Attributes": "Mostrar atributos",
     "Toggle navigation": "Alternar navegación",
     "Zoom In": "Acercar",
     "Zoom Out": "Alejar",

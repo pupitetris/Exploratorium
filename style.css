@@ -95,7 +95,7 @@
 .dia-shell .btn-toolbar {
   position: absolute;
   top: 20px;
-  --tb-width: 16em;
+  --tb-width: 18.5em;
   width: var(--tb-width);
   left: calc(100% - var(--tb-width));
   flex-wrap: nowrap;
@@ -280,6 +280,10 @@ text {
 
 .objects-label-box {
 	fill: white;
+}
+
+.no-attributes .attributes-label {
+  display: none;
 }
 
 .attributes-label {
