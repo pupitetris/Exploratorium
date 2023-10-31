@@ -260,6 +260,7 @@ WHERE
 	AND attr_diagram_class.attr_class_id = attr_class.attr_class_id
 	AND diagram.diagram_id = attribute_diagram.diagram_id
 	AND attribute.attribute_id = attribute_diagram.attribute_id
+	/* v_attr_class_diagram(attribute_label,class_code,diagram_code) */
 ;
 
 
@@ -281,6 +282,7 @@ FROM
 		AND es.lang_code = 'es'
 	ORDER BY
 		ac.ord
+		/* v_attribute_classes(Code,Title_en,Title_es) */
 ;
 
 
@@ -301,6 +303,7 @@ FROM
 ORDER BY
 	Lang,
 	Diagram
+	/* v_attribute_diagram(Lang,Diagram,Attribute) */
 ;
 
 
@@ -328,6 +331,7 @@ ORDER BY
 	Lang,
 	Diagram,
 	Class
+	/* v_attributes(Lang,Diagram,Class,Attribute,Title,Formula,Explanation,Reference) */
 ;
 
 
@@ -338,6 +342,7 @@ CREATE VIEW v_context_assignments AS
 SELECT
 	contexts.Lang,
 	contexts.Diagram,
+	contexts.ObjectCode,
 	contexts.Object,
 	contexts.Attribute,
 	contexts.Class,
@@ -353,6 +358,7 @@ FROM
 ORDER BY
 	contexts.Diagram ASC,
 	contexts.Object ASC
+	/* v_context_assignments(Lang,Diagram,ObjectCode,Object,Attribute,Class,x,object_id,attribute_id) */
 ;
 
 
@@ -401,6 +407,7 @@ ORDER BY
 	"Diagram" ASC,
 	"Object" ASC,
 	"Attribute" ASC
+	/* v_contexts(Lang,Diagram,ObjectCode,Object,Attribute,Class,object_id,attribute_id,diagram_id) */
 ;
 
 
@@ -415,6 +422,7 @@ SELECT
 FROM
 	diagram AS d
 	JOIN diagram_class AS dc USING (diagram_class_id)
+	/* v_diagram_class(diagram_id,diagram,class) */
 ;
 
 
@@ -435,6 +443,7 @@ FROM
 ORDER BY
 	Lang,
 	Diagram
+	/* v_object_diagram(Lang,Diagram,Object,Code) */
 ;
 
 
