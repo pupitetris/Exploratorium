@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 use strict;
 use warnings;
@@ -28,20 +28,6 @@ use Inline (
     'conexp.frontend.ContextDocumentModel'
   ]
     );
-
-# This file needs to exist in order to avoid a warning regarding prefs.xml file.
-sub setupLatticePrefs {
-  my $LATTICE_PREF_DIR = $ENV{'HOME'} . "/.java/.userPrefs/conexp/frontend/latticeeditor";
-
-  if (! -e "$LATTICE_PREF_DIR/prefs.xml") {
-    make_path($LATTICE_PREF_DIR, { chmod => 0755, error => \my $err });
-    open my $fd, ">$LATTICE_PREF_DIR/prefs.xml";
-    while (my $l = <DATA>) {
-      print $fd $l;
-    }
-    close DATA;
-  }
-}
 
 sub sqlFetch {
   my $dbh = shift;
@@ -372,35 +358,3 @@ my $json = JSON->new()
   });
 
 print $json;
-
-__DATA__
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
-<preferences EXTERNAL_XML_VERSION="1.0">
-  <root type="user">
-    <map />
-    <node name="conexp">
-      <map />
-      <node name="frontend">
-        <map />
-        <node name="latticeeditor">
-          <map>
-            <entry key="FIT_TO_SIZE_PROPERTY" value="true" />
-            <entry key="layout" value="MinIntersectionLayout" />
-            <entry key="highlightStrategy" value="FilterIdealHighlightStrategy" />
-            <entry key="showCollisions" value="true" />
-            <entry key="drawObjects" value="AllObjectsLabelsStrategy" />
-            <entry key="gridSizeX" value="80" />
-            <entry key="maxNodeRadius" value="12" />
-            <entry key="gridSizeY" value="80" />
-            <entry key="nodeDrawStrategy" value="MaxNodeRadiusCalcStrategy" />
-            <entry key="edgeDrawStrategy" value="FixedEdgeSizeCalcStrategy" />
-            <entry key="labelsFontSize" value="12" />
-            <entry key="USE_IDEAL_MOVE_STRATEGY_PROPERTY" value="false" />
-            <entry key="drawAttribs" value="AllAttribsLabelsStrategy" />
-          </map>
-        </node>
-      </node>
-    </node>
-  </root>
-</preferences>
