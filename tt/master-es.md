@@ -38,15 +38,15 @@ Cuajimalpa
 
 ## Menu
 
-- [Protofísica](theories-es/protophysics)
-- [Dinámica Analítica](theories-es/analytical-dynamics)
-- [Teorías Básicas](theories-es/basic)
-- [Teorías del Espacio-Tiempo](theories-es/spacetimes)
-- [Teorías Clásicas](theories-es/classical)
-- [Teorías Métricas](theories-es/metric)
-- [Teorías f(R)](theories-es/f-R)
-- [Teorías Extendidas](theories-es/mond)
-- [Holón de Teorías](theories-es/holon)
+- [Protofísica](theories/es/protophysics)
+- [Dinámica Analítica](theories/es/analytical-dynamics)
+- [Teorías Básicas](theories/es/basic)
+- [Teorías del Espacio-Tiempo](theories/es/spacetimes)
+- [Teorías Clásicas](theories/es/classical)
+- [Teorías Métricas](theories/es/metric)
+- [Teorías f(R)](theories/es/f-R)
+- [Teorías Extendidas](theories/es/mond)
+- [Holón de Teorías](theories/es/holon)
 - [Manzano de la Gravitación](//prezi.com/rdkivznlhgga/the-gravity-apple-tree/)
 
 
@@ -185,8 +185,8 @@ Este sitio ha sido optimizado para Mozilla Firefox y Google Chrome.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories-es/protophysics/index.html",
-  "nav_lang": "theories-en/protophysics/index.html"
+  "output": "theories/es/protophysics/index.html",
+  "nav_lang": "theories/en/protophysics/index.html"
 }
 ```
 
@@ -202,8 +202,8 @@ llama protofísica, y ciertos principios "zerológicos".
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories-es/analytical-dynamics/index.html",
-  "nav_lang": "theories-en/analytical-dynamics/index.html"
+  "output": "theories/es/analytical-dynamics/index.html",
+  "nav_lang": "theories/en/analytical-dynamics/index.html"
 }
 ```
 
@@ -220,8 +220,8 @@ Physics* (1967) de Mario Bunge.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories-es/basic/index.html",
-  "nav_lang": "theories-en/basic/index.html"
+  "output": "theories/es/basic/index.html",
+  "nav_lang": "theories/en/basic/index.html"
 }
 ```
 
@@ -239,8 +239,8 @@ General. Compárese su localización con la red de teorías clásicas.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories-es/spacetimes/index.html",
-  "nav_lang": "theories-en/spacetimes/index.html"
+  "output": "theories/es/spacetimes/index.html",
+  "nav_lang": "theories/en/spacetimes/index.html"
 }
 ```
 
@@ -258,8 +258,8 @@ clasificación de Niels Dewar (2016, 2018) y de Sotiriou y Farahoni
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories-es/classical/index.html",
-  "nav_lang": "theories-en/classical/index.html"
+  "output": "theories/es/classical/index.html",
+  "nav_lang": "theories/en/classical/index.html"
 }
 ```
 
@@ -285,8 +285,8 @@ especialización.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories-es/metric/index.html",
-  "nav_lang": "theories-en/metric/index.html"
+  "output": "theories/es/metric/index.html",
+  "nav_lang": "theories/en/metric/index.html"
 }
 ```
 
@@ -307,8 +307,8 @@ no viables.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories-es/f-R/index.html",
-  "nav_lang": "theories-en/f-R/index.html"
+  "output": "theories/es/f-R/index.html",
+  "nav_lang": "theories/en/f-R/index.html"
 }
 ```
 
@@ -331,8 +331,8 @@ distintas, según la dependencia de las variables.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories-es/mond/index.html",
-  "nav_lang": "theories-en/mond/index.html"
+  "output": "theories/es/mond/index.html",
+  "nav_lang": "theories/en/mond/index.html"
 }
 ```
 
@@ -351,8 +351,8 @@ theories of gravity"*.
 ```{ .json .config }
 {
   "template": "diagram-page.tt",
-  "output": "theories-es/holon/index.html",
-  "nav_lang": "theories-en/holon/index.html"
+  "output": "theories/es/holon/index.html",
+  "nav_lang": "theories/en/holon/index.html"
 }
 ```
 

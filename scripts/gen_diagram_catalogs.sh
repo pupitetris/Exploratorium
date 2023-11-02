@@ -12,7 +12,7 @@ while read -r lang; do
 SELECT Attribute,Class,Title,Formula,Explanation,Reference FROM v_attributes
        WHERE Lang='$lang' AND Diagram='$diagram'" |
       sqlite3 -header "$DBFILE" > \
-              "$SCRIPTDIR"/../site/theories-$lang/$diagram/attr_desc.csv
+              "$SCRIPTDIR"/../site/theories/$lang/$diagram/attr_desc.csv
 
     echo "
 SELECT v.Code, v.Title_$lang AS Title
@@ -32,6 +32,6 @@ SELECT v.Code, v.Title_$lang AS Title
        )
  ORDER BY ord" |
       sqlite3 -header "$DBFILE" > \
-              "$SCRIPTDIR"/../site/theories-$lang/$diagram/attr_class_desc.csv
+              "$SCRIPTDIR"/../site/theories/$lang/$diagram/attr_class_desc.csv
   done < <(sqlite3 "$DBFILE" "SELECT diagram_id, code FROM diagram")
 done < <(sqlite3 "$DBFILE" "SELECT lang_code FROM lang")
