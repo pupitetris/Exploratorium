@@ -1,7 +1,7 @@
 /site/index-es.html
 /site/index.html
-/site/theories-*/*/index.html
-/site/theories-*/*/lattice.json
-/site/theories-*/*/attr_class_desc.csv
-/site/theories-*/*/attr_desc.csv
+/site/theories/*/*/index.html
+/site/theories/*/*/lattice.json
+/site/theories/*/*/attr_class_desc.csv
+/site/theories/*/*/attr_desc.csv
 .DS_Store
