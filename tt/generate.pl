@@ -177,7 +177,7 @@ close $pipe;
 my $js = decode_json($json_str) || die "Error parsing json";
 my $struct = json_get_structure($js);
 
-my $output_path = "${srcdir}..";
+my $output_path = "${srcdir}../site";
 my $main_template = "${srcdir}main.tt";
 
 my $tt;

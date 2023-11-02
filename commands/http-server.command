@@ -3,5 +3,5 @@
 SRCDIR=$(dirname "$0")
 
 clear
-cd "$SRCDIR"/..
+cd "$SRCDIR"/../site
 http-server -p 8080
