@@ -159,14 +159,14 @@ if (! -e $master_md) {
   die "Input file $master_md not found";
 }
 
-my $target = shift @ARGV;
-
-my $srcdir = dirname(__FILE__);
-if ($srcdir ne '.') {
-  $srcdir .= '/';
+my $srcdir = dirname($master_md);
+if ($srcdir eq '.') {
+  $srcdir = '' ;
 } else {
-  $srcdir = '';
+  $srcdir .= '/';
 }
+
+my $target = shift @ARGV;
 
 my $cmd = "pandoc --from commonmark_x+gfm_auto_identifiers -t json \"$master_md\"";
 
@@ -177,17 +177,19 @@ close $pipe;
 my $js = decode_json($json_str) || die "Error parsing json";
 my $struct = json_get_structure($js);
 
-my $output_path = "${srcdir}../site";
+my $output_path = "${srcdir}../site/";
 my $main_template = "${srcdir}main.tt";
 
 my $tt;
 if ($target ne 'clean') {
   my $tt_conf = {
-    ENCODING => 'utf8',
-    POST_CHOMP => 1,
-    TRIM => 1,
-    VARIABLES => $struct,
-    EVAL_PERL => 1,
+    ENCODING    => 'utf8',
+    POST_CHOMP  => 1,
+    TRIM        => 1,
+    ABSOLUTE    => 1,
+    RELATIVE    => 1,
+    VARIABLES   => $struct,
+    EVAL_PERL   => 1,
     PRE_PROCESS => $main_template
   };
   $tt = Template->new($tt_conf) || die $Template::Error;
@@ -197,7 +199,7 @@ my $target_found = 0;
 foreach my $page (@{$struct->{'pages'}{'children'}}) {
   my $conf = $page->{'config'};
   my $output = $conf->{'output'};
-  my $output_fname = $output_path . '/' . $output;
+  my $output_fname = $output_path . $output;
 
   if ($target eq '--clean') {
     print "Deleting $output_fname\n";
