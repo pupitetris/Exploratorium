@@ -10,12 +10,11 @@ fi
 SCRIPTDIR=$(dirname "$0")
 DBDIR=$SCRIPTDIR/../db
 
-DBFILE=$DBDIR/exploratorium.db
+DBFILE="$DBDIR"/exploratorium.db
 
-[ -e "$DBFILE" ] && mv -f "$DBFILE" "$DBFILE.bak"
+[ -e "$DBFILE" ] && mv -f "$DBFILE" "$DBFILE".bak
 
 sqlite3 "$DBFILE" < ddl.sql &&
   sqlite3 "$DBFILE" < data.sql
 
-"$SCRIPTDIR"/gen_diagram_catalogs.sh "$DBFILE"
-"$SCRIPTDIR"/gen_lattices.sh "$DBFILE"
+"$SCRIPTDIR"/build.sh "$DBFILE"

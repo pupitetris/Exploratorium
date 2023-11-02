@@ -2,5 +2,8 @@
 
 SCRIPTDIR=$(dirname "$0")/..
 
+DBDIR=$SCRIPTDIR/../db
+DBFILE="$DBDIR"/exploratorium.db
+
 clear
-"$SCRIPTDIR"/gen_pages.sh "$SCRIPTDIR"/../db/exploratorium.db
+"$SCRIPTDIR"/build.sh "$DBFILE"
