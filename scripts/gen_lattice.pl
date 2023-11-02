@@ -12,7 +12,7 @@ use File::Basename qw(dirname);
 use Cwd qw(cwd);
 
 BEGIN {
-  my $conexp_cp = dirname($0) . '../bin/conexp-1.3/*';
+  my $conexp_cp = dirname($0) . '/../bin/conexp-1.3/*';
   if (!defined $ENV{'CLASSPATH'} || $ENV{'CLASSPATH'} eq '') {
     $ENV{'CLASSPATH'} = $conexp_cp;
   } else {
