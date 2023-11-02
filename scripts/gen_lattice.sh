@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASEDIR=$(dirname "$0")
+SCRIPTDIR=$(dirname "$0")
 
 LATTICE_PREF_DIR=$HOME/.java/.userPrefs/conexp/frontend/latticeeditor
 if [ ! -e "$LATTICE_PREF_DIR/prefs.xml" ]; then
@@ -10,11 +10,11 @@ fi
 
 if /usr/bin/env perl -mInline::Java -mDBD::SQLite -e '' >/dev/null 2>&1; then
   # Perl detected. Use it as it is faster.
-  exec $BASEDIR/gen_lattice.pl "$@"
+  exec $SCRIPTDIR/gen_lattice.pl "$@"
 fi
 
 if /usr/bin/env wolframscript -version >/dev/null 2>&1; then
-  exec $BASEDIR/gen_lattice.wls "$@"
+  exec $SCRIPTDIR/gen_lattice.wls "$@"
 fi
 
 echo $0: No functional runtime found >&2

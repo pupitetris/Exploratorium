@@ -3,7 +3,7 @@
 BeginPackage["FCA`"]
 
 FcaInit::usage =
-"Initialize the FCA package, with the options: ConexpDir and DebugOutput";
+"Initialize the FCA package, with the options: ClassPath and DebugOutput";
 
 FcaImportDBDiagramAsContext::usage =
 "Load the context for a given diagram and language from the specified SQLite database file";
@@ -42,7 +42,7 @@ Needs["JLink`"];
 debugOutput = "";
 
 Options[FcaInit] = {
-  "ConexpDir" -> "./conexp-1.3",
+  "ClassPath" -> "../bin/conexp-1.3",
   "DebugOutput" -> ""
 };
 
@@ -54,7 +54,7 @@ FcaInit[OptionsPattern[]] :=
     JLink`InstallJava`Private`$disablePrefs = False;
 
     InstallJava[];
-    AddToClassPath[OptionValue["ConexpDir"]];
+    AddToClassPath[OptionValue["ClassPath"]];
     debugOutput = OptionValue["DebugOutput"];
   ];
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env wolframscript
 
-BASEDIR = DirectoryName[$ScriptCommandLine[[1]]]
+SCRIPTDIR = DirectoryName[$ScriptCommandLine[[1]]]
 
-Get[BASEDIR <> "fca.wl"];
+Get[SCRIPTDIR <> "fca.wl"];
 
-(*CONEXPDIR = "//Applications/conexp-1.3";*)
-CONEXPDIR = BASEDIR <> "conexp-1.3";
+(*CLASSPATH = "//Applications/conexp-1.3/*";*)
+CLASSPATH = SCRIPTDIR <> "../bin/conexp-1.3/*";
 
 DBFILE = $ScriptCommandLine[[2]];
 DIAGRAM = $ScriptCommandLine[[3]];
@@ -14,7 +14,7 @@ LANG = $ScriptCommandLine[[4]];
 DEBUG = Length[$ScriptCommandLine] > 4;
 DEBUGOUTPUT = "stderr";
 
-FcaInit["ConexpDir" -> CONEXPDIR,
+FcaInit["ClassPath" -> CLASSPATH,
         "DebugOutput" -> DEBUGOUTPUT];
 
 result = FcaImportDBDiagramAsContext[DBFILE, DIAGRAM, LANG];

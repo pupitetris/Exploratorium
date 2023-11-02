@@ -3,6 +3,5 @@
 SRCDIR=$(dirname "$0")
 
 clear
-cd "$SRCDIR"/..
+cd "$SRCDIR"/../..
 git pull
-

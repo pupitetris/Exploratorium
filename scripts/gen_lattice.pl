@@ -8,22 +8,23 @@ use DBD::SQLite::Constants qw(:file_open); # libdbd-sqlite3-perl
 use JSON; # libjson-perl
 use Data::Dumper;
 use File::Path qw(make_path);
+use File::Basename qw(dirname);
 use Cwd qw(cwd);
 
 BEGIN {
-  my $conexp_dir = cwd() . '/conexp-1.3/*';
+  my $conexp_cp = dirname($0) . '../bin/conexp-1.3/*';
   if (!defined $ENV{'CLASSPATH'} || $ENV{'CLASSPATH'} eq '') {
-    $ENV{'CLASSPATH'} = $conexp_dir;
+    $ENV{'CLASSPATH'} = $conexp_cp;
   } else {
-    $ENV{'CLASSPATH'} .= ';' . $conexp_dir;
+    $ENV{'CLASSPATH'} .= ';' . $conexp_cp;
   }
 }
 
 # libinline-java-perl
 use Inline (
-  Java => 'study',
+  Java      => 'study',
   autostudy => 1,
-  study => [
+  study     => [
     'conexp.core.Context',
     'conexp.frontend.ContextDocumentModel'
   ]
@@ -223,8 +224,6 @@ my $DIAGRAM = $ARGV[1];
 my $LANG = $ARGV[2];
 my $DEBUG = $ARGV[3];
 
-setupLatticePrefs();
-
 my $result = importDiagramAsContext($DBFILE, $DIAGRAM, $LANG);
 my $model = $result->{'model'};
 my $context = $result->{'context'};
@@ -345,6 +344,8 @@ foreach my $node (@lnodes) {
     };
   }
 }
+
+print STDERR Dumper(\@links) if $DEBUG;
 
 my $json = JSON->new()
     ->pretty

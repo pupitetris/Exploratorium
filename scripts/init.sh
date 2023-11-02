@@ -7,12 +7,15 @@ if [ $(printf %02d%03d $major $minor) -lt 3040 ]; then
   exit 1
 fi
 
-DBFILE=exploratorium.db
+SCRIPTDIR=$(dirname "$0")
+DBDIR=$SCRIPTDIR/../db
 
-[ -e $DBFILE ] && mv -f $DBFILE $DBFILE.bak
+DBFILE=$DBDIR/exploratorium.db
 
-sqlite3 $DBFILE < ddl.sql &&
-  sqlite3 $DBFILE < data.sql
+[ -e "$DBFILE" ] && mv -f "$DBFILE" "$DBFILE.bak"
 
-./gen_diagram_catalogs.sh $DBFILE
-./gen_lattices.sh $DBFILE
+sqlite3 "$DBFILE" < ddl.sql &&
+  sqlite3 "$DBFILE" < data.sql
+
+"$SCRIPTDIR"/gen_diagram_catalogs.sh "$DBFILE"
+"$SCRIPTDIR"/gen_lattices.sh "$DBFILE"
