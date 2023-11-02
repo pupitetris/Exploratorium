@@ -1,8 +1,10 @@
 #!/bin/bash
 
-SCRIPTDIR=$(dirname "$0")
+source $(dirname $0)/common.sh
 
-DBFILE=$1
+DBFILE=${1:-$DEFAULT_DBFILE}
+
+require_sqlite "$DBFILE"
 
 while read -r lang; do
   while read -r diagram; do

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-SCRIPTDIR=$(dirname "$0")
+source $(dirname $0)/common.sh
 
-DBFILE=$1
+DBFILE=${1:-$DEFAULT_DBFILE}
 
 "$SCRIPTDIR"/gen_diagram_catalogs.sh "$DBFILE"
 "$SCRIPTDIR"/gen_lattices.sh "$DBFILE"

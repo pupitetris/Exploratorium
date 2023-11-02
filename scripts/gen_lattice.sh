@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPTDIR=$(dirname "$0")
+source $(dirname $0)/common.sh
 
 LATTICE_PREF_DIR="$HOME"/.java/.userPrefs/conexp/frontend/latticeeditor
 if [ ! -e "$LATTICE_PREF_DIR"/prefs.xml ]; then
