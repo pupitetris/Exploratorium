@@ -6,12 +6,12 @@ echo "PRAGMA foreign_keys = off;"
 echo "BEGIN TRANSACTION;"
 echo
 
-sqlite3 $DBFILE "
+sqlite3 "$DBFILE" "
 SELECT name FROM sqlite_schema
        WHERE type = 'table'
              AND name NOT LIKE 'sqlite_%'
        ORDER BY name" |
-  while read table; do
+  while read -r table; do
     echo "-- Table: $table"
     echo "DROP TABLE IF EXISTS $table;"
     echo
@@ -22,15 +22,15 @@ SELECT name FROM sqlite_schema
     echo
   done
 
-sqlite3 $DBFILE "
+sqlite3 "$DBFILE" "
 SELECT name FROM sqlite_schema
        WHERE type = 'view'
        ORDER BY name" |
-  while read view; do
+  while read -r view; do
     echo "-- View: $view"
     echo "DROP VIEW IF EXISTS $view;"
     echo
-    sqlite3 $DBFILE ".schema $view" |
+    sqlite3 "$DBFILE" ".schema $view" |
       pg_format -U 0 -L -T |
       sed 's/ \(ON\) /\n\t\t\1 /g'
     echo
