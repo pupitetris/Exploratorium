@@ -1,8 +1,8 @@
 #!/bin/bash
 
-SCRIPTDIR=$(dirname "$0")
+source $(dirname $0)/common.sh
 
-DBFILE=$1
+DBFILE=${1:-$DEFAULT_DBFILE}
 
-"$SCRIPTDIR"/db_dump_ddl.sh "$DBFILE" > "$SCRIPTDIR"/../db/ddl.sql
-"$SCRIPTDIR"/db_dump_data.sh "$DBFILE" > "$SCRIPTDIR"/../db/data.sql
+"$SCRIPTDIR"/db_dump_ddl.sh "$DBFILE" > "$DBDIR"/ddl.sql &&
+  "$SCRIPTDIR"/db_dump_data.sh "$DBFILE" > "$DBDIR"/data.sql

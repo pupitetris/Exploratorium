@@ -1,6 +1,10 @@
 #!/bin/bash
 
-DBFILE=$1
+source $(dirname $0)/common.sh
+
+DBFILE=${1:-$DEFAULT_DBFILE}
+
+require_sqlite "$DBFILE"
 
 echo "PRAGMA foreign_keys = off;"
 echo "BEGIN TRANSACTION;"
@@ -15,7 +19,7 @@ SELECT name FROM sqlite_schema
     echo "-- Table: $table"
     echo "DROP TABLE IF EXISTS $table;"
     echo
-    sqlite3 $DBFILE ".schema $table" |
+    sqlite3 "$DBFILE" ".schema $table" |
       pg_format -U 0 -L -T |
       sed 's/ \(ON\|DEFERRABLE\|REFERENCES\|PRIMARY\|NOT\|DEFAULT\|UNIQUE\|COLLATE\) /\n\t\t\1 /g'
     echo

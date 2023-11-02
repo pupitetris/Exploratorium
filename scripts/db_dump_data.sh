@@ -1,6 +1,10 @@
 #!/bin/bash
 
-DBFILE=$1
+source $(dirname $0)/common.sh
+
+DBFILE=${1:-$DEFAULT_DBFILE}
+
+require_sqlite "$DBFILE"
 
 echo "PRAGMA foreign_keys = off;"
 echo "BEGIN TRANSACTION;"
