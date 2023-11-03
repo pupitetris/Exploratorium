@@ -10,10 +10,12 @@ fi
 
 if /usr/bin/env perl -mInline::Java -mDBD::SQLite -e '' >/dev/null 2>&1; then
   # Perl detected. Use it as it is faster.
-  "$SCRIPTDIR"/gen_lattice.pl "$@"
-elif /usr/bin/env wolframscript -version >/dev/null 2>&1; then
-  "$SCRIPTDIR"/gen_lattice.wls "$@"
-else
-  echo $0: No functional runtime found >&2
-  exit 1
+  exec "$SCRIPTDIR"/gen_lattice.pl "$@"
 fi
+
+if /usr/bin/env wolframscript -version >/dev/null 2>&1; then
+  exec "$SCRIPTDIR"/gen_lattice.wls "$@"
+fi
+
+echo $0: No functional runtime found >&2
+exit 1
