@@ -21,7 +21,7 @@ SELECT name FROM sqlite_schema
     echo
     sqlite3 "$DBFILE" ".schema $table" |
       pg_format -U 0 -L -T |
-      sed -E 's/ (ON|DEFERRABLE|REFERENCES|PRIMARY|NOT|DEFAULT|UNIQUE|COLLATE) /\n\t\t\1 /g'
+      sed -E $'s/ (ON|DEFERRABLE|REFERENCES|PRIMARY|NOT|DEFAULT|UNIQUE|COLLATE) /\\\n\t\t\\1 /g'
     echo
     echo
   done
@@ -36,7 +36,7 @@ SELECT name FROM sqlite_schema
     echo
     sqlite3 "$DBFILE" ".schema $view" |
       pg_format -U 0 -L -T |
-      sed -E 's/ (ON) /\n\t\t\1 /g' |
+      sed -E $'s/ (ON) /\\\n\t\t\\1 /g' |
       grep -v $'^[ \t]*/\*[^*]\+\*/[ \t]*$'
     echo
     echo
