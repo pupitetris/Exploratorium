@@ -1,11 +1,11 @@
 #!/usr/bin/env wolframscript
 
-SCRIPTDIR = DirectoryName[$ScriptCommandLine[[1]]]
+SCRIPTDIR = AbsoluteFileName[DirectoryName[$ScriptCommandLine[[1]]]];
 
-Get[SCRIPTDIR <> "fca.wl"];
+Get[SCRIPTDIR <> "/fca.wl"];
 
 (*CLASSPATH = "//Applications/conexp-1.3/*";*)
-CLASSPATH = SCRIPTDIR <> "../bin/conexp-1.3/*";
+CLASSPATH = SCRIPTDIR <> "/../bin/conexp-1.3/";
 
 DBFILE = $ScriptCommandLine[[2]];
 DIAGRAM = $ScriptCommandLine[[3]];
