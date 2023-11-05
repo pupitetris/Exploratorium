@@ -39,7 +39,9 @@ TODO
   - [ ] Dump de SQL debe de registar el estado de las secuencias.
   - [ ] Fullscreen: handlear usuario saliendo de fullscreen sin usar el toolbar.
   - [ ] En algunos diagramas, los node levels se traslapan con el node dot.
-  - [ ] Homologar config.json?
+  - [ ] Homologar config.json? Yes
+  - [ ] Traducibles las descripciones de nodos en la leyenda
+  - [ ] Editor invalida caché, y que sea con ?editor en vez de #editor
 
 - Mejoras:
   - [x] Menú de teorías en el navbar
