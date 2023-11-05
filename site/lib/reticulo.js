@@ -46,8 +46,9 @@
 
     function calcDistance(link, i) {
       let ret = 0;
-      if (link.source && link.source.level)
+      if (link.source && link.source.level) {
         ret = link.source.level;
+      }
       return ret * 10;
     }
 
@@ -91,16 +92,18 @@
     }
 
     function multiClassed(ele, classes) {
-      for (const className in classes)
+      for (const className in classes) {
         ele.classed(className, classes[className]);
+      }
       return ele;
     }
 
     function recursiveClassed(graph, datum, keys, classes) {
       const ele = d3.select(`.node.notvisited[hash="${datum.hash}"]`);
 
-      if (ele.empty())
+      if (ele.empty()) {
         return;
+      }
 
       ele.classed("notvisited", false);
       multiClassed(ele, classes);
@@ -109,15 +112,19 @@
         for (const hash of datum[key]) {
           const node = getGraphNodeByHash(graph, hash);
 
-          if (node == undefined)
+          if (node == undefined) {
             continue;
+          }
 
           const inLinks = d3.select(`.link[source-hash="${datum.hash}"][target-hash="${node.hash}"]`);
-          if (!inLinks.empty())
+          if (!inLinks.empty()) {
             multiClassed(inLinks, classes);
+          }
+
           const outLinks = d3.select(`.link[source-hash="${node.hash}"][target-hash="${datum.hash}"]`);
-          if (!outLinks.empty())
+          if (!outLinks.empty()) {
             multiClassed(outLinks, classes);
+          }
 
           recursiveClassed(graph, node, [ key ], classes);
         }
@@ -190,8 +197,9 @@
     }
 
     function htmlIfNotEmpty(ele) {
-      if (ele.empty())
+      if (ele.empty()) {
         return "";
+      }
       return ele.html();
     }
 
@@ -265,8 +273,9 @@
           .classed("link", true)
           .attr("source-hash", datum.source.hash)
           .attr("target-hash", datum.target.hash);
-      if (datum.target.level == 0)
+      if (datum.target.level == 0) {
         line.classed("infimum", true);
+      }
       return line.node();
     }
 
@@ -282,7 +291,7 @@
           .attr("height", bounds.height + (config.TEXTBOX_PADDING * 2));
       }
       catch (e) {
-        window.setTimeout(function() { textBoxSetBBox(textBox); }, 100);
+        window.setTimeout(() => textBoxSetBBox(textBox), 100);
       }
     }
 
@@ -304,8 +313,9 @@
     }
 
     function svgClick(event, nodes, links) {
-      if (event.target.nodeName != "svg")
+      if (event.target.nodeName != "svg") {
         return;
+      }
 
       clearActiveSelection(nodes, links);
     }
@@ -317,17 +327,22 @@
         .replace(/\/index.html$/, "")
         .replace(/.*\//, "");
 
-      if (url.hash == "#editor")
+      if (url.hash == "#editor") {
         config.USE_EDITOR = true;
+      }
 
-      if (!config.ATTR_DESC_SOURCE)
+      if (!config.ATTR_DESC_SOURCE) {
         config.ATTR_DESC_SOURCE = "attr_desc.csv";
-      if (!config.LATTICE_SOURCE)
+      }
+      if (!config.LATTICE_SOURCE) {
         config.LATTICE_SOURCE = "lattice.json";
-      if (!config.POS_SOURCE)
+      }
+      if (!config.POS_SOURCE) {
         config.POS_SOURCE = "pos.json";
-      if (!config.ATTR_CLASS_DESC_SOURCE)
+      }
+      if (!config.ATTR_CLASS_DESC_SOURCE) {
         config.ATTR_CLASS_DESC_SOURCE = "attr_class_desc.csv";
+      }
     }
 
     function saveJson(graph, output) {
@@ -357,9 +372,10 @@
                   "txtVb_offsetX", "txtVb_offsetY", "txtVb_width", "txtVb_height",
                   "btnVbReset", "btnVbSmaller", "btnVbBigger", "btnVbWide", "btnVbCopy"];
       const controls = {};
-      editor.selectAll("textarea,button,input").each(function (p, i) {
-        controls[keys[i]] = d3.select(this);
-      });
+      editor.selectAll("textarea,button,input")
+        .each(function (p, i) {
+          controls[keys[i]] = d3.select(this);
+        });
 
       controls.btnJsonGet
         .on("click", () => saveJson(graph, controls.txtJson.node()));
@@ -373,8 +389,9 @@
       const origViewBox = Object.assign({}, viewBox);
 
       function populateViewBoxInputs(viewBox) {
-        for (const key in viewBox)
+        for (const key in viewBox) {
           controls[`txtVb_${key}`].attr("value", parseInt(viewBox[key]));
+        }
       }
 
       function collectViewBox(viewBox) {
@@ -408,7 +425,7 @@
       populateViewBoxInputs(origViewBox);
 
       controls.btnVbReset
-        .on("click", function() {
+        .on("click", () => {
           Object.assign(viewBox, origViewBox)
           populateViewBoxInputs(origViewBox);
           applyViewBoxToSvg(origViewBox);
@@ -421,7 +438,7 @@
         .on("click", () => scaleViewBox(0.95));
 
       controls.btnVbWide
-        .on("click", function() {
+        .on("click", () => {
           viewBox.height = parseInt(viewBox.width * 9.0 / 16.0);
           populateViewBoxInputs(viewBox);
           applyViewBoxToSvg(viewBox);
@@ -439,7 +456,7 @@
       }
 
       navigator.permissions.query({ name: "clipboard-write" })
-        .then(function(result) {
+        .then((result) => {
           if (result.state == "granted" ||
               result.state == "prompt") {
             controls.btnJsonCopy.on("click", btnJsonCopyClicked);
@@ -454,8 +471,9 @@
     }
 
     function floatboxClose(floatbox, closeCB) {
-      if (closeCB)
+      if (closeCB) {
         closeCB();
+      }
       floatbox.style("display", "none");
     }
 
@@ -476,14 +494,18 @@
         const top = event.y - orig.y;
         const left = event.x - orig.x;
 
-        if (top < - (this.clientHeight / 2))
+        if (top < - (this.clientHeight / 2)) {
           return;
-        if (left < - (this.clientWidth / 2))
+        }
+        if (left < - (this.clientWidth / 2)) {
           return;
-        if (top > window.innerHeight - (this.clientHeight / 2))
+        }
+        if (top > window.innerHeight - (this.clientHeight / 2)) {
           return;
-        if (left > window.innerWidth - (this.clientWidth / 2))
+        }
+        if (left > window.innerWidth - (this.clientWidth / 2)) {
           return;
+        }
 
         floatbox.style("top", top + "px");
         floatbox.style("left", left + "px");
@@ -510,9 +532,10 @@
 
     function legendSetup(legend, toolbar, classDescriptions) {
       const cont = legend.select(".cont");
-      for (const desc of classDescriptions)
+      for (const desc of classDescriptions) {
         cont.append("div")
-        .html(`<span class="figure textbox-box box-${desc.Code}"></span>${desc.Title}`);
+          .html(`<span class="figure textbox-box box-${desc.Code}"></span>${desc.Title}`);
+      }
 
       const dotRadius = 20;
       const dots = [
@@ -548,8 +571,9 @@
         datum.x = event.x;
         datum.y = event.y;
 
-        if (updateExtents(datum.x, datum.y, translateExtents))
+        if (updateExtents(datum.x, datum.y, translateExtents)) {
           zoom.translateExtent(translateExtents);
+        }
 
         forceTick(nodes, links);
       }
@@ -568,10 +592,11 @@
     }
 
     function toolbarFullscreen(shell) {
-      if (!document.fullscreenElement)
+      if (!document.fullscreenElement) {
         shell.node().requestFullscreen();
-      else
+      } else {
         document.exitFullscreen();
+      }
     }
 
     function toolbarFullscreenChange(shell, btn) {
@@ -681,13 +706,16 @@
     function getAttrId(attr) {
       return attr
         .replace(/&#[0-9]+;|&#x[0-9a-fA-F]+;|&[0-9a-zA-Z]{2,};|./gu, (m) => {
-          if (m.length >= 4 && m[0] === "&")
+          if (m.length >= 4 && m[0] === "&") {
             return m.substr(1, m.length - 2);
+          }
           if (m.length === 1) {
-            if (char2ent[m] !== undefined)
+            if (char2ent[m] !== undefined) {
               return char2ent[m] + "-";
-            if (m.match(/[a-zA-Z0-9\s\t\n\r~`!@#$%^&_+(){}[\]/\\,?:;|.-]/))
+            }
+            if (m.match(/[a-zA-Z0-9\s\t\n\r~`!@#$%^&_+(){}[\]/\\,?:;|.-]/)) {
               return m;
+            }
           }
           return `${m.codePointAt(0)}-`;
         })
@@ -796,13 +824,14 @@
         graph.classes = attrClasses;
         mergeNodePos(graph.nodes, nodePos);
 
-        if (that.config.USE_EDITOR)
+        if (that.config.USE_EDITOR) {
           editorSetup(d3.select("#editor"), d1, legend, graph, viewBox);
+        }
 
         force
           .nodes(graph.nodes)
           .force("link").links(graph.links);
-        window.setTimeout(function() { force.stop(); }, 100);
+        window.setTimeout(() => force.stop(), 100);
 
         links = links.data(graph.links)
           .enter().append(createLink);
@@ -816,7 +845,7 @@
 
         function observeForBBox(textBoxes) {
           const observer = new MutationObserver(
-            function(mutations) {
+            (mutations) => {
               for (let i = 0; i < textBoxes.length; i++) {
                 const tb = textBoxes[i];
                 if (document.contains(tb.node())) {
@@ -840,8 +869,9 @@
               .classed("node", true)
               .attr("hash", datum.hash);
 
-          if (datum.level == 0)
+          if (datum.level == 0) {
             group.classed("infimum", true);
+          }
 
           const hasAttributes = datum.labelAttributes.length > 0;
           const hasLabelObjects = datum.labelObjects.length > 0;
