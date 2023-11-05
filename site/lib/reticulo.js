@@ -45,56 +45,59 @@
     }
 
     function calcDistance(link, i) {
-      var ret = 0;
+      let ret = 0;
       if (link.source && link.source.level)
         ret = link.source.level;
       return ret * 10;
     }
 
     function forceTick(nodes, links) {
-      nodes.attr("transform", function(datum) { return `translate(${datum.x},${datum.y})`; });
+      nodes.attr("transform", datum => `translate(${datum.x},${datum.y})`);
 
-      links.attr("x1", function(datum) { return datum.source.x; })
-        .attr("y1", function(datum) { return datum.source.y; })
-        .attr("x2", function(datum) { return datum.target.x; })
-        .attr("y2", function(datum) { return datum.target.y; });
+      links.attr("x1", datum => datum.source.x)
+        .attr("y1", datum => datum.source.y)
+        .attr("x2", datum => datum.target.x)
+        .attr("y2", datum => datum.target.y);
     }
 
     function getGraphNodeByHash(graph, hash) {
       for (let node of graph.nodes) {
-        if (node.hash == hash)
+        if (node.hash == hash) {
           return node;
+        }
       }
       console.warn("Node with hash " + hash + " not found!");
       return undefined;
     }
 
     function mergeNodePos(nodes, nodePos) {
-      var nodesByHash = {};
-      for (var node of nodes)
+      const nodesByHash = {};
+      for (let node of nodes) {
         nodesByHash[node.hash] = node;
+      }
 
-      for (var pos of nodePos) {
-        var node = nodesByHash[pos.hash];
+      for (let pos of nodePos) {
+        let node = nodesByHash[pos.hash];
         if (!node) {
           console.warn("mergeNodePos: missing node with hash " + pos.hash);
           node = nodes[pos.idx];
+          if (!node) {
+            continue;
+          }
         }
-        if (node) {
-          node.x = pos.x;
-          node.y = pos.y;
-        }
+        node.x = pos.x;
+        node.y = pos.y;
       }
     }
 
     function multiClassed(ele, classes) {
-      for (let className in classes)
+      for (const className in classes)
         ele.classed(className, classes[className]);
       return ele;
     }
 
     function recursiveClassed(graph, datum, keys, classes) {
-      var ele = d3.select(`.node.notvisited[hash="${datum.hash}"]`);
+      const ele = d3.select(`.node.notvisited[hash="${datum.hash}"]`);
 
       if (ele.empty())
         return;
@@ -102,19 +105,19 @@
       ele.classed("notvisited", false);
       multiClassed(ele, classes);
 
-      for (let key of keys) {
-        for (let hash of datum[key]) {
-          var node = getGraphNodeByHash(graph, hash);
+      for (const key of keys) {
+        for (const hash of datum[key]) {
+          const node = getGraphNodeByHash(graph, hash);
 
           if (node == undefined)
             continue;
 
-          var link = d3.select(`.link[source-hash="${datum.hash}"][target-hash="${node.hash}"]`);
-          if (!link.empty())
-            multiClassed(link, classes);
-          var link = d3.select(`.link[source-hash="${node.hash}"][target-hash="${datum.hash}"]`);
-          if (!link.empty())
-            multiClassed(link, classes);
+          const inLinks = d3.select(`.link[source-hash="${datum.hash}"][target-hash="${node.hash}"]`);
+          if (!inLinks.empty())
+            multiClassed(inLinks, classes);
+          const outLinks = d3.select(`.link[source-hash="${node.hash}"][target-hash="${datum.hash}"]`);
+          if (!outLinks.empty())
+            multiClassed(outLinks, classes);
 
           recursiveClassed(graph, node, [ key ], classes);
         }
@@ -134,8 +137,8 @@
 
     function nodeClick(event, datum, graph, nodes, links) {
       event.stopPropagation();
-      var node = d3.select(event.currentTarget);
-      var isInfimum = node.classed("infimum");
+      const node = d3.select(event.currentTarget);
+      const isInfimum = node.classed("infimum");
       window.setTimeout(function() {
         if (window.isDoubleClick) {
           window.isDoubleClick--;
@@ -159,8 +162,8 @@
         }
         window.active_node_hash = datum.hash;
 
-        var infimumNode = nodes.filter(".infimum");
-        var setInactive = infimumNode.classed("inactive") ||
+        const infimumNode = nodes.filter(".infimum");
+        const setInactive = infimumNode.classed("inactive") ||
             (!infimumNode.classed("inactive") && !infimumNode.classed("active"));
 
         nodes
@@ -195,12 +198,12 @@
     function attributeClick(event, infobox) {
       event.stopPropagation();
 
-      var attr = event.target.parentNode.attribute;
-      var infocont = infobox.select(".cont");
+      const attr = event.target.parentNode.attribute;
+      const infocont = infobox.select(".cont");
 
-      var attr_id = getAttrId(attr);
+      const attr_id = getAttrId(attr);
 
-      var title = htmlIfNotEmpty(d3.select(`#attr-desc-${attr_id} .attr-desc-title`));
+      const title = htmlIfNotEmpty(d3.select(`#attr-desc-${attr_id} .attr-desc-title`));
 
       if (title === "") {
         return;
@@ -230,7 +233,7 @@
     }
 
     function createNodeDot(radius, hasAttributes, hasLabelObjects) {
-      var dot = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
+      const dot = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
           .classed("node-dot", true);
 
       dot
@@ -258,7 +261,7 @@
     }
 
     function createLink(datum) {
-      var line = d3.select(document.createElementNS(d3.namespaces.svg, "line"))
+      const line = d3.select(document.createElementNS(d3.namespaces.svg, "line"))
           .classed("link", true)
           .attr("source-hash", datum.source.hash)
           .attr("target-hash", datum.target.hash);
@@ -268,11 +271,11 @@
     }
 
     function textBoxSetBBox(textBox, config) {
-      var text = textBox.select("text");
-      var rect = textBox.selectAll("rect");
+      const text = textBox.select("text");
+      const rect = textBox.selectAll("rect");
 
       try {
-        var bounds = text.node().getBBox();
+        const bounds = text.node().getBBox();
         rect.attr("x", bounds.x - config.TEXTBOX_PADDING)
           .attr("y", bounds.y - config.TEXTBOX_PADDING)
           .attr("width", bounds.width + (config.TEXTBOX_PADDING * 2))
@@ -284,7 +287,7 @@
     }
 
     function createTextBox(eleClass, offsetX, offsetY, text, anchor) {
-      var group = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
+      const group = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
           .classed(eleClass, true)
           .attr("transform", `translate(${offsetX},${offsetY})`)
           .on("click", eventStop);
@@ -308,7 +311,7 @@
     }
 
     function configSetup(config) {
-      var url = new URL(window.location);
+      const url = new URL(window.location);
       config.DIAGRAM =
         url.pathname
         .replace(/\/index.html$/, "")
@@ -328,7 +331,7 @@
     }
 
     function saveJson(graph, output) {
-      var json = JSON.stringify(graph.nodes, ["x", "y", "idx", "hash"], 2);
+      const json = JSON.stringify(graph.nodes, ["x", "y", "idx", "hash"], 2);
       output.value = json;
     }
 
@@ -349,11 +352,11 @@
       legend.select(".btn-close")
         .dispatch("click");
 
-      var keys = ["txtJson",
+      const keys = ["txtJson",
                   "btnJsonGet", "btnJsonCopy",
                   "txtVb_offsetX", "txtVb_offsetY", "txtVb_width", "txtVb_height",
                   "btnVbReset", "btnVbSmaller", "btnVbBigger", "btnVbWide", "btnVbCopy"];
-      var controls = {};
+      const controls = {};
       editor.selectAll("textarea,button,input").each(function (p, i) {
         controls[keys[i]] = d3.select(this);
       });
@@ -362,22 +365,22 @@
         .on("click", () => saveJson(graph, controls.txtJson.node()));
 
       function btnJsonCopyClicked() {
-        var txtJson = controls.txtJson.node();
+        const txtJson = controls.txtJson.node();
         txtJson.select();
         navigator.clipboard.writeText(txtJson.value);
       }
 
-      var origViewBox = Object.assign({}, viewBox);
+      const origViewBox = Object.assign({}, viewBox);
 
       function populateViewBoxInputs(viewBox) {
-        for (var key in viewBox)
+        for (const key in viewBox)
           controls[`txtVb_${key}`].attr("value", parseInt(viewBox[key]));
       }
 
       function collectViewBox(viewBox) {
-        for (var key in viewBox) {
-          var ctl = controls[`txtVb_${key}`];
-          var num = parseInt(ctl.property("value"));
+        for (const key in viewBox) {
+          const ctl = controls[`txtVb_${key}`];
+          let num = parseInt(ctl.property("value"));
           if (isNaN(num)) {
             num = 0;
             ctl.property("value", 0);
@@ -424,13 +427,13 @@
           applyViewBoxToSvg(viewBox);
         });
 
-      for (var key in viewBox) {
-        var ctl = controls[`txtVb_${key}`];
+      for (const key in viewBox) {
+        const ctl = controls[`txtVb_${key}`];
         ctl.on("change", setViewBox);
       }
 
       function btnVbCopyClicked() {
-        var txt = [ viewBox.offsetX, viewBox.offsetY,
+        const txt = [ viewBox.offsetX, viewBox.offsetY,
                     viewBox.width, viewBox.height ].join (" ");
         navigator.clipboard.writeText(txt);
       }
@@ -460,7 +463,7 @@
       floatbox.select("button.btn-close")
         .on("click", () => floatboxClose(floatbox, closeCB));
 
-      var orig = { x: 0, y: 0 };
+      const orig = { x: 0, y: 0 };
 
       function dragstart(event, datum) {
         orig.y = event.y - this.offsetTop;
@@ -470,8 +473,8 @@
       }
 
       function dragged(event, datum) {
-        var top = event.y - orig.y;
-        var left = event.x - orig.x;
+        const top = event.y - orig.y;
+        const left = event.x - orig.x;
 
         if (top < - (this.clientHeight / 2))
           return;
@@ -491,7 +494,7 @@
           .classed("drag", false);
       }
 
-      var drag = d3.drag()
+      const drag = d3.drag()
           .on("start", dragstart)
           .on("drag", dragged)
           .on("end", dragend);
@@ -506,21 +509,21 @@
     }
 
     function legendSetup(legend, toolbar, classDescriptions) {
-      var cont = legend.select(".cont");
+      const cont = legend.select(".cont");
       for (const desc of classDescriptions)
         cont.append("div")
         .html(`<span class="figure textbox-box box-${desc.Code}"></span>${desc.Title}`);
 
-      var dotRadius = 20;
-      var dots = [
+      const dotRadius = 20;
+      const dots = [
         { dot: createNodeDot(dotRadius, false, false), desc: "FCA simple object" },
         { dot: createNodeDot(dotRadius, true, false), desc: "FCA simple object with new attributes" },
         { dot: createNodeDot(dotRadius, false, true), desc: "FCA concept object" },
         { dot: createNodeDot(dotRadius, true, true), desc: "FCA concept object with new attributes" }
       ];
       for (const dot of dots) {
-        var div = cont.append("div");
-        var svg = div.append("svg")
+        const div = cont.append("div");
+        const svg = div.append("svg")
             .classed("figure", true)
             .attr("xmlns", "http://www.w3.org/2000/svg")
             .attr("viewBox", [-dotRadius - 5, -dotRadius - 5, dotRadius * 2 + 10, dotRadius * 2 + 10])
@@ -556,7 +559,7 @@
           .classed("drag", false);
       }
 
-      var drag = d3.drag()
+      const drag = d3.drag()
           .on("start", dragstart)
           .on("drag", dragged)
           .on("end", dragend);
@@ -584,7 +587,7 @@
     }
 
     function toolbarSetup(shell, svg, zoom, legend) {
-      var tb = shell.select(".btn-toolbar");
+      const tb = shell.select(".btn-toolbar");
 
       tb.selectAll(".btn[aria-label]")
         .on("mouseover.tooltip",
@@ -593,7 +596,7 @@
             (event) => d3.select(event.target).classed("hover", false))
         .on("click.tooltip",
             (event) => {
-              var target = d3.select(event.target);
+              const target = d3.select(event.target);
               target.classed("hover", true);
               window.setTimeout(() => target.classed("hover", false), 1000);
             }, 1000);
@@ -605,14 +608,14 @@
       tb.select(".tool-zoom-in")
         .on("click", () => svg.transition().call(zoom.scaleBy, 2));
 
-      var fsbtn = tb.select(".tool-fullscreen")
+      const fsbtn = tb.select(".tool-fullscreen")
           .on("click", () => toolbarFullscreen(shell));
       shell.on("fullscreenchange", () => toolbarFullscreenChange(shell, fsbtn));
 
       tb.select(".tool-legend")
         .classed("active", getCookie("show-legend"))
         .on("click", (event) => {
-          var active = d3.select(event.target).classed("active");
+          const active = d3.select(event.target).classed("active");
           setCookie("show-legend", active);
           legendShow(legend, active);
         });
@@ -620,7 +623,7 @@
       tb.select(".tool-attrs")
         .classed("active", getCookie("show-attributes"))
         .on("click", (event) => {
-          var active = d3.select(event.target).classed("active");
+          const active = d3.select(event.target).classed("active");
           setCookie("show-attributes", active);
           attributesShow(svg, active);
         });
@@ -628,7 +631,7 @@
       tb.select(".tool-levels")
         .classed("active", getCookie("show-levels"))
         .on("click", (event) => {
-          var active = d3.select(event.target).classed("active");
+          const active = d3.select(event.target).classed("active");
           setCookie("show-levels", active);
           levelsShow(svg, active);
         });
@@ -637,7 +640,7 @@
     }
 
     function parseViewBox(str) {
-      var vb = str.split(/ *,? +/).map((v) => parseInt(v));
+      const vb = str.split(/ *,? +/).map((v) => parseInt(v));
       return {
         offsetX: vb[0],
         offsetY: vb[1],
@@ -647,8 +650,8 @@
     }
 
     function updateExtents(x, y, extents) {
-      var margin = 100;
-      var changed = false;
+      const margin = 100;
+      const changed = false;
 
       if (x < extents[0][0]) {
         extents[0][0] = x - margin;
@@ -708,12 +711,12 @@
     this.main = function() {
       configSetup(this.config);
 
-      var infobox = floatboxSetup(d3.select("#infobox"), infoboxClosedCB);
+      const infobox = floatboxSetup(d3.select("#infobox"), infoboxClosedCB);
 
-      var viewBox = parseViewBox(this.config.VIEWBOX);
+      const viewBox = parseViewBox(this.config.VIEWBOX);
 
-      var d1 = d3.select("#d1");
-      var svg = d1.append("svg")
+      const d1 = d3.select("#d1");
+      const svg = d1.append("svg")
           .attr("xmlns", "http://www.w3.org/2000/svg")
           .attr("viewBox", this.config.VIEWBOX);
 
@@ -726,28 +729,28 @@
               '<stop class="textbox-bg-stop2" offset="100%"></stop>' +
               '</linearGradient>');
 
-      var root_group = svg.append("g");
+      const root_group = svg.append("g");
       root_group.attr("transform", d3.zoomIdentity);
 
-      var translateExtents = [[-viewBox.width / 4, -viewBox.height / 4],
+      const translateExtents = [[-viewBox.width / 4, -viewBox.height / 4],
                               [viewBox.width * 1.5, viewBox.height * 1.5]];
 
-      var zoom = d3.zoom()
+      const zoom = d3.zoom()
           .translateExtent(translateExtents)
           .scaleExtent([0.5, 4])
           .on("zoom", ({transform}) => root_group.attr("transform", transform));
       svg.call(zoom)
         .on("wheel.zoom", null);
 
-      var legend = d3.select("#legend");
-      var toolbar = toolbarSetup(d3.select(d1.node().parentNode), svg, zoom, legend);
+      const legend = d3.select("#legend");
+      const toolbar = toolbarSetup(d3.select(d1.node().parentNode), svg, zoom, legend);
 
-      var nodes = root_group.selectAll(".node");
-      var links = root_group.selectAll(".link");
+      let nodes = root_group.selectAll(".node");
+      let links = root_group.selectAll(".link");
 
       svg.on("click", (event) => svgClick(event, nodes, links));
 
-      var force = d3.forceSimulation()
+      const force = d3.forceSimulation()
           .force("link", d3.forceLink()
                  .distance(calcDistance)
                  .strength(this.config.LINK_STRENGTH))
@@ -756,12 +759,12 @@
           .velocityDecay(0.5)
           .on("tick", () => forceTick(nodes, links));
 
-      var attrClasses = {};
-      var that = this;
+      const attrClasses = {};
+      const that = this;
       function descCsvLoaded(data, attrDesc) {
-        var check = new Map();
-        for (let desc of data) {
-          var attr_id = getAttrId(desc.Attribute);
+        const check = new Map();
+        for (const desc of data) {
+          const attr_id = getAttrId(desc.Attribute);
           if (check.has(attr_id)) {
             console.warn("Colission between " + check.get(attr_id) + " and " +
                          desc.Attribute + ". attr_id: " + attr_id);
@@ -812,10 +815,10 @@
         nodes.call(nodeDragSetup(nodes, links, zoom, translateExtents));
 
         function observeForBBox(textBoxes) {
-          var observer = new MutationObserver(
+          const observer = new MutationObserver(
             function(mutations) {
-              for (var i = 0; i < textBoxes.length; i++) {
-                var tb = textBoxes[i];
+              for (let i = 0; i < textBoxes.length; i++) {
+                const tb = textBoxes[i];
                 if (document.contains(tb.node())) {
                   textBoxSetBBox(tb, that.config);
                   textBoxes.splice(i, 1);
@@ -833,20 +836,20 @@
         }
 
         function createNode(datum) {
-          var group = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
+          const group = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
               .classed("node", true)
               .attr("hash", datum.hash);
 
           if (datum.level == 0)
             group.classed("infimum", true);
 
-          var hasAttributes = datum.labelAttributes.length > 0;
-          var hasLabelObjects = datum.labelObjects.length > 0;
+          const hasAttributes = datum.labelAttributes.length > 0;
+          const hasLabelObjects = datum.labelObjects.length > 0;
 
           group.append(() => createNodeDot(that.config.NODE_RADIUS, hasAttributes, hasLabelObjects))
               .datum(datum);
 
-          var lvlY = that.config.LABELS_ORIGIN_Y +
+          const lvlY = that.config.LABELS_ORIGIN_Y +
                 (that.config.LABELS_HEIGHT / 2) +
               (that.config.LABELS_SEPARATION * 2);
           group.append("text")
@@ -856,37 +859,37 @@
             .text(datum.level);
 
           if (hasAttributes) {
-            var x = that.config.LABELS_ORIGIN_X;
-            var y = that.config.LABELS_ORIGIN_Y -
+            let x = that.config.LABELS_ORIGIN_X;
+            let y = that.config.LABELS_ORIGIN_Y -
                 (that.config.LABELS_HEIGHT / 2) -
                 (that.config.LABELS_SEPARATION * 2);
-            var start_y = y;
+            const start_y = y;
 
-            var textBoxes = [];
-            var numAttributes = datum.labelAttributes.length;
-            var column2 = (numAttributes > 9)?
+            const textBoxes = [];
+            const numAttributes = datum.labelAttributes.length;
+            const column2 = (numAttributes > 9)?
                 numAttributes / 2 - 1:
                 numAttributes;
-            var anchor;
-            for (var i = 0; i < numAttributes; i++) {
+            let anchor;
+            for (let i = 0; i < numAttributes; i++) {
               if (i > column2 && anchor === undefined) {
                 x = -that.config.LABELS_ORIGIN_X;
                 y = start_y;
                 anchor = "end";
               }
-              var attr = datum.labelAttributes[i];
+              const attr = datum.labelAttributes[i];
 
-              var attr_id = getAttrId(attr);
-              var expNode = d3.select("#attr-desc-" + attr_id + " .attr-desc-exp");
-              var eleClass = "box-" + graph.classes[attr];
-              var exp = "";
+              const attr_id = getAttrId(attr);
+              const expNode = d3.select("#attr-desc-" + attr_id + " .attr-desc-exp");
+              let eleClass = "box-" + graph.classes[attr];
+              let exp = "";
               if (!expNode.empty()) {
                 exp = expNode.html();
                 eleClass += " hasexp";
               }
               eleClass += " attributes-label";
 
-              var textBox = group
+              const textBox = group
                   .append(() => createTextBox(eleClass, x, y, attr, anchor))
                   .on("click", (event) => attributeClick(event, infobox))
                   .property("attribute", attr);
@@ -898,16 +901,14 @@
           }
 
           if (hasLabelObjects) {
-            y -= that.config.LABELS_SEPARATION;
-
-            var textBoxes = [];
-            var x = that.config.LABELS_ORIGIN_X;
-            var y = that.config.LABELS_ORIGIN_Y +
+            const textBoxes = [];
+            const x = that.config.LABELS_ORIGIN_X;
+            let y = that.config.LABELS_ORIGIN_Y +
                 (that.config.LABELS_HEIGHT / 2) +
                 (that.config.LABELS_SEPARATION * 2);
-            for (var i = 0; i < datum.labelObjects.length; i++) {
-              var id = datum.labelObjects[i];
-              var textBox = group.append(() => createTextBox("objects-label",
+            for (let i = 0; i < datum.labelObjects.length; i++) {
+              const id = datum.labelObjects[i];
+              const textBox = group.append(() => createTextBox("objects-label",
                                                              x, y,
                                                              graph.context[id].name));
               textBoxes.push(textBox);
