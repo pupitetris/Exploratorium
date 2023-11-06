@@ -61,26 +61,46 @@
         .attr("y2", datum => datum.target.y);
     }
 
-    function getGraphNodeByHash(graph, hash) {
-      for (let node of graph.nodes) {
-        if (node.hash == hash) {
-          return node;
+    const nodesByHash = {};
+    function nodesByHashInit(nodes) {
+      if (nodesByHash.__initialized__) {
+        return;
+      }
+      nodesByHash.__initialized__ = true;
+      for (let node of nodes) {
+        if (node.hash) {
+          nodesByHash[node.hash] = node;
+        }
+        if (node.concept && node.concept.md5) {
+          nodesByHash[node.concept.md5] = node;
         }
       }
-      console.warn("Node with hash " + hash + " not found!");
+    }
+
+    function getNodeByHash(nodes, hash, md5) {
+      nodesByHashInit(nodes);
+
+      let node = nodesByHash[hash];
+      if (node) {
+        return node;
+      }
+      if (!md5) {
+        console.warn(`Node with hash ${hash} not found`);
+        return undefined;
+      }
+
+      node = nodesByHash[md5];
+      if (node) {
+        return node;
+      }
+      console.warn(`No node with either hash ${hash} or md5 ${md5} found`);
       return undefined;
     }
 
     function mergeNodePos(nodes, nodePos) {
-      const nodesByHash = {};
-      for (let node of nodes) {
-        nodesByHash[node.hash] = node;
-      }
-
       for (let pos of nodePos) {
-        let node = nodesByHash[pos.hash];
+        let node = getNodeByHash(nodes, pos.hash, pos.concept);
         if (!node) {
-          console.warn("mergeNodePos: missing node with hash " + pos.hash);
           node = nodes[pos.idx];
           if (!node) {
             continue;
@@ -98,7 +118,7 @@
       return ele;
     }
 
-    function recursiveClassed(graph, datum, keys, classes) {
+    function recursiveClassed(nodes, datum, keys, classes) {
       const ele = d3.select(`.node.notvisited[hash="${datum.hash}"]`);
 
       if (ele.empty()) {
@@ -110,7 +130,7 @@
 
       for (const key of keys) {
         for (const hash of datum[key]) {
-          const node = getGraphNodeByHash(graph, hash);
+          const node = getNodeByHash(nodes, hash);
 
           if (node == undefined) {
             continue;
@@ -126,7 +146,7 @@
             multiClassed(outLinks, classes);
           }
 
-          recursiveClassed(graph, node, [ key ], classes);
+          recursiveClassed(nodes, node, [ key ], classes);
         }
       }
     }
@@ -181,7 +201,7 @@
           .classed("active", false);
 
         nodes.classed("notvisited", true);
-        recursiveClassed(graph, datum, [ "children", "parents" ],
+        recursiveClassed(graph.nodes, datum, [ "children", "parents" ],
                        { inactive: false, active: true });
         nodes.classed("notvisited", false);
 
@@ -354,7 +374,25 @@
     }
 
     function saveJson(graph, output) {
-      const json = JSON.stringify(graph.nodes, ["x", "y", "idx", "hash"], 2);
+      function replacer(key, value) {
+        if (Array.isArray(this)) {
+          return value;
+        }
+        switch (key) {
+        case "":
+        case "hash":
+          return value;
+        case "x":
+        case "y":
+        case "idx":
+          return parseInt(value);
+        case "concept":
+          return value.md5;
+        }
+        return undefined;
+      }
+
+      const json = JSON.stringify(graph.nodes, replacer, 2);
       output.value = json;
     }
 
