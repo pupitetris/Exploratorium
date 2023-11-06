@@ -364,6 +364,11 @@
     function editorShow(editor, show) {
       editor.classed("d-none", !show);
 
+      if (show) {
+        legend.select(".btn-close")
+          .dispatch("click");
+      }
+
       d3.selectAll(".navbar .diagrams a.dropdown-item")
         .each(function () {
           const url = new URL(this.href);
@@ -378,9 +383,6 @@
 
     function editorSetup(editor, diagram, legend, graph, viewBox, config) {
       editorShow(editor, config.USE_EDITOR);
-
-      legend.select(".btn-close")
-        .dispatch("click");
 
       const keys = ["txtJson",
                   "btnJsonGet", "btnJsonCopy",
