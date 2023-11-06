@@ -834,6 +834,7 @@
           .scaleExtent([0.5, 4])
           .on("zoom", ({transform}) => root_group.attr("transform", transform));
       svg.call(zoom)
+        .on("dblclick.zoom", null)
         .on("wheel.zoom", null);
 
       const legend = d3.select("#legend");
