@@ -1,4 +1,4 @@
-#!/usr/bin/env wolframscript -script
+#!/usr/bin/env -S wolframscript -script
 
 SCRIPTDIR = AbsoluteFileName[DirectoryName[$ScriptCommandLine[[1]]]];
 
