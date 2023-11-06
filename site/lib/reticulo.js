@@ -329,24 +329,27 @@
 
       if (url.hostname == '127.0.0.1' ||
           url.hostname == 'localhost') {
-        config.TOOLBAR_EDITOR = true;
+        config.DEV_MODE = true;
       }
 
       if (url.searchParams.has("editor")) {
         config.USE_EDITOR = true;
       }
 
-      if (!config.ATTR_DESC_SOURCE) {
-        config.ATTR_DESC_SOURCE = "attr_desc.csv";
-      }
-      if (!config.LATTICE_SOURCE) {
-        config.LATTICE_SOURCE = "lattice.json";
-      }
-      if (!config.POS_SOURCE) {
-        config.POS_SOURCE = "pos.json";
-      }
-      if (!config.ATTR_CLASS_DESC_SOURCE) {
-        config.ATTR_CLASS_DESC_SOURCE = "attr_class_desc.csv";
+      const rand_str = "?r=" + Math.random().toString().substr(2);
+      const defaults = {
+        ATTR_DESC_SOURCE: "attr_desc.csv",
+        LATTICE_SOURCE: "lattice.json",
+        POS_SOURCE: "pos.json",
+        ATTR_CLASS_DESC_SOURCE: "attr_class_desc.csv"
+      };
+      for (key in defaults) {
+        if (!config[key]) {
+          config[key] = defaults[key];
+        }
+        if (config.DEV_MODE) {
+          config[key] += rand_str;
+        }
       }
     }
 
@@ -642,7 +645,7 @@
             }, 1000);
 
       tb.select(".tool-editor-group")
-        .classed("d-none", !config.TOOLBAR_EDITOR);
+        .classed("d-none", !config.DEV_MODE);
 
       tb.select(".tool-editor")
         .classed("active", config.USE_EDITOR)
@@ -850,7 +853,7 @@
         graph.classes = attrClasses;
         mergeNodePos(graph.nodes, nodePos);
 
-        if (that.config.USE_EDITOR || that.config.TOOLBAR_EDITOR) {
+        if (that.config.USE_EDITOR || that.config.DEV_MODE) {
           editorSetup(editor, d1, legend, graph, viewBox, that.config);
         }
 
