@@ -361,7 +361,7 @@
                  viewBox.width, viewBox.height ]);
     }
 
-    function editorShow(editor, show) {
+    function editorShow(editor, legend, show) {
       editor.classed("d-none", !show);
 
       if (show) {
@@ -382,7 +382,7 @@
     }
 
     function editorSetup(editor, diagram, legend, graph, viewBox, config) {
-      editorShow(editor, config.USE_EDITOR);
+      editorShow(editor, legend, config.USE_EDITOR);
 
       const keys = ["txtJson",
                   "btnJsonGet", "btnJsonCopy",
@@ -648,7 +648,7 @@
         .classed("active", config.USE_EDITOR)
         .on("click", (event) => {
           const active = d3.select(event.target).classed("active");
-          editorShow(editor, active);
+          editorShow(editor, legend, active);
         });
 
       tb.select(".tool-zoom-out")
