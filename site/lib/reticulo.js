@@ -2,6 +2,8 @@
 
   function reticulo() {
 
+    const ATTRIBUTES_TO_DOUBLE_COLUMN_AFTER = 5;
+
     const COOKIE_SPEC = {
       "show-legend": { "type": "bool", "def": 1 },
       "show-attributes": { "type": "bool", "def": 1 },
@@ -965,7 +967,7 @@
 
             const textBoxes = [];
             const numAttributes = datum.labelAttributes.length;
-            const column2 = (numAttributes > 9)?
+            const column2 = (numAttributes > ATTRIBUTES_TO_DOUBLE_COLUMN_AFTER)?
                 numAttributes / 2 - 1:
                 numAttributes;
             let anchor;
