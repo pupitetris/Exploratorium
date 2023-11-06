@@ -14,7 +14,7 @@
 [% PROCESS print block=page %]
 
           </div>
-          <div id="editor">
+          <div id="editor" class="d-none">
             <div class="input-group mb-3">
               <span class="input-group-text">JSON</span>
               <textarea name="txtJson" class="form-control"></textarea>
@@ -47,6 +47,9 @@
           <div class="dia-shell aside-1">
             <div id="d1" class="diagram"></div>
             <div class="btn-toolbar" role="toolbar" aria-label="[% PROCESS string s='Diagram toolbar' %]">
+              <div class="tool-editor-group btn-group me-2 d-none" role="group">
+                <button type="button" class="tool-editor btn btn-outline-warning bi bi-pencil-square" data-bs-toggle="button" aria-label="Editor"></button>
+              </div>
               <div class="btn-group me-2" role="group">
                 <button type="button" class="tool-legend btn btn-outline-primary bi bi-card-list" data-bs-toggle="button" aria-label="[% PROCESS string s='Show Legend' %]"></button>
                 <button type="button" class="tool-attrs btn btn-outline-primary bi bi-list-columns" data-bs-toggle="button" aria-label="[% PROCESS string s='Show Attributes' %]"></button>

@@ -327,7 +327,12 @@
         .replace(/\/index.html$/, "")
         .replace(/.*\//, "");
 
-      if (url.hash == "#editor") {
+      if (url.hostname == '127.0.0.1' ||
+          url.hostname == 'localhost') {
+        config.TOOLBAR_EDITOR = true;
+      }
+
+      if (url.searchParams.has("editor")) {
         config.USE_EDITOR = true;
       }
 
@@ -356,13 +361,23 @@
                  viewBox.width, viewBox.height ]);
     }
 
-    function editorSetup(editor, diagram, legend, graph, viewBox) {
-      editor.style("display", "block");
+    function editorShow(editor, show) {
+      editor.classed("d-none", !show);
 
       d3.selectAll(".navbar .diagrams a.dropdown-item")
         .each(function () {
-          this.href += "#editor";
+          const url = new URL(this.href);
+          if (show) {
+            url.searchParams.set("editor", "");
+          } else {
+            url.searchParams.delete("editor");
+          }
+          this.href = url.href;
         });
+    }
+
+    function editorSetup(editor, diagram, legend, graph, viewBox, config) {
+      editorShow(editor, config.USE_EDITOR);
 
       legend.select(".btn-close")
         .dispatch("click");
@@ -609,7 +624,7 @@
       }
     }
 
-    function toolbarSetup(shell, svg, zoom, legend) {
+    function toolbarSetup(shell, svg, zoom, legend, editor, config) {
       const tb = shell.select(".btn-toolbar");
 
       tb.selectAll(".btn[aria-label]")
@@ -623,6 +638,16 @@
               target.classed("hover", true);
               window.setTimeout(() => target.classed("hover", false), 1000);
             }, 1000);
+
+      tb.select(".tool-editor-group")
+        .classed("d-none", !config.TOOLBAR_EDITOR);
+
+      tb.select(".tool-editor")
+        .classed("active", config.USE_EDITOR)
+        .on("click", (event) => {
+          const active = d3.select(event.target).classed("active");
+          editorShow(editor, active);
+        });
 
       tb.select(".tool-zoom-out")
         .on("click", () => svg.transition().call(zoom.scaleBy, 0.5));
@@ -769,7 +794,8 @@
         .on("wheel.zoom", null);
 
       const legend = d3.select("#legend");
-      const toolbar = toolbarSetup(d3.select(d1.node().parentNode), svg, zoom, legend);
+      const editor = d3.select("#editor");
+      const toolbar = toolbarSetup(d3.select(d1.node().parentNode), svg, zoom, legend, editor, this.config);
 
       let nodes = root_group.selectAll(".node");
       let links = root_group.selectAll(".link");
@@ -822,8 +848,8 @@
         graph.classes = attrClasses;
         mergeNodePos(graph.nodes, nodePos);
 
-        if (that.config.USE_EDITOR) {
-          editorSetup(d3.select("#editor"), d1, legend, graph, viewBox);
+        if (that.config.USE_EDITOR || that.config.TOOLBAR_EDITOR) {
+          editorSetup(editor, d1, legend, graph, viewBox, that.config);
         }
 
         force
