@@ -251,7 +251,7 @@ FcaConceptsToList[concepts_, objects_, attributes_] :=
       lconcepts,
       i, concept, intentList, intent,
       j, extentList, extent,
-      aconcept
+      md5, aconcept
     },
 
     lconcepts = List[];
@@ -271,8 +271,11 @@ FcaConceptsToList[concepts_, objects_, attributes_] :=
                AppendTo[extentList, objects[[j + 1]]]
             ]
         ];
+
+        md5 = Hash[StringJoin[intentList, extentList], "MD5", "HexString"];
         aconcept = Association["intent" -> intentList,
-                               "extent" -> extentList];
+                               "extent" -> extentList,
+                               "md5" -> md5];
         AppendTo[lconcepts, aconcept];
     ];
 

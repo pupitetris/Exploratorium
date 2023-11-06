@@ -10,6 +10,7 @@ use Data::Dumper;
 use File::Path qw(make_path);
 use File::Basename qw(dirname);
 use Cwd qw(cwd);
+use Digest::MD5 qw(md5_hex); # libdigest-md5-perl
 
 BEGIN {
   my $conexp_cp = dirname($0) . '/../bin/conexp-1.3/*';
@@ -284,9 +285,11 @@ for (my $i = 0; $i < $concepts->conceptsCount(); $i++) {
     push @extentList, $objects->[$j] if $extent->in($j);
   }
 
+  my $md5 = md5_hex(join('', @intentList, @extentList));
   my $aconcept = {
     'intent' => \@intentList,
-        'extent' => \@extentList
+        'extent' => \@extentList,
+        'md5' => $md5
   };
   push @lconcepts, $aconcept;
 }
