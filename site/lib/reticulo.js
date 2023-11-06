@@ -539,21 +539,19 @@
 
       const dotRadius = 20;
       const dots = [
-        { dot: createNodeDot(dotRadius, false, false), desc: "FCA simple object" },
-        { dot: createNodeDot(dotRadius, true, false), desc: "FCA simple object with new attributes" },
-        { dot: createNodeDot(dotRadius, false, true), desc: "FCA concept object" },
-        { dot: createNodeDot(dotRadius, true, true), desc: "FCA concept object with new attributes" }
+        createNodeDot(dotRadius, false, false),
+        createNodeDot(dotRadius, true, false),
+        createNodeDot(dotRadius, false, true),
+        createNodeDot(dotRadius, true, true)
       ];
-      for (const dot of dots) {
-        const div = cont.append("div");
-        const svg = div.append("svg")
+      legend.selectAll(".legend-nodes > div")
+        .each(function (datum, idx) {
+          d3.select(this).insert("svg", ":first-child")
             .classed("figure", true)
             .attr("xmlns", "http://www.w3.org/2000/svg")
             .attr("viewBox", [-dotRadius - 5, -dotRadius - 5, dotRadius * 2 + 10, dotRadius * 2 + 10])
-            .append(() => dot.dot);
-        div.append("span")
-          .html(dot.desc);
-      }
+            .append(() => dots[idx]);
+        });
 
       floatboxSetup(legend, () => toolbar.select(".tool-legend").classed("active", false))
         .style("display", "block");

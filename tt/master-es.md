@@ -15,7 +15,11 @@ Exploratorium de teorías del espacio-tiempo
     "Toggle navigation": "Alternar navegación",
     "Zoom In": "Acercar",
     "Zoom Out": "Alejar",
-    "Zoom Reset": "Restablecer acercamiento"
+    "Zoom Reset": "Restablecer acercamiento",
+    "FCA simple object": "Objeto FCA simple",
+    "FCA simple object with new attributes": "Objeto FCA simple, atributos nuevos",
+    "FCA concept object": "Objeto concepto FCA",
+    "FCA concept object with new attributes": "Objeto concepto FCA, atributos nuevos"
   }
 }
 ```

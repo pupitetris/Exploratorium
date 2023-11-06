@@ -68,6 +68,12 @@
             <div id="legend" class="floatbox">
               <button type="button" class="btn btn-close" aria-label="[% PROCESS string s='Close legend' %]"></button>
               <div class="cont"></div>
+              <div class="legend-nodes">
+                <div><span>[% PROCESS string s='FCA simple object' %]</span></div>
+                <div><span>[% PROCESS string s='FCA simple object with new attributes' %]</span></div>
+                <div><span>[% PROCESS string s='FCA concept object' %]</span></div>
+                <div><span>[% PROCESS string s='FCA concept object with new attributes' %]</span></div>
+              </div>
             </div>
           </div>
           <div class="aside-2">
