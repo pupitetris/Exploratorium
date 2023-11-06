@@ -603,10 +603,10 @@
       if (document.fullscreenElement) {
         shell.classed("fullscreen", true);
         btn.classed("bi-fullscreen", false);
-        btn.classed("bi-fullscreen-exit", true);
+        btn.classed("bi-fullscreen-exit active", true);
       } else {
         shell.classed("fullscreen", false);
-        btn.classed("bi-fullscreen-exit", false);
+        btn.classed("bi-fullscreen-exit active", false);
         btn.classed("bi-fullscreen", true);
       }
     }
