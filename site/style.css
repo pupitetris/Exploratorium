@@ -345,7 +345,7 @@ svg.show-levels .node-level {
 	stroke: none;
 }
 
-.fixed .node-bg {
+.selected .node-bg {
 	stroke-width: 10px;
 	stroke: #dd0;
 }

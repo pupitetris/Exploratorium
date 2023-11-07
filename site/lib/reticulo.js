@@ -161,7 +161,7 @@
 
     function nodeDblclick(event, datum) {
       window.isDoubleClick = 2;
-      d3.select(this).classed("fixed", datum.fixed = !datum.fixed);
+      d3.select(this).classed("selected", datum.selected = !datum.selected);
     }
 
     function nodeClick(event, datum, graph, nodes, links) {
@@ -433,8 +433,8 @@
                   "btnVbReset", "btnVbSmaller", "btnVbBigger", "btnVbWide", "btnVbCopy"];
       const controls = {};
       editor.selectAll("textarea,button,input")
-        .each(function (p, i) {
-          controls[keys[i]] = d3.select(this);
+        .each(function (datum, idx) {
+          controls[keys[idx]] = d3.select(this);
         });
 
       controls.btnJsonGet
@@ -543,7 +543,7 @@
 
       const orig = { x: 0, y: 0 };
 
-      function dragstart(event, datum) {
+      function dragStart(event, datum) {
         orig.y = event.y - this.offsetTop;
         orig.x = event.x - this.offsetLeft;
         d3.select(this)
@@ -571,15 +571,15 @@
         floatbox.style("left", left + "px");
       }
 
-      function dragend(event) {
+      function dragEnd(event) {
         d3.select(this)
           .classed("drag", false);
       }
 
       const drag = d3.drag()
-          .on("start", dragstart)
+          .on("start", dragStart)
           .on("drag", dragged)
-          .on("end", dragend);
+          .on("end", dragEnd);
 
       floatbox.call(drag);
 
@@ -620,31 +620,43 @@
     }
 
     function nodeDragSetup(nodes, links, zoom, translateExtents) {
-      function dragstart(event, datum) {
+      function dragStart(event, datum) {
         d3.select(this)
           .classed("drag", true);
       }
 
-      function dragged(event, datum) {
-        datum.x = event.x;
-        datum.y = event.y;
+      function dragNode(datum, deltaX, deltaY) {
+        datum.x += deltaX;
+        datum.y += deltaY;
 
         if (updateExtents(datum.x, datum.y, translateExtents)) {
           zoom.translateExtent(translateExtents);
+        }
+      }
+
+      function dragged(event, datum) {
+        const deltaX = event.x - datum.x;
+        const deltaY = event.y - datum.y;
+
+        if (datum.selected) {
+          nodes.filter(".selected")
+            .each((datum, idx) => dragNode(datum, deltaX, deltaY));
+        } else {
+          dragNode(datum, deltaX, deltaY);
         }
 
         forceTick(nodes, links);
       }
 
-      function dragend(event) {
+      function dragEnd(event) {
         d3.select(this)
           .classed("drag", false);
       }
 
       const drag = d3.drag()
-          .on("start", dragstart)
+          .on("start", dragStart)
           .on("drag", dragged)
-          .on("end", dragend);
+          .on("end", dragEnd);
 
       return drag;
     }
@@ -744,7 +756,7 @@
 
     function updateExtents(x, y, extents) {
       const margin = 100;
-      const changed = false;
+      let changed = false;
 
       if (x < extents[0][0]) {
         extents[0][0] = x - margin;
