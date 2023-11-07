@@ -255,7 +255,7 @@ teorías. Toma solamente los elementos geométricos y topológicos para
 relacionar varios modelos de espacio-tiempos. Los datos provienen del
 libro *"Foundations of Space-Time Theories: Relativistic Physics and
 Philosophy of Science"* de Michael Friedman, así como de la
-clasificación de Niels Dewar (2016, 2018) y de Sotiriou y Farahoni
+clasificación de Niels Dewar (2016, 2018) y de Sotiriou y Faraoni
 (2010).
 
 
