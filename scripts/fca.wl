@@ -55,6 +55,7 @@ FcaInit[OptionsPattern[]] :=
 
     InstallJava[];
     AddToClassPath[OptionValue["ClassPath"]];
+    LoadJavaClass["java.lang.System"];
     debugOutput = OptionValue["DebugOutput"];
   ];
 
@@ -218,7 +219,7 @@ debugAttributeSet[set_, attrs_] :=
   ];
 
 javaGetObjectHash[object_] :=
-  ToString[object@hashCode[]];
+  ToString[java`lang`System`identityHashCode[object]];
 
 FcaContextToAssociation[context_, objects_, attributes_] :=
   Module[

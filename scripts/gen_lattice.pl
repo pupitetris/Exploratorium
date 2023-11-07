@@ -27,7 +27,8 @@ use Inline (
   autostudy => 1,
   study     => [
     'conexp.core.Context',
-    'conexp.frontend.ContextDocumentModel'
+    'conexp.frontend.ContextDocumentModel',
+    'java.lang.System'
   ]
     );
 
@@ -126,7 +127,7 @@ sub writeAttributeSet {
 
 sub getObjectHash {
   my $object = shift;
-  return $object->hashCode();
+  return java::lang::System->identityHashCode($object);
 }
 
 sub debugContext {
