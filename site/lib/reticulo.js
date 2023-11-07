@@ -198,18 +198,18 @@
 
         const infimumNode = nodes.filter(".infimum");
         const setInactive = infimumNode.classed("inactive") ||
-            (!infimumNode.classed("inactive") && !infimumNode.classed("active"));
+              (!infimumNode.classed("inactive") && !infimumNode.classed("active"));
 
         nodes
-            .classed("inactive", true)
-            .classed("active", false);
+          .classed("inactive", true)
+          .classed("active", false);
         links
           .classed("inactive", true)
           .classed("active", false);
 
         nodes.classed("notvisited", true);
         recursiveClassed(graph.nodes, datum, [ "children", "parents" ],
-                       { inactive: false, active: true });
+                         { inactive: false, active: true });
         nodes.classed("notvisited", false);
 
         if (setInactive) {
@@ -269,7 +269,7 @@
 
     function createNodeDot(radius, hasAttributes, hasLabelObjects) {
       const dot = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
-          .classed("node-dot", true);
+            .classed("node-dot", true);
 
       dot
         .append("circle")
@@ -297,9 +297,9 @@
 
     function createLink(datum) {
       const line = d3.select(document.createElementNS(d3.namespaces.svg, "line"))
-          .classed("link", true)
-          .attr("source-hash", datum.source.hash)
-          .attr("target-hash", datum.target.hash);
+            .classed("link", true)
+            .attr("source-hash", datum.source.hash)
+            .attr("target-hash", datum.target.hash);
       if (datum.target.level == 0) {
         line.classed("infimum", true);
       }
@@ -324,9 +324,9 @@
 
     function createTextBox(eleClass, offsetX, offsetY, text, anchor) {
       const group = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
-          .classed(eleClass, true)
-          .attr("transform", `translate(${offsetX},${offsetY})`)
-          .on("click", eventStop);
+            .classed(eleClass, true)
+            .attr("transform", `translate(${offsetX},${offsetY})`)
+            .on("click", eventStop);
       group.append("rect")
         .classed(eleClass + "-box textbox-box", true);
       group.append("rect")
@@ -433,9 +433,9 @@
       editorShow(editor, legend, config.USE_EDITOR);
 
       const keys = ["txtJson",
-                  "btnJsonGet", "btnJsonCopy",
-                  "txtVb_offsetX", "txtVb_offsetY", "txtVb_width", "txtVb_height",
-                  "btnVbReset", "btnVbSmaller", "btnVbBigger", "btnVbWide", "btnVbCopy"];
+                    "btnJsonGet", "btnJsonCopy",
+                    "txtVb_offsetX", "txtVb_offsetY", "txtVb_width", "txtVb_height",
+                    "btnVbReset", "btnVbSmaller", "btnVbBigger", "btnVbWide", "btnVbCopy"];
       const controls = {};
       editor.selectAll("textarea,button,input")
         .each(function (datum, idx) {
@@ -516,7 +516,7 @@
 
       function btnVbCopyClicked() {
         const txt = [ viewBox.offsetX, viewBox.offsetY,
-                    viewBox.width, viewBox.height ].join (" ");
+                      viewBox.width, viewBox.height ].join (" ");
         navigator.clipboard.writeText(txt);
       }
 
@@ -582,9 +582,9 @@
       }
 
       const drag = d3.drag()
-          .on("start", dragStart)
-          .on("drag", dragged)
-          .on("end", dragEnd);
+            .on("start", dragStart)
+            .on("drag", dragged)
+            .on("end", dragEnd);
 
       floatbox.call(drag);
 
@@ -659,9 +659,9 @@
       }
 
       const drag = d3.drag()
-          .on("start", dragStart)
-          .on("drag", dragged)
-          .on("end", dragEnd);
+            .on("start", dragStart)
+            .on("drag", dragged)
+            .on("end", dragEnd);
 
       return drag;
     }
@@ -837,8 +837,8 @@
 
       const d1 = d3.select("#d1");
       const svg = d1.append("svg")
-          .attr("xmlns", "http://www.w3.org/2000/svg")
-          .attr("viewBox", this.config.VIEWBOX);
+            .attr("xmlns", "http://www.w3.org/2000/svg")
+            .attr("viewBox", this.config.VIEWBOX);
 
       attributesShow(svg, getCookie("show-attributes"));
       levelsShow(svg, getCookie("show-levels"));
@@ -853,12 +853,12 @@
       root_group.attr("transform", d3.zoomIdentity);
 
       const translateExtents = [[-viewBox.width / 4, -viewBox.height / 4],
-                              [viewBox.width * 1.5, viewBox.height * 1.5]];
+                                [viewBox.width * 1.5, viewBox.height * 1.5]];
 
       const zoom = d3.zoom()
-          .translateExtent(translateExtents)
-          .scaleExtent([0.5, 4])
-          .on("zoom", ({transform}) => root_group.attr("transform", transform));
+            .translateExtent(translateExtents)
+            .scaleExtent([0.5, 4])
+            .on("zoom", ({transform}) => root_group.attr("transform", transform));
       svg.call(zoom)
         .on("dblclick.zoom", null)
         .on("wheel.zoom", null);
@@ -873,13 +873,13 @@
       svg.on("click", (event) => svgClick(event, nodes, links));
 
       const force = d3.forceSimulation()
-          .force("link", d3.forceLink()
-                 .distance(calcDistance)
-                 .strength(this.config.LINK_STRENGTH))
-          .force("x", d3.forceX(1).strength(0))
-          .force("y", d3.forceY(1).strength(0))
-          .velocityDecay(0.5)
-          .on("tick", () => forceTick(nodes, links));
+            .force("link", d3.forceLink()
+                   .distance(calcDistance)
+                   .strength(this.config.LINK_STRENGTH))
+            .force("x", d3.forceX(1).strength(0))
+            .force("y", d3.forceY(1).strength(0))
+            .velocityDecay(0.5)
+            .on("tick", () => forceTick(nodes, links));
 
       const attrClasses = {};
       const that = this;
@@ -962,8 +962,8 @@
 
         function createNode(datum) {
           const group = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
-              .classed("node", true)
-              .attr("hash", datum.hash);
+                .classed("node", true)
+                .attr("hash", datum.hash);
 
           if (datum.level == 0) {
             group.classed("infimum", true);
@@ -973,11 +973,11 @@
           const hasLabelObjects = datum.labelObjects.length > 0;
 
           group.append(() => createNodeDot(that.config.NODE_RADIUS, hasAttributes, hasLabelObjects))
-              .datum(datum);
+            .datum(datum);
 
           const lvlY = that.config.LABELS_ORIGIN_Y +
                 (that.config.LABELS_HEIGHT / 2) +
-              (that.config.LABELS_SEPARATION * 2);
+                (that.config.LABELS_SEPARATION * 2);
           group.append("text")
             .classed("node-level", true)
             .attr("transform", `translate(0, ${lvlY})`)
@@ -994,8 +994,8 @@
             const textBoxes = [];
             const numAttributes = datum.labelAttributes.length;
             const column2 = (numAttributes > ATTRIBUTES_TO_DOUBLE_COLUMN_AFTER)?
-                numAttributes / 2 - 1:
-                numAttributes;
+                  numAttributes / 2 - 1:
+                  numAttributes;
             let anchor;
             for (let i = 0; i < numAttributes; i++) {
               if (i > column2 && anchor === undefined) {
@@ -1016,9 +1016,9 @@
               eleClass += " attributes-label";
 
               const textBox = group
-                  .append(() => createTextBox(eleClass, x, y, attr, anchor))
-                  .on("click", (event) => attributeClick(event, infobox))
-                  .property("attribute", attr);
+                    .append(() => createTextBox(eleClass, x, y, attr, anchor))
+                    .on("click", (event) => attributeClick(event, infobox))
+                    .property("attribute", attr);
 
               textBoxes.push(textBox);
               y -= that.config.LABELS_HEIGHT + that.config.LABELS_SEPARATION;
@@ -1035,8 +1035,8 @@
             for (let i = 0; i < datum.labelObjects.length; i++) {
               const id = datum.labelObjects[i];
               const textBox = group.append(() => createTextBox("objects-label",
-                                                             x, y,
-                                                             graph.context[id].name));
+                                                               x, y,
+                                                               graph.context[id].name));
               textBoxes.push(textBox);
               y += that.config.LABELS_HEIGHT - that.config.LABELS_SEPARATION;
             }
