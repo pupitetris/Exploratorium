@@ -618,8 +618,10 @@
             .append(() => dots[idx]);
         });
 
-      floatboxSetup(legend, () => toolbar.select(".tool-legend").classed("active", false))
-        .style("display", "block");
+      floatboxSetup(legend, () => {
+        setCookie("show-legend", false);
+        toolbar.select(".tool-legend").classed("active", false);
+      });
 
       legendShow(legend, getCookie("show-legend"));
     }
