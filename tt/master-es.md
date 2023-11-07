@@ -12,6 +12,8 @@ Exploratorium de teorías del espacio-tiempo
     "Show Legend": "Mostrar leyenda",
     "Show Attributes": "Mostrar atributos",
     "Show Levels": "Mostrar niveles",
+    "Select All": "Seleccionar todos",
+    "Select None": "Seleccionar ninguno",
     "Toggle navigation": "Alternar navegación",
     "Zoom In": "Acercar",
     "Zoom Out": "Alejar",

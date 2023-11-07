@@ -159,9 +159,14 @@
       links.classed("inactive active", false);
     }
 
+    function nodeSelect(node, selected) {
+      node.datum().selected = selected;
+      node.classed("selected", selected);
+    }
+
     function nodeDblclick(event, datum) {
       window.isDoubleClick = 2;
-      d3.select(this).classed("selected", datum.selected = !datum.selected);
+      nodeSelect(d3.select(this), !datum.selected);
     }
 
     function nodeClick(event, datum, graph, nodes, links) {
@@ -682,9 +687,9 @@
     }
 
     function toolbarSetup(shell, svg, zoom, legend, editor, config) {
-      const tb = shell.select(".btn-toolbar");
+      const toolbar = shell.select(".btn-toolbar");
 
-      tb.selectAll(".btn[aria-label]")
+      toolbar.selectAll(".btn[aria-label]")
         .on("mouseover.tooltip",
             (event) => d3.select(event.target).classed("hover", true))
         .on("mouseout.tooltip",
@@ -696,28 +701,28 @@
               window.setTimeout(() => target.classed("hover", false), 1000);
             }, 1000);
 
-      tb.select(".tool-editor-group")
+      toolbar.select(".tool-editor-group")
         .classed("d-none", !config.DEV_MODE);
 
-      tb.select(".tool-editor")
+      toolbar.select(".tool-editor")
         .classed("active", config.USE_EDITOR)
         .on("click", (event) => {
           const active = d3.select(event.target).classed("active");
           editorShow(editor, legend, active);
         });
 
-      tb.select(".tool-zoom-out")
+      toolbar.select(".tool-zoom-out")
         .on("click", () => svg.transition().call(zoom.scaleBy, 0.5));
-      tb.select(".tool-zoom-reset")
+      toolbar.select(".tool-zoom-reset")
         .on("click", () => svg.transition().call(zoom.transform, d3.zoomIdentity));
-      tb.select(".tool-zoom-in")
+      toolbar.select(".tool-zoom-in")
         .on("click", () => svg.transition().call(zoom.scaleBy, 2));
 
-      const fsbtn = tb.select(".tool-fullscreen")
-          .on("click", () => toolbarFullscreen(shell));
+      const fsbtn = toolbar.select(".tool-fullscreen")
+            .on("click", () => toolbarFullscreen(shell));
       shell.on("fullscreenchange", () => toolbarFullscreenChange(shell, fsbtn));
 
-      tb.select(".tool-legend")
+      toolbar.select(".tool-legend")
         .classed("active", getCookie("show-legend"))
         .on("click", (event) => {
           const active = d3.select(event.target).classed("active");
@@ -725,7 +730,7 @@
           legendShow(legend, active);
         });
 
-      tb.select(".tool-attrs")
+      toolbar.select(".tool-attrs")
         .classed("active", getCookie("show-attributes"))
         .on("click", (event) => {
           const active = d3.select(event.target).classed("active");
@@ -733,7 +738,7 @@
           attributesShow(svg, active);
         });
 
-      tb.select(".tool-levels")
+      toolbar.select(".tool-levels")
         .classed("active", getCookie("show-levels"))
         .on("click", (event) => {
           const active = d3.select(event.target).classed("active");
@@ -741,7 +746,14 @@
           levelsShow(svg, active);
         });
 
-      return tb;
+      return toolbar;
+    }
+
+    function toolbarSetup2(toolbar, nodes) {
+      toolbar.select(".tool-selall")
+        .on("click", () => nodes.each(function() { nodeSelect(d3.select(this), true); }));
+      toolbar.select(".tool-selnone")
+        .on("click", () => nodes.each(function() { nodeSelect(d3.select(this), false); }));
     }
 
     function parseViewBox(str) {
@@ -851,12 +863,12 @@
         .on("dblclick.zoom", null)
         .on("wheel.zoom", null);
 
+      let nodes = root_group.selectAll(".node");
+      let links = root_group.selectAll(".link");
+
       const legend = d3.select("#legend");
       const editor = d3.select("#editor");
       const toolbar = toolbarSetup(d3.select(d1.node().parentNode), svg, zoom, legend, editor, this.config);
-
-      let nodes = root_group.selectAll(".node");
-      let links = root_group.selectAll(".link");
 
       svg.on("click", (event) => svgClick(event, nodes, links));
 
@@ -924,6 +936,8 @@
           .on("dblclick", nodeDblclick);
 
         nodes.call(nodeDragSetup(nodes, links, zoom, translateExtents));
+
+        toolbarSetup2(toolbar, nodes);
 
         function observeForBBox(textBoxes) {
           const observer = new MutationObserver(

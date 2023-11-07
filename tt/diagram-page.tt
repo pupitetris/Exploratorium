@@ -56,6 +56,10 @@
                 <button type="button" class="tool-levels btn btn-outline-primary bi bi-123" data-bs-toggle="button" aria-label="[% PROCESS string s='Show Levels' %]"></button>
               </div>
               <div class="btn-group me-2" role="group">
+                <button type="button" class="tool-selall btn btn-outline-primary bi bi-check-circle-fill" aria-label="[% PROCESS string s='Select All' %]"></button>
+                <button type="button" class="tool-selnone btn btn-outline-primary bi bi-slash-circle" aria-label="[% PROCESS string s='Select None' %]"></button>
+              </div>
+              <div class="btn-group me-2" role="group">
                 <button type="button" class="tool-zoom-out btn btn-outline-primary bi bi-zoom-out" aria-label="[% PROCESS string s='Zoom Out' %]"></button>
                 <button type="button" class="tool-zoom-reset btn btn-outline-primary" aria-label="[% PROCESS string s='Zoom Reset' %]">1:1</button>
                 <button type="button" class="tool-zoom-in btn btn-outline-primary bi bi-zoom-in" aria-label="[% PROCESS string s='Zoom In' %]"></button>
