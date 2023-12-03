@@ -56,7 +56,7 @@ CREATE TABLE attr_diagram_class (
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
 	reference TEXT,
-	PRIMARY KEY (attribute_id, diagram_class_id, attr_class_id))
+	PRIMARY KEY (attribute_id, diagram_class_id))
 STRICT;
 
 
