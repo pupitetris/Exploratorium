@@ -229,7 +229,7 @@ theories. It takes only the geometric and topological elements to
 relate various space-time models. The data comes from the book
 *"Foundations of Space-Time Theories: Relativistic Physics and
 Philosophy of Science"* by Michael Friedman, as well as the
-classification of Niels Dewar (2016, 2018) and Sotiriou and Farahoni
+classification of Niels Dewar (2016, 2018) and Sotiriou and Faraoni
 (2010).
 
 
