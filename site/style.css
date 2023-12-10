@@ -443,7 +443,7 @@ html {
 }
 
 .textbox-box.box-Chronogeometrical {
-	--fill: #825238;
+	--fill: #753917;
 }
 
 .textbox-box.box-Cond {
@@ -455,7 +455,7 @@ html {
 }
 
 .textbox-box.box-ElemDis {
-	--fill: #4cdbd7;
+	--fill: #4dd3b2;
 }
 
 .textbox-box.box-Family {
@@ -487,7 +487,7 @@ html {
 }
 
 .textbox-box.box-MB {
-	--fill: #1c838b;
+	--fill: #b4b029;
 }
 
 .textbox-box.box-MovEq {
@@ -511,5 +511,5 @@ html {
 }
 
 .textbox-box.box-Z {
-	--fill: #f4ab4e;
+	--fill: #f78383;
 }
