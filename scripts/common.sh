@@ -1,5 +1,6 @@
 SCRIPTDIR=${SCRIPTDIR:-$(dirname "$0")}
 DBDIR=$SCRIPTDIR/../db
+SITEDIR=$SCRIPTDIR/../site
 DEFAULT_DBFILE="$DBDIR"/exploratorium.db
 
 function test_dbfile {
