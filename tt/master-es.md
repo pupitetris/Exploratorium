@@ -29,6 +29,7 @@ Exploratorium de teorías del espacio-tiempo
 ## Navigation
 
 - [Inicio](index-es.html)
+- [Metodología](methodology-es.html)
 - [Diagramas](nav_menu)
 - [Acerca](/integrantes/mariana-espinosa-aldama)
 - [REMO](/)
@@ -101,20 +102,22 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 - Compara las reconstrucciones sustractivas de las aditivas.
 - Encuentra relaciones de teorización y especialización.
 - Haz zoom-in, zoom-out o arrastra la red.
-- Resalta subconceptos y supraconceptos.
-- Explora mediante hipervínculos y adquiere una visión de conjunto.
-- Identifica el retículo "pico del iceberg".
-- Mueve los nodos para reacomodar la red y guarda tus propias
-  configuraciones.
+- Resalta subconceptos y supraconceptos. <!---
+- Explora mediante hipervínculos y adquiere una visión de conjunto. 
+-->- Identifica el retículo "pico del iceberg".
+- Mueve los nodos para reacomodar la red<!-- y guarda tus propias
+  configuraciones-->.
 - Resalta nodos específicos y encuentra algunos especialmente
   interesantes.
 - Acompaña las lecturas fuente con este macroscopio.
 - Adquiere una visión de conjunto.
 - Cuestiona nuestros resultados y discute con tus colegas.
 - Conoce la metodología del Análisis de Conceptos Formales (FCA).
+<!--
 - Descarga los contextos y consulta las fuentes.
 - Descarga las redes y el Manzano de la Gravitación.
-- Escríbenos y déjanos tus comentarios.
+- Escríbenos y déjanos tus comentarios
+-->
 
 #### En el Exploratorium, nos apasiona desentrañar la estructura semántica de las teorías físicas a través de visualizaciones de redes interactivas e hipervinculadas.
 
@@ -139,8 +142,26 @@ interactivas que nos ayuden a comprender la complejidad de las teorías
 físicas y las relaciones entre los componentes fundamentales. Estos
 macroscopios funcionan como mapas conceptuales para estudiantes y
 curiosos que navegan en el mar conceptual de la física teórica.
- 
-#### Metodología
+
+Información más detallada en la tesis doctoral de Mariana Espinosa
+Aldama: ["Visualizaciones de redes conceptuales de teorías del
+espacio-tiempo y la
+gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
+
+#### [¡Descarga gratis aquí el Manzano de la Gravitación y mucho más!](https://marianaespinosa.blogspot.com/p/blog-page.html)
+
+Este sitio ha sido optimizado para Mozilla Firefox y Google Chrome.
+
+
+### Metodología
+
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "methodology-es.html",
+  "nav_lang": "methodology.html"
+}
+```
 
 Representamos teorías utilizando un enfoque basado en modelos y la
 teoría de conjuntos, siguiendo la corriente estructuralista de
@@ -178,12 +199,7 @@ reconstrucción formal. Hemos encontrado dos tipos de reconstrucciones:
 
 Información más detallada en la tesis doctoral de Mariana Espinosa
 Aldama: ["Visualizaciones de redes conceptuales de teorías del
-espacio-tiempo y la
-gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
-
-#### [¡Descarga gratis aquí el Manzano de la Gravitación y mucho más!](https://marianaespinosa.blogspot.com/p/blog-page.html)
-
-Este sitio ha sido optimizado para Mozilla Firefox y Google Chrome.
+espacio-tiempo y la gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
 
 
 ### Protofísica

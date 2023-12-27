@@ -10,6 +10,7 @@ Space-Time Theories Exploratorium
 ## Navigation
 
 - [Home](index.html)
+- [Methodology](methodology.html)
 - [Diagrams](nav_menu)
 - [About](/integrantes/mariana-espinosa-aldama)
 - [REMO](/)
@@ -114,7 +115,27 @@ between fundamental components. These macroscopes work as conceptual
 maps for students and curious people that navigate in the theoretical
 sea of physics.
 
-#### Metodology
+More detailed information in Mariana Espinosa's PhD thesis (in
+Spanish) ["Visualizaciones de redes conceptuales de teorías del
+espacio-tiempo y la
+gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022),
+and [an article in English
+here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
+
+#### [Get your Gravity Apple Tree and more... here!](https://marianaespinosa.blogspot.com/p/blog-page.html)
+
+This site has been optimized for Mozilla Firefox and Google Chrome.
+
+
+### Methodology
+
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "methodology.html",
+  "nav_lang": "methodology-es.html"
+}
+```
 
 We represent theories using a model-based approach and set theory,
 following the structuralist school of metatheoretical analysis of
@@ -153,11 +174,6 @@ espacio-tiempo y la
 gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022),
 and [an article in English
 here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
-
-#### [Get your Gravity Apple Tree and more... here!](https://marianaespinosa.blogspot.com/p/blog-page.html)
-
-This site has been optimized for Mozilla Firefox and Google Chrome.
-
 
 ### Protophysics
 
