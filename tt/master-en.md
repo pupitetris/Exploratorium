@@ -47,7 +47,7 @@ Metropolitan Autonomous University-Cuajimalpa Unit, as well as the
 Coordination of Innovation and the Computing Department. A thanks to
 Mario Casanueva (UAM-C), Diego Méndez (UAM-C), Sergio Mendoza
 (IA-UNAM), Joaquín Hernández (UAM-C), and especially Arturo Espinosa
-for all his help and support.
+for all their help and support.
 
 ### Copyright
 
@@ -73,9 +73,9 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
   theories of space-time and gravitation.
 - Locate groups of theories of interest, their foundations and classes
   of models.
-- Learn the logic of hierarchical networks.
+- Learn the logic of hierarchical networks called lattices.
 - Become familiar with the conceptual structure of physical theories
-  through partial grids.
+  through partial lattices.
 - Consult information when clicking on the labels.
 - Compare subtractive and additive reconstructions.
 - Find relationships of theorization and specialization.
@@ -151,7 +151,7 @@ More detailed information in Mariana Espinosa's PhD thesis (in
 Spanish) ["Visualizaciones de redes conceptuales de teorías del
 espacio-tiempo y la
 gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022),
-and [an article in english
+and [an article in English
 here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 
 #### [Get your Gravity Apple Tree and more... here!](https://marianaespinosa.blogspot.com/p/blog-page.html)
