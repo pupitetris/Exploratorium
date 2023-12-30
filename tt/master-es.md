@@ -93,18 +93,20 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 
 - Explora ocho redes teóricas y un holón con más de 50 teorías del
   espacio-tiempo y la gravitación.
+- Conoce la metodología del Análisis de Conceptos Formales (FCA).
+- Aprende la lógica de las redes jerárquicas.
 - Ubica grupos de teorías de interés, sus fundamentos y clases de
   modelos.
-- Aprende la lógica de las redes jerárquicas.
 - Familiarízate con la estructura conceptual de las teorías físicas
   mediante retículos parciales.
 - Consulta información al picar sobre las etiquetas.
+- Enciende y apaga etiquetas y los nivele de cada nodo.
 - Compara las reconstrucciones sustractivas de las aditivas.
 - Encuentra relaciones de teorización y especialización.
+- Visualiza en pantalla completa.
 - Haz zoom-in, zoom-out o arrastra la red.
-- Resalta subconceptos y supraconceptos. <!---
-- Explora mediante hipervínculos y adquiere una visión de conjunto. 
--->- Identifica el retículo "pico del iceberg".
+- Resalta subconceptos y supraconceptos. 
+- Identifica el retículo "pico del iceberg".
 - Mueve los nodos para reacomodar la red<!-- y guarda tus propias
   configuraciones-->.
 - Resalta nodos específicos y encuentra algunos especialmente
@@ -112,8 +114,9 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 - Acompaña las lecturas fuente con este macroscopio.
 - Adquiere una visión de conjunto.
 - Cuestiona nuestros resultados y discute con tus colegas.
-- Conoce la metodología del Análisis de Conceptos Formales (FCA).
+
 <!--
+- Explora mediante hipervínculos y adquiere una visión de conjunto. 
 - Descarga los contextos y consulta las fuentes.
 - Descarga las redes y el Manzano de la Gravitación.
 - Escríbenos y déjanos tus comentarios
@@ -121,27 +124,22 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 
 #### En el Exploratorium, nos apasiona desentrañar la estructura semántica de las teorías físicas a través de visualizaciones de redes interactivas e hipervinculadas.
 
-Las teorías físicas axiomatizadas, son sistemas conceptuales generados
-a partir de deducciones lógicas de un conjunto de premisas; objetos
-complejos con diferentes tipos de componentes relacionados con otros
-componentes en un entorno determinado. La estructura es el conjunto de
-relaciones entre los componentes (estructura interna) y los
-componentes del entorno (estructura externa). Las teorías tienen una
-estructura interna jerárquica que se puede visualizar usando
-retículos. Los retículos son una clase de red con varias propiedades,
-como ser conjuntos ordenados con un componente superior e inferior
-único para cada par de nodos de la red. Los retículos teóricos
-muestran los componentes fundamentales comunes a la mayoría de las
-teorías, hubicados en la parte superior, como la protofísica, las
-propiedades topológicas o geométricas. Los modelos actuales y
-especializados, por otro lado, se encuentran en los niveles inferiores
-del retículo.
+Estos macroscopios son visualizaciones interactivas de retículos teóricos que representan relaciones entre los conceptos fundamentales de las teorías físicas y del espacio-tiempo.
+Los nodos representan conceptos y las ligas relaciones jerárquicas de pertenencia o cobertura. Los conceptos son pares ordenados de atributos (conjunto de axiomas) y objetos (o clases de modelos).
+Las teorías que aquí exploramos han sido axiomatizadas bajo la visión conjuntista del estructuralismo donde las teorías se repressentan mediante conjuntos de premisas. Las teorías tienen una estructura interna jerárquica que puede visualizarse utilizando retículos conceptuales.
+
+Los retículos son una clase de red con varias propiedades,
+como ser conjuntos de pares parcialmente ordenados con un componente superior e inferior
+único para cada par de nodos de la red. En la parte superior de los retículos teóricos
+se ubican los componentes fundamentales comunes a la mayoría de las
+teorías, como la protofísica, las propiedades topológicas o geométricas y los modelos de teorías de espacio-tiempo.
+En cambio, los modelos actuales y especializados de las teorías físicas se encuentran en los niveles inferiores del retículo.
 
 Nuestro **objetivo** es proporcionar herramientas visuales
 interactivas que nos ayuden a comprender la complejidad de las teorías
 físicas y las relaciones entre los componentes fundamentales. Estos
 macroscopios funcionan como mapas conceptuales para estudiantes y
-curiosos que navegan en el mar conceptual de la física teórica.
+curiosos que navegan en el mar de la física teórica.
 
 Información más detallada en la tesis doctoral de Mariana Espinosa
 Aldama: ["Visualizaciones de redes conceptuales de teorías del
@@ -171,9 +169,8 @@ conjuntos de clases de modelos. En una tabla de incidencia o contexto
 formal (G,M,i) relacionamos clases de modelos con sus atributos
 (conjuntos de axiomas). El **Análisis de Conceptos Formales (FCA)** es
 una teoría matemática basada en la teoría de retículos de Birckoff y
-la conexión de Galois que y metodológica que recupera conceptos
-formales (pares ordenados conformados por una extensión e intensión) a
-partir de contextos formales, les relaciona jerárquicamente y les
+la conexión de Galois que recupera conceptos formales (pares ordenados conformados por una extensión e intensión) a
+partir de tablas de incidencia, les relaciona jerárquicamente y les
 representa como redes reticulares.
 
 Cada retículo conceptual presentado aquí se basa en alguna
@@ -212,11 +209,11 @@ espacio-tiempo y la gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/12
 }
 ```
 
-Las teorías físicas se han desarrollado gracias a diversas teorías
-matemáticas, a la lógica, la semántica y a una serie de presupuestos y
-teorías muy generales que en *Foundations of Physics* (1967), Mario
+Las teorías físicas tienen como fundamento diversas teorías
+matemáticas, la lógica, la semántica y a  serie de presupuestos y
+teorías muy generales que en *Foundations of Physics* (1967) Mario
 Bunge divide en tres grupos: la base formal, la base material a la que
-llama protofísica, y ciertos principios "zerológicos".
+llama *Protofísica*, y ciertos principios "zerológicos".
 
 
 ### Teorías de dinámica analítica
@@ -229,8 +226,8 @@ llama protofísica, y ciertos principios "zerológicos".
 }
 ```
 
-Este retículo compara la teoría newtoniana con las teorías de dinámica
-analítica, que hablan no de partículas, sino de sistemas físicos y la
+Este retículo compara la teoría Newtoniana con las teorías de Dinámica
+Analítica, que hablan no de partículas, sino de sistemas físicos y la
 evolución de sus estados. Estas teorías están parcialmente
 interpretadas y pueden aplicarse a distintos dominios. Los datos
 provienen de una tabla en la página 123 del libro *Foundations of
@@ -285,7 +282,7 @@ clasificación de Niels Dewar (2016, 2018) y de Sotiriou y Faraoni
 }
 ```
 
-P. Havas (1964) mostró que la teoría newtoniana puede formularse en
+P. Havas (1964) mostró que la teoría Newtoniana puede formularse en
 4D. Michael Friedman aprovechó este resultado para caracterizarla,
 junto con otras ocho teorías clásicas en su libro *Foundations of
 Space-time Theories: Relativistic Physics and Philosophy of
@@ -318,10 +315,10 @@ ondas de radio y tecnología cuántica y de observaciones astronómicas
 de gran presición de objetos muy energéticos como los quasares. Éstas
 fueron clasificadas por Clifford Will en su libro *"Theory and
 Experiment in Gravitational Physics"* (1993). Las tablas en la página
-117 y el "recetario" del capítulo 5 son fuente de este retículo.  Un
+117 y el "recetario" del capítulo 5 son fuente de este retículo <!--Un
 retículo alterno clasifica las teorías métricas en base a sus
 parámetros postnewtonianos (p. 115). Ubica las teorías viables de las
-no viables.
+no viables-->. Estas teorías se caracterizan por añadir campos extra, funciones y parámetros arbitrarios, así como proponer cambios en la constante de gravitación universal G.
 
 
 ### Teorías f(R) de gravitación
@@ -358,7 +355,7 @@ distintas, según la dependencia de las variables.
 }
 ```
 
-Se presentan cuatro modelos de la teoría de gravitación extendida que
+Junto con las teorías f(R) se presentan cuatro modelos de la teoría de gravitación extendida que
 toman la constante de Milgrom como fundamental (Teorías de gravedad
 modificada (MoND)) como alternativa a la hipótesis de la materia
 oscura. Dos de ellas son no locales y asumen la masa como una función
@@ -389,7 +386,9 @@ theories of gravity"*, en la clasificación de Michael Friedman en
 Philosophy of Science"*, en la clasificación de Clifford Will en
 *"Theory and Experiment on Gravitational Physics"*, y en los artículos
 de Sergio Mendoza et al. (2013, 2016, 2018) sobre teorías extendidas
-locales y no locales. Ubica grupos de teorías, por ejemplo: aquellas
+locales y no locales.
+
+Ubica grupos de teorías, por ejemplo: aquellas
 que siguen una geodésica, las que tienen curvatura = 0, o el nodo que
 selecciona a las teorías métricas solamente. ¿A qué modelo
 correspondería ese nodo? Observa la evolución teórica de izquierda a

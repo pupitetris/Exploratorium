@@ -72,40 +72,42 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 
 - Explore 8 theoretical networks and a holon with more than 50
   theories of space-time and gravitation.
+- Get to know the methodology of Formal Concept Analysis (FCA).
+- Learn the logic of hierarchical networks called lattices.
 - Locate groups of theories of interest, their foundations and classes
   of models.
-- Learn the logic of hierarchical networks called lattices.
 - Become familiar with the conceptual structure of physical theories
   through partial lattices.
 - Consult information when clicking on the labels.
+- Turn on and off labels and node levels.
 - Compare subtractive and additive reconstructions.
 - Find relationships of theorization and specialization.
+- Visualize in full screen.
 - Zoom-in, zoom-out or drag the network.
 - Highlight subconcepts and supraconcepts.
-- Explore through hyperlinks and acquire an overview.
-- Identify the "peak of the iceberg" reticle.
-- Move the nodes to rearrange the network and save your own settings.
+- Identify the "peak of the iceberg" lattice.
+- Move the nodes to rearrange the network<!-- and save your own settings-->.
 - Highlight specific nodes and find some especially interesting ones.
 - Accompany source readings with this macroscope.
+- Get a bird eye view.
 - Be suspicious of our results and discuss with your colleagues.
-- Know the methodology of Formal Concept Analysis (FCA).
+<!--
 - Download the contexts and consult the sources.
 - Download the networks and the Gravity Apple Tree.
 - Write to us and leave us your comments.
+-->
+
 
 #### At the Exploratorium, we are passionate about unraveling the semantic structure of physical theories through interactive, hyperlinked network visualizations.
 
-Axiomatized physical theories are conceptual systems generated from
-logical deductions from a set of premises; complex objects with
-different types of components related to other components in a certain
-environment.  The structure is the set of relationships between the
-components (internal structure) and environment components (external
-structure). Theories have a hierarchical internal structure that can
-be visualized using lattices. Lattices are a class of network with
-various properties, such as being ordered sets with a unique top and
+These macroscopes are interactive theoretical lattices that represent relations between the fundamental concepts of physical and space-time theories.  Nodes repressent concepts and links represent hierarquical relations of inclusion. Concepts are ordered pairs of attributes (sets of axioms) and objects (classes of models).
+The explored theories have been axiomatized under the set theoretical view of structuralism where theories are represented by sets of premises. Theories have a hierarchical internal structure that can be visualized using concept lattices.
+
+Lattices are a class of network with
+various properties, such as being partially ordered sets with a unique top and
 bottom component for each pair of nodes in the network. Theoretical
-lattices show the fundamental components common to most theories,
-located at the top, such as protophysics, topological or geometric
+lattices locate the fundamental components common to most theories,
+at the top, such as protophysics, topological or geometric
 properties. Actual models and specialized models, on the other hand,
 are found at the lower levels of the lattice.
 
@@ -146,9 +148,9 @@ with their attributes (sets of axioms). **Formal Concept Analysis
 (FCA)** is a mathematical theory based on Birckoff's theory of
 lattices and Galois' connection which recovers formal concepts
 (ordered pairs made up of an extension and intension) from formal
-contexts, relates them hierarchically and represents them as lattice.
+contexts, relates them hierarchically and represents them as lattices.
 
-Each lattice is presented here is based on some formal
+Each lattice presented here is based on some formal
 reconstruction. We have found two types of reconstructions:
 
 - **Additive**, which proposes a very impoverished differential
@@ -185,11 +187,11 @@ here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 }
 ```
 
-Physical theories have been developed thanks to various mathematical
+The foundations of all physical theories rest on mathematical
 theories, logic, semantics and a series of very general assumptions
 and theories that in *Foundations of Physics* (1967), Mario Bunge
 divides into three groups: the formal base, the material base which he
-calls protophysics, and certain "zerological" principles.
+calls *Protophysics*, and certain "zerological" principles.
 
 
 ### Analytical Dynamics
@@ -290,10 +292,9 @@ technology and high-precision astronomical observations of highly
 energetic objects such as quasars. These were classified by Clifford
 Will in his book *"Theory and Experiment in Gravitational Physics"*
 (1993). The tables on page 117 and the "cookbook" in chapter 5 are
-sources for this lattice. An alternating lattice classifies metric
+sources for this lattice<!--. An alternating lattice classifies metric
 theories based on their post-Newtonian parameters (p. 115). Locate the
-viable theories from the non-viable ones.
-
+viable theories from the non-viable ones-->. These theories consider some extra fields, functions and arbitrary parameters, and changes in the universal gravitation constant G.
 
 ### f(R) Gravitation Theories
 
@@ -328,9 +329,8 @@ different ways, depending on the dependence of the variables.
 }
 ```
 
-Four models of the extended gravitation theory that take the Milgrom
-constant as fundamental (Modified Gravity Theories (MoND)) are
-presented as an alternative to the dark matter hypothesis. Two of them
+Along with the f(R) theories, we compare four models of the extended gravitation theory that take the Milgrom
+constant as fundamental (Modified Gravity Theories (MoND)), proposing alternative covariant models to the dark matter hypothesis. Two of them
 are non-local and assume mass as a function of density. Data obtained
 from the work of Barrientos and Mendoza in metric and extended
 platinum theories (2016, 2018); Carranza, Mendoza and Torres (2018);
@@ -358,7 +358,9 @@ of Space-Time Theories: Relativistic Physics and Philosophy of
 Science*, in Clifford Will's classification in *Theory and Experiment
 on Gravitational Physics*, and in the articles by Sergio Mendoza et
 al. (2013, 2016, 2018) on extended local and non-local
-theories. Locate groups of theories, for example: those that follow a
+theories. 
+
+Locate groups of theories, for example: those that follow a
 geodesic, those that have curvature = 0, or the node that selects
 metric theories only. What model would that node correspond to?
 Observe the theoretical evolution from left to right.
