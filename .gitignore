@@ -1,5 +1,4 @@
-/site/index-es.html
-/site/index.html
+/site/*.html
 /site/theories/*/*/index.html
 /site/theories/*/*/lattice.json
 /site/theories/*/*/attr_class_desc.csv
