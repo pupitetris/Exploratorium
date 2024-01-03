@@ -11,7 +11,8 @@ CREATE TABLE attr_class (
 		UNIQUE NOT NULL
 		COLLATE NOCASE,
 	ord INTEGER
-		UNIQUE NOT NULL)
+		UNIQUE NOT NULL,
+	CHECK (code <> ''))
 STRICT;
 
 
@@ -32,7 +33,8 @@ CREATE TABLE attr_class_desc (
 	title TEXT
 		NOT NULL
 		COLLATE NOCASE,
-	PRIMARY KEY (attr_class_id, lang_code))
+	PRIMARY KEY (attr_class_id, lang_code),
+	CHECK (title <> ''))
 STRICT;
 
 
@@ -56,7 +58,8 @@ CREATE TABLE attr_diagram_class (
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
 	reference TEXT,
-	PRIMARY KEY (attribute_id, diagram_class_id))
+	PRIMARY KEY (attribute_id, diagram_class_id),
+	CHECK (reference <> ''))
 STRICT;
 
 
@@ -66,7 +69,8 @@ DROP TABLE IF EXISTS attribute;
 CREATE TABLE attribute (
 	attribute_id INTEGER
 		PRIMARY KEY AUTOINCREMENT,
-	formula TEXT)
+	formula TEXT,
+	CHECK (formula <> ''))
 STRICT;
 
 
@@ -95,7 +99,8 @@ CREATE TABLE attribute_desc (
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
-	UNIQUE (diagram_class_id, lang_code, label))
+	UNIQUE (diagram_class_id, lang_code, label),
+	CHECK (label <> '' and title <> '' AND explanation <> '' and obs <> ''))
 STRICT;
 
 
@@ -130,7 +135,8 @@ CREATE TABLE diagram (
 		DEFERRABLE INITIALLY DEFERRED,
 	code TEXT
 		NOT NULL
-		UNIQUE COLLATE NOCASE)
+		UNIQUE COLLATE NOCASE,
+	CHECK (code <> ''))
 STRICT;
 
 
@@ -142,7 +148,8 @@ CREATE TABLE diagram_class (
 		PRIMARY KEY AUTOINCREMENT,
 	code TEXT
 		UNIQUE COLLATE NOCASE
-		NOT NULL)
+		NOT NULL,
+	CHECK (code <> ''))
 STRICT;
 
 
@@ -155,7 +162,8 @@ CREATE TABLE lang (
 		COLLATE NOCASE,
 	lang_label TEXT
 		UNIQUE COLLATE NOCASE
-		NOT NULL)
+		NOT NULL,
+	CHECK (lang_label <> ''))
 STRICT;
 
 
@@ -168,7 +176,8 @@ CREATE TABLE object (
 		PRIMARY KEY AUTOINCREMENT,
 	code TEXT
 		UNIQUE NOT NULL
-		COLLATE NOCASE)
+		COLLATE NOCASE,
+	CHECK (code <> ''))
 STRICT;
 
 
@@ -217,7 +226,8 @@ CREATE TABLE object_desc (
 		NOT NULL
 		COLLATE NOCASE,
 	PRIMARY KEY (object_id, lang_code),
-	UNIQUE (lang_code, label))
+	UNIQUE (lang_code, label),
+	CHECK (label <> ''))
 STRICT;
 
 
