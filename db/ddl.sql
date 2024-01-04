@@ -38,17 +38,17 @@ CREATE TABLE attr_class_desc (
 STRICT;
 
 
--- Table: attr_diagram_class
-DROP TABLE IF EXISTS attr_diagram_class;
+-- Table: attr_context_class
+DROP TABLE IF EXISTS attr_context_class;
 
-CREATE TABLE attr_diagram_class (
+CREATE TABLE attr_context_class (
 	attribute_id INTEGER
 		REFERENCES attribute (attribute_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
-	diagram_class_id INTEGER
-		REFERENCES diagram_class (diagram_class_id)
+	context_class_id INTEGER
+		REFERENCES context_class (context_class_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
@@ -58,7 +58,7 @@ CREATE TABLE attr_diagram_class (
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
 	reference TEXT,
-	PRIMARY KEY (attribute_id, diagram_class_id),
+	PRIMARY KEY (attribute_id, context_class_id),
 	CHECK (reference <> ''))
 STRICT;
 
@@ -79,7 +79,7 @@ DROP TABLE IF EXISTS attribute_desc;
 
 CREATE TABLE attribute_desc (
 	attribute_id INTEGER,
-	diagram_class_id INTEGER,
+	context_class_id INTEGER,
 	lang_code TEXT
 		REFERENCES lang (lang_code)
 		ON DELETE RESTRICT
@@ -93,43 +93,43 @@ CREATE TABLE attribute_desc (
 	explanation TEXT
 		DEFAULT NULL,
 	obs TEXT,
-	PRIMARY KEY (attribute_id, diagram_class_id, lang_code),
-	FOREIGN KEY (attribute_id, diagram_class_id)
-		REFERENCES attr_diagram_class (attribute_id, diagram_class_id)
+	PRIMARY KEY (attribute_id, context_class_id, lang_code),
+	FOREIGN KEY (attribute_id, context_class_id)
+		REFERENCES attr_context_class (attribute_id, context_class_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
-	UNIQUE (diagram_class_id, lang_code, label),
+	UNIQUE (context_class_id, lang_code, label),
 	CHECK (label <> '' and title <> '' AND explanation <> '' and obs <> ''))
 STRICT;
 
 
--- Table: attribute_diagram
-DROP TABLE IF EXISTS attribute_diagram;
+-- Table: attribute_context
+DROP TABLE IF EXISTS attribute_context;
 
-CREATE TABLE attribute_diagram (
+CREATE TABLE attribute_context (
 	attribute_id INTEGER
 		REFERENCES attribute (attribute_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
-	diagram_id INTEGER
-		REFERENCES diagram (diagram_id)
+	context_id INTEGER
+		REFERENCES context (context_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
-	PRIMARY KEY (attribute_id, diagram_id))
+	PRIMARY KEY (attribute_id, context_id))
 STRICT;
 
 
--- Table: diagram
-DROP TABLE IF EXISTS diagram;
+-- Table: context
+DROP TABLE IF EXISTS context;
 
-CREATE TABLE diagram (
-	diagram_id INTEGER
+CREATE TABLE context (
+	context_id INTEGER
 		PRIMARY KEY AUTOINCREMENT,
-	diagram_class_id INTEGER
-		REFERENCES diagram_class (diagram_class_id)
+	context_class_id INTEGER
+		REFERENCES context_class (context_class_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
@@ -140,11 +140,11 @@ CREATE TABLE diagram (
 STRICT;
 
 
--- Table: diagram_class
-DROP TABLE IF EXISTS diagram_class;
+-- Table: context_class
+DROP TABLE IF EXISTS context_class;
 
-CREATE TABLE diagram_class (
-	diagram_class_id INTEGER
+CREATE TABLE context_class (
+	context_class_id INTEGER
 		PRIMARY KEY AUTOINCREMENT,
 	code TEXT
 		UNIQUE COLLATE NOCASE
@@ -186,24 +186,24 @@ DROP TABLE IF EXISTS object_attribute;
 
 CREATE TABLE object_attribute (
 	object_id INTEGER,
-	object_diagram_id INTEGER,
+	object_context_id INTEGER,
 	attribute_id INTEGER,
-	attr_diagram_id INTEGER,
+	attr_context_id INTEGER,
 	x INTEGER
 		DEFAULT (1)
 		NOT NULL,
-	PRIMARY KEY (object_id, object_diagram_id, attribute_id, attr_diagram_id),
-	FOREIGN KEY (object_id, object_diagram_id)
-		REFERENCES object_diagram (object_id, diagram_id)
+	PRIMARY KEY (object_id, object_context_id, attribute_id, attr_context_id),
+	FOREIGN KEY (object_id, object_context_id)
+		REFERENCES object_context (object_id, context_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
-	FOREIGN KEY (attribute_id, attr_diagram_id)
-		REFERENCES attribute_diagram (attribute_id, diagram_id)
+	FOREIGN KEY (attribute_id, attr_context_id)
+		REFERENCES attribute_context (attribute_id, context_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
-	CHECK (object_diagram_id = attr_diagram_id),
+	CHECK (object_context_id = attr_context_id),
 	CHECK (x = 1))
 STRICT;
 
@@ -231,45 +231,45 @@ CREATE TABLE object_desc (
 STRICT;
 
 
--- Table: object_diagram
-DROP TABLE IF EXISTS object_diagram;
+-- Table: object_context
+DROP TABLE IF EXISTS object_context;
 
-CREATE TABLE object_diagram (
+CREATE TABLE object_context (
 	object_id INTEGER
 		REFERENCES object (object_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
-	diagram_id INTEGER
-		REFERENCES diagram (diagram_id)
+	context_id INTEGER
+		REFERENCES context (context_id)
 		ON DELETE RESTRICT
 		ON UPDATE RESTRICT
 		DEFERRABLE INITIALLY DEFERRED,
-	PRIMARY KEY (object_id, diagram_id))
+	PRIMARY KEY (object_id, context_id))
 STRICT;
 
 
--- View: v_attr_class_diagram
-DROP VIEW IF EXISTS v_attr_class_diagram;
+-- View: v_attr_class_context
+DROP VIEW IF EXISTS v_attr_class_context;
 
-CREATE VIEW v_attr_class_diagram AS
+CREATE VIEW v_attr_class_context AS
 SELECT
 	attribute_desc.label AS attribute_label,
 	attr_class.code AS class_code,
-	diagram.code AS diagram_code
+	context.code AS context_code
 FROM
 	attribute,
-	attr_diagram_class,
+	attr_context_class,
 	attribute_desc,
 	attr_class,
-	diagram,
-	attribute_diagram
+	context,
+	attribute_context
 WHERE
-	attribute.attribute_id = attr_diagram_class.attribute_id
-	AND attr_diagram_class.attribute_id = attribute_desc.attribute_id
-	AND attr_diagram_class.attr_class_id = attr_class.attr_class_id
-	AND diagram.diagram_id = attribute_diagram.diagram_id
-	AND attribute.attribute_id = attribute_diagram.attribute_id
+	attribute.attribute_id = attr_context_class.attribute_id
+	AND attr_context_class.attribute_id = attribute_desc.attribute_id
+	AND attr_context_class.attr_class_id = attr_class.attr_class_id
+	AND context.context_id = attribute_context.context_id
+	AND attribute.attribute_id = attribute_context.attribute_id
 ;
 
 
@@ -294,23 +294,23 @@ FROM
 ;
 
 
--- View: v_attribute_diagram
-DROP VIEW IF EXISTS v_attribute_diagram;
+-- View: v_attribute_context
+DROP VIEW IF EXISTS v_attribute_context;
 
-CREATE VIEW v_attribute_diagram AS
+CREATE VIEW v_attribute_context AS
 SELECT
 	ad.lang_code AS Lang,
-	d.code AS Diagram,
+	d.code AS Context,
 	ad.label AS Attribute
 FROM
 	attribute AS a
-	NATURAL JOIN attribute_diagram
+	NATURAL JOIN attribute_context
 	NATURAL JOIN attribute_desc AS ad
-	NATURAL JOIN diagram AS d
-	NATURAL JOIN attr_diagram_class AS adc
+	NATURAL JOIN context AS d
+	NATURAL JOIN attr_context_class AS adc
 ORDER BY
 	Lang,
-	Diagram
+	Context
 ;
 
 
@@ -320,7 +320,7 @@ DROP VIEW IF EXISTS v_attributes;
 CREATE VIEW v_attributes AS
 SELECT
 	ad.lang_code AS Lang,
-	d.code AS Diagram,
+	d.code AS Context,
 	ac.code AS Class,
 	ad.label AS Attribute,
 	ad.title AS Title,
@@ -329,14 +329,14 @@ SELECT
 	adc.reference AS Reference
 FROM
 	attribute AS a
-	NATURAL JOIN attribute_diagram
+	NATURAL JOIN attribute_context
 	NATURAL JOIN attribute_desc AS ad
-	NATURAL JOIN diagram AS d
-	NATURAL JOIN attr_diagram_class AS adc
+	NATURAL JOIN context AS d
+	NATURAL JOIN attr_context_class AS adc
 	JOIN attr_class AS ac USING (attr_class_id)
 ORDER BY
 	Lang,
-	Diagram,
+	Context,
 	Class
 ;
 
@@ -347,7 +347,7 @@ DROP VIEW IF EXISTS v_context_assignments;
 CREATE VIEW v_context_assignments AS
 SELECT
 	contexts.Lang,
-	contexts.Diagram,
+	contexts.Context,
 	contexts.ObjectCode,
 	contexts.Object,
 	contexts.Attribute,
@@ -360,9 +360,9 @@ FROM
 	LEFT OUTER JOIN object_attribute
 		ON contexts.object_id = object_attribute.object_id
 	AND contexts.attribute_id = object_attribute.attribute_id
-	AND contexts.diagram_id = object_attribute.object_diagram_id
+	AND contexts.context_id = object_attribute.object_context_id
 ORDER BY
-	contexts.Diagram ASC,
+	contexts.Context ASC,
 	contexts.Object ASC
 ;
 
@@ -373,79 +373,79 @@ DROP VIEW IF EXISTS v_contexts;
 CREATE VIEW v_contexts AS
 SELECT
 	lang.lang_code AS Lang,
-	diagram.code AS Diagram,
+	context.code AS Context,
 	object.code AS ObjectCode,
 	object_desc.label AS Object,
 	attribute_desc.label AS Attribute,
 	attr_class.code AS Class,
-	object_diagram.object_id,
-	attribute_diagram.attribute_id,
-	diagram.diagram_id
+	object_context.object_id,
+	attribute_context.attribute_id,
+	context.context_id
 FROM
 	lang,
 	object,
 	object_desc,
 	attribute_desc,
-	attr_diagram_class,
+	attr_context_class,
 	attribute,
 	attr_class,
-	diagram,
-	diagram_class,
-	attribute_diagram,
-	object_diagram
+	context,
+	context_class,
+	attribute_context,
+	object_context
 WHERE
 	object.object_id = object_desc.object_id
 	AND object_desc.lang_code = lang.lang_code
 	AND attribute_desc.lang_code = lang.lang_code
-	AND attribute.attribute_id = attr_diagram_class.attribute_id
-	AND attr_diagram_class.attribute_id = attribute_desc.attribute_id
-	AND attr_diagram_class.diagram_class_id = attribute_desc.diagram_class_id
-	AND attr_diagram_class.attr_class_id = attr_class.attr_class_id
-	AND attribute_diagram.attribute_id = attribute.attribute_id
-	AND diagram_class.diagram_class_id = diagram.diagram_class_id
-	AND diagram_class.diagram_class_id = attribute_desc.diagram_class_id
-	AND diagram.diagram_id = attribute_diagram.diagram_id
-	AND object_diagram.object_id = object_desc.object_id
-	AND diagram.diagram_id = object_diagram.diagram_id
+	AND attribute.attribute_id = attr_context_class.attribute_id
+	AND attr_context_class.attribute_id = attribute_desc.attribute_id
+	AND attr_context_class.context_class_id = attribute_desc.context_class_id
+	AND attr_context_class.attr_class_id = attr_class.attr_class_id
+	AND attribute_context.attribute_id = attribute.attribute_id
+	AND context_class.context_class_id = context.context_class_id
+	AND context_class.context_class_id = attribute_desc.context_class_id
+	AND context.context_id = attribute_context.context_id
+	AND object_context.object_id = object_desc.object_id
+	AND context.context_id = object_context.context_id
 ORDER BY
-	"Lang" ASC,
-	"Diagram" ASC,
-	"Object" ASC,
-	"Attribute" ASC
+	Lang ASC,
+	Context ASC,
+	Object ASC,
+	Attribute ASC
 ;
 
 
--- View: v_diagram_class
-DROP VIEW IF EXISTS v_diagram_class;
+-- View: v_context_class
+DROP VIEW IF EXISTS v_context_class;
 
-CREATE VIEW v_diagram_class AS
+CREATE VIEW v_context_class AS
 SELECT
-	diagram_id,
-	d.code AS diagram,
+	context_id,
+	d.code AS context,
 	dc.code AS class
 FROM
-	diagram AS d
-	JOIN diagram_class AS dc USING (diagram_class_id)
+	context AS d
+	JOIN context_class AS dc USING (context_class_id)
 ;
 
 
--- View: v_object_diagram
-DROP VIEW IF EXISTS v_object_diagram;
+-- View: v_object_context
+DROP VIEW IF EXISTS v_object_context;
 
-CREATE VIEW v_object_diagram AS
+CREATE VIEW v_object_context AS
 SELECT
 	od.lang_code AS Lang,
-	d.code AS Diagram,
+	d.code AS Context,
 	od.label AS Object,
 	o.code AS Code
 FROM
 	object AS o
-	NATURAL JOIN object_diagram
+	NATURAL JOIN object_context
 	NATURAL JOIN object_desc AS od
-	JOIN diagram AS d USING (diagram_id)
+	JOIN context AS d USING (context_id)
 ORDER BY
 	Lang,
-	Diagram
+	Context
 ;
 
 
