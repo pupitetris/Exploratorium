@@ -34,14 +34,14 @@ use Inline (
 
 sub sqlFetch {
   my $dbh = shift;
-  my $diagram = shift;
+  my $context_name = shift;
   my $lang = shift;
   my $sql = shift;
 
   my $sth = $dbh->prepare($sql);
   die $DBI::errstr if !defined $sth;
 
-  $sth->bind_param(1, $diagram, SQL_VARCHAR);
+  $sth->bind_param(1, $context_name, SQL_VARCHAR);
   $sth->bind_param(2, $lang, SQL_VARCHAR);
 
   my $rv = $sth->execute();
@@ -50,31 +50,31 @@ sub sqlFetch {
   return $sth->fetchall_arrayref({});
 }
 
-sub importDiagramAsContext {
+sub importContextAsContext {
   my $dbfile = shift;
-  my $diagram = shift;
+  my $context_name = shift;
   my $lang = shift;
 
   my $dbh = DBI->connect("dbi:SQLite:dbname=$dbfile", '', '',
                          { sqlite_open_flags => SQLITE_OPEN_READONLY });
   die $DBI::errstr if !defined $dbh;
 
-  my $attr_rh = sqlFetch($dbh, $diagram, $lang,
-                         'SELECT Attribute FROM v_attribute_diagram ' .
-                         'WHERE Diagram = ? AND Lang = ?');
+  my $attr_rh = sqlFetch($dbh, $context_name, $lang,
+                         'SELECT Attribute FROM v_attribute_context ' .
+                         'WHERE Context = ? AND Lang = ?');
   my @attributes = map { $_->{'Attribute'} } @$attr_rh;
   my $numAttributes = scalar @attributes;
 
-  my $obj_rh = sqlFetch($dbh, $diagram, $lang,
-                        'SELECT Code AS Id, Object AS Name FROM v_object_diagram ' .
-                        'WHERE Diagram = ? AND Lang = ?');
+  my $obj_rh = sqlFetch($dbh, $context_name, $lang,
+                        'SELECT Code AS Id, Object AS Name FROM v_object_context ' .
+                        'WHERE Context = ? AND Lang = ?');
   my @objects = map { $_->{'Id'} } @$obj_rh;
   my $numObjects = scalar @objects;
   my %objectsByName = map { $_->{'Name'} => $_->{'Id'} } @$obj_rh;
 
-  my $assig_rh = sqlFetch($dbh, $diagram, $lang,
+  my $assig_rh = sqlFetch($dbh, $context_name, $lang,
                           'SELECT ObjectCode AS ObjectId, Attribute FROM v_context_assignments ' .
-                          'WHERE x = 1 AND Diagram = ? AND Lang = ?');
+                          'WHERE x = 1 AND Context = ? AND Lang = ?');
 
   my $context = new conexp::core::Context($numObjects, $numAttributes);
   for (my $i = 0; $i < $numObjects; $i++) {
@@ -222,11 +222,11 @@ sub debugAssociations {
 }
 
 my $DBFILE = $ARGV[0];
-my $DIAGRAM = $ARGV[1];
+my $CONTEXT = $ARGV[1];
 my $LANG = $ARGV[2];
 my $DEBUG = $ARGV[3];
 
-my $result = importDiagramAsContext($DBFILE, $DIAGRAM, $LANG);
+my $result = importContextAsContext($DBFILE, $CONTEXT, $LANG);
 my $model = $result->{'model'};
 my $context = $result->{'context'};
 my $attributes = $result->{'attributes'};

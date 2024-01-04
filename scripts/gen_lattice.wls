@@ -8,7 +8,7 @@ Get[SCRIPTDIR <> "/fca.wl"];
 CLASSPATH = SCRIPTDIR <> "/../bin/conexp-1.3/";
 
 DBFILE = $ScriptCommandLine[[2]];
-DIAGRAM = $ScriptCommandLine[[3]];
+CONTEXT = $ScriptCommandLine[[3]];
 LANG = $ScriptCommandLine[[4]];
 
 DEBUG = Length[$ScriptCommandLine] > 4;
@@ -17,7 +17,7 @@ DEBUGOUTPUT = "stderr";
 FcaInit["ClassPath" -> CLASSPATH,
         "DebugOutput" -> DEBUGOUTPUT];
 
-result = FcaImportDBDiagramAsContext[DBFILE, DIAGRAM, LANG];
+result = FcaImportDBContextAsContext[DBFILE, CONTEXT, LANG];
 context = result[["context"]];
 model = result[["model"]];
 attributes = result[["attributes"]];

@@ -5,8 +5,8 @@ BeginPackage["FCA`"]
 FcaInit::usage =
 "Initialize the FCA package, with the options: ClassPath and DebugOutput";
 
-FcaImportDBDiagramAsContext::usage =
-"Load the context for a given diagram and language from the specified SQLite database file";
+FcaImportDBContextAsContext::usage =
+"Load the context for a given context and language from the specified SQLite database file";
 
 FcaImportCsvAsContext::usage =
 "Load data from a context table in CSV format";
@@ -61,7 +61,7 @@ FcaInit[OptionsPattern[]] :=
 
 FcaDebug = debug = If[debugOutput != "",WriteString[debugOutput, ##]]&;
 
-FcaImportDBDiagramAsContext[dbfile_, diagram_, lang_] :=
+FcaImportDBContextAsContext[dbfile_, contextName_, lang_] :=
   Module[
     {
       db, res, session,
@@ -79,21 +79,21 @@ FcaImportDBDiagramAsContext[dbfile_, diagram_, lang_] :=
     session = StartExternalSession[db];
 
     attrDS = ExternalEvaluate[session,
-                              StringTemplate["SELECT Attribute FROM v_attribute_diagram "
-                                             <> "WHERE Diagram = '`1`' AND Lang = '`2`'"][diagram, lang]];
+                              StringTemplate["SELECT Attribute FROM v_attribute_context "
+                                             <> "WHERE Context = '`1`' AND Lang = '`2`'"][contextName, lang]];
     attributes = Normal[attrDS[All, "Attribute"]];
     numAttributes = Length[attributes];
 
     objDS = ExternalEvaluate[session,
-                             StringTemplate["SELECT Code AS Id, Object AS Name FROM v_object_diagram "
-                                            <> "WHERE Diagram = '`1`' AND Lang = '`2`'"][diagram, lang]];
+                             StringTemplate["SELECT Code AS Id, Object AS Name FROM v_object_context "
+                                            <> "WHERE Context = '`1`' AND Lang = '`2`'"][contextName, lang]];
     objects = Normal[objDS[All, "Id"]];
     numObjects = Length[objects];
     objectsByName = Association[Normal[objDS[All, Function[obj, obj["Name"] -> obj["Id"]]]]];
 
     assigDS = ExternalEvaluate[session,
                                StringTemplate["SELECT ObjectCode AS ObjectId, Attribute FROM v_context_assignments "
-                                              <> "WHERE x = 1 AND Diagram = '`1`' AND Lang = '`2`'"][diagram, lang]];
+                                              <> "WHERE x = 1 AND Context = '`1`' AND Lang = '`2`'"][contextName, lang]];
     context = JavaNew["conexp.core.Context", numObjects, numAttributes];
     For[i = 1, i <= numObjects, i++,
         id = objects[[i]];
