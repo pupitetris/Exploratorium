@@ -218,6 +218,7 @@ foreach my $page (@{$struct->{'pages'}{'children'}}) {
       -M $main_template > $mod_output;
 
   $page->{'basedir'} = get_basedir($output);
+  $page->{'sitedir'} = $output_path;
   print "Generating $output_fname\n";
   $tt->process($template, { 'page' => $page }, $output_fname, { binmode => ':utf8' }) || die $tt->error();
 }
