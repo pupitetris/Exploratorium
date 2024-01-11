@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Nimbus Sans';
+    src: url('fonts/nimbussans-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'URW Classico';
+    src: url('fonts/urwclassico-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
