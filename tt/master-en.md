@@ -35,7 +35,8 @@ University - Cuajimalpa
 - [f(R) Theories](theories/en/f-R)
 - [Non-local MoNDian Theories](theories/en/mond)
 - [Holon of Theories](theories/en/holon)
-- [Gravity Apple Tree](//prezi.com/rdkivznlhgga/the-gravity-apple-tree/)
+- [Gravity Apple Tree](gravity-tree)
+<!-- - [Gravity Apple Tree](//prezi.com/rdkivznlhgga/the-gravity-apple-tree/) -->
 
 
 ## Footer
@@ -364,3 +365,33 @@ Locate groups of theories, for example: those that follow a
 geodesic, those that have curvature = 0, or the node that selects
 metric theories only. What model would that node correspond to?
 Observe the theoretical evolution from left to right.
+
+### The Gravity Apple Tree
+
+```{ .json .config }
+{
+  "template": "diagram-page.tt",
+  "output": "gravity-tree/index.html",
+  "nav_lang": "gravity-tree/index-es.html",
+  "styles": [ "style.css" ],
+  "background": "gravity-tree/GravityTree2024Fotos.svg"
+}
+```
+
+A genealogical tree of gravitation theories formulated between 1905
+and 2015. Gray lines traverse the timeline, emanating from two axes
+oriented towards the foundational theory of Special Relativity. Within
+the temporal expanse, experiments and observations find their
+place. Proponents advocating theories, along with the corresponding
+publication dates of seminal articles, are highlighted in
+green. Fundamental principles underpinning each theory are articulated
+at the core of their respective branches. Primary gravitational
+theories are distinguished in red, while models elucidating dark
+matter and dark energy manifest in yellow. Quantum descriptions of
+gravity are found in blue. Clicking the arrows will link to the
+corresponding seminal paper.
+
+This arboreal structure encapsulates the historical evolution of
+gravitational proposals, providing a visual narrative of the
+interconnected web of ideas, experiments, and visionary minds that
+have shaped our understanding of gravity over the decades.
