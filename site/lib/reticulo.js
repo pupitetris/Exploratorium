@@ -380,6 +380,39 @@
       }
     }
 
+    function elementsSetup(config) {
+      const d1 = d3.select("#d1");
+
+      if (config.RETICLE_DISABLE) {
+        const svg = d1.selectChild("svg");
+        svg
+          .attr("width", undefined)
+          .attr("height", undefined);
+
+        const root_group = svg.selectChild("g");
+
+        return { d1, svg, root_group, infobox: undefined };
+      }
+
+      const svg = d1.append("svg")
+            .attr("xmlns", "http://www.w3.org/2000/svg");
+
+      svg.append("defs")
+        .html('<linearGradient id="textbox-bg-gradient" x1="0" y1="0" x2="0" y2="1">' +
+              '<stop class="textbox-bg-stop1" offset="0%"></stop>' +
+              '<stop class="textbox-bg-stop2" offset="100%"></stop>' +
+              '</linearGradient>');
+
+      const root_group = svg.append("g");
+
+      const infobox = floatboxSetup(d3.select("#infobox"), infoboxClosedCB);
+
+      attributesShow(svg, getCookie("show-attributes"));
+      levelsShow(svg, getCookie("show-levels"));
+
+      return { d1, svg, root_group, infobox };
+    }
+
     function saveJson(graph, output) {
       function replacer(key, value) {
         if (Array.isArray(this)) {
@@ -724,6 +757,12 @@
             .on("click", () => toolbarFullscreen(shell));
       shell.on("fullscreenchange", () => toolbarFullscreenChange(shell, fsbtn));
 
+      if (config.RETICLE_DISABLE) {
+        toolbar.select(".tool-show-group").remove();
+        toolbar.select(".tool-selection-group").remove();
+        return toolbar;
+      }
+
       toolbar.select(".tool-legend")
         .classed("active", getCookie("show-legend"))
         .on("click", (event) => {
@@ -833,27 +872,17 @@
     this.main = function() {
       configSetup(this.config);
 
-      const infobox = floatboxSetup(d3.select("#infobox"), infoboxClosedCB);
+      const elements = elementsSetup(this.config);
 
-      const viewBox = parseViewBox(this.config.VIEWBOX);
+      const d1 = elements.d1;
+      const svg = elements.svg;
+      const root_group = elements.root_group;
+      const infobox = elements.infobox;
 
-      const d1 = d3.select("#d1");
-      const svg = d1.append("svg")
-            .attr("xmlns", "http://www.w3.org/2000/svg")
-            .attr("viewBox", this.config.VIEWBOX);
-
-      attributesShow(svg, getCookie("show-attributes"));
-      levelsShow(svg, getCookie("show-levels"));
-
-      svg.append("defs")
-        .html('<linearGradient id="textbox-bg-gradient" x1="0" y1="0" x2="0" y2="1">' +
-              '<stop class="textbox-bg-stop1" offset="0%"></stop>' +
-              '<stop class="textbox-bg-stop2" offset="100%"></stop>' +
-              '</linearGradient>');
-
-      const root_group = svg.append("g");
+      svg.attr("viewBox", this.config.VIEWBOX);
       root_group.attr("transform", d3.zoomIdentity);
 
+      const viewBox = parseViewBox(this.config.VIEWBOX);
       const translateExtents = [[-viewBox.width / 4, -viewBox.height / 4],
                                 [viewBox.width * 1.5, viewBox.height * 1.5]];
 
@@ -865,12 +894,20 @@
         .on("dblclick.zoom", null)
         .on("wheel.zoom", null);
 
-      let nodes = root_group.selectAll(".node");
-      let links = root_group.selectAll(".link");
-
       const legend = d3.select("#legend");
       const editor = d3.select("#editor");
       const toolbar = toolbarSetup(d3.select(d1.node().parentNode), svg, zoom, legend, editor, this.config);
+
+      if (this.config.RETICLE_DISABLE) {
+        legendShow(legend, false);
+        if (this.config.USE_EDITOR || this.config.DEV_MODE) {
+          editorSetup(editor, d1, legend, undefined, viewBox, this.config);
+        }
+        return;
+      }
+
+      let nodes = root_group.selectAll(".node");
+      let links = root_group.selectAll(".link");
 
       svg.on("click", (event) => svgClick(event, nodes, links));
 
