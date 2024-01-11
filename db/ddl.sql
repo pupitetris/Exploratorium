@@ -74,6 +74,24 @@ CREATE TABLE attribute (
 STRICT;
 
 
+-- Table: attribute_context
+DROP TABLE IF EXISTS attribute_context;
+
+CREATE TABLE attribute_context (
+	attribute_id INTEGER
+		REFERENCES attribute (attribute_id)
+		ON DELETE RESTRICT
+		ON UPDATE RESTRICT
+		DEFERRABLE INITIALLY DEFERRED,
+	context_id INTEGER
+		REFERENCES context (context_id)
+		ON DELETE RESTRICT
+		ON UPDATE RESTRICT
+		DEFERRABLE INITIALLY DEFERRED,
+	PRIMARY KEY (attribute_id, context_id))
+STRICT;
+
+
 -- Table: attribute_desc
 DROP TABLE IF EXISTS attribute_desc;
 
@@ -101,24 +119,6 @@ CREATE TABLE attribute_desc (
 		DEFERRABLE INITIALLY DEFERRED,
 	UNIQUE (context_class_id, lang_code, label),
 	CHECK (label <> '' and title <> '' AND explanation <> '' and obs <> ''))
-STRICT;
-
-
--- Table: attribute_context
-DROP TABLE IF EXISTS attribute_context;
-
-CREATE TABLE attribute_context (
-	attribute_id INTEGER
-		REFERENCES attribute (attribute_id)
-		ON DELETE RESTRICT
-		ON UPDATE RESTRICT
-		DEFERRABLE INITIALLY DEFERRED,
-	context_id INTEGER
-		REFERENCES context (context_id)
-		ON DELETE RESTRICT
-		ON UPDATE RESTRICT
-		DEFERRABLE INITIALLY DEFERRED,
-	PRIMARY KEY (attribute_id, context_id))
 STRICT;
 
 
@@ -208,6 +208,24 @@ CREATE TABLE object_attribute (
 STRICT;
 
 
+-- Table: object_context
+DROP TABLE IF EXISTS object_context;
+
+CREATE TABLE object_context (
+	object_id INTEGER
+		REFERENCES object (object_id)
+		ON DELETE RESTRICT
+		ON UPDATE RESTRICT
+		DEFERRABLE INITIALLY DEFERRED,
+	context_id INTEGER
+		REFERENCES context (context_id)
+		ON DELETE RESTRICT
+		ON UPDATE RESTRICT
+		DEFERRABLE INITIALLY DEFERRED,
+	PRIMARY KEY (object_id, context_id))
+STRICT;
+
+
 -- Table: object_desc
 DROP TABLE IF EXISTS object_desc;
 
@@ -228,24 +246,6 @@ CREATE TABLE object_desc (
 	PRIMARY KEY (object_id, lang_code),
 	UNIQUE (lang_code, label),
 	CHECK (label <> ''))
-STRICT;
-
-
--- Table: object_context
-DROP TABLE IF EXISTS object_context;
-
-CREATE TABLE object_context (
-	object_id INTEGER
-		REFERENCES object (object_id)
-		ON DELETE RESTRICT
-		ON UPDATE RESTRICT
-		DEFERRABLE INITIALLY DEFERRED,
-	context_id INTEGER
-		REFERENCES context (context_id)
-		ON DELETE RESTRICT
-		ON UPDATE RESTRICT
-		DEFERRABLE INITIALLY DEFERRED,
-	PRIMARY KEY (object_id, context_id))
 STRICT;
 
 
@@ -367,6 +367,20 @@ ORDER BY
 ;
 
 
+-- View: v_context_class
+DROP VIEW IF EXISTS v_context_class;
+
+CREATE VIEW v_context_class AS
+SELECT
+	context_id,
+	d.code AS context,
+	dc.code AS class
+FROM
+	context AS d
+	JOIN context_class AS dc USING (context_class_id)
+;
+
+
 -- View: v_contexts
 DROP VIEW IF EXISTS v_contexts;
 
@@ -412,20 +426,6 @@ ORDER BY
 	Context ASC,
 	Object ASC,
 	Attribute ASC
-;
-
-
--- View: v_context_class
-DROP VIEW IF EXISTS v_context_class;
-
-CREATE VIEW v_context_class AS
-SELECT
-	context_id,
-	d.code AS context,
-	dc.code AS class
-FROM
-	context AS d
-	JOIN context_class AS dc USING (context_class_id)
 ;
 
 
