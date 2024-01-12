@@ -412,7 +412,7 @@ INSERT INTO attribute VALUES(82,NULL);
 INSERT INTO attribute VALUES(83,NULL);
 INSERT INTO attribute VALUES(84,NULL);
 INSERT INTO attribute VALUES(85,'$S=-\frac{c^{3}}{16\pi GL_{M}^{2}}\int f(\chi^{*})\sqrt{-g}d^{4}x-\frac{1}{c}\int\mathcal{L}_{matt}\sqrt{-g}d^{4}x$');
-INSERT INTO attribute VALUES(86,'$T_{\mu\nu}:=-\frac{2}{\sqrt{-g}}\frac{\delta(\mathcal{L}_{matt}\sqrt{-g)}}{\delta g^{\mu\nu}}$');
+INSERT INTO attribute VALUES(86,replace('$T_{\mu\nu}:=-\frac{2}{\sqrt{-g}}\frac{\delta(\mathcal{L}_{matt}\sqrt{-g)}}{\delta g^{\mu\nu}}$\012','\012',char(10)));
 INSERT INTO attribute VALUES(87,'$S=\int F(R,\mathcal{L}_{matt})\sqrt{-g}d^{4}x$');
 INSERT INTO attribute VALUES(88,'$S=\frac{1}{2k^{2}}\int d^{4}x\sqrt{-g}F(R,T)+\int d^{4}x\sqrt{-g}\mathcal{L}_{m}(g_{\mu\nu},\psi_{m})$');
 INSERT INTO attribute VALUES(89,NULL);
@@ -1180,7 +1180,7 @@ INSERT INTO attribute_desc VALUES(80,2,'en','Eq 9c','Eq 9c','If the Ricci scalar
 INSERT INTO attribute_desc VALUES(81,1,'en','Equipresence','Equipresence','An independent variable present in one constitutive equation is so present in all.',NULL);
 INSERT INTO attribute_desc VALUES(82,1,'en','Euclidean Space','Euclidean space','$E^{3}$ is 3-dimensional  Euclidean space.<br>$E^{3}$ represents (maps) ordinary space.',NULL);
 INSERT INTO attribute_desc VALUES(83,1,'en','External Force','External force','Every $F^{e}\in\left\{ F^{e}\right\}$ is a real valued vector on $\Sigma\times K\times E^{3}\times T$.<br>The value of $F^{e}$ at any given 6-ple $\left\langle \sigma,k,x,t\right\rangle $ represents the external force acting on $\sigma$, relative to the frame $k$, at the place $x$ and the instant $t$.',NULL);
-INSERT INTO attribute_desc VALUES(84,1,'en','F = ma','Newton’s laws','For every $\sigma,\sigma''\in\Sigma$, every $t\in T$, every $F^{e}\in\left\{ F^{e}\right\}$ and every $F^{i}\in\left\{ F^{i}\right\}$, there is at least one $k\in K$ such that<br>$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+\underset{\sigma’\neq\sigma}{\sum}F^{i}(\sigma,\sigma’,t,k)$<br>and<br>$F^{i}(\sigma,\sigma’,t,k)=-F^{i}(\sigma’,\sigma,t,k)$.',NULL);
+INSERT INTO attribute_desc VALUES(84,1,'en','F = ma','Newton’s laws','For every $\sigma,\sigma''\in\Sigma$, every $t\in T$, every $F^{e}\in\left\{ F^{e}\right\}$ and every $F^{i}\in\left\{ F^{i}\right\}$, there is at least one $k\in K$ such that<br>$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+{\sum}F^{i}(\sigma,\sigma’,t,k)$<br>and<br>$F^{i}(\sigma,\sigma’,t,k)=-F^{i}(\sigma’,\sigma,t,k)$.',NULL);
 INSERT INTO attribute_desc VALUES(85,2,'en','F(R*,Lm)','$F(\Re,L_{m})$','A class of action functions. The action is a function of the affine Ricci scalar and the matter Lagrangian.',NULL);
 INSERT INTO attribute_desc VALUES(86,2,'en','F(R*,T)','$F(\Re,T_{\mu\nu})$','A class of action functions. The action is also a function of the affine Ricci scalar and the trace of the energy momentum tensor.',NULL);
 INSERT INTO attribute_desc VALUES(87,2,'en','F(R,Lm)','$F(R,\mathcal{L}_{matt})$','A class of action functions. The action is a function of the Ricci scalar and the matter Lagrangian.',NULL);
@@ -1302,7 +1302,7 @@ INSERT INTO attribute_desc VALUES(206,2,'en','a0','Milgrom’s constant','Accele
 INSERT INTO attribute_desc VALUES(207,1,'en','c','c','A constant that represents the magnitude of the speed of electromagnetic signals in vacuum. It is a positive real number such that $\left[c\right]=LT^{-1}$.<br>Every $s\in S$ propagates in vacuum, relative to any $i\in I$, with uniform rectilinear motion at the speed $c$.',NULL);
 INSERT INTO attribute_desc VALUES(208,2,'en','c0, c1','$C_{0}$, $C_{1}$: Cosmological matching parameters','In the universe rest frame, g has the asymptotic form $diag(-c_{0},c_{1},c_{1},c_{1})$, where $c_{0}$ and $c_{1}$  may vary on a Hubble timescale. ',NULL);
 INSERT INTO attribute_desc VALUES(209,2,'en','dt','$dt$: Time function','Co-vector that induces a foliation of $M$ into three-dimensional hyper surfaces.',NULL);
-INSERT INTO attribute_desc VALUES(210,2,'en','dt(V) = 1','Requirement for Timelike Curves','This condition is introduced to ensure that the curves $\sigma$ are timelike. The quantity $dt(V)$ represents the rate of change of time along the curves as experienced by an observer moving along V. Requiring $dt(V)=1$ ensures that the curves are moving forward in time according to the standard absolute time.',NULL);
+INSERT INTO attribute_desc VALUES(210,2,'en','dt(V) = 1','Requirement for Timelike Curves',replace('This condition is introduced to ensure that the curves $\sigma$ are timelike. The quantity \n$dt(V)$ represents the rate of change of time along the curves as experienced by an observer moving along V. Requiring $dt(V)=1$ ensures that the curves are moving forward in time according to the standard absolute time.','\n',char(10)),NULL);
 INSERT INTO attribute_desc VALUES(211,2,'en','e','$e$: Arbitrary function',NULL,NULL);
 INSERT INTO attribute_desc VALUES(212,2,'en','e = 0','$\epsilon=0$',NULL,NULL);
 INSERT INTO attribute_desc VALUES(213,2,'en','e = 1','$\epsilon=1$',NULL,NULL);
@@ -1428,7 +1428,7 @@ INSERT INTO attribute_desc VALUES(80,2,'es','Ec. 9c','Ec. 9c','Si el escalar de 
 INSERT INTO attribute_desc VALUES(81,1,'es','Equipresencia','Equipresencia','Un principio heurístico utilizado en teorías de materiales y termodinámica: “Una variable independiente presente en una ecuación constitutiva se encuentra presente en todas nuestras consideraciones”. (Dado que en esta red no se toman estas teorías como objetos, este atributo se encuentra en el nodo ínfimo).',NULL);
 INSERT INTO attribute_desc VALUES(82,1,'es','Espacio Euclidiano','$E^{3}$: Espacio euclidiano','Espacio 3-dimensional que representa (mapea) el espacio ordinario.',NULL);
 INSERT INTO attribute_desc VALUES(83,1,'es','Fuerza Externa','Fuerza externa','Cada $F^{e}\in\left\{ F^{e}\right\}$ es un vector de valor real en $\Sigma\times K\times E^{3}\times T$.<br>El valor de $F^{e}$ en cualquier 6-tupla $\left\langle \sigma,k,x,t\right\rangle $ representa la fuerza externa que actúa sobre $\sigma$, relativa al marco $k$, en el lugar $x$ y en el instante $t$.',NULL);
-INSERT INTO attribute_desc VALUES(84,1,'es','F=ma','Leyes de Newton','Por cada $\sigma$, $\sigma''\in\Sigma$, cada $t\in T$, cada $F^{e}\in\left\{ F^{e}\right\}$ y cada $F ^{i}\in\left\{ F^{i}\right\}$, hay al menos un $k\in K$ tal que<br>$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+\underset{\sigma''\neq\sigma}{\sum}F^{i}( \sigma,\sigma'',t,k)$<br>y<br>$F^{i}(\sigma,\sigma’,t,k)=-F^{i}(\sigma'',\sigma,t,k)$.',NULL);
+INSERT INTO attribute_desc VALUES(84,1,'es','F=ma','Leyes de Newton','Por cada $\sigma$, $\sigma''\in\Sigma$, cada $t\in T$, cada $F^{e}\in\left\{ F^{e}\right\}$ y cada $F ^{i}\in\left\{ F^{i}\right\}$, hay al menos un $k\in K$ tal que<br>$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+{\sum}F^{i}( \sigma,\sigma'',t,k)$<br>y<br>$F^{i}(\sigma,\sigma’,t,k)=-F^{i}(\sigma'',\sigma,t,k)$.',NULL);
 INSERT INTO attribute_desc VALUES(85,2,'es','F(R*,Lm)','$F(\Re,L_{m})$','La acción es una función del escalar de Ricci afín y del Lagrangiano de materia.',NULL);
 INSERT INTO attribute_desc VALUES(86,2,'es','F(R*,T)','$F(\Re,T_{\mu\nu})$','La acción también puede pensarse en función del escalar de Ricci afín y la traza del tensor de estrés-energía-momento.',NULL);
 INSERT INTO attribute_desc VALUES(87,2,'es','F(R,Lm)','$F(R,\mathcal{L}_{matt})$','La acción es una función del escalar de Ricci y el Lagrangiano de materia.',NULL);
@@ -1550,7 +1550,7 @@ INSERT INTO attribute_desc VALUES(206,2,'es','a0','Constante de Milgrom','Escala
 INSERT INTO attribute_desc VALUES(207,1,'es','c','c','Una constante que representa la magnitud de la velocidad de las señales electromagnéticas en el vacío. Es un número real positivo tal que $\left[c\right]=LT^{-1}$.<br>Cada $s\in S$ se propaga en el vacío, relativo a cualquier $i\in I$, con movimiento rectilíneo uniforme a la velocidad $c$.',NULL);
 INSERT INTO attribute_desc VALUES(208,2,'es','c0, c1','$C_{0}$, $C_{1}$','Parámetros cosmológicos. En el marco de reposo del universo, g tiene la forma asintótica $diag(-c_{0},c_{1},c_{1},c_{1})$, donde $c_{0}$ y $c_{1 }$ pueden variar en la escala de tiempo del Hubble.',NULL);
 INSERT INTO attribute_desc VALUES(209,2,'es','dt','$dt$: Función de tiempo','Un covector que induce una foliación de la variedad M en hyper-superficies de tres dimensiones.',NULL);
-INSERT INTO attribute_desc VALUES(210,2,'es','dt(V) = 1','Requisito de curvas temporales','Esta condición se introduce para garantizar que las curvas $\sigma$ sean temporales. La cantidad $dt(V)$ representa la tasa de cambio del tiempo a lo largo de las curvas experimentada por un observador que se mueve a lo largo de V. Requerir $dt(V)=1$ garantiza que las curvas avancen en el tiempo de acuerdo con el tiempo absoluto estándar.',NULL);
+INSERT INTO attribute_desc VALUES(210,2,'es','dt(V) = 1','Requisito de curvas temporales',replace('Esta condición se introduce para garantizar que las curvas $\sigma$ sean temporales. La cantidad\n$dt(V)$ representa la tasa de cambio del tiempo a lo largo de las curvas experimentada por un observador que se mueve a lo largo de V. Requerir $dt(V)=1$ garantiza que las curvas avancen en el tiempo de acuerdo con el tiempo absoluto estándar.','\n',char(10)),NULL);
 INSERT INTO attribute_desc VALUES(211,2,'es','e','$e$: Función arbitraria',NULL,NULL);
 INSERT INTO attribute_desc VALUES(212,2,'es','e = 0','$\epsilon=0$',NULL,NULL);
 INSERT INTO attribute_desc VALUES(213,2,'es','e = 1','$\epsilon=1$',NULL,NULL);
@@ -4418,6 +4418,7 @@ INSERT INTO object_attribute VALUES(19,6,214,6,1);
 INSERT INTO object_attribute VALUES(9,2,20,2,1);
 INSERT INTO object_attribute VALUES(15,2,20,2,1);
 INSERT INTO object_attribute VALUES(46,2,20,2,1);
+INSERT INTO object_attribute VALUES(21,1,112,1,1);
 
 
 -- Table: object_context
