@@ -226,6 +226,11 @@
   background-color: white;
 }
 
+.floatbox .ref {
+  margin-top: 1em;
+  text-align: right;
+}
+
 .affix {
 	width: 100%;
 	z-index: 1;
