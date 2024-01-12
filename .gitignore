@@ -5,3 +5,4 @@
 /site/theories/*/*/attr_desc.csv
 .DS_Store
 /site/gravity-tree/index.html
+/db/tmp_gen_lattices_data.sql.prev
