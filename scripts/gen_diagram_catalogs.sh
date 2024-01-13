@@ -12,7 +12,7 @@ while read -r lang; do
 SELECT Attribute,Class,Title,Formula,Explanation,Reference FROM v_attributes
        WHERE Lang='$lang' AND Context='$context'" |
       sqlite3 -header "$DBFILE" > \
-              "$SCRIPTDIR"/../site/theories/$lang/$context/attr_desc.csv
+              "$SITEDIR"/theories/$lang/$context/attr_desc.csv
 
     echo "
 SELECT v.Code, v.Title_$lang AS Title
@@ -32,6 +32,6 @@ SELECT v.Code, v.Title_$lang AS Title
        )
  ORDER BY ord" |
       sqlite3 -header "$DBFILE" > \
-              "$SCRIPTDIR"/../site/theories/$lang/$context/attr_class_desc.csv
+              "$SITEDIR"/theories/$lang/$context/attr_class_desc.csv
   done < <(sqlite3 "$DBFILE" "SELECT context_id, code FROM context")
 done < <(sqlite3 "$DBFILE" "SELECT lang_code FROM lang")
