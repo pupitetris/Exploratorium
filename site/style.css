@@ -215,7 +215,7 @@
 }
 
 .floatbox p {
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .floatbox p:last-child {
@@ -224,6 +224,11 @@
 
 .floatbox p > span {
   background-color: white;
+}
+
+.floatbox .ref {
+  margin-top: 1em;
+  text-align: right;
 }
 
 .affix {
