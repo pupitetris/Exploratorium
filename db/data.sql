@@ -1180,7 +1180,7 @@ INSERT INTO attribute_desc VALUES(80,2,'en','Eq 9c','Eq 9c','If the Ricci scalar
 INSERT INTO attribute_desc VALUES(81,1,'en','Equipresence','Equipresence','An independent variable present in one constitutive equation is so present in all.',NULL);
 INSERT INTO attribute_desc VALUES(82,1,'en','Euclidean Space','Euclidean space','$E^{3}$ is 3-dimensional  Euclidean space.<br>$E^{3}$ represents (maps) ordinary space.',NULL);
 INSERT INTO attribute_desc VALUES(83,1,'en','External Force','External force','Every $F^{e}\in\left\{ F^{e}\right\}$ is a real valued vector on $\Sigma\times K\times E^{3}\times T$.<br>The value of $F^{e}$ at any given 6-ple $\left\langle \sigma,k,x,t\right\rangle $ represents the external force acting on $\sigma$, relative to the frame $k$, at the place $x$ and the instant $t$.',NULL);
-INSERT INTO attribute_desc VALUES(84,1,'en','F = ma','Newton’s laws','For every $\sigma,\sigma''\in\Sigma$, every $t\in T$, every $F^{e}\in\left\{ F^{e}\right\}$ and every $F^{i}\in\left\{ F^{i}\right\}$, there is at least one $k\in K$ such that<br>$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+\underset{\sigma’\neq\sigma}{\sum}F^{i}(\sigma,\sigma’,t,k)$<br>and<br>$F^{i}(\sigma,\sigma’,t,k)=-F^{i}(\sigma’,\sigma,t,k)$.',NULL);
+INSERT INTO attribute_desc VALUES(84,1,'en','F = ma','Newton’s laws','For every $\sigma,\sigma''\in\Sigma$, every $t\in T$, every $F^{e}\in\left\{ F^{e}\right\}$ and every $F^{i}\in\left\{ F^{i}\right\}$, there is at least one $k\in K$ such that<br>$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+{\sum}F^{i}(\sigma,\sigma’,t,k)$<br>and<br>$F^{i}(\sigma,\sigma’,t,k)=-F^{i}(\sigma’,\sigma,t,k)$.',NULL);
 INSERT INTO attribute_desc VALUES(85,2,'en','F(R*,Lm)','$F(\Re,L_{m})$','A class of action functions. The action is a function of the affine Ricci scalar and the matter Lagrangian.',NULL);
 INSERT INTO attribute_desc VALUES(86,2,'en','F(R*,T)','$F(\Re,T_{\mu\nu})$','A class of action functions. The action is also a function of the affine Ricci scalar and the trace of the energy momentum tensor.',NULL);
 INSERT INTO attribute_desc VALUES(87,2,'en','F(R,Lm)','$F(R,\mathcal{L}_{matt})$','A class of action functions. The action is a function of the Ricci scalar and the matter Lagrangian.',NULL);
@@ -1428,7 +1428,7 @@ INSERT INTO attribute_desc VALUES(80,2,'es','Ec. 9c','Ec. 9c','Si el escalar de 
 INSERT INTO attribute_desc VALUES(81,1,'es','Equipresencia','Equipresencia','Un principio heurístico utilizado en teorías de materiales y termodinámica: “Una variable independiente presente en una ecuación constitutiva se encuentra presente en todas nuestras consideraciones”. (Dado que en esta red no se toman estas teorías como objetos, este atributo se encuentra en el nodo ínfimo).',NULL);
 INSERT INTO attribute_desc VALUES(82,1,'es','Espacio Euclidiano','$E^{3}$: Espacio euclidiano','Espacio 3-dimensional que representa (mapea) el espacio ordinario.',NULL);
 INSERT INTO attribute_desc VALUES(83,1,'es','Fuerza Externa','Fuerza externa','Cada $F^{e}\in\left\{ F^{e}\right\}$ es un vector de valor real en $\Sigma\times K\times E^{3}\times T$.<br>El valor de $F^{e}$ en cualquier 6-tupla $\left\langle \sigma,k,x,t\right\rangle $ representa la fuerza externa que actúa sobre $\sigma$, relativa al marco $k$, en el lugar $x$ y en el instante $t$.',NULL);
-INSERT INTO attribute_desc VALUES(84,1,'es','F=ma','Leyes de Newton','Por cada $\sigma$, $\sigma''\in\Sigma$, cada $t\in T$, cada $F^{e}\in\left\{ F^{e}\right\}$ y cada $F ^{i}\in\left\{ F^{i}\right\}$, hay al menos un $k\in K$ tal que<br>$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+\underset{\sigma''\neq\sigma}{\sum}F^{i}( \sigma,\sigma'',t,k)$<br>y<br>$F^{i}(\sigma,\sigma’,t,k)=-F^{i}(\sigma'',\sigma,t,k)$.',NULL);
+INSERT INTO attribute_desc VALUES(84,1,'es','F=ma','Leyes de Newton','Por cada $\sigma$, $\sigma''\in\Sigma$, cada $t\in T$, cada $F^{e}\in\left\{ F^{e}\right\}$ y cada $F ^{i}\in\left\{ F^{i}\right\}$, hay al menos un $k\in K$ tal que<br>$\dot{p}(\sigma,t,k)=F^{e}(\sigma,t,k)+{\sum}F^{i}( \sigma,\sigma'',t,k)$<br>y<br>$F^{i}(\sigma,\sigma’,t,k)=-F^{i}(\sigma'',\sigma,t,k)$.',NULL);
 INSERT INTO attribute_desc VALUES(85,2,'es','F(R*,Lm)','$F(\Re,L_{m})$','La acción es una función del escalar de Ricci afín y del Lagrangiano de materia.',NULL);
 INSERT INTO attribute_desc VALUES(86,2,'es','F(R*,T)','$F(\Re,T_{\mu\nu})$','La acción también puede pensarse en función del escalar de Ricci afín y la traza del tensor de estrés-energía-momento.',NULL);
 INSERT INTO attribute_desc VALUES(87,2,'es','F(R,Lm)','$F(R,\mathcal{L}_{matt})$','La acción es una función del escalar de Ricci y el Lagrangiano de materia.',NULL);
@@ -4418,6 +4418,7 @@ INSERT INTO object_attribute VALUES(19,6,214,6,1);
 INSERT INTO object_attribute VALUES(9,2,20,2,1);
 INSERT INTO object_attribute VALUES(15,2,20,2,1);
 INSERT INTO object_attribute VALUES(46,2,20,2,1);
+INSERT INTO object_attribute VALUES(21,1,112,1,1);
 
 
 -- Table: object_context
