@@ -6,3 +6,6 @@
 .DS_Store
 /site/gravity-tree/index.html
 /db/tmp_gen_lattices_data.sql.prev
+/site/gravity-tree/Authors/
+/site/gravity-tree/Blur/
+/site/gravity-tree/gravity-tree.svg
