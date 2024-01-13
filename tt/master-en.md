@@ -374,7 +374,7 @@ Observe the theoretical evolution from left to right.
   "output": "gravity-tree/index.html",
   "nav_lang": "gravity-tree/index-es.html",
   "styles": [ "style.css" ],
-  "background": "gravity-tree/GravityTree2024Fotos.svg"
+  "background": "gravity-tree/gravity-tree.svg"
 }
 ```
 
