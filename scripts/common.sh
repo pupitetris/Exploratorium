@@ -31,3 +31,14 @@ function require_sqlite {
     test_dbfile "$dbfile"
   fi
 }
+
+function require_inkscape {
+  if [ -e "/Applications/Inkscape.app/Contents/MacOS/inkscape" ]; then
+    echo "/Applications/Inkscape.app/Contents/MacOS/inkscape"
+  elif [ -e "$HOME"/bin/[Ii]nkscape* ]; then
+    echo "$HOME"/bin/[Ii]nkscape*
+  elif ! which inkscape; then
+    echo "$0: inkscape not found" >&2
+    exit 1
+  fi
+}

@@ -6,6 +6,8 @@ DBFILE=${1:-$DEFAULT_DBFILE}
 
 require_sqlite "$DBFILE"
 
+"$SCRIPTDIR"/gen_gravitytree.sh
+
 while read -r lang; do
 
   (
