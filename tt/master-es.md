@@ -554,3 +554,32 @@ selecciona a las teorías métricas solamente. ¿A qué modelo
 correspondería ese nodo? Observa la evolución teórica de izquierda a
 derecha.
 
+
+### El Manzano de la Gravitación
+
+```{ .json .config }
+{
+  "template": "diagram-page.tt",
+  "output": "gravity-tree/index-es.html",
+  "nav_lang": "gravity-tree/index.html",
+  "styles": [ "style.css" ],
+  "background": "gravity-tree/GravityTree2024Fotos.svg"
+}
+```
+
+Árbol genealógico de las teorías de la gravitación formuladas entre 1905 y
+2015. Las líneas grises conforman la línea de tiempo y emanan de dos ejes
+orientados hacia la teoría fundamental de la Relatividad Especial. Siguiendo
+estas líneas se encuentran las observaciones y experimentos. Los proponentes
+de teorías alternas, junto con las correspondientes fechas de publicación de
+artículos seminales, están resaltados en verde. Los principios fundamentales
+que sustentan cada teoría se articulan en el núcleo de sus respectivas ramas.
+Las teorías gravitacionales primarias se distinguen en rojo, mientras que
+ciertos modelos de materia y energía oscura están en amarillo. Las
+descripciones cuánticas de la gravedad se encuentran en azul. Al hacer clic en
+las flechas se vinculará al artículo fundamental correspondiente. 
+
+Esta estructura arbórea resume la evolución histórica de las propuestas
+gravitacionales, proporcionando una narrativa visual de la red interconectada
+de ideas, experimentos y mentes visionarias que han dado forma a nuestra
+comprensión de la gravedad a lo largo de décadas.
