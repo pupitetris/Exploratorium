@@ -315,12 +315,8 @@ maestría en Filosofía de la Ciencia de la UNAM, tiene un doctorado en
 Ciencias Sociales y Humanidades de la UAM-Cuajimalpa. Especializada en
 el análisis y visualización de datos meta-científicos, Mariana se
 dedica a la comunicación científica a través de textos de divulgación,
-ciencia en las calles, imágenes, infografías, videos y visualización
-de datos. Sus diversas contribuciones abarcan temas como luz,
-holografía, técnicas antiguas, historia de la astronomía y
-cosmología. En la actualidad, Mariana explora las relaciones entre los
-componentes fundamentales de la física mediante visualizaciones de
-redes.
+ciencia en las calles, imágenes, holografía, infografías, videos y visualización
+de datos. Sus diversas contribuciones abarcan temas relacionados con las teorías físicas, la gravitación, relatividad, astronomía y cosmología.
 
 ![Portrait of Arturo Espinosa Aldama](images/Arturo_Espinosa.jpg){.float-start .me-3 .portrait}
 **Arturo Espinosa Aldama** es un programador experto, desarrollador
