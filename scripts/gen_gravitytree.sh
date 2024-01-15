@@ -18,9 +18,9 @@ if [ ! -e "$SITEDIR"/gravity-tree/Blur ]; then
 fi
 
 INKSCAPE=$(require_inkscape)
-if [ "$TREEDIR"/GravityTree2024Fotos.svg -nt "$SITEDIR"/gravity-tree/gravity-tree.svg ]; then
+if [ "$TREEDIR"/GravityTree2024Fotos.svg -nt "$TREEDIR"/gravity-tree.svg ]; then
   "$INKSCAPE" "$TREEDIR"/GravityTree2024Fotos.svg \
-              --export-filename="$SITEDIR"/gravity-tree/gravity-tree.svg \
+              --export-filename="$TREEDIR"/gravity-tree.svg \
               --export-text-to-path \
               --export-plain-svg \
               --export-type=svg
