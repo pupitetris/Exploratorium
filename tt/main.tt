@@ -63,8 +63,8 @@
           <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 [% FOREACH link IN navigation.children %]
-[%   IF link.href == 'nav_lang' %]
-[%     href = page.config.nav_lang %]
+[%   IF link.href == 'navlang' %]
+[%     href = page.config.navlang %]
 [%   ELSE %]
 [%     href = link.href %]
 [%   END %]

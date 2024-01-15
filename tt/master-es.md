@@ -32,7 +32,7 @@ Exploratorium de teorías del espacio-tiempo
 - [Explorando](nav_exploring_menu)
 - [Diagramas](nav_diagramas_menu)
 - [REMO](/)
-- [English](nav_lang)
+- [English](navlang)
 
 
 ## Author
@@ -90,7 +90,7 @@ Copyright © 2017-2024, Mariana Espinosa Aldama
 {
   "template": "index.tt",
   "output": "index-es.html",
-  "nav_lang": "index.html"
+  "navlang": "index.html"
 }
 ```
 
@@ -133,7 +133,7 @@ Este sitio ha sido optimizado para Mozilla Firefox y Google Chrome.
 {
   "template": "index.tt",
   "output": "guidance-es.html",
-  "nav_lang": "guidance.html"
+  "navlang": "guidance.html"
 }
 ```
 
@@ -184,7 +184,7 @@ gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
 {
   "template": "index.tt",
   "output": "frame-es.html",
-  "nav_lang": "frame.html"
+  "navlang": "frame.html"
 }
 ```
 
@@ -221,7 +221,7 @@ gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
 {
   "template": "index.tt",
   "output": "methodology-es.html",
-  "nav_lang": "methodology.html"
+  "navlang": "methodology.html"
 }
 ```
 
@@ -274,7 +274,7 @@ espacio-tiempo y la gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/12
 {
   "template": "index.tt",
   "output": "bibliography-es.html",
-  "nav_lang": "bibliography.html"
+  "navlang": "bibliography.html"
 }
 ```
 
@@ -305,7 +305,7 @@ gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
 {
   "template": "index.tt",
   "output": "about-es.html",
-  "nav_lang": "about.html"
+  "navlang": "about.html"
 }
 ```
 
@@ -320,7 +320,7 @@ gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
 {
   "template": "index.tt",
   "output": "legal-es.html",
-  "nav_lang": "legal.html"
+  "navlang": "legal.html"
 }
 ```
 
@@ -365,7 +365,7 @@ El *Exploratorium de Teorías del Espacio-Tiempo* es un proyecto educativo sin f
 {
   "template": "diagram-page.tt",
   "output": "theories/es/protophysics/index.html",
-  "nav_lang": "theories/en/protophysics/index.html"
+  "navlang": "theories/en/protophysics/index.html"
 }
 ```
 
@@ -382,7 +382,7 @@ llama *Protofísica*, y ciertos principios "zerológicos".
 {
   "template": "diagram-page.tt",
   "output": "theories/es/analytical-dynamics/index.html",
-  "nav_lang": "theories/en/analytical-dynamics/index.html"
+  "navlang": "theories/en/analytical-dynamics/index.html"
 }
 ```
 
@@ -400,7 +400,7 @@ Physics* (1967) de Mario Bunge.
 {
   "template": "diagram-page.tt",
   "output": "theories/es/basic/index.html",
-  "nav_lang": "theories/en/basic/index.html"
+  "navlang": "theories/en/basic/index.html"
 }
 ```
 
@@ -419,7 +419,7 @@ General. Compárese su localización con la red de teorías clásicas.
 {
   "template": "diagram-page.tt",
   "output": "theories/es/spacetimes/index.html",
-  "nav_lang": "theories/en/spacetimes/index.html"
+  "navlang": "theories/en/spacetimes/index.html"
 }
 ```
 
@@ -438,7 +438,7 @@ clasificación de Niels Dewar (2016, 2018) y de Sotiriou y Faraoni
 {
   "template": "diagram-page.tt",
   "output": "theories/es/classical/index.html",
-  "nav_lang": "theories/en/classical/index.html"
+  "navlang": "theories/en/classical/index.html"
 }
 ```
 
@@ -465,7 +465,7 @@ especialización.
 {
   "template": "diagram-page.tt",
   "output": "theories/es/metric/index.html",
-  "nav_lang": "theories/en/metric/index.html"
+  "navlang": "theories/en/metric/index.html"
 }
 ```
 
@@ -487,7 +487,7 @@ no viables-->. Estas teorías se caracterizan por añadir campos extra, funcione
 {
   "template": "diagram-page.tt",
   "output": "theories/es/f-R/index.html",
-  "nav_lang": "theories/en/f-R/index.html"
+  "navlang": "theories/en/f-R/index.html"
 }
 ```
 
@@ -511,7 +511,7 @@ distintas, según la dependencia de las variables.
 {
   "template": "diagram-page.tt",
   "output": "theories/es/mond/index.html",
-  "nav_lang": "theories/en/mond/index.html"
+  "navlang": "theories/en/mond/index.html"
 }
 ```
 
@@ -531,7 +531,7 @@ theories of gravity"*.
 {
   "template": "diagram-page.tt",
   "output": "theories/es/holon/index.html",
-  "nav_lang": "theories/en/holon/index.html"
+  "navlang": "theories/en/holon/index.html"
 }
 ```
 
@@ -561,7 +561,7 @@ derecha.
 {
   "template": "diagram-page.tt",
   "output": "gravity-tree/index-es.html",
-  "nav_lang": "gravity-tree/index.html",
+  "navlang": "gravity-tree/index.html",
   "styles": [ "style.css" ],
   "background": "gravity-tree/gravity-tree.svg"
 }

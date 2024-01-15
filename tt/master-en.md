@@ -13,7 +13,7 @@ Space-Time Theories Exploratorium
 - [Exploring](nav_exploring_menu)
 - [Diagrams](nav_diagrams_menu)
 - [REMO](/)
-- [Español](nav_lang)
+- [Español](navlang)
 
 
 ## Author
@@ -70,7 +70,7 @@ Copyright © 2017-2024, Mariana Espinosa Aldama
 {
   "template": "index.tt",
   "output": "index.html",
-  "nav_lang": "index-es.html"
+  "navlang": "index-es.html"
 }
 ```
 
@@ -116,7 +116,7 @@ This site has been optimized for Mozilla Firefox and Google Chrome.
 {
   "template": "index.tt",
   "output": "guidance.html",
-  "nav_lang": "guidance-es.html"
+  "navlang": "guidance-es.html"
 }
 ```
 
@@ -165,7 +165,7 @@ here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 {
   "template": "index.tt",
   "output": "frame.html",
-  "nav_lang": "frame-es.html"
+  "navlang": "frame-es.html"
 }
 ```
 
@@ -193,7 +193,7 @@ here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 {
   "template": "index.tt",
   "output": "methodology.html",
-  "nav_lang": "methodology-es.html"
+  "navlang": "methodology-es.html"
 }
 ```
 
@@ -230,7 +230,7 @@ here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 {
   "template": "index.tt",
   "output": "bibliography.html",
-  "nav_lang": "bibliography-es.html"
+  "navlang": "bibliography-es.html"
 }
 ```
 
@@ -263,7 +263,7 @@ here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 {
   "template": "index.tt",
   "output": "about.html",
-  "nav_lang": "about-es.html"
+  "navlang": "about-es.html"
 }
 ```
 
@@ -295,7 +295,7 @@ implementations to rapid graphical applications development.
 {
   "template": "index.tt",
   "output": "legal.html",
-  "nav_lang": "legal-es.html"
+  "navlang": "legal-es.html"
 }
 ```
 
@@ -340,7 +340,7 @@ The Space-Time Theories Exploratorium is a non-profit project with educational p
 {
   "template": "diagram-page.tt",
   "output": "theories/en/protophysics/index.html",
-  "nav_lang": "theories/es/protophysics/index.html"
+  "navlang": "theories/es/protophysics/index.html"
 }
 ```
 
@@ -357,7 +357,7 @@ calls *Protophysics*, and certain "zerological" principles.
 {
   "template": "diagram-page.tt",
   "output": "theories/en/analytical-dynamics/index.html",
-  "nav_lang": "theories/es/analytical-dynamics/index.html"
+  "navlang": "theories/es/analytical-dynamics/index.html"
 }
 ```
 
@@ -375,7 +375,7 @@ by Mario Bunge.
 {
   "template": "diagram-page.tt",
   "output": "theories/en/basic/index.html",
-  "nav_lang": "theories/es/basic/index.html"
+  "navlang": "theories/es/basic/index.html"
 }
 ```
 
@@ -395,7 +395,7 @@ approach.
 {
   "template": "diagram-page.tt",
   "output": "theories/en/spacetimes/index.html",
-  "nav_lang": "theories/es/spacetimes/index.html"
+  "navlang": "theories/es/spacetimes/index.html"
 }
 ```
 
@@ -414,7 +414,7 @@ classification of Niels Dewar (2016, 2018) and Sotiriou and Faraoni
 {
   "template": "diagram-page.tt",
   "output": "theories/en/classical/index.html",
-  "nav_lang": "theories/es/classical/index.html"
+  "navlang": "theories/es/classical/index.html"
 }
 ```
 
@@ -439,7 +439,7 @@ specialization.
 {
   "template": "diagram-page.tt",
   "output": "theories/en/metric/index.html",
-  "nav_lang": "theories/es/metric/index.html"
+  "navlang": "theories/es/metric/index.html"
 }
 ```
 
@@ -459,7 +459,7 @@ viable theories from the non-viable ones-->. These theories consider some extra 
 {
   "template": "diagram-page.tt",
   "output": "theories/en/f-R/index.html",
-  "nav_lang": "theories/es/f-R/index.html"
+  "navlang": "theories/es/f-R/index.html"
 }
 ```
 
@@ -482,7 +482,7 @@ different ways, depending on the dependence of the variables.
 {
   "template": "diagram-page.tt",
   "output": "theories/en/mond/index.html",
-  "nav_lang": "theories/es/mond/index.html"
+  "navlang": "theories/es/mond/index.html"
 }
 ```
 
@@ -500,7 +500,7 @@ and the article by Sotiriou Faraoni, *"f(R) theories of gravity"*.
 {
   "template": "diagram-page.tt",
   "output": "theories/en/holon/index.html",
-  "nav_lang": "theories/es/holon/index.html"
+  "navlang": "theories/es/holon/index.html"
 }
 ```
 
@@ -528,7 +528,7 @@ Observe the theoretical evolution from left to right.
 {
   "template": "diagram-page.tt",
   "output": "gravity-tree/index.html",
-  "nav_lang": "gravity-tree/index-es.html",
+  "navlang": "gravity-tree/index-es.html",
   "styles": [ "style.css" ],
   "background": "gravity-tree/gravity-tree.svg"
 }
