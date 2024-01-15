@@ -273,12 +273,8 @@ here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 master's in Philosophy of Science from UNAM, holds a Ph.D. in Social Sciences
 and Humanities from UAM-Cuajimalpa. Now specializing in meta-scientific data
 analysis and visualization, Mariana is dedicated to science communication
-through popular texts, street-level engagement, images, infographics, videos,
-and data visualizations. Her diverse contributions span topics on physics,
-light, holography, ancient photographic techniques, astronomy, and cosmology.
-Currently, Mariana explores visualizations of theoretical lattices and
-foundational aspects of physics, contributing to the dynamic intersection of
-science and public understanding.
+through popular texts, street-level engagement, images, holography, infographics, videos,
+and data visualizations. Her diverse contributions span topics on physical theories, astronomy, cosmology, relativity and gravitation.
 
 ```{ style="clear: left" }
 ```
