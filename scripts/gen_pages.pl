@@ -53,7 +53,8 @@ sub block_get_text {
   }
   if ($type eq 'CodeBlock') {
     my $classes = arr_get_classes($cont->[0][1]);
-    return '<pre' . $classes . '>' . $cont->[1] . '</pre>';
+    my $attrs = arr_get_attributes($cont->[0][2]);
+    return '<pre' . $classes . $attrs . '>' . $cont->[1] . '</pre>';
   }
   if ($type eq 'RawInline' && $cont->[0] eq 'html') {
     return $cont->[1];
