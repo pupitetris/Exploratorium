@@ -68,14 +68,15 @@
 [%   ELSE %]
 [%     href = link.href %]
 [%   END %]
-[%   IF link.href == 'nav_menu' %]
+[%   IF link.href.substr(0, 4) == 'nav_' %]
               <li class="nav-item dropdown diagrams">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   [% link.text %]
 
                 </a>
                 <ul class="dropdown-menu">
-[%     FOREACH menulink IN menu.children %]
+[%     menu_name = link.href.substr(4).replace('_', '-') %]
+[%     FOREACH menulink IN $menu_name.children %]
                   <li><a class="dropdown-item" href="[% PROCESS rel_href href=menulink.href %]">[% menulink.text %]</a></li>
 [%     END %]
                 </ul>

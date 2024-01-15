@@ -8,7 +8,8 @@
           <div class="col-lg-3">
             <div class="ligas">
               <div class="marcaAgua"></div>
-[% FOREACH link IN menu.children %]
+[% menu_name = "diagrams-menu" %]
+[% FOREACH link IN $menu_name.children %]
               <a href="[% PROCESS rel_href href=link.href %]" class="btn btn-outline-success">[% link.text %]</a>
 [% END %]
             </div>
