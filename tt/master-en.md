@@ -10,9 +10,8 @@ Space-Time Theories Exploratorium
 ## Navigation
 
 - [Home](index.html)
-- [Methodology](methodology.html)
-- [Diagrams](nav_menu)
-- [About](/integrantes/mariana-espinosa-aldama)
+- [Exploring](nav_exploring_menu)
+- [Diagrams](nav_diagrams_menu)
 - [REMO](/)
 - [Español](nav_lang)
 
@@ -24,7 +23,7 @@ with support from the REMO Seminary at the Metropolitan Autonomous
 University - Cuajimalpa
 
 
-## Menu
+## Diagrams Menu
 
 - [Protophysics](theories/en/protophysics)
 - [Analytical Dynamics](theories/en/analytical-dynamics)
@@ -36,24 +35,30 @@ University - Cuajimalpa
 - [Non-local MoNDian Theories](theories/en/mond)
 - [Holon of Theories](theories/en/holon)
 - [Gravity Apple Tree](gravity-tree)
-<!-- - [Gravity Apple Tree](//prezi.com/rdkivznlhgga/the-gravity-apple-tree/) -->
 
+
+## Exploring Menu
+- [Guidance](guidance.html)
+- [Theoretical Framework](frame.html)
+- [Methodology](methodology.html)
+- [Bibliography](bibliography.html)
+- [About](about.html)
+- [Legal notice](legal.html)
 
 ## Footer
 
 ### Acknowledgements
 
-This project has been possible thanks to the support of the Seminar of
-Representation and Modeling of Scientific Knowledge of the
-Metropolitan Autonomous University-Cuajimalpa Unit, as well as the
-Coordination of Innovation and the Computing Department. A thanks to
-Mario Casanueva (UAM-C), Diego Méndez (UAM-C), Sergio Mendoza
-(IA-UNAM), Joaquín Hernández (UAM-C), and especially Arturo Espinosa
-for all their help and support.
+This project has been possible thanks to the collaboration of the Seminar of
+Representation and Modeling of Scientific Knowledge at the Metropolitan
+Autonomous University-Cuajimalpa Unit, as well as the Coordination of
+Innovation and the Computing Department. We extend our appretiation to Mario Casanueva (UAM-C),
+Diego Méndez (UAM-C), Sergio Mendoza (IA-UNAM), Heriberto Frías, Joaquín Hernández (UAM-C), and
+most notably, Arturo Espinosa for their unwavering assistance and support.
 
 ### Copyright
 
-Copyright © 2017-2023, Mariana Espinosa Aldama
+Copyright © 2017-2024, Mariana Espinosa Aldama
 
 
 ## Pages
@@ -69,9 +74,58 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 }
 ```
 
-#### Get to explore the structure of physical theories through interactive concept networks.
 
-- Explore 8 theoretical networks and a holon with more than 50
+At the *Exploratorium*, we delve into the intricate semantic structures of physical theories. Our mission revolves
+around creating interactive, hyperlinked network visualizations – macroscopes
+designed to unravel the foundations of scientific theories.
+
+#### Discover ten macroscopes
+
+Step into the realm of physical and space-time theories with our interactive
+visualizations of hierarquical networks. We have disected several set theoretical classifications  from recognized philosophers of science into a data base of models and their attributes. We have analysed formal contexts to extract their formal concepts and visualized hierarquical networks. Nodes represent concepts, while links illustrate
+hierarchical relations of inclusion in interactive networks that display extra information. 
+
+#### Our goal: unveiling complexity, facilitating understanding
+
+At the heart of our mission is the commitment to providing visual, interactive
+tools that demystify the complexity of physical theories and illustrate theory reconstructions. These macroscopes
+serve as conceptual maps, guiding students and curious minds through the
+theoretical sea of physics. Our aim is to illuminate the relations between
+fundamental components, fostering a deeper understanding of the intricate
+world of physics.
+
+Join us at the *Exploratorium*, where curiosity meets visualization, and the
+beauty of theoretical exploration unfolds before your eyes.
+
+
+More detailed information in Mariana Espinosa's PhD thesis (in
+Spanish) ["Visualizaciones de redes conceptuales de teorías del
+espacio-tiempo y la
+gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022),
+and [an article in English
+here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
+
+#### [Get your Gravity Apple Tree and more... here!](https://marianaespinosa.blogspot.com/p/blog-page.html)
+
+This site has been optimized for Mozilla Firefox and Google Chrome.
+
+
+### Guidance
+
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "guidance.html",
+  "nav_lang": "guidance-es.html"
+}
+```
+
+
+#### Get to explore the structure of physical theories through interactive concept networks
+
+#### What to do:
+
+- Explore 10 marcroscopes with more than 50
   theories of space-time and gravitation.
 - Get to know the methodology of Formal Concept Analysis (FCA).
 - Learn the logic of hierarchical networks called lattices.
@@ -97,26 +151,34 @@ Copyright © 2017-2023, Mariana Espinosa Aldama
 - Download the networks and the Gravity Apple Tree.
 - Write to us and leave us your comments.
 -->
+More detailed information in Mariana Espinosa's PhD thesis (in
+Spanish) ["Visualizaciones de redes conceptuales de teorías del
+espacio-tiempo y la
+gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022),
+and [an article in English
+here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 
 
-#### At the Exploratorium, we are passionate about unraveling the semantic structure of physical theories through interactive, hyperlinked network visualizations.
+### Theoretical Framework
 
-These macroscopes are interactive theoretical lattices that represent relations between the fundamental concepts of physical and space-time theories.  Nodes repressent concepts and links represent hierarquical relations of inclusion. Concepts are ordered pairs of attributes (sets of axioms) and objects (classes of models).
-The explored theories have been axiomatized under the set theoretical view of structuralism where theories are represented by sets of premises. Theories have a hierarchical internal structure that can be visualized using concept lattices.
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "frame.html",
+  "nav_lang": "frame-es.html"
+}
+```
 
-Lattices are a class of network with
-various properties, such as being partially ordered sets with a unique top and
-bottom component for each pair of nodes in the network. Theoretical
-lattices locate the fundamental components common to most theories,
-at the top, such as protophysics, topological or geometric
-properties. Actual models and specialized models, on the other hand,
-are found at the lower levels of the lattice.
+#### Metatheoretical Structuralism: Unveiling the Essence of Scientific Theories
 
-**Our goal** is to provide visual interactive tools that help us
-understand the complexity of physical theories and the relations
-between fundamental components. These macroscopes work as conceptual
-maps for students and curious people that navigate in the theoretical
-sea of physics.
+The theoretical framework of the *Exploratorium* has its roots in metatheoretical structuralism, a branch of analytical philosophy of science. Structuralism aims to understand the relationships between the fundamental constituents of theories using set theory and an approach based on three units of analysis: models, theoretical elements and theoretical networks. This research program is found in the seminal book "An architecture for science", written by Balzer, Moulines and Sneed (2012).
+
+Theoretical elements are represented through sets of model classes, as well as ligatures, intentional applications, historical and biographical data. The formal core is described by models, characterized by complying with certain axioms, forming among them a conceptual system that we visualize as lattices through the methodology of formal concept analysis (FCA). By classifying attributes using colors we can easily identify where the various classes of axioms come in, be it the declaration of domains (fields or geometric objects), typifications, conditions, equations, parameters, reference frames and spatio-temporal characterizations, among others.
+
+In addition to models and theoretical elements, metatheoretical structuralism also takes theoretical networks as a unit of study. Hierarchical networks that take various theoretical elements as nodes. The networks that we propose here only consider actual models and some previous and other specialized models as objects, leaving aside characteristics related to intentional applications, historical data and the scientific community, focusing on the formal core. The theoretical grids presented here provide a synchronic perspective of theoretical development.
+
+For its part, the *Gravity Apple Tree*, in addition to the most general principles, pays attention to the dates and puts the authors of the different alternative gravitation proposals on the map. Furthermore, it contrasts the theoretical space with the empirical space by including data referring to experimental advances in the matter. There you will find links to the seminal articles of the different theories and a diachronic perspective of scientific development.
+
 
 More detailed information in Mariana Espinosa's PhD thesis (in
 Spanish) ["Visualizaciones de redes conceptuales de teorías del
@@ -125,12 +187,7 @@ gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022),
 and [an article in English
 here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 
-#### [Get your Gravity Apple Tree and more... here!](https://marianaespinosa.blogspot.com/p/blog-page.html)
-
-This site has been optimized for Mozilla Firefox and Google Chrome.
-
-
-### Methodology
+### Methodological Framework
 
 ```{ .json .config }
 {
@@ -140,36 +197,24 @@ This site has been optimized for Mozilla Firefox and Google Chrome.
 }
 ```
 
-We represent theories using a model-based approach and set theory,
-following the structuralist school of metatheoretical analysis of
-Balzer, Moulines and Sneed (2012). Theories are represented by
-theoretical elements made up in part by sets of model classes. In an
-incidence table or formal context (G,M,i) we relate classes of models
-with their attributes (sets of axioms). **Formal Concept Analysis
-(FCA)** is a mathematical theory based on Birckoff's theory of
-lattices and Galois' connection which recovers formal concepts
-(ordered pairs made up of an extension and intension) from formal
-contexts, relates them hierarchically and represents them as lattices.
 
-Each lattice presented here is based on some formal
-reconstruction. We have found two types of reconstructions:
+The methodological approach of the *Exploratorium* is grounded in the examination and construction of hierarchical networks known as lattices. This class of networks is distinguished by its properties as partially ordered sets, establishing a comprehensive hierarchy.
 
-- **Additive**, which proposes a very impoverished differential
-  manifold to enrich it with geometric properties, a path proposed by
-  Bernhard Riemann and found in the axiomatizations of Mario Bunge
-  (1967), who gives more weight to the temporal and experimental
-  aspects when determining the fundamental level of the concepts, and
-  from where we obtained the lattices titled "Protophysics",
-  "Analytical Dynamics" and "Basic Theories".
-- **Subtractive**, proposed by Felix Klein, begins with a differential
-  manifold endowed with many very general properties that are
-  constrained as required. It is the path found in Michael Friedman's
-  (1983) classifications of "Space-Time Theories" and "Classical
-  Theories", Clifford Will's (1981) classification of "Metric
-  Theories", Sotiriou and Faraoni (2010) the "f(R) Theories", and the
-  "Extended Theories" of Mendoza and Barrientos (2018). These
-  reconstructions also share formalism and notation, so it was
-  possible to combine them into a large theoretical holon.
+#### Hierarchical networks
+
+Lattices have the property that for any pair of nodes there is only one minimal node and one supreme node. These hierarchical characteristics are updated within the domain of theoretical frameworks, the fundamental components universally applicable to various theories are strategically located at the top. This upper level encompasses entities such as protophysics, topological complexities, and geometric properties, while lower levels house current and specialized models, reflecting a nuanced hierarchical organization.
+
+#### Formal Concept Analysis
+
+Starting from formal contexts represented by incidence tables (G,M,i), our methodology establishes intricate relationships between classes of models (objects) and their associated attributes, that is, sets of axioms. **Formal Concept Analysis (FCA)**, a mathematical theory based on Birkhoff lattice theory and the Galois connection, plays a fundamental role. FCA systematically recovers formal concepts (certain ordered pairs of objects and attributes), organizes them hierarchically and represents them as frameworks, offering a deep insight into the structural interdependencies of the concepts.
+
+#### Navigating Additive and Subtractive Paths
+
+Every lattice featured here traces its roots to a meticulous formal reconstruction, revealing two distinctive paths:
+
+**Additive Reconstruction:** Following the trajectory proposed by Bernhard Riemann and Mario Bunge (1967), this path commences with a modest differential manifold, subsequently enriched with geometric properties. Explore lattices titled "Protophysics," "Analytical Dynamics," and "Basic Theories."
+
+**Subtractive Reconstruction:** Originating from Felix Klein's proposition, this path initiates with a differential manifold endowed with broad properties that are selectively constrained. This methodology is evident in Michael Friedman's (1983) classifications, Clifford Will's (1981) taxonomy, and Sotiriou and Faraoni's (2010) "f(R) Theories," as well as Mendoza and Barrientos' (2018) "Extended Theories." These reconstructions, sharing formalism and notation, converge seamlessly into a cohesive theoretical holon.
 
 More detailed information in Mariana Espinosa's PhD thesis (in
 Spanish) ["Visualizaciones de redes conceptuales de teorías del
@@ -177,6 +222,116 @@ espacio-tiempo y la
 gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022),
 and [an article in English
 here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
+
+
+### Bibliography
+
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "bibliography.html",
+  "nav_lang": "bibliography-es.html"
+}
+```
+
+Suggested readings to follow while exploring space-time theories foundations:
+
+- Bunge, M. Foundations of physics. Springer tracts in natural philosophy. Springer-Verlag (1967).
+- Barrientos, E. y Mendoza, S. A relativistic description of MOND using the Palatini formalism in an extended metric theory of gravity. The European Physical Journal Plus 131(10) (2016).
+- Barrientos, E. y Mendoza, S. MOND as the weak field limit of an extended metric theory of gravity with a matter-curvature coupling. Physical Review D 98:084033 (2018).
+- Benoît, F. y McGaugh, S. Modified Newtonian Dynamics (MOND): Observational Phenomenology  and Relativistic Extensions. Living Reviews in Relativity 15(10) (2012).
+- Carranza, D.A. y Mendoza, S. and Torres, L.A. A cosmological dust model with extended f(χ) gravity. European Physical Journal C 73:2282 (2013).
+- Dewar, N. Maxwell gravitation. Philosophy of Science 85(2):249–270 (2018).
+- Espinosa, M. The gravity apple tree. Journal of Physics: Conference Series, 600(1), 012050 (2015).
+- Friedman, M. Foundations of Space-Time Theories: Relativistic Physics and Philosophy of Science. Princeton University Press (1983).
+- Misner, C., Thorne, K., y Wheeler, J. Gravitation. Número parte 3 en Gravitation. Freeman, W.H. (1973).
+- Sotiriou, T.P. y Faraoni, V. f(R) theories of gravity. Reviews of Modern Physics 82:451–497 (2010).
+- Will, C. Theory and Experiment in Gravitational Physics. Cambridge University Press (1993).
+- Wille, R. Restructuring lattice theory: An approach based on hierarchies of concepts. In I. Rival (ed.), Ordered Sets (pp. 445–470). Dordrecht: Springer (1982).
+
+More detailed information in Mariana Espinosa's PhD thesis (in
+Spanish) ["Visualizaciones de redes conceptuales de teorías del
+espacio-tiempo y la
+gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022),
+and [an article in English
+here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
+
+
+### About
+
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "about.html",
+  "nav_lang": "about-es.html"
+}
+```
+
+![Portrait of Mariana Espinosa Aldama](images/Mariana_Espinosa.jpg){.float-left}
+**Mariana Espinosa Aldama**, a photographer and Physics graduate with a
+master's in Philosophy of Science from UNAM, holds a Ph.D. in Social Sciences
+and Humanities from UAM-Cuajimalpa. Now specializing in meta-scientific data
+analysis and visualization, Mariana is dedicated to science communication
+through popular texts, street-level engagement, images, infographics, videos,
+and data visualizations. Her diverse contributions span topics on physics,
+light, holography, ancient photographic techniques, astronomy, and cosmology.
+Currently, Mariana explores visualizations of theoretical lattices and
+foundational aspects of physics, contributing to the dynamic intersection of
+science and public understanding.
+
+
+![Portrait of Arturo Espinosa Aldama](images/Arturo_Espinosa.jpg){.float-left}**Arturo Espinosa Aldama** is an expert programmer, full stack developer with
+20 years of experience in all of the software development process with
+reliable capacities for self management, software architecture research and
+design, and attention to detail and careful coding and testing. Knowledge on
+both high and low levels of abstraction: from binary RS232 serial protocol
+implementations to rapid graphical applications development.
+
+
+### Legal notice
+
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "legal.html",
+  "nav_lang": "legal-es.html"
+}
+```
+
+In addition to the text written by the authors, there are many citations that have been credited in the info-boxes where they are shown. 
+
+#### Images
+
+We do not own the copyright for any of the images used in the *Exploratorium* (Mainly portraits of authors in the Gravity Apple Tree). Most of them are in the public domain. 
+Few exceptions are credited here. If you believe that you own the rights to any of the images we use, please contact us in accordance with our Takedown Policy.
+
+#### Takedown Policy
+
+If you believe that you own the rights to any of the resources we use, please contact us with the following details:
+
+- Your contact details.
+- Details of the resource.
+- The website address where you found the content.
+- Details of your complaint.
+- If you are complaining about breach of copyright, please state if you are the rights owner or are authorized to act for them.
+
+We will then take the following action:
+
+- Acknowledge receipt of the complaint by email.
+- Remove the item that is subject to complaint, pending investigation.
+- We may take advice from our legal team.
+- We, or our legal team will seek to verify the identity and authority of the complainant (e.g. that you are either the rights holder or rights holder's agent).
+
+When we have verified the authenticity of the complaint and authority of the complainant and that the complaint is ostensibly legitimate, we will work with you to resolve the complaint, with the following possible outcomes:
+
+- The material will be permanently removed from the site
+- The material will be modified appropriately and returned to the site
+- The material will be reinstated on the site unchanged
+
+#### Copyright information
+
+The Space-Time Theories Exploratorium is a non-profit project with educational purposes. All reproductions are welcomed so long proper credits are given.
+
 
 ### Protophysics
 
@@ -374,7 +529,7 @@ Observe the theoretical evolution from left to right.
   "output": "gravity-tree/index.html",
   "nav_lang": "gravity-tree/index-es.html",
   "styles": [ "style.css" ],
-  "background": "gravity-tree/gravity-tree.svg"
+  "background": "gravity-tree/GravityTree2024Fotos.svg"
 }
 ```
 
