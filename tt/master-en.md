@@ -280,7 +280,8 @@ foundational aspects of physics, contributing to the dynamic intersection of
 science and public understanding.
 
 
-![Portrait of Arturo Espinosa Aldama](images/Arturo_Espinosa.jpg){.float-left}**Arturo Espinosa Aldama** is an expert programmer, full stack developer with
+![Portrait of Arturo Espinosa Aldama](images/Arturo_Espinosa.jpg){.float-left}
+**Arturo Espinosa Aldama** is an expert programmer, full stack developer with
 20 years of experience in all of the software development process with
 reliable capacities for self management, software architecture research and
 design, and attention to detail and careful coding and testing. Knowledge on
@@ -529,7 +530,7 @@ Observe the theoretical evolution from left to right.
   "output": "gravity-tree/index.html",
   "nav_lang": "gravity-tree/index-es.html",
   "styles": [ "style.css" ],
-  "background": "gravity-tree/GravityTree2024Fotos.svg"
+  "background": "gravity-tree/gravity-tree.svg"
 }
 ```
 

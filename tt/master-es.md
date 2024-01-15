@@ -563,7 +563,7 @@ derecha.
   "output": "gravity-tree/index-es.html",
   "nav_lang": "gravity-tree/index.html",
   "styles": [ "style.css" ],
-  "background": "gravity-tree/GravityTree2024Fotos.svg"
+  "background": "gravity-tree/gravity-tree.svg"
 }
 ```
 
