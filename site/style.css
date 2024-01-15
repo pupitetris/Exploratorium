@@ -522,4 +522,5 @@ html {
 img.portrait {
   width: 150px;
   height: 214px;
+  clear: left;
 }

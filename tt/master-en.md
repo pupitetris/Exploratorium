@@ -267,7 +267,8 @@ here](https://www.worldscientific.com/worldscibooks/10.1142/13275#t=aboutBook).
 }
 ```
 
-![Portrait of Mariana Espinosa Aldama](images/Mariana_Espinosa.jpg){.float-start .me-3 .portrait}
+![Portrait of Mariana Espinosa Aldama](images/Mariana_Espinosa.jpg){.float-start .me-3 .mt-3 .portrait}
+
 **Mariana Espinosa Aldama**, a photographer and Physics graduate with a
 master's in Philosophy of Science from UNAM, holds a Ph.D. in Social Sciences
 and Humanities from UAM-Cuajimalpa. Now specializing in meta-scientific data
@@ -279,8 +280,11 @@ Currently, Mariana explores visualizations of theoretical lattices and
 foundational aspects of physics, contributing to the dynamic intersection of
 science and public understanding.
 
+```{ style="clear: left" }
+```
 
 ![Portrait of Arturo Espinosa Aldama](images/Arturo_Espinosa.jpg){.float-start .me-3 .portrait}
+
 **Arturo Espinosa Aldama** is an expert programmer, full stack developer with
 20 years of experience in all of the software development process with
 reliable capacities for self management, software architecture research and

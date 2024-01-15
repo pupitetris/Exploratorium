@@ -309,7 +309,8 @@ gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
 }
 ```
 
-![Portrait of Mariana Espinosa Aldama](images/Mariana_Espinosa.jpg){.float-start .me-3 .portrait}
+![Portrait of Mariana Espinosa Aldama](images/Mariana_Espinosa.jpg){.float-start .me-3 .mt-3 .portrait}
+
 **Mariana Espinosa Aldama**, fotógrafa y licenciada en Física con una
 maestría en Filosofía de la Ciencia de la UNAM, tiene un doctorado en
 Ciencias Sociales y Humanidades de la UAM-Cuajimalpa. Especializada en
@@ -322,7 +323,11 @@ cosmología. En la actualidad, Mariana explora las relaciones entre los
 componentes fundamentales de la física mediante visualizaciones de
 redes.
 
+```{ style="clear: left" }
+```
+
 ![Portrait of Arturo Espinosa Aldama](images/Arturo_Espinosa.jpg){.float-start .me-3 .portrait}
+
 **Arturo Espinosa Aldama** es un programador experto, desarrollador
 full stack con 20 años de experiencia en todo el proceso de desarrollo
 de software con capacidades confiables de autogestión, investigación y
