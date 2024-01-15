@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="dia-shell aside-1">
-            <div id="d1" class="diagram">[% INCLUDE "${page.sitedir}../${page.config.background}" IF page.config.background %]</div>
+            <div id="d1" class="diagram">[% INCLUDE "${page.sitedir}${page.config.background}" IF page.config.background %]</div>
             <div class="btn-toolbar" role="toolbar" aria-label="[% PROCESS string s='Diagram toolbar' %]">
               <div class="tool-editor-group btn-group me-2 d-none" role="group">
                 <button type="button" class="tool-editor btn btn-outline-warning bi bi-pencil-square" data-bs-toggle="button" aria-label="Editor"></button>
