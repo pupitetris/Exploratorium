@@ -7,6 +7,18 @@ use Template; # libtemplate-perl
 use File::Basename qw(dirname);
 use Encode qw(encode_utf8);
 
+sub arr_get_classes {
+  my $arr = shift;
+  return '' if scalar @$arr == 0;
+  return ' class="' . join(' ', @$arr) . '"';
+}
+
+sub arr_get_attributes {
+  my $arr = shift;
+  return '' if scalar @$arr == 0;
+  return join('', map { ' ' . $_->[0] . '="' . $_->[1] . '"' } @$arr)
+}
+
 sub block_get_text {
   my $block = shift;
   my $type = $block->{'t'};
@@ -40,10 +52,19 @@ sub block_get_text {
     return "\n<ul>\n  " . join ("\n  ", map { '<li>' . cont_get_text($_) . '</li>' } @$cont) . "\n</ul>\n";
   }
   if ($type eq 'CodeBlock') {
-    return '<pre class="' . join(' ', @{$cont->[0][1]}) . '">' . $cont->[1] . '</pre>';
+    my $classes = arr_get_classes($cont->[0][1]);
+    return '<pre' . $classes . '>' . $cont->[1] . '</pre>';
   }
   if ($type eq 'RawInline' && $cont->[0] eq 'html') {
     return $cont->[1];
+  }
+  if ($type eq 'Image') {
+    my $id = ($cont->[0][0])? ' id="' . $cont->[0][0] . '"' : '';
+    my $classes = arr_get_classes($cont->[0][1]);
+    my $attrs = arr_get_attributes($cont->[0][2]);
+    my $alt = ($cont->[1])? ' alt="' . cont_get_text($cont->[1]) . '"' : '';
+    my $title = ($cont->[2][1])? ' title="' . $cont->[2][1] . '"' : '';
+    return '<img' . $id . $classes . ' src="' . $cont->[2][0] . '"' . $alt . $title . $attrs . '>';
   }
   warn "block_get_text: Unrecognized type $type";
   return '';
