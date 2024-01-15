@@ -17,6 +17,30 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><defs
    id="defs3961"><rect
+     x="933.86259"
+     y="1902.4019"
+     width="86.21011"
+     height="28.415623"
+     id="rect106" /><rect
+     x="950.71931"
+     y="1903.3651"
+     width="185.42398"
+     height="61.165832"
+     id="rect102" /><inkscape:path-effect
+     effect="spiro"
+     id="path-effect101"
+     is_visible="true"
+     lpeversion="1" /><linearGradient
+     id="swatch101"
+     inkscape:swatch="solid"><stop
+       style="stop-color:#808080;stop-opacity:1;"
+       offset="0"
+       id="stop101" /></linearGradient><rect
+     x="1704.2149"
+     y="1820.2855"
+     width="176.75481"
+     height="10.354846"
+     id="rect101" /><rect
      x="409.00835"
      y="3213.1106"
      width="423.74739"
@@ -41,7 +65,15 @@
        id="title274">Forward and Right Arrow</title><path
        d="M 56,16 V 48 L 45,59 V 35 L 22,58 14,50 37,27 H 13 L 24,16 Z"
        style="stroke:none"
-       id="path274" /></symbol></defs><sodipodi:namedview
+       id="path274" /></symbol><linearGradient
+     inkscape:collect="always"
+     xlink:href="#swatch101"
+     id="linearGradient101"
+     x1="1706.3313"
+     y1="1871.5335"
+     x2="1837.4004"
+     y2="1871.5335"
+     gradientUnits="userSpaceOnUse" /></defs><sodipodi:namedview
    id="namedview3961"
    pagecolor="#ffffff"
    bordercolor="#666666"
@@ -50,15 +82,15 @@
    inkscape:pageopacity="0.0"
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="0.60315682"
-   inkscape:cx="1546.0324"
-   inkscape:cy="1739.1829"
+   inkscape:zoom="0.6713218"
+   inkscape:cx="1768.1535"
+   inkscape:cy="1762.1951"
    inkscape:window-width="1992"
    inkscape:window-height="1107"
-   inkscape:window-x="88"
-   inkscape:window-y="30"
+   inkscape:window-x="349"
+   inkscape:window-y="35"
    inkscape:window-maximized="0"
-   inkscape:current-layer="g2472"
+   inkscape:current-layer="g1"
    showgrid="false" />
 <style
    type="text/css"
@@ -542,206 +574,12 @@
    id="path99"
    sodipodi:nodetypes="cc" />
 	<path
-   style="fill:none"
-   d="m 1514.89,1567.279 c 267.538,-1.003 472.424,381.387 328.455,812.054"
+   style="fill:none;stroke:none;stroke-opacity:1"
+   d="m 1514.89,1563.5662 c 267.538,-1.003 472.424,381.387 328.455,812.054"
    id="path100" />
 	<text
-   transform="matrix(0.5785,0.8157,-0.8157,0.5785,1779.3633,1716.9648)"
-   id="text138"><tspan
-     x="0"
-     y="0"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     id="tspan100">H</tspan><tspan
-     x="10.204"
-     y="0.013"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="1.075"
-     id="tspan101">u</tspan><tspan
-     x="18.1"
-     y="0.162"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="1.998"
-     id="tspan102">b</tspan><tspan
-     x="25.954"
-     y="0.43700001"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="2.901"
-     id="tspan103">b</tspan><tspan
-     x="33.859001"
-     y="0.85100001"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="3.5339999"
-     id="tspan104">l</tspan><tspan
-     x="37.088001"
-     y="1.038"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="4.1589999"
-     id="tspan105">e</tspan><tspan
-     x="44.971001"
-     y="1.626"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="4.776"
-     id="tspan106">’</tspan><tspan
-     x="48.176998"
-     y="1.8839999"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="5.342"
-     id="tspan107">s</tspan><tspan
-     x="55.254002"
-     y="2.5539999"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="5.9460001"
-     id="tspan108"> </tspan><tspan
-     x="59.245998"
-     y="2.9419999"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="6.7919998"
-     id="tspan109">m</tspan><tspan
-     x="70.910004"
-     y="4.3509998"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="7.8270001"
-     id="tspan110">e</tspan><tspan
-     x="78.719002"
-     y="5.4250002"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="8.6450005"
-     id="tspan111">a</tspan><tspan
-     x="86.536003"
-     y="6.6160002"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="9.4139996"
-     id="tspan112">s</tspan><tspan
-     x="93.543999"
-     y="7.776"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="10.172"
-     id="tspan113">u</tspan><tspan
-     x="101.321"
-     y="9.1809998"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="10.805"
-     id="tspan114">r</tspan><tspan
-     x="106.016"
-     y="10.07"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="11.431"
-     id="tspan115">e</tspan><tspan
-     x="113.728"
-     y="11.614"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="12.387"
-     id="tspan116">m</tspan><tspan
-     x="125.231"
-     y="14.157"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="13.332"
-     id="tspan117">e</tspan><tspan
-     x="132.909"
-     y="15.979"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="14.079"
-     id="tspan118">n</tspan><tspan
-     x="140.558"
-     y="17.906"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="14.635"
-     id="tspan119">t</tspan><tspan
-     x="144.436"
-     y="18.913"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="15.152"
-     id="tspan120">s</tspan><tspan
-     x="151.32401"
-     y="20.787001"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="15.666"
-     id="tspan121"> </tspan><tspan
-     x="155.177"
-     y="21.857"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="16.209"
-     id="tspan122">o</tspan><tspan
-     x="162.77699"
-     y="24.077"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="16.75"
-     id="tspan123">f</tspan><tspan
-     x="166.601"
-     y="25.226999"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="17.108999"
-     id="tspan124"> </tspan><tspan
-     x="170.457"
-     y="26.415001"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="17.469"
-     id="tspan125">t</tspan><tspan
-     x="174.274"
-     y="27.608"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="17.997999"
-     id="tspan126">h</tspan><tspan
-     x="181.783"
-     y="30.049"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="18.691999"
-     id="tspan127">e</tspan><tspan
-     x="189.26601"
-     y="32.589001"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="19.211"
-     id="tspan128"> </tspan><tspan
-     x="193.041"
-     y="33.896999"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="19.726"
-     id="tspan129">u</tspan><tspan
-     x="200.495"
-     y="36.569"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="20.405001"
-     id="tspan130">n</tspan><tspan
-     x="207.897"
-     y="39.333"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="20.878"
-     id="tspan131">i</tspan><tspan
-     x="210.908"
-     y="40.474998"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="21.315001"
-     id="tspan132">v</tspan><tspan
-     x="217.55299"
-     y="43.067001"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="21.945999"
-     id="tspan133">e</tspan><tspan
-     x="224.866"
-     y="46.021999"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="22.472"
-     id="tspan134">r</tspan><tspan
-     x="229.29601"
-     y="47.848"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="22.964001"
-     id="tspan135">s</tspan><tspan
-     x="235.836"
-     y="50.630001"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="23.388"
-     id="tspan136">’</tspan><tspan
-     x="238.80701"
-     y="51.907001"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="23.811001"
-     id="tspan137">s</tspan><tspan
-     x="245.345"
-     y="54.798"
-     style="font-size:14px;font-family:'Nimbus Sans';fill:#808080"
-     rotate="24.264"
-     id="tspan138"> </tspan></text>
+   id="text138"
+   transform="matrix(0.5785,0.8157,-0.8157,0.5785,1779.3633,1716.9648)" />
 	<g
    id="g173">
 		<path
@@ -10585,7 +10423,16 @@
 	<g
    id="g2002">
 	</g>
-</g><a
+<text
+   xml:space="preserve"
+   id="text101"
+   style="font-size:14.8512px;line-height:1.25;font-family:Optima;-inkscape-font-specification:Optima;text-align:end;text-anchor:end;white-space:pre;fill:#8b8b8b;fill-opacity:1;stroke:none;stroke-opacity:0.290433"
+   transform="rotate(-31.202893,1133.9084,2098.7678)"><textPath
+     xlink:href="#path100"
+     startOffset="100%"
+     id="textPath101"><tspan
+       id="tspan101"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.8512px;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';fill:#8b8b8b;fill-opacity:1;stroke:none;stroke-opacity:0.290433">Hubble’s measurements of the universe’s</tspan></textPath></text></g><a
    id="a6-5"
    xlink:href="http://goo.gl/GI54Ai"
    transform="translate(17.31991,51)"><use
@@ -11266,11 +11113,11 @@
    xml:space="preserve"><tspan
      x="1446.5498"
      y="1376.7031"
-     id="tspan3"><tspan
+     id="tspan103"><tspan
        style="-inkscape-font-specification:'URW Classico'"
-       id="tspan1">Singularitie</tspan><tspan
+       id="tspan100">Singularitie</tspan><tspan
        style="-inkscape-font-specification:'URW Classico'"
-       id="tspan2">s</tspan></tspan></text>
+       id="tspan102">s</tspan></tspan></text>
 	<linearGradient
    id="SVGID_19_"
    gradientUnits="userSpaceOnUse"
@@ -11372,15 +11219,15 @@
    xml:space="preserve"><tspan
      x="72.848"
      y="0"
-     id="tspan5"><tspan
+     id="tspan105"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan4">Teleparalel</tspan>
+   id="tspan104">Teleparalel</tspan>
 </tspan><tspan
      x="72.848"
      y="40.000001"
-     id="tspan7"><tspan
+     id="tspan110"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan6">Theory</tspan></tspan></text>
+       id="tspan109">Theory</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -11410,17 +11257,17 @@
    y="0"><tspan
      x="62.274498"
      y="0"
-     id="tspan9"><tspan
+     id="tspan112"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan8">Cartan</tspan>
+   id="tspan111">Cartan</tspan>
 </tspan><tspan
      x="62.274498"
      y="26.095622"
-     id="tspan14"><tspan
-       style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan10">(1922)</tspan><tspan
-       y="26.095622"
-       id="tspan15">   </tspan></tspan></text>
+     id="tspan114"><tspan
+   style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
+   id="tspan113">(1922)</tspan><tspan
+   y="26.095622"
+   id="tspan115">   </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -11453,17 +11300,17 @@
    y="0"><tspan
      x="65.259827"
      y="0"
-     id="tspan23"><tspan
+     id="tspan117"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan16">Einstein
+       id="tspan116">Einstein
 </tspan></tspan><tspan
      x="65.259827"
      y="26.095622"
-     id="tspan25"><tspan
-       style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan24">(1928)</tspan><tspan
-       y="26.095622"
-       id="tspan26">       </tspan></tspan></text>
+     id="tspan119"><tspan
+   style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
+   id="tspan118">(1928)</tspan><tspan
+   y="26.095622"
+   id="tspan120">       </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -11512,17 +11359,17 @@
    xml:space="preserve"><tspan
      x="84.527992"
      y="0"
-     id="tspan29"><tspan
+     id="tspan123"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan27">Comforma</tspan><tspan
+   id="tspan121">Comforma</tspan><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan28">ly</tspan>
+   id="tspan122">ly</tspan>
 </tspan><tspan
      x="84.527992"
      y="40.000001"
-     id="tspan31"><tspan
+     id="tspan125"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan30">flat</tspan></tspan></text>
+       id="tspan124">flat</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -11582,22 +11429,22 @@
    xml:space="preserve"><tspan
      x="91.311974"
      y="0"
-     id="tspan34"><tspan
+     id="tspan128"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan32">Stratified</tspan><tspan
+       id="tspan126">Stratified</tspan><tspan
        style="text-align:center;text-anchor:middle"
-       id="tspan33">
+       id="tspan127">
 </tspan></tspan><tspan
      x="91.311974"
      y="40.000001"
-     id="tspan36"><tspan
+     id="tspan130"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan35">w/orthogonal </tspan></tspan><tspan
+       id="tspan129">w/orthogonal </tspan></tspan><tspan
      x="91.311974"
      y="79.999999"
-     id="tspan38"><tspan
+     id="tspan132"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan37">slices</tspan></tspan></text>
+       id="tspan131">slices</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -11684,15 +11531,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan40"><tspan
+     id="tspan134"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan39">Moffat</tspan>
+   id="tspan133">Moffat</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan42"><tspan
+     id="tspan136"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan41">(1979)</tspan></tspan></text>
+       id="tspan135">(1979)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -11726,33 +11573,33 @@
    xml:space="preserve"><tspan
      x="44.988857"
      y="0"
-     id="tspan44"><tspan
+     id="tspan138"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan43">Bergmann        </tspan></tspan><tspan
+       id="tspan137">Bergmann        </tspan></tspan><tspan
      x="44.988857"
      y="26.095622"
-     id="tspan47"><tspan
+     id="tspan2214"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan45">(1968)     </tspan><tspan
+       id="tspan2212">(1968)     </tspan><tspan
        style="text-align:center;text-anchor:middle"
-       id="tspan46">
+       id="tspan2213">
 </tspan></tspan><tspan
      x="44.988857"
      y="52.191243"
-     id="tspan49"><tspan
+     id="tspan2216"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan48">Nordtvedt   </tspan></tspan><tspan
+       id="tspan2215">Nordtvedt   </tspan></tspan><tspan
      x="44.988857"
      y="78.286867"
-     id="tspan51"><tspan
+     id="tspan2218"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan50">Wagoner
+       id="tspan2217">Wagoner
 </tspan></tspan><tspan
      x="44.988857"
      y="104.38249"
-     id="tspan53"><tspan
+     id="tspan2220"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan52">(1970)</tspan></tspan></text>
+       id="tspan2219">(1970)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -11784,17 +11631,17 @@
    xml:space="preserve"><tspan
      x="47.306141"
      y="0"
-     id="tspan56"><tspan
+     id="tspan2223"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan54">Bekenstein</tspan><tspan
+       id="tspan2221">Bekenstein</tspan><tspan
        style="text-align:center;text-anchor:middle"
-       id="tspan55">
+       id="tspan2222">
 </tspan></tspan><tspan
      x="47.306141"
      y="26.095622"
-     id="tspan58"><tspan
+     id="tspan2225"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan57">(1977)</tspan></tspan></text>
+       id="tspan2224">(1977)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -11853,15 +11700,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan60"><tspan
+     id="tspan2227"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan59">Moffat</tspan>
+   id="tspan2226">Moffat</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan62"><tspan
+     id="tspan2229"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan61">(2006)</tspan></tspan></text>
+       id="tspan2228">(2006)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -11893,15 +11740,15 @@
    y="0"><tspan
      x="74.111565"
      y="0"
-     id="tspan64"><tspan
+     id="tspan2231"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan63">Milgrom
+       id="tspan2230">Milgrom
 </tspan></tspan><tspan
      x="74.111565"
      y="26.095622"
-     id="tspan66"><tspan
+     id="tspan2233"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan65">(1983)</tspan></tspan></text>
+       id="tspan2232">(1983)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12000,15 +11847,15 @@
    xml:space="preserve"><tspan
      x="42.527992"
      y="0"
-     id="tspan68"><tspan
+     id="tspan2235"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan67">Gral. </tspan>
+   id="tspan2234">Gral. </tspan>
 </tspan><tspan
      x="42.527992"
      y="40.000001"
-     id="tspan70"><tspan
+     id="tspan2237"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan69">TEVES</tspan></tspan></text>
+       id="tspan2236">TEVES</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12116,17 +11963,17 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan72"><tspan
+     id="tspan2239"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan71">Dipolar</tspan>
+   id="tspan2238">Dipolar</tspan>
 </tspan><tspan
      x="0"
      y="40.000001"
-     id="tspan75"><tspan
+     id="tspan2242"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan73">dark </tspan><tspan
+       id="tspan2240">dark </tspan><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan74">matter</tspan></tspan></text>
+       id="tspan2241">matter</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12185,14 +12032,14 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan77"><tspan
+     id="tspan2244"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan76">Einstein </tspan></tspan><tspan
+       id="tspan2243">Einstein </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan79"><tspan
+     id="tspan2246"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan78">(1925)</tspan></tspan></text>
+       id="tspan2245">(1925)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12372,17 +12219,17 @@
    xml:space="preserve"><tspan
      x="745.64362"
      y="769.82928"
-     id="tspan81"><tspan
+     id="tspan2248"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan80">Lightest </tspan>
+   id="tspan2247">Lightest </tspan>
 </tspan><tspan
      x="745.64362"
      y="795.92494"
-     id="tspan84"><tspan
+     id="tspan2251"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan82">Kalusa </tspan><tspan
+       id="tspan2249">Kalusa </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan83">Klein</tspan></tspan></text>
+       id="tspan2250">Klein</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12437,14 +12284,14 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan86"><tspan
+     id="tspan2253"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#465124"
-       id="tspan85">supermassive </tspan></tspan><tspan
+       id="tspan2252">supermassive </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan88"><tspan
+     id="tspan2255"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#465124"
-       id="tspan87">wimpzillas</tspan></tspan></text>
+       id="tspan2254">wimpzillas</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12476,30 +12323,30 @@
    y="0"><tspan
      x="88.662468"
      y="0"
-     id="tspan90"><tspan
+     id="tspan2257"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-   id="tspan89">sterile</tspan><tspan
+   id="tspan2256">sterile</tspan><tspan
    y="0"
-   id="tspan91"> </tspan></tspan><tspan
+   id="tspan2258"> </tspan></tspan><tspan
      x="88.662468"
      y="26.095622"
-     id="tspan93"><tspan
+     id="tspan2260"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-   id="tspan92">neutrinos,</tspan><tspan
+   id="tspan2259">neutrinos,</tspan><tspan
    y="26.095622"
-   id="tspan94"> </tspan></tspan><tspan
+   id="tspan2261"> </tspan></tspan><tspan
      x="88.662468"
      y="52.191243"
-     id="tspan96"><tspan
+     id="tspan2263"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-   id="tspan95">gravitons</tspan><tspan
+   id="tspan2262">gravitons</tspan><tspan
    y="52.191243"
-   id="tspan97"> </tspan></tspan><tspan
+   id="tspan2264"> </tspan></tspan><tspan
      x="88.662468"
      y="78.286867"
-     id="tspan99"><tspan
+     id="tspan2267"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-       id="tspan98">(warm)</tspan></tspan></text>
+       id="tspan2266">(warm)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12533,31 +12380,31 @@
    xml:space="preserve"><tspan
      x="310.37085"
      y="0"
-     id="tspan338"><tspan
+     id="tspan2269"><tspan
    style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-   id="tspan337"> </tspan><tspan
+   id="tspan2268"> </tspan><tspan
    y="0"
-   id="tspan339">   </tspan></tspan><tspan
+   id="tspan2270">   </tspan></tspan><tspan
      x="310.37085"
      y="27.612337"
-     id="tspan341"><tspan
+     id="tspan2272"><tspan
    style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan340">Mannheim,</tspan><tspan
+   id="tspan2271">Mannheim,</tspan><tspan
    y="27.612337"
-   id="tspan342"> </tspan></tspan><tspan
+   id="tspan2273"> </tspan></tspan><tspan
      x="310.37085"
      y="55.224674"
-     id="tspan345"><tspan
+     id="tspan2276"><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan343">Kazanas</tspan><tspan
+       id="tspan2274">Kazanas</tspan><tspan
        style="fill:#4f5b28"
-       id="tspan344">
+       id="tspan2275">
 </tspan></tspan><tspan
      x="310.37085"
      y="82.837009"
-     id="tspan347"><tspan
+     id="tspan2278"><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan346">(1989)</tspan></tspan></text>
+       id="tspan2277">(1989)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12616,21 +12463,21 @@
    xml:space="preserve"><tspan
      x="46.429333"
      y="0"
-     id="tspan349"><tspan
+     id="tspan2280"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan348">Randall,</tspan>
+   id="tspan2279">Randall,</tspan>
 </tspan><tspan
      x="46.429333"
      y="26.095622"
-     id="tspan351"><tspan
+     id="tspan2282"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan350">Sundrum
+       id="tspan2281">Sundrum
 </tspan></tspan><tspan
      x="46.429333"
      y="52.191243"
-     id="tspan353"><tspan
+     id="tspan2284"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan352">   (1999)  </tspan></tspan></text>
+       id="tspan2283">   (1999)  </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12660,19 +12507,19 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan355"><tspan
+     id="tspan2286"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan354">Super </tspan></tspan><tspan
+       id="tspan2285">Super </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan357"><tspan
+     id="tspan2288"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan356">massive </tspan></tspan><tspan
+       id="tspan2287">massive </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan359"><tspan
+     id="tspan2290"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan358">gravity</tspan></tspan></text>
+       id="tspan2289">gravity</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12727,15 +12574,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan361"><tspan
+     id="tspan2292"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan360">Townsend</tspan>
+   id="tspan2291">Townsend</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan363"><tspan
+     id="tspan2294"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan362">(1987)</tspan></tspan></text>
+       id="tspan2293">(1987)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12765,15 +12612,15 @@
    xml:space="preserve"><tspan
      x="37.034904"
      y="0"
-     id="tspan365"><tspan
+     id="tspan2296"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan364">Utiyama
+       id="tspan2295">Utiyama
 </tspan></tspan><tspan
      x="37.034904"
      y="26.095622"
-     id="tspan367"><tspan
+     id="tspan2298"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan366">(1956)</tspan></tspan></text>
+       id="tspan2297">(1956)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12800,15 +12647,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan369"><tspan
+     id="tspan2300"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan368">Birkhoff
+       id="tspan2299">Birkhoff
 </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan371"><tspan
+     id="tspan2302"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan370">(1944)</tspan></tspan></text>
+       id="tspan2301">(1944)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12836,18 +12683,18 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan374"><tspan
+     id="tspan2305"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan372">Moshinsky</tspan><tspan
+       id="tspan2303">Moshinsky</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';fill:#4f5b28"
-       id="tspan373"> </tspan></tspan><tspan
+       id="tspan2304"> </tspan></tspan><tspan
      x="0"
      y="26.666625"
-     id="tspan377"><tspan
+     id="tspan2308"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';fill:#4f5b28"
-       id="tspan375">(</tspan><tspan
+       id="tspan2306">(</tspan><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan376">1950)</tspan></tspan></text>
+       id="tspan2307">1950)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12879,23 +12726,23 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan379"><tspan
+     id="tspan2310"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan378">Thiring,
+       id="tspan2309">Thiring,
 </tspan></tspan><tspan
      x="0"
      y="26.270122"
-     id="tspan382"><tspan
+     id="tspan2313"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan380">Kalman</tspan><tspan
+       id="tspan2311">Kalman</tspan><tspan
        style="fill:#4f5b28"
-       id="tspan381">
+       id="tspan2312">
 </tspan></tspan><tspan
      x="0"
      y="52.365743"
-     id="tspan384"><tspan
+     id="tspan2315"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan383">(1961)</tspan></tspan></text>
+       id="tspan2314">(1961)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12918,15 +12765,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan386"><tspan
+     id="tspan2317"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan385">Witten
+       id="tspan2316">Witten
 </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan388"><tspan
+     id="tspan2319"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan387">(1995)</tspan></tspan></text>
+       id="tspan2318">(1995)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -12952,17 +12799,17 @@
    xml:space="preserve"><tspan
      x="148.53624"
      y="0"
-     id="tspan389">                    </tspan><tspan
+     id="tspan2320">                    </tspan><tspan
      x="148.53624"
      y="26.666625"
-     id="tspan391"><tspan
+     id="tspan2322"><tspan
        style="text-align:end;text-anchor:end"
-       id="tspan390">Kaluza </tspan></tspan><tspan
+       id="tspan2321">Kaluza </tspan></tspan><tspan
      x="148.53624"
      y="53.333249"
-     id="tspan393"><tspan
+     id="tspan2324"><tspan
        style="text-align:end;text-anchor:end"
-       id="tspan392">(1921)</tspan></tspan></text>
+       id="tspan2323">(1921)</tspan></tspan></text>
 		</g>
 	</g>
 	<rect
@@ -12999,20 +12846,20 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan395"><tspan
+     id="tspan2326"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan394">Einstein, </tspan></tspan><tspan
+       id="tspan2325">Einstein, </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan397"><tspan
+     id="tspan2328"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan396">Fokker
+       id="tspan2327">Fokker
 </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan399"><tspan
+     id="tspan2330"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan398">(1914)</tspan></tspan></text>
+       id="tspan2329">(1914)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13042,19 +12889,19 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan403"><tspan
+     id="tspan2334"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan400">  </tspan><tspan
+       id="tspan2331">  </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan401">Whitehea</tspan><tspan
+       id="tspan2332">Whitehea</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan402">d
+       id="tspan2333">d
 </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan405"><tspan
+     id="tspan2336"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan404">(1922)</tspan></tspan></text>
+       id="tspan2335">(1922)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13081,16 +12928,16 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan408"><tspan
+     id="tspan2339"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan406">Nordstro</tspan><tspan
+       id="tspan2337">Nordstro</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan407">m </tspan></tspan><tspan
+       id="tspan2338">m </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan410"><tspan
+     id="tspan2341"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan409">(1912)</tspan></tspan></text>
+       id="tspan2340">(1912)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13152,9 +12999,9 @@
    y="0"><tspan
      x="87.681267"
      y="0"
-     id="tspan412"><tspan
+     id="tspan2343"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan411">Eddington (1936)</tspan></tspan></text>
+       id="tspan2342">Eddington (1936)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13179,9 +13026,9 @@
    y="0"><tspan
      x="6.6387987"
      y="0"
-     id="tspan414"><tspan
+     id="tspan2345"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan413">Dirac (1938)</tspan></tspan></text>
+       id="tspan2344">Dirac (1938)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13209,15 +13056,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan416"><tspan
+     id="tspan2348"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan415">Thiry</tspan>
+   id="tspan2347">Thiry</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan418"><tspan
+     id="tspan2350"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan417">(1948-51)</tspan></tspan></text>
+       id="tspan2349">(1948-51)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13271,20 +13118,20 @@
      xml:space="preserve"><tspan
        x="0"
        y="0"
-       id="tspan420"><tspan
+       id="tspan2352"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-         id="tspan419">Ostriker,
+         id="tspan2351">Ostriker,
 </tspan></tspan><tspan
        x="0"
        y="26.095622"
-       id="tspan422"><tspan
+       id="tspan2354"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-         id="tspan421">Peebles </tspan></tspan><tspan
+         id="tspan2353">Peebles </tspan></tspan><tspan
        x="0"
        y="52.191243"
-       id="tspan424"><tspan
+       id="tspan2356"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-         id="tspan423">(1973)</tspan></tspan></text></a><a
+         id="tspan2355">(1973)</tspan></tspan></text></a><a
    id="a3"
    xlink:href="http://adsabs.harvard.edu/full/1973ApJ...186..467O7"><a
      id="a31"
@@ -13343,15 +13190,15 @@
    xml:space="preserve"><tspan
      x="74.111565"
      y="0"
-     id="tspan426"><tspan
+     id="tspan2358"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan425">Milgrom
+       id="tspan2357">Milgrom
 </tspan></tspan><tspan
      x="74.111565"
      y="26.095622"
-     id="tspan428"><tspan
+     id="tspan2360"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan427">(2010)</tspan></tspan></text>
+       id="tspan2359">(2010)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13382,23 +13229,23 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan430"><tspan
+     id="tspan2362"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan429">Littlewood
+       id="tspan2361">Littlewood
 </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan432"><tspan
+     id="tspan2364"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan431">Bergmann
+       id="tspan2363">Bergmann
 </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan435"><tspan
+     id="tspan2367"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan433">(1953-195</tspan><tspan
+       id="tspan2365">(1953-195</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan434">6)</tspan></tspan></text>
+       id="tspan2366">6)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13433,19 +13280,19 @@
      xml:space="preserve"><tspan
        x="167.32513"
        y="0"
-       id="tspan439"><tspan
+       id="tspan2371"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-         id="tspan436">Whitrow, </tspan><tspan
+         id="tspan2368">Whitrow, </tspan><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-         id="tspan437">Morduch </tspan><tspan
+         id="tspan2369">Morduch </tspan><tspan
          style="text-align:end;text-anchor:end"
-         id="tspan438">
+         id="tspan2370">
 </tspan></tspan><tspan
        x="167.32513"
        y="26.095622"
-       id="tspan441"><tspan
+       id="tspan2373"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-         id="tspan440">(1960)</tspan></tspan></text></a>
+         id="tspan2372">(1960)</tspan></tspan></text></a>
 		</g>
 	</g>
 	<g
@@ -13503,16 +13350,16 @@
    xml:space="preserve"><tspan
      x="87.190681"
      y="0"
-     id="tspan444"><tspan
+     id="tspan2376"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan442">Papapetro</tspan><tspan
+       id="tspan2374">Papapetro</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan443">u     </tspan></tspan><tspan
+       id="tspan2375">u     </tspan></tspan><tspan
      x="87.190681"
      y="26.095622"
-     id="tspan446"><tspan
+     id="tspan2378"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan445">(1954)</tspan></tspan></text>
+       id="tspan2377">(1954)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13699,14 +13546,14 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan448"><tspan
+     id="tspan2380"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan447">Rosen </tspan></tspan><tspan
+       id="tspan2379">Rosen </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan450"><tspan
+     id="tspan2382"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan449">(1973)</tspan></tspan></text>
+       id="tspan2381">(1973)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13820,20 +13667,20 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan452"><tspan
+     id="tspan2384"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan451">Bruneton,  </tspan>
+   id="tspan2383">Bruneton,  </tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan454"><tspan
+     id="tspan2386"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan453">Esposito-Farese </tspan></tspan><tspan
+       id="tspan2385">Esposito-Farese </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan639"><tspan
+     id="tspan2388"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan638">(2007)</tspan></tspan></text>
+       id="tspan2387">(2007)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13864,19 +13711,19 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan642"><tspan
+     id="tspan2391"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan640">Zlosnik,   </tspan><tspan
+   id="tspan2389">Zlosnik,   </tspan><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan641">Ferreira,</tspan>
+   id="tspan2390">Ferreira,</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan645"><tspan
+     id="tspan2394"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan643">Starkman </tspan><tspan
+       id="tspan2392">Starkman </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan644">(2007)</tspan></tspan></text>
+       id="tspan2393">(2007)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13928,17 +13775,17 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan647"><tspan
+     id="tspan2396"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#465124"
-   id="tspan646">Generalized</tspan>
+   id="tspan2395">Generalized</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan650"><tspan
+     id="tspan2399"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#465124"
-       id="tspan648">Chaplygin </tspan><tspan
+       id="tspan2397">Chaplygin </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#465124"
-       id="tspan649">gas</tspan></tspan></text>
+       id="tspan2398">gas</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -13967,15 +13814,15 @@
    xml:space="preserve"><tspan
      x="36.272907"
      y="0"
-     id="tspan652"><tspan
+     id="tspan2401"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#465124"
-   id="tspan651">Tachyon</tspan>
+   id="tspan2400">Tachyon</tspan>
 </tspan><tspan
      x="36.272907"
      y="26.095622"
-     id="tspan654"><tspan
+     id="tspan2403"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#465124"
-       id="tspan653"> field</tspan></tspan></text>
+       id="tspan2402"> field</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14004,15 +13851,15 @@
    xml:space="preserve"><tspan
      x="52.055538"
      y="0"
-     id="tspan656"><tspan
+     id="tspan2405"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#465124"
-   id="tspan655">Condensate</tspan>
+   id="tspan2404">Condensate</tspan>
 </tspan><tspan
      x="52.055538"
      y="26.095622"
-     id="tspan658"><tspan
+     id="tspan2407"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#465124"
-       id="tspan657">cosmology</tspan></tspan></text>
+       id="tspan2406">cosmology</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14040,20 +13887,20 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan660"><tspan
+     id="tspan2409"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan659">Harko,   Lobo, 
+       id="tspan2408">Harko,   Lobo, 
 </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan662"><tspan
+     id="tspan2411"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan661">Nojiri, Odintsov  </tspan></tspan><tspan
+       id="tspan2410">Nojiri, Odintsov  </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan664"><tspan
+     id="tspan2413"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan663">(2011)</tspan></tspan></text>
+       id="tspan2412">(2011)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14081,16 +13928,16 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan667"><tspan
+     id="tspan2416"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan665">Starobins</tspan><tspan
+       id="tspan2414">Starobins</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan666">ky</tspan></tspan><tspan
+       id="tspan2415">ky</tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan669"><tspan
+     id="tspan2418"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan668">(1980)</tspan></tspan></text>
+       id="tspan2417">(1980)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14132,17 +13979,17 @@
    y="0"><tspan
      x="99.038101"
      y="0"
-     id="tspan672"><tspan
+     id="tspan2421"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan670">Maldacena</tspan><tspan
+       id="tspan2419">Maldacena</tspan><tspan
        style="text-align:end;text-anchor:end"
-       id="tspan671">
+       id="tspan2420">
 </tspan></tspan><tspan
      x="99.038101"
      y="26.095622"
-     id="tspan674"><tspan
+     id="tspan2423"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan673">   (1998)</tspan></tspan></text>
+       id="tspan2422">   (1998)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14175,19 +14022,19 @@
    xml:space="preserve"><tspan
      x="87.347267"
      y="0"
-     id="tspan676"><tspan
+     id="tspan2425"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan675">Jacobson, </tspan></tspan><tspan
+       id="tspan2424">Jacobson, </tspan></tspan><tspan
      x="87.347267"
      y="26.095622"
-     id="tspan678"><tspan
+     id="tspan2427"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan677">Smolin </tspan></tspan><tspan
+       id="tspan2426">Smolin </tspan></tspan><tspan
      x="87.347267"
      y="52.191243"
-     id="tspan680"><tspan
+     id="tspan2429"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan679">(1988)  </tspan></tspan></text>
+       id="tspan2428">(1988)  </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14213,15 +14060,15 @@
    xml:space="preserve"><tspan
      x="77.076019"
      y="0"
-     id="tspan682"><tspan
+     id="tspan2431"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan681">Ashtekar
+       id="tspan2430">Ashtekar
 </tspan></tspan><tspan
      x="77.076019"
      y="26.095622"
-     id="tspan684"><tspan
+     id="tspan2434"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan683">(1984) </tspan></tspan></text>
+       id="tspan2433">(1984) </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14248,23 +14095,23 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan687"><tspan
+     id="tspan2437"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan685">  </tspan><tspan
+       id="tspan2435">  </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan686">Hernández,
+       id="tspan2436">Hernández,
 </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan689"><tspan
+     id="tspan2439"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan688">Mendoza
+       id="tspan2438">Mendoza
 </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan691"><tspan
+     id="tspan2441"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan690">(2011-13)</tspan></tspan></text>
+       id="tspan2440">(2011-13)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14289,16 +14136,16 @@
    xml:space="preserve"><tspan
      x="121.88799"
      y="0"
-     id="tspan694"><tspan
+     id="tspan2444"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan692">Conforma</tspan><tspan
+       id="tspan2442">Conforma</tspan><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan693">l</tspan></tspan><tspan
+       id="tspan2443">l</tspan></tspan><tspan
      x="121.88799"
      y="40.000001"
-     id="tspan696"><tspan
+     id="tspan2446"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan695">Gravity</tspan></tspan></text>
+       id="tspan2445">Gravity</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14360,49 +14207,49 @@
    xml:space="preserve"><tspan
      x="427.71765"
      y="0"
-     id="tspan698"><tspan
+     id="tspan2448"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan697">de-Sitter </tspan></tspan><tspan
+       id="tspan2447">de-Sitter </tspan></tspan><tspan
      x="427.71765"
      y="26.666625"
-     id="tspan1138"><tspan
+     id="tspan2451"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1136">(1911)</tspan><tspan
+       id="tspan2449">(1911)</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1137">
+       id="tspan2450">
 </tspan></tspan><tspan
      x="427.71765"
      y="53.333249"
-     id="tspan1141"><tspan
+     id="tspan2454"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1139">Minkowski</tspan><tspan
+       id="tspan2452">Minkowski</tspan><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end"
-       id="tspan1140"> </tspan></tspan><tspan
+       id="tspan2453"> </tspan></tspan><tspan
      x="427.71765"
      y="79.999871"
-     id="tspan1144"><tspan
+     id="tspan2457"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2d5016"
-       id="tspan1142">(1908)</tspan><tspan
+       id="tspan2455">(1908)</tspan><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1143">
+       id="tspan2456">
 </tspan></tspan><tspan
      x="427.71765"
      y="106.6665"
-     id="tspan1146"><tspan
+     id="tspan2459"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1145">     Poincaré
+       id="tspan2458">     Poincaré
 </tspan></tspan><tspan
      x="427.71765"
      y="134.27883"
-     id="tspan1151"><tspan
+     id="tspan2464"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1147">        </tspan><tspan
+       id="tspan2460">        </tspan><tspan
        style="font-size:21.3333px;fill:#2d5016"
-       id="tspan1148">  </tspan><tspan
+       id="tspan2461">  </tspan><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-       id="tspan1149">(</tspan><tspan
+       id="tspan2462">(</tspan><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#2d5016"
-       id="tspan1150">1905)</tspan></tspan></text>
+       id="tspan2463">1905)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14431,19 +14278,19 @@
    xml:space="preserve"><tspan
      x="49.671989"
      y="0"
-     id="tspan1153"><tspan
+     id="tspan2466"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan1152">Metric </tspan></tspan><tspan
+       id="tspan2465">Metric </tspan></tspan><tspan
      x="49.671989"
      y="40.000001"
-     id="tspan1155"><tspan
+     id="tspan2468"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan1154">Affine </tspan></tspan><tspan
+       id="tspan2467">Affine </tspan></tspan><tspan
      x="49.671989"
      y="79.999999"
-     id="tspan1157"><tspan
+     id="tspan2470"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan1156">Gravity</tspan></tspan></text>
+       id="tspan2469">Gravity</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14475,16 +14322,16 @@
    xml:space="preserve"><tspan
      x="107.488"
      y="0"
-     id="tspan1159"><tspan
+     id="tspan2472"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan1158">Non-Symmetric</tspan><tspan
+   id="tspan2471">Non-Symmetric</tspan><tspan
    y="0"
-   id="tspan1160"> </tspan></tspan><tspan
+   id="tspan2473"> </tspan></tspan><tspan
      x="107.488"
      y="40.000001"
-     id="tspan1162"><tspan
+     id="tspan2475"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan1161">Gravity Theory</tspan></tspan></text>
+       id="tspan2474">Gravity Theory</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14540,15 +14387,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1164"><tspan
+     id="tspan2477"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan1163">General</tspan>
+   id="tspan2476">General</tspan>
 </tspan><tspan
      x="0"
      y="40.000001"
-     id="tspan1166"><tspan
+     id="tspan2479"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan1165">Relativity</tspan></tspan></text>
+       id="tspan2478">Relativity</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14575,15 +14422,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1168"><tspan
+     id="tspan2481"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan1167">Gauge</tspan>
+   id="tspan2480">Gauge</tspan>
 </tspan><tspan
      x="0"
      y="40.000001"
-     id="tspan1170"><tspan
+     id="tspan2483"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan1169">gravity</tspan></tspan></text>
+       id="tspan2482">gravity</tspan></tspan></text>
 		</g>
 	</g>
 	<path
@@ -14616,15 +14463,15 @@
    xml:space="preserve"><tspan
      x="106.30311"
      y="0"
-     id="tspan1172"><tspan
+     id="tspan2485"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1171">Capozziello</tspan>
+   id="tspan2484">Capozziello</tspan>
 </tspan><tspan
      x="106.30311"
      y="26.095622"
-     id="tspan1174"><tspan
+     id="tspan2487"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1173">(2006)</tspan></tspan></text>
+       id="tspan2486">(2006)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14656,17 +14503,17 @@
    xml:space="preserve"><tspan
      x="104.73735"
      y="0"
-     id="tspan1176"><tspan
+     id="tspan2489"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1175">Carroll</tspan>
+   id="tspan2488">Carroll</tspan>
 </tspan><tspan
      x="104.73735"
      y="26.095622"
-     id="tspan1178"><tspan
+     id="tspan2491"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1177">(2004-05) </tspan><tspan
+   id="tspan2490">(2004-05) </tspan><tspan
    y="26.095622"
-   id="tspan1179"> </tspan></tspan></text>
+   id="tspan2492"> </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14696,29 +14543,29 @@
    xml:space="preserve"><tspan
      x="166.59444"
      y="0"
-     id="tspan1329"><tspan
+     id="tspan2494"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1180">Blumenthal,     
+       id="tspan2493">Blumenthal,     
 </tspan></tspan><tspan
      x="166.59444"
      y="26.666625"
-     id="tspan1331"><tspan
+     id="tspan2496"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1330">  Faber,  Primack,  
+       id="tspan2495">  Faber,  Primack,  
 </tspan></tspan><tspan
      x="166.59444"
      y="53.333249"
-     id="tspan1333"><tspan
+     id="tspan2498"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1332">   Rees   
+       id="tspan2497">   Rees   
 </tspan></tspan><tspan
      x="166.59444"
      y="79.999871"
-     id="tspan1336"><tspan
+     id="tspan2501"><tspan
        style="font-size:21.3333px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1334">(1984</tspan><tspan
+       id="tspan2499">(1984</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1335">) </tspan></tspan></text>
+       id="tspan2500">) </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14776,17 +14623,17 @@
    xml:space="preserve"><tspan
      x="128.93323"
      y="0"
-     id="tspan1338"><tspan
+     id="tspan2503"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1337">Belinfante,
+       id="tspan2502">Belinfante,
 </tspan></tspan><tspan
      x="128.93323"
      y="26.095622"
-     id="tspan1341"><tspan
+     id="tspan2506"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1339">Swihart </tspan><tspan
+       id="tspan2504">Swihart </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1340">(1957)</tspan></tspan></text>
+       id="tspan2505">(1957)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14840,23 +14687,23 @@
    xml:space="preserve"><tspan
      x="84.800323"
      y="0"
-     id="tspan1344"><tspan
+     id="tspan2509"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1342">Jacobson</tspan><tspan
+       id="tspan2507">Jacobson</tspan><tspan
        style="text-align:end;text-anchor:end"
-       id="tspan1343">
+       id="tspan2508">
 </tspan></tspan><tspan
      x="84.800323"
      y="26.095622"
-     id="tspan1346"><tspan
+     id="tspan2511"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1345">Mattingly
+       id="tspan2510">Mattingly
 </tspan></tspan><tspan
      x="84.800323"
      y="52.191243"
-     id="tspan1348"><tspan
+     id="tspan2513"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1347">(2001)</tspan></tspan></text>
+       id="tspan2512">(2001)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14884,15 +14731,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1350"><tspan
+     id="tspan2515"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1349">Einstein</tspan>
+   id="tspan2514">Einstein</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1352"><tspan
+     id="tspan2517"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1351">(1917)</tspan></tspan></text>
+       id="tspan2516">(1917)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -14915,15 +14762,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1354"><tspan
+     id="tspan2519"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1353">Barker</tspan>
+   id="tspan2518">Barker</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1356"><tspan
+     id="tspan2521"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1355">(1978)</tspan></tspan></text>
+       id="tspan2520">(1978)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15010,15 +14857,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1358"><tspan
+     id="tspan2523"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1357">Jordan
+       id="tspan2522">Jordan
 </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1360"><tspan
+     id="tspan2525"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1359">(1947)</tspan></tspan></text>
+       id="tspan2524">(1947)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15044,15 +14891,15 @@
    y="0"><tspan
      x="55.531467"
      y="0"
-     id="tspan1362"><tspan
+     id="tspan2527"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1361">Hehl
+       id="tspan2526">Hehl
 </tspan></tspan><tspan
      x="55.531467"
      y="26.095622"
-     id="tspan1364"><tspan
+     id="tspan2529"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1363">(1976)</tspan></tspan></text>
+       id="tspan2528">(1976)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15087,20 +14934,20 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1367"><tspan
+     id="tspan2532"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1365">Logunov, </tspan><tspan
+       id="tspan2530">Logunov, </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1366">Loskutov, </tspan></tspan><tspan
+       id="tspan2531">Loskutov, </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1371"><tspan
+     id="tspan2536"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1368">Mestvirishvili</tspan><tspan
+       id="tspan2533">Mestvirishvili</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1369"> </tspan><tspan
+       id="tspan2534"> </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1370">(1988)</tspan></tspan></text>
+       id="tspan2535">(1988)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15222,15 +15069,15 @@
    xml:space="preserve"><tspan
      x="6.0272214e-07"
      y="0"
-     id="tspan1373"><tspan
+     id="tspan2538"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1372">Milgrom</tspan>
+   id="tspan2537">Milgrom</tspan>
 </tspan><tspan
      x="6.0272214e-07"
      y="26.095622"
-     id="tspan1375"><tspan
+     id="tspan2540"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1374">(2009)</tspan> </tspan></text>
+   id="tspan2539">(2009)</tspan> </tspan></text>
 		</g>
 	</g>
 	<g
@@ -15260,17 +15107,17 @@
    xml:space="preserve"><tspan
      x="79.163689"
      y="0"
-     id="tspan1377"><tspan
+     id="tspan2542"><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle"
-       id="tspan1376">Blanchet,    Le Tiec
+       id="tspan2541">Blanchet,    Le Tiec
 </tspan></tspan><tspan
      x="79.163689"
      y="27.612337"
-     id="tspan1379"><tspan
+     id="tspan2544"><tspan
    style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle"
-   id="tspan1378">  (2007-09)</tspan><tspan
+   id="tspan2543">  (2007-09)</tspan><tspan
    y="27.612337"
-   id="tspan1380">         </tspan></tspan></text>
+   id="tspan2545">         </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15301,25 +15148,38 @@
    y="0"><tspan
      x="94.132103"
      y="0"
-     id="tspan1382"><tspan
+     id="tspan2547"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1381">Bond,</tspan><tspan
+   id="tspan2546">Bond,</tspan><tspan
    y="0"
-   id="tspan1383"> </tspan></tspan><tspan
+   id="tspan2548"> </tspan></tspan><tspan
      x="94.132103"
      y="26.095622"
-     id="tspan1385"><tspan
+     id="tspan2550"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1384">Efstathiou,</tspan><tspan
+   id="tspan2549">Efstathiou,</tspan><tspan
    y="26.095622"
-   id="tspan1386"> </tspan></tspan><tspan
+   id="tspan2551"> </tspan></tspan><tspan
      x="94.132103"
      y="52.191243"
-     id="tspan1388"><tspan
+     id="tspan2553"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1387">Silk (1980)</tspan></tspan></text>
+       id="tspan2552">Silk (1980)</tspan></tspan></text>
 		</g>
-	</g>
+	<g
+   id="text2"
+   style="font-size:5.64444px;line-height:1.25;font-family:Optima;-inkscape-font-specification:Optima;text-align:end;text-anchor:end;white-space:pre;stroke-width:1.97164"
+   transform="matrix(3.558482,0.03118679,-0.03118679,3.558482,35.882264,1456.8009)"
+   aria-label="a0   Weyl's tensor"><path
+     d="m 140.84752,165.81036 q -0.0935,0.0401 -0.22156,0.0712 -0.12242,0.0307 -0.25009,0.0675 -0.12805,0.0311 -0.25498,0.0791 -0.1213,0.0476 -0.2182,0.12192 -0.0913,0.0739 -0.14652,0.1794 -0.0496,0.10511 -0.0392,0.2628 0.0175,0.26471 0.17853,0.38982 0.16101,0.12511 0.34687,0.11281 0.21402,-0.0142 0.38079,-0.144 0.1724,-0.1302 0.25771,-0.29423 z m -1.45749,-0.91045 q 0.24078,-0.20827 0.45032,-0.29002 0.20955,-0.0817 0.43484,-0.0967 0.20275,-0.0134 0.37582,0.0374 0.17269,0.0451 0.29842,0.14995 0.12535,0.0992 0.20338,0.25241 0.0777,0.14759 0.09,0.33345 0.0212,0.32103 0.0312,0.64281 0.01,0.31614 0.0331,0.67097 0.004,0.0676 0.01,0.14643 0.0105,0.0729 0.0371,0.13331 0.0263,0.0548 0.0683,0.0917 0.0477,0.0364 0.13215,0.0308 0.0282,-0.002 0.0563,-0.004 0.0334,-0.008 0.0605,-0.0266 l 0.008,0.12391 q -0.0601,0.0323 -0.15471,0.0555 -0.089,0.0229 -0.20164,0.0303 -0.18023,0.0119 -0.28194,-0.0718 -0.10208,-0.0894 -0.12867,-0.23473 -0.18934,0.21618 -0.38012,0.32497 -0.19079,0.10879 -0.47803,0.1278 -0.1408,0.009 -0.27858,-0.0212 -0.13778,-0.0305 -0.25076,-0.11351 -0.10734,-0.0834 -0.18312,-0.20284 -0.0705,-0.12544 -0.0813,-0.28877 -0.0224,-0.33793 0.17372,-0.53758 0.20172,-0.20002 0.56934,-0.28658 0.30078,-0.0708 0.46751,-0.11579 0.17199,-0.051 0.24823,-0.0956 0.0819,-0.045 0.0954,-0.0968 0.0132,-0.0574 0.008,-0.14192 -0.009,-0.1408 -0.0517,-0.2681 -0.0424,-0.1273 -0.12192,-0.2182 -0.0796,-0.0909 -0.20156,-0.1394 -0.12238,-0.0541 -0.29134,-0.0429 -0.22528,0.0149 -0.4157,0.12933 -0.18478,0.11405 -0.2686,0.30062 l -0.0619,0.004 z"
+     id="path3-7"
+     style="stroke-width:1.97164;fill:#ccd0be;fill-opacity:1" /><path
+     style="font-size:3.66888px;baseline-shift:sub;stroke-width:1.97164;fill:#ccd0be;fill-opacity:1"
+     d="m 142.27448,166.3222 q -0.0144,-0.26009 0.0169,-0.48965 0.0312,-0.23323 0.12072,-0.40722 0.093,-0.17787 0.25238,-0.28592 0.15916,-0.11171 0.39727,-0.12492 0.26376,-0.0146 0.43429,0.0788 0.174,0.0896 0.27879,0.25645 0.10459,0.16322 0.15036,0.39218 0.0492,0.22509 0.0637,0.48518 0.014,0.25276 -0.0247,0.48273 -0.0387,0.22997 -0.13537,0.40803 -0.093,0.17786 -0.24871,0.28571 -0.1557,0.10785 -0.37916,0.12025 -0.26375,0.0146 -0.43754,-0.0713 -0.17013,-0.0861 -0.27473,-0.24933 -0.10479,-0.16689 -0.15402,-0.39198 -0.0458,-0.22895 -0.0602,-0.48904 z m 0.30039,-0.0167 q 0.0134,0.24178 0.0506,0.44916 0.0409,0.20718 0.11536,0.35738 0.0745,0.1502 0.18559,0.23222 0.11111,0.082 0.26863,0.0733 0.15752,-0.009 0.25888,-0.10255 0.10135,-0.0938 0.15876,-0.25132 0.0574,-0.15752 0.0715,-0.36774 0.0177,-0.21043 0.004,-0.45221 -0.0134,-0.24177 -0.0543,-0.44895 -0.0372,-0.20738 -0.1117,-0.35758 -0.0745,-0.1502 -0.18559,-0.23223 -0.11111,-0.082 -0.26863,-0.0733 -0.15752,0.009 -0.25928,0.0952 -0.10176,0.0865 -0.15937,0.24033 -0.0576,0.15385 -0.0751,0.36795 -0.0141,0.21022 3.7e-4,0.47031 z"
+     id="path4-9" /><path
+     d="m 153.06041,166.27881 q -0.0389,-0.14296 -0.12125,-0.45171 -0.0767,-0.3085 -0.17814,-0.69722 -0.10145,-0.38868 -0.2126,-0.8117 -0.11095,-0.42867 -0.21262,-0.81173 -0.10147,-0.3887 -0.18942,-0.69769 -0.0824,-0.30876 -0.13225,-0.45787 0.0728,0.0148 0.13997,0.0289 0.0675,0.008 0.14071,0.0121 0.0733,0.003 0.14124,8e-5 0.0682,-0.008 0.14197,-0.0163 0.0881,0.4333 0.1729,0.81561 0.085,0.37666 0.18053,0.77075 0.10146,0.38868 0.21211,0.823 0.11659,0.42892 0.26201,0.97211 l 0.0113,4.9e-4 q 0.0575,-0.15 0.15947,-0.41102 0.10221,-0.26666 0.22362,-0.58334 0.12163,-0.32231 0.25556,-0.66666 0.1339,-0.34438 0.24941,-0.65565 0.11571,-0.31692 0.20618,-0.57281 0.0907,-0.26153 0.13079,-0.401 0.11152,0.0332 0.18484,0.0363 0.0733,0.003 0.18733,-0.02 0.0326,0.15399 0.0999,0.42252 0.0729,0.26879 0.15983,0.60033 0.0873,0.32592 0.18454,0.68054 0.10292,0.35486 0.19579,0.68102 0.0929,0.32618 0.16599,0.58932 0.0787,0.26338 0.12296,0.41224 l 0.0113,5e-4 q 0.0451,-0.1223 0.13541,-0.37818 0.0964,-0.2613 0.21234,-0.58385 0.12189,-0.32794 0.24502,-0.68408 0.12903,-0.36153 0.23939,-0.68434 0.11625,-0.32819 0.20105,-0.58433 0.0905,-0.25589 0.12411,-0.3787 0.0502,0.0136 0.0948,0.0268 0.0505,0.008 0.10127,0.01 0.0507,0.002 0.096,-0.002 0.0512,-0.009 0.10249,-0.0181 -0.0622,0.12721 -0.18252,0.42132 -0.12039,0.29412 -0.27273,0.67155 -0.14669,0.37771 -0.3123,0.79976 -0.15996,0.4223 -0.31255,0.80539 -0.14669,0.3777 -0.26757,0.6831 -0.11504,0.29999 -0.17176,0.43308 -0.0897,-0.0152 -0.19122,-0.02 -0.10148,-0.005 -0.19221,0.003 -0.21902,-0.79506 -0.43212,-1.59551 -0.21287,-0.80608 -0.46296,-1.66467 l -0.0113,-5e-4 q -0.0509,0.1277 -0.13956,0.34411 -0.0828,0.21103 -0.19067,0.47746 -0.10221,0.26666 -0.2231,0.57205 -0.12089,0.3054 -0.24204,0.61641 -0.12113,0.31105 -0.23612,0.61104 -0.11504,0.3 -0.21058,0.54438 -0.0897,-0.0152 -0.19686,-0.0203 -0.10715,-0.004 -0.19786,0.002 z m 5.79166,-2.2691 q -0.20845,-0.0128 -0.36073,0.0744 -0.14663,0.0873 -0.25124,0.22798 -0.0986,0.13543 -0.15988,0.30703 -0.0552,0.16631 -0.0757,0.31776 0.17432,0.016 0.35993,0.0327 0.19118,0.018 0.3715,0.0283 0.18593,0.0112 0.37787,0.0166 0.19189,0.006 0.37253,0.0111 0.009,-0.15212 -0.009,-0.32285 -0.0124,-0.17039 -0.0824,-0.32163 -0.0644,-0.15091 -0.19385,-0.25486 -0.12945,-0.10387 -0.34919,-0.11715 z m -1.37997,1.22301 q 0.0417,-0.69303 0.39235,-1.0677 0.3562,-0.37435 0.98722,-0.33629 0.29864,0.0176 0.50695,0.12669 0.21429,0.10342 0.35127,0.26998 0.13732,0.16095 0.19235,0.37352 0.0607,0.21287 0.0464,0.44949 -0.003,0.0563 -0.0125,0.11236 -0.003,0.0508 -0.0121,0.10671 -0.30389,-0.0244 -0.60219,-0.0476 -0.29823,-0.0241 -0.60254,-0.0415 -0.18594,-0.0112 -0.37224,-0.0163 -0.18067,-0.004 -0.3669,-0.0108 -0.007,0.0279 -0.0108,0.0841 l -0.004,0.0733 q -0.0134,0.21972 0.0371,0.41503 0.0561,0.19564 0.1715,0.34397 0.1158,0.1427 0.291,0.23808 0.17554,0.0897 0.41217,0.10403 0.11268,0.007 0.23271,-0.0143 0.12036,-0.0267 0.23611,-0.0706 0.11607,-0.0495 0.21626,-0.11701 0.10584,-0.0671 0.18418,-0.14722 l 0.0272,0.0187 -0.0505,0.27403 q -0.17719,0.12503 -0.4365,0.20552 -0.25367,0.0808 -0.52413,0.0645 -0.30426,-0.018 -0.55233,-0.12378 -0.24215,-0.11072 -0.41754,-0.2966 -0.16943,-0.19117 -0.25622,-0.43956 -0.0812,-0.24804 -0.0641,-0.52975 z m 3.79422,1.50301 q -0.0511,-0.15643 -0.13526,-0.40574 -0.0786,-0.24891 -0.1723,-0.52152 -0.0934,-0.27826 -0.19201,-0.56255 -0.0982,-0.28991 -0.18799,-0.53962 -0.0838,-0.25493 -0.14935,-0.44635 -0.0656,-0.19139 -0.0986,-0.28427 0.0724,0.0165 0.13352,0.0321 0.0615,0.01 0.12349,0.0141 0.062,0.004 0.12428,0.003 0.0628,-0.007 0.13674,-0.0129 0.1361,0.55292 0.31243,1.09737 0.17632,0.54446 0.37277,1.12429 0.27168,-0.47865 0.52567,-1.02646 0.2596,-0.54742 0.46693,-1.07591 0.11061,0.0361 0.1838,0.0414 0.0731,0.005 0.18779,-0.0149 -0.045,0.076 -0.1487,0.26103 -0.0977,0.1798 -0.24034,0.43562 -0.13665,0.25058 -0.30585,0.5611 -0.16318,0.30528 -0.3392,0.63229 -0.17,0.32178 -0.34001,0.64356 -0.1696,0.31614 -0.31427,0.60011 -0.14508,0.2896 -0.25761,0.51926 -0.10725,0.23569 -0.16234,0.37326 -0.1106,-0.0361 -0.18943,-0.0417 -0.0788,-0.006 -0.19343,0.0146 0.49722,-0.70594 0.85931,-1.42148 z m 2.34843,-2.46799 q 0.016,-0.19125 0.0279,-0.41679 0.0179,-0.22507 0.0295,-0.44496 0.0116,-0.21991 0.0159,-0.41773 0.0106,-0.20301 0.0107,-0.34456 0.15529,0.0407 0.25095,0.0483 0.0956,0.007 0.25543,-0.008 -0.0224,0.13977 -0.0499,0.34143 -0.0213,0.19648 -0.0444,0.41547 -0.0235,0.21896 -0.0467,0.4436 -0.0179,0.22509 -0.0339,0.41634 l -0.0812,1.0184 q -0.016,0.19127 -0.0339,0.41633 -0.0119,0.22554 -0.0245,0.44537 -0.0116,0.21991 -0.0209,0.41733 -0.003,0.19787 -0.004,0.32814 -0.12852,-0.0216 -0.2523,-0.0314 -0.12377,-0.0101 -0.25412,-0.009 0.0216,-0.12851 0.0428,-0.32499 0.0269,-0.19604 0.05,-0.41502 0.0234,-0.21898 0.041,-0.44406 0.0238,-0.2246 0.0389,-0.41593 l 0.0812,-1.01841 z m 2.04714,-1.15607 -0.13912,1.61965 -0.2924,-0.0258 0.13903,-1.61963 z m 0.74562,3.50461 q 0.0229,0.0588 0.0727,0.13151 0.0555,0.0732 0.12842,0.14238 0.079,0.064 0.17653,0.11286 0.10312,0.0493 0.22113,0.0603 0.10678,0.0101 0.20546,-0.0148 0.10431,-0.0243 0.18315,-0.0793 0.0845,-0.0545 0.13833,-0.14582 0.0539,-0.0914 0.0655,-0.21497 0.016,-0.17425 -0.0765,-0.2736 -0.0867,-0.10442 -0.22749,-0.1743 -0.14033,-0.0754 -0.31037,-0.13668 -0.17002,-0.0611 -0.30879,-0.15355 -0.13825,-0.098 -0.22682,-0.24227 -0.0829,-0.1438 -0.0609,-0.37982 0.0176,-0.18546 0.0933,-0.33144 0.0765,-0.15159 0.20504,-0.25297 0.1285,-0.10135 0.30849,-0.14695 0.18052,-0.0512 0.40532,-0.0302 0.20791,0.0199 0.3432,0.0888 0.14086,0.0699 0.26593,0.12687 -0.0529,0.0801 -0.10371,0.20007 -0.0508,0.11997 -0.0684,0.18636 l -0.0674,-0.006 q -0.0324,-0.13907 -0.15166,-0.25793 -0.11928,-0.11883 -0.31037,-0.13668 -0.0843,-0.008 -0.17123,0.0124 -0.087,0.0202 -0.15961,0.0701 -0.0727,0.0499 -0.12603,0.13563 -0.0533,0.0857 -0.0649,0.20936 -0.0173,0.1798 0.0693,0.28991 0.0923,0.10495 0.23312,0.17484 0.14087,0.07 0.31089,0.13106 0.17054,0.0556 0.30932,0.14793 0.1393,0.0867 0.22224,0.2305 0.0885,0.14432 0.0666,0.38036 -0.0153,0.16298 -0.10299,0.31353 -0.0821,0.15107 -0.22908,0.26774 -0.1408,0.11157 -0.33309,0.16731 -0.19174,0.0501 -0.42779,0.0281 -0.25855,-0.0238 -0.42802,-0.0909 -0.16949,-0.0669 -0.28124,-0.14531 0.0407,-0.0699 0.0858,-0.19039 0.0514,-0.12558 0.0593,-0.2099 l 0.0674,0.006 z m 4.60491,-2.46871 q -0.0399,0.21145 -0.0733,0.41789 -0.0273,0.20145 -0.0609,0.40788 0.0617,0.008 0.23007,0.0252 0.16902,0.0117 0.36663,0.022 -0.007,0.0162 -0.0125,0.0611 l -0.005,0.0562 -0.008,0.0617 q -0.004,0.0393 -2.4e-4,0.0567 -0.0724,-0.0142 -0.15093,-0.0219 -0.078,-0.0145 -0.16778,-0.0236 l -0.275,-0.0295 q -0.008,0.0219 -0.0361,0.17777 -0.0225,0.15653 -0.0516,0.37483 -0.0285,0.21265 -0.0595,0.44775 -0.0255,0.23569 -0.0452,0.42092 -0.017,0.15712 -0.0277,0.30925 -0.005,0.15277 0.0266,0.28104 0.0322,0.12266 0.11419,0.20527 0.0819,0.0826 0.25031,0.10078 0.0448,0.006 0.11902,0.002 0.0798,-0.003 0.13771,-0.0135 l -0.0147,0.13467 q -0.0972,0.006 -0.21748,0.0164 -0.11526,0.0159 -0.22188,0.005 -0.35358,-0.038 -0.50325,-0.23006 -0.14966,-0.19206 -0.1135,-0.52879 0.0157,-0.15157 0.0405,-0.32489 0.025,-0.17899 0.0527,-0.38604 0.0342,-0.21206 0.0669,-0.464 0.0333,-0.25756 0.067,-0.57185 l -0.17958,-0.0193 q -0.0448,-0.006 -0.0961,-0.005 -0.0506,-0.005 -0.10722,-0.006 0.01,-0.033 0.0115,-0.0611 0.01,-0.033 0.0128,-0.0668 0.003,-0.028 2.4e-4,-0.0567 0.003,-0.028 2.4e-4,-0.0567 0.25074,0.0439 0.36859,0.0566 0.007,-0.11286 0.0191,-0.28181 0.0177,-0.1684 0.026,-0.34916 l 0.48691,-0.14639 z m 2.04371,1.11613 q -0.20744,-0.0242 -0.36434,0.0542 -0.15128,0.079 -0.2636,0.2136 -0.10609,0.12969 -0.1768,0.2976 -0.0644,0.16295 -0.0933,0.31302 0.17314,0.0259 0.3575,0.053 0.18997,0.0278 0.36938,0.0488 0.18503,0.0211 0.37627,0.0383 0.19126,0.017 0.3713,0.0324 0.0177,-0.15135 0.009,-0.32281 -0.003,-0.17081 -0.0643,-0.32574 -0.0559,-0.15428 -0.1793,-0.26528 -0.12343,-0.11101 -0.34208,-0.13653 z m -1.44622,1.14394 q 0.0806,-0.68958 0.45144,-1.04409 0.37658,-0.35385 1.00449,-0.28056 0.29715,0.0348 0.49907,0.15485 0.20818,0.11521 0.33561,0.28921 0.12811,0.16838 0.17118,0.38366 0.0486,0.21594 0.0212,0.45142 -0.006,0.0561 -0.0187,0.11148 -0.006,0.0504 -0.0181,0.10587 -0.30208,-0.0408 -0.59858,-0.0813 -0.29648,-0.0402 -0.59922,-0.0756 -0.18504,-0.0211 -0.37067,-0.0376 -0.18013,-0.0143 -0.36575,-0.0311 -0.009,0.0275 -0.0155,0.0834 l -0.009,0.0729 q -0.0255,0.21866 0.0143,0.41647 0.0451,0.19847 0.15202,0.35302 0.10763,0.14896 0.27722,0.25398 0.17024,0.0994 0.40572,0.12691 0.11209,0.0134 0.23313,-9.8e-4 0.12165,-0.0199 0.23968,-0.0573 0.11867,-0.043 0.22249,-0.10473 0.10942,-0.0612 0.19211,-0.1367 l 0.0261,0.02 -0.0658,0.27078 q -0.1839,0.11493 -0.44731,0.18079 -0.2578,0.0665 -0.52691,0.0351 -0.30274,-0.0354 -0.54457,-0.15446 -0.23556,-0.1241 -0.40027,-0.3195 -0.15848,-0.20034 -0.23126,-0.45319 -0.0672,-0.25219 -0.0345,-0.53251 z m 4.91659,0.26682 q 0.0545,-0.41981 -0.0802,-0.65358 -0.13398,-0.23937 -0.41945,-0.27642 -0.39184,-0.0508 -0.6078,0.16587 -0.21035,0.21744 -0.26702,0.65404 l -0.0617,0.47579 q -0.0327,0.2519 -0.0633,0.5325 -0.0238,0.27576 -0.0248,0.50331 -0.12729,-0.0279 -0.25044,-0.0439 -0.12314,-0.0161 -0.25333,-0.0215 0.0571,-0.22028 0.0982,-0.49383 0.0475,-0.27843 0.0802,-0.53031 l 0.0756,-0.58214 q 0.0327,-0.25189 0.057,-0.52763 0.0308,-0.2806 0.0341,-0.52492 0.15309,0.0483 0.24824,0.0607 0.0448,0.007 0.0959,0.006 0.0575,-0.004 0.13164,-0.006 -0.0459,0.22173 -0.0749,0.44563 l 0.0112,0.002 q 0.18797,-0.22034 0.42297,-0.32076 0.23575,-0.10601 0.53801,-0.0667 0.15674,0.0203 0.30764,0.0855 0.15651,0.0659 0.27074,0.19449 0.11494,0.12306 0.1686,0.32355 0.06,0.19562 0.0222,0.48669 -0.0312,0.24069 -0.0759,0.49672 -0.0439,0.25043 -0.0809,0.5359 l -0.0472,0.36385 q -0.0121,0.0896 -0.0232,0.17912 -0.005,0.0848 -0.01,0.16379 -0.11049,-0.0257 -0.23364,-0.0417 -0.11752,-0.0157 -0.23096,-0.0182 0.049,-0.28961 0.10014,-0.59603 0.0568,-0.30569 0.0989,-0.63034 l 0.0443,-0.34144 z m 1.12862,1.22414 q 0.02,0.0598 0.0664,0.13485 0.052,0.0758 0.12143,0.14838 0.0759,0.0679 0.17091,0.12122 0.1006,0.0542 0.21797,0.0708 0.10619,0.0151 0.20596,-0.005 0.10536,-0.0192 0.18674,-0.0703 0.0869,-0.0503 0.14518,-0.139 0.0583,-0.0886 0.0756,-0.21159 0.0245,-0.17324 -0.0633,-0.27695 -0.0815,-0.1085 -0.21885,-0.18503 -0.13657,-0.0821 -0.30345,-0.15145 -0.16688,-0.0693 -0.30107,-0.16821 -0.13337,-0.10449 -0.2149,-0.25289 -0.076,-0.14761 -0.0426,-0.38233 0.0262,-0.1844 0.10915,-0.32656 0.0837,-0.14773 0.21694,-0.24281 0.13324,-0.0951 0.31521,-0.13194 0.18276,-0.0424 0.4063,-0.0112 0.20676,0.0294 0.33853,0.10512 0.13735,0.0766 0.25952,0.13951 -0.0566,0.0774 -0.11319,0.19486 -0.0566,0.11737 -0.0773,0.18285 l -0.067,-0.01 q -0.0257,-0.14047 -0.1391,-0.26492 -0.11343,-0.12444 -0.30342,-0.15144 -0.0839,-0.0118 -0.17162,0.004 -0.0878,0.016 -0.16281,0.0624 -0.075,0.0464 -0.13241,0.12941 -0.0573,0.0831 -0.0749,0.20601 -0.0255,0.17882 0.0553,0.29291 0.0871,0.10931 0.22444,0.18583 0.13734,0.0766 0.30424,0.14585 0.16767,0.0638 0.30186,0.16263 0.13497,0.0933 0.21091,0.24092 0.0814,0.14841 0.0482,0.38311 -0.0229,0.16206 -0.11787,0.30821 -0.0893,0.14695 -0.24169,0.25642 -0.146,0.10467 -0.34074,0.15112 -0.19395,0.0409 -0.42865,0.007 -0.25706,-0.0366 -0.42316,-0.11137 -0.16608,-0.075 -0.2739,-0.15865 0.0438,-0.0678 0.0948,-0.18608 0.0573,-0.12296 0.0692,-0.20679 l 0.067,0.01 z m 2.59263,-0.44104 q -0.0363,0.23424 -0.0312,0.45783 0.0109,0.22446 0.0844,0.41295 0.0745,0.18291 0.22616,0.30929 0.15175,0.12638 0.39715,0.16448 0.24543,0.0381 0.42834,-0.0363 0.18291,-0.0745 0.30929,-0.22616 0.12725,-0.15732 0.20004,-0.36879 0.0785,-0.2106 0.11472,-0.44487 0.0364,-0.23425 0.0253,-0.45872 -0.005,-0.2236 -0.0797,-0.4065 -0.0736,-0.1885 -0.22529,-0.31488 -0.15173,-0.12637 -0.39715,-0.16447 -0.24541,-0.0381 -0.42833,0.0363 -0.18292,0.0745 -0.31016,0.23174 -0.12636,0.15173 -0.20477,0.36233 -0.0728,0.21148 -0.10916,0.44572 z m -0.49082,-0.0762 q 0.0589,-0.37928 0.21671,-0.62324 0.16427,-0.24869 0.3846,-0.38012 0.2212,-0.13702 0.47229,-0.1723 0.25754,-0.0399 0.49737,-0.002 0.24543,0.0381 0.47315,0.15341 0.22858,0.10974 0.39781,0.30739 0.17011,0.19205 0.24568,0.47796 0.082,0.28121 0.0231,0.66048 -0.0589,0.37927 -0.22315,0.62795 -0.15783,0.24397 -0.37903,0.38099 -0.22033,0.13144 -0.47056,0.16113 -0.25024,0.0298 -0.49564,-0.008 -0.23984,-0.0373 -0.47486,-0.14229 -0.22944,-0.10418 -0.39955,-0.29621 -0.16925,-0.19765 -0.25125,-0.47885 -0.0757,-0.2859 -0.0165,-0.66519 z m 4.76965,-0.12982 q -0.0223,-0.038 -0.10103,-0.08 -0.0732,-0.0409 -0.15673,-0.055 -0.13357,-0.0225 -0.24966,0.021 -0.11605,0.0433 -0.20622,0.13698 -0.0893,0.088 -0.15259,0.22614 -0.0624,0.13259 -0.0896,0.29401 l -0.10317,0.61226 q -0.0628,0.37293 -0.0965,0.5733 -0.0273,0.19575 -0.0312,0.32102 -0.10944,-0.0298 -0.22076,-0.0486 -0.12246,-0.0205 -0.23565,-0.0282 0.0485,-0.18643 0.10298,-0.50926 0.0609,-0.32746 0.1405,-0.80057 l 0.03,-0.17812 q 0.0366,-0.21706 0.0788,-0.50186 0.0478,-0.28387 0.093,-0.65404 0.0593,0.0214 0.11314,0.0419 0.0547,0.0149 0.11595,0.0252 0.05,0.008 0.10671,0.0121 0.0576,-0.002 0.1206,-0.002 -0.056,0.19662 -0.0813,0.31257 -0.0197,0.11688 -0.0375,0.22264 l 0.0102,0.008 q 0.42966,-0.5458 0.83597,-0.47736 0.0501,0.008 0.0826,0.0197 0.0379,0.0125 0.0899,0.0437 -0.039,0.0621 -0.0681,0.20032 -0.0281,0.13266 -0.0468,0.24397 l -0.0438,0.0212 z"
+     id="path5-0"
+     style="stroke-width:1.97164;fill:#ccd0be;fill-opacity:1" /></g></g>
 	<g
    id="g2474">
 		
@@ -15346,16 +15206,16 @@
    y="0"><tspan
      x="120.77052"
      y="0"
-     id="tspan1390"><tspan
+     id="tspan2555"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1389">White,   Frenk,</tspan><tspan
+   id="tspan2554">White,   Frenk,</tspan><tspan
    y="0"
-   id="tspan1391"> </tspan></tspan><tspan
+   id="tspan2556"> </tspan></tspan><tspan
      x="120.77052"
      y="26.095622"
-     id="tspan1393"><tspan
+     id="tspan2558"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1392">Davis (1983)</tspan></tspan></text>
+       id="tspan2557">Davis (1983)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15388,15 +15248,15 @@
    xml:space="preserve"><tspan
      x="484.20981"
      y="1050.1636"
-     id="tspan1395"><tspan
+     id="tspan2560"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan1394">Spin </tspan>
+   id="tspan2559">Spin </tspan>
 </tspan><tspan
      x="484.20981"
      y="1090.1636"
-     id="tspan1397"><tspan
+     id="tspan2562"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan1396">Foam</tspan></tspan></text>
+       id="tspan2561">Foam</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15426,15 +15286,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1399"><tspan
+     id="tspan2564"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1398">Einstein
+       id="tspan2563">Einstein
 </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1401"><tspan
+     id="tspan2566"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1400">(1946)</tspan></tspan></text>
+       id="tspan2565">(1946)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15464,23 +15324,23 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1404"><tspan
+     id="tspan2569"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1402">         </tspan><tspan
+       id="tspan2567">         </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1403">Arnowitt, </tspan></tspan><tspan
+       id="tspan2568">Arnowitt, </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1407"><tspan
+     id="tspan2572"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1405">Deser, </tspan><tspan
+       id="tspan2570">Deser, </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1406">Misner </tspan></tspan><tspan
+       id="tspan2571">Misner </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan1409"><tspan
+     id="tspan2574"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1408">(1956)</tspan></tspan></text>
+       id="tspan2573">(1956)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15509,15 +15369,15 @@
    xml:space="preserve"><tspan
      x="71.679993"
      y="0"
-     id="tspan1411"><tspan
+     id="tspan2576"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan1410">Numerical </tspan>
+   id="tspan2575">Numerical </tspan>
 </tspan><tspan
      x="71.679993"
      y="40.000001"
-     id="tspan1413"><tspan
+     id="tspan2578"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan1412">relativity</tspan></tspan></text>
+       id="tspan2577">relativity</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15545,16 +15405,16 @@
    y="0"><tspan
      x="76.282722"
      y="0"
-     id="tspan1415"><tspan
+     id="tspan2580"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1414">Wheeler</tspan><tspan
+   id="tspan2579">Wheeler</tspan><tspan
    y="0"
-   id="tspan1416"> </tspan></tspan><tspan
+   id="tspan2581"> </tspan></tspan><tspan
      x="76.282722"
      y="26.095622"
-     id="tspan1418"><tspan
+     id="tspan2583"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1417">(1964)</tspan></tspan></text>
+       id="tspan2582">(1964)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15607,14 +15467,14 @@
    xml:space="preserve"><tspan
      x="80.558052"
      y="0"
-     id="tspan1420"><tspan
+     id="tspan2585"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1419">Penrose </tspan></tspan><tspan
+       id="tspan2584">Penrose </tspan></tspan><tspan
      x="80.558052"
      y="26.088375"
-     id="tspan1422"><tspan
+     id="tspan2587"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1421">(1971) </tspan></tspan></text>
+       id="tspan2586">(1971) </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15643,19 +15503,19 @@
    xml:space="preserve"><tspan
      x="101.96798"
      y="0"
-     id="tspan1426"><tspan
+     id="tspan2591"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan1423">Variable </tspan><tspan
+       id="tspan2588">Variable </tspan><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan1424">Speed</tspan><tspan
+       id="tspan2589">Speed</tspan><tspan
        style="text-align:center;text-anchor:middle"
-       id="tspan1425">
+       id="tspan2590">
 </tspan></tspan><tspan
      x="101.96798"
      y="40.000001"
-     id="tspan1428"><tspan
+     id="tspan2593"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan1427">of Light</tspan></tspan></text>
+       id="tspan2592">of Light</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15687,28 +15547,28 @@
    xml:space="preserve"><tspan
      x="160.36279"
      y="0"
-     id="tspan1623"><tspan
+     id="tspan2595"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1429">Magueijo </tspan></tspan><tspan
+       id="tspan2594">Magueijo </tspan></tspan><tspan
      x="160.36279"
      y="26.095622"
-     id="tspan1626"><tspan
+     id="tspan2598"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1624">(2004)  </tspan><tspan
+       id="tspan2596">(2004)  </tspan><tspan
        style="text-align:end;text-anchor:end"
-       id="tspan1625">
+       id="tspan2597">
 </tspan></tspan><tspan
      x="160.36279"
      y="52.191243"
-     id="tspan1884"><tspan
+     id="tspan2600"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1627">Moffat    
+       id="tspan2599">Moffat    
 </tspan></tspan><tspan
      x="160.36279"
      y="78.286867"
-     id="tspan1886"><tspan
+     id="tspan2602"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1885">(2003)   </tspan></tspan></text>
+       id="tspan2601">(2003)   </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15737,19 +15597,19 @@
    xml:space="preserve"><tspan
      x="45.667328"
      y="0"
-     id="tspan1889"><tspan
+     id="tspan2605"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan1887">STVG</tspan><tspan
+       id="tspan2603">STVG</tspan><tspan
        style="text-align:center;text-anchor:middle"
-       id="tspan1888">
+       id="tspan2604">
 </tspan></tspan><tspan
      x="45.667328"
      y="28.806821"
-     id="tspan1892"><tspan
+     id="tspan2608"><tspan
        style="font-size:24px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan1890">(2005</tspan><tspan
+       id="tspan2606">(2005</tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1891">)</tspan></tspan></text>
+       id="tspan2607">)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15781,15 +15641,15 @@
    xml:space="preserve"><tspan
      x="133.96448"
      y="0"
-     id="tspan1894"><tspan
+     id="tspan2610"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1893">Horndeski
+       id="tspan2609">Horndeski
 </tspan></tspan><tspan
      x="133.96448"
      y="26.095622"
-     id="tspan1896"><tspan
+     id="tspan2612"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1895">(1974)</tspan></tspan></text>
+       id="tspan2611">(1974)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15819,14 +15679,14 @@
    xml:space="preserve"><tspan
      x="85.697998"
      y="0"
-     id="tspan1898"><tspan
+     id="tspan2614"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1897">Ni </tspan></tspan><tspan
+       id="tspan2613">Ni </tspan></tspan><tspan
      x="85.697998"
      y="26.095622"
-     id="tspan1900"><tspan
+     id="tspan2616"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1899">(1972-74)</tspan></tspan></text>
+       id="tspan2615">(1972-74)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -15958,26 +15818,26 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1902"><tspan
+     id="tspan2618"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1901">Feynman
+       id="tspan2617">Feynman
 </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1904"><tspan
+     id="tspan2620"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1903">(1963)
+       id="tspan2619">(1963)
 </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan1906"><tspan
+     id="tspan2622"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1905">Weinberg </tspan></tspan><tspan
+       id="tspan2621">Weinberg </tspan></tspan><tspan
      x="0"
      y="78.286867"
-     id="tspan1908"><tspan
+     id="tspan2624"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1907">(1965)</tspan></tspan></text>
+       id="tspan2623">(1965)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16003,23 +15863,23 @@
    xml:space="preserve"><tspan
      x="173.85945"
      y="0"
-     id="tspan1910"><tspan
+     id="tspan2626"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1909">Møller (1961)
+       id="tspan2625">Møller (1961)
 </tspan></tspan><tspan
      x="173.85945"
      y="26.095622"
-     id="tspan1913"><tspan
+     id="tspan2629"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1911">Pellegrini,</tspan>     <tspan
+   id="tspan2627">Pellegrini,</tspan>     <tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1912">Plebanski
+   id="tspan2628">Plebanski
 </tspan></tspan><tspan
      x="173.85945"
      y="52.191243"
-     id="tspan1915"><tspan
+     id="tspan2631"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1914">(1963)</tspan></tspan></text>
+       id="tspan2630">(1963)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16044,15 +15904,15 @@
    xml:space="preserve"><tspan
      x="917.01031"
      y="1787.1823"
-     id="tspan1917"><tspan
+     id="tspan2633"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1916">Hayashi</tspan>
+   id="tspan2632">Hayashi</tspan>
 </tspan><tspan
      x="917.01031"
      y="1813.2778"
-     id="tspan1919"><tspan
+     id="tspan2635"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1918">(1967)</tspan></tspan></text>
+       id="tspan2634">(1967)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16078,15 +15938,15 @@
    xml:space="preserve"><tspan
      x="719.44263"
      y="1813.3962"
-     id="tspan1921"><tspan
+     id="tspan2637"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1920">Cho
+       id="tspan2636">Cho
 </tspan></tspan><tspan
      x="719.44263"
      y="1839.4918"
-     id="tspan1923"><tspan
+     id="tspan2639"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1922">(1976)</tspan></tspan></text>
+       id="tspan2638">(1976)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16106,18 +15966,18 @@
    y="0"><tspan
      x="147.24187"
      y="0"
-     id="tspan1926"><tspan
-       style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1924">Arcos,     </tspan><tspan
-       style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1925">Andrade,</tspan><tspan
-       y="0"
-       id="tspan1927"> </tspan></tspan><tspan
+     id="tspan2642"><tspan
+   style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
+   id="tspan2640">Arcos,     </tspan><tspan
+   style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
+   id="tspan2641">Andrade,</tspan><tspan
+   y="0"
+   id="tspan2643"> </tspan></tspan><tspan
      x="147.24187"
      y="26.095622"
-     id="tspan1929"><tspan
+     id="tspan2645"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1928">Pereira (2004)</tspan></tspan></text>
+       id="tspan2644">Pereira (2004)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16140,14 +16000,14 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1931"><tspan
+     id="tspan2647"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1930">Rovelli </tspan></tspan><tspan
+       id="tspan2646">Rovelli </tspan></tspan><tspan
      x="0"
      y="26.088375"
-     id="tspan1933"><tspan
+     id="tspan2649"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1932">(1994)</tspan></tspan></text>
+       id="tspan2648">(1994)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16174,15 +16034,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1935"><tspan
+     id="tspan2651"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1934">Weyl</tspan>
+   id="tspan2650">Weyl</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1937"><tspan
+     id="tspan2653"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1936">(1919)</tspan></tspan></text>
+       id="tspan2652">(1919)</tspan></tspan></text>
 		</g>
 	</g>
 	<line
@@ -16450,15 +16310,15 @@
    xml:space="preserve"><tspan
      x="66.95092"
      y="0"
-     id="tspan1939">  <tspan
+     id="tspan2655">  <tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1938">MSTG</tspan>
+   id="tspan2654">MSTG</tspan>
 </tspan><tspan
      x="66.95092"
      y="26.095622"
-     id="tspan1941"> <tspan
+     id="tspan2657"> <tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1940">(1995)</tspan></tspan></text>
+   id="tspan2656">(1995)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16481,16 +16341,16 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1943"><tspan
+     id="tspan2659"><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-       id="tspan1942">Klein </tspan></tspan><tspan
+       id="tspan2658">Klein </tspan></tspan><tspan
      x="0"
      y="27.612337"
-     id="tspan1946"><tspan
+     id="tspan2662"><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-       id="tspan1944">(1926)</tspan><tspan
+       id="tspan2660">(1926)</tspan><tspan
        style="font-family:'URW Classico'"
-       id="tspan1945">                 </tspan></tspan></text>
+       id="tspan2661">                 </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16546,19 +16406,19 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1948"><tspan
+     id="tspan2664"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1947">Milgrom, </tspan></tspan><tspan
+       id="tspan2663">Milgrom, </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1950"><tspan
+     id="tspan2666"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1949">Bekenstein   </tspan></tspan><tspan
+       id="tspan2665">Bekenstein   </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan1952"><tspan
+     id="tspan2668"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1951">(1984)</tspan></tspan></text>
+       id="tspan2667">(1984)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16606,14 +16466,14 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1954"><tspan
+     id="tspan2670"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1953">DeWitt </tspan></tspan><tspan
+       id="tspan2669">DeWitt </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1956"><tspan
+     id="tspan2672"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1955">(1967)</tspan></tspan></text>
+       id="tspan2671">(1967)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16645,16 +16505,16 @@
    xml:space="preserve"><tspan
      x="90.815987"
      y="0"
-     id="tspan1958"><tspan
+     id="tspan2674"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan1957">Non minimal</tspan><tspan
+   id="tspan2673">Non minimal</tspan><tspan
    y="0"
-   id="tspan1959"> </tspan></tspan><tspan
+   id="tspan2675"> </tspan></tspan><tspan
      x="90.815987"
      y="40.000001"
-     id="tspan1961"><tspan
+     id="tspan2677"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan1960">MOND</tspan></tspan></text>
+       id="tspan2676">MOND</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -16682,34 +16542,34 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan1964"><tspan
+     id="tspan2680"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1962"> Matos,    </tspan><tspan
+   id="tspan2678"> Matos,    </tspan><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1963">Guzmán,</tspan>
+   id="tspan2679">Guzmán,</tspan>
 </tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan1966">     <tspan
+     id="tspan2682">     <tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan1965">López (2000)
+   id="tspan2681">López (2000)
 </tspan></tspan><tspan
      x="0"
      y="52.191243"
-     id="tspan1970"><tspan
+     id="tspan2686"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1967">   </tspan><tspan
+       id="tspan2683">   </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1968">Caldwell,    </tspan><tspan
+       id="tspan2684">Caldwell,    </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1969">Dave, </tspan></tspan><tspan
+       id="tspan2685">Dave, </tspan></tspan><tspan
      x="0"
      y="78.286867"
-     id="tspan1973"><tspan
+     id="tspan2689"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1971">Steindhardt </tspan><tspan
+       id="tspan2687">Steindhardt </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1972">(1998)</tspan></tspan></text>
+       id="tspan2688">(1998)</tspan></tspan></text>
 		</g>
 	</g><a
    id="a3-0-6-7"
@@ -16734,7 +16594,7 @@
        xlink:href="#ForwardAndRightArrow"
        style="fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
        id="use1-8-3"
-       transform="matrix(0.12457024,0,0,0.12457024,1267.1781,902.46925)"
+       transform="matrix(0.12457024,0,0,0.12457024,1265.2227,902.95809)"
        onclick="http://adsabs.harvard.edu/full/1973ApJ...186..467O7" /></a></a>
 	<g
    id="g2572"
@@ -16764,19 +16624,19 @@
    xml:space="preserve"><tspan
      x="112.91116"
      y="0"
-     id="tspan1976"><tspan
+     id="tspan2692"><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1974">Sin</tspan><tspan
+       id="tspan2690">Sin</tspan><tspan
        style="fill:#4f5b28"
-       id="tspan1975">
+       id="tspan2691">
 </tspan></tspan><tspan
      x="112.91116"
      y="27.612337"
-     id="tspan1979"><tspan
+     id="tspan2695"><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1977">(1994</tspan><tspan
+       id="tspan2693">(1994</tspan><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1978">)</tspan></tspan></text>
+       id="tspan2694">)</tspan></tspan></text>
 		</g>
 	</g><a
    id="a2-0"
@@ -16824,17 +16684,17 @@
    xml:space="preserve"><tspan
      x="264.37991"
      y="0"
-     id="tspan1981"><tspan
+     id="tspan2697"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1980">Friedberg,
+       id="tspan2696">Friedberg,
 </tspan></tspan><tspan
      x="264.37991"
      y="26.095622"
-     id="tspan1984"><tspan
+     id="tspan2700"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1982">Lee </tspan><tspan
+       id="tspan2698">Lee </tspan><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan1983">(1986)</tspan></tspan></text>
+       id="tspan2699">(1986)</tspan></tspan></text>
 		</g>
 	</g><a
    id="a3-0"
@@ -16960,15 +16820,15 @@
    xml:space="preserve"><tspan
      x="146.53314"
      y="0"
-     id="tspan1986"><tspan
+     id="tspan2702"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1985">Plebanski
+       id="tspan2701">Plebanski
 </tspan></tspan><tspan
      x="146.53314"
      y="26.088375"
-     id="tspan1988"><tspan
+     id="tspan2704"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1987">(1977)  </tspan></tspan></text>
+       id="tspan2703">(1977)  </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -17001,29 +16861,29 @@
    xml:space="preserve"><tspan
      x="106.92285"
      y="0"
-     id="tspan1991"><tspan
+     id="tspan2707"><tspan
        style="font-size:20.57px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1989">Page, </tspan><tspan
+       id="tspan2705">Page, </tspan><tspan
        style="font-size:20.57px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1990">Tupper
+       id="tspan2706">Tupper
 </tspan></tspan><tspan
      x="106.92285"
      y="25.7125"
-     id="tspan1993"><tspan
+     id="tspan2709"><tspan
        style="font-size:20.57px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1992">(1968)
+       id="tspan2708">(1968)
 </tspan></tspan><tspan
      x="106.92285"
      y="51.425"
-     id="tspan1995"><tspan
+     id="tspan2711"><tspan
        style="font-size:20.57px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1994">Coleman
+       id="tspan2710">Coleman
 </tspan></tspan><tspan
      x="106.92285"
      y="77.137497"
-     id="tspan1997"><tspan
+     id="tspan2713"><tspan
        style="font-size:20.57px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan1996">(1971)</tspan></tspan></text>
+       id="tspan2712">(1971)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -17081,17 +16941,17 @@
    xml:space="preserve"><tspan
      x="37.055782"
      y="0"
-     id="tspan2000"><tspan
+     id="tspan2716"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan1998">Milgrom</tspan><tspan
+       id="tspan2714">Milgrom</tspan><tspan
        style="text-align:center;text-anchor:middle"
-       id="tspan1999">
+       id="tspan2715">
 </tspan></tspan><tspan
      x="37.055782"
      y="26.095622"
-     id="tspan2002"><tspan
+     id="tspan2718"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#4f5b28"
-       id="tspan2001">(2009) </tspan></tspan></text>
+       id="tspan2717">(2009) </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -17295,15 +17155,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="19.046263"
-     id="tspan2004"><tspan
+     id="tspan2720"><tspan
        style="-inkscape-font-specification:'URW Classico'"
-       id="tspan2003">   Friedmann
+       id="tspan2719">   Friedmann
 </tspan></tspan><tspan
      x="0"
      y="45.141885"
-     id="tspan2006"><tspan
+     id="tspan2722"><tspan
        style="-inkscape-font-specification:'URW Classico'"
-       id="tspan2005">(1922) </tspan></tspan></text>
+       id="tspan2721">(1922) </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -17743,17 +17603,17 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2008"><tspan
+     id="tspan2724"><tspan
        style="font-size:21.3981px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2007">Belinsky, Khalatnikov, 
+       id="tspan2723">Belinsky, Khalatnikov, 
 </tspan></tspan><tspan
      x="0"
      y="26.747625"
-     id="tspan2011"><tspan
+     id="tspan2727"><tspan
        style="font-size:21.3981px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2009">Lifshitz </tspan><tspan
+       id="tspan2725">Lifshitz </tspan><tspan
        style="font-size:21.3981px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2010">(1982)</tspan></tspan></text>
+       id="tspan2726">(1982)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -17835,14 +17695,14 @@
    xml:space="preserve"><tspan
      x="119.27603"
      y="0"
-     id="tspan2013"><tspan
+     id="tspan2729"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan2012">Thorne,   Price </tspan></tspan><tspan
+       id="tspan2728">Thorne,   Price </tspan></tspan><tspan
      x="119.27603"
      y="26.088375"
-     id="tspan2015"><tspan
+     id="tspan2731"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan2014">(1986)       </tspan></tspan></text>
+       id="tspan2730">(1986)       </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -17868,15 +17728,15 @@
    xml:space="preserve"><tspan
      x="162.66618"
      y="0"
-     id="tspan2017"><tspan
+     id="tspan2733"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan2016">Choptuik
+       id="tspan2732">Choptuik
 </tspan></tspan><tspan
      x="162.66618"
      y="26.088375"
-     id="tspan2019"><tspan
+     id="tspan2735"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan2018">(1993)</tspan></tspan></text>
+       id="tspan2734">(1993)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -17899,14 +17759,14 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2021"><tspan
+     id="tspan2737"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2020">Hahn, Lindquist </tspan></tspan><tspan
+       id="tspan2736">Hahn, Lindquist </tspan></tspan><tspan
      x="0"
      y="26.088375"
-     id="tspan2023"><tspan
+     id="tspan2739"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2022">(1964)</tspan></tspan></text>
+       id="tspan2738">(1964)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -17931,14 +17791,14 @@
    xml:space="preserve"><tspan
      x="126.74773"
      y="0"
-     id="tspan2025"><tspan
+     id="tspan2741"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan2024">Christodoulou </tspan></tspan><tspan
+       id="tspan2740">Christodoulou </tspan></tspan><tspan
      x="126.74773"
      y="26.088375"
-     id="tspan2027"><tspan
+     id="tspan2743"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan2026">(1994)</tspan></tspan></text>
+       id="tspan2742">(1994)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -17964,18 +17824,18 @@
    xml:space="preserve"><tspan
      x="137.12047"
      y="0"
-     id="tspan2029"><tspan
+     id="tspan2745"><tspan
    style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan2028">Penrose</tspan><tspan
+   id="tspan2744">Penrose</tspan><tspan
    y="0"
-   id="tspan2030"> </tspan></tspan><tspan
+   id="tspan2746"> </tspan></tspan><tspan
      x="137.12047"
      y="27.018875"
-     id="tspan2033"><tspan
+     id="tspan2749"><tspan
        style="font-size:21.6151px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2031">(1965</tspan><tspan
+       id="tspan2747">(1965</tspan><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2032">)</tspan></tspan></text>
+       id="tspan2748">)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -18007,14 +17867,14 @@
    xml:space="preserve"><tspan
      x="161.02042"
      y="0"
-     id="tspan2035"><tspan
+     id="tspan2751"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan2034">Hawking, Penrose </tspan></tspan><tspan
+       id="tspan2750">Hawking, Penrose </tspan></tspan><tspan
      x="161.02042"
      y="26.095622"
-     id="tspan2037"><tspan
+     id="tspan2753"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:end;text-anchor:end;fill:#4f5b28"
-       id="tspan2036">(1969)</tspan></tspan></text>
+       id="tspan2752">(1969)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -18043,14 +17903,14 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2039"><tspan
+     id="tspan2755"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2038">Belinsky,   Khalatnikov, </tspan></tspan><tspan
+       id="tspan2754">Belinsky,   Khalatnikov, </tspan></tspan><tspan
      x="0"
      y="26.095622"
-     id="tspan2041"><tspan
+     id="tspan2757"><tspan
        style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2040">Lifshitz (1970) </tspan></tspan></text>
+       id="tspan2756">Lifshitz (1970) </tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -18075,15 +17935,15 @@
    xml:space="preserve"><tspan
      x="40.823086"
      y="0"
-     id="tspan2043"><tspan
+     id="tspan2759"><tspan
    style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan2042">Garfinkle</tspan>
+   id="tspan2758">Garfinkle</tspan>
 </tspan><tspan
      x="40.823086"
      y="26.088375"
-     id="tspan2045"><tspan
+     id="tspan2761"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2044">(2003)</tspan></tspan></text>
+       id="tspan2760">(2003)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -18115,15 +17975,15 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2047"><tspan
+     id="tspan2763"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2046">Smarr,    Cadez,
+       id="tspan2762">Smarr,    Cadez,
 </tspan></tspan><tspan
      x="0"
      y="26.088375"
-     id="tspan2049"><tspan
+     id="tspan2765"><tspan
        style="font-size:20.8707px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-       id="tspan2048">DeWitt,    Eppley (1976)</tspan></tspan></text>
+       id="tspan2764">DeWitt,    Eppley (1976)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -18240,15 +18100,15 @@
    xml:space="preserve"><tspan
      x="61.263988"
      y="0"
-     id="tspan2051"><tspan
+     id="tspan2767"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan2050">Extended</tspan>
+   id="tspan2766">Extended</tspan>
 </tspan><tspan
      x="61.263988"
      y="40.000001"
-     id="tspan2053"><tspan
+     id="tspan2769"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan2052">Gravity</tspan></tspan></text>
+       id="tspan2768">Gravity</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -18336,14 +18196,14 @@
    xml:space="preserve"><tspan
      x="94.500008"
      y="0"
-     id="tspan2055"><tspan
+     id="tspan2771"><tspan
        style="font-size:30px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan2054">Brans-Dicke     </tspan></tspan><tspan
+       id="tspan2770">Brans-Dicke     </tspan></tspan><tspan
      x="94.500008"
      y="37.499999"
-     id="tspan2057"><tspan
+     id="tspan2773"><tspan
        style="font-size:30px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#2f3f1b"
-       id="tspan2056">(1961)</tspan></tspan></text>
+       id="tspan2772">(1961)</tspan></tspan></text>
 		</g>
 	</g>
 	
@@ -18379,15 +18239,15 @@
      y="0"><tspan
        x="72.608475"
        y="0"
-       id="tspan2059"><tspan
+       id="tspan2775"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-         id="tspan2058">Scherrer
+         id="tspan2774">Scherrer
 </tspan></tspan><tspan
        x="72.608475"
        y="26.095622"
-       id="tspan2061"><tspan
+       id="tspan2777"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-         id="tspan2060">(1941)</tspan></tspan></text><image
+         id="tspan2776">(1941)</tspan></tspan></text><image
      style="display:inline;overflow:visible"
      width="12.9204"
      height="17.459999"
@@ -18486,7 +18346,7 @@
        onclick="" /></a></a><a
    id="a14-2"
    xlink:href="http://goo.gl/IgtHkp"
-   transform="matrix(1.0778575,0,0,1,521.49391,-1724.7484)"><use
+   transform="matrix(1.0778575,0,0,1,517.78111,-1724.7484)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-0-5-2-3-4-1-1-0-8-2-5-3-8-8-9"
@@ -18494,7 +18354,7 @@
      onclick="" /></a><a
    id="a14-2-4"
    xlink:href="http://goo.gl/76RyAX"
-   transform="translate(657.48434,-1715.995)"><use
+   transform="translate(653.77154,-1715.995)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-0-5-2-3-4-1-1-0-8-2-5-3-8-8-9-5"
@@ -18502,7 +18362,7 @@
      onclick="" /></a><a
    id="a14-2-12"
    xlink:href="http://goo.gl/NqgnEn"
-   transform="translate(665.82525,-1724.5916)"><use
+   transform="translate(662.11245,-1724.5916)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-0-5-2-3-4-1-1-0-8-2-5-3-8-8-9-3"
@@ -18510,7 +18370,7 @@
      onclick="" /></a><a
    id="a14-6"
    xlink:href="http://goo.gl/OpK9Sv"
-   transform="translate(682.91956,-1604.9143)"><use
+   transform="translate(680.9642,-1604.9143)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-0-5-2-3-4-1-1-0-8-2-5-3-8-8-8"
@@ -18529,7 +18389,7 @@
    transform="translate(-59.348271,189.74886)" /><a
    id="a2089-3-5-6-6-8-4-0-0-5-8-65-5"
    xlink:href="http://goo.gl/vjS2Xe"
-   transform="translate(89.68379,-2053.7324)"><a
+   transform="translate(90.661469,-2053.2436)"><a
      id="a2090-6-0-3-1"
      xlink:href="https://goo.gl/b2qsr5"
      transform="translate(22.937492,0.41704531)"><use
@@ -18540,7 +18400,7 @@
        onclick="" /></a></a><a
    id="a2089-3-5-6-6-8-4-0-0-5-8-65-5-4"
    xlink:href="http://goo.gl/BXWfG7"
-   transform="translate(95.266745,-1985.9245)"><a
+   transform="translate(96.733264,-1985.9245)"><a
      id="a2090-6-0-3-1-6"
      xlink:href="https://goo.gl/b2qsr5"
      transform="translate(22.937492,0.41704531)"><use
@@ -18551,7 +18411,7 @@
        onclick="" /></a></a><a
    id="a2089-3-5-6-6-8-4-0-0-5-8-65"
    xlink:href="http://goo.gl/q84UCO"
-   transform="translate(95.517881,-1995.3154)"><a
+   transform="translate(96.9844,-1995.3154)"><a
      id="a2090-6-0-3"
      xlink:href="https://goo.gl/b2qsr5"
      transform="translate(22.937492,0.41704531)"><use
@@ -18562,7 +18422,7 @@
        onclick="" /></a></a><a
    id="a2091-9-6-03-95-2-8-5-0-9-3-4-5-3"
    xlink:href="http://goo.gl/KKbysv"
-   transform="translate(885.9957,-1274.7484)"
+   transform="translate(887.75314,-1275.2372)"
    inkscape:transform-center-x="0.41704531"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
@@ -18571,7 +18431,7 @@
      onclick="" /></a><a
    id="a2091-9-6-03-95-2-8-5-0-9-3-4-5-3-9"
    xlink:href="http://goo.gl/as4pS6"
-   transform="translate(886.13889,-1265.5825)"
+   transform="translate(887.89633,-1266.0713)"
    inkscape:transform-center-x="0.41704531"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
@@ -18758,7 +18618,7 @@
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-4-4-6-6"
-     transform="matrix(0.12457024,0,0,0.12457024,1402.8427,2308.7888)"
+     transform="matrix(0.12457024,0,0,0.12457024,1401.865,2308.7888)"
      onclick="" /><a
      id="a7"
      xlink:href="http://goo.gl/kjHoAc"><use
@@ -18772,7 +18632,7 @@
        xlink:href="#ForwardAndRightArrow"
        style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
        id="use1-2-4-4-6-6-0"
-       transform="matrix(0.12457024,0,0,0.12457024,1214.0499,2180.7096)"
+       transform="matrix(0.12457024,0,0,0.12457024,1212.5834,2182.1761)"
        onclick="" /></a></a><a
    id="a2089-38-4-1"
    xlink:href="https://goo.gl/5kpeVJ"
@@ -18908,7 +18768,7 @@
      onclick="" /></a><a
    id="a2089-3-5-6-6-8-4-0"
    xlink:href="http://goo.gl/JaVWjt"
-   transform="translate(-170.57323,-406.22431)"><use
+   transform="translate(-159.32992,-405.24663)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-2-4-7-5-2"
@@ -18929,11 +18789,11 @@
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-2-8"
-     transform="matrix(0.12457024,0,0,0.12457024,1402.8427,2308.7888)"
+     transform="matrix(0.12457024,0,0,0.12457024,1400.8873,2308.3)"
      onclick="" /></a><a
    id="a2089-3-5-6-6-8-4"
    xlink:href="http://goo.gl/23xPs7"
-   transform="translate(-81.573228,-401.22431)"><use
+   transform="translate(-75.479474,-403.83592)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-2-4-7-5"
@@ -18968,7 +18828,7 @@
        xlink:href="#ForwardAndRightArrow"
        style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
        id="use1-2-0-4-0-5"
-       transform="matrix(0.12457024,0,0,0.12457024,1742.5149,2467.4527)"
+       transform="matrix(0.12457024,0,0,0.12457024,1741.0484,2466.475)"
        onclick="" /></a><a
      id="a2091-9"
      xlink:href="http://goo.gl/85zRVZ"
@@ -19121,7 +18981,7 @@
    height="14.666426"
    xlink:href="Authors/Frenk.jpg"
    id="image2687"
-   x="1013.1018"
+   x="1014.5683"
    y="913.18494">
 	</image>
 	
@@ -19426,13 +19286,13 @@
 	</image>
 	
 		<image
-   style="overflow:visible"
-   width="20.166319"
-   height="18.86356"
+   style="overflow:visible;stroke-width:1.14886"
+   width="17.553318"
+   height="16.419361"
    xlink:href="Authors/Alexandre_Le-Tiec.jpg"
    id="image2718"
    x="2379.884"
-   y="537.16986">
+   y="539.61407">
 	</image>
 	
 		<image
@@ -19584,19 +19444,19 @@
      xml:space="preserve"><tspan
        x="0"
        y="0"
-       id="tspan2063"><tspan
+       id="tspan2779"><tspan
    style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-   id="tspan2062">    Rastall</tspan>
+   id="tspan2778">    Rastall</tspan>
 </tspan><tspan
        x="0"
        y="26.095622"
-       id="tspan2065"><tspan
+       id="tspan2781"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-         id="tspan2064">(1976)</tspan></tspan></text><use
+         id="tspan2780">(1976)</tspan></tspan></text><use
      xlink:href="#ForwardAndRightArrow"
-     style="enable-background:new 0 0 3083.383 3530;display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
+     style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-0-5-2-3-5"
-     transform="matrix(0.12457023,0,0,0.12457023,2351.7001,2067.9337)"
+     transform="matrix(0.12457023,0,0,0.12457023,2353.1666,2067.9337)"
      onclick="" /><image
      style="overflow:visible"
      width="25.480001"
@@ -19700,23 +19560,23 @@
 	</image>
 	
 		<image
-   style="overflow:visible"
-   width="11.049369"
-   height="14.286054"
+   style="overflow:visible;stroke-width:0.79392"
+   width="13.917483"
+   height="17.994322"
    xlink:href="Authors/Roger_Penrose.jpg"
    id="image2740"
-   x="851.23346"
-   y="1342.4978">
+   x="850.2558"
+   y="1340.0536">
 	</image>
 	
 		<image
-   style="overflow:visible"
-   width="15.136933"
-   height="14.732867"
+   style="overflow:visible;stroke-width:0.811516"
+   width="18.65266"
+   height="18.154745"
    xlink:href="Authors/cyd-060906-plebanski2-g.jpg"
    id="image2741"
-   x="759.19666"
-   y="1321.8672">
+   x="759.19659"
+   y="1319.9117">
 	</image>
 	
 		<image
@@ -19725,8 +19585,8 @@
    height="15.258882"
    xlink:href="Authors/Ronald_W_Hellings1.jpg"
    id="image2742"
-   x="1901.3927"
-   y="1091.3428">
+   x="1896.5043"
+   y="1090.8539">
 	</image>
 	
 		<image
@@ -19939,19 +19799,19 @@
 	</image>
 	
 		<image
-   style="overflow:visible"
-   width="18.436001"
-   height="18.436001"
+   style="overflow:visible;stroke-width:1.11865"
+   width="16.480642"
+   height="16.480642"
    xlink:href="Authors/Milgrom_Mordechai.jpg"
    id="image2765"
-   x="2136.0305"
-   y="343.37341">
+   x="2137.4971"
+   y="343.86224">
 	</image>
 	
 		<image
-   style="overflow:visible"
-   width="18.436001"
-   height="18.436001"
+   style="overflow:visible;stroke-width:1.056"
+   width="17.458323"
+   height="17.458323"
    xlink:href="Authors/Milgrom_Mordechai.jpg"
    id="image2766"
    x="2019.0161"
@@ -20112,13 +19972,13 @@
 	</image>
 	
 		<image
-   style="overflow:visible"
-   width="15.747181"
-   height="15.747181"
+   style="overflow:visible;stroke-width:1.10269"
+   width="14.280662"
+   height="14.280662"
    xlink:href="Authors/Milgrom_Mordechai.jpg"
    id="image2782"
    x="2012.301"
-   y="918.23633">
+   y="919.70282">
 	</image>
 	
 		<image
@@ -21436,14 +21296,14 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2067"><tspan
+     id="tspan2783"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan2066">Field Theory </tspan></tspan><tspan
+       id="tspan2782">Field Theory </tspan></tspan><tspan
      x="0"
      y="40.000001"
-     id="tspan2069"><tspan
+     id="tspan2785"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan2068">of Gravity</tspan></tspan></text>
+       id="tspan2784">of Gravity</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -21809,7 +21669,7 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2072">Vector-tensor</tspan></text>
+     id="tspan2786">Vector-tensor</tspan></text>
 	<path
    style="fill:none"
    d="m 1714.944,811.607 c 78.34,-3.248 143.736,-33.457 143.736,-48.4"
@@ -22072,149 +21932,7 @@
      rotate="25.653999"
      id="tspan3089">.</tspan></text>
 	</g>
-	<g
-   id="g3114"
-   transform="translate(4,-6)">
-		
-			<image
-   style="overflow:visible"
-   width="249"
-   height="85"
-   xlink:href="Blur/FB9DC817.png"
-   transform="translate(483.3447,2027.5703)"
-   id="image3089">
-		</image>
-		<g
-   id="g3113">
-			<path
-   style="fill:none"
-   d="m 513.012,2066.666 c 105,-9.333 126.333,-2.525 205.333,20"
-   id="path3089" />
-			<text
-   transform="matrix(0.9967,-0.0817,0.0817,0.9967,519.5293,2066.0898)"
-   id="text3113"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"><tspan
-     x="0"
-     y="0"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     id="tspan3090">a</tspan><tspan
-     x="10.459"
-     y="0.0040000002"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="0.35100001"
-     id="tspan3091">0</tspan><tspan
-     x="17.111"
-     y="0.048999999"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="0.58600003"
-     id="tspan3092"> </tspan><tspan
-     x="20.445"
-     y="0.082999997"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="0.75599998"
-     id="tspan3093"> </tspan><tspan
-     x="23.782"
-     y="0.127"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="0.93900001"
-     id="tspan3094"> </tspan><tspan
-     x="27.084999"
-     y="0.18099999"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="1.133"
-     id="tspan3095"> </tspan><tspan
-     x="30.417"
-     y="0.24600001"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="1.342"
-     id="tspan3096"> </tspan><tspan
-     x="33.745998"
-     y="0.32499999"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="1.567"
-     id="tspan3097"> </tspan><tspan
-     x="37.067001"
-     y="0.41499999"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="1.806"
-     id="tspan3098"> </tspan><tspan
-     x="40.330002"
-     y="0.43399999"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="2.8280001"
-     id="tspan3099">W</tspan><tspan
-     x="61.205002"
-     y="1.5319999"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="4.5739999"
-     id="tspan3100">e</tspan><tspan
-     x="71.558998"
-     y="2.3540001"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="6.0450001"
-     id="tspan3101">y</tspan><tspan
-     x="81.927002"
-     y="3.477"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="7.3720002"
-     id="tspan3102">l</tspan><tspan
-     x="87.640999"
-     y="4.2150002"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="8.4069996"
-     id="tspan3103">’</tspan><tspan
-     x="93.362999"
-     y="5.046"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="9.7379999"
-     id="tspan3104">s</tspan><tspan
-     x="101.316"
-     y="6.4229999"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="11.122"
-     id="tspan3105"> </tspan><tspan
-     x="106.96"
-     y="7.5320001"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="12.292"
-     id="tspan3106">t</tspan><tspan
-     x="112.597"
-     y="8.7259998"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="13.908"
-     id="tspan3107">e</tspan><tspan
-     x="122.665"
-     y="11.21"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="15.915"
-     id="tspan3108">n</tspan><tspan
-     x="133.787"
-     y="14.41"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="17.424999"
-     id="tspan3109">s</tspan><tspan
-     x="141.517"
-     y="16.82"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="18.610001"
-     id="tspan3110">o</tspan><tspan
-     x="152.52901"
-     y="20.549999"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="19.43"
-     id="tspan3111">r</tspan><tspan
-     x="159.089"
-     y="22.867001"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="19.843"
-     id="tspan3112"> </tspan><tspan
-     x="164.561"
-     y="24.841999"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3324px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#ccd0be;fill-opacity:1"
-     rotate="20.125999"
-     id="tspan3113"> </tspan></text>
-		</g>
-	</g>
+	
 	<g
    id="g3133"
    transform="translate(0,-6)">
@@ -22359,30 +22077,30 @@
    xml:space="preserve"><tspan
      x="79.119972"
      y="0"
-     id="tspan2075"><tspan
+     id="tspan2788"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan2074">Relativistic</tspan><tspan
+   id="tspan2787">Relativistic</tspan><tspan
    y="0"
-   id="tspan2076">  </tspan></tspan><tspan
+   id="tspan2789">  </tspan></tspan><tspan
      x="79.119972"
      y="40.000001"
-     id="tspan2080"><tspan
+     id="tspan2791"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan2077">Theory of</tspan><tspan
+   id="tspan2790">Theory of</tspan><tspan
    y="40.000001"
-   id="tspan2081"> </tspan></tspan><tspan
+   id="tspan2792"> </tspan></tspan><tspan
      x="79.119972"
      y="79.999999"
-     id="tspan2083"><tspan
+     id="tspan2794"><tspan
    style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-   id="tspan2082">Gravitation</tspan><tspan
+   id="tspan2793">Gravitation</tspan><tspan
    y="79.999999"
-   id="tspan2089"> </tspan></tspan><tspan
+   id="tspan2795"> </tspan></tspan><tspan
      x="79.119972"
      y="120"
-     id="tspan2091"><tspan
+     id="tspan2797"><tspan
        style="font-size:32px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#2f3f1b"
-       id="tspan2090">(RTG)</tspan></tspan></text>
+       id="tspan2796">(RTG)</tspan></tspan></text>
 		</g>
 	</g>
 	<g
@@ -23102,31 +22820,31 @@
    xml:space="preserve"><tspan
      x="1227.6731"
      y="1280.9863"
-     id="tspan2104"><tspan
+     id="tspan2967"><tspan
        style="font-size:26.6666px"
-       id="tspan2092">H</tspan><tspan
+       id="tspan2798">H</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2093">a</tspan><tspan
+       id="tspan2799">a</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2094">m</tspan><tspan
+       id="tspan2800">m</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2095">i</tspan><tspan
+       id="tspan2909">i</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2096">l</tspan><tspan
+       id="tspan2957">l</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2097">t</tspan><tspan
+       id="tspan2958">t</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2098">o</tspan><tspan
+       id="tspan2959">o</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2099">n</tspan><tspan
+       id="tspan2960">n</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2100">i</tspan><tspan
+       id="tspan2961">i</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2101">a</tspan><tspan
+       id="tspan2962">a</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2102">n</tspan><tspan
+       id="tspan2963">n</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2103"> </tspan></tspan></text>
+       id="tspan2964"> </tspan></tspan></text>
 	<path
    style="fill:none"
    d="m 1727.845,1366.155 c 84.97,-1.107 161.501,-0.331 210.332,44.341"
@@ -23581,33 +23299,33 @@
    xml:space="preserve"><tspan
      x="1761.0404"
      y="2949.895"
-     id="tspan2106"><tspan
+     id="tspan2969"><tspan
    style="font-size:27.8354px"
-   id="tspan2105">G</tspan>
+   id="tspan2968">G</tspan>
 </tspan><tspan
      x="1761.0404"
      y="2984.6892"
-     id="tspan2108"><tspan
+     id="tspan3009"><tspan
    style="font-size:27.8354px"
-   id="tspan2107">Equivalence P.</tspan>
+   id="tspan3008">Equivalence P.</tspan>
 </tspan><tspan
      x="1761.0404"
      y="3019.4834"
-     id="tspan2110"><tspan
+     id="tspan3011"><tspan
        style="font-size:27.8354px"
-       id="tspan2109">Universality P.
+       id="tspan3010">Universality P.
 </tspan></tspan><tspan
      x="1761.0404"
      y="3054.2776"
-     id="tspan2112"><tspan
+     id="tspan3013"><tspan
        style="font-size:27.8354px"
-       id="tspan2111">Absolute 
+       id="tspan3012">Absolute 
 </tspan></tspan><tspan
      x="1761.0404"
      y="3089.0718"
-     id="tspan2114"><tspan
+     id="tspan3015"><tspan
        style="font-size:27.8354px"
-       id="tspan2113">space and time</tspan></tspan></text>
+       id="tspan3014">space and time</tspan></tspan></text>
 	</g>
 	<g
    id="g3356"
@@ -23625,37 +23343,37 @@
    xml:space="preserve"><tspan
      x="89.171997"
      y="0"
-     id="tspan2116"><tspan
+     id="tspan3017"><tspan
        style="font-size:24px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2115">Minkowski's
+       id="tspan3016">Minkowski's
 </tspan></tspan><tspan
      x="89.171997"
      y="29.999999"
-     id="tspan2118"><tspan
+     id="tspan3019"><tspan
        style="font-size:24px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2117">space-time
+       id="tspan3018">space-time
 </tspan></tspan><tspan
      x="89.171997"
      y="59.999999"
-     id="tspan2121"><tspan
+     id="tspan3022"><tspan
        style="font-size:24px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2119">Special </tspan><tspan
+       id="tspan3020">Special </tspan><tspan
        style="font-size:24px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2120">Relativity
+       id="tspan3021">Relativity
 </tspan></tspan><tspan
      x="89.171997"
      y="89.999999"
-     id="tspan2124"><tspan
+     id="tspan3032"><tspan
        style="font-size:24px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2122">Lorentz </tspan><tspan
+       id="tspan3030">Lorentz </tspan><tspan
        style="font-size:24px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2123">Invariance
+       id="tspan3031">Invariance
 </tspan></tspan><tspan
      x="89.171997"
      y="120"
-     id="tspan2126"><tspan
+     id="tspan3034"><tspan
        style="font-size:24px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2125">c, h, e, k</tspan></tspan></text>
+       id="tspan3033">c, h, e, k</tspan></tspan></text>
 	</g>
 	<path
    style="fill:none"
@@ -24309,7 +24027,7 @@
    xml:space="preserve"><tspan
      x="93.095909"
      y="0"
-     id="tspan2127">Weyl Geometry</tspan></text>
+     id="tspan3035">Weyl Geometry</tspan></text>
 	<path
    style="fill:none"
    d="M 2021.241,723.742 C 2072.211,693.098 2260.679,497.036 2253.248,482"
@@ -24914,7 +24632,7 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2128">Thermal relics</tspan></text>
+     id="tspan3036">Thermal relics</tspan></text>
 	<path
    style="fill:none"
    d="m 955.659,728.682 c 36.266,22.753 71.875,38.167 117.036,45.506"
@@ -24926,7 +24644,7 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2129">Cold</tspan></text>
+     id="tspan3037">Cold</tspan></text>
 	<path
    style="fill:none"
    d="m 1031.852,877.978 c -1.275,-46.249 31.052,-65.298 104.832,-60.572"
@@ -24938,7 +24656,7 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2130">Hot</tspan></text>
+     id="tspan3038">Hot</tspan></text>
 	<path
    style="fill:none"
    d="m 1165.042,947 c 84.97,-1.107 169.407,25.09 210.332,62.781"
@@ -24954,7 +24672,7 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2131">Dark energy</tspan></text>
+     id="tspan3039">Dark energy</tspan></text>
 	<path
    style="fill:none"
    d="m 1317.345,834.79 c 11.951,0 165,10.458 204.836,92.574"
@@ -25028,7 +24746,7 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2132">Scalar field</tspan></text>
+     id="tspan3040">Scalar field</tspan></text>
 	<path
    style="fill:none"
    d="m 1165.042,663 c 7.775,20.668 18.149,122.133 81.524,161.604"
@@ -25040,7 +24758,7 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2133">Scalar fields</tspan></text>
+     id="tspan3041">Scalar fields</tspan></text>
 	<path
    style="fill:none"
    d="m 1050.125,435.851 c 50.806,3.006 134.521,78.522 151.629,85.282"
@@ -25052,7 +24770,7 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2134">Unified D.E.</tspan></text>
+     id="tspan3042">Unified D.E.</tspan></text>
 	<g
    style="display:none"
    id="g3693">
@@ -25330,92 +25048,92 @@
    xml:space="preserve"><tspan
      x="310.09586"
      y="0"
-     id="tspan2136"><tspan
+     id="tspan3063"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2135">Metric variation 
+       id="tspan3062">Metric variation 
 </tspan></tspan><tspan
      x="310.09586"
      y="22.666701"
-     id="tspan2138"><tspan
+     id="tspan3065"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2137">
+       id="tspan3064">
 </tspan></tspan><tspan
      x="310.09586"
      y="45.333401"
-     id="tspan2140"><tspan
+     id="tspan3067"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2139">Dynamical 
+       id="tspan3066">Dynamical 
 </tspan></tspan><tspan
      x="310.09586"
      y="68.000103"
-     id="tspan2142"><tspan
+     id="tspan3091"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2141">metric tensor g 
+       id="tspan3090">metric tensor g 
 </tspan></tspan><tspan
      x="310.09586"
      y="90.666805"
-     id="tspan2144"><tspan
+     id="tspan3093"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2143">
+       id="tspan3092">
 </tspan></tspan><tspan
      x="310.09586"
      y="113.33351"
-     id="tspan2146"><tspan
+     id="tspan3095"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2145">Geodesic P.
+       id="tspan3094">Geodesic P.
 </tspan></tspan><tspan
      x="310.09586"
      y="136.00021"
-     id="tspan2148"><tspan
+     id="tspan3097"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2147"> 
+       id="tspan3096"> 
 </tspan></tspan><tspan
      x="310.09586"
      y="158.6669"
-     id="tspan2150"><tspan
+     id="tspan3099"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2149">pseudo-Riemannian </tspan></tspan><tspan
+       id="tspan3098">pseudo-Riemannian </tspan></tspan><tspan
      x="310.09586"
      y="181.33361"
-     id="tspan2152"><tspan
+     id="tspan3101"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2151">space-time
+       id="tspan3100">space-time
 </tspan></tspan><tspan
      x="310.09586"
      y="204.00031"
-     id="tspan2154"><tspan
+     id="tspan3103"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2153">
+       id="tspan3102">
 </tspan></tspan><tspan
      x="310.09586"
      y="226.66701"
-     id="tspan2156"><tspan
+     id="tspan3105"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2155">Gral. Covariance P.
+       id="tspan3104">Gral. Covariance P.
 </tspan></tspan><tspan
      x="310.09586"
      y="249.33371"
-     id="tspan2158"><tspan
+     id="tspan3107"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2157">
+       id="tspan3106">
 </tspan></tspan><tspan
      x="310.09586"
      y="272.00042"
-     id="tspan2160"><tspan
+     id="tspan3109"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2159">Strong Equivalence P.
+       id="tspan3108">Strong Equivalence P.
 </tspan></tspan><tspan
      x="310.09586"
      y="294.6671"
-     id="tspan2162"><tspan
+     id="tspan3111"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2161">
+       id="tspan3110">
 </tspan></tspan><tspan
      x="310.09586"
      y="317.33379"
-     id="tspan2164"><tspan
+     id="tspan3113"><tspan
        style="text-align:center;text-anchor:middle;fill:#ccd0be"
-       id="tspan2163">Geometrization P.</tspan></tspan></text>
+       id="tspan3112">Geometrization P.</tspan></tspan></text>
 	</g>
 	<g
    id="g3743">
@@ -25432,7 +25150,7 @@
    xml:space="preserve"><tspan
      x="1937.8951"
      y="1771.0194"
-     id="tspan2165">G = cte.</tspan></text>
+     id="tspan3133">G = cte.</tspan></text>
 	</g>
 	<path
    style="fill:none"
@@ -25733,31 +25451,31 @@
    xml:space="preserve"><tspan
      x="1239.3062"
      y="1293.3116"
-     id="tspan2178"><tspan
+     id="tspan3146"><tspan
        style="font-size:26.6666px"
-       id="tspan2166"> </tspan><tspan
+       id="tspan3134"> </tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2167">f</tspan><tspan
+       id="tspan3135">f</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2168">o</tspan><tspan
+       id="tspan3136">o</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2169">r</tspan><tspan
+       id="tspan3137">r</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2170">m</tspan><tspan
+       id="tspan3138">m</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2171">u</tspan><tspan
+       id="tspan3139">u</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2172">l</tspan><tspan
+       id="tspan3140">l</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2173">a</tspan><tspan
+       id="tspan3141">a</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2174">t</tspan><tspan
+       id="tspan3142">t</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2175">i</tspan><tspan
+       id="tspan3143">i</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2176">o</tspan><tspan
+       id="tspan3144">o</tspan><tspan
        style="font-size:26.6666px"
-       id="tspan2177">n</tspan></tspan></text>
+       id="tspan3145">n</tspan></tspan></text>
 	<g
    id="g3817">
 		<path
@@ -25839,7 +25557,7 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2179">Macho’s</tspan></text>
+     id="tspan3147">Macho’s</tspan></text>
 	<g
    id="g3826">
 		<polygon
@@ -25853,14 +25571,14 @@
    xml:space="preserve"><tspan
      x="0"
      y="0"
-     id="tspan2181"><tspan
+     id="tspan3149"><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-       id="tspan2180">Black </tspan></tspan><tspan
+       id="tspan3148">Black </tspan></tspan><tspan
      x="0"
      y="34.515519"
-     id="tspan2183"><tspan
+     id="tspan3261"><tspan
        style="font-family:'URW Classico';-inkscape-font-specification:'URW Classico'"
-       id="tspan2182">Holes</tspan></tspan></text>
+       id="tspan3150">Holes</tspan></tspan></text>
 	</g>
 	<path
    style="fill:none"
@@ -26616,7 +26334,7 @@
 <a
    id="a2089"
    xlink:href="http://goo.gl/GjhUpD"
-   transform="translate(-16.485638,1.6805125)"><use
+   transform="translate(-15.996798,4.1247106)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2"
@@ -26624,7 +26342,7 @@
      onclick="" /></a><a
    id="a2089-3"
    xlink:href="http://goo.gl/GjhUpD"
-   transform="translate(-16.83385,-103.95846)"><use
+   transform="translate(-15.856171,-103.95846)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0"
@@ -26640,7 +26358,7 @@
      onclick="" /></a><a
    id="a2089-3-5-6"
    xlink:href="http://goo.gl/0fCg7u"
-   transform="translate(337.15713,-362.75528)"><use
+   transform="translate(339.11249,-364.2218)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-2"
@@ -26648,7 +26366,7 @@
      onclick="" /></a><a
    id="a2089-3-5-6-6"
    xlink:href="http://goo.gl/TWLAA7"
-   transform="translate(-99.851178,-266.45241)"><use
+   transform="translate(-95.940461,-266.45241)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-0-4-2-4"
@@ -26710,7 +26428,7 @@
      onclick="" /></a><a
    id="a2089-38-4"
    xlink:href="http://goo.gl/yFhNrX"
-   transform="translate(-459.02112,-153.77189)"><use
+   transform="translate(-459.9988,-153.77189)"><use
      xlink:href="#ForwardAndRightArrow"
      style="display:inline;fill:#4f5b28;fill-opacity:1;stroke:#000000;image-rendering:auto"
      id="use1-2-4-4"
@@ -26888,19 +26606,19 @@
      xml:space="preserve"><tspan
        x="0"
        y="0"
-       id="tspan2187"><tspan
+       id="tspan3265"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-         id="tspan2184">  </tspan><tspan
+         id="tspan3262">  </tspan><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-         id="tspan2185">Kibble</tspan><tspan
+         id="tspan3263">Kibble</tspan><tspan
          style="fill:#4f5b28"
-         id="tspan2186">
+         id="tspan3264">
 </tspan></tspan><tspan
        x="0"
        y="26.095622"
-       id="tspan2189"><tspan
+       id="tspan3267"><tspan
          style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-         id="tspan2188">(1961)</tspan></tspan></text><image
+         id="tspan3266">(1961)</tspan></tspan></text><image
      style="enable-background:new 0 0 3083.383 3530;display:inline;overflow:visible"
      width="13.3198"
      height="17.719"
@@ -26927,15 +26645,15 @@
        xml:space="preserve"><tspan
          x="0"
          y="0"
-         id="tspan2206"><tspan
+         id="tspan3269"><tspan
            style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-           id="tspan2190">Sciama
+           id="tspan3268">Sciama
 </tspan></tspan><tspan
          x="0"
          y="26.095622"
-         id="tspan2208"><tspan
+         id="tspan3271"><tspan
            style="font-size:20.8765px;font-family:'URW Classico';-inkscape-font-specification:'URW Classico';fill:#4f5b28"
-           id="tspan2207">(1964)</tspan></tspan></text><image
+           id="tspan3270">(1964)</tspan></tspan></text><image
        style="enable-background:new 0 0 3083.383 3530;display:inline;overflow:visible"
        width="16.057669"
        height="15.97738"
@@ -26990,4 +26708,35 @@
      id="image1-42"
      x="358.85318"
      y="1728.5204"
-     style="stroke-width:36.8865" /></g></g></svg>
+     style="stroke-width:36.8865" /></g><g
+   id="text102"
+   style="font-size:11.4667px;line-height:1.25;font-family:Optima;-inkscape-font-specification:Optima;text-align:end;text-anchor:end;white-space:pre;fill:#b4ae98;fill-opacity:1"
+   transform="matrix(1.8564025,0,0,1.8564025,-1261.5543,424.80067)"
+   aria-label="a0    Weyl's tensor"><text
+     xml:space="preserve"
+     transform="translate(75.13279,-13.003755)"
+     id="text106"
+     style="font-size:21.3333px;line-height:1.25;font-family:Optima;-inkscape-font-specification:Optima;text-align:end;white-space:pre;shape-inside:url(#rect106)" /><text
+     xml:space="preserve"
+     style="font-size:10.6667px;line-height:1.25;font-family:Optima;-inkscape-font-specification:Optima;text-align:end;text-anchor:end"
+     id="text107"><textPath
+       xlink:href="#path108"
+       startOffset="100%"
+       id="textPath108"><tspan
+         id="tspan107"
+         style="font-size:10.6667px">a<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan108">0     </tspan> Weyl's tensor</tspan></textPath></text></g><path
+   style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.85656;stroke-opacity:1"
+   id="path108"
+   sodipodi:type="arc"
+   sodipodi:cx="894.58777"
+   sodipodi:cy="3637.2964"
+   sodipodi:rx="144.80585"
+   sodipodi:ry="33.103397"
+   sodipodi:start="0"
+   sodipodi:end="6.2827668"
+   sodipodi:open="true"
+   sodipodi:arc-type="arc"
+   d="m 1039.3936,3637.2964 a 144.80585,33.103397 0 0 1 -144.79068,33.1034 144.80585,33.103397 0 0 1 -144.821,-33.0965 144.80585,33.103397 0 0 1 144.7604,-33.1103 144.80585,33.103397 0 0 1 144.85128,33.0895"
+   transform="matrix(0.99870278,0.05091909,-0.07012286,0.99753836,0,0)" /></g></svg>
