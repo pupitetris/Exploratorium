@@ -518,3 +518,8 @@ html {
 .textbox-box.box-Z {
 	--fill: #f78383;
 }
+
+img.portrait {
+  width: 150px;
+  height: 214px;
+}

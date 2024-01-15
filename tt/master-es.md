@@ -309,9 +309,27 @@ gravitación"](http://ilitia.cua.uam.mx:8080/jspui/handle/123456789/1022).
 }
 ```
 
-![Portrait of Mariana Espinosa Aldama](images/Mariana_Espinosa.jpg){.float-left}**Mariana Espinosa Aldama**, fotógrafa y licenciada en Física con una maestría en Filosofía de la Ciencia de la UNAM, tiene un doctorado en Ciencias Sociales y Humanidades de la UAM-Cuajimalpa. Especializada en el análisis y visualización de datos meta-científicos, Mariana se dedica a la comunicación científica a través de textos de divulgación, ciencia en las calles, imágenes, infografías, videos y visualización de datos. Sus diversas contribuciones abarcan temas como luz, holografía, técnicas antiguas, historia de la astronomía y cosmología. En la actualidad, Mariana explora las relaciones entre los componentes fundamentales de la física mediante visualizaciones de redes.
+![Portrait of Mariana Espinosa Aldama](images/Mariana_Espinosa.jpg){.float-start .me-3 .portrait}
+**Mariana Espinosa Aldama**, fotógrafa y licenciada en Física con una
+maestría en Filosofía de la Ciencia de la UNAM, tiene un doctorado en
+Ciencias Sociales y Humanidades de la UAM-Cuajimalpa. Especializada en
+el análisis y visualización de datos meta-científicos, Mariana se
+dedica a la comunicación científica a través de textos de divulgación,
+ciencia en las calles, imágenes, infografías, videos y visualización
+de datos. Sus diversas contribuciones abarcan temas como luz,
+holografía, técnicas antiguas, historia de la astronomía y
+cosmología. En la actualidad, Mariana explora las relaciones entre los
+componentes fundamentales de la física mediante visualizaciones de
+redes.
 
-![Portrait of Arturo Espinosa Aldama](images/Arturo_Espinosa.jpg){.float-left}**Arturo Espinosa Aldama** es un programador experto, desarrollador full stack con 20 años de experiencia en todo el proceso de desarrollo de software con capacidades confiables de autogestión, investigación y diseño de arquitectura de software, y atención al detalle y codificación y pruebas cuidadosas. Conocimiento en niveles altos y bajos de abstracción: desde implementaciones de protocolo serial binario RS232 hasta desarrollo rápido de aplicaciones gráficas.
+![Portrait of Arturo Espinosa Aldama](images/Arturo_Espinosa.jpg){.float-start .me-3 .portrait}
+**Arturo Espinosa Aldama** es un programador experto, desarrollador
+full stack con 20 años de experiencia en todo el proceso de desarrollo
+de software con capacidades confiables de autogestión, investigación y
+diseño de arquitectura de software, y atención al detalle y
+codificación y pruebas cuidadosas. Conocimiento en niveles altos y
+bajos de abstracción: desde implementaciones de protocolo serial
+binario RS232 hasta desarrollo rápido de aplicaciones gráficas.
 
 
 ### Aviso legal
