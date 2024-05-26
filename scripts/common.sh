@@ -1,7 +1,12 @@
 SCRIPTDIR=${SCRIPTDIR:-$(dirname "$0")}
-DBDIR=$SCRIPTDIR/../db
-SITEDIR=$SCRIPTDIR/../site
-DEFAULT_DBFILE="$DBDIR"/exploratorium.db
+
+source "$SCRIPTDIR/config.sh"
+
+DBDIR=${DBDIR:-$SCRIPTDIR/../db}
+SITEDIR=${SITEDIR:-$SCRIPTDIR/../site}
+DIAGRAMSUBDIR=${DIAGRAMSUBDIR:-theories}
+DIAGRAMDIR=${DIAGRAMDIR:-$SITEDIR/$DIAGRAMSUBDIR}
+DEFAULT_DBFILE=${DEFAULT_DBFILE:-$DBDIR/exploratorium.db}
 
 function test_dbfile {
   local dbfile="$1"

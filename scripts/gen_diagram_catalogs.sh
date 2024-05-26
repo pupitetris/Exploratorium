@@ -12,7 +12,7 @@ while read -r lang; do
 SELECT Attribute,Class,Title,Formula,Explanation,Reference FROM v_attributes
        WHERE Lang='$lang' AND Context='$context'" |
       sqlite3 -header "$DBFILE" > \
-              "$SITEDIR"/theories/$lang/$context/attr_desc.csv
+              "$DIAGRAMDIR"/$lang/$context/attr_desc.csv
 
     echo "
 SELECT v.Code, v.Title_$lang AS Title
