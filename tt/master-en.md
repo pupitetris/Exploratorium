@@ -38,6 +38,7 @@ University - Cuajimalpa
 
 
 ## Exploring Menu
+
 - [Guidance](guidance.html)
 - [Theoretical Framework](frame.html)
 - [Methodology](methodology.html)

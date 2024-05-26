@@ -30,7 +30,7 @@ Exploratorium de teorías del espacio-tiempo
 
 - [Inicio](index-es.html)
 - [Explorando](nav_exploring_menu)
-- [Diagramas](nav_diagramas_menu)
+- [Diagramas](nav_diagrams_menu)
 - [REMO](/)
 - [English](navlang)
 
