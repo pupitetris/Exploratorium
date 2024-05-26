@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source $(dirname $0)/common.sh
+source $(dirname "$0")/common.sh
 
 DBFILE=${1:-$DEFAULT_DBFILE}
 
