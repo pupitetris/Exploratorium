@@ -1,6 +1,7 @@
 SCRIPTDIR=${SCRIPTDIR:-$(dirname "$0")}
 
-source "$SCRIPTDIR/config.sh"
+CONFIGFILE=${CONFIGFILE:-$SCRIPTDIR/config.sh}
+source "$CONFIGFILE"
 
 DBDIR=${DBDIR:-$SCRIPTDIR/../db}
 SITEDIR=${SITEDIR:-$SCRIPTDIR/../site}
