@@ -1994,7 +1994,6 @@ INSERT INTO object_attribute VALUES(30,3,129,3,1);
 INSERT INTO object_attribute VALUES(30,3,143,3,1);
 INSERT INTO object_attribute VALUES(30,3,145,3,1);
 INSERT INTO object_attribute VALUES(30,3,147,3,1);
-INSERT INTO object_attribute VALUES(30,3,152,3,1);
 INSERT INTO object_attribute VALUES(30,3,154,3,1);
 INSERT INTO object_attribute VALUES(30,3,194,3,1);
 INSERT INTO object_attribute VALUES(32,4,6,4,1);
