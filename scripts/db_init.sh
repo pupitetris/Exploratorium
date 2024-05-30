@@ -2,13 +2,13 @@
 
 source $(dirname "$0")/common.sh
 
-DBFILE=${1:-$DEFAULT_DBFILE}
+DBDSN=${1:-$DEFAULT_DBDSN}
 
 require_sqlite
 
-[ -e "$DBFILE" ] && mv -f "$DBFILE" "$DBFILE".bak
+[ -e "$DBDSN" ] && mv -f "$DBDSN" "$DBDSN".bak
 
-sqlite3 "$DBFILE" < "$DBDIR"/ddl.sql &&
-  sqlite3 "$DBFILE" < "$DBDIR"/data.sql
+sqlite3 "$DBDSN" < "$DBDIR"/ddl.sql &&
+  sqlite3 "$DBDSN" < "$DBDIR"/data.sql
 
-test_dbfile "$DBFILE"
+test_dbfile "$DBDSN"

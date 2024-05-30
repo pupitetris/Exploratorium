@@ -2,7 +2,7 @@
 
 source $(dirname "$0")/common.sh
 
-TREEDIR="$SCRIPTDIR"/../gravity-tree
+TREEDIR="$PROJECTDIR"/gravity-tree
 
 mkdir -p "$SITEDIR"/gravity-tree/Authors
 grep 'xlink:href="Authors/' "$TREEDIR"/GravityTree2024Fotos.svg |

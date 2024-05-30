@@ -1,24 +1,39 @@
+if [ -n "$CONFIGFILE" ]; then
+  source "$CONFIGFILE" || exit 1
+fi
+
 SCRIPTDIR=${SCRIPTDIR:-$(dirname "$0")}
 
-CONFIGFILE=${CONFIGFILE:-$SCRIPTDIR/config.sh}
-source "$CONFIGFILE"
+if [ -z "$CONFIGFILE" ]; then
+  CONFIGFILE=$SCRIPTDIR/config.sh
+  if [ -e "$CONFIGFILE" ]; then
+    source "$CONFIGFILE" || exit 1
+  else
+    CONFIGFILE=
+  fi
+fi
 
-DBDIR=${DBDIR:-$SCRIPTDIR/../db}
-SITEDIR=${SITEDIR:-$SCRIPTDIR/../site}
+PROJECTDIR=${PROJECTDIR:-$SCRIPTDIR/..}
+DBDIR=${DBDIR:-$PROJECTDIR/db}
+SITEDIR=${SITEDIR:-$PROJECTDIR/site}
 DIAGRAMSUBDIR=${DIAGRAMSUBDIR:-theories}
 DIAGRAMDIR=${DIAGRAMDIR:-$SITEDIR/$DIAGRAMSUBDIR}
-DEFAULT_DBFILE=${DEFAULT_DBFILE:-$DBDIR/exploratorium.db}
+DEFAULT_DBDSN=${DEFAULT_DBDSN:-$DBDIR/exploratorium.db}
+
+if [ -n "$CONFIGFILE" ]; then
+  source "$CONFIGFILE" || exit 1
+fi
 
 function test_dbfile {
   local dbfile="$1"
 
   if [ ! -e "$dbfile" ]; then
-    echo "$0: DBFILE '$dbfile' does not exist" >&2
+    echo "$0: DBDSN '$dbfile' does not exist" >&2
     exit 1
   fi
 
   if [ "$(sqlite3 "$dbfile" "SELECT 'OK'")" != OK ]; then
-    echo "$0: Error opening DBFILE '$dbfile'" >&2
+    echo "$0: Error opening DBDSN '$dbfile'" >&2
     exit 1
   fi
 }

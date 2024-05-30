@@ -2,8 +2,8 @@
 
 source $(dirname "$0")/common.sh
 
-DBFILE=${1:-$DEFAULT_DBFILE}
+DBDSN=${1:-$DEFAULT_DBDSN}
 
-"$SCRIPTDIR"/gen_diagram_catalogs.sh "$DBFILE"
-"$SCRIPTDIR"/gen_lattices.sh "$DBFILE"
-"$SCRIPTDIR"/gen_pages.sh "$DBFILE"
+"$SCRIPTDIR"/gen_diagram_catalogs.sh "$DBDSN"
+"$SCRIPTDIR"/gen_lattices.sh "$DBDSN"
+"$SCRIPTDIR"/gen_pages.sh "$DBDSN"

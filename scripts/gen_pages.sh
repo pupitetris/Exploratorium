@@ -2,9 +2,9 @@
 
 source $(dirname "$0")/common.sh
 
-DBFILE=${1:-$DEFAULT_DBFILE}
+DBDSN=${1:-$DEFAULT_DBDSN}
 
-require_sqlite "$DBFILE"
+require_sqlite "$DBDSN"
 
 "$SCRIPTDIR"/gen_gravitytree.sh
 
@@ -13,8 +13,8 @@ while read -r lang; do
   (
     # gen_pages.pl is location agnostic, but this produces reports
     # that are easier on the eyes:
-    cd "$SCRIPTDIR/../tt"
-    ../scripts/gen_pages.pl master-$lang.md --force
+    cd "$PROJECTDIR/tt"
+    "$SCRIPTDIR"/gen_pages.pl master-$lang.md --force
   )
 
-done < <(sqlite3 "$DBFILE" "SELECT lang_code FROM lang")
+done < <(sqlite3 "$DBDSN" "SELECT lang_code FROM lang")

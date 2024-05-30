@@ -2,7 +2,7 @@
 
 source $(dirname "$0")/common.sh
 
-DBFILE=${1:-$DEFAULT_DBFILE}
+DBDSN=${1:-$DEFAULT_DBDSN}
 
-"$SCRIPTDIR"/db_dump_ddl.sh "$DBFILE" > "$DBDIR"/ddl.sql &&
-  "$SCRIPTDIR"/db_dump_data.sh "$DBFILE" > "$DBDIR"/data.sql
+"$SCRIPTDIR"/db_dump_ddl.sh "$DBDSN" > "$DBDIR"/ddl.sql &&
+  "$SCRIPTDIR"/db_dump_data.sh "$DBDSN" > "$DBDIR"/data.sql
