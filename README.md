@@ -71,7 +71,7 @@ flowchart TD
 ## Installation
 
 The following instructions are for a Linux Debian 12.5 (Bookworm)
-installation. For other OSes and distributions, YMMV.
+installation. For other OSes and/or Linux distributions, YMMV.
 
 Install the required packages using this command:
 
@@ -82,6 +82,8 @@ sudo apt install openjdk-17-jre-headless openjdk-17-jre libjson-perl \
   inkscape imagemagick-6.q16 node-http-server
 ```
 
+Check [deploy.sh usage](#deploysh) for the configuration requirements
+for deployment.
 
 ### Observations
 
@@ -106,8 +108,8 @@ sudo apt install openjdk-17-jre-headless openjdk-17-jre libjson-perl \
 
 The Exploratorium comes with a series of scripts that perform the
 different transformation stages of the workflow. They are located in
-the [scripts](scripts) directory, inside of which there is a
-[commands](scripts/commands) directory which contains the most common
+the [scripts directory](scripts), inside of which there is a
+[commands directory](scripts/commands) which contains the most common
 operations and are meant to be executed from a file manager by
 double-clicking (this functionality has been tested on macOS Finder
 and does not work with GNOME Files v.43, so YMMV).
@@ -126,16 +128,18 @@ part of.
 The following environment variables can be set to customize the
 transformation process:
 
-| Name            | Default                   | Purpose                                                                                                                                                 |
-|-----------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `CONFIGFILE`    | `$SCRIPTDIR/config.sh`    | Configuration override by means of a sourced shell script. If the default config file is not found, it is not sourced                                   |
-| `SCRIPTDIR`     | `$(dirname "$0")`         | Location of the script being invoked                                                                                                                    |
-| `PROJECTDIR`    | `$SCRIPTDIR/..`           | Location of the project's main directory                                                                                                                |
-| `DBDIR`         | `$PROJECTDIR/db`          | Location of the project's files related to the database, such as initialization SQL and data dumps, and in the case of SQLite, the database binary file |
-| `SITEDIR`       | `$PROJECTDIR/site`        | Location of the web site's files. This is the DocumentRoot for a local web server and what is deployed to production                                    |
-| `DIAGRAMSUBDIR` | `theories`                | If `DIAGRAMDIR` is not overriden, sets the sub-directory under `$SITEDIR` where diagram files will be put                                               |
-| `DIAGRAMDIR`    | `$SITEDIR/$DIAGRAMSUBDIR` | Location where the diagram files will be put                                                                                                            |
-| `DEFAULT_DBDSN` | `$DBDIR/exploratorium.db` | Data store name for the database connection. DBI notation, or just the file name of an SQLite database file                                             |
+| Name               | Default                   | Purpose                                                                                                                                                 |
+|--------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `CONFIGFILE`       | `$SCRIPTDIR/config.sh`    | Configuration override by means of a sourced shell script. If the default config file is not found, it is not sourced                                   |
+| `SCRIPTDIR`        | `$(dirname "$0")`         | Location of the script being invoked                                                                                                                    |
+| `PROJECTDIR`       | `$SCRIPTDIR/..`           | Location of the project's main directory                                                                                                                |
+| `DBDIR`            | `$PROJECTDIR/db`          | Location of the project's files related to the database, such as initialization SQL and data dumps, and in the case of SQLite, the database binary file |
+| `SITEDIR`          | `$PROJECTDIR/site`        | Location of the web site's files. This is the DocumentRoot for a local web server and what is deployed to production                                    |
+| `DIAGRAMSUBDIR`    | `theories`                | If `DIAGRAMDIR` is not overriden, sets the sub-directory under `$SITEDIR` where diagram files will be put                                               |
+| `DIAGRAMDIR`       | `$SITEDIR/$DIAGRAMSUBDIR` | Location where the diagram files will be put                                                                                                            |
+| `DEFAULT_DBDSN`    | `$DBDIR/exploratorium.db` | Data store name for the database connection. DBI notation, or just the file name of an SQLite database file                                             |
+| `DEPLOY_HOST`      | `remo`                    | SSH Host where deployment is to connect to transfer the files of the web site. See [deploy.sh](#deploysh)                                               |
+| `DEPLOY_REMOTEDIR` | `Exploratorium`           | Path inside the deployment host where the web site files will reside. See [deploy.sh](#deploysh)                                                        |
 
 `DEFAULT_DBDSN` can point to a file, which selects SQLite as the
 database engine. DBI notation is supported for future-proofing when
@@ -143,7 +147,7 @@ the string is prefixed with `DBI:`, as per usual. If credentials are
 needed, an external method such as
 [pgpass](https://www.postgresql.org/docs/current/libpq-pgpass.html) is
 recommended. For programs that require a connection string (a DSN) as
-a parameter, `DEFAULT_BDSN` will be taken if none is provided.
+a parameter, `DEFAULT_DBDSN` will be taken if none is provided.
 
 If a configuration file is found where `CONFIGFILE` points it will be
 sourced and the values of the environment variables set there will
@@ -193,34 +197,54 @@ execution chain, examine the following dependency tree:
 
 ```mermaid
 flowchart TD
-    init.sh ---> db_init.sh
-    init.sh ----> build.sh
-    build.sh ---> gen_lattices.sh
-    build.sh ---> gen_pages.sh
-    build.sh ---> gen_diagram_catalogs.sh
-    db_dump.sh ----> db_dump_ddl.sh
-    db_dump.sh ----> db_dump_data.sh
-    gen_lattice.sh ---> gen_lattice.pl
-    gen_lattices.sh ---> db_dump_data.sh
-    gen_lattices.sh ---> gen_lattice.sh
-    gen_pages.sh ---> gen_gravitytree.sh
+    deploy.sh
+    init.sh --> db_init.sh
+    init.sh ---> build.sh
+    build.sh --> gen_lattices.sh
+    build.sh --> gen_pages.sh
+    build.sh --> gen_diagram_catalogs.sh
+    db_dump.sh ---> db_dump_ddl.sh
+    db_dump.sh ---> db_dump_data.sh
+    gen_lattice.sh --> gen_lattice.pl
+    gen_lattices.sh --> db_dump_data.sh
+    gen_lattices.sh --> gen_lattice.sh
+    gen_pages.sh --> gen_gravitytree.sh
 ```
+
+All of the above programs reside in the [scripts directory](scripts).
 
 
 ### Top-level Operations
 
-All of the following programs reside in the `scripts` directory:
+These are the most important programs to run while working on the
+project. All of the other programs that these two invoke are specific
+steps of the whole processing, but it is not really much more
+productive to call them directly, so as an end-user, most of the
+attention should be put on these programs, and the documentation of
+the other, lower-level programs should be regarded as information for
+development purposes or to isolate execution failures.
 
 #### init.sh
 
-This will take a project that has just been cloned from git and
+This will take a project that has just been cloned from git,
 [initialize the database](#db_initsh) and then [generate the whole web
 site](#buildsh). It can be useful if changes to the database or other
 sources have just been pulled from git and we want to regenerate the
 whole thing.
 
 This program will force the regeneration of all of the lattice files,
-regardless of changes in the database.
+regardless of changes in the database. Otherwise, it's the equivalent
+of just calling [db_init.sh](#db_initsh) and then
+[build.sh](#buildsh), which is what is done when working in the
+[database workflow](#database-workflow).
+
+**Note: since this program invokes [db_init.sh](#db_initsh), it should
+not be called if there are changes to the database that have not been
+dumped back to SQL statements or these changes will be reverted to
+what the SQL scripts indicate (although a backup is produced to
+mitigate the damage in case this happens by accident). If there are
+pending changes on the database ahd you want to see how these changes
+look on the web page, use [build.sh](#buildsh)**
 
 Invocation:
 
@@ -240,6 +264,52 @@ Invocation:
 
 * `«DSN»`: optional Data Source Name, see [`DEFAULT_DBDSN`](#configuration-and-overriding).
 
+Also, you can double-click or run
+[scripts/commands/rebuild.command](scripts/commands/rebuild.command)
+from your file browser if that is an available option.
+
+
+#### deploy.sh
+
+This program is used to upload all of `SITEDIR` to the production web
+host (remo, or the value of
+[`DEPLOY_HOST`](#configuration-and-overriding)). Your
+`$HOME/.ssh/config` has to be correctly configured to perform the
+transmission, which is done using rsync over an ssh connection for
+performance: only those files that are detected as changed are
+uploaded to the server.
+
+Here is an example of an
+[ssh_config](https://linux.die.net/man/5/ssh_config) section that
+would make this work, assuming that the relevant asymetric keys have
+been set up correctly for the default
+[`DEPLOY_HOST`](#configuration-and-overriding):
+
+```
+Host remo
+	Hostname remo.cua.uam.mx
+	User remousr
+	IdentityFile ~/.ssh/remo.rsa
+```
+
+Check any of many Internet tutorials on how to set up passwordless ssh
+authentication through asymmetric keys to get everything set
+up. Here's one from the University of Indiana on how to do it in [9
+easy steps](https://kb.iu.edu/d/aews).
+
+In some cases you may have to discuss ssh access and allowed
+authentication methods with your production host administrator. If a
+non-interactive access method is not arranged, you may have to provide
+a password every time you deploy.
+
+Invocation:
+
+`deploy.sh`
+
+* This program takes no arguments. Configuration is done through
+  [`DEPLOY_HOST` and
+  `DEPLOY_REMOTEDIR`](#configuration-and-overriding) environment
+  variables.
 
 ### Database Operations
 
@@ -254,8 +324,10 @@ output from the dump scripts is what is to be commited to the
 repository, where it is easier to keep track of the changes, instead
 of pushing binary files which are unnatural for git to manage.
 
-Here a sequence diagram with the expected steps relative to working on
-changes to the database:
+#### Database Workflow
+
+Here is a sequence diagram with the expected steps relative to working
+on changes to the database:
 
 ```mermaid
 stateDiagram
@@ -263,7 +335,8 @@ stateDiagram
     gitclone : git clone
     gitclone --> db_init.sh
     note right of db_init.sh
-        Regenerate DB<br/>from SQL files
+        Regenerate DB
+        from SQL files
     end note
     edit : Edit Database<br/>(SQLite Studio)
     db_init.sh --> edit
@@ -279,7 +352,8 @@ stateDiagram
     gitcommit : git commit
     db_dump.sh --> gitcommit
     note left of db_dump.sh
-        Satisfied with changes,<br/>convert back to SQL
+        Satisfied with changes,
+        convert back to SQL
     end note
     gitpush : git push
     gitcommit --> gitpush
