@@ -4,6 +4,42 @@ Website for the [Space-Time Theories
 Exploratorium](https://remo.cua.uam.mx/vis/Exploratorium/).
 
 
+## Installation
+
+The following instructions are for a Linux Debian 12.5 (Bookworm)
+installation. For other OSes and/or Linux distributions, YMMV.
+
+Install the required packages using this command:
+
+```sh
+sudo apt install openjdk-17-jre-headless openjdk-17-jre libjson-perl \
+  libtemplate-perl libdbi-perl libdbd-sqlite3-perl libdigest-md5-perl \
+  libinline-java-perl pandoc sqlite3 pgformatter rsync openssh-client \
+  inkscape imagemagick-6.q16 node-http-server
+```
+
+Check [deploy.sh usage](#deploysh) for the configuration requirements
+for deployment.
+
+### Observations
+
+* All shell scripts have been written specifically for Bash.
+* If you wish to execute Conexp in stand-alone mode, as an
+  application, you will need to provide a JavaFX implementation to
+  Conexp, either by installing a legacy version of Java (prior to Java
+  11) or installing [OpenJFX](https://gluonhq.com/products/javafx/).
+* `node-http-server` is in the package list as a means to load the web
+  site locally for development. If you do not wish to install its
+  dependencies, you can instead use `micro-httpd` or `mini-httpd` and
+  edit `scripts/command/http-server.command` accordingly.
+* `inkscape` and `imagemagick-6.q16` are required to process and
+  generate the gravity apple tree. The part executed by inkscape is a
+  typeface-sensitive operation and should only be done with the same
+  architecture/machine of the author's, otherwise the geometries will
+  come out wrong and the graph will be malformed. There is no need to
+  install these if the gravity tree will not be regenerated.
+
+
 ## Workflow
 
 The following is a graph of the main workflow. Trapezoids represent
@@ -66,42 +102,6 @@ flowchart TD
     DEP[<b>Deployer<br/><i>scripts/deploy.sh]
     DEP -- Web Site,<br/>ssh + rsync --> SRV[<b>Web Server]
 ```
-
-
-## Installation
-
-The following instructions are for a Linux Debian 12.5 (Bookworm)
-installation. For other OSes and/or Linux distributions, YMMV.
-
-Install the required packages using this command:
-
-```sh
-sudo apt install openjdk-17-jre-headless openjdk-17-jre libjson-perl \
-  libtemplate-perl libdbi-perl libdbd-sqlite3-perl libdigest-md5-perl \
-  libinline-java-perl pandoc sqlite3 pgformatter rsync openssh-client \
-  inkscape imagemagick-6.q16 node-http-server
-```
-
-Check [deploy.sh usage](#deploysh) for the configuration requirements
-for deployment.
-
-### Observations
-
-* All shell scripts have been written specifically for Bash.
-* If you wish to execute Conexp in stand-alone mode, as an
-  application, you will need to provide a JavaFX implementation to
-  Conexp, either by installing a legacy version of Java (prior to Java
-  11) or installing [OpenJFX](https://gluonhq.com/products/javafx/).
-* `node-http-server` is in the package list as a means to load the web
-  site locally for development. If you do not wish to install its
-  dependencies, you can instead use `micro-httpd` or `mini-httpd` and
-  edit `scripts/command/http-server.command` accordingly.
-* `inkscape` and `imagemagick-6.q16` are required to process and
-  generate the gravity apple tree. The part executed by inkscape is a
-  typeface-sensitive operation and should only be done with the same
-  architecture/machine of the author's, otherwise the geometries will
-  come out wrong and the graph will be malformed. There is no need to
-  install these if the gravity tree will not be regenerated.
 
 
 ## Usage
@@ -192,7 +192,7 @@ $ scripts/gen_lattices.sh
 ### Execution dependencies
 
 The whole of the project is meant to be totally or partially rebuilt
-using just one command without user intervention. To illustrate the
+using just one command without user intervention. To understand the
 execution chain, examine the following dependency tree:
 
 ```mermaid
@@ -208,6 +208,7 @@ flowchart TD
     gen_lattice.sh --> gen_lattice.pl
     gen_lattices.sh --> db_dump_data.sh
     gen_lattices.sh --> gen_lattice.sh
+    gen_pages.sh --> gen_pages.pl
     gen_pages.sh --> gen_gravitytree.sh
 ```
 
@@ -404,7 +405,8 @@ Invocation:
 #### db_dump_ddl.sh
 
 Perform a dump of the schema of the database and send it to standard
-output. [`pg_format`](https://sqlformat.darold.net/) is used to beautify the output.
+output. [`pg_format`](https://sqlformat.darold.net/) is used as a base
+to beautify the output.
 
 Invocation:
 
