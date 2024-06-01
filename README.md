@@ -18,8 +18,19 @@ sudo apt install openjdk-17-jre-headless openjdk-17-jre libjson-perl \
   inkscape imagemagick-6.q16 node-http-server
 ```
 
+For macOS, install the equivalent packages using [Homebrew](https://brew.sh/)
+
+Install [SQLiteStudio](https://sqlitestudio.pl/) for user-facing
+database editting and manipulation, or any alternative with which you
+feel comfortable.
+
 Check [deploy.sh usage](#deploysh) for the configuration requirements
 for deployment.
+
+In the near future, [PostgreSQL](https://www.postgresql.org/) will be
+supported as an alternative to [SQLite](https://www.sqlite.org/), so
+in some parts of the documentation we may refer to the database
+platform in an abstract fashion or mention PostgreSQL as a side note.
 
 ### Observations
 
@@ -118,10 +129,11 @@ and does not work with GNOME Files v.43, so YMMV).
 ### Generalities
 
 All scripts auto-discover the location of the project directory by
-assuming it is the parent of the program's location, and they are
+assuming it to be the parent of the program's location, and they are
 working-directory agnostic, meaning they can be executed from any
-location and they will always act by default on the project they are
-part of.
+location and they will always act by default on the project of which
+they are a part (unless `SCRIPTDIR` or `PROJECTDIR` is overriden, see
+the following section).
 
 #### Configuration and Overriding
 
@@ -327,17 +339,17 @@ of pushing binary files which are unnatural for git to manage.
 
 #### Database Workflow
 
-Here is a sequence diagram with the expected steps relative to working
-on changes to the database:
+Here is a state diagram with the expected steps relative to working on
+changes to the database:
 
 ```mermaid
 stateDiagram
     direction TB
-    gitclone : git clone
-    gitclone --> db_init.sh
+    [*] --> db_init.sh
     note right of db_init.sh
         Regenerate DB
         from SQL files
+        if neccesary
     end note
     edit : Edit Database<br/>(SQLite Studio)
     db_init.sh --> edit
@@ -369,7 +381,42 @@ stateDiagram
     gitpull --> db_init.sh
 ```
 
-#### db_init.sh
+##### Elaboration
+
+* [db_init.sh](#db_initsh) should only be run if the database is not
+  in place or if the data in the SQL files supercedes the one in the
+  database. If there is work in the database pending to be dumped to
+  SQL, this step should be skipped.
+* Proceed to edit the database. In the future, there should be a
+  [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+  application so that the database is not edited "by hand". For
+  SQLite-based projects, we are using
+  [SQLiteStudio](https://sqlitestudio.pl/).
+* Run [build.sh](#buildsh) (or double-click
+  [rebuild.command](scripts/commands/rebuild.command)) to regenerate
+  the diagram catalogs and/or the lattice.json files as needed.
+* Open the local website with your web browser and check the
+  results. If the local web server is not up, firstly run
+  [http-server.command](scripts/commands/http-server.command) and
+  leave it there. The local server will show the access URL on the
+  terminal, which should be <http://127.0.0.1:8080/>.
+* Review your changes and go back to the database editor if more work
+  needs to be done.
+* If you are satisfied with the results, it's time to commit the
+  canges to the git repository. Since the database is not directly
+  stored on git and we are instead using SQL dumps for source control,
+  run [db_dump.sh](#db_dumpsh) to export the database with the new
+  data onto the SQL files.
+* Proceed to commit and optionally push to git.
+* If someone else has pushed changes to the SQL files, you will need
+  to do a git pull and review the changes and then regenerate the
+  database by running [db_init.sh](#dbinitsh) once again. This should not
+  be a problem since you have already exported your own changes to the
+  SQL files and reviewed any changes brought from the git pull.
+  
+#### Database Command Reference
+
+##### db_init.sh
 
 Take the SQL statements stored in `$DBDIR/ddl.sql` (SQL statements to
 build the database schema) and `$DBDIR/data.sql` (data dumped as SQL
@@ -390,7 +437,7 @@ Invocation:
 
 * `«DSN»`: optional Data Source Name, see [`DEFAULT_DBDSN`](#configuration-and-overriding).
 
-#### db_dump.sh
+##### db_dump.sh
 
 Dump both the [schema of the database](#db_dump_ddlsh) and [its
 data](#db_dump_datash) and store them as SQL statements in
@@ -402,7 +449,7 @@ Invocation:
 
 * `«DSN»`: optional Data Source Name, see [`DEFAULT_DBDSN`](#configuration-and-overriding).
 
-#### db_dump_ddl.sh
+##### db_dump_ddl.sh
 
 Perform a dump of the schema of the database and send it to standard
 output. [`pg_format`](https://sqlformat.darold.net/) is used as a base
@@ -414,7 +461,7 @@ Invocation:
 
 * `«DSN»`: optional Data Source Name, see [`DEFAULT_DBDSN`](#configuration-and-overriding).
 
-#### db_dump_data.sh
+##### db_dump_data.sh
 
 Dump the data from all of the tables and send them as INSERT SQL
 statements to standard output.
@@ -432,4 +479,55 @@ From the content creator's perspective, to render the web site's pages
 and diagrams we have two main inputs: master Markdown files and the
 database. For the webmaster, the template files affect the markup and
 structure of the pages and of course there are CSS files, images and
-Javascript sources to mantain.
+Javascript sources to maintain.
+
+The content creator needs only to invoke [build.sh](#buildsh) to
+regenerate the web pages automatically after work has been done either
+on the database or the master markdowns.
+
+#### Web Content Workflow
+
+Here is a state diagram with the expected steps for working on web
+content:
+
+```mermaid
+stateDiagram
+    direction TB
+    [*] --> build.sh
+    build.sh --> test
+    test : View/Reload Local Website
+    edit : Edit Master<br/>Markdowns
+    edit --> build.sh
+    test --> edit
+    test --> editl
+    editl : Edit geometries with<br/>Lattice Editor
+    editl --> copypos
+    copypos : Copy/Paste geometries to<br/>pos.json and/or config.js
+    copypos --> test
+    test --> gitcommit
+    gitcommit : git commit
+    note left of gitcommit
+        Having completed a change,
+        send to git before proceeding
+        to another change
+    end note
+    gitpush : git push
+    gitcommit --> gitpush
+    gitcommit --> outside
+    outside : Changes Pushed?<br/>(collaborator)
+    gitpush --> outside
+    gitpull : git pull
+    state if_outside <<choice>>
+    outside --> if_outside
+    if_outside --> gitpull : yes
+    if_outside --> build.sh : no
+    gitpull --> build.sh
+```
+
+##### Elaboration
+
+#### Master Markdowns
+
+#### Lattice Editor
+
+#### Web Content Command Reference
