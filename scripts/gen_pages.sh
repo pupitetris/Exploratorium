@@ -14,7 +14,7 @@ while read -r lang; do
     # gen_pages.pl is location agnostic, but this produces reports
     # that are easier on the eyes:
     cd "$PROJECTDIR/tt"
-    "$SCRIPTDIR"/gen_pages.pl master-$lang.md --force
+    "$SCRIPTDIR"/gen_pages.pl $(printf "$MASTER_NAME" $lang) --force
   )
 
 done < <(sqlite3 "$DBDSN" "SELECT lang_code FROM lang")

@@ -24,6 +24,19 @@ function get_changed_contexts {
   mv -f "$TMPFILE" "$TMPFILE.prev"
 }
 
+function filter_contexts {
+  if [ -z "$DIAGRAM_FILTERS" ]; then
+    cat
+    return
+  fi
+
+  grep $(
+    for i in $DIAGRAM_FILTERS; do
+      echo "-e $i"
+    done
+        )
+}
+
 CONTEXT_IDS=$(get_changed_contexts)
 if [ -z "$CONTEXT_IDS" ]; then
   echo "No changes in contexts detected."
@@ -35,5 +48,5 @@ while read -r lang; do
     fname="$DIAGRAMDIR"/$lang/$context/lattice.json
     echo "Generating $fname"
     "$SCRIPTDIR"/gen_lattice.sh "$DBDSN" $context $lang > "$fname"
-  done < <(sqlite3 "$DBDSN" "SELECT code FROM context WHERE context_id IN ($CONTEXT_IDS)")
+  done < <(sqlite3 "$DBDSN" "SELECT code FROM context WHERE context_id IN ($CONTEXT_IDS)" | filter_contexts)
 done < <(sqlite3 "$DBDSN" "SELECT lang_code FROM lang")
