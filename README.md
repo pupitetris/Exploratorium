@@ -42,13 +42,16 @@ platform in an abstract fashion or mention PostgreSQL as a side note.
 * `node-http-server` is in the package list as a means to load the web
   site locally for development. If you do not wish to install its
   dependencies, you can instead use `micro-httpd` or `mini-httpd` and
-  edit `scripts/command/http-server.command` accordingly.
+  edit
+  [`scripts/command/http-server.command`](scripts/command/http-server.command)
+  accordingly.
 * `inkscape` and `imagemagick-6.q16` are required to process and
-  generate the gravity apple tree. The part executed by inkscape is a
-  typeface-sensitive operation and should only be done with the same
-  architecture/machine of the author's, otherwise the geometries will
-  come out wrong and the graph will be malformed. There is no need to
-  install these if the gravity tree will not be regenerated.
+  generate the gravity apple tree. The part executed by
+  [Inkscape](https://inkscape.org/) is a typeface-sensitive operation
+  and should only be done with the same architecture/machine of the
+  author's, otherwise the geometries will come out wrong and the graph
+  will be malformed. There is no need to install these if the gravity
+  tree will not be regenerated.
 
 
 ## Workflow
@@ -119,11 +122,15 @@ flowchart TD
 
 The Exploratorium comes with a series of scripts that perform the
 different transformation stages of the workflow. They are located in
-the [scripts directory](scripts), inside of which there is a
-[commands directory](scripts/commands) which contains the most common
-operations and are meant to be executed from a file manager by
-double-clicking (this functionality has been tested on macOS Finder
-and does not work with GNOME Files v.43, so YMMV).
+the [scripts directory](scripts), inside of which there is a [commands
+directory](scripts/commands) which contains the most common operations
+and are meant to be executed from a file manager by double-clicking
+(this functionality has been tested on macOS Finder and does not work
+with GNOME Files v.43 where the best you can do is select an option by
+right-clicking the .command file or installing and configuring
+something like the [Command Menu
+extension](https://extensions.gnome.org/extension/4850/command-menu/),
+so YMMV).
 
 
 ### Generalities
@@ -140,18 +147,20 @@ the following section).
 The following environment variables can be set to customize the
 transformation process:
 
-| Name               | Default                   | Purpose                                                                                                                                                 |
-|--------------------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `CONFIGFILE`       | `$SCRIPTDIR/config.sh`    | Configuration override by means of a sourced shell script. If the default config file is not found, it is not sourced                                   |
-| `SCRIPTDIR`        | `$(dirname "$0")`         | Location of the script being invoked                                                                                                                    |
-| `PROJECTDIR`       | `$SCRIPTDIR/..`           | Location of the project's main directory                                                                                                                |
-| `DBDIR`            | `$PROJECTDIR/db`          | Location of the project's files related to the database, such as initialization SQL and data dumps, and in the case of SQLite, the database binary file |
-| `SITEDIR`          | `$PROJECTDIR/site`        | Location of the web site's files. This is the DocumentRoot for a local web server and what is deployed to production                                    |
-| `DIAGRAMSUBDIR`    | `theories`                | If `DIAGRAMDIR` is not overriden, sets the sub-directory under `$SITEDIR` where diagram files will be put                                               |
-| `DIAGRAMDIR`       | `$SITEDIR/$DIAGRAMSUBDIR` | Location where the diagram files will be put                                                                                                            |
-| `DEFAULT_DBDSN`    | `$DBDIR/exploratorium.db` | Data store name for the database connection. DBI notation, or just the file name of an SQLite database file                                             |
-| `DEPLOY_HOST`      | `remo`                    | SSH Host where deployment is to connect to transfer the files of the web site. See [deploy.sh](#deploysh)                                               |
-| `DEPLOY_REMOTEDIR` | `Exploratorium`           | Path inside the deployment host where the web site files will reside. See [deploy.sh](#deploysh)                                                        |
+| Name               | Default                   | Purpose                                                                                                                                                    |
+|--------------------|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `CONFIGFILE`       | `$SCRIPTDIR/config.sh`    | Configuration override by means of a sourced shell script. If the default config file is not found, it is not sourced                                      |
+| `SCRIPTDIR`        | `$(dirname "$0")`         | Location of the script being invoked                                                                                                                       |
+| `PROJECTDIR`       | `$SCRIPTDIR/..`           | Location of the project's main directory                                                                                                                   |
+| `DBDIR`            | `$PROJECTDIR/db`          | Location of the project's files related to the database, such as initialization SQL and data dumps, and in the case of SQLite, the database binary file    |
+| `SITEDIR`          | `$PROJECTDIR/site`        | Location of the web site's files. This is the DocumentRoot for a local web server and what is deployed to production                                       |
+| `DIAGRAMSUBDIR`    | `theories`                | If `DIAGRAMDIR` is not overriden, sets the sub-directory under `$SITEDIR` where diagram files will be put                                                  |
+| `DIAGRAMDIR`       | `$SITEDIR/$DIAGRAMSUBDIR` | Location where the diagram files will be put                                                                                                               |
+| `DIAGRAM_FILTERS`  | ` ` (no value)            | Filters (grep regexps) separated by space selecting which diagrams will be worked on. No value selects all of them. See [gen_lattices.sh](#gen_latticessh) |
+| `DEFAULT_DBDSN`    | `$DBDIR/exploratorium.db` | Data store name for the database connection. DBI notation, or just the file name of an SQLite database file                                                |
+| `MASTER_NAME`      | `master-%s.md`            | Name scheme for the master Markdown files found in the [tt directory](tt). %s is replaced with the language code (i.e. `en` or `es`)                       |
+| `DEPLOY_HOST`      | `remo`                    | SSH Host where deployment is to connect to transfer the files of the web site. See [deploy.sh](#deploysh)                                                  |
+| `DEPLOY_REMOTEDIR` | `Exploratorium`           | Path inside the deployment host where the web site files will reside. See [deploy.sh](#deploysh)                                                           |
 
 `DEFAULT_DBDSN` can point to a file, which selects SQLite as the
 database engine. DBI notation is supported for future-proofing when
@@ -399,7 +408,7 @@ stateDiagram
   results. If the local web server is not up, firstly run
   [http-server.command](scripts/commands/http-server.command) and
   leave it there. The local server will show the access URL on the
-  terminal, which should be <http://127.0.0.1:8080/>.
+  terminal, which should typically be <http://127.0.0.1:8080/>.
 * Review your changes and go back to the database editor if more work
   needs to be done.
 * If you are satisfied with the results, it's time to commit the
@@ -409,7 +418,7 @@ stateDiagram
   data onto the SQL files.
 * Proceed to commit and optionally push to git.
 * If someone else has pushed changes to the SQL files, you will need
-  to do a git pull and review the changes and then regenerate the
+  to do a git pull, review the changes and then regenerate the
   database by running [db_init.sh](#dbinitsh) once again. This should not
   be a problem since you have already exported your own changes to the
   SQL files and reviewed any changes brought from the git pull.
@@ -526,7 +535,45 @@ stateDiagram
 
 ##### Elaboration
 
+* After running [build.sh](#buildsh) open the local website with your
+  web browser and check the results. If the local web server is not
+  up, firstly run
+  [http-server.command](scripts/commands/http-server.command) and
+  leave it there. The local server will show the access URL on the
+  terminal, which should typically be <http://127.0.0.1:8080/>.
+
+From here you can proceed to either:
+
+* Work on the content of the site
+  * Using a text editor, edit the master Markdown file for the desired
+    language. A text editor capable of validating and previewing
+    Markdown formatting is recommended.
+
+or
+
+* Visit a diagram page to enter editor mode and work on the lattice
+  geometries.
+  * The editor button will only be available if the page is visited
+    through address `127.0.0.1`.
+  * After altering the node positions proceed to generate the positional
+    JSON code, select the "Copy" button and using a text editor replace
+    the content of the corresponding `pos.json` file with what has been
+    copied.
+  * After the modifying the size and offset of the diagram, copy the
+    corresponding value and using a text editor open the corresponding
+    `config.js` and replace the value of the `VIEWBOX` parameter.
+
+* Run [build.sh](#buildsh) and review your changes. 
+* If you are satisfied with the results, it's time to commit the
+  canges to the git repository and optionally git push to upload the
+  changes to the upstream repository (github).
+* If someone else has pushed changes to the upstream repo, you will
+  need to do a git pull, review the changes and then regenerate the
+  site by running [build.sh](#buildsh) once again.
+
 #### Master Markdowns
+
+
 
 #### Lattice Editor
 
