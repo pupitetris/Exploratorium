@@ -158,7 +158,7 @@ transformation process:
 | `DIAGRAMDIR`       | `$SITEDIR/$DIAGRAMSUBDIR` | Location where the diagram files will be put                                                                                                               |
 | `DIAGRAM_FILTERS`  | ` ` (no value)            | Filters (grep regexps) separated by space selecting which diagrams will be worked on. No value selects all of them. See [gen_lattices.sh](#gen_latticessh) |
 | `DEFAULT_DBDSN`    | `$DBDIR/exploratorium.db` | Data store name for the database connection. DBI notation, or just the file name of an SQLite database file                                                |
-| `MASTER_NAME`      | `master-%s.md`            | Name scheme for the master Markdown files found in the [tt directory](tt). %s is replaced with the language code (i.e. `en` or `es`)                       |
+| `MASTER_NAME`      | `master-%s.md`            | Name scheme for the [master Markdown files](#master-markdowns) found in the [tt directory](tt). %s is replaced with the language code (i.e. `en` or `es`)  |
 | `DEPLOY_HOST`      | `remo`                    | SSH Host where deployment is to connect to transfer the files of the web site. See [deploy.sh](#deploysh)                                                  |
 | `DEPLOY_REMOTEDIR` | `Exploratorium`           | Path inside the deployment host where the web site files will reside. See [deploy.sh](#deploysh)                                                           |
 
@@ -573,6 +573,355 @@ or
 
 #### Master Markdowns
 
+The web pages for the site are generated using [Markdown-formatted
+plain text files](https://daringfireball.net/projects/markdown/) that
+follow a bespoke document structure. Because the individual pages
+behind the project are all relatively small, containing most of them
+two or three parragraphs each, it is easier for the content creator to
+edit just one file where all of the content is deposited.
+
+##### Multi-language Support
+
+Currently, only two languages are supported, which at the time are
+being used for English and Spanish, but they could be any two
+languages. Support for more languages would entail easy modifications
+to the template system and the UI: make the language selector a pop-up
+menu, and let the per-page `navlang` config variable be a JSON object,
+instead of the current situation whre the language selector is just a
+link that toggles the language and `navlang`'s value is a string with
+the URL of the current page's alternate version in the "other"
+language.
+
+Languages are enumerated at the database level in the lang table. Each
+language has a code, which is relevant at the file level. The system
+allows for a configuration with only one language, and the database
+does not limit the amount of languages that there can be: it's just a
+matter of making template system accomodate more than two of them.
+
+##### File Location
+
+Master Markdown files are located inside the [`tt` directory](tt),
+alongside the template files that generate the HTML markup. The
+`MASTER_NAME` variable at the [script
+configuration](#configuration-and-overriding) level determines the
+actual name of the master files, which on the default configuration
+and with two languages (English or `en` and Spanish or `es`) derives
+to [`tt/master-en.md`](tt/master-en.md) and
+[`tt/master-es.md`](tt/master-es.md) respectively.
+
+##### Master Markdown Structure
+
+This is a guide on how to follow the bespoke structure of the master
+Markdown files. Even if these files follow the Markdown format, you
+cannot just take it away and liberally write your text: you have to
+follow a defined structure, explained here. Also, the file is not
+consumed using typical Markdown-to-HTML converters, so every Markdown
+element type must be explicitly supported (for example, table
+rendering is not currently supported).
+
+Knowledge on the basic strucutre and syntax of Markdown files is
+absolutely essential for the file to pass validatation with the
+Markdown parser (pandoc) that is invoked by the template system and to
+avoid confusing the parser with semi-correct formatting. The [Markdown
+Guide](https://www.markdownguide.org/) is a recommended resource if
+you are not familiar with Markdown.
+
+Also, the use of an editor that supports Markdown syntax highlighting
+and live preview is *highly* recommended. You can even use GitHub's
+[github.dev](https://github.dev/github/dev) editor, which has support
+for both these things and is a web page that does not require
+installation.
+
+###### Main title
+
+Set up a level-1 heading at the top of the file. Preferably using the
+ornamental notation with the title on one line underscored with equal
+signs:
+
+```markdown
+Exploratorium de teorías del espacio-tiempo
+===========================================
+```
+
+This will be the actual title (`<h1>`) of the [Home Page](#home-page), and
+also the text for the `<title>`. For pages other than the Home page,
+this text will be used first, followed by a colon and the name of the
+page in question. So, a main title of:
+
+```markdown
+Mi Proyecto
+===========
+```
+
+and a page titled `Diagrama 1` will render 
+`<title>Mi Proyecto: Diagrama 1</title>` for that page. This markup is 
+part of the `<head>` metadata of the page, and is used for bookmarks,
+Google search results, browser window names and so on.
+
+###### Global Configuration
+
+After the title, a `json` block with the `config` class is to be
+created, with a JSON object that stores a series of key-value pairs
+for configuration purposes:
+
+````markdown
+```{ .json .config }
+{
+  "lang": "es",
+  "strings": {
+    "Close info box": "Cerrar caja de info",
+    "Zoom In": "Acercar"
+  }
+}
+```
+````
+
+Two keys are currently supported:
+
+* `lang` is the language code for the content currently
+  displayed. This is an important value that will be passed to the
+  Javascript code so it can become aware of the language used for the
+  page.
+* `strings` is an optional key, with another object assigned that is a
+  mapping of original strings found on the templates and their
+  translations to the language of the master file's content. In the
+  example, since the content is declared to be Spanish and the
+  original templates' translatable strings are written in English, a
+  mapping is necessary. Consequently, no `strings` mapping is
+  necessary for English, although it would be if the template's
+  translatable strings were written in Spanish and the example's
+  language was English. If the translated version of a string is
+  required within a template and it is not made available in this
+  mapping, the template processor will issue a warning so that the
+  string is provided or some mismatching key-value pair is fixed.
+  
+Additionaly, each individual page also has its own [configuration
+block](#page-configuration) where per-page parameters are stored.
+  
+###### Navigation
+
+Create a level-2 section titled `Navigation` (no matter the Master
+file's language, the following section names are fixed
+strings). Inside, there must be a block of unordered list of links
+that will conform the main items of the menu:
+
+```markdown
+## Navigation
+
+- [Inicio](index-es.html)
+- [Explorando](nav_exploring_menu)
+- [Diagramas](nav_diagrams_menu)
+- [REMO](/)
+- [English](navlang)
+```
+
+This menu is rendered at the top of every page as a series of links or
+sub-menus with which the user can interact to navigate the site. The
+links that define menu items are URLs: they can point to any site's
+URL on the web. In the examples posed, relative URLs were used and so
+they look like special-purpose locations, but they are not. They just
+happen to point to the internal directory structure of the rendered
+site.
+
+There are two sepcial cases here, though:
+
+If the URL of a menu item's link is `navlang`, the item will point to
+the current page's declared alternate language version. Compare the
+`Navigation` section of both English and Spanish master files to
+understand how the set up makes this menu item work as a toggle.
+
+If the URL of a menu item's link starts with the suffix `nav_`, a
+corresponding level-2 section will be looked up to use as a source to
+render a submenu. These navigation submenues follow the same format as
+`Navigation`:
+
+```markdown
+## Diagrams Menu
+
+- [Protofísica](theories/es/protophysics)
+- [Dinámica Analítica](theories/es/analytical-dynamics)
+- [Teorías Básicas](theories/es/basic)
+- [Manzano de la Gravitación](gravity-tree)
+```
+
+###### Author
+
+A level-2 section titled `Author` containing a single parragraph used
+as a subtitle for the [Home Page](#home-page). This subtitle used to
+be present on every page, but it was later restricted to only the home
+page, hence the existence of this section.
+
+###### Footer
+
+A level-2 section titled `Footer` with two sub-sections (level-3), for
+Acknowledgements and the Copyright legend. This appears at the bottom
+of all pages using a small font:
+
+```markdown
+## Footer
+
+### Acknowledgements
+
+Este proyecto ha sido posible gracias al apoyo del Seminario de
+Representación y Modelización del Conocimiento Científico de la
+Universidad Autónoma Metropolitana- Unidad Cuajimalpa, así como de la
+Coordinación de Inovación y el Departaménto de Cómputo. Un
+agradecimiento a Mario Casanueva (UAM-C), Diego Méndez (UAM-C), Sergio
+Mendoza (IA-UNAM), Joaquín Hernández (UAM-C), y en especial a Arturo
+Espinosa por toda su ayuda y apoyo.
+
+### Copyright
+
+Copyright © 2017-2024, Mariana Espinosa Aldama
+```
+
+###### Pages
+
+A level-2 section titled `Pages`, where each (level-3) subsection
+represents a page within the site. Here is an example using extracts
+from the [Spanish master file](tt/master-es.md) illustrating three
+pages: the [`Home Page`](#home-page), a second one titled 
+`Guía de exploración` and a third one titled `Protofísica`:
+
+````markdown
+## Pages
+
+
+### Home
+
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "index-es.html",
+  "navlang": "index.html"
+}
+```
+
+En el Exploratorium, desentrañamos las
+intrincadas estructuras semánticas de las teorías físicas. Nuestra misión gira
+en torno a la creación de visualizaciones interactivas de redes
+hipervinculadas: macroscopios diseñados para explorar los cimientos de estas
+teorías.
+
+#### Descubre diez macroscopios
+
+Adéntrate en el reino de las teorías físicas y espacio-temporales con
+nuestras visualizaciones interactivas. Hemos disectado diversas
+clasificaciones conjuntistas realizadas por reconocidos filósofos de
+la ciencia y conformado una base de datos que relaciona modelos y sus
+atributos. Hemos analizado contextos formales para extraer conceeptos
+formales y visualizar redes jerárquicas. Los nodos representan
+conceptos, mientras que los enlaces ilustran relaciones jerárquicas de
+inclusión en redes interactivas que despliegan información extra.
+
+
+### Guía de exploración
+
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "guidance-es.html",
+  "navlang": "guidance.html"
+}
+```
+
+#### ¡Explora la estructura de las teorías físicas a través de redes conceptuales interactivas!
+
+#### Qué hacer:
+
+- Explora diez macroscopios con más de 50 teorías del
+  espacio-tiempo y la gravitación.
+- Conoce la metodología del Análisis de Conceptos Formales (FCA).
+- Aprende la lógica de las redes jerárquicas.
+
+
+### Protofísica
+
+```{ .json .config }
+{
+  "template": "diagram-page.tt",
+  "output": "theories/es/protophysics/index.html",
+  "navlang": "theories/en/protophysics/index.html"
+}
+```
+
+Las teorías físicas tienen como fundamento diversas teorías
+matemáticas, la lógica, la semántica y a  serie de presupuestos y
+teorías muy generales que en *Foundations of Physics* (1967) Mario
+Bunge divide en tres grupos: la base formal, la base material a la que
+llama *Protofísica*, y ciertos principios "zerológicos".
+
+````
+
+###### Home Page
+
+The page called `Home` is special as it takes the title from the
+master file's [main title](#main-title) and uses it again to put an
+`<h1>` heading the top of its content. It also then puts the
+[Author](#author) section's parragraph as a subtitle to
+this. Otherwise, it is processed like any of the other pages.
+
+###### Page Title
+
+Each level-3 section inside the `## Pages` section represents a
+page. The page's title is derived from the [main title](#main-title)
+followed by a colon and the page's section title.
+
+###### Page Configuration
+
+As with the [global configuration](#global-configuration), a `json`
+block with the `config` class is to be created below the page's
+heading. From the example above:
+
+````markdown
+### Guía de exploración
+
+```{ .json .config }
+{
+  "template": "index.tt",
+  "output": "guidance-es.html",
+  "navlang": "guidance.html"
+}
+```
+````
+
+Five keys are currently supported:
+
+* `template` states the name of the template file to be used to render
+  the current page. Currently, there are two template files:
+  [`index.tt`](tt/index.tt), used for all regular pages and
+  [`diagram-page.tt`](tt/diagram-page.tt), used for pages that show a
+  lattice diagram (a third template file [`main.tt`](tt/main.tt)
+  exists, but it only contains function and macro definitions and it's
+  used by the other two templates, but it is not for rendering web
+  pages).
+* `output` states the file path relative to the [`site`
+  directory](site) (or wherever the [`SITEDIR`
+  variable](#configuration-and-overriding) sets) where the rendered
+  HTML will be written.
+* `navlang` states the URL (most probably relative) of the alternate
+  language's version of the current page.
+* `styles` states an array of URLs pointing to CSS files that are to
+  be included for the page. This allows for bespoke styling to be
+  applied for the page in question.
+* `background` states for the `diagram-page.tt` template an URL
+  pointing to a background image to be rendered as a background for
+  the diagram.
+  
+###### Page Content
+
+It is a series of parragraphs, headings and list blocks with the
+actual content for the page. Level-4 headings and deeper will be
+translated to HTML headings two levels higher, so level-4 becomes
+`<h2>`, level-5 becomes `<h3>` and so on. Images, links, and ordered
+and unordered lists are supported, as well as basic text formatting
+such as bold, italics and so on. Support for additional Markdown
+blocks requires development for their accomodation in the template
+processor.
+
+In case the [`diagram-page.tt`](tt/diagram-page.tt) template is used,
+the diagram's lattice viewer and editor will be rendered after the
+content.
 
 
 #### Lattice Editor
