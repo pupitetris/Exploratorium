@@ -218,13 +218,13 @@ execution chain, examine the following dependency tree:
 
 ```mermaid
 flowchart TD
-    deploy.sh
-    init.sh --> db_init.sh
-    init.sh ---> build.sh
+    deploy.sh([deploy.sh])
+    init.sh([init.sh]) --> db_init.sh([db_init.sh])
+    init.sh ---> build.sh([build.sh])
     build.sh --> gen_lattices.sh
     build.sh --> gen_pages.sh
     build.sh --> gen_diagram_catalogs.sh
-    db_dump.sh ---> db_dump_ddl.sh
+    db_dump.sh([db_dump.sh]) ---> db_dump_ddl.sh
     db_dump.sh ---> db_dump_data.sh
     gen_lattice.sh --> gen_lattice.pl
     gen_lattices.sh --> db_dump_data.sh
@@ -233,7 +233,9 @@ flowchart TD
     gen_pages.sh --> gen_gravitytree.sh
 ```
 
-All of the above programs reside in the [scripts directory](scripts).
+All of the above programs reside in the [scripts
+directory](scripts). Scripts in rounded boxes are top-level programs
+intended to be invoked by users.
 
 
 ### Top-level Operations
@@ -959,4 +961,146 @@ environment variable governing these locations is
 
 #### Lattice Editor
 
+Particularities on the usage of the lattice editor and the workflow
+around it.
+
 #### Web Content Command Reference
+
+All of the following programs are automatically called by
+[`build.sh`](#buildsh) and are not top-level, so they need not be
+called directly by the content creator, but for development purposes
+or for a more fine-grained control of the generation process.
+
+Check the [execution dependencies tree](#execution-dependencies) to
+visualize which scripts call which.
+
+##### gen_diagram_catalogs.sh
+
+Generate from the database the diagram catalogs (`attr_desc.csv` and
+`attr_class_desc.csv`, see [Diagram Pages](#diagram-pages)) for all of
+the contexts, or those selected by `DIAGRAM_FILTERS`.
+
+Invocation:
+
+`gen_diagram_catalogs.sh [«DSN»]`
+
+* `«DSN»`: optional Data Source Name, see [`DEFAULT_DBDSN`](#configuration-and-overriding).
+* [`DIAGRAM_FILTERS`](#configuration-and-overriding) environtment
+  variable selects which diagrams/contexts to work on.
+* [`DIAGRAMDIR`](#configuration-and-overriding) environtment variable
+  determines the directory where each `lattice.json` file will be put.
+
+##### gen_lattices.sh
+
+Generate from the database the `lattice.json` file (see [Diagram
+Pages](#diagram-pages)) corresponding to every context, or those
+selected by `DIAGRAM_FILTERS`. Internally calls
+[`gen_lattice.sh`](#gen_latticesh) for each selected context.
+
+Since calling Conexp to perform the FCA processing has some overhead,
+only those contexts whose data changed in the database since the last
+execution are actually processed. This is done by generating a
+temporary dump using [`db_dump_data.sh`](#db_dump_datash) and
+comparing that to the last one generated to see which contexts present
+changes. These temporary dumps are put in `DBDIR`, and removing them
+forces all of the selected context lattices to be reanalized.
+
+Invocation:
+
+`gen_lattices.sh [«DSN»]`
+
+* `«DSN»`: optional Data Source Name, see [`DEFAULT_DBDSN`](#configuration-and-overriding).
+* [`DIAGRAM_FILTERS`](#configuration-and-overriding) environtment
+  variable selects which diagrams/contexts to work on.
+* [`DIAGRAMDIR`](#configuration-and-overriding) environtment variable
+  determines the directory where each `lattice.json` file will be put.
+
+##### gen_lattice.sh
+
+A wrapper script that prepares the environment for Conexp to be called
+and then calls the actual generating script, either be the Perl
+version or a Wolframscript version that was coded as a technology
+demonstrator but was superceded by the Perl version as it runs faster
+and it's easier to set up.
+
+Invocation:
+
+See [`gen_lattice.pl` Invocation](#gen_latticepl)
+
+##### gen_lattice.pl
+
+Call Conexp functionality using its binary jar as a library to perform
+an FCA analysis on the specified context. There's a twin script called
+`gen_lattice.wls` that does exactly the same thing with the same
+invocation interface, but using Wolframscript. This is a Perl port of
+that script, and it's the preferred method to interface with Conexp as
+it is faster and easier to set up, as it elliminates the requirement
+to install the Wolfram Enigne and put a license in place.
+
+Invocation:
+
+`gen_lattice.pl «DSN» «context» «lang code» «debug flag»`
+
+* `«DSN»`: Data Source Name, currently the name of the Sqlite3
+  database file.
+* `«context»`: name in the database of the context to process.
+* `«lang code»`: language code of the context, afecting the render of
+  the name of Attributes and Objects.
+* `«debug flag»`: optional. `1` or `0` (default), makes the generator
+  print to standard error the result of the operations interfacing
+  with Conexp as the FCA processes are performed.
+
+Output is sent to standard output.
+
+##### gen_pages.sh
+
+Regenerates Gravity Tree using
+[`gen_gravitytree.sh`](#gen_gravitytreesh) and all pages from Master
+Markdown files for all languages configured in the database. Calls
+[`gen_pages.pl`](#gen_pagespl) for each master, using `--force`.
+
+Invocation:
+
+`gen_pages.sh [«DSN»]`
+
+* `«DSN»`: optional Data Source Name, see [`DEFAULT_DBDSN`](#configuration-and-overriding).
+* [`MASTER_NAME`](#configuration-and-overriding) environtment variable
+  determines the name pattern of the Master Markdown files to use as input.
+
+##### gen_gravitytree.sh
+
+This is a bespoke script written to convert the resources in the
+[`gravity-tree`](gravity-tree) directory into the web-friendly version
+that goes to [`$SITE_DIR/gravity-tree`](site/gravity-tree). It
+requires Inkscape and Imagemagick 6.q16 (see [Installation
+Observations](#observations).
+
+Invocation:
+
+`gen_gravitytree.sh`
+
+* This program takes no arguments. Configuration is done through
+  [`PROJECTDIR` and `SITEDIR`](#configuration-and-overriding)
+  environment variables.
+
+##### gen_pages.pl
+
+This is the core of the Template Processor. It takes a [Master
+Markdown](#master-markdowns) file as input and generates all of the
+HTML files specified in the [Pages section](#pages). Only the HTML
+files that are older than the input file are processed, unless the
+force flag is used.
+
+Invocation:
+
+`gen_pages.pl «master file» [«target» | «force flag» | «clean flag»]`
+
+* `«master file»`: name of the Master Markdown file to parse and
+  process.
+* `«target»`: Specifies a specific output file that is to be
+  generated, instead of all of them (compared against the [`output`
+  Page Configuration](#page-configuration) value of each Page).
+* `«force flag»`: If `--force` is specified, all of the pages are
+  regenerated.
+* `«clean flag»`: If `--clean` is specified the files that would be
+  generated are deleted instead of processing the pages.
