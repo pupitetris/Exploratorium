@@ -71,3 +71,16 @@ function require_inkscape {
 function get_diagram_dir {
   printf "$DIAGRAMDIR" "$@"
 }
+
+function filter_contexts {
+  if [ -z "$DIAGRAM_FILTERS" ]; then
+    cat
+    return
+  fi
+
+  grep $(
+    for i in $DIAGRAM_FILTERS; do
+      echo "-e $i"
+    done
+        )
+}

@@ -24,19 +24,6 @@ function get_changed_contexts {
   mv -f "$TMPFILE" "$TMPFILE.prev"
 }
 
-function filter_contexts {
-  if [ -z "$DIAGRAM_FILTERS" ]; then
-    cat
-    return
-  fi
-
-  grep $(
-    for i in $DIAGRAM_FILTERS; do
-      echo "-e $i"
-    done
-        )
-}
-
 CONTEXT_IDS=$(get_changed_contexts)
 if [ -z "$CONTEXT_IDS" ]; then
   echo "No changes in contexts detected."

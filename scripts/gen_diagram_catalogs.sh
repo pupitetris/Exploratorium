@@ -34,5 +34,5 @@ SELECT v.Code, v.Title_$lang AS Title
  ORDER BY ord" |
       sqlite3 -header "$DBDSN" > \
               "$diagram_dir"/attr_class_desc.csv
-  done < <(sqlite3 "$DBDSN" "SELECT context_id, code FROM context")
+  done < <(sqlite3 "$DBDSN" "SELECT context_id, code FROM context" | filter_contexts)
 done < <(sqlite3 "$DBDSN" "SELECT lang_code FROM lang")
