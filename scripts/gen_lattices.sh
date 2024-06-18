@@ -45,7 +45,7 @@ fi
 
 while read -r lang; do
   while read -r context; do
-    fname="$DIAGRAMDIR"/$lang/$context/lattice.json
+    fname=$(get_diagram_dir $lang $context)/lattice.json
     echo "Generating $fname"
     "$SCRIPTDIR"/gen_lattice.sh "$DBDSN" $context $lang > "$fname"
   done < <(sqlite3 "$DBDSN" "SELECT code FROM context WHERE context_id IN ($CONTEXT_IDS)" | filter_contexts)

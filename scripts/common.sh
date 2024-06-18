@@ -17,7 +17,7 @@ PROJECTDIR=${PROJECTDIR:-$SCRIPTDIR/..}
 DBDIR=${DBDIR:-$PROJECTDIR/db}
 SITEDIR=${SITEDIR:-$PROJECTDIR/site}
 DIAGRAMSUBDIR=${DIAGRAMSUBDIR:-theories}
-DIAGRAMDIR=${DIAGRAMDIR:-$SITEDIR/$DIAGRAMSUBDIR}
+DIAGRAMDIR=${DIAGRAMDIR:-$SITEDIR/$DIAGRAMSUBDIR/%s/%s}
 DIAGRAM_FILTERS=${DIAGRAM_FILTERS:-}
 DEFAULT_DBDSN=${DEFAULT_DBDSN:-$DBDIR/exploratorium.db}
 MASTER_NAME=${MASTER_NAME:-master-%s.md}
@@ -66,4 +66,8 @@ function require_inkscape {
     echo "$0: inkscape not found" >&2
     exit 1
   fi
+}
+
+function get_diagram_dir {
+  printf "$DIAGRAMDIR" "$@"
 }
