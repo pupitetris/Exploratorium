@@ -147,20 +147,20 @@ the following section).
 The following environment variables can be set to customize the
 transformation process:
 
-| Name               | Default                   | Purpose                                                                                                                                                    |
-|--------------------|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `CONFIGFILE`       | `$SCRIPTDIR/config.sh`    | Configuration override by means of a sourced shell script. If the default config file is not found, it is not sourced                                      |
-| `SCRIPTDIR`        | `$(dirname "$0")`         | Location of the script being invoked                                                                                                                       |
-| `PROJECTDIR`       | `$SCRIPTDIR/..`           | Location of the project's main directory                                                                                                                   |
-| `DBDIR`            | `$PROJECTDIR/db`          | Location of the project's files related to the database, such as initialization SQL and data dumps, and in the case of SQLite, the database binary file    |
-| `SITEDIR`          | `$PROJECTDIR/site`        | Location of the web site's files. This is the DocumentRoot for a local web server and what is deployed to production                                       |
-| `DIAGRAMSUBDIR`    | `theories`                | If `DIAGRAMDIR` is not overriden, sets the sub-directory under `$SITEDIR` where diagram files will be put                                                  |
-| `DIAGRAMDIR`       | `$SITEDIR/$DIAGRAMSUBDIR` | Location where the diagram files will be put                                                                                                               |
-| `DIAGRAM_FILTERS`  | ` ` (no value)            | Filters (grep regexps) separated by space selecting which diagrams will be worked on. No value selects all of them. See [gen_lattices.sh](#gen_latticessh) |
-| `DEFAULT_DBDSN`    | `$DBDIR/exploratorium.db` | Data store name for the database connection. DBI notation, or just the file name of an SQLite database file                                                |
-| `MASTER_NAME`      | `master-%s.md`            | Name scheme for the [master Markdown files](#master-markdowns) found in the [tt directory](tt). %s is replaced with the language code (i.e. `en` or `es`)  |
-| `DEPLOY_HOST`      | `remo`                    | SSH Host where deployment is to connect to transfer the files of the web site. See [deploy.sh](#deploysh)                                                  |
-| `DEPLOY_REMOTEDIR` | `Exploratorium`           | Path inside the deployment host where the web site files will reside. See [deploy.sh](#deploysh)                                                           |
+| Name               | Default                         | Purpose                                                                                                                                                    |
+|--------------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `CONFIGFILE`       | `$SCRIPTDIR/config.sh`          | Configuration override by means of a sourced shell script. If the default config file is not found, it is not sourced                                      |
+| `SCRIPTDIR`        | `$(dirname "$0")`               | Location of the script being invoked                                                                                                                       |
+| `PROJECTDIR`       | `$SCRIPTDIR/..`                 | Location of the project's main directory                                                                                                                   |
+| `DBDIR`            | `$PROJECTDIR/db`                | Location of the project's files related to the database, such as initialization SQL and data dumps, and in the case of SQLite, the database binary file    |
+| `SITEDIR`          | `$PROJECTDIR/site`              | Location of the web site's files. This is the DocumentRoot for a local web server and what is deployed to production                                       |
+| `DIAGRAMSUBDIR`    | `theories`                      | If `DIAGRAMDIR` is not overriden, sets the sub-directory under `$SITEDIR` where diagram files will be put                                                  |
+| `DIAGRAMDIR`       | `$SITEDIR/$DIAGRAMSUBDIR/%s/%s` | Location where the diagram files will be put. First `%s` is replaced by the language code, and the second by the context name                              |
+| `DIAGRAM_FILTERS`  | ` ` (no value)                  | Filters (grep regexps) separated by space selecting which diagrams will be worked on. No value selects all of them. See [gen_lattices.sh](#gen_latticessh) |
+| `DEFAULT_DBDSN`    | `$DBDIR/exploratorium.db`       | Data store name for the database connection. DBI notation, or just the file name of an SQLite database file                                                |
+| `MASTER_NAME`      | `master-%s.md`                  | Name scheme for the [master Markdown files](#master-markdowns) found in the [tt directory](tt). `%s` is replaced by the language code (i.e. `en` or `es`)  |
+| `DEPLOY_HOST`      | `remo`                          | SSH Host where deployment is to connect to transfer the files of the web site. See [deploy.sh](#deploysh)                                                  |
+| `DEPLOY_REMOTEDIR` | `Exploratorium`                 | Path inside the deployment host where the web site files will reside. See [deploy.sh](#deploysh)                                                           |
 
 `DEFAULT_DBDSN` can point to a file, which selects SQLite as the
 database engine. DBI notation is supported for future-proofing when
@@ -905,8 +905,7 @@ Five keys are currently supported:
   be included for the page. This allows for bespoke styling to be
   applied for the page in question.
 * `background` states for the `diagram-page.tt` template an URL
-  pointing to a background image to be rendered as a background for
-  the diagram.
+  pointing to an image to be rendered as a background for the diagram.
   
 ###### Page Content
 
@@ -922,6 +921,40 @@ processor.
 In case the [`diagram-page.tt`](tt/diagram-page.tt) template is used,
 the diagram's lattice viewer and editor will be rendered after the
 content.
+
+###### Diagram Pages
+
+Diagram pages are special because they require a set of input files
+that are expected to be placed alongside their HTML output file. There
+are five diagram input files:
+
+* `config.js` containing code that is executed before the diagram
+  viewer and editor is initialized. Particularly it sets up
+  `window.Config`, an object with a configuration parameters used by
+  the diagram viewer. This file is to be put in place by the content
+  creator and edited manually.
+* `lattice.json` contains the actual data related to the lattice's
+  strucutre and FCA properties such as intents and extents. It is
+  automatically generated from the corresponding context located in
+  the database, processed during the [build phase](#buildsh) and
+  specifically by [`gen_lattices.sh`](#gen_latticessh).
+* `pos.json` contains the on-screen coordinates of each of the
+  lattice's nodes. The JSON data is provided by the Diagram Editor to
+  the content creator as the diagram's nodes are visually
+  arranged. The content has to be manually copy/pasted from a text box
+  in the editor into the file.
+* `attr_desc.csv` and `attr_class_desc.csv` are catalogs related to
+  documenting fields for Attributes and Attribute Classes,
+  respecitvely. They provide text that is used as different kind of
+  labels all around the diagram and are automatically extracted from
+  the database in the [build phase](#buildsh), specifically by
+  [`gen_diagram_catalogs.sh`](#gen_diagram_catalogssh).
+
+Since these files have the same name for all diagrams, this implicitly
+requires for each diagram page to be located inside a directory of its
+own so that the input files' paths are distinct between diagrams. The
+environment variable governing these locations is
+[`DIAGRAMDIR`](#configuration-and-overriding).
 
 
 #### Lattice Editor
