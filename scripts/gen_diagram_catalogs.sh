@@ -9,11 +9,11 @@ require_sqlite "$DBDSN"
 while read -r lang; do
   while IFS=\| read -r context_id context; do
     diagram_dir=$(get_diagram_dir $lang $context)
+    mkdir -p "$diagram_dir"
     echo "
 SELECT Attribute,Class,Title,Formula,Explanation,Reference FROM v_attributes
        WHERE Lang='$lang' AND Context='$context'" |
-      sqlite3 -header "$DBDSN" > \
-              "$diagram_dir"/attr_desc.csv
+      sqlite3 -header "$DBDSN" > "$diagram_dir"/attr_desc.csv
 
     echo "
 SELECT v.Code, v.Title_$lang AS Title
@@ -32,7 +32,6 @@ SELECT v.Code, v.Title_$lang AS Title
                 WHERE context_id = $context_id
        )
  ORDER BY ord" |
-      sqlite3 -header "$DBDSN" > \
-              "$diagram_dir"/attr_class_desc.csv
+      sqlite3 -header "$DBDSN" > "$diagram_dir"/attr_class_desc.csv
   done < <(sqlite3 "$DBDSN" "SELECT context_id, code FROM context" | filter_contexts)
 done < <(sqlite3 "$DBDSN" "SELECT lang_code FROM lang")
