@@ -964,6 +964,8 @@ environment variable governing these locations is
 Particularities on the usage of the lattice editor and the workflow
 around it.
 
+![Lattice Editor Toolbar](doc/lattice_editor.png)
+
 #### Web Content Command Reference
 
 All of the following programs are automatically called by
@@ -1104,3 +1106,13 @@ Invocation:
   regenerated.
 * `«clean flag»`: If `--clean` is specified the files that would be
   generated are deleted instead of processing the pages.
+
+
+## Database Design
+
+DB diagram and elaboration on the structure.
+
+![Database diagram](doc/exploratorium_db_diagram.svg)
+
+Testing diagram display.
+

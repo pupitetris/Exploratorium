@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+ Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="1.1.2" use-changelog="false" max-obj-count="34"
+	 last-position="0,0" last-zoom="1" scene-rect="0,0,7902.8,5556.8"
+	 default-schema="public" default-owner="postgres"
+	 layers="Default layer"
+	 active-layers="0"
+	 layer-name-colors="#000000"
+	 layer-rect-colors="#b4b4b4"
+	 show-layer-names="false" show-layer-rects="false">
+<role name="guacamole"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<role name="nocode"
+ inherit="true"
+ login="true"
+ password="********">
+</role>
+
+<database name="exploratorium" encoding="UTF8" lc-collate="en_US.UTF-8" lc-ctype="en_US.UTF-8" is-template="false" allow-conns="true">
+	<role name="postgres"/>
+	<tablespace name="pg_default"/>
+</database>
+
+<schema name="public" layers="0" fill-color="#e1e1e1" name-color="#000000" sql-disabled="true">
+</schema>
+
+<collation name="nocase" locale="und-u-ks-level2" provider="icu" deterministic="true">
+	<schema name="public"/>
+	<role name="postgres"/>
+</collation><sequence name="attr_class_attr_class_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="2147483647" cache="1">
+	<schema name="public"/>
+	<role name="postgres"/>
+</sequence>
+
+<table name="attr_class" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="4" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1060" y="1040"/>
+	<column name="attr_class_id" not-null="true" sequence="public.attr_class_attr_class_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="code" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="ord" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="attr_class_code_check" type="ck-constr" table="public.attr_class">
+			<expression> <![CDATA[(code <> ''::text)]]> </expression>
+	</constraint>
+	<constraint name="attr_class_pkey" type="pk-constr" table="public.attr_class">
+		<columns names="attr_class_id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="attr_class_code_key" type="uq-constr" table="public.attr_class">
+		<columns names="code" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="attr_class_ord_key" type="uq-constr" table="public.attr_class">
+		<columns names="ord" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="attr_class_desc" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="4" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="560" y="1040"/>
+	<column name="attr_class_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="lang_code" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="title" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="attr_class_desc_title_check" type="ck-constr" table="public.attr_class_desc">
+			<expression> <![CDATA[(title <> ''::text)]]> </expression>
+	</constraint>
+	<constraint name="attr_class_desc_pkey" type="pk-constr" table="public.attr_class_desc">
+		<columns names="attr_class_id,lang_code" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="attr_context_class" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="6" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1500" y="800"/>
+	<column name="attribute_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="context_class_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="attr_class_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="reference">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="attr_context_class_reference_check" type="ck-constr" table="public.attr_context_class">
+			<expression> <![CDATA[(reference <> ''::text)]]> </expression>
+	</constraint>
+	<constraint name="attr_context_class_pkey" type="pk-constr" table="public.attr_context_class">
+		<columns names="attribute_id,context_class_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="attribute_attribute_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="2147483647" cache="1">
+	<schema name="public"/>
+	<role name="postgres"/>
+</sequence>
+
+<table name="attribute" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="2" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="2560" y="1100"/>
+	<column name="attribute_id" not-null="true" sequence="public.attribute_attribute_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="formula">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="attribute_formula_check" type="ck-constr" table="public.attribute">
+			<expression> <![CDATA[(formula <> ''::text)]]> </expression>
+	</constraint>
+	<constraint name="attribute_pkey" type="pk-constr" table="public.attribute">
+		<columns names="attribute_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="attribute_context" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="3" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="3120" y="1100"/>
+	<column name="attribute_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="context_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="attribute_context_pkey" type="pk-constr" table="public.attribute_context">
+		<columns names="attribute_id,context_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="attribute_desc" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="8" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="520" y="680"/>
+	<column name="attribute_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="context_class_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="lang_code" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="label" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="title">
+		<type name="text" length="0"/>
+	</column>
+	<column name="explanation">
+		<type name="text" length="0"/>
+	</column>
+	<column name="obs">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="attribute_desc_check" type="ck-constr" table="public.attribute_desc">
+			<expression> <![CDATA[((label <> ''::text) AND (title <> ''::text) AND (explanation <> ''::text) AND (obs <> ''::text))]]> </expression>
+	</constraint>
+	<constraint name="attribute_desc_pkey" type="pk-constr" table="public.attribute_desc">
+		<columns names="attribute_id,context_class_id,lang_code" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="attribute_desc_context_class_id_lang_code_label_key" type="uq-constr" table="public.attribute_desc">
+		<columns names="context_class_id,lang_code,label" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="context_context_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="2147483647" cache="1">
+	<schema name="public"/>
+	<role name="postgres"/>
+</sequence>
+
+<table name="context" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="4" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="2560" y="700"/>
+	<column name="context_id" not-null="true" sequence="public.context_context_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="context_class_id">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="code" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="context_code_check" type="ck-constr" table="public.context">
+			<expression> <![CDATA[(code <> ''::text)]]> </expression>
+	</constraint>
+	<constraint name="context_pkey" type="pk-constr" table="public.context">
+		<columns names="context_id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="context_code_key" type="uq-constr" table="public.context">
+		<columns names="code" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="context_class_context_class_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="2147483647" cache="1">
+	<schema name="public"/>
+	<role name="postgres"/>
+</sequence>
+
+<table name="context_class" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="3" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="2080" y="720"/>
+	<column name="context_class_id" not-null="true" sequence="public.context_class_context_class_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="code" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="context_class_code_check" type="ck-constr" table="public.context_class">
+			<expression> <![CDATA[(code <> ''::text)]]> </expression>
+	</constraint>
+	<constraint name="context_class_pkey" type="pk-constr" table="public.context_class">
+		<columns names="context_class_id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="context_class_code_key" type="uq-constr" table="public.context_class">
+		<columns names="code" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="lang" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="3" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="20" y="720"/>
+	<column name="lang_code" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="lang_label" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="lang_lang_label_check" type="ck-constr" table="public.lang">
+			<expression> <![CDATA[(lang_label <> ''::text)]]> </expression>
+	</constraint>
+	<constraint name="lang_pkey" type="pk-constr" table="public.lang">
+		<columns names="lang_code" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="lang_lang_label_key" type="uq-constr" table="public.lang">
+		<columns names="lang_label" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="object_object_id_seq" cycle="false" start="1" increment="1" min-value="1" max-value="2147483647" cache="1">
+	<schema name="public"/>
+	<role name="postgres"/>
+</sequence>
+
+<table name="object" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="3" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="2560" y="320"/>
+	<column name="object_id" not-null="true" sequence="public.object_object_id_seq">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="code" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="object_code_check" type="ck-constr" table="public.object">
+			<expression> <![CDATA[(code <> ''::text)]]> </expression>
+	</constraint>
+	<constraint name="object_pkey" type="pk-constr" table="public.object">
+		<columns names="object_id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="object_code_key" type="uq-constr" table="public.object">
+		<columns names="code" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="object_attribute" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="6" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="3600" y="680"/>
+	<column name="object_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="object_context_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="attribute_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="attr_context_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="x" not-null="true" default-value="1">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="object_attribute_check" type="ck-constr" table="public.object_attribute">
+			<expression> <![CDATA[(object_context_id = attr_context_id)]]> </expression>
+	</constraint>
+	<constraint name="object_attribute_x_check" type="ck-constr" table="public.object_attribute">
+			<expression> <![CDATA[(x = 1)]]> </expression>
+	</constraint>
+	<constraint name="object_attribute_pkey" type="pk-constr" table="public.object_attribute">
+		<columns names="object_id,object_context_id,attribute_id,attr_context_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="object_context" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="3" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="3120" y="320"/>
+	<column name="object_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="context_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="object_context_pkey" type="pk-constr" table="public.object_context">
+		<columns names="object_id,context_id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="object_desc" layers="0" collapse-mode="1" pagination="true" attribs-page="0" ext-attribs-page="0" max-obj-count="6" z-value="0">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="520" y="320"/>
+	<column name="object_id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="lang_code" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<column name="label" not-null="true">
+		<type name="text" length="0"/>
+	</column>
+	<constraint name="object_desc_label_check" type="ck-constr" table="public.object_desc">
+			<expression> <![CDATA[(label <> ''::text)]]> </expression>
+	</constraint>
+	<constraint name="object_desc_pkey" type="pk-constr" table="public.object_desc">
+		<columns names="object_id,lang_code" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="object_desc_lang_code_label_key" type="uq-constr" table="public.object_desc">
+		<columns names="lang_code,label" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<constraint name="attr_class_desc_attr_class_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.attr_class"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.attr_class_desc">
+	<columns names="attr_class_id" ref-type="src-columns"/>
+	<columns names="attr_class_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="attr_class_desc_lang_code_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.lang"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.attr_class_desc">
+	<columns names="lang_code" ref-type="src-columns"/>
+	<columns names="lang_code" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="attr_context_class_attribute_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.attribute"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.attr_context_class">
+	<columns names="attribute_id" ref-type="src-columns"/>
+	<columns names="attribute_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="attr_context_class_context_class_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.context_class"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.attr_context_class">
+	<columns names="context_class_id" ref-type="src-columns"/>
+	<columns names="context_class_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="attr_context_class_attr_class_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.attr_class"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.attr_context_class">
+	<columns names="attr_class_id" ref-type="src-columns"/>
+	<columns names="attr_class_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="attribute_context_attribute_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.attribute"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.attribute_context">
+	<columns names="attribute_id" ref-type="src-columns"/>
+	<columns names="attribute_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="attribute_context_context_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.context"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.attribute_context">
+	<columns names="context_id" ref-type="src-columns"/>
+	<columns names="context_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="attribute_desc_lang_code_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.lang"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.attribute_desc">
+	<columns names="lang_code" ref-type="src-columns"/>
+	<columns names="lang_code" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="attribute_desc_attribute_id_context_class_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.attr_context_class"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.attribute_desc">
+	<columns names="attribute_id,context_class_id" ref-type="src-columns"/>
+	<columns names="attribute_id,context_class_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="context_context_class_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.context_class"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.context">
+	<columns names="context_class_id" ref-type="src-columns"/>
+	<columns names="context_class_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="object_attribute_object_id_object_context_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.object_context"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.object_attribute">
+	<columns names="object_id,object_context_id" ref-type="src-columns"/>
+	<columns names="object_id,context_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="object_attribute_attribute_id_attr_context_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.attribute_context"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.object_attribute">
+	<columns names="attribute_id,attr_context_id" ref-type="src-columns"/>
+	<columns names="attribute_id,context_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="object_context_object_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.object"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.object_context">
+	<columns names="object_id" ref-type="src-columns"/>
+	<columns names="object_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="object_context_context_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.context"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.object_context">
+	<columns names="context_id" ref-type="src-columns"/>
+	<columns names="context_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="object_desc_object_id_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.object"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.object_desc">
+	<columns names="object_id" ref-type="src-columns"/>
+	<columns names="object_id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="object_desc_lang_code_fkey" type="fk-constr" comparison-type="MATCH SIMPLE"
+	 upd-action="RESTRICT" del-action="RESTRICT" ref-table="public.lang"
+	deferrable="true" defer-type="INITIALLY DEFERRED"
+ table="public.object_desc">
+	<columns names="lang_code" ref-type="src-columns"/>
+	<columns names="lang_code" ref-type="dst-columns"/>
+</constraint>
+
+<relationship name="rel_attr_class_desc_attr_class" type="relfk" layers="0"
+	 src-table="public.attr_class_desc"
+	 dst-table="public.attr_class" reference-fk="attr_class_desc_attr_class_id_fkey"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_attr_class_desc_lang" type="relfk" layers="0"
+	 src-table="public.attr_class_desc"
+	 dst-table="public.lang" reference-fk="attr_class_desc_lang_code_fkey"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_attr_context_class_attribute" type="relfk" layers="0"
+	 src-table="public.attr_context_class"
+	 dst-table="public.attribute" reference-fk="attr_context_class_attribute_id_fkey"
+	 src-required="false" dst-required="true">
+	<label ref-type="src-label">
+		<position x="6.99375" y="-19.8"/>
+	</label>
+</relationship>
+
+<relationship name="rel_attr_context_class_context_class" type="relfk" layers="0"
+	 src-table="public.attr_context_class"
+	 dst-table="public.context_class" reference-fk="attr_context_class_context_class_id_fkey"
+	 src-required="false" dst-required="true">
+	<label ref-type="src-label">
+		<position x="6.99375" y="20.6"/>
+	</label>
+</relationship>
+
+<relationship name="rel_attr_context_class_attr_class" type="relfk" layers="0"
+	 src-table="public.attr_context_class"
+	 dst-table="public.attr_class" reference-fk="attr_context_class_attr_class_id_fkey"
+	 src-required="false" dst-required="false">
+	<label ref-type="src-label">
+		<position x="-5.65" y="21"/>
+	</label>
+</relationship>
+
+<relationship name="rel_attribute_context_attribute" type="relfk" layers="0"
+	 src-table="public.attribute_context"
+	 dst-table="public.attribute" reference-fk="attribute_context_attribute_id_fkey"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_attribute_context_context" type="relfk" layers="0"
+	 src-table="public.attribute_context"
+	 dst-table="public.context" reference-fk="attribute_context_context_id_fkey"
+	 src-required="false" dst-required="true">
+	<label ref-type="name-label">
+		<position x="0" y="0"/>
+	</label>
+</relationship>
+
+<relationship name="rel_attribute_desc_lang" type="relfk" layers="0"
+	 src-table="public.attribute_desc"
+	 dst-table="public.lang" reference-fk="attribute_desc_lang_code_fkey"
+	 src-required="false" dst-required="true">
+	<label ref-type="src-label">
+		<position x="-5.65" y="-19"/>
+	</label>
+</relationship>
+
+<relationship name="rel_attribute_desc_attr_context_class" type="relfk" layers="0"
+	 src-table="public.attribute_desc"
+	 dst-table="public.attr_context_class" reference-fk="attribute_desc_attribute_id_context_class_id_fkey"
+	 src-required="false" dst-required="true">
+	<label ref-type="src-label">
+		<position x="17.9" y="-29.6"/>
+	</label>
+	<label ref-type="dst-label">
+		<position x="-5.65" y="-29.6"/>
+	</label>
+</relationship>
+
+<relationship name="rel_context_context_class" type="relfk" layers="0"
+	 src-table="public.context"
+	 dst-table="public.context_class" reference-fk="context_context_class_id_fkey"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_object_attribute_object_context" type="relfk" layers="0"
+	 src-table="public.object_attribute"
+	 dst-table="public.object_context" reference-fk="object_attribute_object_id_object_context_id_fkey"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_object_attribute_attribute_context" type="relfk" layers="0"
+	 src-table="public.object_attribute"
+	 dst-table="public.attribute_context" reference-fk="object_attribute_attribute_id_attr_context_id_fkey"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_object_context_object" type="relfk" layers="0"
+	 src-table="public.object_context"
+	 dst-table="public.object" reference-fk="object_context_object_id_fkey"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_object_context_context" type="relfk" layers="0"
+	 src-table="public.object_context"
+	 dst-table="public.context" reference-fk="object_context_context_id_fkey"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_object_desc_object" type="relfk" layers="0"
+	 src-table="public.object_desc"
+	 dst-table="public.object" reference-fk="object_desc_object_id_fkey"
+	 src-required="false" dst-required="true"/>
+
+<relationship name="rel_object_desc_lang" type="relfk" layers="0"
+	 src-table="public.object_desc"
+	 dst-table="public.lang" reference-fk="object_desc_lang_code_fkey"
+	 src-required="false" dst-required="true"/>
+
+<permission>
+	<object name="exploratorium" type="database"/>
+	<privileges connect="true" temporary="true"/>
+</permission>
+<permission>
+	<object name="exploratorium" type="database"/>
+	<roles names="postgres"/>
+	<privileges create="true" connect="true" temporary="true"/>
+</permission>
+<permission>
+	<object name="exploratorium" type="database"/>
+	<roles names="nocode"/>
+	<privileges create="true" connect="true" temporary="true"/>
+</permission>
+<permission>
+	<object name="public.attr_class" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attr_class" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attr_class_desc" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attr_class_desc" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attr_context_class" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attr_context_class" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attribute" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attribute" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attribute_context" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attribute_context" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attribute_desc" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.attribute_desc" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.context" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.context" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.context_class" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.context_class" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.lang" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.lang" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.object" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.object" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.object_attribute" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.object_attribute" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.object_context" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.object_context" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.object_desc" type="table"/>
+	<roles names="postgres"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+<permission>
+	<object name="public.object_desc" type="table"/>
+	<roles names="nocode"/>
+	<privileges select="true" delete="true" insert="true" update="true" truncate="true" references="true" trigger="true"/>
+</permission>
+</dbmodel>
