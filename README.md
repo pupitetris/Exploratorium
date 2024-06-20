@@ -82,7 +82,7 @@ flowchart TD
         direction TB
         subgraph FG[Generator]
             G[Lattice JSON Generator<br/><i>scripts/gen_lattices.sh]
-            G2[Catalog CSV Generator<br/><i>scripts/gen_diagram_catalogs.sh]
+            G2[CSV Catalogs Generator<br/><i>scripts/gen_diagram_catalogs.sh]
         end
         CX[Conexp<br><i>bin/conexp-1.3/*.jar]
         G -- contexts --> CX
@@ -90,11 +90,11 @@ flowchart TD
     end
     subgraph SITE[<b>Web Site]
         direction LR
-        ED([Lattice Viewer / Editor])
+        ED([Diagram Viewer / Editor])
         subgraph DAT[Generated Data Files]
             LJ[/"Lattice JSON<br/><i>site/theories/{en,es}/*/lattice.json</i>"/]
-            CSV[/"Lattice CSV<br/><i>site/theories/{en,es}/*/*.csv</i>"/]
-            LPJ[/"Lattice Position JSON<br/><i>site/theories/{en,es}/*/pos.json</i>"/]
+            CSV[/"CSV Catalogs<br/><i>site/theories/{en,es}/*/*.csv</i>"/]
+            LPJ[/"Node Positions JSON<br/><i>site/theories/{en,es}/*/pos.json</i>"/]
         end
         subgraph LIB[Javascript Libraries]
             D3[\d3<br/><i>site/lib/d3/]
@@ -405,7 +405,7 @@ stateDiagram
   [SQLiteStudio](https://sqlitestudio.pl/).
 * Run [build.sh](#buildsh) (or double-click
   [rebuild.command](scripts/commands/rebuild.command)) to regenerate
-  the diagram catalogs and/or the lattice.json files as needed.
+  the diagram CSV catalogs and/or the lattice JSON files as needed.
 * Open the local website with your web browser and check the
   results. If the local web server is not up, firstly run
   [http-server.command](scripts/commands/http-server.command) and
@@ -511,7 +511,7 @@ stateDiagram
     edit --> build.sh
     test --> edit
     test --> editl
-    editl : Edit geometries with<br/>Lattice Editor
+    editl : Edit geometries with<br/>Diagram Editor
     editl --> copypos
     copypos : Copy/Paste geometries to<br/>pos.json and/or config.js
     copypos --> test
@@ -553,8 +553,8 @@ From here you can proceed to either:
 
 or
 
-* Visit a diagram page to enter editor mode and work on the lattice
-  geometries.
+* Visit a diagram page to enter editor mode and work on the diagram
+  nodes positioning.
   * The editor button will only be available if the page is visited
     through address `127.0.0.1`.
   * After altering the node positions proceed to generate the positional
@@ -921,8 +921,7 @@ blocks requires development for their accomodation in the template
 processor.
 
 In case the [`diagram-page.tt`](tt/diagram-page.tt) template is used,
-the diagram's lattice viewer and editor will be rendered after the
-content.
+the diagram's viewer and editor will be rendered after the content.
 
 ###### Diagram Pages
 
@@ -959,12 +958,66 @@ environment variable governing these locations is
 [`DIAGRAMDIR`](#configuration-and-overriding).
 
 
-#### Lattice Editor
+#### Diagram Editor
 
-Particularities on the usage of the lattice editor and the workflow
-around it.
+Among the [Diagram Pages input files](#diagram-pages) there are two
+related to the visual presentation of the data: `pos.json` and
+`config.js`. The Diagram Editor allows to graphically work on the
+parameters and values of these files and get the new data.
 
-![Lattice Editor Toolbar](doc/lattice_editor.png)
+To access the Diagram Editor, just use the web browser and visit the
+corresponding diagram's page.
+
+*Note: Due to modern web browser policies, you won't be able to open
+the page through the file system (URL beginning with `file://`
+scheme), so you will have to launch a local web server for local
+browsing. You can do that by running
+`scripts/commands/http-server.command`*
+
+If you open the diagram page through the loopback device (where the
+URL has the address 127.0.0.1, such as
+<http://127.0.0.1:8080/theories/en/basic/>), you will automatically
+have the `➀ Editor` button. Otherwise, you can force the activation of
+the editor with two other methods:
+
+* Add the `editor` query parameter: visit the diagram page using the
+  original URL with `?editor` appended at the end. So, instead of
+  visiting
+  <https://remo.cua.uam.mx/vis/Exploratorium/theories/en/basic>, visit
+  <https://remo.cua.uam.mx/vis/Exploratorium/theories/en/basic?editor>
+* Use the diagram's configuration file: in the corresponding
+  `config.js` file, set the value for `USE_EDITOR` to `true`.
+
+Here is a screenshot of a diagram page with the Diagram Editor activated:
+
+---
+![Lattice Editor Toolbar][lattice_editor_toolbar]
+---
+
+You can now proceed to move the diagram's nodes as needed. Once you
+are done with the changes, click on the `➁ JSON Get` button. This will
+populate the adjacent text box with the JSON code representing the
+position of the nodes in the diagram. As per most standard web pages
+and browsers, you can stretch the text box by dragging it by the
+corner if you wish to inspect the code.
+
+Now the JSON code has to be put in the corresponding diagram's
+`pos.json` file to make the changes permanent. To facilitate this, you
+can click on the `➂ JSON Copy` button to copy the entirety of the code
+onto the clipboard, allowing you to open the `pos.json` file with a text
+editor and replace the old code with a paste operation.
+
+*Note: do not reload or navigate away from the web page while you have
+changes pending to be saved or you will lose your work. The changes
+made to the diagrams do not persist between visits.*
+
+The second row of the editor interface allows you to modify the
+viewboxe's geometry. To save those changes, click on the `➃ Viewbox
+Copy` button so that the geometry values are put onto the
+clipboard. Open the corresonding `config.js` file and replace the
+`VIEWBOX` value with the new one. Respect the quotation marks while
+doing so.
+
 
 #### Web Content Command Reference
 
@@ -1112,7 +1165,13 @@ Invocation:
 
 DB diagram and elaboration on the structure.
 
-![Database diagram](doc/exploratorium_db_diagram.svg)
+---
+![Database diagram][database_diagram]
+---
 
 Testing diagram display.
 
+
+
+[lattice_editor_toolbar]: doc/lattice_editor.png
+[database_diagram]: doc/exploratorium_db_diagram.svg
