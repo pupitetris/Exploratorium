@@ -176,9 +176,9 @@ override the default values. Only when `CONFIGFILE` is using its
 default value will the sourcing be ommited if the file is not
 found. Otherwise, an error will be produced. 
 
-Note: the configuration file is sourced **twice**: once before, and
-once after the configuration globals are set. Complex commands within
-this file are discouraged.
+> ℹ️*Note: the configuration file is sourced **twice**: once before, and
+> once after the configuration globals are set. Complex commands
+> within this file are discouraged.*
 
 Example `scripts/config.sh` file:
 
@@ -262,13 +262,14 @@ of just calling [db_init.sh](#db_initsh) and then
 [build.sh](#buildsh), which is what is done when working in the
 [database workflow](#database-workflow).
 
-**Note: since this program invokes [db_init.sh](#db_initsh), it should
-not be called if there are changes to the database that have not been
-dumped back to SQL statements or these changes will be reverted to
-what the SQL scripts indicate (although a backup is produced to
-mitigate the damage in case this happens by accident). If there are
-pending changes on the database ahd you want to see how these changes
-look on the web page, use [build.sh](#buildsh)**
+> ℹ️*Note: since this program invokes [db_init.sh](#db_initsh), it
+> should not be called if there are changes to the database that have
+> not been dumped back to SQL statements or these changes will be
+> reverted to what the SQL scripts indicate (although a backup is
+> produced to mitigate the damage in case this happens by
+> accident). If there are pending changes on the database ahd you want
+> to see how these changes look on the web page, use
+> [build.sh](#buildsh)*
 
 Invocation:
 
@@ -968,11 +969,11 @@ parameters and values of these files and get the new data.
 To access the Diagram Editor, just use the web browser and visit the
 corresponding diagram's page.
 
-*Note: Due to modern web browser policies, you won't be able to open
-the page through the file system (URL beginning with `file://`
-scheme), so you will have to launch a local web server for local
-browsing. You can do that by running
-`scripts/commands/http-server.command`*
+> ℹ️*Note: Due to modern web browser policies, you won't be able to open
+> the page through the file system (URL beginning with `file://`
+> scheme), so you will have to launch a local web server for local
+> browsing. You can do that by running
+> `scripts/commands/http-server.command`*
 
 If you open the diagram page through the loopback device (where the
 URL has the address 127.0.0.1, such as
@@ -1007,9 +1008,9 @@ can click on the `➂ JSON Copy` button to copy the entirety of the code
 onto the clipboard, allowing you to open the `pos.json` file with a text
 editor and replace the old code with a paste operation.
 
-*Note: do not reload or navigate away from the web page while you have
-changes pending to be saved or you will lose your work. The changes
-made to the diagrams do not persist between visits.*
+> ⚠️*Warning: do not reload or navigate away from the web page while
+> you have changes pending to be saved or you will lose your work. The
+> changes made to the diagrams do not persist between visits.*
 
 The second row of the editor interface allows you to modify the
 viewboxe's geometry. To save those changes, click on the `➃ Viewbox
