@@ -8,4 +8,6 @@
 /site/theories/*/*/attr_desc.csv
 .DS_Store
 /db/tmp_gen_lattices_data.sql.prev
+/db/pg/data.psql
+/db/pg/ddl.psql
 /gravity-tree/gravity-tree.svg
