@@ -1,7 +1,12 @@
 # Exploratorium
 
-Website for the [Space-Time Theories
-Exploratorium](https://remo.cua.uam.mx/vis/Exploratorium/).
+Web site generator for the [Space-Time Theories
+Exploratorium](https://remo.cua.uam.mx/vis/Exploratorium/), a static
+file web site. Contents is managed and provided by a [simple
+database](#database-design) and a template system based on [Markdown
+files](#master-markdowns) with a bespoke internal structure. After
+cloning, all of the web site can be generated automatically by running
+just one command.
 
 
 ## Installation
@@ -155,7 +160,7 @@ transformation process:
 | `DBDIR`            | `$PROJECTDIR/db`                | Location of the project's files related to the database, such as initialization SQL and data dumps, and in the case of SQLite, the database binary file    |
 | `SITEDIR`          | `$PROJECTDIR/site`              | Location of the web site's files. This is the DocumentRoot for a local web server and what is deployed to production                                       |
 | `DIAGRAMSUBDIR`    | `theories`                      | If `DIAGRAMDIR` is not overriden, sets the sub-directory under `$SITEDIR` where diagram files will be put                                                  |
-| `DIAGRAMDIR`       | `$SITEDIR/$DIAGRAMSUBDIR/%s/%s` | Location where the diagram files will be put. First `%s` is replaced by the language code, and the second by the context name                              |
+| `DIAGRAMDIR`       | `$SITEDIR/$DIAGRAMSUBDIR/%s/%s` | Location where the diagram files will be put. First `%s` is replaced by the language code, and the second by the context code                              |
 | `DIAGRAM_FILTERS`  | ` ` (no value)                  | Filters (grep regexps) separated by space selecting which diagrams will be worked on. No value selects all of them. See [gen_lattices.sh](#gen_latticessh) |
 | `DEFAULT_DBDSN`    | `$DBDIR/exploratorium.db`       | Data store name for the database connection. DBI notation, or just the file name of an SQLite database file                                                |
 | `MASTER_NAME`      | `master-%s.md`                  | Name scheme for the [master Markdown files](#master-markdowns) found in the [tt directory](tt). `%s` is replaced by the language code (i.e. `en` or `es`)  |
@@ -1164,15 +1169,235 @@ Invocation:
 
 ## Database Design
 
-DB diagram and elaboration on the structure.
+Understanding the design of the database gives a pretty good picture
+of the system's capabilities and potential. The database is normalized
+to the fourth normal form (4NF), to guarantee that no inconsistencies
+are introduced by the user (example: assigning in a context an
+attribute to an object when the latter does not belong to such
+context). The 4NF is suitable to this application since the amount of
+relations and data is low.
 
 ---
 ![Database diagram][database_diagram]
 ---
 
-Testing diagram display.
+The diagram has been laid out horizontally to illustrate entities
+that describe the data from the most core descriptions on the right
+(object-attribute assignments on contexts) to the most detailed
+information on the left (language-dependent descriptions).
 
+Relation names are all in singular, as they are considered object
+classes. They are shown in lowercase as they are easier to read and
+are easier to distinguish from SQL reserved words which are typically
+written in uppercase.
 
+### Entities
+
+Each entity will be firstly described conceptually and afterwards the
+relations that reprsent it will be treated.
+
+#### Languages Catalog
+
+##### lang
+
+Just a catalog of language codes (PK) and a label for display
+purpopses. `lang_code` is an mnemonic identifier that will affect on
+the directory structure of the site. Suggested values are `en`, `es`,
+`fr`, `jp` and so on.
+
+See also: [Multi-language Support](#multi-language-support)
+
+#### Objects
+
+In FCA, the concept of an object is just a thing that has the capacity
+of being assigned attributes. They can be just about anything that is
+being described, observed or studied, and of which attributes are
+found and listed. For easier identification and interaction within the
+diagram, objects are assigned user-facing labels, and for internal
+representation, they are given unique codes.
+
+##### object
+
+Base relation that establishes the existence of an object. A numeric
+ID would suffice, and that indeed is what is used as `object_id`
+whenever an object is referenced within the database. Nevertheless,
+`code` was added to mantain the original representation of objects
+within context matrixes.
+
+`code` allows for the rendering of context tables that the content
+creator can work with, without having to use longer labels that are
+otherwise better suited for the final product. Also, `code` is just a
+mnemonic, independent of the display language, probably an
+abbreviation from its label in English. So, while an object's label
+may be `Vector tensor General` in English and `V-T General` in
+Spanish, its code could be `GeneralVT` and that would be easier to
+work with when displayed in a spreadsheet or an interacitve Context
+matrix.
+
+##### object_desc
+
+Stores descriptive data of an object that is language-dependent,
+probably for user-facing display purposes. For now, only `label` has
+been required, and that is what appears in a white box on the
+bottom-right side of nodes that represent objects in the diagram.
+
+---
+![Object labels][diagram_objects]
+---
+*Three object nodes displayed with their corresponding labels in English*
+
+#### Attributes
+
+All objects may be assigned a set of attributes, and many objects may
+share a number of attributes in common for a given context. As the
+presence of attributes within an object caracterize the object itself,
+attributes require a greater deal of description fields to enrich the
+information portrayed by the diagram.
+
+##### attribute
+
+Base relation that establishes the existence of an attribute, with its
+mandatory numeric ID. 
+
+> ⚠️*Note: Attributes should have a `code` field, just as the case for
+> Objects, but they are not present in the database structure, which
+> is a strange omission, and it has been noted as a TO-DO item.
+
+Attributes also have a `formula` field whose value is optional, which
+contains text (probably LaTeX code) describing the equation related to
+the attribute. This text is considered language-independent, and
+that's why it is in this relation, and not in `attribute_desc`.
+
+##### attribute_desc
+
+Stores descriptive data of an object that is language-dependent, for
+user-facing display purposes. `obs` is a field that is not for
+display, but to help with internally keeping track on the work of the
+attribute in question. The other data fields are described in the
+figure below.
+
+Since the description of an attribute varies according to the
+methodology behind the construction of the ontology in which the
+attribute appears, context classes have been implemented so that some
+attributes may have different descriptor fields based on the class of
+the context, hence the foreign key represented by `context_class_id`.
+
+---
+![Attribute and descriptors][diagram_attribute]
+---
+*An attribute labeled "Eq 13" with its info box open and the diagram's legend*
+
+In the figure above, we see: 
+
+* `➀ attribute_desc.label` represents the attribute in the diagram,
+  within a box colored according to its `attr_class_id` and is located
+  besides the concept node that it qualifies.
+* `➁ attribute_desc.title` is the big text that heads the attribute's
+  info box. It is not as abbreviated as the label.
+* `➂ attribute.formula` may optionally be present in the infobox with
+  the equation related to the attribute.
+* `➃ attribute_desc.explanation` is the longer text, most probably a
+  short parragraph giving more detail on the attribute.
+* `➄ attr_context_class.reference` is the formal reference, a locator
+  of the original text that supports the identification of the
+  attribute.
+* `➅ attr_class_desc.title` is the label representing the attribute
+  class in the diagram's legend. The color of the boxes for the class
+  is determined by `attr_class.code` and the site's style sheet. The
+  order in which they appear is set by `attr_class.ord`.
+
+#### Attribute Classes
+
+Attribute classes are present to enhance the readability of complex
+diagrams that present many attributes which may have basic
+commonalities between them and that can be distinguished by graphical
+means such as coloring.
+
+##### attr_class
+
+Base relation that establishes the existence of an attribute
+class. These entities have a `code` for internal representation and a
+numeric ordinal `ord` that alows for the discrete establishment of the
+position of the classes within the diagram legend. As expected, these
+fields are present in this base relation as they are are
+language-independent.
+
+##### attr_class_desc
+
+Descriptive, language-dependent data related to the attribute
+class. For now, it is only `title`, which is displayed in the
+diagram's legend.
+
+#### Contexts
+
+In FCA, formal contexs represent ontologies described by a collection
+of objects and attribute assignments. An Exploratorium project may
+have a number of contexts that may share objects and attributes
+between them.
+
+Contexts have classes, an internal classification mean that allows for
+attributes to be shared between contexts, even if the role of the
+attribute is different between them. Since the attribute's role
+changes, the description data of the attribute will probably change too,
+depending on the class of the context being visualized, and that's why
+Attribute Descriptions are related to an attribute-context class
+combination and not just the attribute.
+
+##### context
+
+Base relation that establishes the existence of a context. `code` is
+used for internal representation, and by default sets the name of the
+directory where the files of the diagram related to the context will
+reside (see [`DIAGRAMDIR`](#configuration-and-overriding)).
+
+A context has a class and only one class, and as so it is represented
+by the simple foreign key `context_class_id`.
+
+##### context_class
+
+Base relation that establishes the existence of a context class. As
+with some other base relations, it has a `code` field for internal
+work, but it has no reprecussion in the rendering of web pages; it is
+used mostly just as a mnemonic.
+
+##### object_context
+
+Stores tuples declaring which objects belong to which contexts. This
+is a many-to-many relation, where many objects may appear in many
+contexts so they may be reused or present in more than one context for
+a given project. This is useful as it polices against inconsistencies
+for the assignment of an attribute to an object within a given
+context, and it also allows for the representation within a given
+context of objects that (maybe transitionaly) have no attributes
+assigned to them.
+
+##### attribute_context
+
+Stores tuples declaring which attributes belong to which
+contexts. This is a many-to-many relation, where many attributes may
+appear in many contexts so they may be reused or present in more than
+one context for a given project. This is useful as it polices against
+inconsistencies for the assignment of an attribute to an object within
+a given context, and it also allows for the representation within a
+given context of attributes that (maybe transitionaly) are not present
+for any objects.
+
+##### object_attribute
+
+Should have been triplets of context-object-attribute associations,
+but due to relational algebra workings, the context ID has to be
+redundantly stated twice. There is a constraint forcing
+`object_context_id` and `attribute_context_id` to be equal within
+every record, to anyways avoid inconsitencies. Also, there is an `x`
+field, forced to always have a value of `1` and it is there to
+facilitate the creation of pivot tables.
+
+After all of the declarations and definitions of the previous
+relations, this is the central part of the database, which finally
+joins contexts, objects and attributes and establishes the structure
+of the lattices that will be represented in the diagrams.
 
 [lattice_editor_toolbar]: doc/lattice_editor.png
 [database_diagram]: doc/exploratorium_db_diagram.svg
+[diagram_objects]: doc/diagram_objects.png
+[diagram_attribute]: doc/diagram_attribute.png
