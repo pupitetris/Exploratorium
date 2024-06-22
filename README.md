@@ -1172,8 +1172,8 @@ Invocation:
 Understanding the design of the database gives a pretty good picture
 of the system's capabilities and potential. The database is normalized
 to the fourth normal form (4NF), to guarantee that no inconsistencies
-are introduced by the user (example: assigning in a context an
-attribute to an object when the latter does not belong to such
+are introduced by the content creator (example: assigning in a context
+an attribute to an object when the latter does not belong to such
 context). The 4NF is suitable to this application since the amount of
 relations and data is low.
 
@@ -1308,10 +1308,10 @@ In the figure above, we see:
 
 #### Attribute Classes
 
-Attribute classes are present to enhance the readability of complex
-diagrams that present many attributes which may have basic
+Attribute classes were implemented to enhance the readability of
+complex diagrams that present many attributes which may have basic
 commonalities between them and that can be distinguished by graphical
-means such as coloring.
+means, such as coloring.
 
 ##### attr_class
 
