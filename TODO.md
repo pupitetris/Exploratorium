@@ -63,6 +63,9 @@ TODO
   - [ ] Editor: tool de "organize by level"
   - [ ] Tool: switch a otro diagrama desde el fullscreen.
   - [ ] config.js -> config.json
+  - [ ] Usar IDs numéricos para lang, requisito para Budibase.
+  - [ ] Support for more than two languages.
+  - [ ] Attributes have no code??
 
 - Nice to have
   - [ ] Acceso a los datos tabulares de los contextos.
