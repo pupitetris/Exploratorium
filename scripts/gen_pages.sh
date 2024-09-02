@@ -8,13 +8,14 @@ require_sqlite "$DBDSN"
 
 "$SCRIPTDIR"/gen_gravitytree.sh
 
-while read -r lang; do
+ttdir="$PROJECTDIR/tt"
+gen_pages=$(realpath -s --relative-to="$ttdir" "$SCRIPTDIR"/gen_pages.pl)
 
-  (
+(
     # gen_pages.pl is location agnostic, but this produces reports
     # that are easier on the eyes:
-    cd "$PROJECTDIR/tt"
-    "$SCRIPTDIR"/gen_pages.pl $(printf "$MASTER_NAME" $lang) --force
-  )
-
-done < <(sqlite3 "$DBDSN" "SELECT lang_code FROM lang")
+    cd "$ttdir"
+    while read -r lang; do
+	"$gen_pages" $(printf "$MASTER_NAME" $lang) --force
+    done
+) < <(sqlite3 "$DBDSN" "SELECT lang_code FROM lang")
