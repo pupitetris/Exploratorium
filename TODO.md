@@ -62,18 +62,14 @@ TODO
   - [ ] Editor: snaps: colineal, horizontal y vertical.
   - [ ] Editor: tool de "organize by level"
   - [ ] Tool: switch a otro diagrama desde el fullscreen.
+  - [ ] config.js -> config.json
+  - [ ] Usar IDs numéricos para lang, requisito para Budibase.
+  - [ ] Support for more than two languages.
+  - [ ] Attributes have no code??
 
-- Indiana:
-  - [ ] 4k touchscreen
-  - [ ] smart phone
-  - [ ] touch-enabled
-    - [ ] alternativas a mecanismos "hover"
-    - [ ] pinch-to-zoom
-  - [ ] allowed to run inside an iframe element
-  - [x] have CORS enabled for http://idemo.cns.iu.edu/macroscope-kiosk/#/
-  - [x] served over HTTPS
-  
 - Nice to have
   - [ ] Acceso a los datos tabulares de los contextos.
   - [ ] Nodos "interesantes" con highlight, y hint explicativo.
   - [ ] Infobox: ligar gráficamente al elemento clickeado.
+  - [ ] Editor: poder alterar todos los parametros de config.json
+  - [ ] Editor: persist diagram changes using local storage.

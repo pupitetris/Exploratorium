@@ -8,9 +8,9 @@ if [ "$1" = "-f" ]; then
   > "$DBDIR"/tmp_gen_lattices_data.sql.prev
 fi
 
-DBFILE=${1:-$DEFAULT_DBFILE}
+DBDSN=${1:-$DEFAULT_DBDSN}
 
-require_sqlite "$DBFILE"
+require_sqlite "$DBDSN"
 
 # Generate list of contexts that changed:
 function get_changed_contexts {
@@ -32,8 +32,10 @@ fi
 
 while read -r lang; do
   while read -r context; do
-    fname="$DIAGRAMDIR"/$lang/$context/lattice.json
+    diagram_dir=$(get_diagram_dir $lang $context)
+    fname=$diagram_dir/lattice.json
     echo "Generating $fname"
-    "$SCRIPTDIR"/gen_lattice.sh "$DBFILE" $context $lang > "$fname"
-  done < <(sqlite3 "$DBFILE" "SELECT code FROM context WHERE context_id IN ($CONTEXT_IDS)")
-done < <(sqlite3 "$DBFILE" "SELECT lang_code FROM lang")
+    mkdir -p "$diagram_dir"
+    "$SCRIPTDIR"/gen_lattice.sh "$DBDSN" $context $lang > "$fname"
+  done < <(sqlite3 "$DBDSN" "SELECT code FROM context WHERE context_id IN ($CONTEXT_IDS)" | filter_contexts)
+done < <(sqlite3 "$DBDSN" "SELECT lang_code FROM lang")

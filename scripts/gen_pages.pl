@@ -5,6 +5,7 @@ use strict;
 use JSON; # libjson-perl
 use Template; # libtemplate-perl
 use File::Basename qw(dirname);
+use File::Path qw(make_path);
 use Encode qw(encode_utf8);
 
 sub arr_get_classes {
@@ -242,6 +243,7 @@ foreach my $page (@{$struct->{'pages'}{'children'}}) {
   $page->{'basedir'} = get_basedir($output);
   $page->{'sitedir'} = $output_path;
   print "Generating $output_fname\n";
+  make_path(dirname($output_fname));
   $tt->process($template, { 'page' => $page }, $output_fname, { binmode => ':utf8' }) || die $tt->error();
 }
 

@@ -2,10 +2,13 @@
 /site/gravity-tree/Authors/
 /site/gravity-tree/Blur/
 /site/gravity-tree/*.html
+/site/gravity-tree/gravity-tree.svg
 /site/theories/*/*/index.html
 /site/theories/*/*/lattice.json
 /site/theories/*/*/attr_class_desc.csv
 /site/theories/*/*/attr_desc.csv
 .DS_Store
 /db/tmp_gen_lattices_data.sql.prev
-/gravity-tree/gravity-tree.svg
+/db/pg/data.psql
+/db/pg/ddl.psql
+/_Inline/

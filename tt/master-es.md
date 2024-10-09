@@ -103,7 +103,13 @@ teorías.
 #### Descubre diez macroscopios
 
 Adéntrate en el reino de las teorías físicas y espacio-temporales con
-nuestras visualizaciones interactivas. Hemos disectado diversas clasificaciones conjuntistas realizadas por reconocidos filósofos de la ciencia y conformado una base de datos que relaciona modelos y sus atributos. Hemos analizado contextos formales para extraer conceeptos formales y visualizar redes jerárquicas. Los nodos representan conceptos, mientras que los enlaces ilustran relaciones jerárquicas de inclusión en redes interactivas que despliegan información extra.
+nuestras visualizaciones interactivas. Hemos disectado diversas
+clasificaciones conjuntistas realizadas por reconocidos filósofos de
+la ciencia y conformado una base de datos que relaciona modelos y sus
+atributos. Hemos analizado contextos formales para extraer conceeptos
+formales y visualizar redes jerárquicas. Los nodos representan
+conceptos, mientras que los enlaces ilustran relaciones jerárquicas de
+inclusión en redes interactivas que despliegan información extra.
 
 #### Nuestra meta: revelar la complejidad, facilitar la comprensión
 

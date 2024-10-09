@@ -1,24 +1,43 @@
+if [ -n "$CONFIGFILE" ]; then
+  source "$CONFIGFILE" || exit 1
+fi
+
 SCRIPTDIR=${SCRIPTDIR:-$(dirname "$0")}
 
-CONFIGFILE=${CONFIGFILE:-$SCRIPTDIR/config.sh}
-source "$CONFIGFILE"
+if [ -z "$CONFIGFILE" ]; then
+  CONFIGFILE=$SCRIPTDIR/config.sh
+  if [ -e "$CONFIGFILE" ]; then
+    source "$CONFIGFILE" || exit 1
+  else
+    CONFIGFILE=
+  fi
+fi
 
-DBDIR=${DBDIR:-$SCRIPTDIR/../db}
-SITEDIR=${SITEDIR:-$SCRIPTDIR/../site}
+PROJECTDIR=${PROJECTDIR:-$SCRIPTDIR/..}
+DBDIR=${DBDIR:-$PROJECTDIR/db}
+SITEDIR=${SITEDIR:-$PROJECTDIR/site}
 DIAGRAMSUBDIR=${DIAGRAMSUBDIR:-theories}
-DIAGRAMDIR=${DIAGRAMDIR:-$SITEDIR/$DIAGRAMSUBDIR}
-DEFAULT_DBFILE=${DEFAULT_DBFILE:-$DBDIR/exploratorium.db}
+DIAGRAMDIR=${DIAGRAMDIR:-$SITEDIR/$DIAGRAMSUBDIR/%s/%s}
+DIAGRAM_FILTERS=${DIAGRAM_FILTERS:-}
+DEFAULT_DBDSN=${DEFAULT_DBDSN:-$DBDIR/exploratorium.db}
+MASTER_NAME=${MASTER_NAME:-master-%s.md}
+DEPLOY_HOST=${DEPLOY_HOST:-remo}
+DEPLOY_REMOTEDIR=${DEPLOY_REMOTEDIR:-Exploratorium}
+
+if [ -n "$CONFIGFILE" ]; then
+  source "$CONFIGFILE" || exit 1
+fi
 
 function test_dbfile {
   local dbfile="$1"
 
   if [ ! -e "$dbfile" ]; then
-    echo "$0: DBFILE '$dbfile' does not exist" >&2
+    echo "$0: DBDSN '$dbfile' does not exist" >&2
     exit 1
   fi
 
   if [ "$(sqlite3 "$dbfile" "SELECT 'OK'")" != OK ]; then
-    echo "$0: Error opening DBFILE '$dbfile'" >&2
+    echo "$0: Error opening DBDSN '$dbfile'" >&2
     exit 1
   fi
 }
@@ -33,7 +52,7 @@ function require_sqlite {
   fi
 
   local dbfile="$1"
-  if [ ! -z "$dbfile" ]; then
+  if [ -n "$dbfile" ]; then
     test_dbfile "$dbfile"
   fi
 }
@@ -47,4 +66,21 @@ function require_inkscape {
     echo "$0: inkscape not found" >&2
     exit 1
   fi
+}
+
+function get_diagram_dir {
+  printf "$DIAGRAMDIR" "$@"
+}
+
+function filter_contexts {
+  if [ -z "$DIAGRAM_FILTERS" ]; then
+    cat
+    return
+  fi
+
+  grep $(
+    for i in $DIAGRAM_FILTERS; do
+      echo "-e $i"
+    done
+        )
 }
