@@ -47,11 +47,15 @@ function contexts2cat {
 
     ls *.psv | grep -vi ^cat_ |
 	while read psv; do
-	    local context_id=$(sed -n '1s/^Context:|\([0-9]\+\).*/\1/;T;p' "$psv")
+	    local context_id=$(sed -n '1s/^Context:|\([^|]\+\).*/\1/;T;p' "$psv")
 	    if [ -z "$context_id" ]; then
 		# Not a Context table
-		break
+		continue
 	    fi
+      if [ "$(tr -c -d 0-9 <<<"$context_id")" != "$context_id" ]; then
+		echo "$0: Sheet ${psv%.*} detected as a context table, but context_id '$context_id' is invalid" >&2
+		continue
+      fi
 
 	    # First element will be ignored during iterations:
 	    local attr_ids=(999)
@@ -59,7 +63,7 @@ function contexts2cat {
 	    for ((i=1; i < ${#attr_ids[@]}; i++)); do
 		echo "${attr_ids[$i]}|$context_id"
 	    done >> cat_attribute_context.psv
-	    
+
 	    sed -n '12,${s/^[ |]\+//;p}' "$psv" | cut -f1,9- -d\| |
 		while IFS=\| read -r -a data; do
 		    local object_id=${data[0]}
@@ -92,7 +96,7 @@ function render_attr_class {
     local reader=$1
     local table=$2
     local seq=$3
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%d,%s,%d);\n" \
 	   "$table" "$attr_class_id" "$(esc "$attr_class_code")" "$seq"
@@ -101,7 +105,7 @@ function render_attr_class {
 function render_attr_class_desc {
     local reader=$1
     local table=$2
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%d,'en',%s);\n" \
 	   "$table" "$attr_class_id" "$(esc "$attr_class_title_en")"
@@ -112,7 +116,7 @@ function render_attr_class_desc {
 function render_attr_context_class {
     local reader=$1
     local table=$2
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%d,1,%d,%s);\n" \
 	   "$table" "$attribute_id" "$attribute_attr_class_id" "$(str_or_NULL "$attribute_reference")"
@@ -121,7 +125,7 @@ function render_attr_context_class {
 function render_attribute {
     local reader=$1
     local table=$2
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%d,%s);\n" \
 	   "$table" "$attribute_id" "$(str_or_NULL "$attribute_formula")"
@@ -139,7 +143,7 @@ function render_attribute_context {
 function render_attribute_desc {
     local reader=$1
     local table=$2
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%d,1,'en',%s,%s,%s,%s);\n" \
 	   "$table" "$attribute_id" "$(esc "$attribute_label_en")" "$(str_or_NULL "$attribute_title_en")" \
@@ -152,7 +156,7 @@ function render_attribute_desc {
 function render_context {
     local reader=$1
     local table=$2
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%d,%d,%s);\n" \
 	   "$table" "$context_id" "$context_class_id" "$(esc "$context_code")"
@@ -161,7 +165,7 @@ function render_context {
 function render_context_class {
     local reader=$1
     local table=$2
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%d,%s);\n" \
 	   "$table" "$context_class_id" "$(esc "$context_class_code")"
@@ -170,7 +174,7 @@ function render_context_class {
 function render_lang {
     local reader=$1
     local table=$2
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%s,%s);\n" \
 	   "$table" "$(esc "$lang_code")" "$(esc "$lang_label")"
@@ -179,7 +183,7 @@ function render_lang {
 function render_object {
     local reader=$1
     local table=$2
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%d,%s);\n" \
 	   "$table" "$object_id" "$(esc "$object_code")"
@@ -206,7 +210,7 @@ function render_object_context {
 function render_object_desc {
     local reader=$1
     local table=$2
-    
+
     eval "$reader" || return 1
     printf "INSERT INTO %s VALUES(%d,'en',%s);\n" \
 	   "$table" "$object_id" "$(esc "$object_label_en")"
