@@ -9,11 +9,11 @@ TODO
   - [ ] Checar en Safari
 
 - Infraestructura:
-  - [ ] Documentación!
+  - [x] Documentación!
   - [ ] npm
   - [x] generador en maquina de Mariana
   - [x] GitHub
-    - [ ] GitHub para Mariana
+    - [x] GitHub para Mariana
   - [x] Google Analytics
   - [x] Templates: Traducciones para aria-label et al.
 
@@ -39,7 +39,7 @@ TODO
   - [ ] Dump de SQL debe de registar el estado de las secuencias.
   - [x] Fullscreen: handlear usuario saliendo de fullscreen sin usar el toolbar.
   - [ ] En algunos diagramas, los node levels se traslapan con el node dot.
-  - [ ] Homologar config.json? Yes
+  - [ ] Homologar config.json? Yes: config.js -> config.json
   - [x] Traducibles las descripciones de nodos en la leyenda
   - [x] Editor invalida caché, y que sea con ?editor en vez de #editor
 
@@ -54,7 +54,7 @@ TODO
   - [x] Tooltips en toolbars
   - [x] Infobox: párrafo (columna de desc.csv) especial de ecuación.
   - [x] Remover el texto del autor en la páginas de los diagramas.
-  - [ ] Todos los svgs se van a 16:9
+  - [x] Todos los svgs se van a 16:9
   - [ ] Repasar el feature de subrayado (double click en nodos).
   - [ ] Infobox: poner attribute class dentro del texto.
   - [ ] Resaltar nodo seleccionado.
@@ -62,9 +62,8 @@ TODO
   - [ ] Editor: snaps: colineal, horizontal y vertical.
   - [ ] Editor: tool de "organize by level"
   - [ ] Tool: switch a otro diagrama desde el fullscreen.
-  - [ ] config.js -> config.json
   - [ ] Usar IDs numéricos para lang, requisito para Budibase.
-  - [ ] Support for more than two languages.
+  - [x] Support for more than two languages.
   - [ ] Attributes have no code??
 
 - Nice to have
@@ -73,3 +72,6 @@ TODO
   - [ ] Infobox: ligar gráficamente al elemento clickeado.
   - [ ] Editor: poder alterar todos los parametros de config.json
   - [ ] Editor: persist diagram changes using local storage.
+  - [ ] Viewer: activate force in diagram to facilitate initial work on diagram.
+  - [ ] Viewer: download the SVG of the diagram?
+  - [ ] Pull node position from conexp?

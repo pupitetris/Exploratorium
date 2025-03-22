@@ -9,7 +9,25 @@ require_sqlite "$DBDSN"
 while read -r lang; do
   while IFS=\| read -r context_id context; do
     diagram_dir=$(get_diagram_dir $lang $context)
+
     mkdir -p "$diagram_dir"
+    if [ ! -e "$diagram_dir"/pos.json ]; then
+      echo '[]' > "$diagram_dir"/pos.json
+    fi
+    if [ ! -e "$diagram_dir"/config.js ]; then
+      echo 'window.Config = {
+  VIEWBOX: "0 0 1920 1024",
+  NODE_RADIUS: 23,
+  TEXTBOX_PADDING: 8,
+  LABELS_ORIGIN_X: 30,
+  LABELS_ORIGIN_Y: 5,
+  LABELS_HEIGHT: 35,
+  LABELS_SEPARATION: 14,
+  LINK_STRENGTH: 0,
+  USE_EDITOR: false
+}' > "$diagram_dir"/config.js
+    fi
+
     echo "
 SELECT Attribute,Class,Title,Formula,Explanation,Reference FROM v_attributes
        WHERE Lang='$lang' AND Context='$context'" |

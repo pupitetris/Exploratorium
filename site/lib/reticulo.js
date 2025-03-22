@@ -1077,7 +1077,7 @@
                                                                x, y,
                                                                graph.context[id].name));
               textBoxes.push(textBox);
-              y += that.config.LABELS_HEIGHT - that.config.LABELS_SEPARATION;
+              y += that.config.LABELS_HEIGHT + that.config.LABELS_SEPARATION;
             }
             observeForBBox(textBoxes);
           }

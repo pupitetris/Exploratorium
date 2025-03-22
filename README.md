@@ -20,7 +20,8 @@ Install the required packages using this command:
 sudo apt install openjdk-17-jre-headless openjdk-17-jre libjson-perl \
   libtemplate-perl libdbi-perl libdbd-sqlite3-perl libdigest-md5-perl \
   libinline-java-perl pandoc sqlite3 pgformatter rsync openssh-client \
-  inkscape imagemagick-6.q16 node-http-server
+  inkscape imagemagick-6.q16 node-http-server \
+  libspreadsheet-read-perl libspreadsheet-readsxc-perl csvkit
 ```
 
 For macOS, install the equivalent packages using [Homebrew](https://brew.sh/)
@@ -57,6 +58,11 @@ platform in an abstract fashion or mention PostgreSQL as a side note.
   author's, otherwise the geometries will come out wrong and the graph
   will be malformed. There is no need to install these if the gravity
   tree will not be regenerated.
+
+* `libspreadsheet-read-perl` and `libspreadsheet-readsxc-perl` are
+  required by [xlsx2csv.pl](#xlsx2csvpl) as part of the optional
+  ODS-to-sqlite import workflow. If you are not going to perform these
+  imports, you don't need these packages.
 
 
 ## Workflow
