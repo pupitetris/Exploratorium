@@ -118,8 +118,8 @@ function render_attr_context_class {
     local table=$2
 
     eval "$reader" || return 1
-    printf "INSERT INTO %s VALUES(%d,1,%d,%s);\n" \
-	   "$table" "$attribute_id" "$attribute_attr_class_id" "$(str_or_NULL "$attribute_reference")"
+    printf "INSERT INTO %s VALUES(%d,%d,%d,%s);\n" \
+	   "$table" "$attribute_id" "$attribute_context_class_id" "$attribute_attr_class_id" "$(str_or_NULL "$attribute_reference")"
 }
 
 function render_attribute {
@@ -145,11 +145,11 @@ function render_attribute_desc {
     local table=$2
 
     eval "$reader" || return 1
-    printf "INSERT INTO %s VALUES(%d,1,'en',%s,%s,%s,%s);\n" \
-	   "$table" "$attribute_id" "$(esc "$attribute_label_en")" "$(str_or_NULL "$attribute_title_en")" \
+    printf "INSERT INTO %s VALUES(%d,%d,'en',%s,%s,%s,%s);\n" \
+	   "$table" "$attribute_id" "$attribute_context_class_id" "$(esc "$attribute_label_en")" "$(str_or_NULL "$attribute_title_en")" \
 	   "$(str_or_NULL "$attribute_explanation_en")" NULL
-    printf "INSERT INTO %s VALUES(%d,1,'es',%s,%s,%s,%s);\n" \
-	   "$table" "$attribute_id" "$(esc "$attribute_label_es")" "$(str_or_NULL "$attribute_title_es")" \
+    printf "INSERT INTO %s VALUES(%d,%d,'es',%s,%s,%s,%s);\n" \
+	   "$table" "$attribute_id" "$attribute_context_class_id" "$(esc "$attribute_label_es")" "$(str_or_NULL "$attribute_title_es")" \
 	   "$(str_or_NULL "$attribute_explanation_es")" NULL
 }
 
