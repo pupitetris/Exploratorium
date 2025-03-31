@@ -1070,12 +1070,16 @@ execution are actually processed. This is done by generating a
 temporary dump using [`db_dump_data.sh`](#db_dump_datash) and
 comparing that to the last one generated to see which contexts present
 changes. These temporary dumps are put in `DBDIR`, and removing them
-forces all of the selected context lattices to be reanalized.
+forces all of the selected context lattices to be reanalized. Use the
+optional `-f` argument to directly perform the generation without any
+checks.
 
 Invocation:
 
-`gen_lattices.sh [«DSN»]`
+`gen_lattices.sh [-f] [«DSN»]`
 
+* `-f`: optional flag that forces the regeneration of all of the 
+  `lattice.json` files.
 * `«DSN»`: optional Data Source Name, see [`DEFAULT_DBDSN`](#configuration-and-overriding).
 * [`DIAGRAM_FILTERS`](#configuration-and-overriding) environtment
   variable selects which diagrams/contexts to work on.
