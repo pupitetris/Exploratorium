@@ -24,6 +24,11 @@
             </div>
             <div class="btn-toolbar flex-nowrap mb-3">
               <div class="input-group input-group-sm me-2">
+                <span class="input-group-text">Scale</span>
+                <input name="txtEle_scale" type="text" class="form-control">
+                <button type="button" class="btn btn-warning">Set</button>
+              </div>
+              <div class="input-group input-group-sm me-2">
                 <span class="input-group-text">Viewbox</span>
                 <input name="txtVb_offsetX" type="text" class="form-control">
                 <span class="input-group-text">x</span>

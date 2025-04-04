@@ -3,6 +3,7 @@
   function reticulo() {
 
     const ATTRIBUTES_TO_DOUBLE_COLUMN_AFTER = 5;
+    const DEFAULT_STROKE_WIDTH = 3;
 
     const COOKIE_SPEC = {
       "show-legend": { "type": "bool", "def": 1 },
@@ -55,7 +56,7 @@
     }
 
     function forceTick(nodes, links) {
-      nodes.attr("transform", datum => `translate(${datum.x},${datum.y})`);
+      nodes.attr("transform", datum => `translate(${datum.x} ${datum.y})`);
 
       links.attr("x1", datum => datum.source.x)
         .attr("y1", datum => datum.source.y)
@@ -111,6 +112,87 @@
         node.x = pos.x;
         node.y = pos.y;
       }
+    }
+
+    function levelTextSetPos(textEle, config) {
+      const lvlY = config.LABELS_ORIGIN_Y +
+            config.NODE_RADIUS +
+            (config.LABELS_SEPARATION * 2);
+      textEle.attr("transform", `translate(0 ${lvlY})`)
+    }
+
+    function nodeAttributesSetPos(group, config) {
+      const textBoxes = group.selectAll(".attributes-label").nodes();
+      const numAttributes = textBoxes.length;
+      if (numAttributes == 0)
+        return;
+
+      let x = config.LABELS_ORIGIN_X;
+      let y = config.LABELS_ORIGIN_Y -
+          (config.LABELS_HEIGHT / 2) -
+          (config.LABELS_SEPARATION * 2);
+      const start_y = y;
+
+      const column2 = (numAttributes > ATTRIBUTES_TO_DOUBLE_COLUMN_AFTER)?
+            numAttributes / 2 - 1:
+            numAttributes;
+      let is_column2 = false;
+      for (let i = 0; i < numAttributes; i++) {
+        if (i > column2 && !is_column2) {
+          x = -config.LABELS_ORIGIN_X;
+          y = start_y;
+          is_column2 = true;
+        }
+        const textBox = d3.select(textBoxes[i]);
+        textBox.attr("transform", `translate(${x} ${y})`);
+        y -= config.LABELS_HEIGHT + config.LABELS_SEPARATION;
+      }
+    }
+
+    function nodeObjectLabelsSetPos(group, config) {
+      const textBoxes = group.selectAll(".objects-label").nodes();
+      const numLabels = textBoxes.length;
+      if (numLabels == 0)
+        return;
+
+      const x = config.LABELS_ORIGIN_X;
+      let y = config.LABELS_ORIGIN_Y +
+          (config.LABELS_HEIGHT / 2) +
+          (config.LABELS_SEPARATION * 2);
+      for (let i = 0; i < numLabels; i++) {
+        const textBox = d3.select(textBoxes[i]);
+        textBox.attr("transform", `translate(${x} ${y})`);
+        y += config.LABELS_HEIGHT + config.LABELS_SEPARATION;
+      }
+    }
+
+    function cssApplyConfig(config) {
+      const sheet = new CSSStyleSheet();
+      const sw = config.SCALE * DEFAULT_STROKE_WIDTH;
+      sheet.replaceSync(`.diagram { --link-width: ${sw}px; --node-stroke-width: ${sw}px; }`);
+      document.adoptedStyleSheets = [ sheet ];
+    }
+
+    function nodesApplyConfig(nodes, config) {
+      d3.selectAll(".node")
+        .each(function (datum) {
+          const hasAttributes = datum.labelAttributes.length > 0;
+          const hasLabelObjects = datum.labelObjects.length > 0;
+
+          let group = d3.select(this);
+
+          let dot = group.select(".node-dot");
+          populateNodeDot(dot, config.NODE_RADIUS, hasAttributes, hasLabelObjects);
+
+          let lvl_text = group.select(".node-level");
+          levelTextSetPos(lvl_text, config);
+
+          if (hasAttributes)
+            nodeAttributesSetPos(group, config);
+          if (hasLabelObjects)
+            nodeObjectLabelsSetPos(group, config);
+        });
+      cssApplyConfig(config);
     }
 
     function multiClassed(ele, classes) {
@@ -267,9 +349,8 @@
       infobox.style("display", "block");
     }
 
-    function createNodeDot(radius, hasAttributes, hasLabelObjects) {
-      const dot = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
-            .classed("node-dot", true);
+    function populateNodeDot(dot, radius, hasAttributes, hasLabelObjects) {
+      dot.node().replaceChildren();
 
       dot
         .append("circle")
@@ -293,6 +374,13 @@
         .attr("r", radius);
 
       return dot.node();
+    }
+
+    function createNodeDot(radius, hasAttributes, hasLabelObjects) {
+      const dot = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
+            .classed("node-dot", true);
+
+      return populateNodeDot(dot, radius, hasAttributes, hasLabelObjects);
     }
 
     function createLink(datum) {
@@ -322,10 +410,9 @@
       }
     }
 
-    function createTextBox(eleClass, offsetX, offsetY, text, anchor) {
+    function createTextBox(eleClass, text, anchor) {
       const group = d3.select(document.createElementNS(d3.namespaces.svg, "g"))
             .classed(eleClass, true)
-            .attr("transform", `translate(${offsetX},${offsetY})`)
             .on("click", eventStop);
       group.append("rect")
         .classed(eleClass + "-box textbox-box", true);
@@ -347,7 +434,36 @@
       clearActiveSelection(nodes, links);
     }
 
+    function configApplyScale(config, scale) {
+      // falsey scale is a reset in scale.
+      if (!scale) {
+        scale = 1.0;
+      } else {
+        const num = Number(scale);
+        if (isNaN(num)) {
+          throw (`SCALE must be a number. Value given: {scale}`);
+        }
+        scale = num;
+      }
+      config.SCALE = scale;
+
+      affected_configs = ['NODE_RADIUS', 'LABELS_ORIGIN_X', 'LABELS_ORIGIN_Y'];
+      for (let key of affected_configs) {
+        if (! (key in config))
+          continue;
+
+        const orig_key = key + '_ORIG';
+        if (! (orig_key in config))
+          config[orig_key] = config[key];
+        config[key] = config[orig_key] * scale;
+      }
+
+      return scale;
+    }
+
     function configSetup(config) {
+      configApplyScale(config, config.SCALE);
+
       const url = new URL(window.location);
       config.DIAGRAM =
         url.pathname
@@ -467,6 +583,7 @@
 
       const keys = ["txtJson",
                     "btnJsonGet", "btnJsonCopy",
+                    "txtEleScale", "btnEleScaleSet",
                     "txtVb_offsetX", "txtVb_offsetY", "txtVb_width", "txtVb_height",
                     "btnVbReset", "btnVbSmaller", "btnVbBigger", "btnVbWide", "btnVbCopy"];
       const controls = {};
@@ -483,6 +600,18 @@
         txtJson.select();
         navigator.clipboard.writeText(txtJson.value);
       }
+
+      let scale = Number(config.SCALE);
+      if (isNaN(scale)) scale = 1.0;
+      controls.txtEleScale.attr("value", scale);
+
+      controls.btnEleScaleSet
+        .on("click", () => {
+          let scale = Number(controls.txtEleScale.property("value"));
+          scale = configApplyScale(config, scale);
+          controls.txtEleScale.attr("value", scale);
+          nodesApplyConfig(graph.nodes, config);
+        });
 
       const origViewBox = Object.assign({}, viewBox);
 
@@ -888,7 +1017,7 @@
 
       const zoom = d3.zoom()
             .translateExtent(translateExtents)
-            .scaleExtent([0.5, 4])
+            .scaleExtent([0.0625, 32])
             .on("zoom", ({transform}) => root_group.attr("transform", transform));
       svg.call(zoom)
         .on("dblclick.zoom", null)
@@ -1014,22 +1143,13 @@
           group.append(() => createNodeDot(that.config.NODE_RADIUS, hasAttributes, hasLabelObjects))
             .datum(datum);
 
-          const lvlY = that.config.LABELS_ORIGIN_Y +
-                (that.config.LABELS_HEIGHT / 2) +
-                (that.config.LABELS_SEPARATION * 2);
-          group.append("text")
-            .classed("node-level", true)
-            .attr("transform", `translate(0, ${lvlY})`)
-            .attr("text-anchor", "middle")
-            .text(datum.level);
+          const lvl_text = group.append("text")
+                .classed("node-level", true)
+                .attr("text-anchor", "middle")
+                .text(datum.level);
+          levelTextSetPos(lvl_text, that.config);
 
           if (hasAttributes) {
-            let x = that.config.LABELS_ORIGIN_X;
-            let y = that.config.LABELS_ORIGIN_Y -
-                (that.config.LABELS_HEIGHT / 2) -
-                (that.config.LABELS_SEPARATION * 2);
-            const start_y = y;
-
             const textBoxes = [];
             const numAttributes = datum.labelAttributes.length;
             const column2 = (numAttributes > ATTRIBUTES_TO_DOUBLE_COLUMN_AFTER)?
@@ -1038,8 +1158,6 @@
             let anchor;
             for (let i = 0; i < numAttributes; i++) {
               if (i > column2 && anchor === undefined) {
-                x = -that.config.LABELS_ORIGIN_X;
-                y = start_y;
                 anchor = "end";
               }
               const attr = datum.labelAttributes[i];
@@ -1055,30 +1173,25 @@
               eleClass += " attributes-label";
 
               const textBox = group
-                    .append(() => createTextBox(eleClass, x, y, attr, anchor))
+                    .append(() => createTextBox(eleClass, attr, anchor))
                     .on("click", (event) => attributeClick(event, infobox))
                     .property("attribute", attr);
 
               textBoxes.push(textBox);
-              y -= that.config.LABELS_HEIGHT + that.config.LABELS_SEPARATION;
             }
+            nodeAttributesSetPos(group, that.config);
             observeForBBox(textBoxes);
           }
 
           if (hasLabelObjects) {
             const textBoxes = [];
-            const x = that.config.LABELS_ORIGIN_X;
-            let y = that.config.LABELS_ORIGIN_Y +
-                (that.config.LABELS_HEIGHT / 2) +
-                (that.config.LABELS_SEPARATION * 2);
             for (let i = 0; i < datum.labelObjects.length; i++) {
               const id = datum.labelObjects[i];
               const textBox = group.append(() => createTextBox("objects-label",
-                                                               x, y,
                                                                graph.context[id].name));
               textBoxes.push(textBox);
-              y += that.config.LABELS_HEIGHT + that.config.LABELS_SEPARATION;
             }
+            nodeObjectLabelsSetPos(group, that.config);
             observeForBBox(textBoxes);
           }
 
