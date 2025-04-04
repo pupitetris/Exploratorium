@@ -469,6 +469,7 @@
       config.DIAGRAM =
         url.pathname
         .replace(/\/index.html$/, "")
+        .replace(/\/$/, "")
         .replace(/.*\//, "");
 
       if (url.hostname == '127.0.0.1' ||
