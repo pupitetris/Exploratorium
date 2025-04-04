@@ -168,7 +168,7 @@
 
     function nodesApplyConfig(nodes, config) {
       d3.selectAll(".node")
-        .each(function (datum) {
+        .each(function(datum) {
           const hasAttributes = datum.labelAttributes.length > 0;
           const hasLabelObjects = datum.labelObjects.length > 0;
 
