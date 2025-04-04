@@ -1,0 +1,101 @@
+---
+title: Exploratorium
+---
+
+erDiagram
+
+  lang {
+    TEXT lang_code PK
+    TEXT lang_label UK
+  }
+
+  object_desc {
+    INTEGER object_id PK, FK
+    TEXT lang_code PK, FK
+    TEXT label UK
+  }
+
+  attribute_desc {
+    INTEGER attribute_id PK, FK
+    INTEGER context_class_id PK, FK
+    TEXT lang_code PK, FK
+    TEXT label UK
+    TEXT title
+    TEXT explanation
+    TEXT obs
+  }
+
+  attr_class_desc {
+    INTEGER attr_class_id PK, FK
+    TEXT lang_code PK, FK
+    TEXT title
+  }
+
+  attr_class {
+    INTEGER attr_class_id PK
+    TEXT code UK
+    INTEGER ord UK
+  }
+
+  attr_context_class {
+    INTEGER attribute_id PK, FK
+    INTEGER context_class_id PK, FK
+    INTEGER attr_class_id FK
+    TEXT reference
+  }
+
+  context_class {
+    INTEGER context_class_id PK
+    TEXT code UK
+  }
+
+  object {
+    INTEGER object_id PK
+    TEXT code UK
+  }
+
+  context {
+    INTEGER context_id PK
+    INTEGER context_class_id FK
+    TEXT code UK
+  }
+
+  attribute {
+    INTEGER attribute_id PK
+    TEXT formula
+  }
+
+  object_context {
+    INTEGER object_id PK, FK
+    INTEGER context_id PK, FK
+  }
+
+  attribute_context {
+    INTEGER attribute_id PK, FK
+    INTEGER context_id PK, FK
+  }
+
+  object_attribute {
+    INTEGER object_id PK, FK
+    INTEGER object_context_id PK, FK
+    INTEGER attribute_id PK, FK
+    INTEGER attr_context_id PK, FK
+    INTEGER x
+  }
+
+  attribute 1 to 0+ attr_context_class : ""
+  attribute 1 to 0+ attribute_context : ""
+  attribute_context 1 to 0+ object_attribute : ""
+  attr_class 1 to 0+ attr_class_desc : ""
+  attr_class 1 optionally to 0+ attr_context_class : ""
+  attr_context_class 1 to 0+ attribute_desc : ""
+  context 1 to 0+ attribute_context : ""
+  context 1 to 0+ object_context : ""
+  context_class 1 to 0+ attr_context_class : ""
+  context_class 1 optionally to 0+ context : ""
+  lang 1 to 0+ attr_class_desc : ""
+  lang 1 to 0+ attribute_desc : ""
+  lang 1 to 0+ object_desc : ""
+  object 1 to 0+ object_context : ""
+  object 1 to 0+ object_desc : ""
+  object_context 1 to 0+ object_attribute : ""
