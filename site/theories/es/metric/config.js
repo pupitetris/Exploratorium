@@ -1,5 +1,6 @@
 window.Config = {
   VIEWBOX: "-200 0 3364 1889",
+  SCALE: 1.0,
   NODE_RADIUS: 26,
   TEXTBOX_PADDING: 7,
   LABELS_ORIGIN_X: 30,
