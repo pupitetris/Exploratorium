@@ -240,7 +240,8 @@
 }
 
 text {
-  font: 14px sans-serif;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
 }
 
 .box-bg {
@@ -261,11 +262,13 @@ text {
 }
 
 .textbox-bg-stop1 {
-	stop-color: rgba(255,255,255,0.45);
+	stop-color: #fff;
+	stop-opacity: 0.45;
 }
 
 .textbox-bg-stop2 {
-	stop-color: rgba(255,255,255,0.20);
+	stop-color: #fff;
+	stop-opacity: 0.20;
 }
 
 .textbox-bg {
@@ -275,7 +278,8 @@ text {
 }
 
 .textbox-text {
-  font: 24px sans-serif;
+	font-size: 24px;
+	font-family: Arial, sans-serif;
 	padding: 15px;
 }
 
