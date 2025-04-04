@@ -166,13 +166,6 @@
       }
     }
 
-    function cssApplyConfig(config) {
-      const sheet = new CSSStyleSheet();
-      const sw = config.SCALE * DEFAULT_STROKE_WIDTH;
-      sheet.replaceSync(`.diagram { --link-width: ${sw}px; --node-stroke-width: ${sw}px; }`);
-      document.adoptedStyleSheets = [ sheet ];
-    }
-
     function nodesApplyConfig(nodes, config) {
       d3.selectAll(".node")
         .each(function (datum) {
@@ -192,7 +185,6 @@
           if (hasLabelObjects)
             nodeObjectLabelsSetPos(group, config);
         });
-      cssApplyConfig(config);
     }
 
     function multiClassed(ele, classes) {
@@ -434,6 +426,13 @@
       clearActiveSelection(nodes, links);
     }
 
+    function cssApplyConfig(config) {
+      const sheet = new CSSStyleSheet();
+      const sw = config.SCALE * DEFAULT_STROKE_WIDTH;
+      sheet.replaceSync(`.diagram { --link-width: ${sw}px; --node-stroke-width: ${sw}px; }`);
+      document.adoptedStyleSheets = [ sheet ];
+    }
+
     function configApplyScale(config, scale) {
       // falsey scale is a reset in scale.
       if (!scale) {
@@ -457,6 +456,8 @@
           config[orig_key] = config[key];
         config[key] = config[orig_key] * scale;
       }
+
+      cssApplyConfig(config);
 
       return scale;
     }
