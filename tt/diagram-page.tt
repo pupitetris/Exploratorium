@@ -65,6 +65,9 @@
                 <button type="button" class="tool-selall btn btn-outline-primary bi bi-check-circle-fill" aria-label="[% PROCESS string s='Select All' %]"></button>
                 <button type="button" class="tool-selnone btn btn-outline-primary bi bi-slash-circle" aria-label="[% PROCESS string s='Select None' %]"></button>
               </div>
+              <div class="tool-file-group btn-group me-2" role="group">
+                <button type="button" class="tool-download btn btn-outline-primary bi bi-download" aria-label="[% PROCESS string s='Download' %]"></button>
+              </div>
               <div class="tool-zoom-group btn-group me-2" role="group">
                 <button type="button" class="tool-zoom-out btn btn-outline-primary bi bi-zoom-out" aria-label="[% PROCESS string s='Zoom Out' %]"></button>
                 <button type="button" class="tool-zoom-reset btn btn-outline-primary" aria-label="[% PROCESS string s='Zoom Reset' %]">1:1</button>

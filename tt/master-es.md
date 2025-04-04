@@ -15,6 +15,7 @@ Exploratorium de teorías del espacio-tiempo
     "Select All": "Seleccionar todos",
     "Select None": "Seleccionar ninguno",
     "Toggle navigation": "Alternar navegación",
+    "Download": "Descargar",
     "Zoom In": "Acercar",
     "Zoom Out": "Alejar",
     "Zoom Reset": "Restablecer acercamiento",

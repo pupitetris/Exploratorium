@@ -832,6 +832,38 @@
       return drag;
     }
 
+    const toolbarDownload = (function () {
+      const a = document.createElement('a');
+      a.setAttribute('style', 'display: none');
+      let appended = false;
+
+      return function (svg, fname) {
+        if (!appended) {
+          appended = true;
+          document.body.appendChild(a);
+        }
+
+        const svg2 = svg.clone(true);
+        svg2.selectAll("*")
+          .each(function() {
+            if (this.tagName == 'svg' ||
+                this.tagName == 'defs' ||
+                this.tagName == 'linearGradient')
+              return;
+
+            const cs = window.getComputedStyle(this);
+            for (prop of cs)
+              this.style[prop] = cs.getPropertyValue(prop);
+          });
+        const blob = new Blob([svg2.node().outerHTML], { type: "image/svg+xml" });
+        const url = window.URL.createObjectURL(blob);
+        a.href = url;
+        a.download = fname;
+        a.click();
+        window.URL.revokeObjectURL(url);
+      };
+    })();
+
     function toolbarFullscreen(shell) {
       if (!document.fullscreenElement) {
         shell.node().requestFullscreen();
@@ -876,6 +908,9 @@
           const active = d3.select(event.target).classed("active");
           editorShow(editor, legend, active);
         });
+
+      toolbar.select(".tool-download")
+        .on("click", () => toolbarDownload(svg, config.DIAGRAM + '.svg'));
 
       toolbar.select(".tool-zoom-out")
         .on("click", () => svg.transition().call(zoom.scaleBy, 0.5));
