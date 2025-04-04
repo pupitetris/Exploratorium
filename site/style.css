@@ -1,17 +1,17 @@
 @import url("cmm/style.css");
 
 .navbar {
-  border-bottom: 1px solid lightgray;
-  box-shadow: inset 0px 5px 5px rgba(0,0,0,0.5);
+	border-bottom: 1px solid lightgray;
+	box-shadow: inset 0px 5px 5px rgba(0,0,0,0.5);
 }
 
 .navbar .dropdown-menu {
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-  --bs-dropdown-border-radius: 0;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	--bs-dropdown-border-radius: 0;
 }
 
 .navbar, .navbar .dropdown-item {
-  --navbar-main-color: #337ab7;
+	--navbar-main-color: #337ab7;
 	--bs-navbar-color: var(--navbar-main-color);
 	--bs-dropdown-link-color: var(--navbar-main-color);
 }
@@ -21,15 +21,15 @@
 }
 
 .title, h2 {
-  color: #265418;
+	color: #265418;
 }
 
 .title h1 {
-  /*  font-family: 'Sriracha', cursive;*/
+	/*  font-family: 'Sriracha', cursive;*/
 }
 
 .title h2 {
-  font-family: 'Waiting for the Sunrise', cursive;
+	font-family: 'Waiting for the Sunrise', cursive;
 }
 
 .intro-header {
@@ -43,24 +43,24 @@
 }
 
 .container > * {
-  flex: 1 100%;
+	flex: 1 100%;
 }
 
 .nav a {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .main {
-  flex: 2 0px;
-  order: 2;
+	flex: 2 0px;
+	order: 2;
 }
 
 .aside-1 {
-  order: 1;
+	order: 1;
 }
 
 .aside-2 {
-  order: 3;
+	order: 3;
 }
 
 .footer-pasto .container > div:first-child {
@@ -68,11 +68,11 @@
 }
 
 .footer-pasto {
-  font-size: x-small;
+	font-size: x-small;
 	background-image: url("images/pasto.svg");
-  background-position: top center;
-  background-repeat: repeat-x;
-  min-height: 180px;
+	background-position: top center;
+	background-repeat: repeat-x;
+	min-height: 180px;
 }
 
 #attr-desc {
@@ -81,60 +81,60 @@
 
 .dia-shell {
 	margin-top: 1em;
-  position: relative;
-  padding: 0;
+	position: relative;
+	padding: 0;
 }
 
 .dia-shell.fullscreen {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: white;
-  border-width: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: white;
+	border-width: 0;
 }
 
 .dia-shell .btn-toolbar {
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  flex-wrap: nowrap;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	flex-wrap: nowrap;
 }
 
 .dia-shell .btn {
-  --bs-btn-bg: white;
-  --bs-btn-hover-color: var(--bs-btn-color);
-  --bs-btn-hover-bg: white;
+	--bs-btn-bg: white;
+	--bs-btn-hover-color: var(--bs-btn-color);
+	--bs-btn-hover-bg: white;
 }
 
 .btn-toolbar .btn[aria-label] {
-  position: relative;
-  z-index: 0;
+	position: relative;
+	z-index: 0;
 }
 
 .btn-toolbar .btn[aria-label]::after {
-  content: attr(aria-label);
+	content: attr(aria-label);
 
-  position: absolute;
-  top: 45px;
-  right: -20px;
+	position: absolute;
+	top: 45px;
+	right: -20px;
 
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity .15s ease-in-out;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity .15s ease-in-out;
 
-  display: block;
-  white-space: nowrap;
-  font-size: 12px;
-  line-height: 16px;
-  color: black;
-  background: #fefdcd;
-  padding: 1ex 1ex;
-  border: 1px solid #c0c0c0;
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
+	display: block;
+	white-space: nowrap;
+	font-size: 12px;
+	line-height: 16px;
+	color: black;
+	background: #fefdcd;
+	padding: 1ex 1ex;
+	border: 1px solid #c0c0c0;
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 .btn-toolbar .btn[aria-label].hover::after {
-  opacity: 1;
+	opacity: 1;
 }
 
 .diagram {
@@ -143,92 +143,92 @@
 }
 
 .diagram > svg {
-  cursor: move;
+	cursor: move;
 	width: 100%;
 	height: 100%;
 }
 
 #editor {
-  width: 75%;
-  margin: auto;
+	width: 75%;
+	margin: auto;
 }
 
 #editor textarea {
-  font-family: monospace;
-  font-size: x-small;
+	font-family: monospace;
+	font-size: x-small;
 }
 
 #editor input {
-  text-align: right;
+	text-align: right;
 }
 
 #infobox {
-  top: 50%;
-  z-index: 1;
-  display: none;
+	top: 50%;
+	z-index: 1;
+	display: none;
 }
 
 #legend {
-  top: 24px;
+	top: 24px;
 }
 
 #legend .cont > div:first-child {
-  padding-right: 2em;
+	padding-right: 2em;
 }
 
 #legend .figure {
-  display: inline-block;
-  width: 2.5em;
-  height: 1.25em;
-  margin-right: 1ex;
-  vertical-align: text-top;
+	display: inline-block;
+	width: 2.5em;
+	height: 1.25em;
+	margin-right: 1ex;
+	vertical-align: text-top;
 }
 
 #legend .textbox-box {
-  background: linear-gradient(0deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.45) 100%), var(--fill);
-  border: 1px solid #999;
+	background: linear-gradient(0deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.45) 100%), var(--fill);
+	border: 1px solid #999;
 }
 
 .floatbox, .dia-shell, .dia-shell .btn-toolbar .btn-group {
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	border: 1px solid black;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
 .floatbox {
-  cursor: grab;
-  position: absolute;
-  left: 24px;
-  min-width: 350px;
-  max-width: calc(100% - 40px);
+	cursor: grab;
+	position: absolute;
+	left: 24px;
+	min-width: 350px;
+	max-width: calc(100% - 40px);
 	padding: 1em;
 	background-color: white;
 }
 
 .floatbox button.btn-close {
-  float: right;
+	float: right;
 }
 
 .floatbox h2 {
 	margin-top: 0;
-  margin-right: 2em;
-  white-space: nowrap;
+	margin-right: 2em;
+	white-space: nowrap;
 }
 
 .floatbox p {
-  max-width: 400px;
+	max-width: 400px;
 }
 
 .floatbox p:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .floatbox p > span {
-  background-color: white;
+	background-color: white;
 }
 
 .floatbox .ref {
-  margin-top: 1em;
-  text-align: right;
+	margin-top: 1em;
+	text-align: right;
 }
 
 .affix {
@@ -244,8 +244,8 @@ text {
 }
 
 .box-bg {
-  fill: white;
-  stroke: black;
+	fill: white;
+	stroke: black;
 }
 
 .textbox-box.box-distancia {
@@ -257,7 +257,7 @@ text {
 }
 
 .textbox-box {
-  fill: var(--fill);
+	fill: var(--fill);
 }
 
 .textbox-bg-stop1 {
@@ -292,12 +292,12 @@ text {
 }
 
 svg .node-level {
-  display: none;
-  font-size: x-large;
+	display: none;
+	font-size: x-large;
 }
 
 svg.show-levels .node-level {
-  display: block;
+	display: block;
 }
 
 .no-attributes .attributes-label {
@@ -309,7 +309,7 @@ svg.show-levels .node-level {
 }
 
 .attributes-label.hasexp, .attributes-label.hasexp * {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .attributes-label-text {
@@ -322,7 +322,7 @@ svg.show-levels .node-level {
 }
 
 .node * {
-  cursor: grab;
+	cursor: grab;
 }
 
 .drag * {
@@ -356,13 +356,13 @@ svg.show-levels .node-level {
 }
 
 .link {
-  stroke: #753917;
-  stroke-width: var(--link-width);
+	stroke: #753917;
+	stroke-width: var(--link-width);
 	z-index: 200;
 }
 
 .link.infimum:not(.active), .node.infimum:not(.active) .node-basic {
-  opacity: 0.1;
+	opacity: 0.1;
 }
 
 .link.inactive,
@@ -380,62 +380,62 @@ svg.show-levels .node-level {
 }
 
 #forkongithub a {
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  font-family: arial, sans-serif;
-  text-align: center;
-  font-weight: bold;
-  padding: 5px 40px;
-  font-size: 0.5rem;
-  line-height: 1rem;
-  position: relative;
-  transition: 0.5s;
-  opacity: 0.5;
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 40px;
+	font-size: 0.5rem;
+	line-height: 1rem;
+	position: relative;
+	transition: 0.5s;
+	opacity: 0.5;
 }
 
 #forkongithub a:hover {
-  background: #c11;
-  color: #fff;
-  opacity: 1;
+	background: #c11;
+	color: #fff;
+	opacity: 1;
 }
 
 #forkongithub a::before, #forkongithub a::after {
-  content: "";
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 1px;
-  left: 0;
-  height: 1px;
-  background: #fff;
+	content: "";
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 0;
+	height: 1px;
+	background: #fff;
 }
 
 #forkongithub a::after {
-  bottom: 1px;
-  top: auto;
+	bottom: 1px;
+	top: auto;
 }
 
 @media screen and (min-width: 800px) {
-  #forkongithub {
-    position: absolute;
-    display: block;
-    top: -25px;
-    right: 0;
-    width: 200px;
-    overflow: hidden;
-    height: 200px;
-    z-index: 9999;
-    white-space: nowrap;
-  }
+	#forkongithub {
+	  position: absolute;
+	  display: block;
+	  top: -25px;
+	  right: 0;
+	  width: 200px;
+	  overflow: hidden;
+	  height: 200px;
+	  z-index: 9999;
+	  white-space: nowrap;
+	}
 
-  #forkongithub a {
-    width: 200px;
-    position: absolute;
-    top: 60px;
-    right: -60px;
-    transform: rotate(45deg);
-  }
+	#forkongithub a {
+	  width: 200px;
+	  position: absolute;
+	  top: 60px;
+	  right: -60px;
+	  transform: rotate(45deg);
+	}
 }
 
 html {
@@ -520,7 +520,7 @@ html {
 }
 
 img.portrait {
-  width: 150px;
-  height: 214px;
-  clear: left;
+	width: 150px;
+	height: 214px;
+	clear: left;
 }
