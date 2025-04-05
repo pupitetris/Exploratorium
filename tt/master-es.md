@@ -16,6 +16,8 @@ Exploratorium de teorías del espacio-tiempo
     "Select None": "Seleccionar ninguno",
     "Toggle navigation": "Alternar navegación",
     "Download": "Descargar",
+    "Download SVG": "Descargar SVG",
+    "Download PNG": "Descargar PNG",
     "Zoom In": "Acercar",
     "Zoom Out": "Alejar",
     "Zoom Reset": "Restablecer acercamiento",

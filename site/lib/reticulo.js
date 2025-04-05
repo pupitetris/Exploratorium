@@ -832,30 +832,17 @@
       return drag;
     }
 
-    const toolbarDownload = (function () {
+    const fileDownload = (function() {
       const a = document.createElement('a');
       a.setAttribute('style', 'display: none');
       let appended = false;
 
-      return function (svg, fname) {
+      return function (blob, fname) {
         if (!appended) {
           appended = true;
           document.body.appendChild(a);
         }
 
-        const svg2 = svg.clone(true);
-        svg2.selectAll("*")
-          .each(function() {
-            if (this.tagName == 'svg' ||
-                this.tagName == 'defs' ||
-                this.tagName == 'linearGradient')
-              return;
-
-            const cs = window.getComputedStyle(this);
-            for (prop of cs)
-              this.style[prop] = cs.getPropertyValue(prop);
-          });
-        const blob = new Blob([svg2.node().outerHTML], { type: "image/svg+xml" });
         const url = window.URL.createObjectURL(blob);
         a.href = url;
         a.download = fname;
@@ -863,6 +850,69 @@
         window.URL.revokeObjectURL(url);
       };
     })();
+
+    function svgExportToBlob(svg) {
+      const svg2 = svg.clone(true)
+      const elems = svg2.selectAll("*");
+
+      // we have to copy the style in two steps for perfomance
+      elems.each(function() {
+        if (this.tagName == 'svg' ||
+            this.tagName == 'defs' ||
+            this.tagName == 'linearGradient')
+          return;
+
+        const cs = window.getComputedStyle(this);
+        const newStyle = document.createElement('div').style;
+        for (prop of cs)
+          newStyle.setProperty(prop, cs.getPropertyValue(prop))
+        this.__mystyle = newStyle;
+      });
+
+      svg2.remove();
+
+      // only set the styles once the element is not in the DOM
+      elems.each(function() {
+        if (!this.__mystyle)
+          return
+        const cs = this.__mystyle;
+        for (prop of cs)
+          this.style[prop] = cs.getPropertyValue(prop);
+      });
+
+      const blob = new Blob([svg2.node().outerHTML], { type: "image/svg+xml" });
+      return blob;
+    }
+
+    function toolbarDownloadSvg(svg, fname) {
+      const blob = svgExportToBlob(svg);
+      fileDownload(blob, fname);
+    }
+
+    function toolbarDownloadPng(svg, fname) {
+      const vb = parseViewBox(svg.attr("viewBox"));
+      const blob = svgExportToBlob(svg);
+      const svg_url = window.URL.createObjectURL(blob);
+      const img = document.createElement('img');
+      img.width = vb.width * 2;
+      img.height = vb.height * 2;
+
+      function img_on_load() {
+        const canvas = document.createElement("canvas");
+        canvas.width = img.width;
+        canvas.height = img.height;
+
+        const context = canvas.getContext("2d");
+        context.drawImage(img, 0, 0);
+
+        canvas.toBlob((blob) => fileDownload(blob, fname),
+                     "image/png");
+        window.URL.revokeObjectURL(svg_url);
+      }
+
+      img.addEventListener("load", img_on_load);
+      img.src = svg_url;
+    }
 
     function toolbarFullscreen(shell) {
       if (!document.fullscreenElement) {
@@ -910,7 +960,15 @@
         });
 
       toolbar.select(".tool-download")
-        .on("click", () => toolbarDownload(svg, config.DIAGRAM + '.svg'));
+        .on("click", (event) => {
+          const active = d3.select(event.target).classed("active");
+          const tf2g = toolbar.select(".tool-file2-group");
+          tf2g.classed("d-none", !active);
+        });
+      toolbar.select(".tool-download-svg")
+        .on("click", () => toolbarDownloadSvg(svg, config.DIAGRAM + '.svg'));
+      toolbar.select(".tool-download-png")
+        .on("click", () => toolbarDownloadPng(svg, config.DIAGRAM + '.png'));
 
       toolbar.select(".tool-zoom-out")
         .on("click", () => svg.transition().call(zoom.scaleBy, 0.5));
